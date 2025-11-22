@@ -12,6 +12,9 @@ import numpy as np
 import os
 import sys
 import re
+import logging
+
+logger = logging.getLogger('training')
 
 # Disable tokenizers parallelism warning when using DataLoader with multiple workers
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -23,6 +26,7 @@ def train_and_evaluate(
     train_data_raw,
     test_data_raw,
     subtask=3,
+    language="eng",
     domain="restaurant",
     model_name_or_path="unsloth/gemma-3-27b-it-bnb-4bit",
     num_train_epochs=5,
@@ -35,6 +39,10 @@ def train_and_evaluate(
 ):
     # Set random seed for reproducibility
     set_seed(seed)
+    
+    logger.info(f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed}")
+    logger.info(f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
+    logger.info(f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}")
 
     model, tokenizer = FastModel.from_pretrained(
         model_name=model_name_or_path,
@@ -56,9 +64,6 @@ def train_and_evaluate(
         bias="none",
         random_state=seed,
     )
-
-    # Convert label objects to tuples for training
-    from helper import get_prompt
     
     for example in train_data_raw:
         if "label" in example:
@@ -68,12 +73,16 @@ def train_and_evaluate(
         prompt = get_prompt(
             text=example["text"],
             subtask=subtask,
+            language=language,
             domain=domain
         )
         example["text"] = "<start_of_turn>user\n" + prompt + \
             "<end_of_turn>\n<start_of_turn>model\n" + \
             str(example["label"]) + "<end_of_turn>"
-    print(example["text"])
+    
+    # Log first example prompt for debugging
+    logger.info("Example prompt (first training example):")
+    logger.info(f"{example['text']}...")
 
     train_data = Dataset.from_list(train_data_raw)
 
@@ -109,16 +118,18 @@ def train_and_evaluate(
         response_part="<start_of_turn>model\n",
     )
 
+    logger.info("Starting model training...")
     trainer.train()
+    logger.info("Training completed")
 
     # Save model and tokenizer to model_temp
-    print("Saving model and tokenizer to model_temp...")
+    logger.info("Saving model and tokenizer to model_temp...")
     model.save_pretrained("model_temp")
     tokenizer.save_pretrained("model_temp")
 
     # perform evaluation here using vLLM
 
-    print("Initializing vLLM for evaluation...")
+    logger.info("Initializing vLLM for evaluation...")
     # Initialize vLLM with the base model
     llm = LLM(
         model=model_name_or_path,
@@ -132,7 +143,7 @@ def train_and_evaluate(
     sampling_params = SamplingParams(
         temperature=0.0, max_tokens=max_seq_length)
 
-    print(len(test_data_raw), "examples to evaluate")
+    logger.info(f"Evaluating {len(test_data_raw)} examples")
 
     # Prepare prompts for batch inference
     prompts = []
@@ -140,6 +151,7 @@ def train_and_evaluate(
         prompt = get_prompt(
             text=example["text"],
             subtask=subtask,
+            language=language,
             domain=domain
         )
         prompt = "<start_of_turn>user\n" + prompt + \
@@ -168,11 +180,12 @@ def train_and_evaluate(
             )
             all_preds_formatted.append(formatted_output)
         except Exception as e:
-            print(f"Error parsing output {idx}: {e}")
+            logger.warning(f"Error parsing output {idx}: {e}")
             # Empty prediction in output format
             if subtask == 3:
                 all_preds_formatted.append({"ID": test_data_raw[idx]["id"], "Quadruplet": []})
             else:
                 all_preds_formatted.append({"ID": test_data_raw[idx]["id"], "Triplet": []})
-
+    
+    logger.info(f"Evaluation completed - Generated {len(all_preds_formatted)} predictions")
     return all_preds_formatted

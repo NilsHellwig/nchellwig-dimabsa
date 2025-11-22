@@ -1,23 +1,15 @@
 #!/bin/bash
 
-SUBTASKS=(2 3)
-LANGUAGES=("eng")
-DOMAINS_ENG=("laptop" "restaurant")
-DOMAINS_OTHER=("restaurant" "laptop")  # Für andere Sprachen nur restaurant
-STRATEGY=("pred_dev" "train_split")
-N_SEEDS_RUNS=5
+SUBTASKS=(3 2)
+LANGUAGES=("eng" "jpn" "rus" "tat" "ukr" "zho")
+DOMAINS=("restaurant" "laptop" "hotel" "finance")
+N_SEEDS_RUNS=1
+STRATEGY=("pred_dev") # "train_split"
 
 for seed_run in $(seq 0 $((N_SEEDS_RUNS - 1))); do
-    for strategy in "${STRATEGY[@]}"; do
+    for language in "${LANGUAGES[@]}"; do
       for subtask in "${SUBTASKS[@]}"; do
-        for language in "${LANGUAGES[@]}"; do
-            # Bestimme verfügbare Domains basierend auf Sprache
-            if [ "$language" == "eng" ]; then
-                DOMAINS=("${DOMAINS_ENG[@]}")
-            else
-                DOMAINS=("${DOMAINS_OTHER[@]}")
-            fi
-            
+        for strategy in "${STRATEGY[@]}"; do
             for domain in "${DOMAINS[@]}"; do
                 python train_llm.py \
                     --subtask "$subtask" \

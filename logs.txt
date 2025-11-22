@@ -1,0 +1,33 @@
+2025-11-22 20:11:28 - INFO - Configuring GPU environment...
+2025-11-22 20:11:29 - INFO - GPU allocated memory: 0.00 GB
+2025-11-22 20:11:29 - INFO - GPU reserved memory: 0.00 GB
+2025-11-22 20:11:29 - INFO - ================================================================================
+2025-11-22 20:11:29 - INFO - Starting experiment: subtask=3, language=eng, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-22 20:11:29 - INFO - Predictions for 3 eng restaurant seed 0 already exist. Skipping.
+2025-11-22 20:11:34 - INFO - Configuring GPU environment...
+2025-11-22 20:11:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-22 20:11:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-22 20:11:35 - INFO - ================================================================================
+2025-11-22 20:11:35 - INFO - Starting experiment: subtask=3, language=eng, domain=laptop, seed=0, strategy=pred_dev
+2025-11-22 20:11:35 - INFO - Random seed set to 0 for reproducibility
+2025-11-22 20:11:35 - INFO - Starting training - Subtask: 3, Language: eng, Domain: laptop, Seed: 0
+2025-11-22 20:11:35 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-22 20:11:35 - INFO - Training examples: 4076, Test examples: 200
+2025-11-22 20:11:55 - INFO - Example prompt (first training example):
+2025-11-22 20:11:55 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: LAPTOP, DISPLAY, KEYBOARD, MOUSE, MOTHERBOARD, CPU, FANS_COOLING, PORTS, MEMORY, POWER_SUPPLY, OPTICAL_DRIVES, BATTERY, GRAPHICS, HARD_DISK, MULTIMEDIA_DEVICES, HARDWARE, SOFTWARE, OS, WARRANTY, SHIPPING, SUPPORT, COMPANY. The available attributes are: GENERAL, PRICE, QUALITY, DESIGN_FEATURES, OPERATION_PERFORMANCE, USABILITY, PORTABILITY, CONNECTIVITY, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service.
+- The 'valence' measures the degree of positivity or negativity.
+- The 'arousal' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence, arousal, opinion terms in the following text in the form of a list of tuples [('aspect term', 'aspect category', 'opinion term', 'valence', 'arousal'), ...].
+Text: the keyboard is nice to type on .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('keyboard', 'KEYBOARD#OPERATION_PERFORMANCE', 'nice', '7.00', '7.00')]<end_of_turn>...
+2025-11-22 20:12:05 - INFO - Starting model training...
