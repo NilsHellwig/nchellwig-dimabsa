@@ -86,10 +86,10 @@ Given a text, extract all **(A, C, O, VA)** quadruplets:
 │       ├── subtask_2/
 │       └── subtask_3/
 ├── results/
-│   └── results_pred_dev/     # Predictions for dev set
-│       ├── subtask_2/
-│       └── subtask_3/
-└── fine_tuning_results/      # (Generated during training)
+    └── results_pred_dev/     # Predictions for dev set
+        ├── subtask_2/
+        └── subtask_3/
+
 ```
 
 ## 🚀 Usage
