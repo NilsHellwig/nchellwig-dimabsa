@@ -1,6 +1,6 @@
-# 🎯 ur-mi-nch - SemEval 2025 Task 3
+# 🎯 ur-mi-nch - SemEval 2026 Task 3
 
-This repository contains the **ur-mi-nch** submission for **SemEval 2025 Task 3: Dimensional Aspect-Based Sentiment Analysis (DimABSA)** - Subtasks 2 and 3.
+This repository contains the **ur-mi-nch** submission for **SemEval 2026 Task 3: Dimensional Aspect-Based Sentiment Analysis (DimABSA)** - Subtasks 2 and 3.
 
 ## 📖 Overview
 
