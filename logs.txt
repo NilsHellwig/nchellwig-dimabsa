@@ -463,3 +463,62 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('хезмәт күрсәтү', 'бик күңелсез булды', '2.33', '7'), ('официантлар', 'күрсәтмәде', '3.17', '6'), ('официантлар', 'берәү дә каршы алмады', '2.88', '6.5'), ('официантка', 'шактый озак', '2.67', '7'), ('гардеробтагы кыз', 'бөтен курткаларны да бирмәде һәм чыгып китте', '2.75', '6.62')]<end_of_turn>...
 2025-11-23 04:49:01 - INFO - Starting model training...
+2025-11-23 05:33:33 - INFO - Training completed
+2025-11-23 05:33:33 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 05:33:36 - INFO - Initializing vLLM for evaluation...
+2025-11-23 05:34:55 - INFO - Evaluating 48 examples
+2025-11-23 05:35:09 - INFO - Evaluation completed - Generated 48 predictions
+2025-11-23 05:35:10 - INFO - Deleted ./model_temp
+2025-11-23 05:35:11 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 05:35:11 - INFO - GPU reserved memory: 2.79 GB
+2025-11-23 05:35:11 - INFO - Predictions saved to results/results_pred_dev/subtask_2/pred_tat_restaurant.jsonl
+2025-11-23 05:35:11 - INFO - Experiment completed successfully
+2025-11-23 05:35:11 - INFO - ================================================================================
+2025-11-23 05:35:17 - INFO - Configuring GPU environment...
+2025-11-23 05:35:18 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 05:35:18 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 05:35:18 - INFO - ================================================================================
+2025-11-23 05:35:18 - INFO - Starting experiment: subtask=2, language=tat, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 05:35:18 - WARNING - Dataset not found for subtask=2, language=tat, domain=laptop, split=train. Skipping.
+2025-11-23 05:35:18 - WARNING - Skipping 2 tat laptop seed 0 - dataset not found.
+2025-11-23 05:35:23 - INFO - Configuring GPU environment...
+2025-11-23 05:35:24 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 05:35:24 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 05:35:24 - INFO - ================================================================================
+2025-11-23 05:35:24 - INFO - Starting experiment: subtask=2, language=tat, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 05:35:24 - WARNING - Dataset not found for subtask=2, language=tat, domain=hotel, split=train. Skipping.
+2025-11-23 05:35:24 - WARNING - Skipping 2 tat hotel seed 0 - dataset not found.
+2025-11-23 05:35:29 - INFO - Configuring GPU environment...
+2025-11-23 05:35:29 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 05:35:29 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 05:35:29 - INFO - ================================================================================
+2025-11-23 05:35:29 - INFO - Starting experiment: subtask=2, language=tat, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 05:35:29 - WARNING - Dataset not found for subtask=2, language=tat, domain=finance, split=train. Skipping.
+2025-11-23 05:35:29 - WARNING - Skipping 2 tat finance seed 0 - dataset not found.
+2025-11-23 05:35:35 - INFO - Configuring GPU environment...
+2025-11-23 05:35:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 05:35:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 05:35:35 - INFO - ================================================================================
+2025-11-23 05:35:35 - INFO - Starting experiment: subtask=3, language=ukr, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 05:35:35 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 05:35:35 - INFO - Starting training - Subtask: 3, Language: ukr, Domain: restaurant, Seed: 0
+2025-11-23 05:35:35 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 05:35:35 - INFO - Training examples: 1240, Test examples: 48
+2025-11-23 05:35:55 - INFO - Example prompt (first training example):
+2025-11-23 05:35:55 - INFO - <start_of_turn>user
+Відповідно до наступного визначення елементів настрою:
+
+- «Термін аспекту» - це точне слово або фраза в тексті, яке представляє конкретну особливість, атрибут або аспект продукту чи послуги, про які користувач може висловити думку. Термін аспекту може бути «NULL» для неявного аспекту.
+- «Категорія аспекту» відноситься до категорії, до якої належить аспект. Це комбінація сутності та атрибута у форматі «ENTITY#ATTRIBUTE». Доступні сутності: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступні атрибути: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термін думки» - це точне слово або фраза в тексті, яке відноситься до настрою або ставлення, висловленого користувачем до певного аспекту або особливості продукту чи послуги.
+- «valence» вимірює ступінь позитивності або негативності.
+- «arousal» вимірює інтенсивність емоції.
+
+Оцінка 1.00 вказує на надзвичайно негативний valence або дуже низький arousal, 9.00 вказує на надзвичайно позитивний valence або дуже високий arousal, а 5.00 представляє нейтральний valence або середній arousal.
+
+Для наступного тексту розпізнайте всі елементи настрою з відповідними термінами аспектів, категоріями аспектів, термінами думок, valence, arousal у наступному тексті у вигляді списку кортежів [('aspect term', 'aspect category', 'opinion term', 'valence', 'arousal'), ...].
+Текст: По-третє, обслуговування: було дуже неприємно топтатися в центрі залу у верхньому одязі (всі офіціанти бігали по залу, ніхто не зустрів і не показав де гардероб - він виявився шафою між туалетами:)), офіціантка приносила спочатку страви, а потім вже прилади, рахунок несли досить довго, коли йшли, дівчина з гардероба видала не всі куртки і пішла... дрібниці, але з них складається враження.
+Елементи настрою:<end_of_turn>
+<start_of_turn>model
+[('обслуговування', 'SERVICE#GENERAL', 'дуже неприємно', '2.33', '7'), ('офіціанти', 'SERVICE#GENERAL', 'не показав', '3.17', '6'), ('офіціанти', 'SERVICE#GENERAL', 'ніхто не зустрів', '2.88', '6.5'), ('офіціантка', 'SERVICE#GENERAL', 'досить довго', '2.67', '7'), ('дівчина з гардероба', 'SERVICE#GENERAL', 'видала не всі куртки і пішла', '2.75', '6.62')]<end_of_turn>...
+2025-11-23 05:36:05 - INFO - Starting model training...

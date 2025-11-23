@@ -85,7 +85,7 @@
 {"ID": "lap26_aste_dev_85", "Triplet": [{"Aspect": "NULL", "Opinion": "fairly light", "VA": "6.88#6.75"}]}
 {"ID": "lap26_aste_dev_86", "Triplet": [{"Aspect": "picture", "Opinion": "Great", "VA": "7.50#7.50"}, {"Aspect": "picture", "Opinion": "clear", "VA": "7.25#7.25"}, {"Aspect": "sound", "Opinion": "nice", "VA": "7.00#7.00"}]}
 {"ID": "lap26_aste_dev_87", "Triplet": [{"Aspect": "concept", "Opinion": "Great", "VA": "7.50#7.50"}, {"Aspect": "touch screen functionality", "Opinion": "love", "VA": "8.00#8.00"}]}
-{"ID": "lap26_aste_dev_88", "Triplet": [{"Aspect": "laptop", "Opinion": "good", "VA": "7.00#7.00"}, {"Aspect": "laptop", "Opinion": "good", "VA": "7.00#7.00"}]}
+{"ID": "lap26_aste_dev_88", "Triplet": [{"Aspect": "laptop", "Opinion": "good", "VA": "7.00#7.00"}]}
 {"ID": "lap26_aste_dev_89", "Triplet": [{"Aspect": "device", "Opinion": "NULL", "VA": "5.00#5.00"}]}
 {"ID": "lap26_aste_dev_90", "Triplet": [{"Aspect": "battery life", "Opinion": "awful", "VA": "2.50#7.00"}]}
 {"ID": "lap26_aste_dev_91", "Triplet": [{"Aspect": "HP laptop", "Opinion": "good", "VA": "7.00#7.00"}]}
@@ -157,7 +157,7 @@
 {"ID": "lap26_aste_dev_157", "Triplet": [{"Aspect": "power consumption", "Opinion": "unbelievably bad", "VA": "2.50#7.17"}]}
 {"ID": "lap26_aste_dev_158", "Triplet": [{"Aspect": "laptop", "Opinion": "very impressed", "VA": "8.00#8.00"}]}
 {"ID": "lap26_aste_dev_159", "Triplet": [{"Aspect": "laptop", "Opinion": "pretty sweet", "VA": "7.50#7.62"}]}
-{"ID": "lap26_aste_dev_160", "Triplet": [{"Aspect": "Speakers", "Opinion": "okay", "VA": "6.00#6.00"}, {"Aspect": "Speakers", "Opinion": "weren't stellar", "VA": "4.50#5.00"}, {"Aspect": "Speakers", "Opinion": "okay", "VA": "6.00#6.00"}]}
+{"ID": "lap26_aste_dev_160", "Triplet": [{"Aspect": "Speakers", "Opinion": "okay", "VA": "6.00#6.00"}, {"Aspect": "Speakers", "Opinion": "weren't stellar", "VA": "4.50#5.00"}]}
 {"ID": "lap26_aste_dev_161", "Triplet": [{"Aspect": "Shipping", "Opinion": "quick", "VA": "7.00#7.00"}]}
 {"ID": "lap26_aste_dev_162", "Triplet": [{"Aspect": "memory", "Opinion": "NULL", "VA": "4.62#5.12"}]}
 {"ID": "lap26_aste_dev_163", "Triplet": [{"Aspect": "laptop", "Opinion": "faster", "VA": "7.67#7.83"}]}

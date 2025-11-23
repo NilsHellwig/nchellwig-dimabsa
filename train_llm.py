@@ -103,9 +103,9 @@ def main():
         return
 
     # Save predictions in JSONL format
-    with open(path_predictions, "w") as f_out:
+    with open(path_predictions, "w", encoding="utf-8") as f_out:
         for pred in predictions:
-            f_out.write(json.dumps(pred) + "\n")
+            f_out.write(json.dumps(pred, ensure_ascii=False) + "\n")
 
     logger.info(f"Predictions saved to {path_predictions}")
     logger.info(f"Experiment completed successfully")
