@@ -1048,3 +1048,65 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
 2025-11-23 12:16:51 - INFO - Starting model training...
+2025-11-23 14:33:42 - INFO - Training completed
+2025-11-23 14:33:42 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 14:33:46 - INFO - Initializing vLLM for evaluation...
+2025-11-23 14:35:05 - INFO - Evaluating 300 examples
+2025-11-23 14:35:26 - INFO - Evaluation completed - Generated 300 predictions
+2025-11-23 14:35:27 - INFO - Deleted ./model_temp
+2025-11-23 14:35:28 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 14:35:28 - INFO - GPU reserved memory: 2.81 GB
+2025-11-23 14:35:28 - INFO - Predictions saved to results/results_pred_dev/subtask_2/pred_zho_restaurant.jsonl
+2025-11-23 14:35:28 - INFO - Experiment completed successfully
+2025-11-23 14:35:28 - INFO - ================================================================================
+2025-11-23 14:35:34 - INFO - Configuring GPU environment...
+2025-11-23 14:35:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 14:35:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 14:35:35 - INFO - ================================================================================
+2025-11-23 14:35:35 - INFO - Starting experiment: subtask=2, language=zho, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 14:35:35 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 14:35:35 - INFO - Starting training - Subtask: 2, Language: zho, Domain: laptop, Seed: 0
+2025-11-23 14:35:35 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 14:35:35 - INFO - Training examples: 3490, Test examples: 300
+2025-11-23 14:35:53 - INFO - Example prompt (first training example):
+2025-11-23 14:35:53 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。如果没有明确的意见表达，意见术语可能为'NULL'。
+- 'valence score'衡量积极或消极的程度。
+- 'arousal score'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。valence score和arousal score都必须精确地四舍五入到两位小数。
+
+对于以下文本，识别具有相应方面术语、意见术语、valence score、arousal score的所有情感元素，以元组列表的形式 [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...]。
+文本： MSI電競筆電很好用用了好幾年了還是頭好壯壯
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('MSI電競筆電', '很好用', '6.38', '5.75'), ('MSI電競筆電', '頭好壯壯', '6.70', '6.00')]<end_of_turn>...
+2025-11-23 14:36:02 - INFO - Starting model training...
+2025-11-23 16:14:06 - INFO - Training completed
+2025-11-23 16:14:06 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 16:14:09 - INFO - Initializing vLLM for evaluation...
+2025-11-23 16:15:28 - INFO - Evaluating 300 examples
+2025-11-23 16:15:50 - INFO - Evaluation completed - Generated 300 predictions
+2025-11-23 16:15:51 - INFO - Deleted ./model_temp
+2025-11-23 16:15:52 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 16:15:52 - INFO - GPU reserved memory: 2.79 GB
+2025-11-23 16:15:52 - INFO - Predictions saved to results/results_pred_dev/subtask_2/pred_zho_laptop.jsonl
+2025-11-23 16:15:52 - INFO - Experiment completed successfully
+2025-11-23 16:15:52 - INFO - ================================================================================
+2025-11-23 16:15:58 - INFO - Configuring GPU environment...
+2025-11-23 16:15:59 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 16:15:59 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 16:15:59 - INFO - ================================================================================
+2025-11-23 16:15:59 - INFO - Starting experiment: subtask=2, language=zho, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 16:15:59 - WARNING - Dataset not found for subtask=2, language=zho, domain=hotel, split=train. Skipping.
+2025-11-23 16:15:59 - WARNING - Skipping 2 zho hotel seed 0 - dataset not found.
+2025-11-23 16:16:04 - INFO - Configuring GPU environment...
+2025-11-23 16:16:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 16:16:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 16:16:04 - INFO - ================================================================================
+2025-11-23 16:16:04 - INFO - Starting experiment: subtask=2, language=zho, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 16:16:04 - WARNING - Dataset not found for subtask=2, language=zho, domain=finance, split=train. Skipping.
+2025-11-23 16:16:04 - WARNING - Skipping 2 zho finance seed 0 - dataset not found.
