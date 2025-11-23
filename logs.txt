@@ -522,3 +522,209 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('обслуговування', 'SERVICE#GENERAL', 'дуже неприємно', '2.33', '7'), ('офіціанти', 'SERVICE#GENERAL', 'не показав', '3.17', '6'), ('офіціанти', 'SERVICE#GENERAL', 'ніхто не зустрів', '2.88', '6.5'), ('офіціантка', 'SERVICE#GENERAL', 'досить довго', '2.67', '7'), ('дівчина з гардероба', 'SERVICE#GENERAL', 'видала не всі куртки і пішла', '2.75', '6.62')]<end_of_turn>...
 2025-11-23 05:36:05 - INFO - Starting model training...
+2025-11-23 06:21:05 - INFO - Training completed
+2025-11-23 06:21:05 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 06:21:08 - INFO - Initializing vLLM for evaluation...
+2025-11-23 06:22:27 - INFO - Evaluating 48 examples
+2025-11-23 06:22:45 - INFO - Evaluation completed - Generated 48 predictions
+2025-11-23 06:22:46 - INFO - Deleted ./model_temp
+2025-11-23 06:22:47 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 06:22:47 - INFO - GPU reserved memory: 2.78 GB
+2025-11-23 06:22:47 - INFO - Predictions saved to results/results_pred_dev/subtask_3/pred_ukr_restaurant.jsonl
+2025-11-23 06:22:47 - INFO - Experiment completed successfully
+2025-11-23 06:22:47 - INFO - ================================================================================
+2025-11-23 06:22:53 - INFO - Configuring GPU environment...
+2025-11-23 06:22:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 06:22:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 06:22:54 - INFO - ================================================================================
+2025-11-23 06:22:54 - INFO - Starting experiment: subtask=3, language=ukr, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 06:22:54 - WARNING - Dataset not found for subtask=3, language=ukr, domain=laptop, split=train. Skipping.
+2025-11-23 06:22:54 - WARNING - Skipping 3 ukr laptop seed 0 - dataset not found.
+2025-11-23 06:22:59 - INFO - Configuring GPU environment...
+2025-11-23 06:23:00 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 06:23:00 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 06:23:00 - INFO - ================================================================================
+2025-11-23 06:23:00 - INFO - Starting experiment: subtask=3, language=ukr, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 06:23:00 - WARNING - Dataset not found for subtask=3, language=ukr, domain=hotel, split=train. Skipping.
+2025-11-23 06:23:00 - WARNING - Skipping 3 ukr hotel seed 0 - dataset not found.
+2025-11-23 06:23:05 - INFO - Configuring GPU environment...
+2025-11-23 06:23:05 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 06:23:05 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 06:23:05 - INFO - ================================================================================
+2025-11-23 06:23:05 - INFO - Starting experiment: subtask=3, language=ukr, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 06:23:05 - WARNING - Dataset not found for subtask=3, language=ukr, domain=finance, split=train. Skipping.
+2025-11-23 06:23:05 - WARNING - Skipping 3 ukr finance seed 0 - dataset not found.
+2025-11-23 06:23:11 - INFO - Configuring GPU environment...
+2025-11-23 06:23:11 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 06:23:11 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 06:23:11 - INFO - ================================================================================
+2025-11-23 06:23:11 - INFO - Starting experiment: subtask=2, language=ukr, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 06:23:11 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 06:23:11 - INFO - Starting training - Subtask: 2, Language: ukr, Domain: restaurant, Seed: 0
+2025-11-23 06:23:11 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 06:23:11 - INFO - Training examples: 1240, Test examples: 48
+2025-11-23 06:23:33 - INFO - Example prompt (first training example):
+2025-11-23 06:23:33 - INFO - <start_of_turn>user
+Відповідно до наступного визначення елементів настрою:
+
+- «Термін аспекту» - це точне слово або фраза в тексті, яке представляє конкретну особливість, атрибут або аспект продукту чи послуги, про які користувач може висловити думку. Термін аспекту може бути «NULL» для неявного аспекту.
+- «Термін думки» - це точне слово або фраза в тексті, яке відноситься до настрою або ставлення, висловленого користувачем до певного аспекту або особливості продукту чи послуги.
+- «valence» вимірює ступінь позитивності або негативності.
+- «arousal» вимірює інтенсивність емоції.
+
+Оцінка 1.00 вказує на надзвичайно негативний valence або дуже низький arousal, 9.00 вказує на надзвичайно позитивний valence або дуже високий arousal, а 5.00 представляє нейтральний valence або середній arousal.
+
+Для наступного тексту розпізнайте всі елементи настрою з відповідними термінами аспектів, термінами думок, valence, arousal у наступному тексті у вигляді списку кортежів [('aspect term', 'opinion term', 'valence', 'arousal'), ...].
+Текст: По-третє, обслуговування: було дуже неприємно топтатися в центрі залу у верхньому одязі (всі офіціанти бігали по залу, ніхто не зустрів і не показав де гардероб - він виявився шафою між туалетами:)), офіціантка приносила спочатку страви, а потім вже прилади, рахунок несли досить довго, коли йшли, дівчина з гардероба видала не всі куртки і пішла... дрібниці, але з них складається враження.
+Елементи настрою:<end_of_turn>
+<start_of_turn>model
+[('обслуговування', 'дуже неприємно', '2.33', '7'), ('офіціанти', 'не показав', '3.17', '6'), ('офіціанти', 'ніхто не зустрів', '2.88', '6.5'), ('офіціантка', 'досить довго', '2.67', '7'), ('дівчина з гардероба', 'видала не всі куртки і пішла', '2.75', '6.62')]<end_of_turn>...
+2025-11-23 06:23:43 - INFO - Starting model training...
+2025-11-23 07:03:15 - INFO - Training completed
+2025-11-23 07:03:15 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 07:03:18 - INFO - Initializing vLLM for evaluation...
+2025-11-23 07:04:37 - INFO - Evaluating 48 examples
+2025-11-23 07:04:50 - INFO - Evaluation completed - Generated 48 predictions
+2025-11-23 07:04:51 - INFO - Deleted ./model_temp
+2025-11-23 07:04:52 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 07:04:52 - INFO - GPU reserved memory: 2.81 GB
+2025-11-23 07:04:52 - INFO - Predictions saved to results/results_pred_dev/subtask_2/pred_ukr_restaurant.jsonl
+2025-11-23 07:04:52 - INFO - Experiment completed successfully
+2025-11-23 07:04:52 - INFO - ================================================================================
+2025-11-23 07:04:58 - INFO - Configuring GPU environment...
+2025-11-23 07:04:59 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 07:04:59 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 07:04:59 - INFO - ================================================================================
+2025-11-23 07:04:59 - INFO - Starting experiment: subtask=2, language=ukr, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 07:04:59 - WARNING - Dataset not found for subtask=2, language=ukr, domain=laptop, split=train. Skipping.
+2025-11-23 07:04:59 - WARNING - Skipping 2 ukr laptop seed 0 - dataset not found.
+2025-11-23 07:05:04 - INFO - Configuring GPU environment...
+2025-11-23 07:05:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 07:05:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 07:05:04 - INFO - ================================================================================
+2025-11-23 07:05:04 - INFO - Starting experiment: subtask=2, language=ukr, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 07:05:04 - WARNING - Dataset not found for subtask=2, language=ukr, domain=hotel, split=train. Skipping.
+2025-11-23 07:05:04 - WARNING - Skipping 2 ukr hotel seed 0 - dataset not found.
+2025-11-23 07:05:10 - INFO - Configuring GPU environment...
+2025-11-23 07:05:10 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 07:05:10 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 07:05:10 - INFO - ================================================================================
+2025-11-23 07:05:10 - INFO - Starting experiment: subtask=2, language=ukr, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 07:05:10 - WARNING - Dataset not found for subtask=2, language=ukr, domain=finance, split=train. Skipping.
+2025-11-23 07:05:10 - WARNING - Skipping 2 ukr finance seed 0 - dataset not found.
+2025-11-23 07:05:16 - INFO - Configuring GPU environment...
+2025-11-23 07:05:16 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 07:05:16 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 07:05:16 - INFO - ================================================================================
+2025-11-23 07:05:16 - INFO - Starting experiment: subtask=3, language=zho, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 07:05:16 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 07:05:16 - INFO - Starting training - Subtask: 3, Language: zho, Domain: restaurant, Seed: 0
+2025-11-23 07:05:16 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 07:05:16 - INFO - Training examples: 6050, Test examples: 300
+2025-11-23 07:05:36 - INFO - Example prompt (first training example):
+2025-11-23 07:05:36 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '方面类别'是指方面所属的类别。它是'ENTITY#ATTRIBUTE'格式的实体和属性的组合。可用实体为：RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION。可用属性为：GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。
+- 'valence'衡量积极或消极的程度。
+- 'arousal'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。
+
+对于以下文本，识别具有相应方面术语、方面类别、意见术语、valence、arousal的所有情感元素，以元组列表的形式 [('aspect term', 'aspect category', 'opinion term', 'valence', 'arousal'), ...]。
+文本： 整體上菜速度非常快。
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('上菜速度', 'SERVICE#GENERAL', '非常快', '6.00', '6.00')]<end_of_turn>...
+2025-11-23 07:05:46 - INFO - Starting model training...
+2025-11-23 09:49:35 - INFO - Training completed
+2025-11-23 09:49:35 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 09:49:38 - INFO - Initializing vLLM for evaluation...
+2025-11-23 09:50:57 - INFO - Evaluating 300 examples
+2025-11-23 09:51:25 - INFO - Evaluation completed - Generated 300 predictions
+2025-11-23 09:51:26 - INFO - Deleted ./model_temp
+2025-11-23 09:51:26 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 09:51:26 - INFO - GPU reserved memory: 2.81 GB
+2025-11-23 09:51:26 - INFO - Predictions saved to results/results_pred_dev/subtask_3/pred_zho_restaurant.jsonl
+2025-11-23 09:51:26 - INFO - Experiment completed successfully
+2025-11-23 09:51:26 - INFO - ================================================================================
+2025-11-23 09:51:33 - INFO - Configuring GPU environment...
+2025-11-23 09:51:33 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 09:51:33 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 09:51:33 - INFO - ================================================================================
+2025-11-23 09:51:33 - INFO - Starting experiment: subtask=3, language=zho, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 09:51:33 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 09:51:33 - INFO - Starting training - Subtask: 3, Language: zho, Domain: laptop, Seed: 0
+2025-11-23 09:51:33 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 09:51:33 - INFO - Training examples: 3490, Test examples: 300
+2025-11-23 09:51:53 - INFO - Example prompt (first training example):
+2025-11-23 09:51:53 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '方面类别'是指方面所属的类别。它是'ENTITY#ATTRIBUTE'格式的实体和属性的组合。可用实体为：LAPTOP, DISPLAY, KEYBOARD, MOUSE, MOTHERBOARD, CPU, FANS_COOLING, PORTS, MEMORY, POWER_SUPPLY, OPTICAL_DRIVES, BATTERY, GRAPHICS, HARD_DISK, MULTIMEDIA_DEVICES, HARDWARE, SOFTWARE, OS, WARRANTY, SHIPPING, SUPPORT, COMPANY。可用属性为：GENERAL, PRICE, QUALITY, DESIGN_FEATURES, OPERATION_PERFORMANCE, USABILITY, PORTABILITY, CONNECTIVITY, MISCELLANEOUS。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。
+- 'valence'衡量积极或消极的程度。
+- 'arousal'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。
+
+对于以下文本，识别具有相应方面术语、方面类别、意见术语、valence、arousal的所有情感元素，以元组列表的形式 [('aspect term', 'aspect category', 'opinion term', 'valence', 'arousal'), ...]。
+文本： MSI電競筆電很好用用了好幾年了還是頭好壯壯
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('MSI電競筆電', 'LAPTOP#GENERAL', '很好用', '6.38', '5.75'), ('MSI電競筆電', 'LAPTOP#GENERAL', '頭好壯壯', '6.70', '6.00')]<end_of_turn>...
+2025-11-23 09:52:03 - INFO - Starting model training...
+2025-11-23 11:54:35 - INFO - Training completed
+2025-11-23 11:54:35 - INFO - Saving model and tokenizer to model_temp...
+2025-11-23 11:54:38 - INFO - Initializing vLLM for evaluation...
+2025-11-23 11:55:58 - INFO - Evaluating 300 examples
+2025-11-23 11:56:26 - INFO - Evaluation completed - Generated 300 predictions
+2025-11-23 11:56:27 - INFO - Deleted ./model_temp
+2025-11-23 11:56:28 - INFO - GPU allocated memory: 2.73 GB
+2025-11-23 11:56:28 - INFO - GPU reserved memory: 2.79 GB
+2025-11-23 11:56:28 - INFO - Predictions saved to results/results_pred_dev/subtask_3/pred_zho_laptop.jsonl
+2025-11-23 11:56:28 - INFO - Experiment completed successfully
+2025-11-23 11:56:28 - INFO - ================================================================================
+2025-11-23 11:56:34 - INFO - Configuring GPU environment...
+2025-11-23 11:56:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 11:56:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 11:56:35 - INFO - ================================================================================
+2025-11-23 11:56:35 - INFO - Starting experiment: subtask=3, language=zho, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 11:56:35 - WARNING - Dataset not found for subtask=3, language=zho, domain=hotel, split=train. Skipping.
+2025-11-23 11:56:35 - WARNING - Skipping 3 zho hotel seed 0 - dataset not found.
+2025-11-23 11:56:40 - INFO - Configuring GPU environment...
+2025-11-23 11:56:41 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 11:56:41 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 11:56:41 - INFO - ================================================================================
+2025-11-23 11:56:41 - INFO - Starting experiment: subtask=3, language=zho, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 11:56:41 - WARNING - Dataset not found for subtask=3, language=zho, domain=finance, split=train. Skipping.
+2025-11-23 11:56:41 - WARNING - Skipping 3 zho finance seed 0 - dataset not found.
+2025-11-23 11:56:46 - INFO - Configuring GPU environment...
+2025-11-23 11:56:47 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 11:56:47 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 11:56:47 - INFO - ================================================================================
+2025-11-23 11:56:47 - INFO - Starting experiment: subtask=2, language=zho, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 11:56:47 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 11:56:47 - INFO - Starting training - Subtask: 2, Language: zho, Domain: restaurant, Seed: 0
+2025-11-23 11:56:47 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 11:56:47 - INFO - Training examples: 6050, Test examples: 300
+2025-11-23 11:57:09 - INFO - Example prompt (first training example):
+2025-11-23 11:57:09 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。
+- 'valence'衡量积极或消极的程度。
+- 'arousal'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。
+
+对于以下文本，识别具有相应方面术语、意见术语、valence、arousal的所有情感元素，以元组列表的形式 [('aspect term', 'opinion term', 'valence', 'arousal'), ...]。
+文本： 整體上菜速度非常快。
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
+2025-11-23 11:57:19 - INFO - Starting model training...
