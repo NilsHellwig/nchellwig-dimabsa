@@ -728,3 +728,323 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
 2025-11-23 11:57:19 - INFO - Starting model training...
+2025-11-23 12:12:02 - INFO - Configuring GPU environment...
+2025-11-23 12:12:02 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:02 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:02 - INFO - ================================================================================
+2025-11-23 12:12:02 - INFO - Starting experiment: subtask=3, language=eng, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:12:02 - INFO - Predictions for 3 eng restaurant seed 0 already exist. Skipping.
+2025-11-23 12:12:08 - INFO - Configuring GPU environment...
+2025-11-23 12:12:08 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:08 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:08 - INFO - ================================================================================
+2025-11-23 12:12:08 - INFO - Starting experiment: subtask=3, language=eng, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:12:08 - INFO - Predictions for 3 eng laptop seed 0 already exist. Skipping.
+2025-11-23 12:12:14 - INFO - Configuring GPU environment...
+2025-11-23 12:12:14 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:14 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:14 - INFO - ================================================================================
+2025-11-23 12:12:14 - INFO - Starting experiment: subtask=3, language=eng, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:12:14 - WARNING - Dataset not found for subtask=3, language=eng, domain=hotel, split=train. Skipping.
+2025-11-23 12:12:14 - WARNING - Skipping 3 eng hotel seed 0 - dataset not found.
+2025-11-23 12:12:20 - INFO - Configuring GPU environment...
+2025-11-23 12:12:20 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:20 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:20 - INFO - ================================================================================
+2025-11-23 12:12:20 - INFO - Starting experiment: subtask=3, language=eng, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:12:20 - WARNING - Dataset not found for subtask=3, language=eng, domain=finance, split=train. Skipping.
+2025-11-23 12:12:20 - WARNING - Skipping 3 eng finance seed 0 - dataset not found.
+2025-11-23 12:12:26 - INFO - Configuring GPU environment...
+2025-11-23 12:12:26 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:26 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:26 - INFO - ================================================================================
+2025-11-23 12:12:26 - INFO - Starting experiment: subtask=2, language=eng, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:12:26 - INFO - Predictions for 2 eng restaurant seed 0 already exist. Skipping.
+2025-11-23 12:12:32 - INFO - Configuring GPU environment...
+2025-11-23 12:12:32 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:32 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:32 - INFO - ================================================================================
+2025-11-23 12:12:32 - INFO - Starting experiment: subtask=2, language=eng, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:12:32 - INFO - Predictions for 2 eng laptop seed 0 already exist. Skipping.
+2025-11-23 12:12:38 - INFO - Configuring GPU environment...
+2025-11-23 12:12:38 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:38 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:38 - INFO - ================================================================================
+2025-11-23 12:12:38 - INFO - Starting experiment: subtask=2, language=eng, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:12:38 - WARNING - Dataset not found for subtask=2, language=eng, domain=hotel, split=train. Skipping.
+2025-11-23 12:12:38 - WARNING - Skipping 2 eng hotel seed 0 - dataset not found.
+2025-11-23 12:12:44 - INFO - Configuring GPU environment...
+2025-11-23 12:12:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:44 - INFO - ================================================================================
+2025-11-23 12:12:44 - INFO - Starting experiment: subtask=2, language=eng, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:12:44 - WARNING - Dataset not found for subtask=2, language=eng, domain=finance, split=train. Skipping.
+2025-11-23 12:12:44 - WARNING - Skipping 2 eng finance seed 0 - dataset not found.
+2025-11-23 12:12:49 - INFO - Configuring GPU environment...
+2025-11-23 12:12:50 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:50 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:50 - INFO - ================================================================================
+2025-11-23 12:12:50 - INFO - Starting experiment: subtask=3, language=jpn, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:12:50 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-23 12:12:50 - WARNING - Skipping 3 jpn restaurant seed 0 - dataset not found.
+2025-11-23 12:12:55 - INFO - Configuring GPU environment...
+2025-11-23 12:12:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:12:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:12:56 - INFO - ================================================================================
+2025-11-23 12:12:56 - INFO - Starting experiment: subtask=3, language=jpn, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:12:56 - WARNING - Dataset not found for subtask=3, language=jpn, domain=laptop, split=train. Skipping.
+2025-11-23 12:12:56 - WARNING - Skipping 3 jpn laptop seed 0 - dataset not found.
+2025-11-23 12:13:01 - INFO - Configuring GPU environment...
+2025-11-23 12:13:02 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:02 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:02 - INFO - ================================================================================
+2025-11-23 12:13:02 - INFO - Starting experiment: subtask=3, language=jpn, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:13:02 - INFO - Predictions for 3 jpn hotel seed 0 already exist. Skipping.
+2025-11-23 12:13:07 - INFO - Configuring GPU environment...
+2025-11-23 12:13:08 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:08 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:08 - INFO - ================================================================================
+2025-11-23 12:13:08 - INFO - Starting experiment: subtask=3, language=jpn, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:13:08 - WARNING - Dataset not found for subtask=3, language=jpn, domain=finance, split=train. Skipping.
+2025-11-23 12:13:08 - WARNING - Skipping 3 jpn finance seed 0 - dataset not found.
+2025-11-23 12:13:13 - INFO - Configuring GPU environment...
+2025-11-23 12:13:14 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:14 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:14 - INFO - ================================================================================
+2025-11-23 12:13:14 - INFO - Starting experiment: subtask=2, language=jpn, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:13:14 - WARNING - Dataset not found for subtask=2, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-23 12:13:14 - WARNING - Skipping 2 jpn restaurant seed 0 - dataset not found.
+2025-11-23 12:13:19 - INFO - Configuring GPU environment...
+2025-11-23 12:13:20 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:20 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:20 - INFO - ================================================================================
+2025-11-23 12:13:20 - INFO - Starting experiment: subtask=2, language=jpn, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:13:20 - WARNING - Dataset not found for subtask=2, language=jpn, domain=laptop, split=train. Skipping.
+2025-11-23 12:13:20 - WARNING - Skipping 2 jpn laptop seed 0 - dataset not found.
+2025-11-23 12:13:25 - INFO - Configuring GPU environment...
+2025-11-23 12:13:25 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:25 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:25 - INFO - ================================================================================
+2025-11-23 12:13:25 - INFO - Starting experiment: subtask=2, language=jpn, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:13:25 - INFO - Predictions for 2 jpn hotel seed 0 already exist. Skipping.
+2025-11-23 12:13:31 - INFO - Configuring GPU environment...
+2025-11-23 12:13:31 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:31 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:31 - INFO - ================================================================================
+2025-11-23 12:13:31 - INFO - Starting experiment: subtask=2, language=jpn, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:13:31 - WARNING - Dataset not found for subtask=2, language=jpn, domain=finance, split=train. Skipping.
+2025-11-23 12:13:31 - WARNING - Skipping 2 jpn finance seed 0 - dataset not found.
+2025-11-23 12:13:37 - INFO - Configuring GPU environment...
+2025-11-23 12:13:37 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:37 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:37 - INFO - ================================================================================
+2025-11-23 12:13:37 - INFO - Starting experiment: subtask=3, language=rus, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:13:37 - INFO - Predictions for 3 rus restaurant seed 0 already exist. Skipping.
+2025-11-23 12:13:43 - INFO - Configuring GPU environment...
+2025-11-23 12:13:43 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:43 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:43 - INFO - ================================================================================
+2025-11-23 12:13:43 - INFO - Starting experiment: subtask=3, language=rus, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:13:43 - WARNING - Dataset not found for subtask=3, language=rus, domain=laptop, split=train. Skipping.
+2025-11-23 12:13:43 - WARNING - Skipping 3 rus laptop seed 0 - dataset not found.
+2025-11-23 12:13:49 - INFO - Configuring GPU environment...
+2025-11-23 12:13:49 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:49 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:49 - INFO - ================================================================================
+2025-11-23 12:13:49 - INFO - Starting experiment: subtask=3, language=rus, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:13:49 - WARNING - Dataset not found for subtask=3, language=rus, domain=hotel, split=train. Skipping.
+2025-11-23 12:13:49 - WARNING - Skipping 3 rus hotel seed 0 - dataset not found.
+2025-11-23 12:13:55 - INFO - Configuring GPU environment...
+2025-11-23 12:13:55 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:13:55 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:13:55 - INFO - ================================================================================
+2025-11-23 12:13:55 - INFO - Starting experiment: subtask=3, language=rus, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:13:55 - WARNING - Dataset not found for subtask=3, language=rus, domain=finance, split=train. Skipping.
+2025-11-23 12:13:55 - WARNING - Skipping 3 rus finance seed 0 - dataset not found.
+2025-11-23 12:14:01 - INFO - Configuring GPU environment...
+2025-11-23 12:14:01 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:01 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:01 - INFO - ================================================================================
+2025-11-23 12:14:01 - INFO - Starting experiment: subtask=2, language=rus, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:14:01 - INFO - Predictions for 2 rus restaurant seed 0 already exist. Skipping.
+2025-11-23 12:14:07 - INFO - Configuring GPU environment...
+2025-11-23 12:14:07 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:07 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:07 - INFO - ================================================================================
+2025-11-23 12:14:07 - INFO - Starting experiment: subtask=2, language=rus, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:14:07 - WARNING - Dataset not found for subtask=2, language=rus, domain=laptop, split=train. Skipping.
+2025-11-23 12:14:07 - WARNING - Skipping 2 rus laptop seed 0 - dataset not found.
+2025-11-23 12:14:12 - INFO - Configuring GPU environment...
+2025-11-23 12:14:13 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:13 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:13 - INFO - ================================================================================
+2025-11-23 12:14:13 - INFO - Starting experiment: subtask=2, language=rus, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:14:13 - WARNING - Dataset not found for subtask=2, language=rus, domain=hotel, split=train. Skipping.
+2025-11-23 12:14:13 - WARNING - Skipping 2 rus hotel seed 0 - dataset not found.
+2025-11-23 12:14:18 - INFO - Configuring GPU environment...
+2025-11-23 12:14:19 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:19 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:19 - INFO - ================================================================================
+2025-11-23 12:14:19 - INFO - Starting experiment: subtask=2, language=rus, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:14:19 - WARNING - Dataset not found for subtask=2, language=rus, domain=finance, split=train. Skipping.
+2025-11-23 12:14:19 - WARNING - Skipping 2 rus finance seed 0 - dataset not found.
+2025-11-23 12:14:24 - INFO - Configuring GPU environment...
+2025-11-23 12:14:25 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:25 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:25 - INFO - ================================================================================
+2025-11-23 12:14:25 - INFO - Starting experiment: subtask=3, language=tat, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:14:25 - INFO - Predictions for 3 tat restaurant seed 0 already exist. Skipping.
+2025-11-23 12:14:30 - INFO - Configuring GPU environment...
+2025-11-23 12:14:31 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:31 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:31 - INFO - ================================================================================
+2025-11-23 12:14:31 - INFO - Starting experiment: subtask=3, language=tat, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:14:31 - WARNING - Dataset not found for subtask=3, language=tat, domain=laptop, split=train. Skipping.
+2025-11-23 12:14:31 - WARNING - Skipping 3 tat laptop seed 0 - dataset not found.
+2025-11-23 12:14:36 - INFO - Configuring GPU environment...
+2025-11-23 12:14:36 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:36 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:36 - INFO - ================================================================================
+2025-11-23 12:14:36 - INFO - Starting experiment: subtask=3, language=tat, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:14:36 - WARNING - Dataset not found for subtask=3, language=tat, domain=hotel, split=train. Skipping.
+2025-11-23 12:14:36 - WARNING - Skipping 3 tat hotel seed 0 - dataset not found.
+2025-11-23 12:14:42 - INFO - Configuring GPU environment...
+2025-11-23 12:14:42 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:42 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:42 - INFO - ================================================================================
+2025-11-23 12:14:42 - INFO - Starting experiment: subtask=3, language=tat, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:14:42 - WARNING - Dataset not found for subtask=3, language=tat, domain=finance, split=train. Skipping.
+2025-11-23 12:14:42 - WARNING - Skipping 3 tat finance seed 0 - dataset not found.
+2025-11-23 12:14:48 - INFO - Configuring GPU environment...
+2025-11-23 12:14:48 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:48 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:48 - INFO - ================================================================================
+2025-11-23 12:14:48 - INFO - Starting experiment: subtask=2, language=tat, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:14:48 - INFO - Predictions for 2 tat restaurant seed 0 already exist. Skipping.
+2025-11-23 12:14:54 - INFO - Configuring GPU environment...
+2025-11-23 12:14:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:14:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:14:54 - INFO - ================================================================================
+2025-11-23 12:14:54 - INFO - Starting experiment: subtask=2, language=tat, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:14:54 - WARNING - Dataset not found for subtask=2, language=tat, domain=laptop, split=train. Skipping.
+2025-11-23 12:14:54 - WARNING - Skipping 2 tat laptop seed 0 - dataset not found.
+2025-11-23 12:15:00 - INFO - Configuring GPU environment...
+2025-11-23 12:15:00 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:00 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:00 - INFO - ================================================================================
+2025-11-23 12:15:00 - INFO - Starting experiment: subtask=2, language=tat, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:15:00 - WARNING - Dataset not found for subtask=2, language=tat, domain=hotel, split=train. Skipping.
+2025-11-23 12:15:00 - WARNING - Skipping 2 tat hotel seed 0 - dataset not found.
+2025-11-23 12:15:06 - INFO - Configuring GPU environment...
+2025-11-23 12:15:06 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:06 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:06 - INFO - ================================================================================
+2025-11-23 12:15:06 - INFO - Starting experiment: subtask=2, language=tat, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:15:06 - WARNING - Dataset not found for subtask=2, language=tat, domain=finance, split=train. Skipping.
+2025-11-23 12:15:06 - WARNING - Skipping 2 tat finance seed 0 - dataset not found.
+2025-11-23 12:15:12 - INFO - Configuring GPU environment...
+2025-11-23 12:15:12 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:12 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:12 - INFO - ================================================================================
+2025-11-23 12:15:12 - INFO - Starting experiment: subtask=3, language=ukr, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:15:12 - INFO - Predictions for 3 ukr restaurant seed 0 already exist. Skipping.
+2025-11-23 12:15:18 - INFO - Configuring GPU environment...
+2025-11-23 12:15:18 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:18 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:18 - INFO - ================================================================================
+2025-11-23 12:15:18 - INFO - Starting experiment: subtask=3, language=ukr, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:15:18 - WARNING - Dataset not found for subtask=3, language=ukr, domain=laptop, split=train. Skipping.
+2025-11-23 12:15:18 - WARNING - Skipping 3 ukr laptop seed 0 - dataset not found.
+2025-11-23 12:15:24 - INFO - Configuring GPU environment...
+2025-11-23 12:15:24 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:24 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:24 - INFO - ================================================================================
+2025-11-23 12:15:24 - INFO - Starting experiment: subtask=3, language=ukr, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:15:24 - WARNING - Dataset not found for subtask=3, language=ukr, domain=hotel, split=train. Skipping.
+2025-11-23 12:15:24 - WARNING - Skipping 3 ukr hotel seed 0 - dataset not found.
+2025-11-23 12:15:29 - INFO - Configuring GPU environment...
+2025-11-23 12:15:30 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:30 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:30 - INFO - ================================================================================
+2025-11-23 12:15:30 - INFO - Starting experiment: subtask=3, language=ukr, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:15:30 - WARNING - Dataset not found for subtask=3, language=ukr, domain=finance, split=train. Skipping.
+2025-11-23 12:15:30 - WARNING - Skipping 3 ukr finance seed 0 - dataset not found.
+2025-11-23 12:15:35 - INFO - Configuring GPU environment...
+2025-11-23 12:15:36 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:36 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:36 - INFO - ================================================================================
+2025-11-23 12:15:36 - INFO - Starting experiment: subtask=2, language=ukr, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:15:36 - INFO - Predictions for 2 ukr restaurant seed 0 already exist. Skipping.
+2025-11-23 12:15:41 - INFO - Configuring GPU environment...
+2025-11-23 12:15:42 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:42 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:42 - INFO - ================================================================================
+2025-11-23 12:15:42 - INFO - Starting experiment: subtask=2, language=ukr, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:15:42 - WARNING - Dataset not found for subtask=2, language=ukr, domain=laptop, split=train. Skipping.
+2025-11-23 12:15:42 - WARNING - Skipping 2 ukr laptop seed 0 - dataset not found.
+2025-11-23 12:15:47 - INFO - Configuring GPU environment...
+2025-11-23 12:15:48 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:48 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:48 - INFO - ================================================================================
+2025-11-23 12:15:48 - INFO - Starting experiment: subtask=2, language=ukr, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:15:48 - WARNING - Dataset not found for subtask=2, language=ukr, domain=hotel, split=train. Skipping.
+2025-11-23 12:15:48 - WARNING - Skipping 2 ukr hotel seed 0 - dataset not found.
+2025-11-23 12:15:53 - INFO - Configuring GPU environment...
+2025-11-23 12:15:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:15:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:15:54 - INFO - ================================================================================
+2025-11-23 12:15:54 - INFO - Starting experiment: subtask=2, language=ukr, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:15:54 - WARNING - Dataset not found for subtask=2, language=ukr, domain=finance, split=train. Skipping.
+2025-11-23 12:15:54 - WARNING - Skipping 2 ukr finance seed 0 - dataset not found.
+2025-11-23 12:15:59 - INFO - Configuring GPU environment...
+2025-11-23 12:16:00 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:16:00 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:16:00 - INFO - ================================================================================
+2025-11-23 12:16:00 - INFO - Starting experiment: subtask=3, language=zho, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:16:00 - INFO - Predictions for 3 zho restaurant seed 0 already exist. Skipping.
+2025-11-23 12:16:05 - INFO - Configuring GPU environment...
+2025-11-23 12:16:05 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:16:05 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:16:05 - INFO - ================================================================================
+2025-11-23 12:16:05 - INFO - Starting experiment: subtask=3, language=zho, domain=laptop, seed=0, strategy=pred_dev
+2025-11-23 12:16:05 - INFO - Predictions for 3 zho laptop seed 0 already exist. Skipping.
+2025-11-23 12:16:11 - INFO - Configuring GPU environment...
+2025-11-23 12:16:11 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:16:11 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:16:11 - INFO - ================================================================================
+2025-11-23 12:16:11 - INFO - Starting experiment: subtask=3, language=zho, domain=hotel, seed=0, strategy=pred_dev
+2025-11-23 12:16:11 - WARNING - Dataset not found for subtask=3, language=zho, domain=hotel, split=train. Skipping.
+2025-11-23 12:16:11 - WARNING - Skipping 3 zho hotel seed 0 - dataset not found.
+2025-11-23 12:16:17 - INFO - Configuring GPU environment...
+2025-11-23 12:16:17 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:16:17 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:16:17 - INFO - ================================================================================
+2025-11-23 12:16:17 - INFO - Starting experiment: subtask=3, language=zho, domain=finance, seed=0, strategy=pred_dev
+2025-11-23 12:16:17 - WARNING - Dataset not found for subtask=3, language=zho, domain=finance, split=train. Skipping.
+2025-11-23 12:16:17 - WARNING - Skipping 3 zho finance seed 0 - dataset not found.
+2025-11-23 12:16:23 - INFO - Configuring GPU environment...
+2025-11-23 12:16:23 - INFO - GPU allocated memory: 0.00 GB
+2025-11-23 12:16:23 - INFO - GPU reserved memory: 0.00 GB
+2025-11-23 12:16:23 - INFO - ================================================================================
+2025-11-23 12:16:23 - INFO - Starting experiment: subtask=2, language=zho, domain=restaurant, seed=0, strategy=pred_dev
+2025-11-23 12:16:23 - INFO - Random seed set to 0 for reproducibility
+2025-11-23 12:16:23 - INFO - Starting training - Subtask: 2, Language: zho, Domain: restaurant, Seed: 0
+2025-11-23 12:16:23 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-23 12:16:23 - INFO - Training examples: 6050, Test examples: 300
+2025-11-23 12:16:41 - INFO - Example prompt (first training example):
+2025-11-23 12:16:41 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。如果没有明确的意见表达，意见术语可能为'NULL'。
+- 'valence'衡量积极或消极的程度。
+- 'arousal'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。
+
+对于以下文本，识别具有相应方面术语、意见术语、valence、arousal的所有情感元素，以元组列表的形式 [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...]。
+文本： 整體上菜速度非常快。
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
+2025-11-23 12:16:51 - INFO - Starting model training...
