@@ -268,29 +268,39 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
 def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
     """Convert tuples to the required output format for submission."""
     if subtask == 3:
-        # Quadruplet format
+        # Quadruplet format - deduplicate based on aspect_term, category, opinion_term
         quadruplets = []
+        seen_keys = set()
         for t in tuples_list:
             if len(t) == 5:
                 aspect, category, opinion, valence, arousal = t
-                quadruplets.append({
-                    "Aspect": aspect,
-                    "Category": category,
-                    "Opinion": opinion,
-                    "VA": f"{valence}#{arousal}"
-                })
+                # Create deduplication key
+                key = (aspect, category, opinion)
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    quadruplets.append({
+                        "Aspect": aspect,
+                        "Category": category,
+                        "Opinion": opinion,
+                        "VA": f"{valence}#{arousal}"
+                    })
         return {"ID": example_id, "Quadruplet": quadruplets}
     elif subtask == 2:
-        # Triplet format
+        # Triplet format - deduplicate based on aspect_term, opinion_term
         triplets = []
+        seen_keys = set()
         for t in tuples_list:
             if len(t) == 4:
                 aspect, opinion, valence, arousal = t
-                triplets.append({
-                    "Aspect": aspect,
-                    "Opinion": opinion,
-                    "VA": f"{valence}#{arousal}"
-                })
+                # Create deduplication key
+                key = (aspect, opinion)
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    triplets.append({
+                        "Aspect": aspect,
+                        "Opinion": opinion,
+                        "VA": f"{valence}#{arousal}"
+                    })
         return {"ID": example_id, "Triplet": triplets}
 
 
