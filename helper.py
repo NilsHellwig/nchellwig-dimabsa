@@ -358,16 +358,16 @@ def parse_label_string(label_string, subtask=3):
             # aspect_term, opinion_term, valence, arousal
             if array_based:
                 # Allow NULL for aspect_term and opinion_term, specific pattern for VA
-                pattern = r"\['(NULL|.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\]"
+                pattern = r"\['(NULL|.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\]"
             else:
-                pattern = r"\('(NULL|.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\)"
+                pattern = r"\('(NULL|.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\)"
         elif subtask == 3:
             # aspect_term, category, opinion_term, valence, arousal
             if array_based:
                 # Allow NULL for aspect_term and opinion_term, specific pattern for VA
-                pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\]"
+                pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\]"
             else:
-                pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\)"
+                pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\)"
         
         matches = re.match(pattern, t)
         if matches:

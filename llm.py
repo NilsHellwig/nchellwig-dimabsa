@@ -187,6 +187,8 @@ def train_and_evaluate(
         try:
             raw_output = output.outputs[0].text
             parsed_tuples = parse_label_string(raw_output, subtask=subtask)
+            if len(parsed_tuples) == 0:
+                logger.warning(f"No tuples parsed from output {idx}: {raw_output}")
 
             # Convert to output format for JSONL submission
             formatted_output = convert_tuples_to_output_format(
