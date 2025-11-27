@@ -8,10 +8,11 @@ DOMAINS = ["restaurant", "laptop", "hotel", "finance"]
 N_SEEDS_RUNS = 1
 STRATEGY = "train_split"  # "pred_dev" oder "train_split"
 N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
-EPOCHS = [5, 10, 15]
+EPOCHS = [5, 10]
+LLMs = ["unsloth/gemma-3-4b-it-bnb-4bit", "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit"]
 
 for seed_run in range(N_SEEDS_RUNS):
-    for llm in ["unsloth/gemma-3-4b-it-bnb-4bit", "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit"]:
+    for llm in LLMs:
         for num_epochs in EPOCHS:
             for language in LANGUAGES:
                 for subtask in SUBTASKS:

@@ -16,7 +16,8 @@ file_handler = logging.FileHandler('logs.txt', mode='a', encoding='utf-8')
 file_handler.setLevel(logging.INFO)
 
 # Create formatter
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+formatter = logging.Formatter(
+    '%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 file_handler.setFormatter(formatter)
 
 # Add handler to logger
@@ -141,6 +142,15 @@ aspect_categories = {
     }
 }
 
+def get_unique_aspect_categories(domain):
+    # return list of all combinations of entity#attribute for the given domain
+    entities = aspect_categories[domain]["entity"]
+    attributes = aspect_categories[domain]["attributes"]
+    combinations = [f"{entity}#{attribute}" for entity in entities for attribute in attributes]
+    # sort alphabetically
+    combinations.sort()
+    return combinations
+
 
 def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
     # Multilingual prompt templates
@@ -224,33 +234,34 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
             "elements_label": "情感元素："
         }
     }
-    
+
     # Get language-specific prompts, fallback to English
     lang_prompts = prompts.get(language, prompts["eng"])
-    
+
     prompt = lang_prompts["intro"] + "\n\n"
     prompt += "- " + lang_prompts["aspect_term"] + "\n"
-    
+
     if subtask == 3:
         entities = aspect_categories[domain]["entity"]
         attributes = aspect_categories[domain]["attributes"]
         entities_str = ", ".join(entities)
         attributes_str = ", ".join(attributes)
-        
-        prompt += "- " + lang_prompts["category_intro"].format(entities=entities_str, attributes=attributes_str) + "\n"
-    
+
+        prompt += "- " + lang_prompts["category_intro"].format(
+            entities=entities_str, attributes=attributes_str) + "\n"
+
     prompt += "- " + lang_prompts["opinion_term"] + "\n"
     prompt += "- " + lang_prompts["valence"] + "\n"
     prompt += "- " + lang_prompts["arousal"] + "\n\n"
     prompt += lang_prompts["scale"] + "\n\n"
-    
+
     if subtask == 3:
         prompt += lang_prompts["task_subtask3"] + "\n"
     else:
         prompt += lang_prompts["task_subtask2"] + "\n"
-    
+
     prompt += f"{lang_prompts['text_label']} {text}\n{lang_prompts['elements_label']}"
-    
+
     return prompt
 
 
@@ -332,16 +343,22 @@ def parse_label_string(label_string, subtask=3):
             if not t.endswith(")"):
                 t = t + ")"
 
+        # Define patterns that match get_regex_pattern_tuple
         if subtask == 2:
+            # aspect_term, opinion_term, valence, arousal
             if array_based:
-                pattern = r"\['(.+?)', '(.+?)', '(.+?)', '(.+?)'\]"
+                # Allow NULL for aspect_term and opinion_term, specific pattern for VA
+                pattern = r"\['(NULL|.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\]"
             else:
-                pattern = r"\('(.+?)', '(.+?)', '(.+?)', '(.+?)'\)"
+                pattern = r"\('(NULL|.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\)"
         elif subtask == 3:
+            # aspect_term, category, opinion_term, valence, arousal
             if array_based:
-                pattern = r"\['(.+?)', '(.+?)', '(.+?)', '(.+?)', '(.+?)'\]"
+                # Allow NULL for aspect_term and opinion_term, specific pattern for VA
+                pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\]"
             else:
-                pattern = r"\('(.+?)', '(.+?)', '(.+?)', '(.+?)', '(.+?)'\)"
+                pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '([1-9]+(?:\.[0-9][0-9])?)', '([1-9]+(?:\.[0-9][0-9])?)'\)"
+        
         matches = re.match(pattern, t)
         if matches:
             tuples_list.append(matches.groups())
@@ -372,3 +389,105 @@ def convert_label_objects_to_tuples(labels, subtask=3):
                 label["arousal"]
             ))
     return tuples_list
+
+
+def escape_except_space(text):
+    return re.sub(r'([.^$*+?{}\[\]\\|()])', r'\\\1', text)
+
+
+def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) -> list[str]:
+    """
+    Extract all valid phrases from a given text based on punctuation and formatting rules.
+
+    Args:
+        text (str): The input text.
+        max_tokens_in_phrase (int, optional): Maximum number of tokens allowed per phrase. 
+                                              If None, no limit is applied.
+    Returns:
+        list[str]: List of cleaned, unique phrases.
+    """
+    text = f" {text.strip()} "
+    phrases = []
+
+    # Collect split positions
+    split_positions = {0, len(text)}
+
+    # Define patterns for splits (merged for clarity)
+    split_patterns = [
+        r'(?<=\w)(?=[,\.!?;:\-\(\)])',  # before punctuation
+        r'\s+',                          # spaces
+        r'[\$"\'“”\/…]',                 # before/after special chars
+        r'(?<=[a-z])(?=[A-Z])',          # camel-case boundary
+        r'[^\x00-\x7F]',                 # non-ASCII chars
+    ]
+
+    # Collect split indices
+    for pattern in split_patterns:
+        for match in re.finditer(pattern, text):
+            split_positions.update({match.start(), match.end()})
+
+    split_positions = sorted(split_positions)
+
+    # Set token limit
+    if max_tokens_in_phrase is None:
+        max_tokens_in_phrase = len(text.split())
+
+    # Generate phrases
+    for i, start in enumerate(split_positions):
+        for end in split_positions[i + 1:]:
+            phrase = text[start:end].strip()
+            if not phrase:
+                continue
+            if len(phrase.split()) <= max_tokens_in_phrase:
+                phrases.append(phrase)
+
+    # Escape quotes and remove duplicates
+    clean_phrases = list(
+        {p.replace("'", r"\'").replace('"', r'\"') for p in phrases})
+
+    return clean_phrases
+
+
+def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3):
+    valid_phrases = find_valid_phrases_list(text)
+
+    # Definiere considered_aspects basierend auf subtask
+    if subtask == 3:
+        # Subtask 3: aspect_term, category, opinion_term, valence, arousal
+        considered_aspects = ["aspect term", "aspect category", "opinion term", "valence", "arousal"]
+    elif subtask == 2:
+        # Subtask 2: aspect_term, opinion_term, valence, arousal
+        considered_aspects = ["aspect term", "opinion term", "valence", "arousal"]
+    else:
+        # Subtask 1: aspect_term, category, opinion_term, valence, arousal (gleich wie 3)
+        considered_aspects = ["aspect term", "aspect category", "opinion term", "valence", "arousal"]
+
+    # Tuple Patternteile
+    category_pattern = "|".join(cat for cat in unique_aspect_categories)
+    polarity_pattern = "|".join(polarities)
+
+    # Valence und Arousal Pattern 
+    va_pattern = r"[1-9]+(?:\.[0-9][0-9])?"
+
+    # Tuple pattern
+    tuple_pattern_parts = []
+    for aspect in considered_aspects:
+        if aspect == "aspect term":
+            tuple_pattern_parts += [
+                rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
+        elif aspect == "aspect category":
+            tuple_pattern_parts += [rf"'({category_pattern})'"]
+        elif aspect == "sentiment polarity":
+            tuple_pattern_parts += [rf"'({polarity_pattern})'"]
+        elif aspect == "opinion term":
+            tuple_pattern_parts += [
+                rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
+        elif aspect == "valence":
+            tuple_pattern_parts += [rf"'({va_pattern})'"]
+        elif aspect == "arousal":
+            tuple_pattern_parts += [rf"'({va_pattern})'"]
+
+    tuple_pattern_str = rf"\(" + rf", ".join(tuple_pattern_parts) + rf"\)"
+    tuple_pattern_str = rf"\[{tuple_pattern_str}(, {tuple_pattern_str})*\]\n"
+
+    return tuple_pattern_str

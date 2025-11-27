@@ -6,6 +6,7 @@ from unsloth.chat_templates import train_on_responses_only
 from trl import SFTTrainer, SFTConfig
 from vllm import LLM, SamplingParams
 from vllm.lora.request import LoRARequest
+from vllm.sampling_params import StructuredOutputsParams
 from unsloth import FastModel
 import torch
 import numpy as np
@@ -39,10 +40,13 @@ def train_and_evaluate(
 ):
     # Set random seed for reproducibility
     set_seed(seed)
-    
-    logger.info(f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed}")
-    logger.info(f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
-    logger.info(f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}")
+
+    logger.info(
+        f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed}")
+    logger.info(
+        f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
+    logger.info(
+        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}")
 
     model, tokenizer = FastModel.from_pretrained(
         model_name=model_name_or_path,
@@ -64,12 +68,13 @@ def train_and_evaluate(
         bias="none",
         random_state=seed,
     )
-    
+
     for example in train_data_raw:
         if "label" in example:
             # Convert label objects to tuples
-            example["label"] = convert_label_objects_to_tuples(example["label"], subtask=subtask)
-        
+            example["label"] = convert_label_objects_to_tuples(
+                example["label"], subtask=subtask)
+
         prompt = get_prompt(
             text=example["text"],
             subtask=subtask,
@@ -79,7 +84,7 @@ def train_and_evaluate(
         example["text"] = "<start_of_turn>user\n" + prompt + \
             "<end_of_turn>\n<start_of_turn>model\n" + \
             str(example["label"]) + "<end_of_turn>"
-    
+
     # Log first example prompt for debugging
     logger.info("Example prompt (first training example):")
     logger.info(f"{example['text']}...")
@@ -140,8 +145,6 @@ def train_and_evaluate(
     )
 
     # Create sampling parameters
-    sampling_params = SamplingParams(
-        temperature=0.0, max_tokens=max_seq_length)
 
     logger.info(f"Evaluating {len(test_data_raw)} examples")
 
@@ -158,6 +161,19 @@ def train_and_evaluate(
             "<end_of_turn>\n<start_of_turn>model\n"
         prompts.append(prompt)
 
+    sampling_params_list = []
+    for i, _ in enumerate(prompts):
+        # unique_aspect_categories is the list of all aspect categories in the dataset
+        unique_aspect_categories = get_unique_aspect_categories(domain)
+        polarities = ["positive", "negative", "neutral"]
+        pattern = get_regex_pattern_tuple(unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
+        sampling_params = SamplingParams(
+            temperature=0.0,
+            max_tokens=max_seq_length,
+            #structured_outputs=StructuredOutputsParams(regex=pattern)
+        )
+        sampling_params_list.append(sampling_params)
+
     # Generate with the LoRA adapter
     outputs = llm.generate(
         prompts=prompts,
@@ -171,11 +187,11 @@ def train_and_evaluate(
         try:
             raw_output = output.outputs[0].text
             parsed_tuples = parse_label_string(raw_output, subtask=subtask)
-            
+
             # Convert to output format for JSONL submission
             formatted_output = convert_tuples_to_output_format(
-                parsed_tuples, 
-                test_data_raw[idx]["id"], 
+                parsed_tuples,
+                test_data_raw[idx]["id"],
                 subtask=subtask
             )
             all_preds_formatted.append(formatted_output)
@@ -183,9 +199,12 @@ def train_and_evaluate(
             logger.warning(f"Error parsing output {idx}: {e}")
             # Empty prediction in output format
             if subtask == 3:
-                all_preds_formatted.append({"ID": test_data_raw[idx]["id"], "Quadruplet": []})
+                all_preds_formatted.append(
+                    {"ID": test_data_raw[idx]["id"], "Quadruplet": []})
             else:
-                all_preds_formatted.append({"ID": test_data_raw[idx]["id"], "Triplet": []})
-    
-    logger.info(f"Evaluation completed - Generated {len(all_preds_formatted)} predictions")
+                all_preds_formatted.append(
+                    {"ID": test_data_raw[idx]["id"], "Triplet": []})
+
+    logger.info(
+        f"Evaluation completed - Generated {len(all_preds_formatted)} predictions")
     return all_preds_formatted
