@@ -32,17 +32,19 @@ def train_and_evaluate(
     model_name_or_path="unsloth/gemma-3-27b-it-bnb-4bit",
     num_train_epochs=5,
     train_batch_size=4,
-    max_seq_length=512,
+    max_seq_length=1024,
     learning_rate=2e-4,
-    seed=42,
+    seed_run=42,
     lora_rank=64,
     lora_alpha=16,
+    strategy="pred_dev",
+    split_idx=0,
 ):
     # Set random seed for reproducibility
-    set_seed(seed)
+    set_seed(seed_run)
 
     logger.info(
-        f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed}")
+        f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed_run}")
     logger.info(
         f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
     logger.info(
@@ -66,7 +68,7 @@ def train_and_evaluate(
         lora_alpha=lora_alpha,
         lora_dropout=0,
         bias="none",
-        random_state=seed,
+        random_state=seed_run,
     )
 
     for example in train_data_raw:
@@ -112,7 +114,7 @@ def train_and_evaluate(
             optim="adamw_8bit",
             weight_decay=0.001,
             lr_scheduler_type="linear",
-            seed=seed,
+            seed=seed_run,
             report_to="none",
         ),
     )
@@ -141,14 +143,22 @@ def train_and_evaluate(
         tokenizer=model_name_or_path,
         enable_lora=True,
         max_lora_rank=lora_rank,
-        gpu_memory_utilization=0.7
+        gpu_memory_utilization=0.7,
+        seed=seed_run,
+        max_num_seqs=256,
+        max_model_len=max_seq_length,
     )
 
     # Create sampling parameters
 
     logger.info(f"Evaluating {len(test_data_raw)} examples")
 
-    # Prepare prompts for batch inference
+    evaluate_model(test_data_raw, subtask, language,
+                   domain, llm, max_seq_length, seed_run, strategy, model_name_or_path, split_idx=split_idx)
+
+
+def evaluate_model(test_data_raw, subtask, language, domain, llm, max_seq_length, seed_run, strategy, model_name_or_path, split_idx=0):
+
     prompts = []
     for example in test_data_raw:
         prompt = get_prompt(
@@ -160,27 +170,133 @@ def train_and_evaluate(
         prompt = "<start_of_turn>user\n" + prompt + \
             "<end_of_turn>\n<start_of_turn>model\n"
         prompts.append(prompt)
+        
+    unique_aspect_categories = get_unique_aspect_categories(domain)
+    polarities = ["positive", "negative", "neutral"]
+
+    # 1a. Prediction mit temp=0 ohne guided decoding
+    # 1b. Prediction mit temp=0 mit guided decoding
 
     sampling_params_list = []
     for i, _ in enumerate(prompts):
         # unique_aspect_categories is the list of all aspect categories in the dataset
-        unique_aspect_categories = get_unique_aspect_categories(domain)
-        polarities = ["positive", "negative", "neutral"]
-        pattern = get_regex_pattern_tuple(unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
+        pattern = get_regex_pattern_tuple(
+            unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
         sampling_params = SamplingParams(
             temperature=0.0,
-            max_tokens=max_seq_length,
-            structured_outputs=StructuredOutputsParams(regex=pattern)
+            max_tokens=512,
+            structured_outputs=StructuredOutputsParams(regex=pattern),
+            seed=seed_run
         )
         sampling_params_list.append(sampling_params)
 
     # Generate with the LoRA adapter
-    outputs = llm.generate(
+    outputs_1a = llm.generate(
         prompts=prompts,
-        sampling_params=sampling_params_list,
+        sampling_params=SamplingParams(
+            temperature=0.0,
+            max_tokens=512,
+            seed=seed_run
+        ),
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
 
+    outputs_1b = llm.generate(
+        prompts=prompts,
+        sampling_params=sampling_params_list,
+        lora_request=LoRARequest("adapter", 1, "model_temp"),
+    )
+
+    outputs_1a = format_predictions(outputs_1a, subtask, test_data_raw)
+    outputs_1b = format_predictions(outputs_1b, subtask, test_data_raw)
+
+    # 2a. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen ohne guided decoding
+    prompts_2a = prompts * 5
+    sampling_params_2a = []
+    for k in range(5):
+        for _ in prompts:
+            sampling_params_2a.append(SamplingParams(
+                temperature=0.8,
+                max_tokens=512,
+                seed=k
+            ))
+    
+    outputs_2a = llm.generate(
+        prompts=prompts_2a,
+        sampling_params=sampling_params_2a,
+        lora_request=LoRARequest("adapter", 1, "model_temp")
+    )
+        
+    # 2b. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen mit guided decoding
+    # Pattern einmal pro Prompt berechnen und für alle 5 Runs wiederverwenden
+    patterns = []
+    for i, _ in enumerate(prompts):
+        pattern = get_regex_pattern_tuple(
+            unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
+        patterns.append(pattern)
+    
+    prompts_2b = prompts * 5
+    sampling_params_2b = []
+    for k in range(5):
+        for i, _ in enumerate(prompts):
+            sampling_params_2b.append(SamplingParams(
+                temperature=0.8,
+                max_tokens=512,
+                structured_outputs=StructuredOutputsParams(regex=patterns[i]),
+                seed=k
+            ))
+    
+    outputs_2b = llm.generate(
+        prompts=prompts_2b,
+        sampling_params=sampling_params_2b,
+        lora_request=LoRARequest("adapter", 1, "model_temp")
+    )
+
+    outputs_2a = format_predictions(outputs_2a, subtask, test_data_raw * 5)
+    outputs_2b = format_predictions(outputs_2b, subtask, test_data_raw * 5)
+
+    # create results directory if not exists
+    if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
+        os.makedirs(
+            f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}")
+
+    if strategy == "train_split":
+        path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_no_guidance.jsonl"
+        with open(path_1a, "w") as f:
+            json.dump(outputs_1a, f, ensure_ascii=False, indent=4)
+        path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_with_guidance.jsonl"
+        with open(path_1b, "w") as f:
+            json.dump(outputs_1b, f, ensure_ascii=False, indent=4)
+
+        for i in range(5):
+            path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
+            with open(path_2a, "w") as f:
+                json.dump(
+                    outputs_2a[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+            path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
+            with open(path_2b, "w") as f:
+                json.dump(
+                    outputs_2b[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+    elif strategy == "pred_dev":
+        path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
+        with open(path_1a, "w") as f:
+            json.dump(outputs_1a, f, ensure_ascii=False, indent=4)
+        path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_with_guidance.jsonl"
+        with open(path_1b, "w") as f:
+            json.dump(outputs_1b, f, ensure_ascii=False, indent=4)
+
+        for i in range(5):
+            path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
+            with open(path_2a, "w") as f:
+                json.dump(
+                    outputs_2a[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+            path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_with_guidance_run{i}.jsonl"
+            with open(path_2b, "w") as f:
+                json.dump(
+                    outputs_2b[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+
+
+def format_predictions(outputs, subtask, test_data_raw):
     all_preds_formatted = []
 
     for idx, output in enumerate(outputs):
@@ -188,7 +304,8 @@ def train_and_evaluate(
             raw_output = output.outputs[0].text
             parsed_tuples = parse_label_string(raw_output, subtask=subtask)
             if len(parsed_tuples) == 0:
-                logger.warning(f"No tuples parsed from output {idx}: {raw_output}")
+                logger.warning(
+                    f"No tuples parsed from output {idx}: {raw_output}")
 
             # Convert to output format for JSONL submission
             formatted_output = convert_tuples_to_output_format(
@@ -207,6 +324,4 @@ def train_and_evaluate(
                 all_preds_formatted.append(
                     {"ID": test_data_raw[idx]["id"], "Triplet": []})
 
-    logger.info(
-        f"Evaluation completed - Generated {len(all_preds_formatted)} predictions")
     return all_preds_formatted

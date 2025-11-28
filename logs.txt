@@ -1,0 +1,972 @@
+2025-11-28 07:59:22 - INFO - Configuring GPU environment...
+2025-11-28 07:59:22 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 07:59:22 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 07:59:22 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 07:59:22 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 07:59:22 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 07:59:22 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 07:59:55 - INFO - Configuring GPU environment...
+2025-11-28 07:59:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 07:59:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 07:59:56 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 07:59:56 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 07:59:56 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 07:59:56 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 08:00:09 - INFO - Example prompt (first training example):
+2025-11-28 08:00:09 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: i wish i could like this place more , and i wish someone would retrain the staff .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('place', 'RESTAURANT#GENERAL', 'NULL', '4.62', '5.12'), ('staff', 'SERVICE#GENERAL', 'NULL', '4.62', '5.12')]<end_of_turn>...
+2025-11-28 08:00:18 - INFO - Starting model training...
+2025-11-28 08:02:18 - INFO - Configuring GPU environment...
+2025-11-28 08:02:19 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:02:19 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:02:19 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:02:19 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 08:02:19 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:02:19 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 08:02:32 - INFO - Example prompt (first training example):
+2025-11-28 08:02:32 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 08:02:42 - INFO - Starting model training...
+2025-11-28 08:10:23 - INFO - Training completed
+2025-11-28 08:10:23 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 08:10:25 - INFO - Initializing vLLM for evaluation...
+2025-11-28 08:11:43 - INFO - Configuring GPU environment...
+2025-11-28 08:11:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:11:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:11:44 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:11:44 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 08:11:44 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:11:44 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 08:11:57 - INFO - Example prompt (first training example):
+2025-11-28 08:11:57 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 08:12:06 - INFO - Starting model training...
+2025-11-28 08:19:47 - INFO - Training completed
+2025-11-28 08:19:47 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 08:19:49 - INFO - Initializing vLLM for evaluation...
+2025-11-28 08:20:41 - INFO - Evaluating 48 examples
+2025-11-28 08:31:22 - INFO - Configuring GPU environment...
+2025-11-28 08:31:23 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:31:23 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:31:23 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:31:23 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 08:31:23 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:31:23 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 08:31:37 - INFO - Example prompt (first training example):
+2025-11-28 08:31:37 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 08:31:46 - INFO - Starting model training...
+2025-11-28 08:39:24 - INFO - Training completed
+2025-11-28 08:39:24 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 08:39:27 - INFO - Initializing vLLM for evaluation...
+2025-11-28 08:40:19 - INFO - Evaluating 48 examples
+2025-11-28 08:40:27 - INFO - Configuring GPU environment...
+2025-11-28 08:40:27 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:40:27 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:40:27 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:40:27 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 08:40:27 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:40:27 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 08:41:54 - INFO - Configuring GPU environment...
+2025-11-28 08:41:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:41:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:41:54 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:41:54 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 08:41:54 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:41:54 - INFO - Training examples: 64, Test examples: 48
+2025-11-28 08:42:08 - INFO - Example prompt (first training example):
+2025-11-28 08:42:08 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Но это можно компенсировать весьма вежливым обслуживанием.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживанием', 'SERVICE#GENERAL', 'весьма вежливым', '6.88', '6.62')]<end_of_turn>...
+2025-11-28 08:42:17 - INFO - Starting model training...
+2025-11-28 08:42:47 - INFO - Training completed
+2025-11-28 08:42:47 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 08:42:49 - INFO - Initializing vLLM for evaluation...
+2025-11-28 08:43:42 - INFO - Evaluating 48 examples
+2025-11-28 08:56:09 - INFO - Configuring GPU environment...
+2025-11-28 08:56:10 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:56:10 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:56:10 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:56:10 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 08:56:10 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:56:10 - INFO - Training examples: 64, Test examples: 200
+2025-11-28 08:56:26 - INFO - Example prompt (first training example):
+2025-11-28 08:56:26 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: when asked about how a certain dish was prepared in comparison to a similar at other thai restaurants , he replied this is not mcdonald ' s , every place makes things differently
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('NULL', 'SERVICE#GENERAL', 'NULL', '5.50', '5.50')]<end_of_turn>...
+2025-11-28 08:56:35 - INFO - Starting model training...
+2025-11-28 08:57:02 - INFO - Training completed
+2025-11-28 08:57:02 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 08:57:04 - INFO - Initializing vLLM for evaluation...
+2025-11-28 08:57:56 - INFO - Evaluating 200 examples
+2025-11-28 08:58:07 - WARNING - No tuples parsed from output 83: [('salsa', 'FOOD#QUALITY', 'flavorless', '-3.00', '4.00')]
+2025-11-28 08:58:07 - WARNING - No tuples parsed from output 85: [('service', 'SERVICE#GENERAL', 'bad', '-3.50', '7.00')]
+2025-11-28 08:58:07 - WARNING - No tuples parsed from output 194: [('rolls', 'FOOD#QUALITY', 'disappointed', '-3.00', '6.00')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 83: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 91: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 194: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 283: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 291: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 394: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 483: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.55')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 491: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 594: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 683: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 691: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 794: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 883: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 891: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 994: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1083: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1091: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1194: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1283: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1291: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1394: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1483: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1491: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1594: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1683: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1691: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1794: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1883: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1891: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 1994: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2083: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2091: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2194: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2283: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2291: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2394: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2483: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2491: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2594: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2683: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2691: [('food', 'FOOD#QUALITY', 'terrible', '-2.50', '7.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2794: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2883: [('salsa', 'FOOD#QUALITY', 'flavorless', '-4.22', '6.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2891: [('food', 'FOOD#QUALITY', 'terrible', '-1.50', '6.50'), ('manager', 'SERVICE#GENERAL', 'shockingly rude', '-6.00', '7.50')]
+2025-11-28 08:58:54 - WARNING - No tuples parsed from output 2994: [('rolls', 'FOOD#QUALITY', 'disappointed', '-1.50', '6.50')]
+2025-11-28 08:59:01 - INFO - Configuring GPU environment...
+2025-11-28 08:59:01 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:59:01 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:59:01 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 08:59:01 - INFO - Experiment completed successfully
+2025-11-28 08:59:01 - INFO - ================================================================================
+2025-11-28 08:59:07 - INFO - Configuring GPU environment...
+2025-11-28 08:59:07 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 08:59:07 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 08:59:07 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 08:59:07 - INFO - Starting training - Subtask: 3, Language: tat, Domain: restaurant, Seed: 0
+2025-11-28 08:59:07 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 08:59:07 - INFO - Training examples: 64, Test examples: 48
+2025-11-28 08:59:21 - INFO - Example prompt (first training example):
+2025-11-28 08:59:21 - INFO - <start_of_turn>user
+Түбәндәге хис-кичерешләр элементлары билгеләмәсенә туры килеп:
+
+- «Аспект термины» - текстта кулланучы фикер белдерә алырлык продукт яки хезмәтнең билгеле бер үзенчәлеген, атрибутын яки аспектын күрсәтүче төгәл сүз яки фраза. Аспект термины ачык булмаган аспект өчен «NULL» булырга мөмкин.
+- «Аспект категориясе» аспект караган категориягә мөрәҗәгать итә. Бу «ENTITY#ATTRIBUTE» форматындагы субъект һәм атрибутның берләшмәсе. Мөмкин субъектлар: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Мөмкин атрибутлар: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Фикер термины» - текстта кулланучының продукт яки хезмәтнең билгеле бер аспекты яки үзенчәлеге турында белдергән хисләренә яки мөнәсәбәтенә мөрәҗәгать итүче төгәл сүз яки фраза. Ачык фикер белдерү булмаса, фикер термины «NULL» булырга мөмкин.
+- «valence score» уңай яки тискәре дәрәҗәне үлчи.
+- «arousal score» хисләр интенсивлыгын үлчи.
+
+1.00 балл бик тискәре valence яки бик түбән arousal күрсәтә, 9.00 бик уңай valence яки бик югары arousal күрсәтә, ә 5.00 нейтраль valence яки уртача arousal белдерә. valence score һәм arousal score икесе дә төгәл ике утырмалы саннарга түгәрәкләнергә тиеш.
+
+Түбәндәге текст өчен барлык хис-кичерешләр элементларын тиешле аспект терминнары, аспект категорияләре, фикер терминнары, valence score, arousal score белән кортежлар исемлеге рәвешендә тану [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Ләкин моны шактый әдәпле хезмәт күрсәтү белән компенсацияләргә мөмкин.
+Хис-кичерешләр элементлары:<end_of_turn>
+<start_of_turn>model
+[('хезмәт күрсәтү', 'SERVICE#GENERAL', 'шактый әдәпле', '6.88', '6.62')]<end_of_turn>...
+2025-11-28 08:59:29 - INFO - Starting model training...
+2025-11-28 09:00:10 - INFO - Training completed
+2025-11-28 09:00:10 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 09:00:12 - INFO - Initializing vLLM for evaluation...
+2025-11-28 09:03:03 - INFO - Configuring GPU environment...
+2025-11-28 09:03:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:03:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:03:04 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:03:04 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:03:04 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:03:04 - INFO - Training examples: 64, Test examples: 48
+2025-11-28 09:03:17 - INFO - Example prompt (first training example):
+2025-11-28 09:03:17 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Но это можно компенсировать весьма вежливым обслуживанием.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживанием', 'SERVICE#GENERAL', 'весьма вежливым', '6.88', '6.62')]<end_of_turn>...
+2025-11-28 09:03:26 - INFO - Starting model training...
+2025-11-28 09:03:43 - INFO - Configuring GPU environment...
+2025-11-28 09:03:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:03:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:03:44 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:03:44 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:03:44 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:03:44 - INFO - Training examples: 64, Test examples: 48
+2025-11-28 09:03:57 - INFO - Example prompt (first training example):
+2025-11-28 09:03:57 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Но это можно компенсировать весьма вежливым обслуживанием.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживанием', 'SERVICE#GENERAL', 'весьма вежливым', '6.88', '6.62')]<end_of_turn>...
+2025-11-28 09:04:05 - INFO - Starting model training...
+2025-11-28 09:04:36 - INFO - Training completed
+2025-11-28 09:04:36 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 09:04:38 - INFO - Initializing vLLM for evaluation...
+2025-11-28 09:05:29 - INFO - Evaluating 48 examples
+2025-11-28 09:09:35 - WARNING - No tuples parsed from output 1: [('Ценник', 'RESTAURANT#PRICES', 'демократичный', '7.33', '6.67'), ('горшочек солянки', 'RESTAURANT#PRICES', '200', '6.67', '6.67'), ('горилка Немиров', 'RESTAURANT#PRICES', '80', '6.67', '6.67'), ('бокал вина', 'RESTAURANT#PRICES', '150', '6.67', '6.67'), ('сигареты с зажигалкой Кент', 'RESTAURANT#PRICES', '100', '6.67', '6.67'), ('пиво', 'RESTAURANT#PRICES', '150', '6.67', '6.67'), ('бутылочное по 130', 'RESTAURANT#PRICES', '130', '6.67', '6.67'), ('общий счет', 'RESTAURANT#PRICES', '147
+2025-11-28 09:09:35 - WARNING - No tuples parsed from output 1: [('Ценник', 'RESTAURANT#PRICES', 'демократичный', '7.33', '6.67'), ('горшочек солянки', 'RESTAURANT#PRICES', '200', '6.67', '6.67'), ('горилка Немиров', 'RESTAURANT#PRICES', '800', '6.67', '6.67'), ('бокал вина', 'RESTAURANT#PRICES', '150', '6.67', '6.67'), ('сигареты с зажигалкой Кент', 'RESTAURANT#PRICES', '130', '6.67', '6.67'), ('пиво', 'RESTAURANT#PRICES', '150', '6.67', '6.67'), ('чай', 'RESTAURANT#PRICES', '1470', '6.67', '6.67'), ('алкоголем', 'RESTAURANT#PRICES', '1470', '6.6
+2025-11-28 09:18:55 - INFO - Configuring GPU environment...
+2025-11-28 09:18:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:18:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:18:56 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:18:56 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 09:18:56 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:18:56 - INFO - Training examples: 64, Test examples: 200
+2025-11-28 09:19:13 - INFO - Example prompt (first training example):
+2025-11-28 09:19:13 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: when asked about how a certain dish was prepared in comparison to a similar at other thai restaurants , he replied this is not mcdonald ' s , every place makes things differently
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('NULL', 'SERVICE#GENERAL', 'NULL', '5.50', '5.50')]<end_of_turn>...
+2025-11-28 09:19:22 - INFO - Starting model training...
+2025-11-28 09:19:49 - INFO - Training completed
+2025-11-28 09:19:49 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 09:19:52 - INFO - Initializing vLLM for evaluation...
+2025-11-28 09:20:47 - INFO - Configuring GPU environment...
+2025-11-28 09:20:47 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:20:47 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:20:47 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:20:47 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:20:47 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:20:47 - INFO - Training examples: 64, Test examples: 48
+2025-11-28 09:21:04 - INFO - Configuring GPU environment...
+2025-11-28 09:21:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:21:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:21:04 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:21:04 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:21:04 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:21:04 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 09:21:17 - INFO - Example prompt (first training example):
+2025-11-28 09:21:17 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 09:21:27 - INFO - Starting model training...
+2025-11-28 09:29:51 - INFO - Training completed
+2025-11-28 09:29:51 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 09:29:54 - INFO - Initializing vLLM for evaluation...
+2025-11-28 09:30:44 - INFO - Evaluating 48 examples
+2025-11-28 09:34:48 - WARNING - No tuples parsed from output 1: [('Ценник', 'RESTAURANT#PRICES', 'демократичный', '6.8', '6.2'), ('горшочек солянки', 'RESTAURANT#PRICES', '200 р', '6.5', '6.2'), ('горилка Немиров', 'RESTAURANT#PRICES', '80 р', '6.5', '6.2'), ('бокал вина', 'RESTAURANT#PRICES', '150 р', '6.5', '6.2'), ('сигареты с зажигалкой Кент', 'RESTAURANT#PRICES', '100 р', '6.5', '6.2'), ('пиво', 'RESTAURANT#PRICES', '150 р', '6.5', '6.2'), ('чай', 'RESTAURANT#PRICES', 'NULL', '5', '3.5'), ('алкоголь', 'RESTAURANT#PRICES', 'NULL', '6.5', '6.2'), ('общий счет', 'RESTAURANT#PR
+2025-11-28 09:42:50 - INFO - Configuring GPU environment...
+2025-11-28 09:42:51 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:42:51 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:42:51 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:42:51 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 09:42:51 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:42:51 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 09:49:01 - INFO - Configuring GPU environment...
+2025-11-28 09:49:01 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:49:01 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:49:01 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:49:01 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:49:01 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:49:01 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 09:49:16 - INFO - Example prompt (first training example):
+2025-11-28 09:49:16 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 09:49:25 - INFO - Starting model training...
+2025-11-28 09:54:32 - INFO - Configuring GPU environment...
+2025-11-28 09:54:32 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 09:54:32 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 09:54:32 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 09:54:32 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 09:54:32 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 09:54:32 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 09:54:45 - INFO - Example prompt (first training example):
+2025-11-28 09:54:45 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 09:54:55 - INFO - Starting model training...
+2025-11-28 09:54:55 - INFO - Training completed
+2025-11-28 09:54:55 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 09:54:57 - INFO - Initializing vLLM for evaluation...
+2025-11-28 09:55:46 - INFO - Evaluating 48 examples
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 0: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('еда', 'FOOD#QUALITY', 'понравилась', 7.50, 6.00), ('повар', 'SERVICE#GENERAL', 'чудо', 8.00, 7.00), ('меню', 'FOOD#PRICES', 'за 1500', 6.00, 5.00), ('блюдо', 'FOOD#QUALITY', 'заказали', 7.00, 6.00), ('салат', 'FOOD#MISCELLANEOUS', 'заказали', 7.00, 6.00), ('угощения', 'FOOD#MISCELLANEOUS', 'было бы достаточно', 7.50, 5.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 1: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('Ценник', 'RESTAURANT#PRICES', 'демократичный', 7.50, 6.00), ('горшочек солянки', 'RESTAURANT#PRICES', '200 р', 6.00, 5.00), ('горилка Немиров', 'RESTAURANT#PRICES', '80 р/800р', 6.00, 5.00), ('бокал вина', 'RESTAURANT#PRICES', '150 р', 6.50, 5.50), ('сигареты с зажигалкой Кент', 'RESTAURANT#PRICES', '100 р', 6.00, 5.00), ('пиво', 'RESTAURANT#PRICES', '150 р', 6.50, 5.50), ('бутылочное по 130', 'RESTAURANT#PRICES', '130', 7.00, 6.00), ('общий счет', 'RESTAURANT#PRICES', '1470 р', 5.50, 5.00), ('чай', 'RESTAURANT#MISCELLANEOUS', 'NULL', 5.00, 5.00)]
+
+**Пояснения:**
+
+*   **Ценник:** Общая тема обсуждения цен.
+*   **PRICES:**  Категория аспекта, относящаяся к ценам.
+*   **демократичный:**  Выражение мнения о ценах.
+*   **горшочек солянки, горилка Немиров, бокал вина, сигареты с зажигалкой Кент, пиво, бутылочное по 130, общий счет:**  Конкретные цены и напитки, о которых говорится в тексте.
+*   **PRICES:** Категория аспекта, относящаяся к ценам.
+*   **200
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 2: Вот анализ элементов настроения для предоставленного текста в виде списка кортежей:
+
+[('Еда', 'FOOD#QUALITY', 'довольны', 7.50, 6.00)]
+[('салаты', 'FOOD#QUALITY', 'всегда', 7.50, 6.00)]
+[('хачапури', 'FOOD#QUALITY', 'безумно вкусные', 8.50, 7.50)]
+[('лагман', 'FOOD#QUALITY', 'очень достойный', 7.50, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 3: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('персонал', 'SERVICE#GENERAL', 'очень внимательным и вежливым', 8.50, 7.20)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 4: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('menu', 'RESTAURANT#GENERAL', 'nothing new', '5.00', '3.00')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 5: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('menu', 'RESTAURANT#MISCELLANEOUS', 'add new dishes', '7.50', '6.20')]
+
+**Объяснение:**
+
+*   **Aspect Term:** "menu" - это конкретная особенность ресторана, о которой пользователь может выразить мнение.
+*   **ENTITY#ATTRIBUTE:** "RESTAURANT#MISCELLANEOUS" -  "RESTAURANT" - это сущность, а "MISCELLANEOUS" - это атрибут (добавление новых блюд - это дополнительная опция).
+*   **Opinion Term:** "add new dishes" - это мнение пользователя о меню.
+*   **Valence Score:** 7.50 -  Предложение добавить новые блюда воспринимается как положительное, но не является чрезвычайно позитивным.
+*   **Arousal Score:** 6.20 -  Это предложение вызывает умеренную заинтересованность или вовлеченность.
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 6: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('место', 'LOCATION', 'тихий', 7.50, 6.00), ('парковка', 'LOCATION', 'есть', 7.00, 5.00), ('интерьер', 'AMBIENCE', 'уютный', 8.50, 7.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 7: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('RESTAURANT', 'NULL', 'Ходим сюда', 7.00, 6.00), ('FOOD', 'GENERAL', 'съесть', 7.00, 6.00), ('FOOD', 'QUALITY', 'хорошее мясо', 8.00, 7.00), ('DRINKS', 'NULL', 'попить вино', 8.00, 7.00), ('SERVICE', 'NULL', 'поболтать', 6.00, 5.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 8: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('официанты', 'SERVICE#GENERAL', 'Очень внимательные', 7.50, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 9: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('ждать', 'RESTAURANT', 'не понравилось', '1.00', '3.50')]
+[('посуда', 'RESTAURANT', 'не убирали', '1.00', '3.00')]
+[('большое количество людей', 'RESTAURANT', 'видимо', '1.00', '2.50')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 10: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('стейк', 'RESTAURANT#QUALITY', 'очень вкусно приготовлено', '7.50', '6.80')]
+[('повар', 'RESTAURANT#SERVICE', 'очень вкусно приготовлено', '7.50', '6.80')]
+[('девушка', 'NULL#MISCELLANEOUS', 'за совет', '6.00', '4.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 11: Вот элементы настроения, извлеченные из текста "Порция была очень приличной!":
+
+[('Порция', 'FOOD', 'очень приличная', '7.50', '6.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 12: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('диванчики', 'Furniture#Comfort', 'сделать', '5.50', '3.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 13: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('interieur', 'AMBIENCE#GENERAL', 'ничего особенного', '5.00', '3.00')]
+[('music', 'AMBIENCE#MISCELLANEOUS', 'мы специально хотели без музыки', '6.00', '2.00')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 14: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('Еда', 'FOOD#QUALITY', 'понравилась', 7.50, 6.20)]
+[('десерт', 'FOOD#STYLE_OPTIONS', 'особенно', 8.80, 7.90)]
+[('наполеон', 'FOOD#STYLE_OPTIONS', 'вкусный', 9.00, 7.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 15: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('Администратор', 'SERVICE', 'составила меню', '7.50', '6.20'), ('пожелания', 'SERVICE', 'учла', '8.20', '5.80'), ('советы', 'SERVICE', 'дала советы', '7.90', '6.50')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 16: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('ждать', 'RESTAURANT#MISCELLANEOUS', 'очень долго', '6.25', '4.50')]
+
+**Объяснение:**
+
+*   **Aspect Term:** "ждать" - это ключевое слово, описывающее опыт ожидания.
+*   **ENTITY#ATTRIBUTE:** "RESTAURANT#MISCELLANEOUS" -  "RESTAURANT" - это сущность (ресторан), а "MISCELLANEOUS" - атрибут (неопределенный, но описывающий процесс, связанный с обслуживанием).
+*   **Opinion Term:** "очень долго" - это выражение мнения о продолжительности ожидания.
+*   **Valence Score:** 6.25 -  "очень долго" подразумевает негативный опыт, поэтому оценка близка к нейтральной, но с небольшим негативным оттенком.
+*   **Arousal Score:** 4.50 -  Ожидание может вызывать некоторое волнение или беспокойство, но не является чрезвычайно интенсивной эмоцией.
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 17: Вот элементы настроения, извлеченные из текста "Еда всегда вкусная", в виде списка кортежей:
+
+[('Еда', 'FOOD#QUALITY', 'вкусная', 7.50, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 18: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('черный цезарь', 'FOOD#QUALITY', 'очень приличный', 7.50, 6.20)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 19: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('Обслуживание', 'SERVICE', 'замечательное', '7.50', '6.20')]
+[('девушки официантки', 'SERVICE', 'молодцы', '8.80', '7.00')]
+[('еда', 'FOOD', 'помогли упаковать', '7.20', '5.50')]
+[('цветы', 'MISCELLANEOUS', 'помогли упаковать', '7.80', '5.80')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 20: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('ресторан', 'RESTAURANT', 'рекомендовать', '7.50', '6.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 21: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('салат цезарь', 'FOOD', 'круто', '7.50', '6.20')]
+[('куски', 'FOOD', 'круто', '7.50', '6.20')]
+[('листья салата', 'FOOD', 'NULL', '5.00', '3.00')]
+[('помидор', 'FOOD', 'NULL', '5.00', '3.00')]
+[('полоски курицы', 'FOOD', 'NULL', '6.00', '5.50')]
+[('багета', 'FOOD', 'NULL', '4.00', '2.50')]
+[('пармезана', 'FOOD', 'NULL', '3.00', '2.00')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 22: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('menu', 'RESTAURANT#GENERAL', 'really made', 7.00, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 23: Вот элементы настроения, извлеченные из текста "Отличная кухня", в виде списка кортежей:
+
+[('кухня', 'RESTAURANT#QUALITY', 'Отличная', 7.50, 6.20)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 24: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('interier', 'RESTAURANT#AMBIENCE', 'pleasant', '7.50', '6.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 25: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('шашлык', 'RESTAURANT#FOOD', 'Жаль', 1.00, 3.00), ('свинина', 'RESTAURANT#FOOD', 'нежно, сочно', 8.00, 7.00), ('салат цезарь', 'RESTAURANT#FOOD', 'самый вкусный', 9.00, 8.00), ('квас', 'RESTAURANT#MISCELLANEOUS', 'очень вкусный', 7.00, 6.00), ('еда', 'RESTAURANT#QUALITY', 'нам понравилось', 7.00, 6.00), ('муж', 'SERVICE#SERVICE', 'молодцы', 7.00, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 26: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('ресторан', 'RESTAURANT#AMBIENCE', 'слишком темный и мрачноватый', '6.50', '4.20'), ('столики', 'RESTAURANT#STYLE_OPTIONS', 'деревянные', '7.00', '5.80'), ('стулья', 'RESTAURANT#STYLE_OPTIONS', 'деревянные', '7.00', '5.80'), ('зонтики', 'RESTAURANT#MISCELLANEOUS', 'под зонтиками', '6.00', '4.50'), ('воздух', 'RESTAURANT#AMBIENCE', 'свежий', '8.50', '6.30')]
+
+**Пояснения:**
+
+*   **ресторан, RESTAURANT#AMBIENCE, слишком темный и мрачноватый:**  Определяет общее впечатление от атмосферы ресторана.
+*   **столики, RESTAURANT#STYLE_OPTIONS, деревянные:** Описывает конкретный элемент мебели.
+*   **стулья, RESTAURANT#STYLE_OPTIONS, деревянные:** Описывает конкретный элемент мебели.
+*   **зонтики, RESTAURANT#MISCELLANEOUS, под зонтиками:** Описывает дополнительную особенность.
+*   **воздух, RESTAURANT#AMBIENCE, свежий:** Описывает атмосферу.
+
+**Важно:**
+
+*   Я старался максимально точно интерпретировать текст, основываясь на предоставленных определениях.
+*   Оценки valence и arousal являются субъективными и основаны на моем понимании текста.  Другие интерпретации могут привести к немного другим значениям.
+*   "NULL" не используется, так как в тексте есть явные элементы настроения.
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 27: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('сервис', 'SERVICE', 'на высоком уровне', '7.50', '6.00')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 28: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('шашлык', 'FOOD', 'люблю есть руками', 7.50, 6.20)]
+[('вода', 'DRINKS', 'приятно', 8.20, 5.80)]
+[('лимон', 'MISCELLANEOUS', 'приятно', 8.80, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 29: Вот элементы настроения, извлеченные из текста "Отличный ресторан!":
+
+[('ресторан', 'RESTAURANT#GENERAL', 'Отличный', 9.00, 7.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 30: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('гости', 'RESTAURANT', 'довольны', '9.00', '7.00')]
+[('стейк', 'FOOD', 'помнят', '7.00', '6.00')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 31: Вот анализ элементов настроения для предоставленного текста, представленный в виде списка кортежей:
+
+[('ресторан', 'RESTAURANT', 'дорожат клиентами', '9.00', '7.00')]
+
+**Обоснование:**
+
+*   **Aspect Term:** "ресторан" - это конкретное место, о котором пользователь может выразить мнение.
+*   **ENTITY#ATTRIBUTE:** RESTAURANT#GENERAL -  "Ресторан" - это сущность, а "дорожат клиентами" - это общая характеристика ресторана.
+*   **Opinion Term:** "дорожат клиентами" - это выражение положительного отношения к ресторану.
+*   **Valence Score:** 9.00 -  Выражение "дорожат клиентами" подразумевает позитивное отношение.
+*   **Arousal Score:** 7.00 -  Это достаточно сильное выражение, подразумевающее значимость и внимание к клиентам.
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 32: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('пиво', 'FOOD#GENERAL', 'не могу не отметить', 8.50, 7.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 33: Вот разбор элементов настроения из предоставленного текста в виде списка кортежей:
+
+[('встреча', 'RESTAURANT#GENERAL', 'встречают', '9.00', '7.00'), ('провождение', 'RESTAURANT#GENERAL', 'провожают', '9.00', '7.00'), ('заказ', 'RESTAURANT#SERVICE', 'заказ', '7.00', '5.00'), ('очередность', 'RESTAURANT#SERVICE', 'очередность', '7.00', '5.00'), ('блюда', 'FOOD#QUALITY', 'блюда', '7.00', '5.00'), ('пепельница', 'RESTAURANT#MISCELLANEOUS', 'пепельницу', '9.00', '6.00')]
+
+**Пояснения:**
+
+*   **встреча/провождение/заказ/очередность/блюда:**  Эти слова описывают действия и процессы, происходящие в ресторане, и отражают положительное впечатление от обслуживания.
+*   **пепельница:**  Указание на то, что пепельницу меняют без просьбы, указывает на внимательность персонала и хорошее обслуживание.
+*   **ENTITY#ATTRIBUTE:**  Определяет категорию аспекта (RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION) и атрибут (GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS).
+*   **opinion term:**  Это фраза, выражающая мнение о соответствующем аспекте.
+*   **valence score & arousal score:**  Оценки позитивности/негативности и интенсивности эмоций, соответственно.  Я старался оценить, насколько позитивно или негативно пользователь относится к каждому аспекту, и насколько сильной является его реакция.  Например, "встречают" и "провожают" оцениваются как очень позитивные (9.00) с высоким уровнем возбуждения (7.00), так как это приятные впечатления.  "очередность" и "заказ" оцениваются как позитивные (7.00) с умеренным возбуждением (5.00).  "пепельница" оценивается как позитивная (9.0
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 34: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('еда', 'FOOD#QUALITY', 'очень быстро', 7.50, 6.00), ('официант', 'SERVICE#QUALITY', 'не задумываясь', 8.00, 7.00), ('официант', 'SERVICE#PROFESSIONAL', 'профессионально', 8.50, 7.50)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 35: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('кухня', 'RESTAURANT#FOOD', 'очень понравился', '7.50', '6.20'), ('палтус', 'FOOD#QUALITY', 'такого нежного', '8.80', '7.10'), ('салат', 'FOOD#QUALITY', 'впечатлил', '7.90', '6.50'), ('овощи', 'FOOD#QUALITY', 'запеченых', '7.20', '6.30')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 36: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('Еда', 'FOOD#QUALITY', 'вкусная', '7.50', '6.20')]
+[('порции', 'FOOD#MISCELLANEOUS', 'адекватные', '6.80', '5.10')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 37: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('интерьер', 'AMBIENCE#GENERAL', 'приятный', 7.50, 6.00), ('освещение', 'AMBIENCE#STYLE_OPTIONS', 'мягкое', 7.00, 5.50), ('места', 'AMBIENCE#QUALITY', 'удобные', 8.00, 7.00), ('музыка', 'AMBIENCE#MISCELLANEOUS', 'подобрана хорошо', 7.80, 6.50)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 38: Вот анализ элементов настроения для предоставленного текста:
+
+[('кафе', 'RESTAURANT#AMBIENCE', 'уютное', 7.50, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 39: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('Обслуживание', 'SERVICE', 'понравилось', '7.50', '6.20')]
+[('персонал', 'SERVICE', 'вежливый', '8.20', '5.80')]
+[('заказы', 'SERVICE', 'приносят достаточно быстро', '6.80', '5.50')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 40: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('котлеты', 'FOOD#QUALITY', 'нежнейшие', 7.50, 6.00), ('пюре', 'FOOD#QUALITY', 'вкусное', 7.00, 6.50), ('котлеты', 'TEMPERATURE#MISCELLANEOUS', 'чуть теплое', 2.00, 2.50), ('хачапури', 'FOOD#QUALITY', 'превзошло все ожидания', 9.00, 8.00), ('хачапури', 'TIME_TAKEN#MISCELLANEOUS', 'съели за две минуты', 8.50, 7.50)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 41: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('roll', 'FOOD#QUALITY', 'замечательным', 8.50, 7.20)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 42: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('блюда', 'FOOD#QUALITY', 'очень достойные', 7.50, 6.00)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 43: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('service', 'RESTAURANT#SERVICE', 'bad', '1.00', '3.50'), ('food', 'FOOD#QUALITY', 'very tasty', '8.00', '7.00'), ('ambience', 'AMBIENCE#STYLE_OPTIONS', 'cozy', '8.00', '6.50')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 44: Вот элементы настроения, извлеченные из текста, в виде списка кортежей:
+
+[('уютный', 'RESTAURANT#AMBIENCE', 'чувствуешь себя', '7.50', '6.20')]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 45: Вот элементы настроения, извлеченные из текста "Спасибо коллективу!", в виде списка кортежей:
+
+[('коллектив', 'SERVICE', 'Спасибо', 9.00, 7.00)]
+
+**Обоснование:**
+
+*   **aspect term:** "коллектив" - это конкретная группа людей, о которых пользователь может выразить мнение.
+*   **ENTITY#ATTRIBUTE:** SERVICE#GENERAL - "коллектив" относится к группе людей, предоставляющих услуги (в данном случае, вероятно, персонал).  "GENERAL" - это общая категория, подходящая для выражения благодарности.
+*   **opinion term:** "Спасибо" - это явное выражение благодарности.
+*   **valence score:** 9.00 -  Выражение благодарности подразумевает позитивное отношение.
+*   **arousal score:** 7.00 -  "Спасибо" выражает сильное, но не чрезмерное чувство благодарности.
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 46: Вот анализ элементов настроения для предоставленного текста, представленный в виде списка кортежей:
+
+[('место', 'LOCATION#GENERAL', 'много места', 7.50, 6.20)]
+
+2025-11-28 09:59:51 - WARNING - No tuples parsed from output 47: Вот элементы настроения, извлеченные из предоставленного текста, в виде списка кортежей:
+
+[('персонал', 'SERVICE', 'внимательное отношение', '9.00', '7.50'), ('свадебный зал', 'RESTAURANT', 'красиво декорированные', '8.00', '6.00'), ('столы', 'RESTAURANT', 'украшенные', '8.50', '6.50')]
+
+2025-11-28 10:18:03 - INFO - Configuring GPU environment...
+2025-11-28 10:18:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:18:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:18:04 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:18:04 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:18:04 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:18:04 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:18:19 - INFO - Example prompt (first training example):
+2025-11-28 10:18:19 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:18:29 - INFO - Starting model training...
+2025-11-28 10:18:29 - INFO - Training completed
+2025-11-28 10:18:29 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:18:32 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:18:49 - INFO - Configuring GPU environment...
+2025-11-28 10:18:50 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:18:50 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:18:50 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:18:50 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 10:18:50 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:18:50 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 10:19:05 - INFO - Example prompt (first training example):
+2025-11-28 10:19:05 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: i wish i could like this place more , and i wish someone would retrain the staff .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('place', 'RESTAURANT#GENERAL', 'NULL', '4.62', '5.12'), ('staff', 'SERVICE#GENERAL', 'NULL', '4.62', '5.12')]<end_of_turn>...
+2025-11-28 10:19:15 - INFO - Starting model training...
+2025-11-28 10:19:15 - INFO - Training completed
+2025-11-28 10:19:15 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:19:17 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:19:30 - INFO - Configuring GPU environment...
+2025-11-28 10:19:31 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:19:31 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:19:31 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:19:31 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:19:31 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:19:31 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:19:49 - INFO - Example prompt (first training example):
+2025-11-28 10:19:49 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:19:58 - INFO - Starting model training...
+2025-11-28 10:19:58 - INFO - Training completed
+2025-11-28 10:19:58 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:20:01 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:20:23 - INFO - Configuring GPU environment...
+2025-11-28 10:20:23 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:20:23 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:20:23 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:20:23 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:20:23 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:20:23 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:20:37 - INFO - Example prompt (first training example):
+2025-11-28 10:20:37 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:20:46 - INFO - Starting model training...
+2025-11-28 10:29:11 - INFO - Training completed
+2025-11-28 10:29:11 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:29:13 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:30:02 - INFO - Evaluating 48 examples
+2025-11-28 10:39:41 - INFO - Configuring GPU environment...
+2025-11-28 10:39:42 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:39:42 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:39:42 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:39:42 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:39:42 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:39:42 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:39:56 - INFO - Example prompt (first training example):
+2025-11-28 10:39:56 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:40:05 - INFO - Starting model training...
+2025-11-28 10:40:05 - INFO - Training completed
+2025-11-28 10:40:05 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:40:05 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:40:53 - INFO - Evaluating 48 examples
+2025-11-28 10:51:02 - INFO - Configuring GPU environment...
+2025-11-28 10:51:02 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:51:02 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:51:02 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:51:02 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:51:02 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:51:02 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:51:19 - INFO - Example prompt (first training example):
+2025-11-28 10:51:19 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:51:29 - INFO - Starting model training...
+2025-11-28 10:51:29 - INFO - Training completed
+2025-11-28 10:51:29 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:51:29 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:51:46 - INFO - Configuring GPU environment...
+2025-11-28 10:51:46 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:51:46 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:51:46 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:51:46 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 10:51:46 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:51:46 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 10:52:01 - INFO - Example prompt (first training example):
+2025-11-28 10:52:01 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: i wish i could like this place more , and i wish someone would retrain the staff .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('place', 'RESTAURANT#GENERAL', 'NULL', '4.62', '5.12'), ('staff', 'SERVICE#GENERAL', 'NULL', '4.62', '5.12')]<end_of_turn>...
+2025-11-28 10:52:11 - INFO - Starting model training...
+2025-11-28 10:52:11 - INFO - Training completed
+2025-11-28 10:52:11 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:52:11 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:52:28 - INFO - Configuring GPU environment...
+2025-11-28 10:52:29 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:52:29 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:52:29 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 10:52:29 - INFO - Experiment completed successfully
+2025-11-28 10:52:29 - INFO - ================================================================================
+2025-11-28 10:52:35 - INFO - Configuring GPU environment...
+2025-11-28 10:52:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:52:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:52:35 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:52:35 - INFO - Starting training - Subtask: 3, Language: tat, Domain: restaurant, Seed: 0
+2025-11-28 10:52:35 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:52:35 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:52:54 - INFO - Configuring GPU environment...
+2025-11-28 10:52:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 10:52:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 10:52:54 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 10:52:54 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 10:52:54 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 10:52:54 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 10:53:07 - INFO - Example prompt (first training example):
+2025-11-28 10:53:07 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 10:53:17 - INFO - Starting model training...
+2025-11-28 10:53:17 - INFO - Training completed
+2025-11-28 10:53:17 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 10:53:17 - INFO - Initializing vLLM for evaluation...
+2025-11-28 10:54:05 - INFO - Evaluating 48 examples
+2025-11-28 11:04:30 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 11:04:30 - INFO - GPU reserved memory: 0.02 GB
+2025-11-28 11:04:30 - INFO - Experiment completed successfully
+2025-11-28 11:04:30 - INFO - ================================================================================
+2025-11-28 11:04:38 - INFO - Configuring GPU environment...
+2025-11-28 11:04:38 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 11:04:38 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 11:04:38 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 11:04:38 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 11:04:38 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 11:04:38 - INFO - Training examples: 2284, Test examples: 200

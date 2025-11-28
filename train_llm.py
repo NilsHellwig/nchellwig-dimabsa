@@ -28,6 +28,20 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
             logger.warning(
                 f"Dataset not found for subtask={subtask}, language={language}, domain={domain}, split=dev. Skipping.")
             return None
+    elif strategy == "pred_test":
+        train_dataset = get_dataset(
+            subtask=subtask, language=language, domain=domain, split="train")
+        if train_dataset is None:
+            logger.warning(
+                f"Dataset not found for subtask={subtask}, language={language}, domain={domain}, split=train. Skipping.")
+            return None
+
+        test_dataset = get_dataset(
+            subtask=subtask, language=language, domain=domain, split="test")
+        if test_dataset is None:
+            logger.warning(
+                f"Dataset not found for subtask={subtask}, language={language}, domain={domain}, split=test. Skipping.")
+            return None
     elif strategy == "train_split":
         dataset = get_dataset(
             subtask=subtask, language=language, domain=domain, split="train")
@@ -61,8 +75,10 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
         language=language,
         domain=domain,
         model_name_or_path=llm_name,
-        seed=seed_run,
-        num_train_epochs=num_epochs
+        seed_run=seed_run,
+        num_train_epochs=num_epochs,
+        strategy=strategy,
+        split_idx=split_idx
     )
 
     # delete model_temp and free trash
@@ -106,42 +122,9 @@ def main():
     llm_name = args.llm_name
     num_epochs = args.num_epochs
 
-    # Erstelle results Ordner falls nicht vorhanden
-    if strategy == "pred_dev":
-        results_dir = f"results/results_pred_dev/subtask_{subtask}"
-        os.makedirs(results_dir, exist_ok=True)
-        path_predictions = f"{results_dir}/pred_{language}_{domain}.jsonl"
-    else:
-        # Extrahiere kurzen LLM-Namen (letzter Teil nach /)
-        llm_short = llm_name.split("/")[-1]
-        results_dir = f"results/results_train_split/subtask_{subtask}"
-        os.makedirs(results_dir, exist_ok=True)
-        path_predictions = f"{results_dir}/pred_{language}_{domain}_{llm_short}_epochs{num_epochs}_split{split_idx}.jsonl"
-
-    logger.info(f"="*80)
-    logger.info(
-        f"Starting experiment: subtask={subtask}, language={language}, domain={domain}, seed={seed_run}, strategy={strategy}")
-
-    if os.path.exists(path_predictions):
-        logger.info(
-            f"Predictions for {subtask} {language} {domain} seed {seed_run} already exist. Skipping.")
-        return
-
-    predictions = run_training_pipeline_real(
+    run_training_pipeline_real(
         subtask, language, domain, seed_run, strategy, split_idx=split_idx, llm_name=llm_name, num_epochs=num_epochs)
 
-    # If predictions is None, dataset doesn't exist - skip
-    if predictions is None:
-        logger.warning(
-            f"Skipping {subtask} {language} {domain} seed {seed_run} - dataset not found.")
-        return
-
-    # Save predictions in JSONL format
-    with open(path_predictions, "w", encoding="utf-8") as f_out:
-        for pred in predictions:
-            f_out.write(json.dumps(pred, ensure_ascii=False) + "\n")
-
-    logger.info(f"Predictions saved to {path_predictions}")
     logger.info(f"Experiment completed successfully")
     logger.info(f"="*80)
 
