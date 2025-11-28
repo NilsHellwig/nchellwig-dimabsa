@@ -283,7 +283,7 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
             with open(path_2b, "w") as f:
                 for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    elif strategy == "pred_dev":
+    elif strategy == "pred_dev" or strategy == "pred_test":
         path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
             for item in outputs_1a:

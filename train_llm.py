@@ -121,6 +121,19 @@ def main():
     split_idx = args.split_idx
     llm_name = args.llm_name
     num_epochs = args.num_epochs
+    
+    results_path_start = f"results/results_{strategy}/{llm_name.replace('/', '_')}/"
+    if strategy == "train_split":
+        existing_files = [f for f in os.listdir(results_path_start)
+                      if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]
+    else:
+        existing_files = [f for f in os.listdir(results_path_start)
+                      if f.startswith(f"{subtask}_{language}_{domain}_0")]
+    
+    if existing_files:
+        logger.info(f"Results already exist for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, split_idx={split_idx}. Skipping.")
+        return
+    
 
     run_training_pipeline_real(
         subtask, language, domain, seed_run, strategy, split_idx=split_idx, llm_name=llm_name, num_epochs=num_epochs)

@@ -278,6 +278,9 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
                 valence = f"{float(valence):.2f}"
                 arousal = f"{float(arousal):.2f}"
                 
+                aspect = aspect.replace("\\'", "'")
+                opinion = opinion.replace("\\'", "'")
+                
                 # Create deduplication key
                 key = (aspect, category, opinion)
                 if key not in seen_keys:
@@ -296,6 +299,8 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
         for t in tuples_list:
             if len(t) == 4:
                 aspect, opinion, valence, arousal = t
+                aspect = aspect.replace("\\'", "'")
+                opinion = opinion.replace("\\'", "'")
                 # valence and arousal must have two decimal places
                 valence = f"{float(valence):.2f}"
                 arousal = f"{float(arousal):.2f}"
@@ -508,3 +513,19 @@ def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=
     tuple_pattern_str = rf"\[{tuple_pattern_str}(, {tuple_pattern_str})*\]\n"
 
     return tuple_pattern_str
+
+language_mapping = {
+    "eng": "English",
+    "jpn": "Japanese",
+    "rus": "Russian",
+    "tat": "Tatar",
+    "ukr": "Ukrainian",
+    "zho": "Chinese"
+}
+
+domain_mapping = {
+    "restaurant": "Restaurant",
+    "laptop": "Laptop",
+    "hotel": "Hotel",
+    "finance": "Finance"
+}

@@ -1672,3 +1672,716 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('spot', 'RESTAURANT#MISCELLANEOUS', 'perfect', '7.75', '7.88')]<end_of_turn>...
 2025-11-28 15:55:28 - INFO - Starting model training...
+2025-11-28 16:05:53 - INFO - Training completed
+2025-11-28 16:05:53 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 16:05:55 - INFO - Configuring GPU environment...
+2025-11-28 16:05:56 - INFO - GPU allocated memory: 3.74 GB
+2025-11-28 16:05:56 - INFO - GPU reserved memory: 3.94 GB
+2025-11-28 16:05:56 - INFO - Initializing vLLM for evaluation...
+2025-11-28 16:22:04 - INFO - Configuring GPU environment...
+2025-11-28 16:22:04 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:04 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:04 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 16:22:10 - INFO - Configuring GPU environment...
+2025-11-28 16:22:10 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:10 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:10 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 16:22:16 - INFO - Configuring GPU environment...
+2025-11-28 16:22:16 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:16 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:16 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 16:22:16 - INFO - Experiment completed successfully
+2025-11-28 16:22:16 - INFO - ================================================================================
+2025-11-28 16:22:22 - INFO - Configuring GPU environment...
+2025-11-28 16:22:22 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:22 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:22 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 16:22:27 - INFO - Configuring GPU environment...
+2025-11-28 16:22:28 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:28 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:28 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 16:22:33 - INFO - Configuring GPU environment...
+2025-11-28 16:22:34 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:34 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:34 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 16:22:39 - INFO - Configuring GPU environment...
+2025-11-28 16:22:40 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:40 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:40 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 16:22:45 - INFO - Configuring GPU environment...
+2025-11-28 16:22:45 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:45 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:45 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 16:22:51 - INFO - Configuring GPU environment...
+2025-11-28 16:22:51 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:51 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:51 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 16:22:51 - INFO - Experiment completed successfully
+2025-11-28 16:22:51 - INFO - ================================================================================
+2025-11-28 16:22:57 - INFO - Configuring GPU environment...
+2025-11-28 16:22:57 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:22:57 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:22:57 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 16:23:03 - INFO - Configuring GPU environment...
+2025-11-28 16:23:03 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:03 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:03 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 16:23:08 - INFO - Configuring GPU environment...
+2025-11-28 16:23:09 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:09 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:09 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 16:23:14 - INFO - Configuring GPU environment...
+2025-11-28 16:23:15 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:15 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:15 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 16:23:20 - INFO - Configuring GPU environment...
+2025-11-28 16:23:21 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:21 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:21 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 16:23:26 - INFO - Configuring GPU environment...
+2025-11-28 16:23:26 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:26 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:26 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 16:23:26 - INFO - Experiment completed successfully
+2025-11-28 16:23:26 - INFO - ================================================================================
+2025-11-28 16:23:32 - INFO - Configuring GPU environment...
+2025-11-28 16:23:32 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:32 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:32 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 16:23:38 - INFO - Configuring GPU environment...
+2025-11-28 16:23:38 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:38 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:38 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 16:23:44 - INFO - Configuring GPU environment...
+2025-11-28 16:23:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:44 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 16:23:50 - INFO - Configuring GPU environment...
+2025-11-28 16:23:50 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:50 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:50 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 16:23:55 - INFO - Configuring GPU environment...
+2025-11-28 16:23:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:23:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:23:56 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 16:24:01 - INFO - Configuring GPU environment...
+2025-11-28 16:24:02 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:02 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:02 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 16:24:02 - INFO - Experiment completed successfully
+2025-11-28 16:24:02 - INFO - ================================================================================
+2025-11-28 16:24:07 - INFO - Configuring GPU environment...
+2025-11-28 16:24:08 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:08 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:08 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 16:24:13 - INFO - Configuring GPU environment...
+2025-11-28 16:24:13 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:13 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:13 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 16:24:19 - INFO - Configuring GPU environment...
+2025-11-28 16:24:19 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:19 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:19 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 16:24:25 - INFO - Configuring GPU environment...
+2025-11-28 16:24:25 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:25 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:25 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=4. Skipping.
+2025-11-28 16:24:31 - INFO - Configuring GPU environment...
+2025-11-28 16:24:31 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:31 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:31 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=4. Skipping.
+2025-11-28 16:24:37 - INFO - Configuring GPU environment...
+2025-11-28 16:24:37 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:37 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:37 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 16:24:37 - INFO - Experiment completed successfully
+2025-11-28 16:24:37 - INFO - ================================================================================
+2025-11-28 16:24:42 - INFO - Configuring GPU environment...
+2025-11-28 16:24:43 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:43 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:43 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=4. Skipping.
+2025-11-28 16:24:48 - INFO - Configuring GPU environment...
+2025-11-28 16:24:49 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:49 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:49 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=4. Skipping.
+2025-11-28 16:24:54 - INFO - Configuring GPU environment...
+2025-11-28 16:24:55 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:24:55 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:24:55 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=4. Skipping.
+2025-11-28 16:25:00 - INFO - Configuring GPU environment...
+2025-11-28 16:25:00 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:25:00 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:25:00 - WARNING - Dataset not found for subtask=3, language=rus, domain=laptop, split=train. Skipping.
+2025-11-28 16:25:00 - INFO - Experiment completed successfully
+2025-11-28 16:25:00 - INFO - ================================================================================
+2025-11-28 16:25:06 - INFO - Configuring GPU environment...
+2025-11-28 16:25:06 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:25:06 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:25:06 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 16:25:06 - INFO - Starting training - Subtask: 3, Language: eng, Domain: laptop, Seed: 0
+2025-11-28 16:25:06 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 16:25:06 - INFO - Training examples: 3261, Test examples: 815
+2025-11-28 16:25:20 - INFO - Example prompt (first training example):
+2025-11-28 16:25:20 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: LAPTOP, DISPLAY, KEYBOARD, MOUSE, MOTHERBOARD, CPU, FANS_COOLING, PORTS, MEMORY, POWER_SUPPLY, OPTICAL_DRIVES, BATTERY, GRAPHICS, HARD_DISK, MULTIMEDIA_DEVICES, HARDWARE, SOFTWARE, OS, WARRANTY, SHIPPING, SUPPORT, COMPANY. The available attributes are: GENERAL, PRICE, QUALITY, DESIGN_FEATURES, OPERATION_PERFORMANCE, USABILITY, PORTABILITY, CONNECTIVITY, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: it ' s a pretty good laptop .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('laptop', 'LAPTOP#GENERAL', 'pretty good', '6.62', '6.38')]<end_of_turn>...
+2025-11-28 16:25:30 - INFO - Starting model training...
+2025-11-28 16:46:14 - INFO - Training completed
+2025-11-28 16:46:14 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 16:46:20 - INFO - Configuring GPU environment...
+2025-11-28 16:46:21 - INFO - GPU allocated memory: 3.74 GB
+2025-11-28 16:46:21 - INFO - GPU reserved memory: 3.95 GB
+2025-11-28 16:46:21 - INFO - Initializing vLLM for evaluation...
+2025-11-28 16:47:12 - INFO - Evaluating 815 examples
+2025-11-28 16:47:26 - WARNING - No tuples parsed from output 318: [('screen brightness', 'DISPLAY#OPERATION_PERFORMANCE', "' t very bright", '3.50', '6.00')]
+2025-11-28 16:48:15 - WARNING - No tuples parsed from output 318: [('screen brightness', 'DISPLAY#OPERATION_PERFORMANCE', "' t very bright", '3.62', '6.25')]
+2025-11-28 16:48:15 - WARNING - No tuples parsed from output 1133: [('screen brightness', 'DISPLAY#OPERATION_PERFORMANCE', "' t very bright", '3.50', '6.50')]
+2025-11-28 16:48:15 - WARNING - No tuples parsed from output 2763: [('screen', 'DISPLAY#OPERATION_PERFORMANCE', "' t very bright", '3.00', '6.00')]
+2025-11-28 16:48:15 - WARNING - No tuples parsed from output 4021: [('touch pad', 'HARDWARE#GENERAL', '+', '+', '+')]
+2025-11-28 16:48:16 - INFO - Deleted ./model_temp
+2025-11-28 16:48:16 - INFO - GPU allocated memory: 1.32 GB
+2025-11-28 16:48:16 - INFO - GPU reserved memory: 1.39 GB
+2025-11-28 16:48:16 - INFO - Experiment completed successfully
+2025-11-28 16:48:16 - INFO - ================================================================================
+2025-11-28 16:48:23 - INFO - Configuring GPU environment...
+2025-11-28 16:48:23 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:48:23 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:48:23 - WARNING - Dataset not found for subtask=3, language=jpn, domain=laptop, split=train. Skipping.
+2025-11-28 16:48:23 - INFO - Experiment completed successfully
+2025-11-28 16:48:23 - INFO - ================================================================================
+2025-11-28 16:48:29 - INFO - Configuring GPU environment...
+2025-11-28 16:48:29 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:48:29 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:48:29 - WARNING - Dataset not found for subtask=3, language=tat, domain=laptop, split=train. Skipping.
+2025-11-28 16:48:29 - INFO - Experiment completed successfully
+2025-11-28 16:48:29 - INFO - ================================================================================
+2025-11-28 16:48:34 - INFO - Configuring GPU environment...
+2025-11-28 16:48:35 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:48:35 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:48:35 - WARNING - Dataset not found for subtask=3, language=ukr, domain=laptop, split=train. Skipping.
+2025-11-28 16:48:35 - INFO - Experiment completed successfully
+2025-11-28 16:48:35 - INFO - ================================================================================
+2025-11-28 16:48:40 - INFO - Configuring GPU environment...
+2025-11-28 16:48:41 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 16:48:41 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 16:48:41 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 16:48:41 - INFO - Starting training - Subtask: 3, Language: zho, Domain: laptop, Seed: 0
+2025-11-28 16:48:41 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 16:48:41 - INFO - Training examples: 2792, Test examples: 698
+2025-11-28 16:48:56 - INFO - Example prompt (first training example):
+2025-11-28 16:48:56 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '方面类别'是指方面所属的类别。它是'ENTITY#ATTRIBUTE'格式的实体和属性的组合。可用实体为：LAPTOP, DISPLAY, KEYBOARD, MOUSE, MOTHERBOARD, CPU, FANS_COOLING, PORTS, MEMORY, POWER_SUPPLY, OPTICAL_DRIVES, BATTERY, GRAPHICS, HARD_DISK, MULTIMEDIA_DEVICES, HARDWARE, SOFTWARE, OS, WARRANTY, SHIPPING, SUPPORT, COMPANY。可用属性为：GENERAL, PRICE, QUALITY, DESIGN_FEATURES, OPERATION_PERFORMANCE, USABILITY, PORTABILITY, CONNECTIVITY, MISCELLANEOUS。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。如果没有明确的意见表达，意见术语可能为'NULL'。
+- 'valence score'衡量积极或消极的程度。
+- 'arousal score'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。valence score和arousal score都必须精确地四舍五入到两位小数。
+
+对于以下文本，识别具有相应方面术语、方面类别、意见术语、valence score、arousal score的所有情感元素，以元组列表的形式 [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...]。
+文本： 75k還可以，G733PZ的規格也算很強了，這台的散熱也很不錯
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('G733PZ的規格', 'LAPTOP#DESIGN_FEATURES', '算很強了', '6.60', '5.80'), ('散熱', 'FANS_COOLING#GENERAL', '很不錯', '6.33', '6.00')]<end_of_turn>...
+2025-11-28 16:49:05 - INFO - Starting model training...
+2025-11-28 17:08:10 - INFO - Training completed
+2025-11-28 17:08:10 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 17:08:12 - INFO - Configuring GPU environment...
+2025-11-28 17:08:12 - INFO - GPU allocated memory: 3.74 GB
+2025-11-28 17:08:12 - INFO - GPU reserved memory: 3.95 GB
+2025-11-28 17:08:12 - INFO - Initializing vLLM for evaluation...
+2025-11-28 17:09:03 - INFO - Evaluating 698 examples
+2025-11-28 17:51:36 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 17:51:36 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:01:56 - INFO - Configuring GPU environment...
+2025-11-28 18:01:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:01:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:01:56 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:02:02 - INFO - Configuring GPU environment...
+2025-11-28 18:02:03 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:03 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:03 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:02:08 - INFO - Configuring GPU environment...
+2025-11-28 18:02:09 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:09 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:09 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 18:02:09 - INFO - Experiment completed successfully
+2025-11-28 18:02:09 - INFO - ================================================================================
+2025-11-28 18:02:14 - INFO - Configuring GPU environment...
+2025-11-28 18:02:15 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:15 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:15 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:02:20 - INFO - Configuring GPU environment...
+2025-11-28 18:02:21 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:21 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:21 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:02:26 - INFO - Configuring GPU environment...
+2025-11-28 18:02:27 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:27 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:27 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:02:32 - INFO - Configuring GPU environment...
+2025-11-28 18:02:33 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:33 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:33 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:02:38 - INFO - Configuring GPU environment...
+2025-11-28 18:02:39 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:39 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:39 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:02:44 - INFO - Configuring GPU environment...
+2025-11-28 18:02:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:44 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 18:02:44 - INFO - Experiment completed successfully
+2025-11-28 18:02:44 - INFO - ================================================================================
+2025-11-28 18:02:50 - INFO - Configuring GPU environment...
+2025-11-28 18:02:50 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:50 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:50 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:02:56 - INFO - Configuring GPU environment...
+2025-11-28 18:02:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:02:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:02:56 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:03:02 - INFO - Configuring GPU environment...
+2025-11-28 18:03:02 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:02 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:02 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:03:08 - INFO - Configuring GPU environment...
+2025-11-28 18:03:08 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:08 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:08 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 18:03:14 - INFO - Configuring GPU environment...
+2025-11-28 18:03:14 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:14 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:14 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 18:03:20 - INFO - Configuring GPU environment...
+2025-11-28 18:03:20 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:20 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:20 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 18:03:20 - INFO - Experiment completed successfully
+2025-11-28 18:03:20 - INFO - ================================================================================
+2025-11-28 18:03:26 - INFO - Configuring GPU environment...
+2025-11-28 18:03:26 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:26 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:26 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 18:03:32 - INFO - Configuring GPU environment...
+2025-11-28 18:03:32 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:32 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:32 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 18:03:38 - INFO - Configuring GPU environment...
+2025-11-28 18:03:38 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:38 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:38 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=2. Skipping.
+2025-11-28 18:03:44 - INFO - Configuring GPU environment...
+2025-11-28 18:03:44 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:03:44 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:03:44 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=3. Skipping.
+2025-11-28 18:05:33 - INFO - Configuring GPU environment...
+2025-11-28 18:05:33 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:05:33 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:05:33 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:05:38 - INFO - Configuring GPU environment...
+2025-11-28 18:05:39 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:05:39 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:05:39 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:05:44 - INFO - Configuring GPU environment...
+2025-11-28 18:05:45 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:05:45 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:05:45 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 18:05:45 - INFO - Experiment completed successfully
+2025-11-28 18:05:45 - INFO - ================================================================================
+2025-11-28 18:05:50 - INFO - Configuring GPU environment...
+2025-11-28 18:05:51 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:05:51 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:05:51 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:05:56 - INFO - Configuring GPU environment...
+2025-11-28 18:05:57 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:05:57 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:05:57 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:06:02 - INFO - Configuring GPU environment...
+2025-11-28 18:06:03 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:06:03 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:06:03 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:06:08 - INFO - Configuring GPU environment...
+2025-11-28 18:06:09 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:06:09 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:06:09 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:06:14 - INFO - Configuring GPU environment...
+2025-11-28 18:06:15 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:06:15 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:06:15 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:06:15 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 18:06:15 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:06:15 - INFO - Training examples: 1828, Test examples: 456
+2025-11-28 18:06:32 - INFO - Example prompt (first training example):
+2025-11-28 18:06:32 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: this is the perfect spot for meeting friends , having lunch , dinner , pre - theatre or after - theatre drinks !
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('spot', 'RESTAURANT#MISCELLANEOUS', 'perfect', '7.75', '7.88')]<end_of_turn>...
+2025-11-28 18:06:42 - INFO - Starting model training...
+2025-11-28 18:07:17 - INFO - Configuring GPU environment...
+2025-11-28 18:07:18 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:18 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:18 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:07:23 - INFO - Configuring GPU environment...
+2025-11-28 18:07:24 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:24 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:24 - INFO - Results already exist for subtask=3, language=eng, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:07:29 - INFO - Configuring GPU environment...
+2025-11-28 18:07:30 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:30 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:30 - WARNING - Dataset not found for subtask=3, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 18:07:30 - INFO - Experiment completed successfully
+2025-11-28 18:07:30 - INFO - ================================================================================
+2025-11-28 18:07:35 - INFO - Configuring GPU environment...
+2025-11-28 18:07:36 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:36 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:36 - INFO - Results already exist for subtask=3, language=tat, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:07:41 - INFO - Configuring GPU environment...
+2025-11-28 18:07:42 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:42 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:42 - INFO - Results already exist for subtask=3, language=ukr, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:07:47 - INFO - Configuring GPU environment...
+2025-11-28 18:07:47 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:47 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:47 - INFO - Results already exist for subtask=3, language=zho, domain=restaurant, seed_run=0, split_idx=0. Skipping.
+2025-11-28 18:07:53 - INFO - Configuring GPU environment...
+2025-11-28 18:07:53 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:53 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:53 - INFO - Results already exist for subtask=3, language=rus, domain=restaurant, seed_run=0, split_idx=1. Skipping.
+2025-11-28 18:07:59 - INFO - Configuring GPU environment...
+2025-11-28 18:07:59 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:07:59 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:07:59 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:07:59 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 18:07:59 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:07:59 - INFO - Training examples: 1828, Test examples: 456
+2025-11-28 18:08:14 - INFO - Example prompt (first training example):
+2025-11-28 18:08:14 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: this is the perfect spot for meeting friends , having lunch , dinner , pre - theatre or after - theatre drinks !
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('spot', 'RESTAURANT#MISCELLANEOUS', 'perfect', '7.75', '7.88')]<end_of_turn>...
+2025-11-28 18:08:24 - INFO - Starting model training...
+2025-11-28 18:11:53 - INFO - Configuring GPU environment...
+2025-11-28 18:11:54 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:11:54 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:11:59 - INFO - Configuring GPU environment...
+2025-11-28 18:12:00 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:12:00 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:12:36 - INFO - Configuring GPU environment...
+2025-11-28 18:12:36 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:12:36 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:12:36 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:12:36 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 18:12:36 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:12:36 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 18:12:58 - INFO - Example prompt (first training example):
+2025-11-28 18:12:58 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 18:13:07 - INFO - Starting model training...
+2025-11-28 18:17:40 - INFO - Configuring GPU environment...
+2025-11-28 18:17:40 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:17:40 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:17:40 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:17:40 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 18:17:40 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:17:40 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 18:17:57 - INFO - Example prompt (first training example):
+2025-11-28 18:17:57 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'SERVICE#GENERAL', 'очень неприятно', '2.33', '7'), ('официанты', 'SERVICE#GENERAL', 'не показал', '3.17', '6'), ('официанты', 'SERVICE#GENERAL', 'никто не встретил', '2.88', '6.5'), ('официантка', 'SERVICE#GENERAL', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'SERVICE#GENERAL', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 18:18:06 - INFO - Starting model training...
+2025-11-28 18:28:11 - INFO - Training completed
+2025-11-28 18:28:11 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 18:28:15 - INFO - Configuring GPU environment...
+2025-11-28 18:28:16 - INFO - GPU allocated memory: 17.81 GB
+2025-11-28 18:28:16 - INFO - GPU reserved memory: 18.02 GB
+2025-11-28 18:28:16 - INFO - Initializing vLLM for evaluation...
+2025-11-28 18:29:38 - INFO - Evaluating 48 examples
+2025-11-28 18:32:34 - INFO - Deleted ./model_temp
+2025-11-28 18:32:35 - INFO - GPU allocated memory: 2.74 GB
+2025-11-28 18:32:35 - INFO - GPU reserved memory: 2.81 GB
+2025-11-28 18:32:35 - INFO - Experiment completed successfully
+2025-11-28 18:32:35 - INFO - ================================================================================
+2025-11-28 18:32:42 - INFO - Configuring GPU environment...
+2025-11-28 18:32:42 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:32:42 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:32:42 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:32:42 - INFO - Starting training - Subtask: 3, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 18:32:42 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:32:42 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 18:33:00 - INFO - Example prompt (first training example):
+2025-11-28 18:33:00 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'aspect category' refers to the category that the aspect belongs to. It is a combination of an entity and an attribute in the format 'ENTITY#ATTRIBUTE'. The available entities are: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. The available attributes are: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: i wish i could like this place more , and i wish someone would retrain the staff .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('place', 'RESTAURANT#GENERAL', 'NULL', '4.62', '5.12'), ('staff', 'SERVICE#GENERAL', 'NULL', '4.62', '5.12')]<end_of_turn>...
+2025-11-28 18:33:09 - INFO - Starting model training...
+2025-11-28 18:52:26 - INFO - Configuring GPU environment...
+2025-11-28 18:52:27 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 18:52:27 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 18:52:27 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 18:52:27 - INFO - Starting training - Subtask: 2, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 18:52:27 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 18:52:27 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 18:52:46 - INFO - Example prompt (first training example):
+2025-11-28 18:52:46 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: В-третьих, обслуживание: было очень неприятно топтаться в центре зала в верхней одежде (все официанты бегали по залу, никто не встретил и не показал где гардероб - он оказался шкафом между туалетами:)), официантка приносила сначала блюда, а потом уже приборы, счет несли довольно долго, когда уходили, девушка из гардероба выдала не все куртки и ушла... мелочи, но из них складывается впечатление.
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('обслуживание', 'очень неприятно', '2.33', '7'), ('официанты', 'не показал', '3.17', '6'), ('официанты', 'никто не встретил', '2.88', '6.5'), ('официантка', 'довольно долго', '2.67', '7'), ('девушка из гардероба', 'выдала не все куртки и ушла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 18:52:55 - INFO - Starting model training...
+2025-11-28 19:00:51 - INFO - Training completed
+2025-11-28 19:00:51 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 19:00:54 - INFO - Configuring GPU environment...
+2025-11-28 19:00:55 - INFO - GPU allocated memory: 17.81 GB
+2025-11-28 19:00:55 - INFO - GPU reserved memory: 18.05 GB
+2025-11-28 19:00:55 - INFO - Initializing vLLM for evaluation...
+2025-11-28 19:02:14 - INFO - Evaluating 48 examples
+2025-11-28 19:04:44 - WARNING - No tuples parsed from output 121: [('шашлыка из баранины', 'Жаль', '3.17', '5.67'), ('цезарь', 'самый вкусный вариант за всю мою жизнь', '9', '8.7'), ('цезарь', 'очень вкусный', '8.33', '7.67'), ('квас', 'очень вкусный', '8.17', '7.5'), ('салат цезарь', 'самый вкусный вариант за всю мою жизнь', '9', '8.7'],
+2025-11-28 19:04:49 - INFO - Deleted ./model_temp
+2025-11-28 19:04:50 - INFO - GPU allocated memory: 2.74 GB
+2025-11-28 19:04:50 - INFO - GPU reserved memory: 2.85 GB
+2025-11-28 19:04:50 - INFO - Experiment completed successfully
+2025-11-28 19:04:50 - INFO - ================================================================================
+2025-11-28 19:04:56 - INFO - Configuring GPU environment...
+2025-11-28 19:04:56 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 19:04:56 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 19:04:56 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 19:04:56 - INFO - Starting training - Subtask: 2, Language: eng, Domain: restaurant, Seed: 0
+2025-11-28 19:04:56 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 19:04:56 - INFO - Training examples: 2284, Test examples: 200
+2025-11-28 19:05:14 - INFO - Example prompt (first training example):
+2025-11-28 19:05:14 - INFO - <start_of_turn>user
+According to the following sentiment elements definition:
+
+- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. The aspect term might be 'NULL' for implicit aspect.
+- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. The opinion term might be 'NULL' if no explicit opinion expression is present.
+- The 'valence score' measures the degree of positivity or negativity.
+- The 'arousal score' measures the intensity of emotion.
+
+A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.
+
+For the following text, recognize all sentiment elements with their corresponding aspect terms, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].
+Text: i wish i could like this place more , and i wish someone would retrain the staff .
+Sentiment Elements:<end_of_turn>
+<start_of_turn>model
+[('place', 'NULL', '4.62', '5.12'), ('staff', 'NULL', '4.62', '5.12')]<end_of_turn>...
+2025-11-28 19:05:24 - INFO - Starting model training...
+2025-11-28 19:17:17 - INFO - Training completed
+2025-11-28 19:17:17 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 19:17:20 - INFO - Configuring GPU environment...
+2025-11-28 19:17:21 - INFO - GPU allocated memory: 17.81 GB
+2025-11-28 19:17:21 - INFO - GPU reserved memory: 18.05 GB
+2025-11-28 19:17:21 - INFO - Initializing vLLM for evaluation...
+2025-11-28 19:18:39 - INFO - Evaluating 200 examples
+2025-11-28 19:19:13 - WARNING - No tuples parsed from output 22: [("Mac 'n Cheese", 'good', '7.00', '6.83'), ("Mac 'n Cheese", 'a little spicy', '6.83', '6.67')]
+2025-11-28 19:20:20 - WARNING - No tuples parsed from output 22: [("Mac 'n Cheese", "good", "7.00", "7.17"), ("Mac 'n Cheese", "spicy", "7.33", "7.50")]
+2025-11-28 19:20:20 - WARNING - No tuples parsed from output 802: [("Shrimp taco's", 'NULL', '6.50', '6.25'), ("shrimp", "cooked perfectly", '7.50', '7.25'), ("corn tortillas", "fresh", '7.00', '7.00'), ("Kiwi sauce", "fresh", '7.00', '7.00'), ("peppers", "fresh", '7.00', '7.00')]
+2025-11-28 19:20:20 - WARNING - No tuples parsed from output 822: [("Mac 'n Cheese", 'good', '7.00', '7.00'), ("Mac 'n Cheese", 'a little spicy', '6.50', '6.75')]
+2025-11-28 19:20:20 - INFO - Deleted ./model_temp
+2025-11-28 19:20:21 - INFO - GPU allocated memory: 2.75 GB
+2025-11-28 19:20:21 - INFO - GPU reserved memory: 2.83 GB
+2025-11-28 19:20:21 - INFO - Experiment completed successfully
+2025-11-28 19:20:21 - INFO - ================================================================================
+2025-11-28 19:20:28 - INFO - Configuring GPU environment...
+2025-11-28 19:20:28 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 19:20:28 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 19:20:28 - WARNING - Dataset not found for subtask=2, language=jpn, domain=restaurant, split=train. Skipping.
+2025-11-28 19:20:28 - INFO - Experiment completed successfully
+2025-11-28 19:20:28 - INFO - ================================================================================
+2025-11-28 19:20:34 - INFO - Configuring GPU environment...
+2025-11-28 19:20:34 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 19:20:34 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 19:20:34 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 19:20:34 - INFO - Starting training - Subtask: 2, Language: tat, Domain: restaurant, Seed: 0
+2025-11-28 19:20:34 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 19:20:34 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 19:20:51 - INFO - Example prompt (first training example):
+2025-11-28 19:20:51 - INFO - <start_of_turn>user
+Түбәндәге хис-кичерешләр элементлары билгеләмәсенә туры килеп:
+
+- «Аспект термины» - текстта кулланучы фикер белдерә алырлык продукт яки хезмәтнең билгеле бер үзенчәлеген, атрибутын яки аспектын күрсәтүче төгәл сүз яки фраза. Аспект термины ачык булмаган аспект өчен «NULL» булырга мөмкин.
+- «Фикер термины» - текстта кулланучының продукт яки хезмәтнең билгеле бер аспекты яки үзенчәлеге турында белдергән хисләренә яки мөнәсәбәтенә мөрәҗәгать итүче төгәл сүз яки фраза. Ачык фикер белдерү булмаса, фикер термины «NULL» булырга мөмкин.
+- «valence score» уңай яки тискәре дәрәҗәне үлчи.
+- «arousal score» хисләр интенсивлыгын үлчи.
+
+1.00 балл бик тискәре valence яки бик түбән arousal күрсәтә, 9.00 бик уңай valence яки бик югары arousal күрсәтә, ә 5.00 нейтраль valence яки уртача arousal белдерә. valence score һәм arousal score икесе дә төгәл ике утырмалы саннарга түгәрәкләнергә тиеш.
+
+Түбәндәге текст өчен барлык хис-кичерешләр элементларын тиешле аспект терминнары, фикер терминнары, valence score, arousal score белән кортежлар исемлеге рәвешендә тану [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Өченчедән, хезмәт күрсәтү: зал уртасында өске киемдә таптанып йөрү бик күңелсез булды (барлык официантлар да зал буйлап йөгереп йөрделәр, берәү дә каршы алмады һәм гардеробның кайда икәнен күрсәтмәде - ул бәдрәфләр арасындагы шкаф булып чыкты:)), официантка башта ашамлыклар алып килде, аннары инде приборлар китерде, счетны шактый озак алып килделәр, киткәндә, гардеробтагы кыз бөтен курткаларны да бирмәде һәм чыгып китте... вак-төяк, ләкин тәэсир шулардан төзелә.
+Хис-кичерешләр элементлары:<end_of_turn>
+<start_of_turn>model
+[('хезмәт күрсәтү', 'бик күңелсез булды', '2.33', '7'), ('официантлар', 'күрсәтмәде', '3.17', '6'), ('официантлар', 'берәү дә каршы алмады', '2.88', '6.5'), ('официантка', 'шактый озак', '2.67', '7'), ('гардеробтагы кыз', 'бөтен курткаларны да бирмәде һәм чыгып китте', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 19:21:01 - INFO - Starting model training...
+2025-11-28 19:32:08 - INFO - Training completed
+2025-11-28 19:32:08 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 19:32:12 - INFO - Configuring GPU environment...
+2025-11-28 19:32:12 - INFO - GPU allocated memory: 17.81 GB
+2025-11-28 19:32:12 - INFO - GPU reserved memory: 18.05 GB
+2025-11-28 19:32:12 - INFO - Initializing vLLM for evaluation...
+2025-11-28 19:33:31 - INFO - Evaluating 48 examples
+2025-11-28 19:36:38 - INFO - Deleted ./model_temp
+2025-11-28 19:36:39 - INFO - GPU allocated memory: 2.75 GB
+2025-11-28 19:36:39 - INFO - GPU reserved memory: 2.81 GB
+2025-11-28 19:36:39 - INFO - Experiment completed successfully
+2025-11-28 19:36:39 - INFO - ================================================================================
+2025-11-28 19:36:45 - INFO - Configuring GPU environment...
+2025-11-28 19:36:46 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 19:36:46 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 19:36:46 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 19:36:46 - INFO - Starting training - Subtask: 2, Language: ukr, Domain: restaurant, Seed: 0
+2025-11-28 19:36:46 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 19:36:46 - INFO - Training examples: 1240, Test examples: 48
+2025-11-28 19:37:04 - INFO - Example prompt (first training example):
+2025-11-28 19:37:04 - INFO - <start_of_turn>user
+Відповідно до наступного визначення елементів настрою:
+
+- «Термін аспекту» - це точне слово або фраза в тексті, яке представляє конкретну особливість, атрибут або аспект продукту чи послуги, про які користувач може висловити думку. Термін аспекту може бути «NULL» для неявного аспекту.
+- «Термін думки» - це точне слово або фраза в тексті, яке відноситься до настрою або ставлення, висловленого користувачем до певного аспекту або особливості продукту чи послуги. Термін думки може бути «NULL», якщо явне вираження думки відсутнє.
+- «valence score» вимірює ступінь позитивності або негативності.
+- «arousal score» вимірює інтенсивність емоції.
+
+Оцінка 1.00 вказує на надзвичайно негативний valence або дуже низький arousal, 9.00 вказує на надзвичайно позитивний valence або дуже високий arousal, а 5.00 представляє нейтральний valence або середній arousal. І valence score, і arousal score повинні бути округлені до рівно двох десяткових знаків.
+
+Для наступного тексту розпізнайте всі елементи настрою з відповідними термінами аспектів, термінами думок, valence score, arousal score у наступному тексті у вигляді списку кортежів [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: По-третє, обслуговування: було дуже неприємно топтатися в центрі залу у верхньому одязі (всі офіціанти бігали по залу, ніхто не зустрів і не показав де гардероб - він виявився шафою між туалетами:)), офіціантка приносила спочатку страви, а потім вже прилади, рахунок несли досить довго, коли йшли, дівчина з гардероба видала не всі куртки і пішла... дрібниці, але з них складається враження.
+Елементи настрою:<end_of_turn>
+<start_of_turn>model
+[('обслуговування', 'дуже неприємно', '2.33', '7'), ('офіціанти', 'не показав', '3.17', '6'), ('офіціанти', 'ніхто не зустрів', '2.88', '6.5'), ('офіціантка', 'досить довго', '2.67', '7'), ('дівчина з гардероба', 'видала не всі куртки і пішла', '2.75', '6.62')]<end_of_turn>...
+2025-11-28 19:37:14 - INFO - Starting model training...
+2025-11-28 19:46:16 - INFO - Training completed
+2025-11-28 19:46:16 - INFO - Saving model and tokenizer to model_temp...
+2025-11-28 19:46:19 - INFO - Configuring GPU environment...
+2025-11-28 19:46:20 - INFO - GPU allocated memory: 17.81 GB
+2025-11-28 19:46:20 - INFO - GPU reserved memory: 18.05 GB
+2025-11-28 19:46:20 - INFO - Initializing vLLM for evaluation...
+2025-11-28 19:47:40 - INFO - Evaluating 48 examples
+2025-11-28 19:48:26 - WARNING - No tuples parsed from output 6: [("місці", 'тихому', '6.8', '6.2'), ("інтер'єр", 'дуже затишний', '7.8', '7.2')]
+2025-11-28 19:48:26 - WARNING - No tuples parsed from output 24: [("інтер'єр", 'Приємний', '6.8', '6.2'), ("інтер'єр", 'дуже світло на душі', '8.17', '7.67'), ("інтер'єр", 'затишно', '7.33', '6.67')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 6: [("місце", 'тихому', '7.17', '6.17'), ("інтер'єр", 'дуже затишний', '7.67', '7.33')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 53: [('меню', "потрібно додавати нові страви", '5.33', '5.67')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 70: [('Меню', "змусило довго вибирати", '8.17', '8.17')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 72: [("інтер'єр", 'Приємний', '7.17', '6.5'), ("інтер'єр", 'дуже світло на душі', '8.33', '8'), ("інтер'єр", 'затишно', '7.75', '7.25')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 78: [('стейк', "дуже задоволені", '8.17', '7.83')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 80: [('пиво', "більше, ніж відмінно", '9', '8.67')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 150: [("місці", 'тихому', '7', '6.8'), ("інтер'єр", 'дуже затишний', '7.9', '7.5')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 168: [("інтер'єр", 'Приємний', '7.25', '6.75'), ("інтер'єр", 'дуже світло на душі', '8.25', '7.75'), ("інтер'єр", 'затишно', '7.5', '7.5')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 198: [("інтер'єр", 'дуже затишний', '7.83', '7.33')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 216: [("інтер'єр", 'Приємний', '7.1', '6.3'), ("інтер'єр", 'дуже світло на душі і затишно', '7.8', '7.6')]
+2025-11-28 19:50:12 - WARNING - No tuples parsed from output 222: [("стейк", "дуже задоволені", '7.8', '7.2')]
+2025-11-28 19:50:17 - INFO - Deleted ./model_temp
+2025-11-28 19:50:18 - INFO - GPU allocated memory: 2.74 GB
+2025-11-28 19:50:18 - INFO - GPU reserved memory: 2.81 GB
+2025-11-28 19:50:18 - INFO - Experiment completed successfully
+2025-11-28 19:50:18 - INFO - ================================================================================
+2025-11-28 19:50:25 - INFO - Configuring GPU environment...
+2025-11-28 19:50:25 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 19:50:25 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 19:50:25 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 19:50:25 - INFO - Starting training - Subtask: 2, Language: zho, Domain: restaurant, Seed: 0
+2025-11-28 19:50:25 - INFO - Training parameters - Epochs: 1, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 19:50:25 - INFO - Training examples: 6050, Test examples: 300
+2025-11-28 19:50:44 - INFO - Example prompt (first training example):
+2025-11-28 19:50:44 - INFO - <start_of_turn>user
+根据以下情感元素定义：
+
+- '方面术语'是文本中代表用户可能表达意见的产品或服务的特定特征、属性或方面的确切单词或短语。对于隐含方面，方面术语可能为'NULL'。
+- '意见术语'是文本中指用户对产品或服务的特定方面或特征所表达的情感或态度的确切单词或短语。如果没有明确的意见表达，意见术语可能为'NULL'。
+- 'valence score'衡量积极或消极的程度。
+- 'arousal score'衡量情绪的强度。
+
+1.00的分数表示极度负面的valence或非常低的arousal，9.00表示极度正面的valence或非常高的arousal，5.00表示中性的valence或中等的arousal。valence score和arousal score都必须精确地四舍五入到两位小数。
+
+对于以下文本，识别具有相应方面术语、意见术语、valence score、arousal score的所有情感元素，以元组列表的形式 [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...]。
+文本： 整體上菜速度非常快。
+情感元素：<end_of_turn>
+<start_of_turn>model
+[('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
+2025-11-28 19:50:53 - INFO - Starting model training...

@@ -1,3 +1,6 @@
+from collections import defaultdict
+import statistics
+import json
 import math
 key_name = {1: "Aspect_VA", 2: "Triplet", 3: 'Quadruplet'}
 
@@ -157,7 +160,7 @@ def quadruplet_to_tuple(quad, key_fields):
     return tuple(values)
 
 
-def evaluate_predictions(gold_data, pred_data, task = 3):
+def evaluate_predictions(gold_data, pred_data, task=3):
     """
     Calculate TP, FP, FN, TN, Precision, Recall, F1.
 
@@ -169,21 +172,23 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
     Returns:
         dict: A dictionary containing TP, FP, FN, TN, Precision, Recall, F1.
     """
-    warning1,warning2 = False,False
+    warning1, warning2 = False, False
     key = key_name[task]
     if not gold_data or not pred_data:
         print("Error: Failed to load one or both data files. Cannot perform evaluation.")
         return None
-    
+
     # Determine key fields for matching based on task
-    key_fields = ['Aspect', 'Opinion'] if task == 2 else ['Aspect', 'Opinion', 'Category']
-    
+    key_fields = ['Aspect', 'Opinion'] if task == 2 else [
+        'Aspect', 'Opinion', 'Category']
+
     # Index data by ID for efficient lookup
     gold_dict = {entry['ID']: entry[key] for entry in gold_data}
     pred_dict = {entry['ID']: entry[key] for entry in pred_data}
 
     # Initialize counters
-    cTP_total = 0.0  # Continuous True Positive (TP_cat minus the sum of thier VA error distances)
+    # Continuous True Positive (TP_cat minus the sum of thier VA error distances)
+    cTP_total = 0.0
     TP_cat = 0         # True Positive (exact match for key fields)
     FP_cat = 0         # False Positive
     FN_cat = 0         # False Negative
@@ -199,10 +204,10 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
             # List to store all cTP scores for matching predictions for the current gold quadruplet
             all_cTP_scores = []  # Reset for each gold quadruplet
             gold_match_key = quadruplet_to_tuple(gold_quad, key_fields)
-            
+
             for pred_quad in pred_quads:  # Iterate through predictions
                 pred_match_key = quadruplet_to_tuple(pred_quad, key_fields)
-                
+
                 # Check if key fields match
                 if gold_match_key == pred_match_key:
                     # Parse VA string
@@ -212,22 +217,24 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
                         gold_v, gold_a = float(gold_v_str), float(gold_a_str)
                         pred_v, pred_a = float(pred_v_str), float(pred_a_str)
                     except ValueError as e:
-                        print(f"Warning: Failed to parse VA values for ID '{id_}'. Error: {e}")
+                        print(
+                            f"Warning: Failed to parse VA values for ID '{id_}'. Error: {e}")
                         continue
 
-                    if pred_a<1.0 or pred_a>9.0 or pred_v<1.0 or pred_v>9.0:
+                    if pred_a < 1.0 or pred_a > 9.0 or pred_v < 1.0 or pred_v > 9.0:
                         warning1 = True
                         all_cTP_scores.append(0)
                         continue
-                    
+
                     # --- Calculate Euclidean distance and cTP score ---
                     # Calculate Euclidean distance between (V, A) points
-                    va_euclid = math.sqrt((pred_v - gold_v)**2 + (pred_a - gold_a)**2)
+                    va_euclid = math.sqrt(
+                        (pred_v - gold_v)**2 + (pred_a - gold_a)**2)
                     # cTP score = 1 - distance, but cannot be less than 0 (due to numerical error)
                     # The maximum possible distance in [1,9]x[1,9] space is sqrt(128), so we cap the distance used in score calculation.
                     D_max = math.sqrt(128)
                     cTP_t = max(0.0, 1.0 - (va_euclid / D_max))
-                    
+
                     # print("======================="*5)
                     # print("id: ",id_)
                     # print("gold: ",gold_quad)
@@ -239,12 +246,11 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
                     # input()
                     all_cTP_scores.append(cTP_t)
 
-            
-            if len(all_cTP_scores)>1:
+            if len(all_cTP_scores) > 1:
                 warning2 = True
                 FN_cat = FN_cat + 1
                 cTP_total += 0
-            elif len(all_cTP_scores)==1:
+            elif len(all_cTP_scores) == 1:
                 matched_pred_num += 1
                 TP_cat += 1
                 cTP_total += all_cTP_scores[0]
@@ -253,11 +259,12 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
                 FN_cat = FN_cat + 1
         FP_cat += (len(pred_quads)-matched_pred_num)
 
-
     # Calculate cPrecision, cRecall, cF1 using cTP_total
-    cPrecision = cTP_total / (TP_cat + FP_cat) if (TP_cat + FP_cat) > 0 else 0.0
+    cPrecision = cTP_total / \
+        (TP_cat + FP_cat) if (TP_cat + FP_cat) > 0 else 0.0
     cRecall = cTP_total / (TP_cat + FN_cat) if (TP_cat + FN_cat) > 0 else 0.0
-    cF1 = 2 * cPrecision * cRecall / (cPrecision + cRecall) if (cPrecision + cRecall) > 0 else 0.0
+    cF1 = 2 * cPrecision * cRecall / \
+        (cPrecision + cRecall) if (cPrecision + cRecall) > 0 else 0.0
     if warning1:
         print(f"Warning: Some predicted values are out of the numerical range.")
     if warning2:
@@ -271,3 +278,184 @@ def evaluate_predictions(gold_data, pred_data, task = 3):
         'cRecall': cRecall,
         'cF1': cF1
     }
+
+
+################
+
+
+N_SPLITS = 1  # Anzahl der 80/20 Splits für train_split
+RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
+
+
+def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_split", guidance=True, self_consistency=True, run_idx=0):
+    llm_name_formatted = llm.replace("/", "_")
+
+    guidance_str = "with_guidance" if guidance else "no_guidance"
+    temp_str = "_temp0.8" if self_consistency else "_temp0"
+    run_str = f"_run{run_idx}" if self_consistency else ""
+    split_idx_str = f"_{split_idx}" if strategy == "train_split" else ""
+
+    path = f"results/results_{strategy}/{llm_name_formatted}/{subtask}_{language}_{domain}_{RUN_SEED}{split_idx_str}{temp_str}_{guidance_str}{run_str}.jsonl"
+
+    predictions = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            data = json.loads(line)
+            predictions.append(data)
+    return predictions
+
+
+def load_ground_truth(subtask, language, domain):
+    # task-dataset/track_a/subtask_2/eng/eng_laptop_train_alltasks.jsonl
+    path = f"task-dataset/track_a/subtask_{subtask}/{language}/{language}_{domain}_train_alltasks.jsonl"
+    ground_truth = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            data = json.loads(line)
+            ground_truth.append(data)
+    return ground_truth
+
+
+def filter_predictions(predictions, ground_truth):
+    labels_filtered = []
+
+    preds_dict = {pred['ID']: pred for pred in predictions}
+    for label in ground_truth:
+        if label['ID'] in preds_dict:
+            labels_filtered.append(label)
+    return labels_filtered
+
+
+def merge_predictions(predictions, subtask):
+    counter = defaultdict(list)
+
+    # Annahme: alle Runs haben dieselbe ID
+    final_id = predictions[0]["ID"]
+
+    for run in predictions:
+        key_list = "Quadruplet" if subtask == 3 else "Triplet"
+        for quad in run[key_list]:
+            # Key abhängig vom Subtask
+            if subtask == 3:
+                key = (quad["Aspect"], quad["Category"], quad["Opinion"])
+            else:  # subtask == 2
+                key = (quad["Aspect"], quad["Opinion"])
+
+            # Valence/Arousal parsen
+            valence_str, arousal_str = quad["VA"].split("#")
+            valence = float(valence_str)
+            arousal = float(arousal_str)
+
+            counter[key].append((valence, arousal))
+
+    merged = []
+
+    # Verarbeitung der aggregierten Quadruplets
+    for key, values in counter.items():
+        if len(values) >= 3:
+            mean_valence = statistics.mean(v[0] for v in values)
+            mean_arousal = statistics.mean(v[1] for v in values)
+
+            if subtask == 3:
+                aspect, category, opinion = key
+                merged.append({
+                    "Aspect": aspect,
+                    "Category": category,
+                    "Opinion": opinion,
+                    "VA": f"{mean_valence:.2f}#{mean_arousal:.2f}"
+                })
+            else:
+                aspect, opinion = key
+                merged.append({
+                    "Aspect": aspect,
+                    "Opinion": opinion,
+                    "VA": f"{mean_valence:.2f}#{mean_arousal:.2f}"
+                })
+
+    # Finaler Output mit passendem Key
+    if subtask == 2:
+        return {
+            "ID": final_id,
+            "Triplet": merged
+        }
+    else:
+        return {
+            "ID": final_id,
+            "Quadruplet": merged
+        }
+
+
+def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-4b-it-bnb-4bit"):
+    labels = load_ground_truth(subtask, language, domain)
+
+    results = []
+    n_splits = N_SPLITS if strategy == "train_split" else 1
+
+    for split_idx in range(n_splits):
+        # 1a
+        preds_no_sc_guided = load_predictions(
+            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=True, self_consistency=False)
+        # 1b
+        preds_no_sc_no_guided = load_predictions(
+            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=False, self_consistency=False)
+        # 2a
+        preds_sc_guided = []
+
+        preds_0 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=0)
+        preds_1 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=1)
+        preds_2 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=2)
+        preds_3 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=3)
+        preds_4 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=4)
+        for k in range(len(preds_0)):
+            merged_quads = merge_predictions(
+                [preds_0[k], preds_1[k], preds_2[k], preds_3[k], preds_4[k]], subtask=subtask)
+            preds_sc_guided.append(merged_quads)
+
+        # 2b
+        preds_sc_no_guided = []
+
+        preds_0 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=0)
+        preds_1 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=1)
+        preds_2 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=2)
+        preds_3 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=3)
+        preds_4 = load_predictions(subtask, language, domain, split_idx=split_idx,
+                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=4)
+        for k in range(len(preds_0)):
+            merged_quads = merge_predictions(
+                [preds_0[k], preds_1[k], preds_2[k], preds_3[k], preds_4[k]], subtask=subtask)
+            preds_sc_no_guided.append(merged_quads)
+
+        labels_filtered = filter_predictions(preds_no_sc_guided, labels)
+
+        results.append({
+            "no_sc_guided": evaluate_predictions(labels_filtered, preds_no_sc_guided, task=subtask),
+            "no_sc_no_guided": evaluate_predictions(labels_filtered, preds_no_sc_no_guided, task=subtask),
+            "sc_guided": evaluate_predictions(labels_filtered, preds_sc_guided, task=subtask),
+            "sc_no_guided": evaluate_predictions(labels_filtered, preds_sc_no_guided, task=subtask),
+        })
+
+    # calculate average over splits
+    if strategy == "train_split":
+        avg_results = {}
+        for key in results[0].keys():
+            avg_results[key] = {}
+            for metric in results[0][key].keys():
+                avg_results[key][metric] = statistics.mean(
+                    result[key][metric] for result in results)
+        return avg_results
+    else:
+        return results[0], {
+            "no_sc_guided": preds_no_sc_guided,
+            "no_sc_no_guided": preds_no_sc_no_guided,
+            "sc_guided": preds_sc_guided,
+            "sc_no_guided": preds_sc_no_guided,
+        }
