@@ -2385,3 +2385,28 @@ Sentiment Elements:<end_of_turn>
 <start_of_turn>model
 [('上菜速度', '非常快', '6.00', '6.00')]<end_of_turn>...
 2025-11-28 19:50:53 - INFO - Starting model training...
+2025-11-28 20:03:26 - INFO - Configuring GPU environment...
+2025-11-28 20:03:26 - INFO - GPU allocated memory: 0.00 GB
+2025-11-28 20:03:26 - INFO - GPU reserved memory: 0.00 GB
+2025-11-28 20:03:26 - INFO - Random seed set to 0 for reproducibility
+2025-11-28 20:03:26 - INFO - Starting training - Subtask: 3, Language: rus, Domain: restaurant, Seed: 0
+2025-11-28 20:03:26 - INFO - Training parameters - Epochs: 5, Batch size: 4, LR: 0.0002, LoRA rank: 64
+2025-11-28 20:03:26 - INFO - Training examples: 992, Test examples: 248
+2025-11-28 20:03:43 - INFO - Example prompt (first training example):
+2025-11-28 20:03:43 - INFO - <start_of_turn>user
+Согласно следующему определению элементов настроения:
+
+- «Термин аспекта» - это точное слово или фраза в тексте, которое представляет собой конкретную особенность, атрибут или аспект продукта или услуги, о которых пользователь может выразить мнение. Термин аспекта может быть «NULL» для неявного аспекта.
+- «Категория аспекта» относится к категории, к которой принадлежит аспект. Это комбинация сущности и атрибута в формате «ENTITY#ATTRIBUTE». Доступные сущности: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION. Доступные атрибуты: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS.
+- «Термин мнения» - это точное слово или фраза в тексте, которое относится к настроению или отношению, выраженному пользователем к определенному аспекту или особенности продукта или услуги. Термин мнения может быть «NULL», если явное выражение мнения отсутствует.
+- «valence score» измеряет степень позитивности или негативности.
+- «arousal score» измеряет интенсивность эмоции.
+
+Оценка 1.00 указывает на крайне негативный valence или очень низкий arousal, 9.00 указывает на крайне позитивный valence або очень высокий arousal, а 5.00 представляет собой нейтральный valence или средний arousal. И valence score, и arousal score должны быть округлены до ровно двух десятичных знаков.
+
+Для следующего текста распознайте все элементы настроения с соответствующими терминами аспектов, категориями аспектов, терминами мнений, valence score, arousal score в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].
+Текст: Еда на уровне и что порадовало--порции большие))
+Элементы настроения:<end_of_turn>
+<start_of_turn>model
+[('Еда', 'FOOD#QUALITY', 'на уровне', '7.1', '6.6'), ('порции', 'FOOD#STYLE_OPTIONS', 'большие', '7.2', '6.6')]<end_of_turn>...
+2025-11-28 20:03:53 - INFO - Starting model training...

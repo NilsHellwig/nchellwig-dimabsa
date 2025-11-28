@@ -283,7 +283,7 @@ def evaluate_predictions(gold_data, pred_data, task=3):
 ################
 
 
-N_SPLITS = 1  # Anzahl der 80/20 Splits für train_split
+N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
 
 
