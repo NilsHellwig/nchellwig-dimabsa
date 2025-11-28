@@ -466,7 +466,7 @@ def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) 
 
 
 def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3):
-    valid_phrases = find_valid_phrases_list(text)
+    valid_phrases = find_valid_phrases_list(text, max_tokens_in_phrase=8)
 
     # Definiere considered_aspects basierend auf subtask
     if subtask == 3:

@@ -33,7 +33,7 @@ for num_epochs in [5]:
                                 "--language", language,
                                 "--domain", domain,
                                 "--seed_run", str(seed_run),
-                                "--strategy", "pred_dev",
+                                "--strategy", STRATEGY,
                                 "--llm_name", llm,
                                 "--num_epochs", str(num_epochs),
                                 "--split_idx", str(split_idx)

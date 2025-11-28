@@ -135,6 +135,9 @@ def train_and_evaluate(
     tokenizer.save_pretrained("model_temp")
 
     # perform evaluation here using vLLM
+    
+    setup_gpu_environment()
+    clear_memory()
 
     logger.info("Initializing vLLM for evaluation...")
     # Initialize vLLM with the base model
@@ -145,8 +148,9 @@ def train_and_evaluate(
         max_lora_rank=lora_rank,
         gpu_memory_utilization=0.7,
         seed=seed_run,
-        max_num_seqs=256,
+        max_num_seqs=512,
         max_model_len=max_seq_length,
+        guided_decoding_backend="xgrammar",
     )
 
     # Create sampling parameters
@@ -154,10 +158,10 @@ def train_and_evaluate(
     logger.info(f"Evaluating {len(test_data_raw)} examples")
 
     evaluate_model(test_data_raw, subtask, language,
-                   domain, llm, max_seq_length, seed_run, strategy, model_name_or_path, split_idx=split_idx)
+                   domain, llm, seed_run, strategy, model_name_or_path, split_idx=split_idx)
 
 
-def evaluate_model(test_data_raw, subtask, language, domain, llm, max_seq_length, seed_run, strategy, model_name_or_path, split_idx=0):
+def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
 
     prompts = []
     for example in test_data_raw:
@@ -263,37 +267,41 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, max_seq_length
     if strategy == "train_split":
         path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
-            json.dump(outputs_1a, f, ensure_ascii=False, indent=4)
+            for item in outputs_1a:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
         path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_with_guidance.jsonl"
         with open(path_1b, "w") as f:
-            json.dump(outputs_1b, f, ensure_ascii=False, indent=4)
+            for item in outputs_1b:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
         for i in range(5):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
-                json.dump(
-                    outputs_2a[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+                for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
             path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
-                json.dump(
-                    outputs_2b[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+                for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
     elif strategy == "pred_dev":
         path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
-            json.dump(outputs_1a, f, ensure_ascii=False, indent=4)
+            for item in outputs_1a:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
         path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_with_guidance.jsonl"
         with open(path_1b, "w") as f:
-            json.dump(outputs_1b, f, ensure_ascii=False, indent=4)
+            for item in outputs_1b:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
         for i in range(5):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
-                json.dump(
-                    outputs_2a[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+                for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
             path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
-                json.dump(
-                    outputs_2b[i*len(prompts):(i+1)*len(prompts)], f, ensure_ascii=False, indent=4)
+                for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
 
 def format_predictions(outputs, subtask, test_data_raw):
