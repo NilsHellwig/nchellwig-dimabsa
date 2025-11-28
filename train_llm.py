@@ -15,9 +15,9 @@ logger = logging.getLogger('training')
 def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", seed_run=0, strategy="pred_dev", split_idx=0, llm_name="unsloth/gemma-3-27b-it-bnb-4bit", num_epochs=5):
 
     if strategy == "pred_dev":
-        train_data = get_dataset(
+        train_dataset = get_dataset(
             subtask=subtask, language=language, domain=domain, split="train")
-        if train_data is None:
+        if train_dataset is None:
             logger.warning(
                 f"Dataset not found for subtask={subtask}, language={language}, domain={domain}, split=train. Skipping.")
             return None

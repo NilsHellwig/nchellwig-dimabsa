@@ -170,14 +170,14 @@ def train_and_evaluate(
         sampling_params = SamplingParams(
             temperature=0.0,
             max_tokens=max_seq_length,
-            #structured_outputs=StructuredOutputsParams(regex=pattern)
+            structured_outputs=StructuredOutputsParams(regex=pattern)
         )
         sampling_params_list.append(sampling_params)
 
     # Generate with the LoRA adapter
     outputs = llm.generate(
         prompts=prompts,
-        sampling_params=sampling_params,
+        sampling_params=sampling_params_list,
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
 

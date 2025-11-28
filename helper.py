@@ -274,6 +274,10 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
         for t in tuples_list:
             if len(t) == 5:
                 aspect, category, opinion, valence, arousal = t
+                # valence and arousal must have two decimal places
+                valence = f"{float(valence):.2f}"
+                arousal = f"{float(arousal):.2f}"
+                
                 # Create deduplication key
                 key = (aspect, category, opinion)
                 if key not in seen_keys:
@@ -292,6 +296,9 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
         for t in tuples_list:
             if len(t) == 4:
                 aspect, opinion, valence, arousal = t
+                # valence and arousal must have two decimal places
+                valence = f"{float(valence):.2f}"
+                arousal = f"{float(arousal):.2f}"
                 # Create deduplication key
                 key = (aspect, opinion)
                 if key not in seen_keys:
@@ -357,17 +364,17 @@ def parse_label_string(label_string, subtask=3):
         if subtask == 2:
             # aspect_term, opinion_term, valence, arousal
             if array_based:
-                # Allow NULL for aspect_term and opinion_term, specific pattern for VA
-                pattern = r"\['(NULL|.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\]"
+                # Allow NULL for aspect_term and opinion_term, specific pattern for VA (0, 1 or 2 decimal places)
+                pattern = r"\['(NULL|.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\]"
             else:
-                pattern = r"\('(NULL|.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\)"
+                pattern = r"\('(NULL|.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\)"
         elif subtask == 3:
             # aspect_term, category, opinion_term, valence, arousal
             if array_based:
-                # Allow NULL for aspect_term and opinion_term, specific pattern for VA
-                pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\]"
+                # Allow NULL for aspect_term and opinion_term, specific pattern for VA (0, 1 or 2 decimal places)
+                pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\]"
             else:
-                pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9]+(?:\.[0-9][0-9])?)'?, '?([1-9]+(?:\.[0-9][0-9])?)'?\)"
+                pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\)"
         
         matches = re.match(pattern, t)
         if matches:
@@ -427,7 +434,7 @@ def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) 
         r'(?<=\w)(?=[,\.!?;:\-\(\)])',  # before punctuation
         r'\s+',                          # spaces
         r'[\$"\'“”\/…]',                 # before/after special chars
-        r'(?<=[a-z])(?=[A-Z])',          # camel-case boundary
+        r'(?<=[a-z\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u0430-\u044F\u0451])(?=[A-Z\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u0410-\u042F\u0401])',  # camel-case and script boundaries
         r'[^\x00-\x7F]',                 # non-ASCII chars
     ]
 
@@ -476,8 +483,8 @@ def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=
     category_pattern = "|".join(cat for cat in unique_aspect_categories)
     polarity_pattern = "|".join(polarities)
 
-    # Valence und Arousal Pattern 
-    va_pattern = r"[1-9]+(?:\.[0-9][0-9])?"
+    # Valence und Arousal Pattern - 0, 1 oder 2 Nachkommastellen
+    va_pattern = r"[1-9](\.[0-9][0-9]?)?"
 
     # Tuple pattern
     tuple_pattern_parts = []
