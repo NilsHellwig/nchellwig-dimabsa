@@ -130,3 +130,4 @@ model_temp/tokenizer_config.json
 model_temp/tokenizer.json
 model_temp/tokenizer.model
 logs.txt
+__pycache__/evaluate.cpython-313.pyc
