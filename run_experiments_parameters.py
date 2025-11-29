@@ -4,7 +4,6 @@ import subprocess
 
 # Valid combinations of (subtask, language, domain) that have data
 VALID_COMBINATIONS = [
-    (3, "zho", "laptop"),
     (2, "eng", "restaurant"),
     (2, "eng", "laptop"),
     (2, "jpn", "hotel"),
@@ -20,6 +19,7 @@ VALID_COMBINATIONS = [
     (3, "tat", "restaurant"),
     (3, "ukr", "restaurant"),
     (3, "zho", "restaurant"),
+    (3, "zho", "laptop"),
 ]
 
 N_SEEDS_RUNS = 1

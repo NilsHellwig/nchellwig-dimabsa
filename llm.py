@@ -159,6 +159,27 @@ def train_and_evaluate(
 
     evaluate_model(test_data_raw, subtask, language,
                    domain, llm, seed_run, strategy, model_name_or_path, split_idx=split_idx)
+    
+    
+
+def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=2000):
+    if len(prompts) <= chunks:
+        return llm.generate(
+            prompts=prompts,
+            sampling_params=sampling_params,
+            lora_request=lora_request
+        )
+    all_outputs = []
+    for i in range(0, len(prompts), chunks):
+        chunk_prompts = prompts[i:i+chunks]
+        chunk_sampling_params = sampling_params[i:i+chunks]
+        outputs = llm.generate(
+            prompts=chunk_prompts,
+            sampling_params=chunk_sampling_params,
+            lora_request=LoRARequest("adapter", 1, "model_temp")
+        )
+        all_outputs.extend(outputs)
+    return all_outputs
 
 
 def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
@@ -250,11 +271,7 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
                 seed=k
             ))
     
-    outputs_2b = llm.generate(
-        prompts=prompts_2b,
-        sampling_params=sampling_params_2b,
-        lora_request=LoRARequest("adapter", 1, "model_temp")
-    )
+    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=2000)
 
     outputs_2a = format_predictions(outputs_2a, subtask, test_data_raw * 5)
     outputs_2b = format_predictions(outputs_2b, subtask, test_data_raw * 5)
