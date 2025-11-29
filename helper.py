@@ -46,7 +46,8 @@ def clear_memory(variables_to_clear=None, verbose=True):
     # Default variables to clear if none specified
     if variables_to_clear is None:
         variables_to_clear = ["inputs", "model", "processor", "trainer",
-                              "peft_model", "bnb_config"]
+                            "peft_model", "bnb_config", "fastmodel", 
+                            "tokenizer", "base_model", "llm"]
 
     # Delete specified variables if they exist in global scope
     g = globals()
@@ -417,13 +418,13 @@ def escape_except_space(text):
     return re.sub(r'([.^$*+?{}\[\]\\|()])', r'\\\1', text)
 
 
-def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) -> list[str]:
+def find_valid_phrases_list(text: str, max_characters_in_phrase: int | None = None) -> list[str]:
     """
     Extract all valid phrases from a given text based on punctuation and formatting rules.
 
     Args:
         text (str): The input text.
-        max_tokens_in_phrase (int, optional): Maximum number of tokens allowed per phrase. 
+        max_characters_in_phrase (int, optional): Maximum number of characters allowed per phrase. 
                                               If None, no limit is applied.
     Returns:
         list[str]: List of cleaned, unique phrases.
@@ -451,8 +452,8 @@ def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) 
     split_positions = sorted(split_positions)
 
     # Set token limit
-    if max_tokens_in_phrase is None:
-        max_tokens_in_phrase = len(text.split())
+    if max_characters_in_phrase is None:
+        max_characters_in_phrase = len(text)
 
     # Generate phrases
     for i, start in enumerate(split_positions):
@@ -460,7 +461,7 @@ def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) 
             phrase = text[start:end].strip()
             if not phrase:
                 continue
-            if len(phrase.split()) <= max_tokens_in_phrase:
+            if len(phrase) <= max_characters_in_phrase:
                 phrases.append(phrase)
 
     # Escape quotes and remove duplicates
@@ -470,8 +471,10 @@ def find_valid_phrases_list(text: str, max_tokens_in_phrase: int | None = None) 
     return clean_phrases
 
 
-def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3):
-    valid_phrases = find_valid_phrases_list(text, max_tokens_in_phrase=8)
+def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3, max_characters_in_phrase=64):
+    valid_phrases = find_valid_phrases_list(text, max_characters_in_phrase=max_characters_in_phrase)
+    if len(valid_phrases) > 5000:
+        return get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=subtask, max_characters_in_phrase=max_characters_in_phrase - 1)
 
     # Definiere considered_aspects basierend auf subtask
     if subtask == 3:
