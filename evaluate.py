@@ -283,7 +283,7 @@ def evaluate_predictions(gold_data, pred_data, task=3):
 ################
 
 
-N_SPLITS = 1  # Anzahl der 80/20 Splits für train_split
+N_SPLITS = 4  # Anzahl der 80/20 Splits für train_split
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
 
 
@@ -435,6 +435,19 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-4b
             preds_sc_no_guided.append(merged_quads)
 
         labels_filtered = filter_predictions(preds_no_sc_guided, labels)
+        
+        # convert key Quadruplet to Triplet if subtask==2 for labels_filtered
+        if subtask == 2:
+            for entry in labels_filtered:
+                quads = entry.pop("Quadruplet", [])
+                triplets = []
+                for quad in quads:
+                    triplets.append({
+                        "Aspect": quad["Aspect"],
+                        "Opinion": quad["Opinion"],
+                        "VA": quad["VA"]
+                    })
+                entry["Triplet"] = triplets
 
         results.append({
             "no_sc_guided": evaluate_predictions(labels_filtered, preds_no_sc_guided, task=subtask),

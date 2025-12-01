@@ -18,20 +18,12 @@ VALID_COMBINATIONS = [
     (3, "rus", "restaurant"),
     (3, "tat", "restaurant"),
     (3, "ukr", "restaurant"),
-    (3, "zho", "laptop"),
     (3, "zho", "restaurant"),
+    (3, "zho", "laptop"),
 ]
 
 N_SEEDS_RUNS = 1
 N_EPOCHS = 5
-
-# STUDIE mit cross-validation:
-# 1a. Prediction mit temp=0 ohne guided decoding
-# 1b. Prediction mit temp=0 mit guided decoding
-
-# 2a. Prediction mit temp=0.8 -> 15 mal gleiche prompt ausführen ohne guided decoding
-# 2b. Prediction mit temp=0.8 -> 15 mal gleiche prompt ausführen mit guided decoding
-
 
 for seed_run in range(N_SEEDS_RUNS):
     for subtask, language, domain in VALID_COMBINATIONS:
