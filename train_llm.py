@@ -49,6 +49,8 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
         val_data = splits[split_idx]
         train_dataset = [item for i, split in enumerate(
             splits) if i != split_idx for item in split]
+        
+        dev_dataset = None
         test_dataset = val_data
 
     results = train_and_evaluate(
@@ -106,13 +108,7 @@ def main():
     llm_name = args.llm_name
     num_epochs = args.num_epochs
     
-    # speicher args als json und füge einen timestamp hinzu. speicher in time_logs.jsonl
-    with open("time_logs.jsonl", "a") as f:
-        log_entry = vars(args)
-        log_entry["timestamp"] = datetime.now().isoformat()
-        f.write(json.dumps(log_entry) + "\n")
-    
-    results_path_start = f"results/results_{strategy}/{llm_name.replace('/', '_')}/"
+    results_path_start = f"results/results_{strategy if strategy != "evaluation" else "pred_dev"}/{llm_name.replace('/', '_')}/"
     if strategy == "train_split":
         existing_files = [f for f in os.listdir(results_path_start)
                       if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]

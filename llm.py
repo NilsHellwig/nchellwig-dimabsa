@@ -49,7 +49,7 @@ def train_and_evaluate(
     logger.info(
         f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
     logger.info(
-        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw)}")
+        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw ) if dev_data_raw is not None else 'N/A'}")
 
     model, tokenizer = FastModel.from_pretrained(
         model_name=model_name_or_path,
@@ -147,7 +147,7 @@ def train_and_evaluate(
             "train_batch_size": train_batch_size,
             "learning_rate": learning_rate,
             "lora_rank": lora_rank,
-            "training_time": str(total_time_training),
+            "training_time": total_time_training.total_seconds(),
             "timestamp": datetime.now().isoformat()
         }
         f.write(json.dumps(log_entry) + "\n")
@@ -178,7 +178,7 @@ def train_and_evaluate(
 
     # Create sampling parameters
 
-    logger.info(f"Evaluating {len(test_data_raw)} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
+    logger.info(f"Evaluating {len(test_data_raw) if test_data_raw is not None else 'N/A'} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
 
     # If strategy is "pred_dev" or "evaluation", evaluate on dev set
     if strategy == "train_split":
@@ -225,7 +225,7 @@ def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_n
             "strategy": strategy,
             "split_idx": split_idx,
             "model_name_or_path": model_name_or_path,
-            "evaluation_time": str(evaluation_time),
+            "evaluation_time": evaluation_time.total_seconds(),
             "timestamp": datetime.now().isoformat(),
             "self_consistency": self_consistency,
             "guided": guided
