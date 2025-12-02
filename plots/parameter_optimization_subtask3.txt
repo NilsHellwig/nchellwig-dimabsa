@@ -1,0 +1,12 @@
+\midrule
+English & Restaurant & 50.69 & 51.36 & 52.12 & \textbf{52.55} \\
+English & Laptop & 35.07 & 35.37 & 35.67 & \textbf{35.77} \\
+Japanese & Hotel & 28.32 & 28.65 & 29.60 & \textbf{30.01} \\
+Russian & Restaurant & 44.66 & 45.77 & 47.28 & \textbf{47.71} \\
+Tatar & Restaurant & 30.74 & 31.39 & \textbf{32.37} & 32.22 \\
+Ukrainian & Restaurant & 46.04 & 40.78 & \textbf{47.26} & 41.80 \\
+Chinese & Restaurant & 61.48 & 61.77 & 61.82 & \textbf{62.15} \\
+Chinese & Laptop & 29.31 & 29.28 & 30.74 & \textbf{30.80} \\
+\midrule
+\multicolumn{2}{l}{\textbf{Average}} & 40.79 & 40.55 & \textbf{42.11} & 41.63 \\
+\bottomrule

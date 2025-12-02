@@ -1,0 +1,12 @@
+\midrule
+English & Restaurant & xxxx & xxxx & xxxx & xxxx \\
+English & Laptop & xxxx & xxxx & xxxx & xxxx \\
+Japanese & Hotel & xxxx & xxxx & xxxx & xxxx \\
+Russian & Restaurant & xxxx & xxxx & xxxx & xxxx \\
+Tatar & Restaurant & xxxx & xxxx & xxxx & xxxx \\
+Ukrainian & Restaurant & xxxx & xxxx & xxxx & xxxx \\
+Chinese & Restaurant & xxxx & xxxx & xxxx & xxxx \\
+Chinese & Laptop & xxxx & xxxx & xxxx & xxxx \\
+\midrule
+\multicolumn{2}{l}{\textbf{Average}} & xxxx & xxxx & xxxx & xxxx \\
+\bottomrule
