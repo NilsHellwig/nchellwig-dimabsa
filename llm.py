@@ -194,6 +194,8 @@ def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=20
 
 
 def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
+    logger.info(f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
+    logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
 
     prompts = []
     for example in evaluation_set_raw:
@@ -212,6 +214,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
 
     # 1a. Prediction mit temp=0 ohne guided decoding
     # 1b. Prediction mit temp=0 mit guided decoding
+    logger.info("Preparing sampling parameters with guided decoding patterns...")
 
     sampling_params_list = []
     for i, _ in enumerate(prompts):
@@ -227,6 +230,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         sampling_params_list.append(sampling_params)
 
     # Generate with the LoRA adapter
+    logger.info("Running inference 1a: temp=0, no guidance...")
     outputs_1a = llm.generate(
         prompts=prompts,
         sampling_params=SamplingParams(
@@ -236,17 +240,21 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         ),
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
+    logger.info("Inference 1a completed")
 
+    logger.info("Running inference 1b: temp=0, with guidance...")
     outputs_1b = llm.generate(
         prompts=prompts,
         sampling_params=sampling_params_list,
         lora_request=LoRARequest("adapter", 1, "model_temp"),
     )
+    logger.info("Inference 1b completed")
 
     outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw)
     outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw)
 
     # 2a. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen ohne guided decoding
+    logger.info("Running inference 2a: temp=0.8, 9 runs, no guidance...")
     prompts_2a = prompts * 9
     sampling_params_2a = []
     for k in range(9):
@@ -262,9 +270,11 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         sampling_params=sampling_params_2a,
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
+    logger.info("Inference 2a completed")
         
     # 2b. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen mit guided decoding
     # Pattern einmal pro Prompt berechnen und für alle 9 Runs wiederverwenden
+    logger.info("Running inference 2b: temp=0.8, 9 runs, with guidance (chunked)...")
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
@@ -283,6 +293,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             ))
     
     outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=2000)
+    logger.info("Inference 2b completed")
 
     outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9)
     outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9)
