@@ -34,7 +34,7 @@ for seed_run in range(N_SEEDS_RUNS):
             "--language", language,
             "--domain", domain,
             "--seed_run", str(seed_run),
-            "--strategy", "pred_dev",
+            "--strategy", "evaluation",
             "--llm_name", "unsloth/gemma-3-27b-it-bnb-4bit",
             "--num_epochs", str(N_EPOCHS)
         ]

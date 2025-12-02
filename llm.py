@@ -26,6 +26,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 def train_and_evaluate(
     train_data_raw,
     test_data_raw,
+    dev_data_raw=None,
     subtask=3,
     language="eng",
     domain="restaurant",
@@ -37,7 +38,7 @@ def train_and_evaluate(
     seed_run=42,
     lora_rank=64,
     lora_alpha=16,
-    strategy="pred_dev",
+    strategy="evaluation",
     split_idx=0,
 ):
     # Set random seed for reproducibility
@@ -48,7 +49,7 @@ def train_and_evaluate(
     logger.info(
         f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
     logger.info(
-        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}")
+        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}, Dev examples: {len(dev_data_raw) if dev_data_raw is not None else 'N/A'}")
 
     model, tokenizer = FastModel.from_pretrained(
         model_name=model_name_or_path,
@@ -155,10 +156,20 @@ def train_and_evaluate(
 
     # Create sampling parameters
 
-    logger.info(f"Evaluating {len(test_data_raw)} examples")
+    logger.info(f"Evaluating {len(test_data_raw)} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
 
-    evaluate_model(test_data_raw, subtask, language,
+    # If strategy is "pred_dev" or "evaluation", evaluate on dev set
+    if strategy == "train_split":
+        evaluate_model(test_data_raw, subtask, language,
                    domain, llm, seed_run, strategy, model_name_or_path, split_idx=split_idx)
+    
+    if strategy == "evaluation":
+        evaluate_model(dev_data_raw, subtask, language,
+                       domain, llm, seed_run, "pred_dev", model_name_or_path, split_idx=split_idx)
+    
+    if test_data_raw is not None and strategy == "evaluation":
+        evaluate_model(test_data_raw, subtask, language,
+                       domain, llm, seed_run, "pred_test", model_name_or_path, split_idx=split_idx)
     
     
 
@@ -182,10 +193,10 @@ def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=20
     return all_outputs
 
 
-def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
+def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
 
     prompts = []
-    for example in test_data_raw:
+    for example in evaluation_set_raw:
         prompt = get_prompt(
             text=example["text"],
             subtask=subtask,
@@ -206,7 +217,7 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
     for i, _ in enumerate(prompts):
         # unique_aspect_categories is the list of all aspect categories in the dataset
         pattern = get_regex_pattern_tuple(
-            unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
+            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask)
         sampling_params = SamplingParams(
             temperature=0.0,
             max_tokens=512,
@@ -232,13 +243,13 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
         lora_request=LoRARequest("adapter", 1, "model_temp"),
     )
 
-    outputs_1a = format_predictions(outputs_1a, subtask, test_data_raw)
-    outputs_1b = format_predictions(outputs_1b, subtask, test_data_raw)
+    outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw)
+    outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw)
 
-    # 2a. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen ohne guided decoding
-    prompts_2a = prompts * 5
+    # 2a. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen ohne guided decoding
+    prompts_2a = prompts * 9
     sampling_params_2a = []
-    for k in range(5):
+    for k in range(9):
         for _ in prompts:
             sampling_params_2a.append(SamplingParams(
                 temperature=0.8,
@@ -252,17 +263,17 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
         
-    # 2b. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen mit guided decoding
-    # Pattern einmal pro Prompt berechnen und für alle 5 Runs wiederverwenden
+    # 2b. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen mit guided decoding
+    # Pattern einmal pro Prompt berechnen und für alle 9 Runs wiederverwenden
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
-            unique_aspect_categories, polarities, test_data_raw[i]["text"], subtask=subtask)
+            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask)
         patterns.append(pattern)
     
-    prompts_2b = prompts * 5
+    prompts_2b = prompts * 9
     sampling_params_2b = []
-    for k in range(5):
+    for k in range(9):
         for i, _ in enumerate(prompts):
             sampling_params_2b.append(SamplingParams(
                 temperature=0.8,
@@ -273,8 +284,8 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
     
     outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=2000)
 
-    outputs_2a = format_predictions(outputs_2a, subtask, test_data_raw * 5)
-    outputs_2b = format_predictions(outputs_2b, subtask, test_data_raw * 5)
+    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9)
+    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
@@ -291,7 +302,7 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(5):
+        for i in range(9):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
@@ -310,7 +321,7 @@ def evaluate_model(test_data_raw, subtask, language, domain, llm, seed_run, stra
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(5):
+        for i in range(9):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:

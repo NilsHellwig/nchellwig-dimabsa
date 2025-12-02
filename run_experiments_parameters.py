@@ -23,10 +23,10 @@ VALID_COMBINATIONS = [
 ]
 
 N_SEEDS_RUNS = 1
-STRATEGY = "train_split"  # "pred_dev" oder "train_split"
+STRATEGY = "train_split"  # "evaluation" oder "train_split"
 N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
 EPOCHS = [5]
-LLMs = ["unsloth/gemma-3-4b-it-bnb-4bit"]
+LLMs = ["unsloth/gemma-3-27b-it-bnb-4bit"]
 
 for num_epochs in [5]:
     for seed_run in range(N_SEEDS_RUNS):

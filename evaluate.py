@@ -385,53 +385,38 @@ def merge_predictions(predictions, subtask):
         }
 
 
-def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-4b-it-bnb-4bit"):
+def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27b-it-bnb-4bit", num_preds_sc=5):
     labels = load_ground_truth(subtask, language, domain)
 
     results = []
     n_splits = N_SPLITS if strategy == "train_split" else 1
 
     for split_idx in range(n_splits):
-        # 1a
         preds_no_sc_guided = load_predictions(
             subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=True, self_consistency=False)
-        # 1b
         preds_no_sc_no_guided = load_predictions(
             subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=False, self_consistency=False)
-        # 2a
-        preds_sc_guided = []
 
-        preds_0 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=0)
-        preds_1 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=1)
-        preds_2 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=2)
-        preds_3 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=3)
-        preds_4 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=4)
-        for k in range(len(preds_0)):
+        preds_sc_guided = []
+        all_preds_guided = [
+            load_predictions(subtask, language, domain, split_idx=split_idx,
+                             llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=i)
+            for i in range(num_preds_sc)
+        ]
+        for k in range(len(all_preds_guided[0])):
             merged_quads = merge_predictions(
-                [preds_0[k], preds_1[k], preds_2[k], preds_3[k], preds_4[k]], subtask=subtask)
+                [all_preds_guided[i][k] for i in range(num_preds_sc)], subtask=subtask)
             preds_sc_guided.append(merged_quads)
 
-        # 2b
         preds_sc_no_guided = []
-
-        preds_0 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=0)
-        preds_1 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=1)
-        preds_2 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=2)
-        preds_3 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=3)
-        preds_4 = load_predictions(subtask, language, domain, split_idx=split_idx,
-                                   llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=4)
-        for k in range(len(preds_0)):
+        all_preds_no_guided = [
+            load_predictions(subtask, language, domain, split_idx=split_idx,
+                             llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=i)
+            for i in range(num_preds_sc)
+        ]
+        for k in range(len(all_preds_no_guided[0])):
             merged_quads = merge_predictions(
-                [preds_0[k], preds_1[k], preds_2[k], preds_3[k], preds_4[k]], subtask=subtask)
+                [all_preds_no_guided[i][k] for i in range(num_preds_sc)], subtask=subtask)
             preds_sc_no_guided.append(merged_quads)
 
         labels_filtered = filter_predictions(preds_no_sc_guided, labels)

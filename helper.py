@@ -78,10 +78,6 @@ def get_dataset(subtask=3, language="eng", domain="restaurant", split="train"):
     split_phrase = "alltasks" if split == "train" else f"task{subtask}"
     filepath = f"task-dataset/track_a/subtask_{subtask}/{language}/{language}_{domain}_{split}_{split_phrase}.jsonl"
 
-    # Check if file exists
-    if not os.path.exists(filepath):
-        return None
-
     data = []
     with open(filepath, 'r', encoding='utf-8') as file:
         for line in file:
