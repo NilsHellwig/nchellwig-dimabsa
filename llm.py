@@ -49,7 +49,7 @@ def train_and_evaluate(
     logger.info(
         f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
     logger.info(
-        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw)}, Dev examples: {len(dev_data_raw) if dev_data_raw is not None else 'N/A'}")
+        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw)}")
 
     model, tokenizer = FastModel.from_pretrained(
         model_name=model_name_or_path,
@@ -127,8 +127,30 @@ def train_and_evaluate(
     )
 
     logger.info("Starting model training...")
+    start_time_training = datetime.now()
     trainer.train()
+    total_time_training = datetime.now() - start_time_training
+    logger.info(f"Total training time: {total_time_training}")
     logger.info("Training completed")
+    
+    # store time of training in time_logs.jsonl
+    with open("time_logs.jsonl", "a") as f:
+        log_entry = {
+            "subtask": subtask,
+            "language": language,
+            "domain": domain,
+            "seed_run": seed_run,
+            "strategy": strategy,
+            "split_idx": split_idx,
+            "model_name_or_path": model_name_or_path,
+            "num_train_epochs": num_train_epochs,
+            "train_batch_size": train_batch_size,
+            "learning_rate": learning_rate,
+            "lora_rank": lora_rank,
+            "training_time": str(total_time_training),
+            "timestamp": datetime.now().isoformat()
+        }
+        f.write(json.dumps(log_entry) + "\n")
 
     # Save model and tokenizer to model_temp
     logger.info("Saving model and tokenizer to model_temp...")
@@ -193,6 +215,23 @@ def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=20
     return all_outputs
 
 
+def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, evaluation_time, self_consistency=False, guided=False):
+    with open("time_logs.jsonl", "a") as f:
+        log_entry = {
+            "subtask": subtask,
+            "language": language,
+            "domain": domain,
+            "seed_run": seed_run,
+            "strategy": strategy,
+            "split_idx": split_idx,
+            "model_name_or_path": model_name_or_path,
+            "evaluation_time": str(evaluation_time),
+            "timestamp": datetime.now().isoformat(),
+            "self_consistency": self_consistency,
+            "guided": guided
+        }
+        f.write(json.dumps(log_entry) + "\n")
+
 def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
     logger.info(f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
     logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
@@ -231,6 +270,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
 
     # Generate with the LoRA adapter
     logger.info("Running inference 1a: temp=0, no guidance...")
+    start_time_1a = datetime.now()
     outputs_1a = llm.generate(
         prompts=prompts,
         sampling_params=SamplingParams(
@@ -240,15 +280,20 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         ),
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
-    logger.info("Inference 1a completed")
+    total_time_1a = datetime.now() - start_time_1a
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1a, self_consistency=False, guided=False)
+    logger.info(f"Inference 1a completed in {total_time_1a}")
 
     logger.info("Running inference 1b: temp=0, with guidance...")
+    start_time_1b = datetime.now()
     outputs_1b = llm.generate(
         prompts=prompts,
         sampling_params=sampling_params_list,
         lora_request=LoRARequest("adapter", 1, "model_temp"),
     )
-    logger.info("Inference 1b completed")
+    total_time_1b = datetime.now() - start_time_1b
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1b, self_consistency=False, guided=True)
+    logger.info(f"Inference 1b completed in {total_time_1b}")
 
     outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw)
     outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw)
@@ -265,12 +310,15 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
                 seed=k
             ))
     
+    start_time_2a = datetime.now()
     outputs_2a = llm.generate(
         prompts=prompts_2a,
         sampling_params=sampling_params_2a,
         lora_request=LoRARequest("adapter", 1, "model_temp")
     )
-    logger.info("Inference 2a completed")
+    total_time_2a = datetime.now() - start_time_2a
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2a, self_consistency=True, guided=False)
+    logger.info(f"Inference 2a completed in {total_time_2a}")
         
     # 2b. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen mit guided decoding
     # Pattern einmal pro Prompt berechnen und für alle 9 Runs wiederverwenden
@@ -292,8 +340,11 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
                 seed=k
             ))
     
+    start_time_2b = datetime.now()
     outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=2000)
-    logger.info("Inference 2b completed")
+    total_time_2b = datetime.now() - start_time_2b
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
+    logger.info(f"Inference 2b completed in {total_time_2b}")
 
     outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9)
     outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9)
