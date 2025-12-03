@@ -251,6 +251,11 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     unique_aspect_categories = get_unique_aspect_categories(domain)
     polarities = ["positive", "negative", "neutral"]
 
+    # Determine disable_null_aspect: False for jpn+hotel, or if strategy is train_split
+    disable_null_aspect = True
+    if (language == "jpn" and domain == "hotel") or strategy == "train_split":
+        disable_null_aspect = False
+
     # 1a. Prediction mit temp=0 ohne guided decoding
     # 1b. Prediction mit temp=0 mit guided decoding
     logger.info("Preparing sampling parameters with guided decoding patterns...")
@@ -259,7 +264,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     for i, _ in enumerate(prompts):
         # unique_aspect_categories is the list of all aspect categories in the dataset
         pattern = get_regex_pattern_tuple(
-            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask)
+            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         sampling_params = SamplingParams(
             temperature=0.0,
             max_tokens=512,
@@ -295,8 +300,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1b, self_consistency=False, guided=True)
     logger.info(f"Inference 1b completed in {total_time_1b}")
 
-    outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw)
-    outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw)
+    outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
+    outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
     # 2a. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen ohne guided decoding
     logger.info("Running inference 2a: temp=0.8, 9 runs, no guidance...")
@@ -326,7 +331,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
-            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask)
+            unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         patterns.append(pattern)
     
     prompts_2b = prompts * 9
@@ -346,8 +351,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
-    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9)
-    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9)
+    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9, disable_null_aspect=disable_null_aspect)
+    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
@@ -394,7 +399,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
 
-def format_predictions(outputs, subtask, test_data_raw):
+def format_predictions(outputs, subtask, test_data_raw, disable_null_aspect=True):
     all_preds_formatted = []
 
     for idx, output in enumerate(outputs):
@@ -409,7 +414,8 @@ def format_predictions(outputs, subtask, test_data_raw):
             formatted_output = convert_tuples_to_output_format(
                 parsed_tuples,
                 test_data_raw[idx]["id"],
-                subtask=subtask
+                subtask=subtask,
+                disable_null_aspect=disable_null_aspect
             )
             all_preds_formatted.append(formatted_output)
         except Exception as e:

@@ -262,7 +262,7 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
     return prompt
 
 
-def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
+def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_null_aspect=True):
     """Convert tuples to the required output format for submission."""
     if subtask == 3:
         # Quadruplet format - deduplicate based on aspect_term, category, opinion_term
@@ -277,6 +277,10 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
                 
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
+                
+                # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
+                if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
+                    continue
                 
                 # Create deduplication key
                 key = (aspect, category, opinion)
@@ -298,6 +302,11 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3):
                 aspect, opinion, valence, arousal = t
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
+                
+                # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
+                if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
+                    continue
+                
                 # valence and arousal must have two decimal places
                 valence = f"{float(valence):.2f}"
                 arousal = f"{float(arousal):.2f}"
@@ -467,10 +476,10 @@ def find_valid_phrases_list(text: str, max_characters_in_phrase: int | None = No
     return clean_phrases
 
 
-def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3, max_characters_in_phrase=64):
+def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3, max_characters_in_phrase=64, disable_null_aspect=True):
     valid_phrases = find_valid_phrases_list(text, max_characters_in_phrase=max_characters_in_phrase)
     if len(valid_phrases) > 5000:
-        return get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=subtask, max_characters_in_phrase=max_characters_in_phrase - 1)
+        return get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=subtask, max_characters_in_phrase=max_characters_in_phrase - 1, disable_null_aspect=disable_null_aspect)
 
     # Definiere considered_aspects basierend auf subtask
     if subtask == 3:
@@ -494,15 +503,23 @@ def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=
     tuple_pattern_parts = []
     for aspect in considered_aspects:
         if aspect == "aspect term":
-            tuple_pattern_parts += [
-                rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
+            if disable_null_aspect:
+                tuple_pattern_parts += [
+                    rf"'({'|'.join(escape_except_space(p) for p in valid_phrases)})'"]
+            else:
+                tuple_pattern_parts += [
+                    rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
         elif aspect == "aspect category":
             tuple_pattern_parts += [rf"'({category_pattern})'"]
         elif aspect == "sentiment polarity":
             tuple_pattern_parts += [rf"'({polarity_pattern})'"]
         elif aspect == "opinion term":
-            tuple_pattern_parts += [
-                rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
+            if disable_null_aspect:
+                tuple_pattern_parts += [
+                    rf"'({'|'.join(escape_except_space(p) for p in valid_phrases)})'"]
+            else:
+                tuple_pattern_parts += [
+                    rf"'(NULL|({'|'.join(escape_except_space(p) for p in valid_phrases)}))'"]
         elif aspect == "valence":
             tuple_pattern_parts += [rf"'({va_pattern})'"]
         elif aspect == "arousal":

@@ -29,10 +29,10 @@ EPOCHS = [5]
 LLMs = ["unsloth/gemma-3-27b-it-bnb-4bit"]
 
 for num_epochs in [5]:
+  for split_idx in range(N_SPLITS):
     for seed_run in range(N_SEEDS_RUNS):
         for llm in LLMs:
             for subtask, language, domain in VALID_COMBINATIONS:
-                for split_idx in range(N_SPLITS):
                     cmd = [
                         sys.executable,
                         "train_llm.py",

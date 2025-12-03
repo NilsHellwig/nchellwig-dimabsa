@@ -283,7 +283,8 @@ def evaluate_predictions(gold_data, pred_data, task=3):
 ################
 
 
-N_SPLITS = 4  # Anzahl der 80/20 Splits für train_split
+N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
+NUM_PRED_SC = 5 # Anzahl der Vorhersagen für Self-Consistency
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
 
 
@@ -385,7 +386,7 @@ def merge_predictions(predictions, subtask):
         }
 
 
-def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27b-it-bnb-4bit", num_preds_sc=9):
+def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27b-it-bnb-4bit", num_preds_sc=NUM_PRED_SC):
     labels = load_ground_truth(subtask, language, domain)
 
     results = []
