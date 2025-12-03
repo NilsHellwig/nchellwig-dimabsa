@@ -46,8 +46,8 @@ def clear_memory(variables_to_clear=None, verbose=True):
     # Default variables to clear if none specified
     if variables_to_clear is None:
         variables_to_clear = ["inputs", "model", "processor", "trainer",
-                            "peft_model", "bnb_config", "fastmodel", 
-                            "tokenizer", "base_model", "llm"]
+                              "peft_model", "bnb_config", "fastmodel",
+                              "tokenizer", "base_model", "llm"]
 
     # Delete specified variables if they exist in global scope
     g = globals()
@@ -139,11 +139,13 @@ aspect_categories = {
     }
 }
 
+
 def get_unique_aspect_categories(domain):
     # return list of all combinations of entity#attribute for the given domain
     entities = aspect_categories[domain]["entity"]
     attributes = aspect_categories[domain]["attributes"]
-    combinations = [f"{entity}#{attribute}" for entity in entities for attribute in attributes]
+    combinations = [
+        f"{entity}#{attribute}" for entity in entities for attribute in attributes]
     # sort alphabetically
     combinations.sort()
     return combinations
@@ -274,14 +276,14 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
                 # valence and arousal must have two decimal places
                 valence = f"{float(valence):.2f}"
                 arousal = f"{float(arousal):.2f}"
-                
+
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
-                
+
                 # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
                 if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
                     continue
-                
+
                 # Create deduplication key
                 key = (aspect, category, opinion)
                 if key not in seen_keys:
@@ -302,11 +304,11 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
                 aspect, opinion, valence, arousal = t
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
-                
+
                 # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
                 if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
                     continue
-                
+
                 # valence and arousal must have two decimal places
                 valence = f"{float(valence):.2f}"
                 arousal = f"{float(arousal):.2f}"
@@ -386,7 +388,7 @@ def parse_label_string(label_string, subtask=3):
                 pattern = r"\['(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\]"
             else:
                 pattern = r"\('(NULL|.+?)', '(.+?)', '(NULL|.+?)', '?([1-9](?:\.[0-9][0-9]?)?)'?, '?([1-9](?:\.[0-9][0-9]?)?)'?\)"
-        
+
         matches = re.match(pattern, t)
         if matches:
             tuples_list.append(matches.groups())
@@ -477,20 +479,24 @@ def find_valid_phrases_list(text: str, max_characters_in_phrase: int | None = No
 
 
 def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=3, max_characters_in_phrase=64, disable_null_aspect=True):
-    valid_phrases = find_valid_phrases_list(text, max_characters_in_phrase=max_characters_in_phrase)
+    valid_phrases = find_valid_phrases_list(
+        text, max_characters_in_phrase=max_characters_in_phrase)
     if len(valid_phrases) > 5000:
         return get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=subtask, max_characters_in_phrase=max_characters_in_phrase - 1, disable_null_aspect=disable_null_aspect)
 
     # Definiere considered_aspects basierend auf subtask
     if subtask == 3:
         # Subtask 3: aspect_term, category, opinion_term, valence, arousal
-        considered_aspects = ["aspect term", "aspect category", "opinion term", "valence", "arousal"]
+        considered_aspects = [
+            "aspect term", "aspect category", "opinion term", "valence", "arousal"]
     elif subtask == 2:
         # Subtask 2: aspect_term, opinion_term, valence, arousal
-        considered_aspects = ["aspect term", "opinion term", "valence", "arousal"]
+        considered_aspects = ["aspect term",
+                              "opinion term", "valence", "arousal"]
     else:
         # Subtask 1: aspect_term, category, opinion_term, valence, arousal (gleich wie 3)
-        considered_aspects = ["aspect term", "aspect category", "opinion term", "valence", "arousal"]
+        considered_aspects = [
+            "aspect term", "aspect category", "opinion term", "valence", "arousal"]
 
     # Tuple Patternteile
     category_pattern = "|".join(cat for cat in unique_aspect_categories)
@@ -529,6 +535,7 @@ def get_regex_pattern_tuple(unique_aspect_categories, polarities, text, subtask=
     tuple_pattern_str = rf"\[{tuple_pattern_str}(, {tuple_pattern_str})*\]\n"
 
     return tuple_pattern_str
+
 
 language_mapping = {
     "eng": "English",

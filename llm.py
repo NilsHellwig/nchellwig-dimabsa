@@ -303,11 +303,11 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
     outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
-    # 2a. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen ohne guided decoding
-    logger.info("Running inference 2a: temp=0.8, 9 runs, no guidance...")
-    prompts_2a = prompts * 9
+    # 2a. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen ohne guided decoding
+    logger.info("Running inference 2a: temp=0.8, 5 runs, no guidance...")
+    prompts_2a = prompts * 5
     sampling_params_2a = []
-    for k in range(9):
+    for k in range(5):
         for _ in prompts:
             sampling_params_2a.append(SamplingParams(
                 temperature=0.8,
@@ -325,18 +325,18 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2a, self_consistency=True, guided=False)
     logger.info(f"Inference 2a completed in {total_time_2a}")
         
-    # 2b. Prediction mit temp=0.8 -> 9 mal gleiche prompt ausführen mit guided decoding
-    # Pattern einmal pro Prompt berechnen und für alle 9 Runs wiederverwenden
-    logger.info("Running inference 2b: temp=0.8, 9 runs, with guidance (chunked)...")
+    # 2b. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen mit guided decoding
+    # Pattern einmal pro Prompt berechnen und für alle 5 Runs wiederverwenden
+    logger.info("Running inference 2b: temp=0.8, 5 runs, with guidance (chunked)...")
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
             unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         patterns.append(pattern)
     
-    prompts_2b = prompts * 9
+    prompts_2b = prompts * 5
     sampling_params_2b = []
-    for k in range(9):
+    for k in range(5):
         for i, _ in enumerate(prompts):
             sampling_params_2b.append(SamplingParams(
                 temperature=0.8,
@@ -351,8 +351,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
-    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 9, disable_null_aspect=disable_null_aspect)
-    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 9, disable_null_aspect=disable_null_aspect)
+    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 5, disable_null_aspect=disable_null_aspect)
+    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 5, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
@@ -369,7 +369,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(9):
+        for i in range(5):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
@@ -388,7 +388,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(9):
+        for i in range(5):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
