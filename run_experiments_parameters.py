@@ -25,7 +25,7 @@ VALID_COMBINATIONS = [
 N_SEEDS_RUNS = 1
 STRATEGY = "train_split"  # "evaluation" oder "train_split"
 N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
-LLMs = ["unsloth/gemma-3-27b-it-bnb-4bit"]
+LLMs = ["unsloth/Qwen3-32B-unsloth-bnb-4bit", "unsloth/gemma-3-27b-it-bnb-4bit"]
 
 
 for split_idx in range(N_SPLITS):

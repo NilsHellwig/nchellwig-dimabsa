@@ -109,6 +109,10 @@ def main():
     num_epochs = args.num_epochs
     
     results_path_start = f"results/results_{strategy if strategy != "evaluation" else "pred_dev"}/{llm_name.replace('/', '_')}/"
+    
+    # create results directory if it doesn't exist
+    os.makedirs(results_path_start, exist_ok=True)
+    
     if strategy == "train_split":
         existing_files = [f for f in os.listdir(results_path_start)
                       if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]

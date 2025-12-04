@@ -24,18 +24,20 @@ VALID_COMBINATIONS = [
 
 N_SEEDS_RUNS = 1
 N_EPOCHS = 5
+LLMs = [ "unsloth/gemma-3-27b-it-bnb-4bit", "unsloth/Qwen3-32B-unsloth-bnb-4bit"]
 
 for seed_run in range(N_SEEDS_RUNS):
     for subtask, language, domain in VALID_COMBINATIONS:
-        cmd = [
-            sys.executable,
+        for llm in LLMs:
+            cmd = [
+                sys.executable,
             "train_llm.py",
             "--subtask", str(subtask),
             "--language", language,
             "--domain", domain,
             "--seed_run", str(seed_run),
             "--strategy", "evaluation",
-            "--llm_name", "unsloth/gemma-3-27b-it-bnb-4bit",
+            "--llm_name", llm,
             "--num_epochs", str(N_EPOCHS)
         ]
         subprocess.run(cmd)
