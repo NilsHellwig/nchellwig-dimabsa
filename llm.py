@@ -21,6 +21,7 @@ logger = logging.getLogger('training')
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+NUM_PRED_SC = 15
 
 
 def train_and_evaluate(
@@ -72,6 +73,18 @@ def train_and_evaluate(
         random_state=seed_run,
     )
 
+    # Determine chat template tags based on model
+    if "gemma" in model_name_or_path.lower():
+        user_start = "<start_of_turn>user\n"
+        user_end = "<end_of_turn>\n"
+        model_start = "<start_of_turn>model\n"
+        model_end = "<end_of_turn>"
+    else:  # Qwen and others
+        user_start = "<|im_start|>user\n"
+        user_end = "<|im_end|>\n"
+        model_start = "<|im_start|>assistant\n"
+        model_end = "<|im_end|>"
+
     for example in train_data_raw:
         if "label" in example:
             # Convert label objects to tuples
@@ -84,9 +97,9 @@ def train_and_evaluate(
             language=language,
             domain=domain
         )
-        example["text"] = "<start_of_turn>user\n" + prompt + \
-            "<end_of_turn>\n<start_of_turn>model\n" + \
-            str(example["label"]) + "<end_of_turn>"
+        example["text"] = user_start + prompt + \
+            user_end + model_start + \
+            str(example["label"]) + model_end
 
     # Log first example prompt for debugging
     logger.info("Example prompt (first training example):")
@@ -96,7 +109,7 @@ def train_and_evaluate(
 
     tokenizer = get_chat_template(
         tokenizer,
-        chat_template="gemma-3",
+        chat_template="gemma-3" if "gemma" in model_name_or_path else "qwen-3",
     )
 
     trainer = SFTTrainer(
@@ -122,8 +135,8 @@ def train_and_evaluate(
 
     trainer = train_on_responses_only(
         trainer,
-        instruction_part="<start_of_turn>user\n",
-        response_part="<start_of_turn>model\n",
+        instruction_part=user_start,
+        response_part=model_start,
     )
 
     logger.info("Starting model training...")
@@ -236,6 +249,16 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     logger.info(f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
     logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
 
+    # Determine chat template tags based on model
+    if "gemma" in model_name_or_path.lower():
+        user_start = "<start_of_turn>user\n"
+        user_end = "<end_of_turn>\n"
+        model_start = "<start_of_turn>model\n"
+    else:  # Qwen and others
+        user_start = "<|im_start|>user\n"
+        user_end = "<|im_end|>\n"
+        model_start = "<|im_start|>assistant\n"
+
     prompts = []
     for example in evaluation_set_raw:
         prompt = get_prompt(
@@ -244,8 +267,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             language=language,
             domain=domain
         )
-        prompt = "<start_of_turn>user\n" + prompt + \
-            "<end_of_turn>\n<start_of_turn>model\n"
+        prompt = user_start + prompt + \
+            user_end + model_start
         prompts.append(prompt)
         
     unique_aspect_categories = get_unique_aspect_categories(domain)
@@ -303,11 +326,11 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
     outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
-    # 2a. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen ohne guided decoding
-    logger.info("Running inference 2a: temp=0.8, 5 runs, no guidance...")
-    prompts_2a = prompts * 5
+    # 2a. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen ohne guided decoding
+    logger.info("Running inference 2a: temp=0.8, NUM_PRED_SC runs, no guidance...")
+    prompts_2a = prompts * NUM_PRED_SC
     sampling_params_2a = []
-    for k in range(5):
+    for k in range(NUM_PRED_SC):
         for _ in prompts:
             sampling_params_2a.append(SamplingParams(
                 temperature=0.8,
@@ -325,18 +348,18 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2a, self_consistency=True, guided=False)
     logger.info(f"Inference 2a completed in {total_time_2a}")
         
-    # 2b. Prediction mit temp=0.8 -> 5 mal gleiche prompt ausführen mit guided decoding
-    # Pattern einmal pro Prompt berechnen und für alle 5 Runs wiederverwenden
-    logger.info("Running inference 2b: temp=0.8, 5 runs, with guidance (chunked)...")
+    # 2b. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen mit guided decoding
+    # Pattern einmal pro Prompt berechnen und für alle NUM_PRED_SC Runs wiederverwenden
+    logger.info("Running inference 2b: temp=0.8, NUM_PRED_SC runs, with guidance (chunked)...")
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
             unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         patterns.append(pattern)
     
-    prompts_2b = prompts * 5
+    prompts_2b = prompts * NUM_PRED_SC
     sampling_params_2b = []
-    for k in range(5):
+    for k in range(NUM_PRED_SC):
         for i, _ in enumerate(prompts):
             sampling_params_2b.append(SamplingParams(
                 temperature=0.8,
@@ -351,8 +374,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
-    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * 5, disable_null_aspect=disable_null_aspect)
-    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * 5, disable_null_aspect=disable_null_aspect)
+    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
+    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
@@ -369,7 +392,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(5):
+        for i in range(NUM_PRED_SC):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
@@ -388,7 +411,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        for i in range(5):
+        for i in range(NUM_PRED_SC):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:

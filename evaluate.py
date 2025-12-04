@@ -327,7 +327,7 @@ def filter_predictions(predictions, ground_truth):
     return labels_filtered
 
 
-def merge_predictions(predictions, subtask):
+def merge_predictions(predictions, subtask, min_votes=3):
     counter = defaultdict(list)
 
     # Annahme: alle Runs haben dieselbe ID
@@ -353,7 +353,7 @@ def merge_predictions(predictions, subtask):
 
     # Verarbeitung der aggregierten Quadruplets
     for key, values in counter.items():
-        if len(values) >= 3:
+        if len(values) >= min_votes:
             mean_valence = statistics.mean(v[0] for v in values)
             mean_arousal = statistics.mean(v[1] for v in values)
 
@@ -406,7 +406,7 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
         ]
         for k in range(len(all_preds_guided[0])):
             merged_quads = merge_predictions(
-                [all_preds_guided[i][k] for i in range(num_preds_sc)], subtask=subtask)
+                [all_preds_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=NUM_PRED_SC//2+1)
             preds_sc_guided.append(merged_quads)
 
         preds_sc_no_guided = []
@@ -417,7 +417,7 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
         ]
         for k in range(len(all_preds_no_guided[0])):
             merged_quads = merge_predictions(
-                [all_preds_no_guided[i][k] for i in range(num_preds_sc)], subtask=subtask)
+                [all_preds_no_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=NUM_PRED_SC//2+1)
             preds_sc_no_guided.append(merged_quads)
 
         labels_filtered = filter_predictions(preds_no_sc_guided, labels)
