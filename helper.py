@@ -273,9 +273,12 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
         for t in tuples_list:
             if len(t) == 5:
                 aspect, category, opinion, valence, arousal = t
+                # Clamp valence and arousal to [1.00, 9.00] range
+                valence = max(1.00, min(9.00, float(valence)))
+                arousal = max(1.00, min(9.00, float(arousal)))
                 # valence and arousal must have two decimal places
-                valence = f"{float(valence):.2f}"
-                arousal = f"{float(arousal):.2f}"
+                valence = f"{valence:.2f}"
+                arousal = f"{arousal:.2f}"
 
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
@@ -309,9 +312,12 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
                 if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
                     continue
 
+                # Clamp valence and arousal to [1.00, 9.00] range
+                valence = max(1.00, min(9.00, float(valence)))
+                arousal = max(1.00, min(9.00, float(arousal)))
                 # valence and arousal must have two decimal places
-                valence = f"{float(valence):.2f}"
-                arousal = f"{float(arousal):.2f}"
+                valence = f"{valence:.2f}"
+                arousal = f"{arousal:.2f}"
                 # Create deduplication key
                 key = (aspect, opinion)
                 if key not in seen_keys:
@@ -395,6 +401,24 @@ def parse_label_string(label_string, subtask=3):
 
     # Convert to tuples
     tuples_list = [tuple(t) for t in tuples_list]
+    
+    if len(tuples_list) == 0:
+        try:
+            # Reconstruct the list format for eval
+            eval_string = "[" + label_string + "]" if not label_string.startswith("[") else label_string
+            parsed = eval(eval_string)
+            if isinstance(parsed, list):
+                for tup in parsed:
+                    if not isinstance(tup, tuple):
+                        continue
+                    if subtask == 3 and len(tup) != 5:
+                        continue
+                    if subtask == 2 and len(tup) != 4:
+                        continue
+                    if all(isinstance(element, str) for element in tup):
+                        tuples_list.append(tup)
+        except:
+            tuples_list = []
 
     return tuples_list
 
