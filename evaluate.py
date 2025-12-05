@@ -406,7 +406,7 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
         ]
         for k in range(len(all_preds_guided[0])):
             merged_quads = merge_predictions(
-                [all_preds_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=NUM_PRED_SC//2+1)
+                [all_preds_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=num_preds_sc//2+1)
             preds_sc_guided.append(merged_quads)
 
         preds_sc_no_guided = []
@@ -417,7 +417,7 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
         ]
         for k in range(len(all_preds_no_guided[0])):
             merged_quads = merge_predictions(
-                [all_preds_no_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=NUM_PRED_SC//2+1)
+                [all_preds_no_guided[i][k] for i in range(num_preds_sc)], subtask=subtask, min_votes=num_preds_sc//2+1)
             preds_sc_no_guided.append(merged_quads)
 
         labels_filtered = filter_predictions(preds_no_sc_guided, labels)
