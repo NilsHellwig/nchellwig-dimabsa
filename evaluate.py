@@ -280,12 +280,39 @@ def evaluate_predictions(gold_data, pred_data, task=3):
     }
 
 
-################
+################################################################################################################################################################################################################################################################################
 
+from scipy import stats
+from itertools import combinations
+from helper import *
+import numpy as np
+import pandas as pd
 
-N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
+N_SPLITS = 1  # Anzahl der 80/20 Splits für train_split
 NUM_PRED_SC = 5 # Anzahl der Vorhersagen für Self-Consistency
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
+COLUMNS = ["no_sc_no_guided_12b", "sc_5_12b", "sc_15_12b", "no_sc_no_guided_27b", "sc_5_27b", "sc_15_27b"]
+
+COLUMN_CONFIG = {
+    "no_sc_no_guided_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", None, "no_sc_no_guided"),
+    "sc_5_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", 5, "sc_no_guided"),
+    "sc_15_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", 15, "sc_no_guided"),
+    "no_sc_no_guided_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", None, "no_sc_no_guided"),
+    "sc_5_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", 5, "sc_no_guided"),
+    "sc_15_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", 15, "sc_no_guided"),
+}
+
+# Valid combinations of (language, domain) that have data
+VALID_LANGUAGES_DOMAINS = [
+    ("eng", "restaurant"),
+    ("eng", "laptop"),
+    ("jpn", "hotel"),
+    ("rus", "restaurant"),
+    ("tat", "restaurant"),
+    ("ukr", "restaurant"),
+    ("zho", "restaurant"),
+    ("zho", "laptop"),
+]
 
 
 def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_split", guidance=True, self_consistency=True, run_idx=0):
@@ -458,3 +485,155 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
             "sc_guided": preds_sc_guided,
             "sc_no_guided": preds_sc_no_guided,
         }
+
+def get_key_of_best_strategy(lang, domain, df):
+    strategies = {}
+    for column in COLUMNS:
+        strategies[column] = df.loc[(df["Language"] == language_mapping[lang]) & (df["Domain"] == domain_mapping[domain]), column].values[0]
+    
+    # throw error if any value is nan or np.float64(nan)
+    for key in strategies:
+        if pd.isna(strategies[key]):
+            strategies[key] = None
+    if all(value is None for value in strategies.values()):
+        raise FileNotFoundError(
+            f"No performance data found for language: {lang}, domain: {domain}")
+
+    # Get strategy with highest score
+    best_strategy = max(
+        strategies, key=lambda k: strategies[k] if strategies[k] is not None else -1)
+
+    return best_strategy
+
+def get_performance_tabular(table_metric, table_subtask, strategy="train_split"):
+    table = defaultdict(lambda: defaultdict(dict))
+
+    for language, domain in VALID_LANGUAGES_DOMAINS:
+        for col_name, (llm, num_preds_sc, result_key) in COLUMN_CONFIG.items():
+            try:
+                if num_preds_sc is None:
+                    result = get_performance(language, domain, table_subtask, strategy, llm=llm)
+                else:
+                    result = get_performance(language, domain, table_subtask, strategy, llm=llm, num_preds_sc=num_preds_sc)
+                table[language][domain][col_name] = result[result_key][table_metric]
+            except FileNotFoundError:
+                table[language][domain][col_name] = None
+
+    df_rows = []
+    for language, domain in VALID_LANGUAGES_DOMAINS:
+        row = {"Language": language_mapping[language], "Domain": domain_mapping[domain]}
+        row.update({col: table[language][domain][col] for col in COLUMNS})
+        df_rows.append(row)
+
+    df = pd.DataFrame(df_rows)
+
+    # Add AVG row
+    avg_row = {"Language": "AVG", "Domain": ""}
+    avg_row.update({col: df[col].mean(skipna=True) for col in COLUMNS})
+
+    df = pd.concat([df, pd.DataFrame([avg_row])], ignore_index=True)
+    return df
+
+def run_significance_tests(df, subtask):
+    from IPython.display import display
+    
+    print(f"\n{'='*60}")
+    print(f"SIGNIFICANCE TESTS - Subtask {subtask}")
+    print(f"{'='*60}")
+    
+    df_clean = df[df["Language"] != "AVG"].copy()
+    groups = {col: df_clean[col].dropna().values for col in COLUMNS}
+    
+    print("\n--- Shapiro-Wilk Normalitätstests ---")
+    normality_results = {}
+    for col, values in groups.items():
+        if len(values) >= 3:
+            stat, p = stats.shapiro(values)
+            normality_results[col] = p > 0.05
+            print(f"{col}: W={stat:.4f}, p={p:.4f} {'(normal)' if p > 0.05 else '(nicht normal)'}")
+    
+    all_normal = all(normality_results.values())
+    print(f"\nAlle normalverteilt: {all_normal}")
+    
+    print("\n--- Omnibus-Test (Unterschied zwischen allen 6 Gruppen) ---")
+    valid_groups = [v for v in groups.values() if len(v) >= 2]
+    
+    if all_normal:
+        stat, p = stats.f_oneway(*valid_groups)
+        test_name = "ANOVA"
+    else:
+        stat, p = stats.friedmanchisquare(*valid_groups)
+        test_name = "Friedman"
+    
+    print(f"{test_name}: Statistik={stat:.4f}, p={p:.6f}")
+    print(f"Signifikanter Unterschied zwischen Gruppen: {'Ja' if p < 0.05 else 'Nein'}")
+    
+    print("\n--- Paarweise Vergleiche (Bonferroni-Holm) ---")
+    pairs = list(combinations(COLUMNS, 2))
+    pairwise_results = []
+    
+    for col1, col2 in pairs:
+        vals1, vals2 = groups[col1], groups[col2]
+        min_len = min(len(vals1), len(vals2))
+        if min_len < 2:
+            continue
+        vals1, vals2 = vals1[:min_len], vals2[:min_len]
+        
+        if all_normal:
+            stat, p = stats.ttest_rel(vals1, vals2)
+        else:
+            stat, p = stats.wilcoxon(vals1, vals2)
+        
+        pairwise_results.append((col1, col2, stat, p))
+    
+    pairwise_results.sort(key=lambda x: x[3])
+    n_tests = len(pairwise_results)
+    
+    rows = []
+    sig_stopped = False
+    for i, (col1, col2, stat, p) in enumerate(pairwise_results):
+        adj_alpha = 0.05 / (n_tests - i)
+        if not sig_stopped and p >= adj_alpha:
+            sig_stopped = True
+        p_adj = p * (n_tests - i)
+        rows.append({
+            "Vergleich": f"{col1} vs {col2}",
+            "p": p,
+            "p adj.": min(p_adj, 1.0),
+            "adj. α": adj_alpha,
+            "Signifikant": "Nein" if sig_stopped else ("Ja" if p < adj_alpha else "Nein")
+        })
+    
+    df_results = pd.DataFrame(rows)
+    
+    display(df_results)
+    return df_results
+
+def format_table_parameter_tuning_for_latex(df):
+    df_latex = df.copy()
+
+    # Format numbers as percentages with two decimal places and *100 multiplication
+    for col in COLUMNS:
+        df_latex[col] = df_latex[col].apply(lambda x: f"{x*100:.2f}" if pd.notna(x) else "N/A")
+    
+    # mark the best strategy in bold for each row
+    for index, row in df_latex.iterrows():
+        strategies = {}
+        for column in COLUMNS:
+            strategies[column] = float(row[column]) if row[column] != "N/A" else -1
+        best_strategy = max(strategies, key=strategies.get)
+        if strategies[best_strategy] != -1:
+            df_latex.at[index, best_strategy] = f"\\textbf{{{df_latex.at[index, best_strategy]}}}"    
+    
+    return df_latex
+
+
+# load muster/parameter_optimization.txt
+def get_tabular_parameter_optimization(values):
+    with open(os.path.join("plots", "muster", "parameter_optimization.txt"), "r") as f:
+       parameter_optimization_content = f.read()
+    # go from xxxx to xxxx and insert values
+    for i, value in enumerate(values):
+        parameter_optimization_content = parameter_optimization_content.replace(f"xxxx", f"{value}", 1)
+    return parameter_optimization_content
+

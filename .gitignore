@@ -133,3 +133,5 @@ logs.txt
 __pycache__/evaluate.cpython-313.pyc
 time_logs.jsonl
 old/
+unsloth_compiled_cache/unsloth_compiled_module_qwen3.py
+unsloth_compiled_cache/.locks/.lock.unsloth_compiled_module_qwen3.py

@@ -208,7 +208,7 @@ def train_and_evaluate(
     
     
 
-def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=1500):
+def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=1000):
     if len(prompts) <= chunks:
         return llm.generate(
             prompts=prompts,
@@ -369,7 +369,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             ))
     
     start_time_2b = datetime.now()
-    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=1500)
+    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=1000 if language == "zho" else 2000)
     total_time_2b = datetime.now() - start_time_2b
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
