@@ -1,12 +1,12 @@
 \midrule
-eng & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-eng & Laptop & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-jap & Hotel & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-rus & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-tat & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-ukr & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-zho & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-zho & Laptop & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
+eng & Restaurant & xxxx & xxxx &  xxxx & xxxx \\
+eng & Laptop & xxxx & xxxx &  xxxx & xxxx \\
+jap & Hotel & xxxx & xxxx &  xxxx & xxxx \\
+rus & Restaurant & xxxx & xxxx &  xxxx & xxxx \\
+tat & Restaurant & xxxx & xxxx &  xxxx & xxxx \\
+ukr & Restaurant & xxxx & xxxx &  xxxx & xxxx \\
+zho & Restaurant & xxxx & xxxx &  xxxx & xxxx \\
+zho & Laptop & xxxx & xxxx &  xxxx & xxxx \\
 \midrule
-\multicolumn{2}{l}{\textbf{Average}} & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
+\multicolumn{2}{l}{\textbf{Average}} & xxxx & xxxx &  xxxx & xxxx \\
 \bottomrule

@@ -288,17 +288,15 @@ from helper import *
 import numpy as np
 import pandas as pd
 
-N_SPLITS = 1  # Anzahl der 80/20 Splits für train_split
+N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
 NUM_PRED_SC = 5 # Anzahl der Vorhersagen für Self-Consistency
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
-COLUMNS = ["no_sc_no_guided_12b", "sc_5_12b", "sc_15_12b", "no_sc_no_guided_27b", "sc_5_27b", "sc_15_27b"]
+COLUMNS = ["no_sc_no_guided_27b", "sc_5_27b", "sc_10_27b", "sc_15_27b"]
 
 COLUMN_CONFIG = {
-    "no_sc_no_guided_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", None, "no_sc_no_guided"),
-    "sc_5_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", 5, "sc_no_guided"),
-    "sc_15_12b": ("unsloth/gemma-3-12b-it-bnb-4bit", 15, "sc_no_guided"),
     "no_sc_no_guided_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", None, "no_sc_no_guided"),
     "sc_5_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", 5, "sc_no_guided"),
+    "sc_10_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", 10, "sc_no_guided"),
     "sc_15_27b": ("unsloth/gemma-3-27b-it-bnb-4bit", 15, "sc_no_guided"),
 }
 
@@ -535,13 +533,12 @@ def get_performance_tabular(table_metric, table_subtask, strategy="train_split")
     return df
 
 def run_significance_tests(df, subtask):
-    from IPython.display import display
-    
     print(f"\n{'='*60}")
     print(f"SIGNIFICANCE TESTS - Subtask {subtask}")
     print(f"{'='*60}")
     
     df_clean = df[df["Language"] != "AVG"].copy()
+    
     groups = {col: df_clean[col].dropna().values for col in COLUMNS}
     
     print("\n--- Shapiro-Wilk Normalitätstests ---")

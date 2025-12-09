@@ -25,13 +25,13 @@ VALID_COMBINATIONS = [
 N_SEEDS_RUNS = 1
 STRATEGY = "train_split"  # "evaluation" oder "train_split"
 N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
-LLMs = ["unsloth/gemma-3-12b-it-bnb-4bit", "unsloth/gemma-3-27b-it-bnb-4bit"]
+LLMs = ["unsloth/gemma-3-27b-it-bnb-4bit"]
 
 
-for split_idx in range(N_SPLITS):
-    for seed_run in range(N_SEEDS_RUNS):
-        for subtask, language, domain in VALID_COMBINATIONS:
-            for llm in LLMs:
+for seed_run in range(N_SEEDS_RUNS):
+    for subtask, language, domain in VALID_COMBINATIONS:
+        for llm in LLMs:
+            for split_idx in range(N_SPLITS):
                 cmd = [
                     sys.executable,
                     "train_llm.py",
