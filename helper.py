@@ -264,7 +264,7 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
     return prompt
 
 
-def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_null_aspect=True):
+def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_null_aspect=True, text=""):
     """Convert tuples to the required output format for submission."""
     if subtask == 3:
         # Quadruplet format - deduplicate based on aspect_term, category, opinion_term
@@ -285,6 +285,12 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
 
                 # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
                 if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
+                    continue
+
+                # Skip tuples where aspect and opinion are not in text and not NULL
+                if aspect != "NULL" and aspect.lower() not in text.lower():
+                    continue
+                if opinion != "NULL" and opinion.lower() not in text.lower():
                     continue
 
                 # Create deduplication key
@@ -310,6 +316,12 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
 
                 # Skip tuples with NULL aspect or opinion if disable_null_aspect is True
                 if disable_null_aspect and (aspect == "NULL" or opinion == "NULL"):
+                    continue
+
+                # Skip tuples where aspect and opinion are not in text and not NULL
+                if aspect != "NULL" and aspect.lower() not in text.lower():
+                    continue
+                if opinion != "NULL" and opinion.lower() not in text.lower():
                     continue
 
                 # Clamp valence and arousal to [1.00, 9.00] range

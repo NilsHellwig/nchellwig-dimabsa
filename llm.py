@@ -438,7 +438,8 @@ def format_predictions(outputs, subtask, test_data_raw, disable_null_aspect=True
                 parsed_tuples,
                 test_data_raw[idx]["id"],
                 subtask=subtask,
-                disable_null_aspect=disable_null_aspect
+                disable_null_aspect=disable_null_aspect,
+                text=test_data_raw[idx]["text"]
             )
             all_preds_formatted.append(formatted_output)
         except Exception as e:
