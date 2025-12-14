@@ -1,0 +1,200 @@
+{"ID": "lap26_asqp_dev_1", "Quadruplet": [{"Aspect": "perforemce", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "Great", "VA": "7.54#7.56"}]}
+{"ID": "lap26_asqp_dev_2", "Quadruplet": [{"Aspect": "display", "Category": "DISPLAY#QUALITY", "Opinion": "very bright", "VA": "7.51#7.64"}, {"Aspect": "display", "Category": "DISPLAY#QUALITY", "Opinion": "wide", "VA": "7.34#7.57"}]}
+{"ID": "lap26_asqp_dev_3", "Quadruplet": [{"Aspect": "Battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "bad", "VA": "3.11#6.12"}]}
+{"ID": "lap26_asqp_dev_4", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "very clean", "VA": "7.08#7.08"}]}
+{"ID": "lap26_asqp_dev_5", "Quadruplet": [{"Aspect": "laptop's screen", "Category": "DISPLAY#QUALITY", "Opinion": "very bright", "VA": "7.21#7.29"}, {"Aspect": "laptop's screen", "Category": "DISPLAY#QUALITY", "Opinion": "clear", "VA": "7.20#7.20"}]}
+{"ID": "lap26_asqp_dev_6", "Quadruplet": [{"Aspect": "sound quality", "Category": "MULTIMEDIA_DEVICES#QUALITY", "Opinion": "excellent", "VA": "7.93#7.93"}]}
+{"ID": "lap26_asqp_dev_7", "Quadruplet": [{"Aspect": "video card", "Category": "GRAPHICS#GENERAL", "Opinion": "worth it", "VA": "7.68#7.81"}]}
+{"ID": "lap26_asqp_dev_8", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "Great", "VA": "7.46#7.40"}]}
+{"ID": "lap26_asqp_dev_9", "Quadruplet": [{"Aspect": "Zenbook", "Category": "LAPTOP#GENERAL", "Opinion": "powerful", "VA": "7.35#7.28"}]}
+{"ID": "lap26_asqp_dev_10", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_11", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "best", "VA": "7.94#7.80"}]}
+{"ID": "lap26_asqp_dev_12", "Quadruplet": [{"Aspect": "Chrome OS", "Category": "OS#GENERAL", "Opinion": "really great", "VA": "7.52#7.52"}]}
+{"ID": "lap26_asqp_dev_13", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#DESIGN_FEATURES", "Opinion": "huge", "VA": "7.33#7.40"}, {"Aspect": "laptop", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "very lightweight", "VA": "7.32#7.38"}]}
+{"ID": "lap26_asqp_dev_14", "Quadruplet": [{"Aspect": "trackpad", "Category": "KEYBOARD#GENERAL", "Opinion": "decent", "VA": "6.70#6.64"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "best", "VA": "7.59#7.43"}]}
+{"ID": "lap26_asqp_dev_15", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "loving", "VA": "8.09#8.07"}]}
+{"ID": "lap26_asqp_dev_16", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "really like", "VA": "7.06#7.07"}]}
+{"ID": "lap26_asqp_dev_17", "Quadruplet": [{"Aspect": "processing speed", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "spectacular", "VA": "8.15#8.16"}]}
+{"ID": "lap26_asqp_dev_18", "Quadruplet": [{"Aspect": "battery", "Category": "BATTERY#DESIGN_FEATURES", "Opinion": "light", "VA": "6.97#7.14"}, {"Aspect": "battery", "Category": "BATTERY#DESIGN_FEATURES", "Opinion": "much thinner", "VA": "7.18#7.34"}]}
+{"ID": "lap26_asqp_dev_19", "Quadruplet": [{"Aspect": "mouse", "Category": "MOUSE#GENERAL", "Opinion": "TERRIBLE", "VA": "2.04#7.57"}]}
+{"ID": "lap26_asqp_dev_20", "Quadruplet": [{"Aspect": "Keyboard", "Category": "KEYBOARD#QUALITY", "Opinion": "solid", "VA": "7.26#7.24"}, {"Aspect": "Keyboard", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "ergonomic", "VA": "7.47#7.48"}, {"Aspect": "numbers pad", "Category": "KEYBOARD#USABILITY", "Opinion": "very useful", "VA": "7.57#7.58"}]}
+{"ID": "lap26_asqp_dev_21", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "basic", "VA": "6.04#5.82"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Pretty simple", "VA": "6.24#5.92"}]}
+{"ID": "lap26_asqp_dev_22", "Quadruplet": [{"Aspect": "HD display", "Category": "DISPLAY#PRICE", "Opinion": "good", "VA": "6.75#6.64"}]}
+{"ID": "lap26_asqp_dev_23", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "Poor/fair", "VA": "4.04#5.51"}]}
+{"ID": "lap26_asqp_dev_24", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_25", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "extremely nice", "VA": "7.60#7.65"}, {"Aspect": "value", "Category": "LAPTOP#PRICE", "Opinion": "ridiculously good", "VA": "7.87#8.03"}]}
+{"ID": "lap26_asqp_dev_26", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#QUALITY", "Opinion": "non functioning", "VA": "2.84#6.33"}, {"Aspect": "computer", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "dirty", "VA": "2.98#6.29"}]}
+{"ID": "lap26_asqp_dev_27", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.47#7.34"}, {"Aspect": "fans", "Category": "FANS_COOLING#DESIGN_FEATURES", "Opinion": "super huge", "VA": "3.89#6.31"}, {"Aspect": "body", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "very thick", "VA": "3.52#5.58"}, {"Aspect": "body", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "bulky", "VA": "3.48#5.57"}]}
+{"ID": "lap26_asqp_dev_28", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "nice", "VA": "6.87#6.83"}]}
+{"ID": "lap26_asqp_dev_29", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "Great", "VA": "7.52#7.50"}, {"Aspect": "computer", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "very fast", "VA": "7.63#7.58"}]}
+{"ID": "lap26_asqp_dev_30", "Quadruplet": [{"Aspect": "ASUS products", "Category": "COMPANY#GENERAL", "Opinion": "love", "VA": "7.58#7.61"}]}
+{"ID": "lap26_asqp_dev_31", "Quadruplet": [{"Aspect": "processor", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "Fast", "VA": "7.56#7.69"}, {"Aspect": "screen", "Category": "DISPLAY#QUALITY", "Opinion": "clear", "VA": "7.30#7.45"}, {"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "long", "VA": "7.47#7.58"}]}
+{"ID": "lap26_asqp_dev_32", "Quadruplet": [{"Aspect": "notebook", "Category": "LAPTOP#OS", "Opinion": "very happy", "VA": "7.58#7.64"}]}
+{"ID": "lap26_asqp_dev_33", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PORTABILITY", "Opinion": "heavier", "VA": "4.18#5.78"}, {"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "nicely", "VA": "6.76#6.57"}, {"Aspect": "laptop", "Category": "LAPTOP#USABILITY", "Opinion": "enjoy", "VA": "7.14#7.06"}]}
+{"ID": "lap26_asqp_dev_34", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "love", "VA": "7.36#7.40"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "enjoying", "VA": "7.33#7.41"}]}
+{"ID": "lap26_asqp_dev_35", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "amazing", "VA": "8.04#7.98"}]}
+{"ID": "lap26_asqp_dev_36", "Quadruplet": [{"Aspect": "processing speed", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.57#7.42"}, {"Aspect": "graphics", "Category": "GRAPHICS#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.53#7.34"}]}
+{"ID": "lap26_asqp_dev_37", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "very well sized", "VA": "7.14#7.15"}, {"Aspect": "keyboard", "Category": "KEYBOARD#USABILITY", "Opinion": "comfortable", "VA": "7.43#7.46"}]}
+{"ID": "lap26_asqp_dev_38", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_39", "Quadruplet": [{"Aspect": "display", "Category": "DISPLAY#QUALITY", "Opinion": "rich", "VA": "7.41#7.53"}, {"Aspect": "Screen", "Category": "DISPLAY#QUALITY", "Opinion": "bright", "VA": "7.38#7.53"}]}
+{"ID": "lap26_asqp_dev_40", "Quadruplet": [{"Aspect": "Camera quality", "Category": "MULTIMEDIA_DEVICES#QUALITY", "Opinion": "not great", "VA": "3.56#5.82"}]}
+{"ID": "lap26_asqp_dev_41", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_42", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "lightweight", "VA": "7.16#7.23"}, {"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "awesome", "VA": "7.94#7.94"}, {"Aspect": "touchscreen", "Category": "DISPLAY#GENERAL", "Opinion": "great", "VA": "7.61#7.61"}]}
+{"ID": "lap26_asqp_dev_43", "Quadruplet": [{"Aspect": "RAM", "Category": "MEMORY#GENERAL", "Opinion": "nicer", "VA": "7.13#7.14"}, {"Aspect": "Core i5 processor", "Category": "CPU#GENERAL", "Opinion": "nicer", "VA": "7.19#7.20"}, {"Aspect": "Dragonfly Blue color", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "absolutely stunning", "VA": "8.26#8.14"}, {"Aspect": "Dragonfly Blue color", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "very easily", "VA": "4.10#5.46"}]}
+{"ID": "lap26_asqp_dev_44", "Quadruplet": [{"Aspect": "device", "Category": "LAPTOP#GENERAL", "Opinion": "Great", "VA": "7.57#7.59"}, {"Aspect": "device", "Category": "LAPTOP#GENERAL", "Opinion": "best", "VA": "7.93#7.96"}]}
+{"ID": "lap26_asqp_dev_45", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#GENERAL", "Opinion": "nice", "VA": "7.01#7.08"}]}
+{"ID": "lap26_asqp_dev_46", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PORTABILITY", "Opinion": "lightweight", "VA": "7.26#7.36"}, {"Aspect": "USB outlets", "Category": "PORTS#GENERAL", "Opinion": "necessary", "VA": "7.10#7.14"}]}
+{"ID": "lap26_asqp_dev_47", "Quadruplet": [{"Aspect": "keys", "Category": "KEYBOARD#OPERATION_PERFORMANCE", "Opinion": "responsive", "VA": "7.14#7.18"}, {"Aspect": "chiclet style", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "mushier", "VA": "4.76#6.01"}]}
+{"ID": "lap26_asqp_dev_48", "Quadruplet": [{"Aspect": "graphics", "Category": "GRAPHICS#QUALITY", "Opinion": "clear", "VA": "7.06#7.05"}]}
+{"ID": "lap26_asqp_dev_49", "Quadruplet": [{"Aspect": "gaming laptop", "Category": "LAPTOP#GENERAL", "Opinion": "excellent", "VA": "8.18#8.03"}]}
+{"ID": "lap26_asqp_dev_50", "Quadruplet": [{"Aspect": "warranty", "Category": "WARRANTY#GENERAL", "Opinion": "no good", "VA": "3.23#5.44"}]}
+{"ID": "lap26_asqp_dev_51", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "just fine", "VA": "6.19#6.21"}, {"Aspect": "Chromebook", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "fastest", "VA": "5.55#6.27"}]}
+{"ID": "lap26_asqp_dev_52", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#GENERAL", "Opinion": "surprisingly very nice", "VA": "7.31#7.35"}]}
+{"ID": "lap26_asqp_dev_53", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "best", "VA": "7.80#7.68"}]}
+{"ID": "lap26_asqp_dev_54", "Quadruplet": [{"Aspect": "Battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "not great", "VA": "3.31#6.16"}]}
+{"ID": "lap26_asqp_dev_55", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Love", "VA": "7.59#7.64"}]}
+{"ID": "lap26_asqp_dev_56", "Quadruplet": [{"Aspect": "benchmark tests", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "mostly better", "VA": "7.17#7.21"}]}
+{"ID": "lap26_asqp_dev_57", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.52#7.44"}]}
+{"ID": "lap26_asqp_dev_58", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "absolutely love", "VA": "8.10#7.97"}]}
+{"ID": "lap26_asqp_dev_59", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "powerful", "VA": "7.24#7.28"}]}
+{"ID": "lap26_asqp_dev_60", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_61", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "fast", "VA": "7.33#7.46"}, {"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "reliable", "VA": "7.35#7.44"}]}
+{"ID": "lap26_asqp_dev_62", "Quadruplet": [{"Aspect": "processor", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.48#7.60"}]}
+{"ID": "lap26_asqp_dev_63", "Quadruplet": [{"Aspect": "Windows 10", "Category": "OS#OPERATION_PERFORMANCE", "Opinion": "extremely frustrating", "VA": "2.54#7.36"}, {"Aspect": "Windows 10", "Category": "OS#OPERATION_PERFORMANCE", "Opinion": "do not like", "VA": "3.27#6.06"}]}
+{"ID": "lap26_asqp_dev_64", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_65", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "Great", "VA": "7.37#7.43"}, {"Aspect": "laptop", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "smaller", "VA": "6.86#6.90"}]}
+{"ID": "lap26_asqp_dev_66", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "like", "VA": "6.48#6.41"}]}
+{"ID": "lap26_asqp_dev_67", "Quadruplet": [{"Aspect": "Windows 8.1", "Category": "OS#OPERATION_PERFORMANCE", "Opinion": "really love", "VA": "7.77#7.86"}, {"Aspect": "Windows 8.1", "Category": "OS#OPERATION_PERFORMANCE", "Opinion": "nicely", "VA": "7.33#7.36"}]}
+{"ID": "lap26_asqp_dev_68", "Quadruplet": [{"Aspect": "17 inch screen", "Category": "DISPLAY#GENERAL", "Opinion": "love", "VA": "7.72#7.84"}]}
+{"ID": "lap26_asqp_dev_69", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#GENERAL", "Opinion": "amazingly good", "VA": "7.99#7.97"}]}
+{"ID": "lap26_asqp_dev_70", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "absolutely love", "VA": "8.14#8.01"}]}
+{"ID": "lap26_asqp_dev_71", "Quadruplet": [{"Aspect": "SSD", "Category": "HARD_DISK#OPERATION_PERFORMANCE", "Opinion": "very fast", "VA": "7.61#7.62"}, {"Aspect": "RAM memory", "Category": "MEMORY#OPERATION_PERFORMANCE", "Opinion": "very fast", "VA": "7.66#7.69"}, {"Aspect": "RAM memory", "Category": "MEMORY#OPERATION_PERFORMANCE", "Opinion": "responsive", "VA": "7.60#7.62"}]}
+{"ID": "lap26_asqp_dev_72", "Quadruplet": [{"Aspect": "CPU", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "fast", "VA": "7.42#7.51"}]}
+{"ID": "lap26_asqp_dev_73", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#GENERAL", "Opinion": "Nice", "VA": "7.00#7.00"}, {"Aspect": "screen", "Category": "DISPLAY#GENERAL", "Opinion": "Nice", "VA": "7.01#7.01"}, {"Aspect": "sounds", "Category": "MULTIMEDIA_DEVICES#GENERAL", "Opinion": "Nice", "VA": "7.01#7.01"}]}
+{"ID": "lap26_asqp_dev_74", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_75", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_76", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "very powerful", "VA": "7.69#7.78"}, {"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "fast", "VA": "7.59#7.69"}]}
+{"ID": "lap26_asqp_dev_77", "Quadruplet": [{"Aspect": "RAM", "Category": "MEMORY#QUALITY", "Opinion": "pitiful", "VA": "2.47#6.81"}]}
+{"ID": "lap26_asqp_dev_78", "Quadruplet": [{"Aspect": "touch screen", "Category": "DISPLAY#DESIGN_FEATURES", "Opinion": "very large", "VA": "7.01#7.06"}]}
+{"ID": "lap26_asqp_dev_79", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "pleasantly surprised", "VA": "7.30#7.29"}]}
+{"ID": "lap26_asqp_dev_80", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "Nice", "VA": "7.12#7.07"}]}
+{"ID": "lap26_asqp_dev_81", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "worst", "VA": "1.91#7.80"}]}
+{"ID": "lap26_asqp_dev_82", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "wide", "VA": "7.08#7.21"}, {"Aspect": "keyboard", "Category": "KEYBOARD#USABILITY", "Opinion": "comfortable", "VA": "7.56#7.67"}]}
+{"ID": "lap26_asqp_dev_83", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "beautiful", "VA": "7.62#7.79"}]}
+{"ID": "lap26_asqp_dev_84", "Quadruplet": [{"Aspect": "HP Chromebook", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.51#7.50"}]}
+{"ID": "lap26_asqp_dev_85", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_86", "Quadruplet": [{"Aspect": "picture", "Category": "DISPLAY#QUALITY", "Opinion": "Great", "VA": "7.47#7.59"}, {"Aspect": "picture", "Category": "DISPLAY#QUALITY", "Opinion": "clear", "VA": "7.27#7.40"}, {"Aspect": "sound", "Category": "MULTIMEDIA_DEVICES#GENERAL", "Opinion": "nice", "VA": "7.17#7.34"}]}
+{"ID": "lap26_asqp_dev_87", "Quadruplet": [{"Aspect": "concept", "Category": "LAPTOP#GENERAL", "Opinion": "Great", "VA": "7.51#7.55"}, {"Aspect": "touch screen functionality", "Category": "DISPLAY#GENERAL", "Opinion": "love", "VA": "7.91#7.99"}]}
+{"ID": "lap26_asqp_dev_88", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "good", "VA": "7.03#7.04"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "good", "VA": "7.05#7.02"}]}
+{"ID": "lap26_asqp_dev_89", "Quadruplet": [{"Aspect": "Ram", "Category": "MEMORY#OPERATION_PERFORMANCE", "Opinion": "issue", "VA": "3.33#5.82"}, {"Aspect": "device", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "improvement", "VA": "6.47#6.36"}]}
+{"ID": "lap26_asqp_dev_90", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "awful", "VA": "2.22#7.57"}]}
+{"ID": "lap26_asqp_dev_91", "Quadruplet": [{"Aspect": "HP laptop", "Category": "LAPTOP#GENERAL", "Opinion": "good", "VA": "6.86#6.85"}]}
+{"ID": "lap26_asqp_dev_92", "Quadruplet": [{"Aspect": "Windows 10", "Category": "OS#OPERATION_PERFORMANCE", "Opinion": "Love", "VA": "7.38#7.39"}, {"Aspect": "Intel Core i5", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "really fast", "VA": "7.66#7.71"}, {"Aspect": "videos", "Category": "MULTIMEDIA_DEVICES#QUALITY", "Opinion": "super sharp", "VA": "7.54#7.61"}, {"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "really fast", "VA": "7.68#7.74"}]}
+{"ID": "lap26_asqp_dev_93", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "fantastic", "VA": "8.04#7.99"}]}
+{"ID": "lap26_asqp_dev_94", "Quadruplet": [{"Aspect": "Asus", "Category": "COMPANY#GENERAL", "Opinion": "love", "VA": "7.57#7.62"}]}
+{"ID": "lap26_asqp_dev_95", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_96", "Quadruplet": [{"Aspect": "Battery life", "Category": "BATTERY#GENERAL", "Opinion": "good", "VA": "6.64#6.61"}]}
+{"ID": "lap26_asqp_dev_97", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_98", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "super light", "VA": "6.97#7.00"}]}
+{"ID": "lap26_asqp_dev_99", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "love", "VA": "7.59#7.64"}]}
+{"ID": "lap26_asqp_dev_100", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#DESIGN_FEATURES", "Opinion": "Large", "VA": "7.38#7.41"}]}
+{"ID": "lap26_asqp_dev_101", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "WORST", "VA": "1.90#7.81"}]}
+{"ID": "lap26_asqp_dev_102", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "FAST", "VA": "7.66#7.77"}, {"Aspect": "keyboard", "Category": "KEYBOARD#GENERAL", "Opinion": "love", "VA": "7.60#7.72"}]}
+{"ID": "lap26_asqp_dev_103", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "inexpensive", "VA": "6.55#6.38"}, {"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.48#7.28"}]}
+{"ID": "lap26_asqp_dev_104", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "amazing", "VA": "8.04#7.98"}]}
+{"ID": "lap26_asqp_dev_105", "Quadruplet": [{"Aspect": "track pad", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "Beautiful", "VA": "7.69#7.81"}, {"Aspect": "track pad", "Category": "KEYBOARD#DESIGN_FEATURES", "Opinion": "super large", "VA": "7.50#7.59"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "beautiful", "VA": "7.72#7.83"}]}
+{"ID": "lap26_asqp_dev_106", "Quadruplet": [{"Aspect": "pc", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "slowest", "VA": "2.54#6.56"}]}
+{"ID": "lap26_asqp_dev_107", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "powerful", "VA": "7.59#7.57"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "really like", "VA": "7.25#7.24"}]}
+{"ID": "lap26_asqp_dev_108", "Quadruplet": [{"Aspect": "Picture quality", "Category": "DISPLAY#QUALITY", "Opinion": "very solid", "VA": "7.38#7.31"}]}
+{"ID": "lap26_asqp_dev_109", "Quadruplet": [{"Aspect": "web cam", "Category": "MULTIMEDIA_DEVICES#USABILITY", "Opinion": "hard", "VA": "3.55#6.00"}]}
+{"ID": "lap26_asqp_dev_110", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "better", "VA": "7.57#7.59"}]}
+{"ID": "lap26_asqp_dev_111", "Quadruplet": [{"Aspect": "touch screen", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "very responsive", "VA": "7.57#7.65"}, {"Aspect": "touch screen", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "accurate", "VA": "7.66#7.74"}]}
+{"ID": "lap26_asqp_dev_112", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "spectacular", "VA": "8.33#8.19"}]}
+{"ID": "lap26_asqp_dev_113", "Quadruplet": [{"Aspect": "Alienware", "Category": "COMPANY#GENERAL", "Opinion": "best", "VA": "8.10#7.91"}]}
+{"ID": "lap26_asqp_dev_114", "Quadruplet": [{"Aspect": "display", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "clear", "VA": "7.21#7.30"}, {"Aspect": "display", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "bright", "VA": "7.35#7.46"}]}
+{"ID": "lap26_asqp_dev_115", "Quadruplet": [{"Aspect": "charging cord", "Category": "POWER_SUPPLY#DESIGN_FEATURES", "Opinion": "decent", "VA": "6.51#6.30"}]}
+{"ID": "lap26_asqp_dev_116", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "Not great", "VA": "3.93#5.61"}, {"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "inexpensive", "VA": "6.36#6.19"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "pretty good", "VA": "6.76#6.45"}]}
+{"ID": "lap26_asqp_dev_117", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "very pleased", "VA": "7.62#7.67"}]}
+{"ID": "lap26_asqp_dev_118", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "love", "VA": "7.66#7.75"}, {"Aspect": "speed", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "amazed", "VA": "8.02#8.12"}, {"Aspect": "graphics", "Category": "GRAPHICS#OPERATION_PERFORMANCE", "Opinion": "amazed", "VA": "8.02#8.12"}]}
+{"ID": "lap26_asqp_dev_119", "Quadruplet": [{"Aspect": "Laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.47#7.50"}]}
+{"ID": "lap26_asqp_dev_120", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#QUALITY", "Opinion": "poor", "VA": "2.76#6.77"}]}
+{"ID": "lap26_asqp_dev_121", "Quadruplet": [{"Aspect": "monitor", "Category": "DISPLAY#QUALITY", "Opinion": "nice", "VA": "7.17#7.29"}, {"Aspect": "monitor", "Category": "DISPLAY#QUALITY", "Opinion": "bright", "VA": "7.37#7.52"}, {"Aspect": "monitor", "Category": "DISPLAY#USABILITY", "Opinion": "very easy", "VA": "7.52#7.66"}]}
+{"ID": "lap26_asqp_dev_122", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "worst", "VA": "2.11#7.24"}]}
+{"ID": "lap26_asqp_dev_123", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Nice", "VA": "6.98#6.95"}]}
+{"ID": "lap26_asqp_dev_124", "Quadruplet": [{"Aspect": "SSDH", "Category": "HARD_DISK#OPERATION_PERFORMANCE", "Opinion": "love", "VA": "7.48#7.56"}, {"Aspect": "SSDH", "Category": "HARD_DISK#OPERATION_PERFORMANCE", "Opinion": "fast", "VA": "7.70#7.78"}]}
+{"ID": "lap26_asqp_dev_125", "Quadruplet": [{"Aspect": "Laptop speakers", "Category": "MULTIMEDIA_DEVICES#GENERAL", "Opinion": "aren't great", "VA": "3.60#5.69"}]}
+{"ID": "lap26_asqp_dev_126", "Quadruplet": [{"Aspect": "processor speed", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "impressive", "VA": "7.91#8.01"}, {"Aspect": "graphics", "Category": "GRAPHICS#QUALITY", "Opinion": "great", "VA": "7.64#7.75"}]}
+{"ID": "lap26_asqp_dev_127", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.54#7.56"}]}
+{"ID": "lap26_asqp_dev_128", "Quadruplet": [{"Aspect": "processor", "Category": "CPU#GENERAL", "Opinion": "good", "VA": "6.90#6.94"}, {"Aspect": "RAM", "Category": "MEMORY#GENERAL", "Opinion": "good", "VA": "7.00#7.02"}]}
+{"ID": "lap26_asqp_dev_129", "Quadruplet": [{"Aspect": "Construction", "Category": "LAPTOP#QUALITY", "Opinion": "good", "VA": "6.87#6.91"}, {"Aspect": "display", "Category": "DISPLAY#GENERAL", "Opinion": "good", "VA": "6.93#6.92"}, {"Aspect": "spec parts", "Category": "HARDWARE#OPERATION_PERFORMANCE", "Opinion": "well", "VA": "6.99#7.01"}]}
+{"ID": "lap26_asqp_dev_130", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#USABILITY", "Opinion": "comfortable", "VA": "7.27#7.22"}]}
+{"ID": "lap26_asqp_dev_131", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "very impressed", "VA": "7.85#7.88"}]}
+{"ID": "lap26_asqp_dev_132", "Quadruplet": [{"Aspect": "notebook computer", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "very thin", "VA": "7.12#7.10"}, {"Aspect": "notebook computer", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "dainty", "VA": "7.05#7.04"}]}
+{"ID": "lap26_asqp_dev_133", "Quadruplet": [{"Aspect": "mouse pad", "Category": "HARDWARE#OPERATION_PERFORMANCE", "Opinion": "not as responsive", "VA": "3.64#5.79"}]}
+{"ID": "lap26_asqp_dev_134", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "OUTSTANDING", "VA": "8.43#8.41"}]}
+{"ID": "lap26_asqp_dev_135", "Quadruplet": [{"Aspect": "size", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "loved", "VA": "7.56#7.71"}, {"Aspect": "feel", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "loved", "VA": "7.66#7.81"}]}
+{"ID": "lap26_asqp_dev_136", "Quadruplet": [{"Aspect": "graphics", "Category": "GRAPHICS#OPERATION_PERFORMANCE", "Opinion": "very nice", "VA": "7.28#7.26"}]}
+{"ID": "lap26_asqp_dev_137", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "Super fast", "VA": "7.86#7.95"}, {"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "awesome", "VA": "8.01#8.12"}]}
+{"ID": "lap26_asqp_dev_138", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#QUALITY", "Opinion": "bright", "VA": "7.38#7.51"}, {"Aspect": "screen", "Category": "DISPLAY#QUALITY", "Opinion": "sharp", "VA": "7.59#7.71"}, {"Aspect": "screen", "Category": "DISPLAY#QUALITY", "Opinion": "vivid", "VA": "7.56#7.71"}]}
+{"ID": "lap26_asqp_dev_139", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "loves", "VA": "7.54#7.51"}]}
+{"ID": "lap26_asqp_dev_140", "Quadruplet": [{"Aspect": "Battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "amazing", "VA": "8.07#7.95"}]}
+{"ID": "lap26_asqp_dev_141", "Quadruplet": [{"Aspect": "Battery life", "Category": "BATTERY#GENERAL", "Opinion": "very good", "VA": "7.30#7.39"}]}
+{"ID": "lap26_asqp_dev_142", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.52#7.46"}]}
+{"ID": "lap26_asqp_dev_143", "Quadruplet": [{"Aspect": "hard drive", "Category": "HARD_DISK#OPERATION_PERFORMANCE", "Opinion": "snappy", "VA": "7.18#7.15"}]}
+{"ID": "lap26_asqp_dev_144", "Quadruplet": [{"Aspect": "processor", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "very very slow", "VA": "2.62#6.70"}]}
+{"ID": "lap26_asqp_dev_145", "Quadruplet": [{"Aspect": "i3 Chromebook", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "fast", "VA": "7.34#7.26"}]}
+{"ID": "lap26_asqp_dev_146", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.42#7.34"}]}
+{"ID": "lap26_asqp_dev_147", "Quadruplet": [{"Aspect": "fans", "Category": "FANS_COOLING#OPERATION_PERFORMANCE", "Opinion": "not too loud", "VA": "6.69#6.53"}]}
+{"ID": "lap26_asqp_dev_148", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "awesome", "VA": "8.00#8.08"}]}
+{"ID": "lap26_asqp_dev_149", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "FAST", "VA": "7.57#7.57"}]}
+{"ID": "lap26_asqp_dev_150", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_151", "Quadruplet": [{"Aspect": "USB ports", "Category": "PORTS#GENERAL", "Opinion": "great", "VA": "7.49#7.49"}]}
+{"ID": "lap26_asqp_dev_152", "Quadruplet": [{"Aspect": "build quality", "Category": "LAPTOP#QUALITY", "Opinion": "Great", "VA": "7.59#7.57"}, {"Aspect": "Samsung", "Category": "COMPANY#GENERAL", "Opinion": "Great", "VA": "7.53#7.58"}, {"Aspect": "battery life", "Category": "BATTERY#QUALITY", "Opinion": "wonderful", "VA": "7.82#7.85"}]}
+{"ID": "lap26_asqp_dev_153", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "good", "VA": "6.94#6.99"}, {"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "reasonable", "VA": "6.93#7.02"}]}
+{"ID": "lap26_asqp_dev_154", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PORTABILITY", "Opinion": "really light", "VA": "7.29#7.41"}]}
+{"ID": "lap26_asqp_dev_155", "Quadruplet": [{"Aspect": "audio", "Category": "MULTIMEDIA_DEVICES#QUALITY", "Opinion": "Crisp", "VA": "7.42#7.44"}, {"Aspect": "video", "Category": "MULTIMEDIA_DEVICES#QUALITY", "Opinion": "Crisp", "VA": "7.49#7.50"}]}
+{"ID": "lap26_asqp_dev_156", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "just okay", "VA": "5.36#5.41"}]}
+{"ID": "lap26_asqp_dev_157", "Quadruplet": [{"Aspect": "power consumption", "Category": "POWER_SUPPLY#OPERATION_PERFORMANCE", "Opinion": "unbelievably bad", "VA": "2.33#7.43"}]}
+{"ID": "lap26_asqp_dev_158", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "very impressed", "VA": "7.94#7.95"}]}
+{"ID": "lap26_asqp_dev_159", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "pretty sweet", "VA": "7.28#7.19"}]}
+{"ID": "lap26_asqp_dev_160", "Quadruplet": [{"Aspect": "Speakers", "Category": "MULTIMEDIA_DEVICES#GENERAL", "Opinion": "okay", "VA": "5.95#5.80"}, {"Aspect": "Speakers", "Category": "MULTIMEDIA_DEVICES#GENERAL", "Opinion": "weren't stellar", "VA": "4.98#5.80"}]}
+{"ID": "lap26_asqp_dev_161", "Quadruplet": [{"Aspect": "Shipping", "Category": "SHIPPING#OPERATION_PERFORMANCE", "Opinion": "quick", "VA": "7.14#7.16"}]}
+{"ID": "lap26_asqp_dev_162", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_163", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "faster", "VA": "7.70#7.75"}]}
+{"ID": "lap26_asqp_dev_164", "Quadruplet": [{"Aspect": "battery", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "good", "VA": "6.96#7.09"}, {"Aspect": "battery", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "really fast", "VA": "7.66#7.83"}]}
+{"ID": "lap26_asqp_dev_165", "Quadruplet": [{"Aspect": "Keyboard", "Category": "KEYBOARD#GENERAL", "Opinion": "Nice", "VA": "7.01#7.03"}, {"Aspect": "Track Pad", "Category": "HARDWARE#GENERAL", "Opinion": "Nice", "VA": "7.03#7.03"}]}
+{"ID": "lap26_asqp_dev_166", "Quadruplet": [{"Aspect": "touchscreen", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "amazingly responsive", "VA": "8.03#7.99"}]}
+{"ID": "lap26_asqp_dev_167", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#PRICE", "Opinion": "Awesome", "VA": "7.62#7.71"}]}
+{"ID": "lap26_asqp_dev_168", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "recommend", "VA": "7.51#7.50"}]}
+{"ID": "lap26_asqp_dev_169", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Excellent", "VA": "7.99#8.00"}, {"Aspect": "touchscreen", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "well", "VA": "7.08#7.13"}]}
+{"ID": "lap26_asqp_dev_170", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "love", "VA": "7.59#7.64"}]}
+{"ID": "lap26_asqp_dev_171", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Very happy", "VA": "7.60#7.65"}]}
+{"ID": "lap26_asqp_dev_172", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_173", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "decent", "VA": "6.24#6.22"}]}
+{"ID": "lap26_asqp_dev_174", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "love", "VA": "7.96#7.96"}]}
+{"ID": "lap26_asqp_dev_175", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "never recommend", "VA": "2.47#6.76"}]}
+{"ID": "lap26_asqp_dev_176", "Quadruplet": [{"Aspect": "screen", "Category": "DISPLAY#QUALITY", "Opinion": "bright", "VA": "7.31#7.45"}, {"Aspect": "color", "Category": "DISPLAY#QUALITY", "Opinion": "very good", "VA": "7.38#7.45"}]}
+{"ID": "lap26_asqp_dev_177", "Quadruplet": [{"Aspect": "weight", "Category": "LAPTOP#PORTABILITY", "Opinion": "not too heavy", "VA": "6.71#6.61"}, {"Aspect": "performance", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "snappy", "VA": "7.55#7.48"}, {"Aspect": "graphics", "Category": "GRAPHICS#QUALITY", "Opinion": "crisp", "VA": "7.56#7.50"}, {"Aspect": "price", "Category": "LAPTOP#PRICE", "Opinion": "well", "VA": "6.99#6.87"}]}
+{"ID": "lap26_asqp_dev_178", "Quadruplet": [{"Aspect": "6th gen i5", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "powerful", "VA": "7.67#7.86"}, {"Aspect": "processor", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "powerful", "VA": "7.67#7.87"}, {"Aspect": "6th gen i5", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "great", "VA": "7.41#7.57"}]}
+{"ID": "lap26_asqp_dev_179", "Quadruplet": [{"Aspect": "display", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "just okay", "VA": "5.31#5.25"}, {"Aspect": "display", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "not very bright", "VA": "4.37#5.19"}]}
+{"ID": "lap26_asqp_dev_180", "Quadruplet": [{"Aspect": "Battery", "Category": "BATTERY#QUALITY", "Opinion": "trash", "VA": "2.17#7.45"}]}
+{"ID": "lap26_asqp_dev_181", "Quadruplet": [{"Aspect": "Screen resolution", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "outstandingly", "VA": "8.04#7.90"}, {"Aspect": "viewing angles", "Category": "DISPLAY#OPERATION_PERFORMANCE", "Opinion": "outstandingly", "VA": "8.07#7.94"}]}
+{"ID": "lap26_asqp_dev_182", "Quadruplet": [{"Aspect": "RAM", "Category": "MEMORY#OPERATION_PERFORMANCE", "Opinion": "limited", "VA": "3.72#5.56"}, {"Aspect": "battery", "Category": "BATTERY#DESIGN_FEATURES", "Opinion": "not user-replaceable", "VA": "3.48#5.55"}]}
+{"ID": "lap26_asqp_dev_183", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "very pleased", "VA": "7.52#7.54"}, {"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "impressed", "VA": "7.88#7.90"}]}
+{"ID": "lap26_asqp_dev_184", "Quadruplet": [{"Aspect": "battery", "Category": "BATTERY#DESIGN_FEATURES", "Opinion": "smaller", "VA": "5.50#5.76"}, {"Aspect": "battery", "Category": "BATTERY#DESIGN_FEATURES", "Opinion": "lighter", "VA": "5.81#6.01"}]}
+{"ID": "lap26_asqp_dev_185", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#GENERAL", "Opinion": "loves", "VA": "7.55#7.57"}]}
+{"ID": "lap26_asqp_dev_186", "Quadruplet": [{"Aspect": "Display", "Category": "DISPLAY#GENERAL", "Opinion": "great", "VA": "7.61#7.73"}, {"Aspect": "Display", "Category": "DISPLAY#QUALITY", "Opinion": "bright", "VA": "7.37#7.50"}]}
+{"ID": "lap26_asqp_dev_187", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "great", "VA": "7.24#7.19"}]}
+{"ID": "lap26_asqp_dev_188", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#OPERATION_PERFORMANCE", "Opinion": "decent", "VA": "6.50#6.44"}]}
+{"ID": "lap26_asqp_dev_189", "Quadruplet": [{"Aspect": "Chromebook", "Category": "LAPTOP#GENERAL", "Opinion": "Not happy", "VA": "3.33#5.70"}]}
+{"ID": "lap26_asqp_dev_190", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#OPERATION_PERFORMANCE", "Opinion": "not feel nice", "VA": "3.21#6.19"}, {"Aspect": "keyboard", "Category": "KEYBOARD#OPERATION_PERFORMANCE", "Opinion": "very low", "VA": "3.08#6.35"}]}
+{"ID": "lap26_asqp_dev_191", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "nice", "VA": "7.08#7.09"}, {"Aspect": "laptop", "Category": "LAPTOP#DESIGN_FEATURES", "Opinion": "lightweight", "VA": "7.28#7.31"}]}
+{"ID": "lap26_asqp_dev_192", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#USABILITY", "Opinion": "easy", "VA": "6.99#6.96"}, {"Aspect": "computer", "Category": "LAPTOP#PORTABILITY", "Opinion": "very light", "VA": "6.93#6.86"}]}
+{"ID": "lap26_asqp_dev_193", "Quadruplet": [{"Aspect": "keyboard", "Category": "KEYBOARD#QUALITY", "Opinion": "worn out", "VA": "3.13#6.16"}]}
+{"ID": "lap26_asqp_dev_194", "Quadruplet": [{"Aspect": "fan", "Category": "FANS_COOLING#OPERATION_PERFORMANCE", "Opinion": "a bit loud", "VA": "3.86#5.86"}]}
+{"ID": "lap26_asqp_dev_195", "Quadruplet": [{"Aspect": "mouse button", "Category": "MOUSE#OPERATION_PERFORMANCE", "Opinion": "isn't great", "VA": "3.56#6.06"}]}
+{"ID": "lap26_asqp_dev_196", "Quadruplet": [{"Aspect": "battery life", "Category": "BATTERY#OPERATION_PERFORMANCE", "Opinion": "Nice", "VA": "7.06#7.09"}, {"Aspect": "processor", "Category": "CPU#OPERATION_PERFORMANCE", "Opinion": "powerful", "VA": "7.75#7.75"}]}
+{"ID": "lap26_asqp_dev_197", "Quadruplet": [{"Aspect": "computer", "Category": "LAPTOP#PRICE", "Opinion": "Great", "VA": "7.54#7.49"}]}
+{"ID": "lap26_asqp_dev_198", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_199", "Quadruplet": []}
+{"ID": "lap26_asqp_dev_200", "Quadruplet": [{"Aspect": "laptop", "Category": "LAPTOP#GENERAL", "Opinion": "Great", "VA": "7.34#7.32"}]}

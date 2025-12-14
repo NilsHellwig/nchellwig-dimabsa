@@ -1,0 +1,320 @@
+{"ID": "hotel_quad_train_719", "Triplet": [{"Aspect": "手際", "Opinion": "悪く", "VA": "3.12#6.88"}, {"Aspect": "夕食", "Opinion": "イライラした", "VA": "2.88#7.00"}]}
+{"ID": "hotel_quad_train_232", "Triplet": [{"Aspect": "弁天町駅", "Opinion": "便利", "VA": "6.50#6.00"}, {"Aspect": "部屋", "Opinion": "爆睡", "VA": "7.00#6.83"}]}
+{"ID": "hotel_quad_train_1142", "Triplet": [{"Aspect": "卵焼き", "Opinion": "少し残念", "VA": "3.83#5.83"}, {"Aspect": "お風呂", "Opinion": "狭い", "VA": "3.83#5.83"}, {"Aspect": "トイレ", "Opinion": "狭い", "VA": "3.83#5.83"}]}
+{"ID": "hotel_quad_train_275", "Triplet": [{"Aspect": "値段", "Opinion": "お手ごろ", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1078", "Triplet": [{"Aspect": "浴衣", "Opinion": "可愛い", "VA": "6.50#6.00"}, {"Aspect": "浴衣", "Opinion": "とても素敵", "VA": "7.83#7.17"}, {"Aspect": "子供用", "Opinion": "感激しました", "VA": "7.67#7.33"}]}
+{"ID": "hotel_quad_train_1439", "Triplet": [{"Aspect": "コーヒーサービス", "Opinion": "残念", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_1139", "Triplet": [{"Aspect": "フロント対応", "Opinion": "素晴らしい", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_1104", "Triplet": [{"Aspect": "距離", "Opinion": "難点", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_958", "Triplet": [{"Aspect": "食事", "Opinion": "楽しめました", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_341", "Triplet": [{"Aspect": "セキュリティ", "Opinion": "万全", "VA": "7.50#6.88"}]}
+{"ID": "hotel_quad_train_365", "Triplet": [{"Aspect": "ロケーション", "Opinion": "便利", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1060", "Triplet": [{"Aspect": "席", "Opinion": "狭かった", "VA": "3.50#6.00"}, {"Aspect": "席", "Opinion": "窮屈", "VA": "3.33#6.17"}, {"Aspect": "席", "Opinion": "もう少し広かった", "VA": "6.00#5.50"}]}
+{"ID": "hotel_quad_train_633", "Triplet": [{"Aspect": "コーヒー", "Opinion": "自由に飲めて", "VA": "6.83#6.00"}, {"Aspect": "寛げました", "Opinion": "大変", "VA": "7.17#6.83"}]}
+{"ID": "hotel_quad_train_1489", "Triplet": [{"Aspect": "品数", "Opinion": "まあ不満が出るほどでもない", "VA": "5.50#5.00"}]}
+{"ID": "hotel_quad_train_886", "Triplet": [{"Aspect": "くろしお温泉", "Opinion": "残念", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_694", "Triplet": [{"Aspect": "立地", "Opinion": "とてもよく", "VA": "7.83#7.00"}, {"Aspect": "出発", "Opinion": "とても楽", "VA": "7.50#6.67"}]}
+{"ID": "hotel_quad_train_180", "Triplet": [{"Aspect": "部屋", "Opinion": "清掃が行き届いている", "VA": "6.67#6.17"}, {"Aspect": "部屋", "Opinion": "古い", "VA": "3.83#5.50"}]}
+{"ID": "hotel_quad_train_891", "Triplet": [{"Aspect": "お部屋", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "お部屋", "Opinion": "広く", "VA": "6.38#5.75"}, {"Aspect": "お部屋", "Opinion": "くつろげました", "VA": "6.75#6.50"}]}
+{"ID": "hotel_quad_train_16", "Triplet": [{"Aspect": "部屋", "Opinion": "広く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "とても使いやすかった", "VA": "7.50#7.17"}]}
+{"ID": "hotel_quad_train_1424", "Triplet": [{"Aspect": "立地", "Opinion": "とても良かった", "VA": "7.83#7.00"}]}
+{"ID": "hotel_quad_train_978", "Triplet": [{"Aspect": "ご飯", "Opinion": "美味すぎ", "VA": "8.00#7.50"}, {"Aspect": "肉団子汁", "Opinion": "美味すぎ", "VA": "8.00#7.50"}]}
+{"ID": "hotel_quad_train_1472", "Triplet": [{"Aspect": "従業員", "Opinion": "感じが良い", "VA": "6.83#6.83"}, {"Aspect": "コスパ", "Opinion": "良く", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_58", "Triplet": [{"Aspect": "ドーミーイン", "Opinion": "快適", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_1307", "Triplet": [{"Aspect": "NULL", "Opinion": "残念", "VA": "3.67#6.17"}]}
+{"ID": "hotel_quad_train_1094", "Triplet": [{"Aspect": "部屋", "Opinion": "きれい", "VA": "6.67#6.17"}, {"Aspect": "部屋", "Opinion": "狭かった", "VA": "3.67#5.67"}]}
+{"ID": "hotel_quad_train_211", "Triplet": [{"Aspect": "スタッフ", "Opinion": "親切", "VA": "7.38#6.88"}, {"Aspect": "スタッフ", "Opinion": "丁寧", "VA": "7.38#6.88"}, {"Aspect": "スタッフ", "Opinion": "優しい", "VA": "7.38#6.88"}]}
+{"ID": "hotel_quad_train_1055", "Triplet": [{"Aspect": "繁華街", "Opinion": "近くて", "VA": "6.50#6.00"}, {"Aspect": "繁華街", "Opinion": "良かった", "VA": "6.88#6.25"}]}
+{"ID": "hotel_quad_train_1523", "Triplet": [{"Aspect": "温泉", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "ローケーション", "Opinion": "満足", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_182", "Triplet": [{"Aspect": "駐車場", "Opinion": "広い", "VA": "6.67#6.17"}, {"Aspect": "駐車場", "Opinion": "good", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_281", "Triplet": [{"Aspect": "共立リゾート", "Opinion": "とても綺麗", "VA": "7.67#7.17"}, {"Aspect": "サービス", "Opinion": "満足", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_396", "Triplet": [{"Aspect": "駅", "Opinion": "少し遠い", "VA": "3.83#5.00"}, {"Aspect": "部屋", "Opinion": "広くて", "VA": "6.88#6.12"}, {"Aspect": "部屋", "Opinion": "快適", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_1436", "Triplet": [{"Aspect": "脱衣所", "Opinion": "狭く", "VA": "3.50#5.75"}, {"Aspect": "髪の毛", "Opinion": "沢山落ちていた", "VA": "2.75#6.00"}]}
+{"ID": "hotel_quad_train_318", "Triplet": [{"Aspect": "スタッフ", "Opinion": "譲ってくれず", "VA": "3.50#6.00"}, {"Aspect": "ドリンク", "Opinion": "少しマイナス", "VA": "3.83#5.50"}]}
+{"ID": "hotel_quad_train_629", "Triplet": [{"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1265", "Triplet": [{"Aspect": "接客", "Opinion": "非常に丁寧", "VA": "7.83#7.00"}, {"Aspect": "小旅行", "Opinion": "満足", "VA": "7.17#6.83"}]}
+{"ID": "hotel_quad_train_231", "Triplet": [{"Aspect": "大浴場", "Opinion": "よく", "VA": "6.83#6.00"}, {"Aspect": "クレンジング", "Opinion": "便利", "VA": "6.83#6.00"}, {"Aspect": "クレンジング", "Opinion": "感心", "VA": "6.83#6.67"}]}
+{"ID": "hotel_quad_train_684", "Triplet": [{"Aspect": "NULL", "Opinion": "過ごしやすかった", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_771", "Triplet": [{"Aspect": "温泉", "Opinion": "良い", "VA": "6.67#6.17"}, {"Aspect": "露天風呂", "Opinion": "最高", "VA": "8.00#7.00"}, {"Aspect": "大浴場", "Opinion": "ゆっくり", "VA": "6.67#6.00"}]}
+{"ID": "hotel_quad_train_1365", "Triplet": [{"Aspect": "ゲームコーナー", "Opinion": "格別", "VA": "7.83#7.83"}, {"Aspect": "ゲームコーナー", "Opinion": "落ち着けます", "VA": "7.00#6.80"}]}
+{"ID": "hotel_quad_train_395", "Triplet": [{"Aspect": "値段", "Opinion": "高くなく", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#6.75"}, {"Aspect": "パーク", "Opinion": "目の前", "VA": "6.50#6.25"}]}
+{"ID": "hotel_quad_train_1328", "Triplet": [{"Aspect": "コストパフォーマンス", "Opinion": "満足", "VA": "6.88#6.50"}]}
+{"ID": "hotel_quad_train_205", "Triplet": [{"Aspect": "エステ", "Opinion": "丁寧", "VA": "6.50#6.00"}, {"Aspect": "エステ", "Opinion": "癒されました", "VA": "6.88#6.38"}]}
+{"ID": "hotel_quad_train_1174", "Triplet": [{"Aspect": "ラウンジ", "Opinion": "楽しめました", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_380", "Triplet": [{"Aspect": "子ども達", "Opinion": "とても喜んでいました", "VA": "7.67#7.00"}]}
+{"ID": "hotel_quad_train_1217", "Triplet": [{"Aspect": "オリーブ牛", "Opinion": "甘くて", "VA": "6.50#6.00"}, {"Aspect": "豚", "Opinion": "甘くて", "VA": "6.50#6.00"}, {"Aspect": "オリーブ鶏", "Opinion": "甘くて", "VA": "6.50#6.00"}, {"Aspect": "肉料理", "Opinion": "柔らかくて", "VA": "6.50#6.17"}, {"Aspect": "肉料理", "Opinion": "美味しかったです", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_791", "Triplet": [{"Aspect": "フロントの方", "Opinion": "親切", "VA": "6.83#6.00"}, {"Aspect": "荷物預かり", "Opinion": "快く対応", "VA": "7.17#6.00"}]}
+{"ID": "hotel_quad_train_250", "Triplet": [{"Aspect": "送迎", "Opinion": "本当に助かりました", "VA": "7.67#7.00"}]}
+{"ID": "hotel_quad_train_137", "Triplet": [{"Aspect": "清掃状態", "Opinion": "残念", "VA": "3.83#5.83"}]}
+{"ID": "hotel_quad_train_1006", "Triplet": [{"Aspect": "フロントの女性", "Opinion": "親切", "VA": "7.25#6.75"}, {"Aspect": "NULL", "Opinion": "安心して", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_191", "Triplet": [{"Aspect": "子供", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "ビュッフェ", "Opinion": "混雑", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_1581", "Triplet": [{"Aspect": "風呂", "Opinion": "便利", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_1541", "Triplet": [{"Aspect": "対応", "Opinion": "良い", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_945", "Triplet": [{"Aspect": "風呂", "Opinion": "良かった", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_242", "Triplet": [{"Aspect": "ポイント", "Opinion": "魅力", "VA": "7.00#6.50"}, {"Aspect": "朝食", "Opinion": "冷たく", "VA": "3.00#6.00"}, {"Aspect": "品数", "Opinion": "いまいち", "VA": "3.00#5.00"}]}
+{"ID": "hotel_quad_train_992", "Triplet": [{"Aspect": "荷物", "Opinion": "少し大変", "VA": "3.83#5.83"}]}
+{"ID": "hotel_quad_train_676", "Triplet": [{"Aspect": "建物", "Opinion": "歴史を感じる", "VA": "6.00#5.83"}, {"Aspect": "NULL", "Opinion": "清潔感があり", "VA": "7.00#6.00"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_845", "Triplet": [{"Aspect": "部屋", "Opinion": "ゆったり", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "良かった", "VA": "6.33#5.67"}]}
+{"ID": "hotel_quad_train_609", "Triplet": [{"Aspect": "設備", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "広さ", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "清潔感", "VA": "7.00#6.50"}, {"Aspect": "対応", "Opinion": "丁寧", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1181", "Triplet": [{"Aspect": "部屋", "Opinion": "清潔", "VA": "6.67#6.17"}, {"Aspect": "部屋", "Opinion": "快適", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_929", "Triplet": [{"Aspect": "接客", "Opinion": "残念", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_38", "Triplet": [{"Aspect": "対応", "Opinion": "素晴らしい", "VA": "7.67#6.83"}]}
+{"ID": "hotel_quad_train_245", "Triplet": [{"Aspect": "サービス", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "リゾート", "Opinion": "綺麗", "VA": "6.62#6.25"}]}
+{"ID": "hotel_quad_train_785", "Triplet": [{"Aspect": "風呂", "Opinion": "とても良かった", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_389", "Triplet": [{"Aspect": "食事", "Opinion": "おいしい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_296", "Triplet": [{"Aspect": "アクセス", "Opinion": "良い", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_440", "Triplet": [{"Aspect": "対応", "Opinion": "丁寧", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_101", "Triplet": [{"Aspect": "朝食", "Opinion": "絶品", "VA": "7.83#7.83"}, {"Aspect": "朝食", "Opinion": "大変美味しく", "VA": "8.17#7.67"}]}
+{"ID": "hotel_quad_train_745", "Triplet": [{"Aspect": "スタッフ", "Opinion": "優しく", "VA": "6.88#6.50"}, {"Aspect": "時間", "Opinion": "心癒される", "VA": "7.50#7.25"}, {"Aspect": "食事", "Opinion": "優しく", "VA": "6.88#6.50"}, {"Aspect": "案内", "Opinion": "優しく", "VA": "6.88#6.50"}, {"Aspect": "迎え", "Opinion": "優しく", "VA": "6.88#6.50"}]}
+{"ID": "hotel_quad_train_156", "Triplet": [{"Aspect": "部屋", "Opinion": "大きく", "VA": "6.67#6.17"}, {"Aspect": "部屋", "Opinion": "とても綺麗", "VA": "7.62#7.12"}, {"Aspect": "ホテル", "Opinion": "とても良い", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_598", "Triplet": [{"Aspect": "NULL", "Opinion": "普通", "VA": "5.00#4.50"}]}
+{"ID": "hotel_quad_train_592", "Triplet": [{"Aspect": "NULL", "Opinion": "便利", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_756", "Triplet": [{"Aspect": "朝食", "Opinion": "おいしい", "VA": "6.83#6.50"}, {"Aspect": "NULL", "Opinion": "ゆったり", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_659", "Triplet": [{"Aspect": "NULL", "Opinion": "大満足", "VA": "8.50#8.00"}]}
+{"ID": "hotel_quad_train_1064", "Triplet": [{"Aspect": "朝食バイキング", "Opinion": "楽しめました", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_730", "Triplet": [{"Aspect": "温泉", "Opinion": "快適", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_764", "Triplet": [{"Aspect": "部屋", "Opinion": "広くて", "VA": "6.50#6.50"}, {"Aspect": "値段", "Opinion": "安く", "VA": "6.38#6.25"}, {"Aspect": "部屋", "Opinion": "綺麗", "VA": "6.62#6.50"}]}
+{"ID": "hotel_quad_train_413", "Triplet": [{"Aspect": "駅からのアクセス", "Opinion": "普通", "VA": "5.00#5.00"}, {"Aspect": "食事をする場所", "Opinion": "不便", "VA": "3.17#6.17"}]}
+{"ID": "hotel_quad_train_1363", "Triplet": [{"Aspect": "部屋", "Opinion": "とても良い", "VA": "7.50#6.88"}]}
+{"ID": "hotel_quad_train_701", "Triplet": [{"Aspect": "配慮", "Opinion": "細やかな", "VA": "6.83#6.00"}, {"Aspect": "NULL", "Opinion": "気持ちよく", "VA": "7.17#6.17"}]}
+{"ID": "hotel_quad_train_53", "Triplet": [{"Aspect": "お部屋", "Opinion": "感動", "VA": "7.50#7.50"}, {"Aspect": "お気遣い", "Opinion": "大変有り難かった", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_1065", "Triplet": [{"Aspect": "立地", "Opinion": "とても満足できる", "VA": "7.50#7.00"}, {"Aspect": "建物", "Opinion": "新しく", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1514", "Triplet": [{"Aspect": "部屋", "Opinion": "感激", "VA": "7.67#6.50"}]}
+{"ID": "hotel_quad_train_1305", "Triplet": [{"Aspect": "富士山", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "嬉しかった", "VA": "6.88#6.75"}]}
+{"ID": "hotel_quad_train_889", "Triplet": [{"Aspect": "食事", "Opinion": "おいしく", "VA": "6.50#6.25"}]}
+{"ID": "hotel_quad_train_1103", "Triplet": [{"Aspect": "ヤクルト", "Opinion": "ありがたい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_276", "Triplet": [{"Aspect": "立地", "Opinion": "とても助かりました", "VA": "7.25#6.75"}]}
+{"ID": "hotel_quad_train_1492", "Triplet": [{"Aspect": "料金", "Opinion": "とてもリーズナブル", "VA": "7.50#6.75"}, {"Aspect": "部屋", "Opinion": "広く", "VA": "7.00#6.50"}, {"Aspect": "浴室", "Opinion": "広く", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "とても快適", "VA": "7.75#7.25"}]}
+{"ID": "hotel_quad_train_1007", "Triplet": [{"Aspect": "NULL", "Opinion": "落ち着かない", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_1213", "Triplet": [{"Aspect": "味", "Opinion": "美味しかった", "VA": "6.50#6.50"}]}
+{"ID": "hotel_quad_train_86", "Triplet": [{"Aspect": "朝ごはん", "Opinion": "美味しい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_15", "Triplet": [{"Aspect": "景色", "Opinion": "きれい", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_25", "Triplet": [{"Aspect": "ヨーグルト", "Opinion": "とってもおいしかった", "VA": "7.67#7.17"}, {"Aspect": "牛乳", "Opinion": "とってもおいしかった", "VA": "7.67#7.17"}, {"Aspect": "朝食", "Opinion": "とってもおいしかった", "VA": "7.67#7.17"}]}
+{"ID": "hotel_quad_train_384", "Triplet": [{"Aspect": "部屋", "Opinion": "広く", "VA": "6.67#6.17"}, {"Aspect": "色使い", "Opinion": "カラフル", "VA": "6.33#6.00"}, {"Aspect": "子供たち", "Opinion": "とても楽しんで", "VA": "7.67#7.33"}]}
+{"ID": "hotel_quad_train_1170", "Triplet": [{"Aspect": "部屋", "Opinion": "ひろめ", "VA": "6.83#6.83"}, {"Aspect": "部屋", "Opinion": "ゆったり", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_1415", "Triplet": [{"Aspect": "小さい子供がいる家族", "Opinion": "いいかも知れません", "VA": "6.50#5.83"}]}
+{"ID": "hotel_quad_train_1109", "Triplet": [{"Aspect": "大浴場", "Opinion": "なお良い", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_153", "Triplet": [{"Aspect": "アイス", "Opinion": "残念", "VA": "3.67#6.17"}]}
+{"ID": "hotel_quad_train_1488", "Triplet": [{"Aspect": "気遣い", "Opinion": "感動しました", "VA": "7.50#7.00"}, {"Aspect": "部屋", "Opinion": "使いやすさ", "VA": "7.00#6.50"}, {"Aspect": "部屋", "Opinion": "静かさ", "VA": "7.00#6.50"}, {"Aspect": "部屋", "Opinion": "居心地の良さ", "VA": "7.33#7.00"}]}
+{"ID": "hotel_quad_train_6", "Triplet": [{"Aspect": "朝食", "Opinion": "おいしかった", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_218", "Triplet": [{"Aspect": "温泉", "Opinion": "良かった", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_829", "Triplet": [{"Aspect": "NULL", "Opinion": "大変不快", "VA": "1.83#7.00"}]}
+{"ID": "hotel_quad_train_410", "Triplet": [{"Aspect": "風呂", "Opinion": "面倒", "VA": "3.67#6.17"}]}
+{"ID": "hotel_quad_train_1186", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "便利", "VA": "6.83#6.33"}, {"Aspect": "NULL", "Opinion": "助かりました", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_199", "Triplet": [{"Aspect": "部屋", "Opinion": "広い", "VA": "6.67#6.17"}, {"Aspect": "温泉", "Opinion": "最高", "VA": "8.00#7.00"}, {"Aspect": "駐車場", "Opinion": "広い", "VA": "6.38#6.00"}, {"Aspect": "NULL", "Opinion": "古い", "VA": "3.33#5.00"}]}
+{"ID": "hotel_quad_train_1123", "Triplet": [{"Aspect": "じゅうたん", "Opinion": "気に入らなかった", "VA": "3.50#5.75"}]}
+{"ID": "hotel_quad_train_36", "Triplet": [{"Aspect": "男の人", "Opinion": "感じ良かったです", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_482", "Triplet": [{"Aspect": "部屋", "Opinion": "とても綺麗", "VA": "7.50#6.88"}, {"Aspect": "お風呂", "Opinion": "とても綺麗", "VA": "7.50#6.88"}, {"Aspect": "夜鳴きそば", "Opinion": "最高", "VA": "7.88#7.25"}]}
+{"ID": "hotel_quad_train_360", "Triplet": [{"Aspect": "コスパ", "Opinion": "よく", "VA": "6.50#6.00"}, {"Aspect": "お風呂", "Opinion": "とても良かった", "VA": "7.88#7.12"}, {"Aspect": "部屋", "Opinion": "とても良かった", "VA": "7.88#7.12"}, {"Aspect": "アメニティ", "Opinion": "とても良かった", "VA": "7.88#7.12"}]}
+{"ID": "hotel_quad_train_1530", "Triplet": [{"Aspect": "ホテル内", "Opinion": "静か", "VA": "6.83#6.00"}, {"Aspect": "ホテル内", "Opinion": "安眠できた", "VA": "7.17#6.50"}]}
+{"ID": "hotel_quad_train_1315", "Triplet": [{"Aspect": "会場", "Opinion": "狭く", "VA": "3.50#6.00"}, {"Aspect": "お客様の案内", "Opinion": "しない", "VA": "3.00#6.00"}, {"Aspect": "席取り合戦", "Opinion": "落ち着きませんでした", "VA": "2.75#6.75"}]}
+{"ID": "hotel_quad_train_1014", "Triplet": [{"Aspect": "フロントの対応", "Opinion": "よかった", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_1595", "Triplet": [{"Aspect": "大浴場", "Opinion": "よかった", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_1477", "Triplet": [{"Aspect": "お風呂", "Opinion": "ヌルヌル", "VA": "6.67#6.17"}, {"Aspect": "お肌", "Opinion": "スベスベ", "VA": "7.00#6.33"}, {"Aspect": "こどもたち", "Opinion": "喜んでました", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_447", "Triplet": [{"Aspect": "ホテル", "Opinion": "とても便利", "VA": "7.38#6.88"}]}
+{"ID": "hotel_quad_train_951", "Triplet": [{"Aspect": "種類", "Opinion": "多く", "VA": "6.67#6.17"}, {"Aspect": "朝食", "Opinion": "非常においしい", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_627", "Triplet": [{"Aspect": "コスパ", "Opinion": "良く", "VA": "6.50#6.00"}, {"Aspect": "壁", "Opinion": "少し薄い", "VA": "4.00#5.00"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_1404", "Triplet": [{"Aspect": "ホテル", "Opinion": "大変すばらしい", "VA": "7.50#7.00"}, {"Aspect": "駅", "Opinion": "遠い", "VA": "3.50#5.00"}]}
+{"ID": "hotel_quad_train_90", "Triplet": [{"Aspect": "フロントスタッフ", "Opinion": "愛想が無くて", "VA": "2.67#6.17"}, {"Aspect": "気分", "Opinion": "悪かった", "VA": "2.83#6.33"}]}
+{"ID": "hotel_quad_train_570", "Triplet": [{"Aspect": "鉄道からの距離", "Opinion": "遠く", "VA": "3.50#5.75"}, {"Aspect": "アクセス", "Opinion": "不便", "VA": "3.00#6.00"}, {"Aspect": "スーパー", "Opinion": "近く", "VA": "6.00#6.00"}, {"Aspect": "スーパー", "Opinion": "有り", "VA": "6.00#5.50"}, {"Aspect": "NULL", "Opinion": "良かった", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_321", "Triplet": [{"Aspect": "NULL", "Opinion": "不都合は特になし", "VA": "6.67#5.83"}]}
+{"ID": "hotel_quad_train_962", "Triplet": [{"Aspect": "部屋", "Opinion": "広く", "VA": "6.67#6.17"}, {"Aspect": "仕様", "Opinion": "大変使いやすい", "VA": "7.33#7.00"}]}
+{"ID": "hotel_quad_train_1099", "Triplet": [{"Aspect": "NULL", "Opinion": "癒し", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_100", "Triplet": [{"Aspect": "フロント", "Opinion": "よく教育されてる", "VA": "6.50#6.00"}, {"Aspect": "大浴場", "Opinion": "ない", "VA": "3.83#5.17"}, {"Aspect": "駐車場", "Opinion": "少ない", "VA": "3.67#5.33"}, {"Aspect": "駐車場", "Opinion": "狭い", "VA": "3.50#5.50"}]}
+{"ID": "hotel_quad_train_990", "Triplet": [{"Aspect": "朝食", "Opinion": "すごく種類があり", "VA": "6.50#6.75"}, {"Aspect": "朝食", "Opinion": "すごく美味しかったです", "VA": "7.00#7.00"}]}
+{"ID": "hotel_quad_train_1387", "Triplet": [{"Aspect": "お風呂", "Opinion": "良いな", "VA": "6.83#5.83"}]}
+{"ID": "hotel_quad_train_512", "Triplet": [{"Aspect": "風呂", "Opinion": "良かった", "VA": "6.67#6.00"}]}
+{"ID": "hotel_quad_train_1278", "Triplet": [{"Aspect": "風呂", "Opinion": "ゆっくり", "VA": "6.67#6.00"}]}
+{"ID": "hotel_quad_train_52", "Triplet": [{"Aspect": "料理", "Opinion": "美味しい", "VA": "7.00#6.50"}, {"Aspect": "温泉", "Opinion": "最高", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_888", "Triplet": [{"Aspect": "繁華街", "Opinion": "とても近くて", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "便利", "VA": "6.75#6.25"}]}
+{"ID": "hotel_quad_train_1403", "Triplet": [{"Aspect": "料金", "Opinion": "リーズナブル", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_1565", "Triplet": [{"Aspect": "建物", "Opinion": "古い", "VA": "4.67#5.33"}, {"Aspect": "清掃", "Opinion": "きちんと", "VA": "6.62#6.12"}, {"Aspect": "ご飯", "Opinion": "美味しくて", "VA": "7.17#6.33"}, {"Aspect": "量", "Opinion": "満足", "VA": "7.00#6.80"}, {"Aspect": "部屋", "Opinion": "癒されました", "VA": "7.00#6.50"}, {"Aspect": "散策", "Opinion": "ちょうどいい", "VA": "6.33#5.33"}, {"Aspect": "花火", "Opinion": "ラッキー", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_454", "Triplet": [{"Aspect": "プラン", "Opinion": "大変魅力的", "VA": "7.83#7.83"}]}
+{"ID": "hotel_quad_train_575", "Triplet": [{"Aspect": "フロントの対応", "Opinion": "親切", "VA": "6.50#6.00"}, {"Aspect": "お部屋の感じ", "Opinion": "良かった", "VA": "6.00#6.00"}, {"Aspect": "NULL", "Opinion": "良かった", "VA": "6.00#6.00"}]}
+{"ID": "hotel_quad_train_369", "Triplet": [{"Aspect": "夕食", "Opinion": "想像以上に良い", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_1193", "Triplet": [{"Aspect": "食事", "Opinion": "満足", "VA": "7.67#6.83"}]}
+{"ID": "hotel_quad_train_92", "Triplet": [{"Aspect": "アメニティ", "Opinion": "とても良かった", "VA": "7.67#7.00"}]}
+{"ID": "hotel_quad_train_1200", "Triplet": [{"Aspect": "風呂", "Opinion": "大変良かった", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_981", "Triplet": [{"Aspect": "サービス", "Opinion": "ちょい不満", "VA": "3.50#5.75"}]}
+{"ID": "hotel_quad_train_905", "Triplet": [{"Aspect": "食事", "Opinion": "良かった", "VA": "6.67#6.17"}, {"Aspect": "食事", "Opinion": "きめ細かく", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_995", "Triplet": [{"Aspect": "全体的", "Opinion": "GOOD", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_721", "Triplet": [{"Aspect": "対応", "Opinion": "良く", "VA": "6.67#6.17"}, {"Aspect": "アメニティー", "Opinion": "非常に充実している", "VA": "8.12#7.25"}]}
+{"ID": "hotel_quad_train_225", "Triplet": [{"Aspect": "見栄え", "Opinion": "あまりよろしくなく", "VA": "3.25#5.50"}, {"Aspect": "味", "Opinion": "あまりよろしくなく", "VA": "3.25#5.50"}, {"Aspect": "牛肉料理", "Opinion": "残念", "VA": "2.75#6.25"}, {"Aspect": "牛肉料理", "Opinion": "美味しいと感じられるほどではなかった", "VA": "3.00#6.00"}]}
+{"ID": "hotel_quad_train_493", "Triplet": [{"Aspect": "料理バイキング", "Opinion": "少々飽きてしまいました", "VA": "3.50#5.38"}]}
+{"ID": "hotel_quad_train_1012", "Triplet": [{"Aspect": "立地", "Opinion": "いい", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "安心", "VA": "6.62#6.12"}]}
+{"ID": "hotel_quad_train_615", "Triplet": [{"Aspect": "バス", "Opinion": "広く", "VA": "7.00#6.50"}, {"Aspect": "バス", "Opinion": "ゆったり", "VA": "7.00#6.50"}, {"Aspect": "バス", "Opinion": "くつろげた", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_930", "Triplet": [{"Aspect": "朝食", "Opinion": "短い", "VA": "3.50#5.50"}, {"Aspect": "お風呂", "Opinion": "短い", "VA": "3.50#5.50"}]}
+{"ID": "hotel_quad_train_825", "Triplet": [{"Aspect": "スタッフ", "Opinion": "良かった", "VA": "7.00#6.50"}, {"Aspect": "ホスピタリティ", "Opinion": "良かった", "VA": "7.00#6.50"}, {"Aspect": "サービス", "Opinion": "細やかな", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1542", "Triplet": [{"Aspect": "スペース", "Opinion": "かなり広い", "VA": "7.50#6.88"}, {"Aspect": "NULL", "Opinion": "大変満足", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_507", "Triplet": [{"Aspect": "低音の音", "Opinion": "寝れませんでした", "VA": "2.67#7.17"}]}
+{"ID": "hotel_quad_train_838", "Triplet": [{"Aspect": "便座", "Opinion": "冷たい", "VA": "3.83#5.83"}, {"Aspect": "冷蔵庫", "Opinion": "うるさい", "VA": "3.83#6.00"}]}
+{"ID": "hotel_quad_train_220", "Triplet": [{"Aspect": "食事", "Opinion": "楽しく", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_1131", "Triplet": [{"Aspect": "スタッフ", "Opinion": "丁寧に", "VA": "6.67#6.17"}, {"Aspect": "朝食", "Opinion": "嬉しかった", "VA": "6.38#6.12"}]}
+{"ID": "hotel_quad_train_671", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "新しくて", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "きれい", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "使いよかった", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_883", "Triplet": [{"Aspect": "風呂", "Opinion": "それなりに広くゆったりしてよい", "VA": "6.88#6.38"}, {"Aspect": "アメニティー", "Opinion": "うれしかった", "VA": "6.38#6.12"}]}
+{"ID": "hotel_quad_train_351", "Triplet": [{"Aspect": "スタッフの皆さんの対応", "Opinion": "よく", "VA": "6.67#6.00"}, {"Aspect": "学生さん", "Opinion": "気持ちよく", "VA": "7.00#6.33"}, {"Aspect": "利用客", "Opinion": "気持ちよく", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_279", "Triplet": [{"Aspect": "施設", "Opinion": "古い", "VA": "3.67#5.50"}, {"Aspect": "部屋の設備", "Opinion": "新しく", "VA": "6.83#6.17"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_481", "Triplet": [{"Aspect": "水風呂", "Opinion": "設置して欲しい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_64", "Triplet": [{"Aspect": "サウナ", "Opinion": "ボイント高い", "VA": "7.25#6.75"}, {"Aspect": "大浴場", "Opinion": "ボイント高い", "VA": "7.25#6.75"}, {"Aspect": "フリードリンク", "Opinion": "ボイント高い", "VA": "7.25#6.75"}]}
+{"ID": "hotel_quad_train_1339", "Triplet": [{"Aspect": "恐竜の町", "Opinion": "気分が上がりました", "VA": "6.75#6.38"}]}
+{"ID": "hotel_quad_train_769", "Triplet": [{"Aspect": "お風呂", "Opinion": "気持ちよかった", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_625", "Triplet": [{"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_50", "Triplet": [{"Aspect": "料理", "Opinion": "美味しく", "VA": "6.50#6.00"}, {"Aspect": "クラブラウンジ内のスタッフの方々", "Opinion": "とても素敵", "VA": "7.62#7.12"}, {"Aspect": "男性スタッフの方", "Opinion": "最高", "VA": "8.00#7.50"}, {"Aspect": "アルコール", "Opinion": "美味しく", "VA": "6.50#6.00"}, {"Aspect": "朝食", "Opinion": "とても素晴らしく", "VA": "7.88#7.50"}]}
+{"ID": "hotel_quad_train_278", "Triplet": [{"Aspect": "エキストラベッド", "Opinion": "十分な寝心地", "VA": "6.50#6.00"}, {"Aspect": "姫路駅", "Opinion": "近く", "VA": "6.17#5.67"}, {"Aspect": "買い物", "Opinion": "便利", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_212", "Triplet": [{"Aspect": "ホテル自体", "Opinion": "満足", "VA": "6.50#6.00"}, {"Aspect": "駐車場", "Opinion": "少し疲れました", "VA": "3.25#5.75"}]}
+{"ID": "hotel_quad_train_1119", "Triplet": [{"Aspect": "部屋", "Opinion": "きれい", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_544", "Triplet": [{"Aspect": "お膳", "Opinion": "食べずらかった", "VA": "3.25#5.75"}]}
+{"ID": "hotel_quad_train_681", "Triplet": [{"Aspect": "スタッフ", "Opinion": "素晴らしく", "VA": "7.50#7.00"}, {"Aspect": "食事", "Opinion": "素晴らしく", "VA": "7.38#7.00"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#6.70"}]}
+{"ID": "hotel_quad_train_927", "Triplet": [{"Aspect": "NULL", "Opinion": "ありがたい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_600", "Triplet": [{"Aspect": "部屋", "Opinion": "良かった", "VA": "6.67#6.17"}, {"Aspect": "料理", "Opinion": "良かった", "VA": "6.83#6.17"}, {"Aspect": "スタッフの対応", "Opinion": "良かった", "VA": "7.00#6.17"}]}
+{"ID": "hotel_quad_train_973", "Triplet": [{"Aspect": "ベッド", "Opinion": "とても寝心地が良かった", "VA": "7.67#7.00"}]}
+{"ID": "hotel_quad_train_604", "Triplet": [{"Aspect": "食事", "Opinion": "大変美味しく", "VA": "7.83#7.83"}, {"Aspect": "持ち込み", "Opinion": "OK", "VA": "6.50#6.17"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#7.00"}]}
+{"ID": "hotel_quad_train_1275", "Triplet": [{"Aspect": "ソファーベット", "Opinion": "固くて", "VA": "3.50#5.75"}, {"Aspect": "寝心地", "Opinion": "いまいち", "VA": "3.00#6.00"}]}
+{"ID": "hotel_quad_train_1290", "Triplet": [{"Aspect": "夕飯", "Opinion": "十分満足できる", "VA": "7.50#7.00"}, {"Aspect": "朝食", "Opinion": "十分満足できる", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_248", "Triplet": [{"Aspect": "空気清浄・加湿器", "Opinion": "良かった", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_356", "Triplet": [{"Aspect": "コンビニ", "Opinion": "利用しやすかった", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1547", "Triplet": [{"Aspect": "風呂", "Opinion": "満足", "VA": "7.67#6.50"}, {"Aspect": "サウナ", "Opinion": "満足", "VA": "7.67#6.50"}, {"Aspect": "朝食", "Opinion": "満足", "VA": "7.67#6.50"}, {"Aspect": "価格", "Opinion": "満足", "VA": "7.67#6.50"}]}
+{"ID": "hotel_quad_train_516", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "水周り", "Opinion": "最高", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_1373", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "飲食店", "Opinion": "多く", "VA": "6.33#5.83"}, {"Aspect": "コンビニ", "Opinion": "あり", "VA": "6.33#5.83"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_271", "Triplet": [{"Aspect": "朝食会場", "Opinion": "綺麗", "VA": "6.83#6.00"}, {"Aspect": "品数", "Opinion": "少なく", "VA": "3.83#5.17"}]}
+{"ID": "hotel_quad_train_1249", "Triplet": [{"Aspect": "エアコン", "Opinion": "悪い", "VA": "3.67#6.17"}, {"Aspect": "部屋", "Opinion": "寒くて", "VA": "3.00#6.50"}, {"Aspect": "暖房", "Opinion": "効かなくて", "VA": "3.00#6.50"}]}
+{"ID": "hotel_quad_train_974", "Triplet": [{"Aspect": "食事", "Opinion": "美味しい", "VA": "7.00#6.50"}, {"Aspect": "料理", "Opinion": "素晴らしい", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1182", "Triplet": [{"Aspect": "立地", "Opinion": "最高", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_471", "Triplet": [{"Aspect": "客室", "Opinion": "まったり", "VA": "6.83#6.00"}, {"Aspect": "温泉", "Opinion": "癒す", "VA": "6.83#6.17"}, {"Aspect": "室内風呂", "Opinion": "まったり", "VA": "6.83#6.00"}, {"Aspect": "露天風呂", "Opinion": "まったり", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_1383", "Triplet": [{"Aspect": "ドライヤー", "Opinion": "大満足", "VA": "7.83#7.83"}]}
+{"ID": "hotel_quad_train_546", "Triplet": [{"Aspect": "テレビ", "Opinion": "うれしい", "VA": "6.83#6.50"}]}
+{"ID": "hotel_quad_train_82", "Triplet": [{"Aspect": "温泉", "Opinion": "魅力", "VA": "7.00#6.50"}, {"Aspect": "朝食", "Opinion": "大変満足", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_727", "Triplet": [{"Aspect": "NULL", "Opinion": "戸惑いました", "VA": "3.83#5.83"}, {"Aspect": "仕事", "Opinion": "快適", "VA": "6.38#6.12"}]}
+{"ID": "hotel_quad_train_475", "Triplet": [{"Aspect": "部屋", "Opinion": "温まり辛くて", "VA": "3.50#6.00"}, {"Aspect": "空調", "Opinion": "悪い", "VA": "3.50#6.00"}, {"Aspect": "仕事", "Opinion": "し辛かった", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_744", "Triplet": [{"Aspect": "立地", "Opinion": "摩訶不思議", "VA": "5.50#6.00"}, {"Aspect": "食べ物", "Opinion": "安く", "VA": "6.83#6.33"}, {"Aspect": "お酒", "Opinion": "安く", "VA": "6.83#6.33"}]}
+{"ID": "hotel_quad_train_589", "Triplet": [{"Aspect": "夕食", "Opinion": "美味しく", "VA": "6.83#6.50"}, {"Aspect": "朝食", "Opinion": "美味しく", "VA": "6.83#6.50"}, {"Aspect": "スタッフ対応", "Opinion": "よく", "VA": "6.83#6.50"}, {"Aspect": "NULL", "Opinion": "大変満足", "VA": "7.83#7.50"}]}
+{"ID": "hotel_quad_train_1092", "Triplet": [{"Aspect": "ホテル", "Opinion": "静か", "VA": "6.50#6.00"}, {"Aspect": "ホテル", "Opinion": "良い", "VA": "6.62#6.12"}, {"Aspect": "大浴場", "Opinion": "静か", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_632", "Triplet": [{"Aspect": "教育", "Opinion": "しっかり", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "心地よく", "VA": "6.83#6.33"}]}
+{"ID": "hotel_quad_train_555", "Triplet": [{"Aspect": "部屋", "Opinion": "きれい", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_1037", "Triplet": [{"Aspect": "部屋", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "露天風呂", "Opinion": "ちょうどよく", "VA": "6.83#6.17"}, {"Aspect": "子供達", "Opinion": "喜んで", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_1585", "Triplet": [{"Aspect": "食堂", "Opinion": "狭く", "VA": "3.50#6.00"}, {"Aspect": "朝食", "Opinion": "混雑してました", "VA": "3.50#6.25"}, {"Aspect": "宿泊", "Opinion": "少し歩きます", "VA": "3.75#5.50"}, {"Aspect": "掛け物", "Opinion": "薄くて寒かったです", "VA": "2.75#6.50"}]}
+{"ID": "hotel_quad_train_464", "Triplet": [{"Aspect": "朝食", "Opinion": "とても美味しかった", "VA": "7.50#7.50"}, {"Aspect": "カレー", "Opinion": "無料", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1251", "Triplet": [{"Aspect": "スタッフ", "Opinion": "親切", "VA": "6.50#6.50"}, {"Aspect": "スタッフ", "Opinion": "良かった", "VA": "6.25#6.12"}]}
+{"ID": "hotel_quad_train_1004", "Triplet": [{"Aspect": "気遣い", "Opinion": "満足", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_194", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "コンビニ", "Opinion": "近く", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_1220", "Triplet": [{"Aspect": "ホテル", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "ホテル", "Opinion": "再度利用したい", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_1024", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しかった", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_518", "Triplet": [{"Aspect": "対応", "Opinion": "良かった", "VA": "6.67#6.17"}, {"Aspect": "対応", "Opinion": "悪い", "VA": "3.83#5.83"}, {"Aspect": "対応", "Opinion": "冷たい", "VA": "3.17#6.00"}]}
+{"ID": "hotel_quad_train_1045", "Triplet": [{"Aspect": "スタッフの対応", "Opinion": "良かった", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_972", "Triplet": [{"Aspect": "温泉", "Opinion": "最高", "VA": "7.67#7.50"}]}
+{"ID": "hotel_quad_train_917", "Triplet": [{"Aspect": "部屋", "Opinion": "広く", "VA": "6.67#6.17"}, {"Aspect": "部屋", "Opinion": "快適", "VA": "6.83#6.00"}, {"Aspect": "BS", "Opinion": "残念", "VA": "3.17#6.17"}]}
+{"ID": "hotel_quad_train_866", "Triplet": [{"Aspect": "NULL", "Opinion": "ゆっくり", "VA": "6.67#6.33"}, {"Aspect": "NULL", "Opinion": "休むことができました", "VA": "6.50#6.17"}]}
+{"ID": "hotel_quad_train_573", "Triplet": [{"Aspect": "価格設定", "Opinion": "安かった", "VA": "6.83#6.00"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.33#6.67"}]}
+{"ID": "hotel_quad_train_164", "Triplet": [{"Aspect": "風呂", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "泉質", "Opinion": "良く", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_1471", "Triplet": [{"Aspect": "温泉施設", "Opinion": "とれました", "VA": "6.50#6.00"}, {"Aspect": "疲れ", "Opinion": "とれました", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1084", "Triplet": [{"Aspect": "スタッフ", "Opinion": "対応良く", "VA": "6.50#6.00"}, {"Aspect": "接遇", "Opinion": "なされていました", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_523", "Triplet": [{"Aspect": "ホテル", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "ホテル", "Opinion": "清潔感", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_345", "Triplet": [{"Aspect": "部屋", "Opinion": "ゆっくり", "VA": "6.67#6.00"}]}
+{"ID": "hotel_quad_train_1270", "Triplet": [{"Aspect": "建物", "Opinion": "新しく", "VA": "6.50#6.00"}, {"Aspect": "建物", "Opinion": "きれい", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_943", "Triplet": [{"Aspect": "ホテル内全体", "Opinion": "暖かく", "VA": "6.50#6.00"}, {"Aspect": "部屋", "Opinion": "暖かく", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_72", "Triplet": [{"Aspect": "2段ベッド", "Opinion": "落ち着かなかった", "VA": "3.25#5.75"}]}
+{"ID": "hotel_quad_train_109", "Triplet": [{"Aspect": "疲れ", "Opinion": "取れて", "VA": "6.50#6.00"}, {"Aspect": "寝ぐせ", "Opinion": "取れて", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_141", "Triplet": [{"Aspect": "温泉", "Opinion": "ゆっくり", "VA": "6.67#6.17"}, {"Aspect": "ご飯", "Opinion": "美味しい", "VA": "7.00#6.50"}, {"Aspect": "皆生温泉", "Opinion": "思い出深い", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_1593", "Triplet": [{"Aspect": "設備", "Opinion": "古く", "VA": "3.50#6.00"}, {"Aspect": "水回り", "Opinion": "かなり老朽化しています", "VA": "2.83#7.33"}]}
+{"ID": "hotel_quad_train_798", "Triplet": [{"Aspect": "ベッドルーム", "Opinion": "暖かく", "VA": "6.83#5.83"}, {"Aspect": "私", "Opinion": "とても寒かった", "VA": "2.17#7.83"}]}
+{"ID": "hotel_quad_train_385", "Triplet": [{"Aspect": "料金設定", "Opinion": "安価", "VA": "6.83#6.00"}, {"Aspect": "部屋", "Opinion": "大変癒やされる", "VA": "8.17#7.50"}]}
+{"ID": "hotel_quad_train_484", "Triplet": [{"Aspect": "NULL", "Opinion": "ゆったり", "VA": "6.50#6.00"}, {"Aspect": "清掃", "Opinion": "しっかりされており", "VA": "6.88#6.12"}]}
+{"ID": "hotel_quad_train_1519", "Triplet": [{"Aspect": "マッサージ機", "Opinion": "心地よく", "VA": "7.25#6.75"}]}
+{"ID": "hotel_quad_train_1351", "Triplet": [{"Aspect": "部屋", "Opinion": "あまり見えない", "VA": "3.83#5.00"}, {"Aspect": "ベッド", "Opinion": "広く", "VA": "6.38#5.75"}, {"Aspect": "テレビ", "Opinion": "大きく", "VA": "6.38#5.75"}, {"Aspect": "おふろ", "Opinion": "丁寧に清掃がされた", "VA": "6.88#6.38"}, {"Aspect": "おふろ", "Opinion": "広い", "VA": "6.38#5.75"}, {"Aspect": "NULL", "Opinion": "十二分にくつろげた", "VA": "6.67#6.00"}]}
+{"ID": "hotel_quad_train_334", "Triplet": [{"Aspect": "ホテル側の対応", "Opinion": "最高", "VA": "6.83#7.00"}, {"Aspect": "立地", "Opinion": "最高", "VA": "6.83#7.00"}, {"Aspect": "駅チカ", "Opinion": "最高", "VA": "6.83#7.00"}]}
+{"ID": "hotel_quad_train_1138", "Triplet": [{"Aspect": "大浴場", "Opinion": "最高", "VA": "6.83#7.00"}, {"Aspect": "サウナ", "Opinion": "最高", "VA": "6.83#7.00"}, {"Aspect": "朝風呂", "Opinion": "最高", "VA": "6.83#7.00"}]}
+{"ID": "hotel_quad_train_1300", "Triplet": [{"Aspect": "宿泊代", "Opinion": "お高い", "VA": "3.75#5.75"}]}
+{"ID": "hotel_quad_train_1221", "Triplet": [{"Aspect": "バイキング", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "種類", "Opinion": "沢山", "VA": "6.62#6.25"}]}
+{"ID": "hotel_quad_train_541", "Triplet": [{"Aspect": "立地", "Opinion": "抜群", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_1546", "Triplet": [{"Aspect": "NULL", "Opinion": "最高", "VA": "7.67#7.33"}]}
+{"ID": "hotel_quad_train_1074", "Triplet": [{"Aspect": "風呂", "Opinion": "ゆっくり", "VA": "6.67#6.00"}, {"Aspect": "立地", "Opinion": "ばっちり", "VA": "7.50#7.00"}, {"Aspect": "朝ごはん", "Opinion": "美味しかったです", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_33", "Triplet": [{"Aspect": "音", "Opinion": "ほとんど寝られませんでした", "VA": "2.50#7.00"}]}
+{"ID": "hotel_quad_train_814", "Triplet": [{"Aspect": "山々", "Opinion": "壮大", "VA": "6.83#6.83"}, {"Aspect": "バイキング", "Opinion": "落ち着かない", "VA": "3.17#5.83"}]}
+{"ID": "hotel_quad_train_658", "Triplet": [{"Aspect": "総合評価", "Opinion": "高め", "VA": "6.83#6.00"}, {"Aspect": "お安く", "Opinion": "お安く", "VA": "6.50#5.38"}]}
+{"ID": "hotel_quad_train_820", "Triplet": [{"Aspect": "対応", "Opinion": "丁寧", "VA": "7.00#6.50"}, {"Aspect": "Hotel", "Opinion": "満足できる", "VA": "7.00#6.50"}, {"Aspect": "朝食", "Opinion": "美味しく", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_869", "Triplet": [{"Aspect": "部屋", "Opinion": "満足", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1318", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_1329", "Triplet": [{"Aspect": "スタッフ", "Opinion": "最高", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "とてもお安い", "VA": "6.88#6.75"}]}
+{"ID": "hotel_quad_train_612", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "便利", "VA": "6.83#6.33"}]}
+{"ID": "hotel_quad_train_841", "Triplet": [{"Aspect": "部屋の大きさ", "Opinion": "満足", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_154", "Triplet": [{"Aspect": "接客", "Opinion": "素晴らしく", "VA": "7.83#7.00"}, {"Aspect": "居心地", "Opinion": "良かった", "VA": "7.00#6.33"}]}
+{"ID": "hotel_quad_train_104", "Triplet": [{"Aspect": "トイレの座るところ", "Opinion": "ヒヤッとして冷たく", "VA": "2.75#6.38"}, {"Aspect": "大浴場", "Opinion": "始めて利用しました", "VA": "5.00#5.00"}]}
+{"ID": "hotel_quad_train_1550", "Triplet": [{"Aspect": "ホテル", "Opinion": "とても高い", "VA": "7.50#7.00"}, {"Aspect": "コスパ", "Opinion": "とても高い", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_1384", "Triplet": [{"Aspect": "電車", "Opinion": "少し遠い", "VA": "4.17#5.00"}]}
+{"ID": "hotel_quad_train_581", "Triplet": [{"Aspect": "飲食店", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "良かった", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_1487", "Triplet": [{"Aspect": "お部屋", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "お風呂", "Opinion": "ゆっくり", "VA": "6.38#6.00"}]}
+{"ID": "hotel_quad_train_468", "Triplet": [{"Aspect": "景色", "Opinion": "素晴らしかった", "VA": "7.83#7.00"}]}
+{"ID": "hotel_quad_train_871", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しそう", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_1443", "Triplet": [{"Aspect": "ハウステンボス温泉", "Opinion": "混雑していなくて", "VA": "6.50#5.83"}, {"Aspect": "洗い場", "Opinion": "常時空きがあり", "VA": "6.50#5.83"}, {"Aspect": "体", "Opinion": "温められました", "VA": "6.67#5.83"}]}
+{"ID": "hotel_quad_train_630", "Triplet": [{"Aspect": "フロント", "Opinion": "朗らか", "VA": "6.88#6.50"}, {"Aspect": "お部屋", "Opinion": "清潔", "VA": "6.88#6.50"}, {"Aspect": "お部屋", "Opinion": "過ごしやすかった", "VA": "6.75#6.38"}]}
+{"ID": "hotel_quad_train_1160", "Triplet": [{"Aspect": "コスパ", "Opinion": "いい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1356", "Triplet": [{"Aspect": "レストラン", "Opinion": "かなり高価", "VA": "3.12#6.00"}]}
+{"ID": "hotel_quad_train_1505", "Triplet": [{"Aspect": "朝食", "Opinion": "とても美味しく", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_1482", "Triplet": [{"Aspect": "朝食", "Opinion": "満足", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_812", "Triplet": [{"Aspect": "NULL", "Opinion": "高い", "VA": "3.67#6.17"}]}
+{"ID": "hotel_quad_train_623", "Triplet": [{"Aspect": "無料サービス", "Opinion": "充実", "VA": "6.50#6.00"}, {"Aspect": "満足", "Opinion": "満足", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1389", "Triplet": [{"Aspect": "立地", "Opinion": "いい", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_170", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しかった", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_739", "Triplet": [{"Aspect": "お部屋", "Opinion": "広い", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "楽しめました", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_298", "Triplet": [{"Aspect": "部屋のレイアウト", "Opinion": "良い", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "過ごしやすかった", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1197", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しく", "VA": "6.83#6.83"}, {"Aspect": "朝食", "Opinion": "良かった", "VA": "6.83#6.67"}, {"Aspect": "風呂", "Opinion": "残念", "VA": "3.00#6.00"}]}
+{"ID": "hotel_quad_train_984", "Triplet": [{"Aspect": "朝食", "Opinion": "良かった", "VA": "6.50#6.00"}, {"Aspect": "種類", "Opinion": "多く", "VA": "6.25#5.75"}]}
+{"ID": "hotel_quad_train_1556", "Triplet": [{"Aspect": "接客", "Opinion": "良くて", "VA": "6.83#6.00"}, {"Aspect": "利用", "Opinion": "気持ち良く", "VA": "7.17#6.33"}]}
+{"ID": "hotel_quad_train_855", "Triplet": [{"Aspect": "NULL", "Opinion": "大変快適", "VA": "7.50#7.50"}, {"Aspect": "清掃", "Opinion": "しっかり", "VA": "6.38#6.12"}]}
+{"ID": "hotel_quad_train_757", "Triplet": [{"Aspect": "お風呂", "Opinion": "広く", "VA": "6.50#6.00"}, {"Aspect": "お風呂", "Opinion": "助かりました", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_896", "Triplet": [{"Aspect": "ホテル自体", "Opinion": "素敵", "VA": "6.50#6.00"}, {"Aspect": "オールインクルーシブ", "Opinion": "大変満足", "VA": "8.00#7.00"}, {"Aspect": "飲み放題", "Opinion": "大変満足", "VA": "8.00#7.00"}]}
+{"ID": "hotel_quad_train_772", "Triplet": [{"Aspect": "部屋", "Opinion": "とても快適", "VA": "7.50#6.83"}]}
+{"ID": "hotel_quad_train_1052", "Triplet": [{"Aspect": "デパート", "Opinion": "便利", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1110", "Triplet": [{"Aspect": "食事", "Opinion": "美味しく", "VA": "6.50#6.00"}, {"Aspect": "受付の方", "Opinion": "愛想がよく", "VA": "6.83#6.17"}, {"Aspect": "NULL", "Opinion": "気持ち良く", "VA": "7.00#6.67"}]}
+{"ID": "hotel_quad_train_402", "Triplet": [{"Aspect": "夕飯", "Opinion": "イマイチ", "VA": "3.50#5.00"}, {"Aspect": "朝食", "Opinion": "最高に美味しかった", "VA": "8.17#7.50"}]}
+{"ID": "hotel_quad_train_149", "Triplet": [{"Aspect": "刺身", "Opinion": "美味", "VA": "7.50#7.50"}]}
+{"ID": "hotel_quad_train_1165", "Triplet": [{"Aspect": "バスタオル", "Opinion": "最悪", "VA": "1.50#7.75"}]}
+{"ID": "hotel_quad_train_742", "Triplet": [{"Aspect": "種類", "Opinion": "そこそこあった", "VA": "6.17#5.83"}]}
+{"ID": "hotel_quad_train_1592", "Triplet": [{"Aspect": "品数", "Opinion": "充実させて欲しい", "VA": "5.50#5.75"}]}
+{"ID": "hotel_quad_train_1205", "Triplet": [{"Aspect": "立地", "Opinion": "便利", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_790", "Triplet": [{"Aspect": "風呂回り", "Opinion": "残念", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_737", "Triplet": [{"Aspect": "ホテル", "Opinion": "きれい", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_635", "Triplet": [{"Aspect": "大浴場", "Opinion": "きれい", "VA": "6.83#6.00"}, {"Aspect": "大浴場", "Opinion": "気持ちよかった", "VA": "7.17#6.50"}]}
+{"ID": "hotel_quad_train_599", "Triplet": [{"Aspect": "食事", "Opinion": "良く", "VA": "6.67#6.00"}, {"Aspect": "NULL", "Opinion": "落ち着いて", "VA": "6.62#5.75"}]}
+{"ID": "hotel_quad_train_1206", "Triplet": [{"Aspect": "YouTube等", "Opinion": "最高", "VA": "8.00#7.50"}]}
+{"ID": "hotel_quad_train_1465", "Triplet": [{"Aspect": "立地", "Opinion": "良く", "VA": "6.50#6.00"}, {"Aspect": "接客", "Opinion": "笑顔で", "VA": "7.00#6.38"}]}
+{"ID": "hotel_quad_train_429", "Triplet": [{"Aspect": "駅直結", "Opinion": "とても便利", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_831", "Triplet": [{"Aspect": "窓", "Opinion": "お気に入りポイント", "VA": "6.83#6.83"}, {"Aspect": "窓", "Opinion": "大きな", "VA": "6.38#6.12"}]}
+{"ID": "hotel_quad_train_1082", "Triplet": [{"Aspect": "アメニティ", "Opinion": "たくさんあって助かりました", "VA": "6.88#6.75"}]}
+{"ID": "hotel_quad_train_283", "Triplet": [{"Aspect": "髭剃り", "Opinion": "良品", "VA": "6.50#6.00"}, {"Aspect": "髭剃り", "Opinion": "とてもよかった", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_1266", "Triplet": [{"Aspect": "スタッフの対応", "Opinion": "大変良かった", "VA": "7.50#7.00"}, {"Aspect": "食事", "Opinion": "大変良かった", "VA": "7.50#7.00"}]}
+{"ID": "hotel_quad_train_18", "Triplet": [{"Aspect": "館", "Opinion": "古い", "VA": "3.67#5.50"}, {"Aspect": "サービス", "Opinion": "満足", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_1379", "Triplet": [{"Aspect": "露天風呂", "Opinion": "残念", "VA": "3.12#6.00"}]}
+{"ID": "hotel_quad_train_282", "Triplet": [{"Aspect": "貸し切り風呂", "Opinion": "ゆっくり", "VA": "6.50#6.00"}, {"Aspect": "貸し切り風呂", "Opinion": "気兼ね無く", "VA": "6.38#5.88"}]}
+{"ID": "hotel_quad_train_1407", "Triplet": [{"Aspect": "ホテル", "Opinion": "普通", "VA": "5.00#4.50"}]}
+{"ID": "hotel_quad_train_1049", "Triplet": [{"Aspect": "枕", "Opinion": "高すぎ", "VA": "3.50#6.00"}, {"Aspect": "全体的に", "Opinion": "満足", "VA": "6.38#6.00"}]}
+{"ID": "hotel_quad_train_568", "Triplet": [{"Aspect": "設備", "Opinion": "多少、古く", "VA": "3.50#5.75"}, {"Aspect": "対応", "Opinion": "良く", "VA": "6.83#6.17"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_476", "Triplet": [{"Aspect": "水量", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "バスタブ", "Opinion": "GOOD", "VA": "6.88#6.75"}]}
+{"ID": "hotel_quad_train_202", "Triplet": [{"Aspect": "インスタ写真", "Opinion": "残念", "VA": "3.50#6.00"}]}
+{"ID": "hotel_quad_train_253", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しかった", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_139", "Triplet": [{"Aspect": "飲み物", "Opinion": "高い", "VA": "3.50#6.00"}, {"Aspect": "フロント業務", "Opinion": "少し物調面", "VA": "2.83#6.17"}]}
+{"ID": "hotel_quad_train_666", "Triplet": [{"Aspect": "NULL", "Opinion": "気持ちよく", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1054", "Triplet": [{"Aspect": "電車", "Opinion": "うるさかった", "VA": "3.83#5.83"}, {"Aspect": "NULL", "Opinion": "よかった", "VA": "6.38#6.00"}]}
+{"ID": "hotel_quad_train_854", "Triplet": [{"Aspect": "アメニティ", "Opinion": "気に入っています", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_642", "Triplet": [{"Aspect": "建物", "Opinion": "古さ", "VA": "3.50#5.50"}, {"Aspect": "コスパ", "Opinion": "素晴らしい", "VA": "8.00#7.00"}, {"Aspect": "清潔", "Opinion": "とても清潔", "VA": "8.00#7.00"}, {"Aspect": "ドリンクバー", "Opinion": "ありがたい", "VA": "7.00#6.00"}, {"Aspect": "アメニティバー", "Opinion": "ありがたい", "VA": "7.00#6.00"}]}
+{"ID": "hotel_quad_train_260", "Triplet": [{"Aspect": "大浴場", "Opinion": "満足", "VA": "6.83#6.83"}, {"Aspect": "大浴場", "Opinion": "きれい", "VA": "6.67#6.33"}, {"Aspect": "大浴場", "Opinion": "狭くなく", "VA": "6.17#6.00"}]}
+{"ID": "hotel_quad_train_646", "Triplet": [{"Aspect": "音楽", "Opinion": "とても素敵", "VA": "7.50#7.00"}, {"Aspect": "音楽", "Opinion": "幸せ", "VA": "7.00#6.75"}]}
+{"ID": "hotel_quad_train_436", "Triplet": [{"Aspect": "仙台駅", "Opinion": "近い", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1503", "Triplet": [{"Aspect": "部屋", "Opinion": "かなりよかった", "VA": "7.00#6.50"}]}
+{"ID": "hotel_quad_train_1196", "Triplet": [{"Aspect": "料金", "Opinion": "リーズナブル", "VA": "6.83#6.00"}, {"Aspect": "全体的", "Opinion": "普通", "VA": "5.00#4.00"}]}
+{"ID": "hotel_quad_train_1118", "Triplet": [{"Aspect": "お部屋", "Opinion": "ゆったり", "VA": "6.83#6.00"}, {"Aspect": "お部屋", "Opinion": "くつろげます", "VA": "6.83#6.33"}, {"Aspect": "お部屋", "Opinion": "狭苦しくなく", "VA": "6.33#6.00"}]}
+{"ID": "hotel_quad_train_566", "Triplet": [{"Aspect": "コンビニ", "Opinion": "便利", "VA": "6.67#6.17"}]}
+{"ID": "hotel_quad_train_654", "Triplet": [{"Aspect": "部屋", "Opinion": "大変気に入りました", "VA": "7.83#7.83"}, {"Aspect": "朝食", "Opinion": "大変気に入りました", "VA": "7.83#7.83"}, {"Aspect": "NULL", "Opinion": "リーズナブル", "VA": "6.83#6.67"}]}
+{"ID": "hotel_quad_train_1244", "Triplet": [{"Aspect": "スタッフ", "Opinion": "とても良かった", "VA": "7.50#7.50"}, {"Aspect": "心遣い", "Opinion": "とても良かった", "VA": "7.50#7.50"}, {"Aspect": "接客", "Opinion": "とても良かった", "VA": "7.50#7.50"}, {"Aspect": "ウェルカムドリンク", "Opinion": "充実", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_434", "Triplet": [{"Aspect": "部屋", "Opinion": "キレイ", "VA": "7.00#6.50"}, {"Aspect": "部屋", "Opinion": "広く", "VA": "6.83#6.17"}]}
+{"ID": "hotel_quad_train_577", "Triplet": [{"Aspect": "駅", "Opinion": "近く", "VA": "6.67#6.17"}, {"Aspect": "NULL", "Opinion": "非常に便利", "VA": "7.62#7.12"}]}
+{"ID": "hotel_quad_train_175", "Triplet": [{"Aspect": "二食付き", "Opinion": "良かった", "VA": "6.83#6.00"}]}
+{"ID": "hotel_quad_train_130", "Triplet": [{"Aspect": "風呂", "Opinion": "最高", "VA": "7.67#7.33"}]}
+{"ID": "hotel_quad_train_21", "Triplet": [{"Aspect": "立地", "Opinion": "素晴らしく", "VA": "7.83#7.00"}]}
+{"ID": "hotel_quad_train_717", "Triplet": [{"Aspect": "ホテル", "Opinion": "とても便利", "VA": "7.50#6.88"}]}
+{"ID": "hotel_quad_train_77", "Triplet": [{"Aspect": "部屋", "Opinion": "とても広くて", "VA": "6.83#6.83"}, {"Aspect": "部屋", "Opinion": "良かった", "VA": "6.38#6.12"}, {"Aspect": "お風呂", "Opinion": "シティーホテル並で", "VA": "6.50#6.50"}, {"Aspect": "お風呂", "Opinion": "とても良かった", "VA": "6.83#6.83"}]}
+{"ID": "hotel_quad_train_235", "Triplet": [{"Aspect": "部屋", "Opinion": "安かった", "VA": "6.50#6.00"}, {"Aspect": "ビジネス利用", "Opinion": "問題ない", "VA": "6.50#6.00"}, {"Aspect": "眺望", "Opinion": "無しの", "VA": "3.67#5.33"}]}
+{"ID": "hotel_quad_train_1028", "Triplet": [{"Aspect": "食事", "Opinion": "おいしかった", "VA": "6.50#6.50"}, {"Aspect": "量", "Opinion": "ちょうど良く", "VA": "6.38#6.00"}]}
+{"ID": "hotel_quad_train_715", "Triplet": [{"Aspect": "おかずの品数", "Opinion": "大満足", "VA": "7.67#7.17"}, {"Aspect": "無料朝食", "Opinion": "まずまず", "VA": "6.17#5.83"}]}
+{"ID": "hotel_quad_train_1173", "Triplet": [{"Aspect": "立地", "Opinion": "よく", "VA": "6.50#6.00"}]}
+{"ID": "hotel_quad_train_1327", "Triplet": [{"Aspect": "クラフトビールや地酒", "Opinion": "良かった", "VA": "6.67#6.17"}]}

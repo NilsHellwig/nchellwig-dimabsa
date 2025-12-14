@@ -1,0 +1,456 @@
+{"ID": "rest16_quad_train_48", "Triplet": [{"Aspect": "sushi deal", "Opinion": "half price", "VA": "7.50#7.75"}, {"Aspect": "sushi deal", "Opinion": "well worth", "VA": "8.00#8.25"}]}
+{"ID": "rest16_quad_test_336", "Triplet": [{"Aspect": "food", "Opinion": "good", "VA": "7.17#7.17"}, {"Aspect": "food", "Opinion": "appetizing", "VA": "7.33#7.33"}]}
+{"ID": "rest16_quad_train_1345", "Triplet": [{"Aspect": "NULL", "Opinion": "wretched", "VA": "2.50#6.50"}, {"Aspect": "NULL", "Opinion": "retching", "VA": "2.62#6.62"}]}
+{"ID": "rest16_quad_train_780", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "event planning", "Opinion": "forget about", "VA": "3.00#4.50"}]}
+{"ID": "rest16_quad_train_263", "Triplet": [{"Aspect": "yellowtail", "Opinion": "particularly good", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_862", "Triplet": [{"Aspect": "NULL", "Opinion": "pleasantly", "VA": "6.83#7.00"}, {"Aspect": "NULL", "Opinion": "suprised", "VA": "7.00#7.17"}]}
+{"ID": "rest16_quad_test_201", "Triplet": [{"Aspect": "tuna", "Opinion": "best", "VA": "8.38#8.50"}]}
+{"ID": "rest16_quad_test_182", "Triplet": [{"Aspect": "lunch spots", "Opinion": "top", "VA": "8.00#8.00"}, {"Aspect": "portions", "Opinion": "huge", "VA": "8.00#8.00"}, {"Aspect": "service", "Opinion": "fast", "VA": "8.00#8.00"}, {"Aspect": "margaritas", "Opinion": "amazing", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_train_1411", "Triplet": [{"Aspect": "place", "Opinion": "not inviting", "VA": "3.50#4.50"}, {"Aspect": "food", "Opinion": "totally weird", "VA": "3.38#4.62"}]}
+{"ID": "rest16_quad_test_408", "Triplet": [{"Aspect": "NULL", "Opinion": "worth", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_795", "Triplet": [{"Aspect": "shrimp appetizers", "Opinion": "try", "VA": "6.88#7.00"}]}
+{"ID": "rest16_quad_train_977", "Triplet": [{"Aspect": "nigiri", "Opinion": "relatively good", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_train_631", "Triplet": [{"Aspect": "pizza", "Opinion": "best", "VA": "8.62#8.75"}]}
+{"ID": "rest16_quad_train_1306", "Triplet": [{"Aspect": "waiter", "Opinion": "forgot", "VA": "3.50#4.50"}]}
+{"ID": "rest16_quad_train_86", "Triplet": [{"Aspect": "leon", "Opinion": "gem", "VA": "7.67#7.50"}, {"Aspect": "fare", "Opinion": "well prepared", "VA": "7.67#7.67"}, {"Aspect": "specials", "Opinion": "good", "VA": "7.00#7.00"}, {"Aspect": "atmosphere", "Opinion": "warm", "VA": "7.33#7.33"}, {"Aspect": "atmosphere", "Opinion": "lively", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_12", "Triplet": [{"Aspect": "restaurant", "Opinion": "very disappointed", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_train_1089", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_168", "Triplet": [{"Aspect": "spot", "Opinion": "perfect", "VA": "8.12#8.12"}, {"Aspect": "spot", "Opinion": "romantic", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_1127", "Triplet": [{"Aspect": "NULL", "Opinion": "average", "VA": "5.00#5.00"}, {"Aspect": "NULL", "Opinion": "shredded", "VA": "5.00#5.00"}, {"Aspect": "NULL", "Opinion": "no seasoning", "VA": "3.00#5.00"}]}
+{"ID": "rest16_quad_train_168", "Triplet": [{"Aspect": "service", "Opinion": "rude", "VA": "2.67#6.50"}, {"Aspect": "food", "Opinion": "medicore", "VA": "4.00#5.67"}]}
+{"ID": "rest16_quad_train_571", "Triplet": [{"Aspect": "place", "Opinion": "nice", "VA": "7.17#7.17"}, {"Aspect": "place", "Opinion": "calm", "VA": "7.17#7.17"}]}
+{"ID": "rest16_quad_train_249", "Triplet": [{"Aspect": "NULL", "Opinion": "wonderful", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1504", "Triplet": [{"Aspect": "restaurant", "Opinion": "disrespectful", "VA": "1.88#8.12"}, {"Aspect": "restaurant", "Opinion": "expensive", "VA": "3.12#6.88"}]}
+{"ID": "rest16_quad_train_1420", "Triplet": [{"Aspect": "waitress", "Opinion": "not especially warm", "VA": "4.50#5.00"}, {"Aspect": "waitress", "Opinion": "not especially attentive", "VA": "4.50#5.00"}]}
+{"ID": "rest16_quad_train_1050", "Triplet": [{"Aspect": "place", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "dinner", "Opinion": "enjoy", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_test_375", "Triplet": [{"Aspect": "view", "Opinion": "good", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_test_567", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_515", "Triplet": [{"Aspect": "foods", "Opinion": "very unhappy", "VA": "2.50#6.80"}]}
+{"ID": "rest16_quad_train_733", "Triplet": [{"Aspect": "restaurant", "Opinion": "special", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_872", "Triplet": [{"Aspect": "NULL", "Opinion": "less than impressed", "VA": "3.88#5.00"}]}
+{"ID": "rest16_quad_train_71", "Triplet": [{"Aspect": "restaurants", "Opinion": "overrated", "VA": "2.50#6.80"}]}
+{"ID": "rest16_quad_train_1438", "Triplet": [{"Aspect": "chicken", "Opinion": "appalled", "VA": "1.50#8.50"}]}
+{"ID": "rest16_quad_train_645", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_742", "Triplet": [{"Aspect": "food", "Opinion": "yummy", "VA": "7.50#7.50"}, {"Aspect": "mussels in spicy tomato sauce", "Opinion": "cooked - to - perfection", "VA": "8.00#8.00"}, {"Aspect": "fries", "Opinion": "shoestring crispy", "VA": "7.75#7.75"}]}
+{"ID": "rest16_quad_test_43", "Triplet": [{"Aspect": "sashimi", "Opinion": "freshest", "VA": "8.25#8.00"}, {"Aspect": "sashimi", "Opinion": "most tender", "VA": "8.25#8.00"}]}
+{"ID": "rest16_quad_train_779", "Triplet": [{"Aspect": "customer service", "Opinion": "NULL", "VA": "4.50#5.50"}]}
+{"ID": "rest16_quad_train_738", "Triplet": [{"Aspect": "place", "Opinion": "quiet", "VA": "7.67#7.50"}, {"Aspect": "place", "Opinion": "delightful", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_225", "Triplet": [{"Aspect": "fish", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "seafood", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "waterfront setting", "Opinion": "classy", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_train_269", "Triplet": [{"Aspect": "food", "Opinion": "quickly", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "efficiently", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_1062", "Triplet": [{"Aspect": "place", "Opinion": "fun", "VA": "6.67#6.50"}, {"Aspect": "place", "Opinion": "not necessarily fanatical", "VA": "4.83#5.17"}, {"Aspect": "pirces", "Opinion": "low", "VA": "6.17#6.00"}]}
+{"ID": "rest16_quad_test_371", "Triplet": [{"Aspect": "grilled alaskan king salmon", "Opinion": "enjoyed", "VA": "7.67#7.50"}, {"Aspect": "creamed washington russet potatoes", "Opinion": "delectable", "VA": "8.00#7.83"}, {"Aspect": "crisp green beans", "Opinion": "crisp", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_202", "Triplet": [{"Aspect": "cafe spice", "Opinion": "best", "VA": "8.00#8.00"}, {"Aspect": "indian restaurant", "Opinion": "best", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_607", "Triplet": [{"Aspect": "sushi", "Opinion": "very particular", "VA": "6.83#7.00"}, {"Aspect": "ceviche mix", "Opinion": "please", "VA": "7.17#7.17"}, {"Aspect": "crab dumplings", "Opinion": "please", "VA": "7.17#7.17"}, {"Aspect": "assorted sashimi", "Opinion": "please", "VA": "7.17#7.17"}, {"Aspect": "sushi and rolls", "Opinion": "please", "VA": "7.17#7.17"}, {"Aspect": "two types of sake", "Opinion": "please", "VA": "7.17#7.17"}, {"Aspect": "banana tempura", "Opinion": "please", "VA": "7.17#7.17"}]}
+{"ID": "rest16_quad_train_1304", "Triplet": [{"Aspect": "waiter", "Opinion": "NULL", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_train_333", "Triplet": [{"Aspect": "expresso", "Opinion": "liked", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_test_126", "Triplet": [{"Aspect": "selection of the small plates", "Opinion": "very good", "VA": "7.67#7.50"}, {"Aspect": "shoe string onions", "Opinion": "very good", "VA": "7.67#7.50"}, {"Aspect": "goat cheese pizza", "Opinion": "very good", "VA": "7.67#7.50"}, {"Aspect": "grilled asparagus", "Opinion": "very good", "VA": "7.67#7.50"}, {"Aspect": "fried brie with fruit", "Opinion": "very good", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_198", "Triplet": [{"Aspect": "service", "Opinion": "very good", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "prompt", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "attentive", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "non - intrusive", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_41", "Triplet": [{"Aspect": "NULL", "Opinion": "great", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_549", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_425", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_653", "Triplet": [{"Aspect": "menu", "Opinion": "expensive", "VA": "4.67#6.50"}]}
+{"ID": "rest16_quad_train_1521", "Triplet": [{"Aspect": "place", "Opinion": "like", "VA": "6.62#6.50"}]}
+{"ID": "rest16_quad_train_952", "Triplet": [{"Aspect": "music", "Opinion": "good", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "great", "VA": "8.00#7.83"}, {"Aspect": "service", "Opinion": "speedy", "VA": "7.83#7.67"}, {"Aspect": "prices", "Opinion": "affordable", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_962", "Triplet": [{"Aspect": "chef", "Opinion": "NULL", "VA": "2.67#6.50"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "4.83#5.00"}]}
+{"ID": "rest16_quad_train_1406", "Triplet": [{"Aspect": "entree", "Opinion": "very good", "VA": "7.12#7.00"}]}
+{"ID": "rest16_quad_test_109", "Triplet": [{"Aspect": "food", "Opinion": "simply unforgettable", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_dev_22", "Triplet": [{"Aspect": "food options", "Opinion": "rule", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_595", "Triplet": [{"Aspect": "scallops", "Opinion": "delicious", "VA": "7.83#7.83"}, {"Aspect": "sauce", "Opinion": "wonderful", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_1311", "Triplet": [{"Aspect": "glasses", "Opinion": "dirty", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_test_184", "Triplet": [{"Aspect": "art on the walls", "Opinion": "very colorful", "VA": "7.62#7.62"}]}
+{"ID": "rest16_quad_train_1076", "Triplet": [{"Aspect": "place", "Opinion": "never recommend", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_dev_123", "Triplet": [{"Aspect": "chicken teriyaki", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_1391", "Triplet": [{"Aspect": "establishment", "Opinion": "NULL", "VA": "5.67#5.50"}, {"Aspect": "dinner", "Opinion": "quiet", "VA": "7.00#6.67"}, {"Aspect": "dinner", "Opinion": "unhurried", "VA": "7.00#6.67"}, {"Aspect": "dinner", "Opinion": "memorable", "VA": "7.67#7.67"}]}
+{"ID": "rest16_quad_train_1510", "Triplet": [{"Aspect": "NULL", "Opinion": "expensive", "VA": "3.67#6.50"}]}
+{"ID": "rest16_quad_test_296", "Triplet": [{"Aspect": "amount of food", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "prices", "Opinion": "lower", "VA": "3.33#6.67"}]}
+{"ID": "rest16_quad_dev_40", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_1184", "Triplet": [{"Aspect": "dogs", "Opinion": "amazing", "VA": "8.17#8.17"}, {"Aspect": "dogs", "Opinion": "fresh", "VA": "8.00#8.00"}, {"Aspect": "endless toppings", "Opinion": "best", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_train_917", "Triplet": [{"Aspect": "decor", "Opinion": "nice", "VA": "7.67#7.50"}, {"Aspect": "service", "Opinion": "good", "VA": "7.83#7.67"}, {"Aspect": "food", "Opinion": "surprisingly excellent", "VA": "8.83#8.67"}]}
+{"ID": "rest16_quad_test_98", "Triplet": [{"Aspect": "fajita salad", "Opinion": "delicious", "VA": "8.25#8.00"}, {"Aspect": "colorado", "Opinion": "delicious", "VA": "8.25#8.00"}, {"Aspect": "fajitas", "Opinion": "delicious", "VA": "8.25#8.00"}, {"Aspect": "place", "Opinion": "NULL", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_test_395", "Triplet": [{"Aspect": "NULL", "Opinion": "very very disappointed", "VA": "1.83#8.83"}]}
+{"ID": "rest16_quad_train_1351", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_train_699", "Triplet": [{"Aspect": "pizza", "Opinion": "love", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_966", "Triplet": [{"Aspect": "waiter", "Opinion": "spilled", "VA": "2.83#7.00"}, {"Aspect": "NULL", "Opinion": "hot", "VA": "3.33#6.67"}]}
+{"ID": "rest16_quad_dev_36", "Triplet": [{"Aspect": "outdoor restaurants", "Opinion": "nicest", "VA": "7.83#7.83"}, {"Aspect": "place", "Opinion": "rivals", "VA": "7.83#7.83"}]}
+{"ID": "rest16_quad_train_1373", "Triplet": [{"Aspect": "risotto", "Opinion": "amazing", "VA": "8.17#8.33"}]}
+{"ID": "rest16_quad_test_393", "Triplet": [{"Aspect": "meal", "Opinion": "remember", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_125", "Triplet": [{"Aspect": "band", "Opinion": "very good", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "attentive", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_169", "Triplet": [{"Aspect": "NULL", "Opinion": "loved", "VA": "7.67#7.50"}, {"Aspect": "shows", "Opinion": "especially", "VA": "8.00#7.67"}, {"Aspect": "actors", "Opinion": "especially", "VA": "8.00#7.67"}]}
+{"ID": "rest16_quad_test_373", "Triplet": [{"Aspect": "server", "Opinion": "attentive", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1171", "Triplet": [{"Aspect": "restaurant", "Opinion": "beautiful", "VA": "7.67#7.50"}, {"Aspect": "staff", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_697", "Triplet": [{"Aspect": "place", "Opinion": "not worth", "VA": "3.50#6.00"}, {"Aspect": "prices", "Opinion": "not worth", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_test_232", "Triplet": [{"Aspect": "place", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "service", "Opinion": "impersonal", "VA": "3.00#6.67"}, {"Aspect": "service", "Opinion": "corporate - like", "VA": "3.00#6.67"}]}
+{"ID": "rest16_quad_train_214", "Triplet": [{"Aspect": "food", "Opinion": "delicious", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "homemade", "VA": "7.83#7.67"}, {"Aspect": "balance", "Opinion": "perfect", "VA": "8.17#8.00"}]}
+{"ID": "rest16_quad_test_334", "Triplet": [{"Aspect": "pepperoni", "Opinion": "thick", "VA": "6.50#6.50"}, {"Aspect": "pepperoni", "Opinion": "yum", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_860", "Triplet": [{"Aspect": "place", "Opinion": "definitely exceeded my expectations", "VA": "7.62#7.50"}, {"Aspect": "food", "Opinion": "a lot", "VA": "7.12#6.75"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_106", "Triplet": [{"Aspect": "service", "Opinion": "quick", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "good", "VA": "7.00#7.00"}]}
+{"ID": "rest16_quad_train_278", "Triplet": [{"Aspect": "NULL", "Opinion": "enjoying", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_test_244", "Triplet": [{"Aspect": "brocolli", "Opinion": "eventful", "VA": "7.50#7.75"}, {"Aspect": "scallops and prawns", "Opinion": "so fresh", "VA": "8.00#8.25"}, {"Aspect": "scallops and prawns", "Opinion": "nicely cooked", "VA": "7.75#8.00"}]}
+{"ID": "rest16_quad_train_1257", "Triplet": [{"Aspect": "place", "Opinion": "not beautiful", "VA": "3.50#4.50"}, {"Aspect": "food", "Opinion": "speaks for itself", "VA": "6.50#6.00"}]}
+{"ID": "rest16_quad_train_1461", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_1435", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_830", "Triplet": [{"Aspect": "bar", "Opinion": "cool", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "great", "VA": "7.83#7.67"}, {"Aspect": "beer", "Opinion": "excellent", "VA": "8.17#8.00"}]}
+{"ID": "rest16_quad_test_349", "Triplet": [{"Aspect": "bathroom attendant", "Opinion": "odd", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_train_451", "Triplet": [{"Aspect": "place", "Opinion": "pricey", "VA": "3.50#6.00"}, {"Aspect": "food", "Opinion": "worth", "VA": "7.00#7.00"}, {"Aspect": "service", "Opinion": "NULL", "VA": "3.00#6.00"}]}
+{"ID": "rest16_quad_test_299", "Triplet": [{"Aspect": "pizza", "Opinion": "delicious", "VA": "8.12#8.12"}, {"Aspect": "salads", "Opinion": "fantastic", "VA": "8.25#8.25"}]}
+{"ID": "rest16_quad_train_1048", "Triplet": [{"Aspect": "waiter", "Opinion": "attentive", "VA": "7.83#7.83"}, {"Aspect": "food", "Opinion": "delicious", "VA": "8.00#8.00"}, {"Aspect": "views of the city", "Opinion": "great", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_517", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_1106", "Triplet": [{"Aspect": "staff", "Opinion": "very good", "VA": "7.38#7.25"}]}
+{"ID": "rest16_quad_test_196", "Triplet": [{"Aspect": "brunch food", "Opinion": "average", "VA": "5.12#5.00"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_464", "Triplet": [{"Aspect": "NULL", "Opinion": "10", "VA": "9.00#9.00"}]}
+{"ID": "rest16_quad_train_748", "Triplet": [{"Aspect": "location", "Opinion": "good", "VA": "7.17#6.83"}, {"Aspect": "NULL", "Opinion": "very reasonable", "VA": "7.00#6.67"}]}
+{"ID": "rest16_quad_dev_38", "Triplet": [{"Aspect": "experience", "Opinion": "beautiful", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_667", "Triplet": [{"Aspect": "neighborhood", "Opinion": "great", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1317", "Triplet": [{"Aspect": "NULL", "Opinion": "wish", "VA": "3.67#6.50"}]}
+{"ID": "rest16_quad_test_470", "Triplet": [{"Aspect": "NULL", "Opinion": "decent", "VA": "6.17#6.17"}, {"Aspect": "NULL", "Opinion": "nothing exceptional", "VA": "4.33#5.50"}]}
+{"ID": "rest16_quad_dev_28", "Triplet": [{"Aspect": "chef", "Opinion": "hats off", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_test_215", "Triplet": [{"Aspect": "wine", "Opinion": "great", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_580", "Triplet": [{"Aspect": "service", "Opinion": "mediocre", "VA": "4.50#4.50"}, {"Aspect": "quality", "Opinion": "mediocre", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_train_1394", "Triplet": [{"Aspect": "NULL", "Opinion": "nothing", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_train_1522", "Triplet": [{"Aspect": "design", "Opinion": "good", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_test_178", "Triplet": [{"Aspect": "employees", "Opinion": "ignoring", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_train_665", "Triplet": [{"Aspect": "crab cakes", "Opinion": "delicious", "VA": "7.50#7.50"}, {"Aspect": "crab cakes", "Opinion": "too", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_dev_83", "Triplet": [{"Aspect": "servings", "Opinion": "small", "VA": "3.50#6.00"}, {"Aspect": "salmon", "Opinion": "wasnt impressed", "VA": "2.50#6.50"}, {"Aspect": "chicken", "Opinion": "good", "VA": "6.50#6.00"}]}
+{"ID": "rest16_quad_test_137", "Triplet": [{"Aspect": "place", "Opinion": "open", "VA": "7.67#7.50"}, {"Aspect": "place", "Opinion": "cool", "VA": "7.83#7.67"}, {"Aspect": "pizza", "Opinion": "best", "VA": "8.50#8.33"}, {"Aspect": "coffee", "Opinion": "best", "VA": "8.50#8.33"}]}
+{"ID": "rest16_quad_train_183", "Triplet": [{"Aspect": "wait staff", "Opinion": "unappreciative", "VA": "2.50#7.00"}, {"Aspect": "pie", "Opinion": "best", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_42", "Triplet": [{"Aspect": "miso soup", "Opinion": "detail", "VA": "6.88#7.00"}, {"Aspect": "complex rolls", "Opinion": "detail", "VA": "6.88#7.00"}]}
+{"ID": "rest16_quad_train_1219", "Triplet": [{"Aspect": "appetizers", "Opinion": "delicious", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_923", "Triplet": [{"Aspect": "rao ' s", "Opinion": "better", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_1280", "Triplet": [{"Aspect": "bison", "Opinion": "quite excellent", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_test_175", "Triplet": [{"Aspect": "sushi", "Opinion": "excellent", "VA": "8.17#8.00"}, {"Aspect": "wait staff", "Opinion": "quick", "VA": "8.00#7.67"}]}
+{"ID": "rest16_quad_train_477", "Triplet": [{"Aspect": "service", "Opinion": "extremely dissappointed", "VA": "1.83#7.83"}, {"Aspect": "service", "Opinion": "rude", "VA": "2.00#7.67"}]}
+{"ID": "rest16_quad_test_335", "Triplet": [{"Aspect": "pizza", "Opinion": "pretty good", "VA": "6.50#6.50"}, {"Aspect": "pizza", "Opinion": "not exactly the best", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_test_191", "Triplet": [{"Aspect": "food", "Opinion": "best", "VA": "8.12#8.12"}, {"Aspect": "service", "Opinion": "phenominal", "VA": "8.38#8.38"}]}
+{"ID": "rest16_quad_test_316", "Triplet": [{"Aspect": "chef special dinner", "Opinion": "major dissappointment", "VA": "2.67#7.00"}]}
+{"ID": "rest16_quad_test_505", "Triplet": [{"Aspect": "NULL", "Opinion": "uncomfortable", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_dev_164", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_563", "Triplet": [{"Aspect": "restaurant", "Opinion": "nice", "VA": "7.62#7.50"}, {"Aspect": "restaurant", "Opinion": "traditional", "VA": "7.88#7.75"}, {"Aspect": "restaurant", "Opinion": "family owned", "VA": "7.75#7.62"}]}
+{"ID": "rest16_quad_train_1236", "Triplet": [{"Aspect": "NULL", "Opinion": "best", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_272", "Triplet": [{"Aspect": "caesar salad", "Opinion": "very nice", "VA": "7.88#7.88"}, {"Aspect": "arugula and goat cheese", "Opinion": "very tasty", "VA": "7.75#7.75"}]}
+{"ID": "rest16_quad_train_822", "Triplet": [{"Aspect": "food", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "decor", "Opinion": "great", "VA": "7.83#7.67"}, {"Aspect": "service", "Opinion": "great", "VA": "8.00#7.83"}]}
+{"ID": "rest16_quad_train_384", "Triplet": [{"Aspect": "NULL", "Opinion": "very overpriced", "VA": "2.50#6.50"}, {"Aspect": "NULL", "Opinion": "not very tasty", "VA": "3.00#6.00"}]}
+{"ID": "rest16_quad_train_46", "Triplet": [{"Aspect": "sushi", "Opinion": "pretty fresh", "VA": "6.83#7.00"}, {"Aspect": "sushi", "Opinion": "adequately proportioned", "VA": "6.67#6.83"}]}
+{"ID": "rest16_quad_train_1502", "Triplet": [{"Aspect": "manager", "Opinion": "rude", "VA": "2.67#6.50"}, {"Aspect": "manager", "Opinion": "extremely poorly", "VA": "2.33#6.67"}]}
+{"ID": "rest16_quad_test_81", "Triplet": [{"Aspect": "food", "Opinion": "excellent", "VA": "8.12#8.12"}, {"Aspect": "ambience", "Opinion": "nice", "VA": "7.62#7.62"}, {"Aspect": "NULL", "Opinion": "fairly expensive", "VA": "5.62#6.00"}]}
+{"ID": "rest16_quad_dev_86", "Triplet": [{"Aspect": "place", "Opinion": "great", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1365", "Triplet": [{"Aspect": "service", "Opinion": "complete lack", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_test_370", "Triplet": [{"Aspect": "scallops", "Opinion": "unique", "VA": "7.12#7.00"}, {"Aspect": "scallops", "Opinion": "tasty", "VA": "7.88#7.75"}]}
+{"ID": "rest16_quad_train_85", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.67#5.50"}]}
+{"ID": "rest16_quad_train_1072", "Triplet": [{"Aspect": "NULL", "Opinion": "downside", "VA": "3.50#6.00"}, {"Aspect": "NULL", "Opinion": "ok", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_train_30", "Triplet": [{"Aspect": "spot", "Opinion": "perfect", "VA": "8.62#8.75"}]}
+{"ID": "rest16_quad_train_967", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.50"}]}
+{"ID": "rest16_quad_test_503", "Triplet": [{"Aspect": "NULL", "Opinion": "better", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_373", "Triplet": [{"Aspect": "entertainment", "Opinion": "incredible", "VA": "8.12#8.12"}]}
+{"ID": "rest16_quad_test_468", "Triplet": [{"Aspect": "meal", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_test_563", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_808", "Triplet": [{"Aspect": "lamb", "Opinion": "tender", "VA": "7.67#7.50"}, {"Aspect": "lamb", "Opinion": "full of flavor", "VA": "8.00#7.67"}, {"Aspect": "dessert", "Opinion": "divine", "VA": "8.67#8.50"}]}
+{"ID": "rest16_quad_train_564", "Triplet": [{"Aspect": "NULL", "Opinion": "pleasantly surprised", "VA": "7.50#7.75"}]}
+{"ID": "rest16_quad_train_700", "Triplet": [{"Aspect": "pizza", "Opinion": "crave", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_test_273", "Triplet": [{"Aspect": "spot", "Opinion": "favorite", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_108", "Triplet": [{"Aspect": "margaritas", "Opinion": "great", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_112", "Triplet": [{"Aspect": "waitress", "Opinion": "very patient", "VA": "7.83#7.83"}, {"Aspect": "food", "Opinion": "phenomenal", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_test_536", "Triplet": [{"Aspect": "rays", "Opinion": "glad", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_973", "Triplet": [{"Aspect": "manager", "Opinion": "incompetent", "VA": "1.83#8.83"}]}
+{"ID": "rest16_quad_train_1253", "Triplet": [{"Aspect": "indian chinese food", "Opinion": "great", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_790", "Triplet": [{"Aspect": "new york", "Opinion": "not that big a deal", "VA": "5.00#5.25"}]}
+{"ID": "rest16_quad_train_331", "Triplet": [{"Aspect": "place", "Opinion": "cute", "VA": "7.67#7.50"}, {"Aspect": "wait staff", "Opinion": "nice", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_352", "Triplet": [{"Aspect": "prime rib", "Opinion": "good", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_dev_93", "Triplet": [{"Aspect": "NULL", "Opinion": "never dissapoints", "VA": "7.50#7.75"}]}
+{"ID": "rest16_quad_test_324", "Triplet": [{"Aspect": "decor", "Opinion": "beautiful", "VA": "7.67#7.50"}, {"Aspect": "decor", "Opinion": "unique", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_train_811", "Triplet": [{"Aspect": "appetizers", "Opinion": "ok", "VA": "6.12#5.88"}, {"Aspect": "waiter", "Opinion": "poor", "VA": "3.88#6.12"}, {"Aspect": "potato stuff kanish", "Opinion": "best", "VA": "7.75#7.62"}]}
+{"ID": "rest16_quad_train_1156", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_252", "Triplet": [{"Aspect": "NULL", "Opinion": "too large", "VA": "3.50#6.50"}, {"Aspect": "NULL", "Opinion": "nothing was left", "VA": "6.50#6.00"}]}
+{"ID": "rest16_quad_dev_46", "Triplet": [{"Aspect": "secret back room", "Opinion": "check out", "VA": "6.50#6.25"}]}
+{"ID": "rest16_quad_train_362", "Triplet": [{"Aspect": "wine list", "Opinion": "excellent", "VA": "8.17#8.50"}]}
+{"ID": "rest16_quad_train_1098", "Triplet": [{"Aspect": "margaritas", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_dev_120", "Triplet": [{"Aspect": "place", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_559", "Triplet": [{"Aspect": "NULL", "Opinion": "delicious", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_dev_35", "Triplet": [{"Aspect": "pizza", "Opinion": "excellent", "VA": "8.17#8.17"}, {"Aspect": "wine", "Opinion": "excellent", "VA": "8.17#8.17"}, {"Aspect": "service", "Opinion": "excellent", "VA": "8.17#8.17"}, {"Aspect": "backyard dining area", "Opinion": "really made", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_454", "Triplet": [{"Aspect": "NULL", "Opinion": "perfect", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_162", "Triplet": [{"Aspect": "restaurant", "Opinion": "good", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_660", "Triplet": [{"Aspect": "appetizer dishes", "Opinion": "cold", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_test_362", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_292", "Triplet": [{"Aspect": "waiter", "Opinion": "a bit unfriendly", "VA": "3.50#5.75"}, {"Aspect": "feel", "Opinion": "crowded", "VA": "3.25#5.75"}]}
+{"ID": "rest16_quad_train_736", "Triplet": [{"Aspect": "brioche and lollies as party favors", "Opinion": "cute", "VA": "7.00#7.00"}, {"Aspect": "brioche and lollies as party favors", "Opinion": "sweet", "VA": "7.00#7.00"}, {"Aspect": "meal", "Opinion": "most memorable", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_532", "Triplet": [{"Aspect": "waitress", "Opinion": "rage", "VA": "2.50#6.50"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_521", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.67#5.50"}]}
+{"ID": "rest16_quad_train_1477", "Triplet": [{"Aspect": "NULL", "Opinion": "super upset", "VA": "2.50#6.80"}]}
+{"ID": "rest16_quad_train_896", "Triplet": [{"Aspect": "design", "Opinion": "good", "VA": "7.67#7.50"}, {"Aspect": "atmosphere", "Opinion": "good", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_1478", "Triplet": [{"Aspect": "service", "Opinion": "better", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_dev_122", "Triplet": [{"Aspect": "restaurant", "Opinion": "nice", "VA": "7.17#7.17"}, {"Aspect": "restaurant", "Opinion": "clean", "VA": "7.33#7.33"}]}
+{"ID": "rest16_quad_train_568", "Triplet": [{"Aspect": "back patio", "Opinion": "cool", "VA": "6.88#6.88"}, {"Aspect": "music", "Opinion": "hear well", "VA": "6.75#6.75"}]}
+{"ID": "rest16_quad_test_427", "Triplet": [{"Aspect": "NULL", "Opinion": "nicely", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_train_1377", "Triplet": [{"Aspect": "place", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_573", "Triplet": [{"Aspect": "buffet", "Opinion": "nice", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_train_69", "Triplet": [{"Aspect": "pizza", "Opinion": "cold", "VA": "2.67#6.50"}, {"Aspect": "cheese", "Opinion": "not fully melted", "VA": "2.33#6.67"}]}
+{"ID": "rest16_quad_train_383", "Triplet": [{"Aspect": "food", "Opinion": "however", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_360", "Triplet": [{"Aspect": "meal", "Opinion": "NULL", "VA": "4.67#4.67"}, {"Aspect": "eggs", "Opinion": "NULL", "VA": "4.33#4.33"}]}
+{"ID": "rest16_quad_train_1387", "Triplet": [{"Aspect": "sashimi amuse bouche", "Opinion": "delightful", "VA": "7.75#7.75"}]}
+{"ID": "rest16_quad_test_472", "Triplet": [{"Aspect": "NULL", "Opinion": "over - rated", "VA": "2.88#7.00"}]}
+{"ID": "rest16_quad_train_231", "Triplet": [{"Aspect": "lobster roll", "Opinion": "highly recommend", "VA": "7.88#7.88"}, {"Aspect": "lobster roll", "Opinion": "fresh", "VA": "7.88#7.88"}, {"Aspect": "mayo", "Opinion": "not to much", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_train_260", "Triplet": [{"Aspect": "ingredients", "Opinion": "organic", "VA": "7.67#7.50"}, {"Aspect": "ingredients", "Opinion": "plus", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_train_510", "Triplet": [{"Aspect": "NULL", "Opinion": "very pleasantly surprised", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_434", "Triplet": [{"Aspect": "NULL", "Opinion": "delight", "VA": "8.17#8.33"}]}
+{"ID": "rest16_quad_dev_26", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_462", "Triplet": [{"Aspect": "murphy ' s", "Opinion": "amazing", "VA": "8.25#8.12"}]}
+{"ID": "rest16_quad_train_725", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "3.67#4.50"}]}
+{"ID": "rest16_quad_train_608", "Triplet": [{"Aspect": "spot", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "spot", "Opinion": "nice", "VA": "7.33#7.17"}]}
+{"ID": "rest16_quad_train_1170", "Triplet": [{"Aspect": "waitress", "Opinion": "NULL", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_train_1028", "Triplet": [{"Aspect": "restaurant", "Opinion": "really warm and inviting", "VA": "7.50#7.75"}]}
+{"ID": "rest16_quad_dev_54", "Triplet": [{"Aspect": "meal", "Opinion": "delicious", "VA": "7.67#7.50"}, {"Aspect": "room", "Opinion": "beautiful", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_test_51", "Triplet": [{"Aspect": "food", "Opinion": "fine", "VA": "6.67#6.50"}, {"Aspect": "salsa", "Opinion": "tastier", "VA": "7.17#7.00"}]}
+{"ID": "rest16_quad_train_1481", "Triplet": [{"Aspect": "bottle of wine", "Opinion": "high - end", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_935", "Triplet": [{"Aspect": "decor", "Opinion": "very simple", "VA": "6.50#6.25"}, {"Aspect": "decor", "Opinion": "comfortable", "VA": "7.25#7.00"}]}
+{"ID": "rest16_quad_train_528", "Triplet": [{"Aspect": "NULL", "Opinion": "favorite", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1093", "Triplet": [{"Aspect": "NULL", "Opinion": "good", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_388", "Triplet": [{"Aspect": "food", "Opinion": "good", "VA": "6.67#6.50"}, {"Aspect": "food", "Opinion": "not great", "VA": "5.00#5.00"}, {"Aspect": "wait", "Opinion": "not worth", "VA": "3.33#4.50"}]}
+{"ID": "rest16_quad_train_760", "Triplet": [{"Aspect": "setting", "Opinion": "casual", "VA": "7.67#7.50"}, {"Aspect": "setting", "Opinion": "romantic", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_test_311", "Triplet": [{"Aspect": "pancakes", "Opinion": "decadent", "VA": "8.00#8.00"}, {"Aspect": "NULL", "Opinion": "wowed", "VA": "8.25#8.25"}]}
+{"ID": "rest16_quad_train_1144", "Triplet": [{"Aspect": "NULL", "Opinion": "cozy", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_train_870", "Triplet": [{"Aspect": "outdoor seating", "Opinion": "terrific", "VA": "7.83#7.83"}, {"Aspect": "NULL", "Opinion": "warm", "VA": "7.33#7.33"}, {"Aspect": "NULL", "Opinion": "friendly", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1008", "Triplet": [{"Aspect": "jazz bar", "Opinion": "new", "VA": "7.50#7.50"}, {"Aspect": "dining garden", "Opinion": "fantastic", "VA": "8.00#8.00"}, {"Aspect": "thin crust pizzas", "Opinion": "best", "VA": "8.50#8.50"}, {"Aspect": "lasagna menu", "Opinion": "die for", "VA": "8.75#8.75"}, {"Aspect": "lasagnas", "Opinion": "average", "VA": "8.25#8.25"}]}
+{"ID": "rest16_quad_test_107", "Triplet": [{"Aspect": "taco salads", "Opinion": "good", "VA": "6.83#6.83"}, {"Aspect": "burritos", "Opinion": "good", "VA": "6.83#6.83"}, {"Aspect": "enchiladas", "Opinion": "good", "VA": "6.83#6.83"}, {"Aspect": "place", "Opinion": "love", "VA": "7.83#7.83"}]}
+{"ID": "rest16_quad_train_1392", "Triplet": [{"Aspect": "NULL", "Opinion": "terrible", "VA": "1.50#8.00"}]}
+{"ID": "rest16_quad_train_292", "Triplet": [{"Aspect": "NULL", "Opinion": "recommend", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_192", "Triplet": [{"Aspect": "fish", "Opinion": "freshest", "VA": "8.12#8.00"}, {"Aspect": "service", "Opinion": "superb", "VA": "8.25#8.12"}]}
+{"ID": "rest16_quad_test_147", "Triplet": [{"Aspect": "kafta plate", "Opinion": "enjoyed", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_57", "Triplet": [{"Aspect": "dishes", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1214", "Triplet": [{"Aspect": "rolls", "Opinion": "good", "VA": "7.67#7.50"}, {"Aspect": "rolls", "Opinion": "creative", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_dev_52", "Triplet": [{"Aspect": "NULL", "Opinion": "awsome", "VA": "8.17#8.50"}]}
+{"ID": "rest16_quad_train_1440", "Triplet": [{"Aspect": "salmon", "Opinion": "fishy", "VA": "2.50#6.50"}, {"Aspect": "salmon", "Opinion": "dry", "VA": "2.50#6.50"}, {"Aspect": "salmon", "Opinion": "bland", "VA": "3.00#6.00"}]}
+{"ID": "rest16_quad_test_501", "Triplet": [{"Aspect": "waitstaff", "Opinion": "NULL", "VA": "4.50#5.50"}, {"Aspect": "management", "Opinion": "NULL", "VA": "4.50#5.50"}]}
+{"ID": "rest16_quad_train_280", "Triplet": [{"Aspect": "NULL", "Opinion": "worth", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1009", "Triplet": [{"Aspect": "place", "Opinion": "love", "VA": "7.62#7.75"}]}
+{"ID": "rest16_quad_train_1077", "Triplet": [{"Aspect": "NULL", "Opinion": "awesome", "VA": "8.12#8.12"}]}
+{"ID": "rest16_quad_test_111", "Triplet": [{"Aspect": "chicken shawarma", "Opinion": "raves", "VA": "8.25#8.25"}, {"Aspect": "chicken shawarma", "Opinion": "best", "VA": "8.12#8.12"}]}
+{"ID": "rest16_quad_test_180", "Triplet": [{"Aspect": "caesar salad", "Opinion": "NULL", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_train_968", "Triplet": [{"Aspect": "waiter", "Opinion": "snobby", "VA": "2.83#7.00"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "4.33#4.67"}]}
+{"ID": "rest16_quad_train_1354", "Triplet": [{"Aspect": "place", "Opinion": "gorgeous", "VA": "8.17#8.00"}, {"Aspect": "place", "Opinion": "ideal", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_1459", "Triplet": [{"Aspect": "place", "Opinion": "0 stars", "VA": "1.17#8.83"}]}
+{"ID": "rest16_quad_train_996", "Triplet": [{"Aspect": "NULL", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_500", "Triplet": [{"Aspect": "NULL", "Opinion": "very friendly", "VA": "6.50#6.50"}, {"Aspect": "NULL", "Opinion": "annoying", "VA": "3.00#6.00"}]}
+{"ID": "rest16_quad_test_459", "Triplet": [{"Aspect": "NULL", "Opinion": "huge compliment", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1328", "Triplet": [{"Aspect": "thai style fried sea bass", "Opinion": "very good", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_dev_133", "Triplet": [{"Aspect": "view", "Opinion": "high", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_465", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_283", "Triplet": [{"Aspect": "steak", "Opinion": "nice", "VA": "7.67#7.50"}, {"Aspect": "steak", "Opinion": "juicy", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_test_407", "Triplet": [{"Aspect": "NULL", "Opinion": "very fresh", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1100", "Triplet": [{"Aspect": "place", "Opinion": "bad", "VA": "1.67#8.50"}]}
+{"ID": "rest16_quad_train_874", "Triplet": [{"Aspect": "chicken casserole", "Opinion": "NULL", "VA": "4.50#4.50"}, {"Aspect": "chicken", "Opinion": "small", "VA": "3.50#4.50"}, {"Aspect": "chicken", "Opinion": "NULL", "VA": "4.00#4.00"}]}
+{"ID": "rest16_quad_train_835", "Triplet": [{"Aspect": "italian restaurant", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_846", "Triplet": [{"Aspect": "tiramisu", "Opinion": "resembled nothing", "VA": "2.67#6.00"}]}
+{"ID": "rest16_quad_train_417", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_469", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_test_79", "Triplet": [{"Aspect": "service", "Opinion": "decent", "VA": "6.17#6.17"}]}
+{"ID": "rest16_quad_train_544", "Triplet": [{"Aspect": "sea", "Opinion": "definitely recommend", "VA": "7.88#7.88"}, {"Aspect": "thai cuisine", "Opinion": "like", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_train_124", "Triplet": [{"Aspect": "atmosphere", "Opinion": "greatest", "VA": "4.50#6.00"}, {"Aspect": "prices", "Opinion": "down", "VA": "6.00#6.50"}]}
+{"ID": "rest16_quad_train_302", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.50"}]}
+{"ID": "rest16_quad_train_1006", "Triplet": [{"Aspect": "service", "Opinion": "good", "VA": "7.67#7.50"}, {"Aspect": "staff", "Opinion": "great", "VA": "8.00#7.83"}]}
+{"ID": "rest16_quad_train_586", "Triplet": [{"Aspect": "food", "Opinion": "soo spicy", "VA": "2.50#6.50"}, {"Aspect": "spice", "Opinion": "took away", "VA": "3.00#6.00"}, {"Aspect": "flavor", "Opinion": "took away", "VA": "3.00#6.00"}]}
+{"ID": "rest16_quad_train_529", "Triplet": [{"Aspect": "place", "Opinion": "loved", "VA": "7.62#7.75"}]}
+{"ID": "rest16_quad_train_610", "Triplet": [{"Aspect": "food", "Opinion": "waited over one hour", "VA": "2.67#6.67"}]}
+{"ID": "rest16_quad_train_1416", "Triplet": [{"Aspect": "NULL", "Opinion": "loved", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_647", "Triplet": [{"Aspect": "mizu", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_183", "Triplet": [{"Aspect": "NULL", "Opinion": "busy", "VA": "5.67#6.50"}, {"Aspect": "seat", "Opinion": "grab", "VA": "6.00#6.00"}, {"Aspect": "service", "Opinion": "quick", "VA": "7.00#7.00"}]}
+{"ID": "rest16_quad_train_997", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_1116", "Triplet": [{"Aspect": "survice", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_dev_34", "Triplet": [{"Aspect": "NULL", "Opinion": "thumbs up", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_test_304", "Triplet": [{"Aspect": "menu", "Opinion": "won’ t be disappointed", "VA": "7.62#7.62"}]}
+{"ID": "rest16_quad_test_388", "Triplet": [{"Aspect": "NULL", "Opinion": "absolutely amazing", "VA": "8.38#8.50"}]}
+{"ID": "rest16_quad_train_1136", "Triplet": [{"Aspect": "food", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "service", "Opinion": "amazing", "VA": "8.00#7.83"}, {"Aspect": "place", "Opinion": "class act", "VA": "8.00#7.83"}]}
+{"ID": "rest16_quad_train_345", "Triplet": [{"Aspect": "service", "Opinion": "impeccable", "VA": "8.25#8.00"}, {"Aspect": "service", "Opinion": "unobtrusive", "VA": "7.75#7.50"}, {"Aspect": "staff", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_698", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_299", "Triplet": [{"Aspect": "pizza", "Opinion": "terrific", "VA": "8.00#8.00"}, {"Aspect": "homemade pasta", "Opinion": "terrific", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_1396", "Triplet": [{"Aspect": "service", "Opinion": "horrible", "VA": "2.50#7.50"}, {"Aspect": "NULL", "Opinion": "extremely rude", "VA": "2.38#7.62"}, {"Aspect": "NULL", "Opinion": "not even apologizing", "VA": "2.62#7.38"}]}
+{"ID": "rest16_quad_test_437", "Triplet": [{"Aspect": "small plates", "Opinion": "great", "VA": "7.50#7.50"}, {"Aspect": "beer", "Opinion": "cold", "VA": "7.00#7.00"}, {"Aspect": "beer", "Opinion": "good", "VA": "7.00#7.00"}]}
+{"ID": "rest16_quad_train_474", "Triplet": [{"Aspect": "soy sauce", "Opinion": "very salty", "VA": "3.83#6.83"}, {"Aspect": "soy sauce", "Opinion": "low sodium", "VA": "4.17#5.83"}, {"Aspect": "vinegar - soaked rice", "Opinion": "NULL", "VA": "4.17#5.83"}, {"Aspect": "scallion", "Opinion": "NULL", "VA": "4.17#5.83"}]}
+{"ID": "rest16_quad_train_355", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_test_414", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_387", "Triplet": [{"Aspect": "drinks", "Opinion": "way over priced", "VA": "2.83#7.00"}]}
+{"ID": "rest16_quad_test_49", "Triplet": [{"Aspect": "service", "Opinion": "stellar", "VA": "8.12#8.12"}]}
+{"ID": "rest16_quad_train_137", "Triplet": [{"Aspect": "restaurant", "Opinion": "rather warm", "VA": "4.50#6.00"}, {"Aspect": "open kitchen", "Opinion": "charm", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_484", "Triplet": [{"Aspect": "dining experience", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1134", "Triplet": [{"Aspect": "restaurant", "Opinion": "best", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_test_401", "Triplet": [{"Aspect": "NULL", "Opinion": "not worth", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_test_92", "Triplet": [{"Aspect": "food", "Opinion": "nice", "VA": "7.00#6.75"}, {"Aspect": "food", "Opinion": "no spice", "VA": "3.25#5.25"}]}
+{"ID": "rest16_quad_train_791", "Triplet": [{"Aspect": "food", "Opinion": "decent", "VA": "6.17#6.17"}, {"Aspect": "ambience", "Opinion": "annoying", "VA": "3.50#6.17"}]}
+{"ID": "rest16_quad_train_597", "Triplet": [{"Aspect": "food", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1472", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_199", "Triplet": [{"Aspect": "place", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_1088", "Triplet": [{"Aspect": "seafood dynamite", "Opinion": "otherworldly", "VA": "8.25#8.25"}]}
+{"ID": "rest16_quad_train_54", "Triplet": [{"Aspect": "NULL", "Opinion": "heartily recommend", "VA": "8.12#8.00"}]}
+{"ID": "rest16_quad_train_391", "Triplet": [{"Aspect": "pizza", "Opinion": "great", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1308", "Triplet": [{"Aspect": "dinner", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_dev_158", "Triplet": [{"Aspect": "restaurant", "Opinion": "worst", "VA": "1.67#8.50"}]}
+{"ID": "rest16_quad_train_149", "Triplet": [{"Aspect": "moules", "Opinion": "excellent", "VA": "8.17#8.00"}, {"Aspect": "lobster ravioli", "Opinion": "very salty", "VA": "3.00#6.83"}]}
+{"ID": "rest16_quad_test_267", "Triplet": [{"Aspect": "dessert", "Opinion": "unusual", "VA": "6.88#7.00"}, {"Aspect": "dessert", "Opinion": "yummy", "VA": "7.75#7.88"}]}
+{"ID": "rest16_quad_train_94", "Triplet": [{"Aspect": "place", "Opinion": "incredibly tiny", "VA": "3.83#5.83"}]}
+{"ID": "rest16_quad_test_144", "Triplet": [{"Aspect": "food", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "location", "Opinion": "spectacular", "VA": "8.00#8.00"}, {"Aspect": "service", "Opinion": "friendly", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_test_32", "Triplet": [{"Aspect": "NULL", "Opinion": "caution", "VA": "4.67#4.50"}, {"Aspect": "NULL", "Opinion": "best", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_test_323", "Triplet": [{"Aspect": "food", "Opinion": "fantastic", "VA": "8.12#8.12"}, {"Aspect": "food", "Opinion": "authentic", "VA": "7.88#7.88"}, {"Aspect": "food", "Opinion": "delicious", "VA": "8.00#8.00"}, {"Aspect": "food", "Opinion": "very , very affordable", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_train_588", "Triplet": [{"Aspect": "thai", "Opinion": "good", "VA": "6.67#6.50"}, {"Aspect": "thai", "Opinion": "authentic", "VA": "6.83#6.67"}, {"Aspect": "place", "Opinion": "not the place", "VA": "3.17#4.17"}]}
+{"ID": "rest16_quad_train_998", "Triplet": [{"Aspect": "spot", "Opinion": "perfect", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_test_71", "Triplet": [{"Aspect": "pieces", "Opinion": "bigger", "VA": "5.67#6.50"}]}
+{"ID": "rest16_quad_train_148", "Triplet": [{"Aspect": "NULL", "Opinion": "delicious", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_459", "Triplet": [{"Aspect": "sea bass", "Opinion": "try", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_train_982", "Triplet": [{"Aspect": "vibe", "Opinion": "very relaxed", "VA": "7.83#7.83"}, {"Aspect": "vibe", "Opinion": "cozy", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "great", "VA": "8.00#8.00"}, {"Aspect": "food", "Opinion": "excellent", "VA": "8.67#8.67"}]}
+{"ID": "rest16_quad_train_91", "Triplet": [{"Aspect": "place", "Opinion": "favorite", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_dev_98", "Triplet": [{"Aspect": "usha", "Opinion": "nicest", "VA": "8.17#8.00"}]}
+{"ID": "rest16_quad_train_144", "Triplet": [{"Aspect": "NULL", "Opinion": "wonderful", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1508", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_570", "Triplet": [{"Aspect": "food", "Opinion": "good", "VA": "6.62#6.50"}]}
+{"ID": "rest16_quad_train_1525", "Triplet": [{"Aspect": "waiter", "Opinion": "NULL", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_dev_149", "Triplet": [{"Aspect": "NULL", "Opinion": "huge turnoff", "VA": "2.83#7.00"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_377", "Triplet": [{"Aspect": "jekyll and hyde", "Opinion": "really different", "VA": "6.67#7.17"}]}
+{"ID": "rest16_quad_test_456", "Triplet": [{"Aspect": "NULL", "Opinion": "perfection", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_train_904", "Triplet": [{"Aspect": "jukebox", "Opinion": "NULL", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_test_321", "Triplet": [{"Aspect": "service", "Opinion": "excellent", "VA": "8.62#8.50"}, {"Aspect": "coffee", "Opinion": "good", "VA": "7.88#7.75"}, {"Aspect": "food", "Opinion": "outstanding", "VA": "8.75#8.62"}]}
+{"ID": "rest16_quad_test_534", "Triplet": [{"Aspect": "place", "Opinion": "NULL", "VA": "5.67#5.50"}]}
+{"ID": "rest16_quad_train_1204", "Triplet": [{"Aspect": "food", "Opinion": "NULL", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_train_604", "Triplet": [{"Aspect": "variety", "Opinion": "best", "VA": "8.17#8.17"}, {"Aspect": "delivery", "Opinion": "fastest", "VA": "8.33#8.33"}]}
+{"ID": "rest16_quad_train_1343", "Triplet": [{"Aspect": "quality", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "service", "Opinion": "great", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_train_305", "Triplet": [{"Aspect": "filet mignon dish", "Opinion": "superb", "VA": "8.25#8.12"}]}
+{"ID": "rest16_quad_test_469", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_447", "Triplet": [{"Aspect": "NULL", "Opinion": "delicious", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_test_344", "Triplet": [{"Aspect": "table", "Opinion": "private", "VA": "7.67#7.50"}, {"Aspect": "table", "Opinion": "nice", "VA": "7.83#7.67"}]}
+{"ID": "rest16_quad_train_1422", "Triplet": [{"Aspect": "patio", "Opinion": "take advantage of", "VA": "7.50#7.75"}]}
+{"ID": "rest16_quad_test_214", "Triplet": [{"Aspect": "caesar salad", "Opinion": "superb", "VA": "8.12#8.00"}]}
+{"ID": "rest16_quad_test_538", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_321", "Triplet": [{"Aspect": "place", "Opinion": "not romantic", "VA": "3.50#4.50"}]}
+{"ID": "rest16_quad_test_259", "Triplet": [{"Aspect": "food", "Opinion": "reasonably good", "VA": "6.88#6.50"}, {"Aspect": "restaurant staff", "Opinion": "completely indifferent", "VA": "3.12#6.25"}, {"Aspect": "service", "Opinion": "lack of", "VA": "3.12#6.25"}]}
+{"ID": "rest16_quad_dev_165", "Triplet": [{"Aspect": "lamb special", "Opinion": "perfect", "VA": "8.38#8.50"}]}
+{"ID": "rest16_quad_train_813", "Triplet": [{"Aspect": "service", "Opinion": "friendly", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_test_219", "Triplet": [{"Aspect": "place", "Opinion": "avoid", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_dev_91", "Triplet": [{"Aspect": "rice dishes", "Opinion": "recommend", "VA": "7.50#7.50"}, {"Aspect": "congee ( rice porridge )", "Opinion": "recommend", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_316", "Triplet": [{"Aspect": "place", "Opinion": "good", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_dev_60", "Triplet": [{"Aspect": "food", "Opinion": "very good", "VA": "7.50#7.50"}, {"Aspect": "place", "Opinion": "great", "VA": "7.67#7.67"}]}
+{"ID": "rest16_quad_train_994", "Triplet": [{"Aspect": "NULL", "Opinion": "fine", "VA": "6.67#6.50"}, {"Aspect": "NULL", "Opinion": "tasty", "VA": "7.00#6.83"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_495", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_180", "Triplet": [{"Aspect": "pizza", "Opinion": "delicious", "VA": "7.67#7.50"}, {"Aspect": "mozzarella", "Opinion": "fresh", "VA": "8.00#7.67"}, {"Aspect": "cheese", "Opinion": "cheap", "VA": "3.00#4.33"}, {"Aspect": "cheese", "Opinion": "frozen", "VA": "3.00#4.33"}, {"Aspect": "cheese", "Opinion": "shredded", "VA": "3.00#4.33"}]}
+{"ID": "rest16_quad_train_344", "Triplet": [{"Aspect": "dining room", "Opinion": "quietly elegant", "VA": "7.50#7.75"}, {"Aspect": "NULL", "Opinion": "refreshing", "VA": "8.00#8.25"}]}
+{"ID": "rest16_quad_test_491", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_test_483", "Triplet": [{"Aspect": "seafood", "Opinion": "plus", "VA": "6.50#6.50"}]}
+{"ID": "rest16_quad_test_5", "Triplet": [{"Aspect": "sushi", "Opinion": "great", "VA": "7.50#7.50"}, {"Aspect": "service", "Opinion": "even better", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_488", "Triplet": [{"Aspect": "NULL", "Opinion": "forgot", "VA": "2.67#6.50"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_test_39", "Triplet": [{"Aspect": "service", "Opinion": "offensive", "VA": "2.67#6.50"}, {"Aspect": "service", "Opinion": "mediocre", "VA": "4.67#5.67"}]}
+{"ID": "rest16_quad_train_492", "Triplet": [{"Aspect": "chennai garden", "Opinion": "favorite", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_test_525", "Triplet": [{"Aspect": "NULL", "Opinion": "always good", "VA": "6.88#6.88"}]}
+{"ID": "rest16_quad_test_224", "Triplet": [{"Aspect": "place", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_806", "Triplet": [{"Aspect": "food", "Opinion": "absolutely amazing", "VA": "8.38#8.50"}]}
+{"ID": "rest16_quad_train_1157", "Triplet": [{"Aspect": "service", "Opinion": "ok", "VA": "5.67#5.50"}, {"Aspect": "service", "Opinion": "unfriendly", "VA": "3.67#5.50"}, {"Aspect": "bathroom", "Opinion": "filthy", "VA": "2.67#7.50"}]}
+{"ID": "rest16_quad_train_389", "Triplet": [{"Aspect": "pizza", "Opinion": "great", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_59", "Triplet": [{"Aspect": "somosas", "Opinion": "like", "VA": "6.88#6.88"}, {"Aspect": "chai", "Opinion": "like", "VA": "6.88#6.88"}, {"Aspect": "chole", "Opinion": "like", "VA": "6.88#6.88"}, {"Aspect": "dhosas", "Opinion": "kinda disappointing", "VA": "3.62#5.50"}, {"Aspect": "dhal", "Opinion": "kinda disappointing", "VA": "3.62#5.50"}]}
+{"ID": "rest16_quad_train_493", "Triplet": [{"Aspect": "indian", "Opinion": "authentic", "VA": "7.67#7.50"}, {"Aspect": "indian", "Opinion": "amazing", "VA": "8.00#7.83"}, {"Aspect": "prices", "Opinion": "amazing", "VA": "8.00#7.83"}]}
+{"ID": "rest16_quad_test_284", "Triplet": [{"Aspect": "peppercorn sauce", "Opinion": "indistinguishable", "VA": "4.50#4.33"}, {"Aspect": "red wine reduction", "Opinion": "indistinguishable", "VA": "4.50#4.33"}]}
+{"ID": "rest16_quad_train_123", "Triplet": [{"Aspect": "menu", "Opinion": "great variety", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1128", "Triplet": [{"Aspect": "portobello and asparagus mole", "Opinion": "n ' t a fan", "VA": "2.75#6.75"}]}
+{"ID": "rest16_quad_test_117", "Triplet": [{"Aspect": "open sesame combo plate", "Opinion": "bargain", "VA": "7.00#7.00"}, {"Aspect": "heap of food", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_815", "Triplet": [{"Aspect": "anti - pasta", "Opinion": "excellent", "VA": "8.12#7.88"}, {"Aspect": "calamari", "Opinion": "especially", "VA": "8.12#7.88"}, {"Aspect": "filling pasta mains", "Opinion": "were", "VA": "7.88#7.62"}]}
+{"ID": "rest16_quad_train_646", "Triplet": [{"Aspect": "blond wood decor", "Opinion": "very soothing", "VA": "7.67#7.50"}, {"Aspect": "premium sake", "Opinion": "excellent", "VA": "8.00#8.00"}, {"Aspect": "service", "Opinion": "great", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_581", "Triplet": [{"Aspect": "burgers", "Opinion": "mess", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_train_1371", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_1295", "Triplet": [{"Aspect": "NULL", "Opinion": "unpleasant", "VA": "2.50#6.50"}, {"Aspect": "NULL", "Opinion": "costly", "VA": "2.30#6.70"}]}
+{"ID": "rest16_quad_train_598", "Triplet": [{"Aspect": "place", "Opinion": "yummy", "VA": "7.50#7.50"}, {"Aspect": "place", "Opinion": "authentic", "VA": "7.50#7.50"}, {"Aspect": "japanese comfort food", "Opinion": "yummy", "VA": "7.50#7.50"}, {"Aspect": "japanese comfort food", "Opinion": "authentic", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1294", "Triplet": [{"Aspect": "visit", "Opinion": "unpleasant", "VA": "2.50#7.50"}, {"Aspect": "visit", "Opinion": "costly", "VA": "2.50#7.50"}]}
+{"ID": "rest16_quad_train_1261", "Triplet": [{"Aspect": "service", "Opinion": "amazing", "VA": "8.17#8.17"}, {"Aspect": "waiters", "Opinion": "nice", "VA": "7.67#7.67"}]}
+{"ID": "rest16_quad_test_374", "Triplet": [{"Aspect": "youth", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "server", "Opinion": "wonderful", "VA": "7.83#8.00"}, {"Aspect": "food", "Opinion": "wonderful", "VA": "7.83#8.00"}, {"Aspect": "NULL", "Opinion": "very positive", "VA": "7.83#8.00"}]}
+{"ID": "rest16_quad_train_1188", "Triplet": [{"Aspect": "dining experience", "Opinion": "best", "VA": "8.17#8.17"}]}
+{"ID": "rest16_quad_train_820", "Triplet": [{"Aspect": "NULL", "Opinion": "relax", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_221", "Triplet": [{"Aspect": "restaurant", "Opinion": "highly recommend", "VA": "8.17#8.17"}, {"Aspect": "dinner", "Opinion": "highly recommend", "VA": "8.17#8.17"}, {"Aspect": "drinks", "Opinion": "highly recommend", "VA": "8.17#8.17"}]}
+{"ID": "rest16_quad_train_985", "Triplet": [{"Aspect": "service", "Opinion": "good", "VA": "6.67#6.50"}, {"Aspect": "place", "Opinion": "very relaxing", "VA": "7.67#7.67"}]}
+{"ID": "rest16_quad_train_250", "Triplet": [{"Aspect": "salads", "Opinion": "delicious", "VA": "7.88#8.00"}, {"Aspect": "salads", "Opinion": "refreshing", "VA": "7.75#7.88"}, {"Aspect": "salads", "Opinion": "very spicy", "VA": "7.62#7.75"}]}
+{"ID": "rest16_quad_train_178", "Triplet": [{"Aspect": "NULL", "Opinion": "in line", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_train_784", "Triplet": [{"Aspect": "NULL", "Opinion": "please", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1444", "Triplet": [{"Aspect": "waitress", "Opinion": "completely inedible", "VA": "1.50#8.00"}]}
+{"ID": "rest16_quad_train_367", "Triplet": [{"Aspect": "lemon salad", "Opinion": "NULL", "VA": "4.50#4.50"}, {"Aspect": "food", "Opinion": "decent", "VA": "6.00#5.50"}, {"Aspect": "food", "Opinion": "not great", "VA": "4.00#5.00"}]}
+{"ID": "rest16_quad_train_1046", "Triplet": [{"Aspect": "NULL", "Opinion": "loved", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_dev_111", "Triplet": [{"Aspect": "cypriot restaurant", "Opinion": "NULL", "VA": "6.50#6.25"}]}
+{"ID": "rest16_quad_train_1103", "Triplet": [{"Aspect": "food", "Opinion": "good", "VA": "6.67#6.50"}, {"Aspect": "place", "Opinion": "clean", "VA": "7.00#6.83"}, {"Aspect": "place", "Opinion": "affordable", "VA": "7.17#7.00"}]}
+{"ID": "rest16_quad_train_950", "Triplet": [{"Aspect": "service", "Opinion": "not what you are coming here for", "VA": "3.50#5.00"}]}
+{"ID": "rest16_quad_test_553", "Triplet": [{"Aspect": "pizza", "Opinion": "light", "VA": "7.67#7.50"}, {"Aspect": "pizza", "Opinion": "scrumptious", "VA": "8.33#8.17"}]}
+{"ID": "rest16_quad_test_412", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_295", "Triplet": [{"Aspect": "service", "Opinion": "slow", "VA": "3.67#6.33"}, {"Aspect": "people", "Opinion": "friendly", "VA": "6.83#6.67"}]}
+{"ID": "rest16_quad_train_706", "Triplet": [{"Aspect": "line", "Opinion": "fast", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "a little crowded", "VA": "4.33#5.67"}]}
+{"ID": "rest16_quad_train_501", "Triplet": [{"Aspect": "fish", "Opinion": "very fresh", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_test_439", "Triplet": [{"Aspect": "band", "Opinion": "fun", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_497", "Triplet": [{"Aspect": "food", "Opinion": "tasty", "VA": "7.50#7.50"}, {"Aspect": "portion sizes", "Opinion": "appropriate", "VA": "7.38#7.38"}]}
+{"ID": "rest16_quad_test_307", "Triplet": [{"Aspect": "pizza", "Opinion": "not huge", "VA": "4.50#4.50"}, {"Aspect": "crust", "Opinion": "thin", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_test_185", "Triplet": [{"Aspect": "place", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_dev_117", "Triplet": [{"Aspect": "chicken pasta", "Opinion": "love", "VA": "7.50#7.50"}, {"Aspect": "chicken pasta", "Opinion": "good", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_574", "Triplet": [{"Aspect": "check", "Opinion": "pleasant", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_556", "Triplet": [{"Aspect": "hostess", "Opinion": "NULL", "VA": "4.50#4.50"}]}
+{"ID": "rest16_quad_train_749", "Triplet": [{"Aspect": "thai", "Opinion": "love", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1429", "Triplet": [{"Aspect": "server", "Opinion": "fun", "VA": "7.67#7.50"}, {"Aspect": "entrees", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "appetizer", "Opinion": "delicious", "VA": "8.00#7.67"}]}
+{"ID": "rest16_quad_train_1021", "Triplet": [{"Aspect": "dog", "Opinion": "tasty", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_999", "Triplet": [{"Aspect": "service", "Opinion": "prompt", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_dev_102", "Triplet": [{"Aspect": "NULL", "Opinion": "not worth", "VA": "2.50#6.50"}]}
+{"ID": "rest16_quad_train_448", "Triplet": [{"Aspect": "food", "Opinion": "good", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_test_248", "Triplet": [{"Aspect": "food", "Opinion": "ok", "VA": "5.67#5.50"}, {"Aspect": "food", "Opinion": "a bit pricey", "VA": "4.33#5.67"}, {"Aspect": "restaurant", "Opinion": "n ' t a fancy place", "VA": "4.00#4.67"}]}
+{"ID": "rest16_quad_train_146", "Triplet": [{"Aspect": "mizu", "Opinion": "enjoy", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_661", "Triplet": [{"Aspect": "food", "Opinion": "delicious", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "simple", "VA": "7.00#6.83"}, {"Aspect": "atmosphere", "Opinion": "nice", "VA": "7.33#7.17"}]}
+{"ID": "rest16_quad_train_1137", "Triplet": [{"Aspect": "veal", "Opinion": "incredible", "VA": "8.17#8.50"}]}
+{"ID": "rest16_quad_train_1407", "Triplet": [{"Aspect": "price", "Opinion": "high", "VA": "3.67#6.50"}, {"Aspect": "food", "Opinion": "good", "VA": "6.83#6.67"}]}
+{"ID": "rest16_quad_train_959", "Triplet": [{"Aspect": "yakitori ( bbq meats )", "Opinion": "tasty", "VA": "7.50#7.33"}]}
+{"ID": "rest16_quad_train_122", "Triplet": [{"Aspect": "planet thailand", "Opinion": "hit", "VA": "7.50#7.50"}, {"Aspect": "sushi", "Opinion": "great", "VA": "8.00#8.00"}, {"Aspect": "thai food", "Opinion": "excellent", "VA": "8.50#8.50"}]}
+{"ID": "rest16_quad_train_43", "Triplet": [{"Aspect": "service", "Opinion": "top notch", "VA": "8.17#8.50"}]}
+{"ID": "rest16_quad_test_545", "Triplet": [{"Aspect": "NULL", "Opinion": "overpriced", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_train_602", "Triplet": [{"Aspect": "dishes", "Opinion": "unique", "VA": "7.50#7.50"}, {"Aspect": "dishes", "Opinion": "very tasty", "VA": "8.00#8.00"}, {"Aspect": "dishes", "Opinion": "fresh", "VA": "8.00#8.00"}, {"Aspect": "lamb sausages", "Opinion": "fresh", "VA": "8.00#8.00"}, {"Aspect": "sardines with biscuits", "Opinion": "fresh", "VA": "8.00#8.00"}, {"Aspect": "large whole shrimp", "Opinion": "fresh", "VA": "8.00#8.00"}, {"Aspect": "pistachio ice cream", "Opinion": "amazing", "VA": "8.50#8.50"}, {"Aspect": "pistachio ice cream", "Opinion": "the best", "VA": "9.00#9.00"}, {"Aspect": "pistachio ice cream", "Opinion": "freshest", "VA": "9.00#9.00"}]}
+{"ID": "rest16_quad_train_807", "Triplet": [{"Aspect": "baked clams octopus", "Opinion": "best", "VA": "8.12#8.00"}]}
+{"ID": "rest16_quad_test_257", "Triplet": [{"Aspect": "customer service", "Opinion": "very poor", "VA": "1.83#8.00"}]}
+{"ID": "rest16_quad_test_94", "Triplet": [{"Aspect": "lamb korma", "Opinion": "yummy", "VA": "7.50#7.75"}, {"Aspect": "saag paneer", "Opinion": "yummy", "VA": "7.50#7.75"}, {"Aspect": "samosas", "Opinion": "yummy", "VA": "7.50#7.75"}, {"Aspect": "naan", "Opinion": "yummy", "VA": "7.50#7.75"}]}
+{"ID": "rest16_quad_test_477", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.62#5.50"}]}
+{"ID": "rest16_quad_train_320", "Triplet": [{"Aspect": "NULL", "Opinion": "highly recommended", "VA": "8.38#8.62"}]}
+{"ID": "rest16_quad_train_1509", "Triplet": [{"Aspect": "staff", "Opinion": "grunt", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_train_163", "Triplet": [{"Aspect": "NULL", "Opinion": "thank", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1063", "Triplet": [{"Aspect": "lobster", "Opinion": "good", "VA": "7.00#6.75"}, {"Aspect": "lobster", "Opinion": "nothing spectacular", "VA": "5.25#5.50"}]}
+{"ID": "rest16_quad_train_1246", "Triplet": [{"Aspect": "hot dogs", "Opinion": "juicy", "VA": "7.83#7.83"}, {"Aspect": "hot dogs", "Opinion": "tender", "VA": "7.83#7.83"}, {"Aspect": "hot dogs", "Opinion": "crunch", "VA": "7.83#7.83"}, {"Aspect": "hot dogs", "Opinion": "snap", "VA": "7.83#7.83"}]}
+{"ID": "rest16_quad_train_1229", "Triplet": [{"Aspect": "food", "Opinion": "somewhat over the top spicy", "VA": "5.67#6.17"}, {"Aspect": "food", "Opinion": "far too oily", "VA": "4.50#5.67"}]}
+{"ID": "rest16_quad_train_1034", "Triplet": [{"Aspect": "sushi", "Opinion": "reliable", "VA": "7.50#7.50"}, {"Aspect": "sushi", "Opinion": "fresh", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_test_174", "Triplet": [{"Aspect": "service", "Opinion": "so efficient", "VA": "7.50#7.50"}, {"Aspect": "NULL", "Opinion": "busy", "VA": "4.00#5.50"}]}
+{"ID": "rest16_quad_train_976", "Triplet": [{"Aspect": "service", "Opinion": "lousy", "VA": "2.50#6.80"}]}
+{"ID": "rest16_quad_test_506", "Triplet": [{"Aspect": "food", "Opinion": "fast", "VA": "7.67#7.50"}, {"Aspect": "food", "Opinion": "like", "VA": "7.00#6.83"}, {"Aspect": "NULL", "Opinion": "hate", "VA": "2.33#7.33"}]}
+{"ID": "rest16_quad_train_1027", "Triplet": [{"Aspect": "pizza", "Opinion": "super yummy", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_135", "Triplet": [{"Aspect": "food", "Opinion": "amazing", "VA": "8.17#8.50"}, {"Aspect": "service", "Opinion": "prompt", "VA": "7.83#8.00"}, {"Aspect": "service", "Opinion": "helpful", "VA": "7.83#8.00"}]}
+{"ID": "rest16_quad_train_637", "Triplet": [{"Aspect": "pizzas", "Opinion": "terrific", "VA": "8.25#8.00"}, {"Aspect": "price", "Opinion": "even better", "VA": "8.50#8.25"}]}
+{"ID": "rest16_quad_test_221", "Triplet": [{"Aspect": "service", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_test_419", "Triplet": [{"Aspect": "NULL", "Opinion": "romantic", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "nice", "VA": "7.33#7.17"}, {"Aspect": "artwork", "Opinion": "NULL", "VA": "6.67#6.50"}, {"Aspect": "music", "Opinion": "NULL", "VA": "6.67#6.50"}]}
+{"ID": "rest16_quad_train_420", "Triplet": [{"Aspect": "location", "Opinion": "ok", "VA": "5.67#5.50"}, {"Aspect": "ambience", "Opinion": "ok", "VA": "5.67#5.50"}, {"Aspect": "food", "Opinion": "makes up", "VA": "7.00#6.67"}]}
+{"ID": "rest16_quad_train_1333", "Triplet": [{"Aspect": "service", "Opinion": "not the friendliest", "VA": "3.50#5.75"}]}
+{"ID": "rest16_quad_test_294", "Triplet": [{"Aspect": "food", "Opinion": "so excited", "VA": "7.50#7.50"}, {"Aspect": "menu", "Opinion": "very creative", "VA": "8.00#8.00"}]}
+{"ID": "rest16_quad_train_794", "Triplet": [{"Aspect": "spice grill", "Opinion": "only", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1247", "Triplet": [{"Aspect": "toppings", "Opinion": "great", "VA": "7.50#7.50"}, {"Aspect": "place", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_676", "Triplet": [{"Aspect": "dosas", "Opinion": "skimpy", "VA": "2.83#5.83"}, {"Aspect": "dosas", "Opinion": "unattractive", "VA": "2.50#6.00"}, {"Aspect": "dosas", "Opinion": "drip with grease", "VA": "2.33#6.17"}]}
+{"ID": "rest16_quad_dev_8", "Triplet": [{"Aspect": "food", "Opinion": "rather good", "VA": "6.88#6.88"}, {"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_518", "Triplet": [{"Aspect": "NULL", "Opinion": "fool", "VA": "2.67#6.50"}]}
+{"ID": "rest16_quad_train_1181", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.67#5.50"}]}
+{"ID": "rest16_quad_train_1223", "Triplet": [{"Aspect": "atmosphere", "Opinion": "pretty nice", "VA": "6.88#6.88"}, {"Aspect": "atmosphere", "Opinion": "bit lacking", "VA": "5.38#5.75"}, {"Aspect": "scheme of mirrors", "Opinion": "crazy", "VA": "6.50#7.00"}]}
+{"ID": "rest16_quad_train_1217", "Triplet": [{"Aspect": "special roll", "Opinion": "enough", "VA": "6.50#6.50"}, {"Aspect": "regular roll", "Opinion": "enough", "VA": "6.50#6.50"}, {"Aspect": "dessert", "Opinion": "save room", "VA": "6.00#6.00"}]}
+{"ID": "rest16_quad_train_1389", "Triplet": [{"Aspect": "entrees", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "miso soup", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "rice", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_56", "Triplet": [{"Aspect": "food", "Opinion": "tasty", "VA": "7.50#7.50"}, {"Aspect": "food", "Opinion": "fresh", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_dev_167", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "3.67#6.33"}]}
+{"ID": "rest16_quad_dev_137", "Triplet": [{"Aspect": "food", "Opinion": "subtle", "VA": "6.50#6.25"}, {"Aspect": "service", "Opinion": "subtle", "VA": "6.50#6.25"}]}
+{"ID": "rest16_quad_train_325", "Triplet": [{"Aspect": "service", "Opinion": "not what one would expect", "VA": "3.67#5.17"}, {"Aspect": "joint", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_train_1001", "Triplet": [{"Aspect": "NULL", "Opinion": "definitely", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_47", "Triplet": [{"Aspect": "rice to fish ration", "Opinion": "good", "VA": "6.62#6.50"}]}
+{"ID": "rest16_quad_train_687", "Triplet": [{"Aspect": "sushi", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1143", "Triplet": [{"Aspect": "NULL", "Opinion": "so romantic", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_dev_53", "Triplet": [{"Aspect": "eggs benedict", "Opinion": "worst", "VA": "1.83#8.83"}, {"Aspect": "hollondaise sauce", "Opinion": "failed", "VA": "2.00#8.67"}]}
+{"ID": "rest16_quad_test_271", "Triplet": [{"Aspect": "place", "Opinion": "great", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_train_519", "Triplet": [{"Aspect": "jelly fish", "Opinion": "recommend", "VA": "7.88#7.88"}, {"Aspect": "drunken chicken", "Opinion": "recommend", "VA": "7.88#7.88"}, {"Aspect": "soupy dumplings", "Opinion": "recommend", "VA": "7.88#7.88"}, {"Aspect": "stir fry blue crab", "Opinion": "recommend", "VA": "7.88#7.88"}]}
+{"ID": "rest16_quad_dev_108", "Triplet": [{"Aspect": "la rosa waltzes", "Opinion": "best", "VA": "8.25#8.12"}]}
+{"ID": "rest16_quad_train_1086", "Triplet": [{"Aspect": "red dragon roll", "Opinion": "favorite", "VA": "8.12#8.00"}]}
+{"ID": "rest16_quad_test_122", "Triplet": [{"Aspect": "beer", "Opinion": "great", "VA": "7.67#7.50"}]}
+{"ID": "rest16_quad_test_444", "Triplet": [{"Aspect": "NULL", "Opinion": "reliable", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_156", "Triplet": [{"Aspect": "service", "Opinion": "not exactly five star", "VA": "4.50#5.50"}, {"Aspect": "NULL", "Opinion": "not really a big deal", "VA": "5.50#5.50"}]}
+{"ID": "rest16_quad_train_1282", "Triplet": [{"Aspect": "NULL", "Opinion": "not good", "VA": "3.50#6.00"}]}
+{"ID": "rest16_quad_train_1321", "Triplet": [{"Aspect": "tap beer", "Opinion": "disappointment", "VA": "3.83#5.00"}]}
+{"ID": "rest16_quad_train_256", "Triplet": [{"Aspect": "lunch", "Opinion": "enjoy", "VA": "7.67#7.50"}, {"Aspect": "NULL", "Opinion": "fabulous", "VA": "7.67#7.67"}]}
+{"ID": "rest16_quad_train_1068", "Triplet": [{"Aspect": "NULL", "Opinion": "welcome", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_1363", "Triplet": [{"Aspect": "sauce", "Opinion": "decent", "VA": "6.12#5.88"}]}
+{"ID": "rest16_quad_train_248", "Triplet": [{"Aspect": "work", "Opinion": "good", "VA": "7.62#7.50"}]}
+{"ID": "rest16_quad_train_804", "Triplet": [{"Aspect": "bagels", "Opinion": "great", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_1475", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}]}
+{"ID": "rest16_quad_train_853", "Triplet": [{"Aspect": "food", "Opinion": "great", "VA": "7.67#7.50"}, {"Aspect": "price", "Opinion": "great", "VA": "7.83#7.67"}, {"Aspect": "decor", "Opinion": "n ' t mind", "VA": "6.50#6.00"}, {"Aspect": "place", "Opinion": "beat", "VA": "7.50#7.50"}]}
+{"ID": "rest16_quad_train_215", "Triplet": [{"Aspect": "NULL", "Opinion": "highly recommend", "VA": "8.17#8.50"}]}
+{"ID": "rest16_quad_train_1507", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "4.67#4.67"}, {"Aspect": "staff", "Opinion": "NULL", "VA": "4.67#4.67"}, {"Aspect": "wait", "Opinion": "NULL", "VA": "4.67#4.67"}]}
+{"ID": "rest16_quad_test_555", "Triplet": [{"Aspect": "NULL", "Opinion": "NULL", "VA": "5.00#5.00"}, {"Aspect": "NULL", "Opinion": "so worth", "VA": "7.00#7.00"}]}

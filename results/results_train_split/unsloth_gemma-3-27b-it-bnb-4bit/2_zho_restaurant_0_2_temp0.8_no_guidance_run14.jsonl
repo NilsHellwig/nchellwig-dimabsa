@@ -1,0 +1,1210 @@
+{"ID": "R1634:S006", "Triplet": [{"Aspect": "沙發", "Opinion": "不是很乾淨", "VA": "4.17#4.50"}]}
+{"ID": "R0488:S005", "Triplet": [{"Aspect": "店家小哥", "Opinion": "手速很快", "VA": "6.12#5.88"}]}
+{"ID": "R0167:S027", "Triplet": [{"Aspect": "鴨血", "Opinion": "夠Q", "VA": "6.25#5.88"}, {"Aspect": "鴨血", "Opinion": "嫩", "VA": "6.25#5.62"}]}
+{"ID": "R1177:S043", "Triplet": [{"Aspect": "玉子燒色澤", "Opinion": "偏淡", "VA": "4.67#5.00"}]}
+{"ID": "R0289:S009", "Triplet": [{"Aspect": "NULL", "Opinion": "不被打擾", "VA": "6.25#5.25"}]}
+{"ID": "R1645:S002", "Triplet": [{"Aspect": "海陸大拼盤", "Opinion": "超級澎湃", "VA": "6.88#6.75"}]}
+{"ID": "R2072:S008", "Triplet": [{"Aspect": "西米露", "Opinion": "有點軟爛", "VA": "4.17#4.83"}]}
+{"ID": "R0211:S022", "Triplet": [{"Aspect": "味道", "Opinion": "不錯", "VA": "5.83#5.33"}, {"Aspect": "份量", "Opinion": "大", "VA": "5.33#5.00"}, {"Aspect": "口味", "Opinion": "單一", "VA": "4.83#4.67"}, {"Aspect": "NULL", "Opinion": "容易膩口", "VA": "4.67#5.00"}]}
+{"ID": "R2265:S015", "Triplet": [{"Aspect": "味道", "Opinion": "清爽", "VA": "6.12#5.50"}, {"Aspect": "味道", "Opinion": "好吃", "VA": "6.50#5.75"}]}
+{"ID": "R2758:S011", "Triplet": [{"Aspect": "三大招牌菜品", "Opinion": "無可挑剔的完美", "VA": "7.50#7.38"}]}
+{"ID": "R2977:S000", "Triplet": [{"Aspect": "服務態度", "Opinion": "需要加強", "VA": "4.25#4.75"}, {"Aspect": "餐點", "Opinion": "美味", "VA": "6.25#5.25"}]}
+{"ID": "R0481:S022", "Triplet": [{"Aspect": "起司蛋餅份量", "Opinion": "偏少一點", "VA": "4.50#4.83"}]}
+{"ID": "R0880:S173", "Triplet": [{"Aspect": "糖漿", "Opinion": "非常脆", "VA": "6.25#6.25"}, {"Aspect": "內部", "Opinion": "很軟綿", "VA": "6.25#5.75"}]}
+{"ID": "R2829:S009", "Triplet": [{"Aspect": "口味", "Opinion": "值得推薦", "VA": "6.33#6.17"}]}
+{"ID": "R1527:S024", "Triplet": [{"Aspect": "雞肉", "Opinion": "不好入口", "VA": "3.67#4.50"}]}
+{"ID": "R1683:S006", "Triplet": [{"Aspect": "甜點", "Opinion": "不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R3114:S010", "Triplet": [{"Aspect": "辣椒醬", "Opinion": "很夠味", "VA": "6.25#5.75"}]}
+{"ID": "R0398:S027", "Triplet": [{"Aspect": "油豆腐外皮", "Opinion": "軟嫩", "VA": "6.17#5.83"}]}
+{"ID": "R0912:S047", "Triplet": [{"Aspect": "風味", "Opinion": "中規中矩", "VA": "5.00#4.75"}]}
+{"ID": "R1769:S024", "Triplet": [{"Aspect": "鐵板牛小排", "Opinion": "真的很推薦", "VA": "7.00#7.00"}]}
+{"ID": "R2346:S019", "Triplet": [{"Aspect": "部落乾拌麵", "Opinion": "意外的好吃很多", "VA": "6.83#6.50"}]}
+{"ID": "R0121:S007", "Triplet": [{"Aspect": "服務", "Opinion": "親切熱情", "VA": "6.25#5.75"}, {"Aspect": "環境", "Opinion": "舒適", "VA": "6.00#5.25"}]}
+{"ID": "R1485:S003", "Triplet": [{"Aspect": "酸甜醬汁", "Opinion": "大加分", "VA": "6.67#6.33"}]}
+{"ID": "R1441:S005", "Triplet": [{"Aspect": "廚師動作", "Opinion": "很快", "VA": "6.25#6.25"}]}
+{"ID": "R3115:S010", "Triplet": [{"Aspect": "半肉半筋牛肉麵", "Opinion": "非常推薦", "VA": "7.00#7.00"}, {"Aspect": "湯頭味道", "Opinion": "帶點淡淡的中藥香", "VA": "6.50#6.25"}]}
+{"ID": "R0189:S016", "Triplet": [{"Aspect": "雞腿肉", "Opinion": "很軟嫩", "VA": "6.50#6.00"}, {"Aspect": "雞腿肉", "Opinion": "入味", "VA": "6.50#6.00"}]}
+{"ID": "R1652:S015", "Triplet": [{"Aspect": "服務", "Opinion": "非常周到", "VA": "6.67#6.50"}]}
+{"ID": "R0269:S062", "Triplet": [{"Aspect": "嘉義古川壽喜燒", "Opinion": "推薦", "VA": "6.38#5.88"}]}
+{"ID": "R2429:S034", "Triplet": [{"Aspect": "蛤蜊肉", "Opinion": "超飽滿", "VA": "6.50#6.00"}, {"Aspect": "酒香味", "Opinion": "完全沒有", "VA": "3.50#5.50"}]}
+{"ID": "R1643:S004", "Triplet": [{"Aspect": "雞翅味道", "Opinion": "入味", "VA": "6.25#5.75"}, {"Aspect": "雞翅味道", "Opinion": "好吃", "VA": "6.50#5.75"}]}
+{"ID": "R1591:S008", "Triplet": [{"Aspect": "烤魷魚的味道", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R0199:S001", "Triplet": [{"Aspect": "蒼蠅頭", "Opinion": "還不錯吃", "VA": "6.17#5.83"}, {"Aspect": "炒米粉", "Opinion": "還不錯吃", "VA": "6.17#5.83"}]}
+{"ID": "R0063:S017", "Triplet": [{"Aspect": "附餐", "Opinion": "很多", "VA": "6.12#5.50"}]}
+{"ID": "R0012:S020", "Triplet": [{"Aspect": "座位", "Opinion": "不多", "VA": "4.38#5.38"}]}
+{"ID": "R1375:S032", "Triplet": [{"Aspect": "韭菜盒子", "Opinion": "真的很不錯", "VA": "6.50#6.38"}]}
+{"ID": "R0339:S079", "Triplet": [{"Aspect": "湯麵", "Opinion": "不錯", "VA": "6.12#5.50"}]}
+{"ID": "R0660:S026", "Triplet": [{"Aspect": "米粒", "Opinion": "彈牙", "VA": "6.25#5.50"}, {"Aspect": "米粒", "Opinion": "黏Ｑ適中", "VA": "6.00#5.50"}]}
+{"ID": "R1192:S026", "Triplet": [{"Aspect": "炙燒海鮮丼", "Opinion": "讓人口水直流", "VA": "6.88#6.88"}]}
+{"ID": "R2046:S004", "Triplet": [{"Aspect": "肉", "Opinion": "超好吃", "VA": "7.00#6.50"}, {"Aspect": "肉", "Opinion": "有夠嫩", "VA": "6.75#6.25"}]}
+{"ID": "R1956:S004", "Triplet": [{"Aspect": "濃湯", "Opinion": "不太推薦", "VA": "3.67#5.00"}]}
+{"ID": "R0390:S018", "Triplet": [{"Aspect": "當歸羊肉", "Opinion": "不錯吃", "VA": "6.17#5.83"}]}
+{"ID": "R1613:S004", "Triplet": [{"Aspect": "食材", "Opinion": "高檔", "VA": "6.33#5.50"}]}
+{"ID": "R1739:S000", "Triplet": [{"Aspect": "起士雞肉石鍋拌飯", "Opinion": "非常好吃", "VA": "7.00#6.50"}]}
+{"ID": "R0819:S039", "Triplet": [{"Aspect": "蕎麥味道", "Opinion": "顯著", "VA": "5.75#5.38"}]}
+{"ID": "R1650:S014", "Triplet": [{"Aspect": "墨魚", "Opinion": "非常開胃", "VA": "6.67#6.33"}]}
+{"ID": "R1453:S016", "Triplet": [{"Aspect": "漢堡", "Opinion": "不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R0435:S090", "Triplet": [{"Aspect": "口感", "Opinion": "爽脆", "VA": "6.12#5.50"}]}
+{"ID": "R1638:S008", "Triplet": [{"Aspect": "松阪豬", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R1913:S008", "Triplet": [{"Aspect": "餐點的口味", "Opinion": "很不錯", "VA": "6.17#5.83"}]}
+{"ID": "R2830:S000", "Triplet": [{"Aspect": "炸魷魚", "Opinion": "最喜歡", "VA": "7.25#7.00"}, {"Aspect": "口感", "Opinion": "酥脆", "VA": "6.25#5.25"}, {"Aspect": "檸檬", "Opinion": "酸酸的很開胃", "VA": "6.50#6.25"}]}
+{"ID": "R1493:S012", "Triplet": [{"Aspect": "湯底", "Opinion": "很鮮甜", "VA": "6.50#6.12"}]}
+{"ID": "R0143:S018", "Triplet": [{"Aspect": "NULL", "Opinion": "比較貴一點", "VA": "4.25#4.50"}]}
+{"ID": "R2854:S007", "Triplet": [{"Aspect": "茶飲", "Opinion": "回甘好喝", "VA": "6.50#6.00"}]}
+{"ID": "R3149:S005", "Triplet": [{"Aspect": "環境", "Opinion": "有點陳舊", "VA": "4.25#5.25"}, {"Aspect": "氣氛", "Opinion": "很好", "VA": "6.25#5.75"}]}
+{"ID": "R1506:S012", "Triplet": [{"Aspect": "土雞粥", "Opinion": "很美味", "VA": "6.67#6.33"}]}
+{"ID": "R1219:S044", "Triplet": [{"Aspect": "雞肉醬油炒飯", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R0672:S023", "Triplet": [{"Aspect": "叉燒肉", "Opinion": "完全不會柴", "VA": "6.50#6.88"}]}
+{"ID": "R1166:S054", "Triplet": [{"Aspect": "吧檯", "Opinion": "比較豐富", "VA": "6.25#5.88"}]}
+{"ID": "R2936:S002", "Triplet": [{"Aspect": "口味", "Opinion": "蠻不錯", "VA": "6.17#5.50"}, {"Aspect": "服務人員", "Opinion": "很親切", "VA": "6.50#5.83"}]}
+{"ID": "R1965:S006", "Triplet": [{"Aspect": "海鮮披薩", "Opinion": "超級棒", "VA": "6.75#6.88"}]}
+{"ID": "R1729:S005", "Triplet": [{"Aspect": "烤肉肉質", "Opinion": "算不錯", "VA": "6.17#5.83"}]}
+{"ID": "R0207:S009", "Triplet": [{"Aspect": "裝潢", "Opinion": "新穎", "VA": "6.25#5.50"}, {"Aspect": "裝潢", "Opinion": "舒適", "VA": "6.25#5.25"}]}
+{"ID": "R1817:S006", "Triplet": [{"Aspect": "鮪魚", "Opinion": "有一點腥", "VA": "4.17#4.50"}]}
+{"ID": "R3313:S007", "Triplet": [{"Aspect": "炒金針花", "Opinion": "非常驚艷", "VA": "7.00#7.00"}]}
+{"ID": "R0369:S022", "Triplet": [{"Aspect": "香氣", "Opinion": "豐富", "VA": "6.12#5.50"}]}
+{"ID": "R0284:S026", "Triplet": [{"Aspect": "堅果", "Opinion": "超級多", "VA": "6.62#6.50"}]}
+{"ID": "R0044:S030", "Triplet": [{"Aspect": "老周冷泡茶", "Opinion": "好喝", "VA": "6.17#5.50"}, {"Aspect": "老周冷泡茶", "Opinion": "不會澀", "VA": "5.83#5.17"}]}
+{"ID": "R1928:S011", "Triplet": [{"Aspect": "蒸蛋", "Opinion": "還不錯", "VA": "6.00#5.50"}]}
+{"ID": "R2648:S006", "Triplet": [{"Aspect": "輕食簡餐", "Opinion": "稍微偏鹹", "VA": "4.25#5.00"}]}
+{"ID": "R3131:S016", "Triplet": [{"Aspect": "份量", "Opinion": "很大", "VA": "6.33#6.17"}, {"Aspect": "價錢", "Opinion": "算是佛心", "VA": "6.50#6.17"}]}
+{"ID": "R1233:S019", "Triplet": [{"Aspect": "味噌豚骨拉麵份量", "Opinion": "很有滿足感", "VA": "6.25#5.75"}]}
+{"ID": "R1395:S078", "Triplet": [{"Aspect": "烤生蠔", "Opinion": "蠻不錯", "VA": "6.25#5.75"}]}
+{"ID": "R2129:S000", "Triplet": [{"Aspect": "魚腥味", "Opinion": "偏重", "VA": "4.25#4.75"}]}
+{"ID": "R2754:S001", "Triplet": [{"Aspect": "用餐環境", "Opinion": "乾淨", "VA": "6.25#5.25"}]}
+{"ID": "R1708:S005", "Triplet": [{"Aspect": "胡椒蝦", "Opinion": "不錯", "VA": "6.25#5.50"}]}
+{"ID": "R2907:S015", "Triplet": [{"Aspect": "米腸", "Opinion": "普普", "VA": "5.00#5.00"}]}
+{"ID": "R1679:S009", "Triplet": [{"Aspect": "甜點味道", "Opinion": "太淡", "VA": "4.25#4.75"}]}
+{"ID": "R0337:S002", "Triplet": [{"Aspect": "魚肉", "Opinion": "鮮甜", "VA": "6.25#5.50"}]}
+{"ID": "R0168:S013", "Triplet": [{"Aspect": "四季青茶", "Opinion": "最推薦", "VA": "7.25#7.12"}, {"Aspect": "古香紅茶", "Opinion": "最推薦", "VA": "7.25#7.12"}]}
+{"ID": "R1848:S017", "Triplet": [{"Aspect": "BBQ豬肋排份量", "Opinion": "超霸氣", "VA": "6.83#6.50"}]}
+{"ID": "R0138:S032", "Triplet": [{"Aspect": "鵝胗鹹度", "Opinion": "適中", "VA": "5.17#5.00"}]}
+{"ID": "R3106:S003", "Triplet": [{"Aspect": "價位", "Opinion": "不便宜", "VA": "4.25#5.25"}, {"Aspect": "份量", "Opinion": "十足", "VA": "6.25#5.25"}]}
+{"ID": "R1569:S014", "Triplet": [{"Aspect": "玉米雞活蝦料理", "Opinion": "推薦", "VA": "6.12#5.50"}]}
+{"ID": "R1510:S008", "Triplet": [{"Aspect": "蘿蔔味", "Opinion": "濃醇香", "VA": "6.17#5.83"}]}
+{"ID": "R1852:S002", "Triplet": [{"Aspect": "菲力牛份量", "Opinion": "有點少", "VA": "4.17#4.33"}]}
+{"ID": "R1220:S026", "Triplet": [{"Aspect": "香腸飯糰", "Opinion": "絕佳", "VA": "6.75#6.88"}]}
+{"ID": "R0369:S071", "Triplet": [{"Aspect": "茄肉", "Opinion": "有彈性", "VA": "6.25#5.75"}]}
+{"ID": "R0030:S040", "Triplet": [{"Aspect": "甜度", "Opinion": "溫和", "VA": "5.67#5.17"}, {"Aspect": "茶味", "Opinion": "淡", "VA": "5.17#5.00"}]}
+{"ID": "R1553:S012", "Triplet": [{"Aspect": "烤雞", "Opinion": "特別推薦", "VA": "6.62#6.50"}]}
+{"ID": "R3017:S010", "Triplet": [{"Aspect": "木瓜牛奶", "Opinion": "還有進步空間", "VA": "4.67#5.00"}]}
+{"ID": "R1645:S012", "Triplet": [{"Aspect": "麵體", "Opinion": "很剛好", "VA": "6.25#6.12"}]}
+{"ID": "R1256:S028", "Triplet": [{"Aspect": "雞肉的鹹度", "Opinion": "蠻剛好", "VA": "5.88#5.50"}, {"Aspect": "雞肉", "Opinion": "好吃", "VA": "6.00#5.50"}]}
+{"ID": "R3058:S009", "Triplet": [{"Aspect": "海瓜子", "Opinion": "不新鮮", "VA": "3.83#4.50"}, {"Aspect": "海瓜子", "Opinion": "小", "VA": "4.17#4.33"}]}
+{"ID": "R0811:S018", "Triplet": [{"Aspect": "羊油拌麵線", "Opinion": "不錯", "VA": "6.17#5.83"}]}
+{"ID": "R0154:S044", "Triplet": [{"Aspect": "座位數", "Opinion": "不算少", "VA": "5.62#5.25"}]}
+{"ID": "R0188:S154", "Triplet": [{"Aspect": "沙朗的份量", "Opinion": "中等", "VA": "5.00#5.00"}, {"Aspect": "厚度", "Opinion": "蠻夠", "VA": "5.83#5.50"}]}
+{"ID": "R0176:S035", "Triplet": [{"Aspect": "漢堡", "Opinion": "真的很好吃", "VA": "6.75#6.50"}]}
+{"ID": "R3324:S002", "Triplet": [{"Aspect": "食用體驗", "Opinion": "令人陶醉", "VA": "6.88#6.38"}]}
+{"ID": "R2829:S003", "Triplet": [{"Aspect": "麵包", "Opinion": "酥脆", "VA": "6.25#5.25"}, {"Aspect": "口感", "Opinion": "很好", "VA": "6.25#5.25"}, {"Aspect": "麵包", "Opinion": "實在讚", "VA": "6.50#6.50"}]}
+{"ID": "R1385:S012", "Triplet": [{"Aspect": "開胃冷盤", "Opinion": "有點空虛", "VA": "4.00#5.00"}, {"Aspect": "開胃冷盤", "Opinion": "蠻好吃的", "VA": "6.25#6.00"}]}
+{"ID": "R1670:S004", "Triplet": [{"Aspect": "蕎麥麵", "Opinion": "Q彈", "VA": "6.25#5.75"}]}
+{"ID": "R0809:S019", "Triplet": [{"Aspect": "烤雞皮", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R1456:S010", "Triplet": [{"Aspect": "餐點", "Opinion": "非常好吃", "VA": "6.67#6.50"}]}
+{"ID": "R0025:S009", "Triplet": [{"Aspect": "NULL", "Opinion": "真的很慢", "VA": "3.83#5.50"}]}
+{"ID": "R0026:S024", "Triplet": [{"Aspect": "美食", "Opinion": "值得花十分鐘等待", "VA": "6.50#6.00"}]}
+{"ID": "R3246:S004", "Triplet": [{"Aspect": "蝦仁蛋炒飯", "Opinion": "蠻喜歡", "VA": "6.50#6.00"}, {"Aspect": "香味", "Opinion": "四溢", "VA": "6.50#6.00"}, {"Aspect": "份量", "Opinion": "很夠", "VA": "6.50#6.00"}]}
+{"ID": "R0435:S103", "Triplet": [{"Aspect": "味道", "Opinion": "很夠", "VA": "6.33#6.50"}]}
+{"ID": "R1561:S012", "Triplet": [{"Aspect": "青醬雞肉燉飯味道", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R0421:S026", "Triplet": [{"Aspect": "胡桃", "Opinion": "很香", "VA": "6.25#5.88"}]}
+{"ID": "R0399:S028", "Triplet": [{"Aspect": "調味檯區種類", "Opinion": "不算多", "VA": "4.67#4.33"}]}
+{"ID": "R1516:S007", "Triplet": [{"Aspect": "餐廳服務", "Opinion": "很好", "VA": "6.12#5.50"}]}
+{"ID": "R1684:S009", "Triplet": [{"Aspect": "蕎麥涼麵", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R0007:S014", "Triplet": [{"Aspect": "豪飽餐", "Opinion": "實在是飽到不要不要的", "VA": "6.25#6.50"}]}
+{"ID": "R0898:S003", "Triplet": [{"Aspect": "蝦子品質", "Opinion": "不錯", "VA": "6.25#5.50"}]}
+{"ID": "R1932:S007", "Triplet": [{"Aspect": "茶碗蒸", "Opinion": "很大碗", "VA": "6.25#5.75"}]}
+{"ID": "R0465:S023", "Triplet": [{"Aspect": "地鍋雞湯", "Opinion": "很好喝", "VA": "6.50#6.00"}]}
+{"ID": "R1862:S011", "Triplet": [{"Aspect": "沙拉", "Opinion": "新鮮", "VA": "6.33#5.50"}]}
+{"ID": "R0074:S017", "Triplet": [{"Aspect": "麵條", "Opinion": "蠻好吃", "VA": "6.25#6.00"}]}
+{"ID": "R0614:S035", "Triplet": [{"Aspect": "肉", "Opinion": "很甜", "VA": "6.12#5.50"}]}
+{"ID": "R3104:S014", "Triplet": [{"Aspect": "湯品", "Opinion": "非常推薦", "VA": "6.75#6.50"}, {"Aspect": "味道", "Opinion": "很濃郁", "VA": "6.25#5.75"}]}
+{"ID": "R3014:S006", "Triplet": [{"Aspect": "飲料", "Opinion": "便宜", "VA": "5.50#5.00"}, {"Aspect": "飲料", "Opinion": "好喝", "VA": "6.00#5.50"}, {"Aspect": "豬排咖哩", "Opinion": "有夠鹹", "VA": "4.00#6.00"}]}
+{"ID": "R1788:S009", "Triplet": [{"Aspect": "蝦仁內餡", "Opinion": "十分美味", "VA": "6.50#6.00"}]}
+{"ID": "R2922:S008", "Triplet": [{"Aspect": "炒小管卵", "Opinion": "超級少", "VA": "3.50#5.80"}]}
+{"ID": "R2752:S018", "Triplet": [{"Aspect": "羹湯", "Opinion": "超推", "VA": "7.25#7.25"}, {"Aspect": "羹湯", "Opinion": "超級古早味", "VA": "7.00#7.00"}]}
+{"ID": "R1385:S024", "Triplet": [{"Aspect": "小蛋糕", "Opinion": "好甜", "VA": "6.25#5.50"}, {"Aspect": "水果", "Opinion": "好甜", "VA": "6.25#5.50"}, {"Aspect": "NULL", "Opinion": "真的是太滿足了", "VA": "6.75#6.00"}]}
+{"ID": "R2921:S007", "Triplet": [{"Aspect": "絲瓜炒蛋", "Opinion": "鮮甜美味", "VA": "6.50#6.00"}, {"Aspect": "份量", "Opinion": "有點少", "VA": "4.50#4.50"}, {"Aspect": "份量", "Opinion": "有點可惜", "VA": "4.50#4.50"}]}
+{"ID": "R0705:S033", "Triplet": [{"Aspect": "米苔目的口感", "Opinion": "帶點Ｑ", "VA": "5.75#5.25"}, {"Aspect": "米苔目", "Opinion": "不像是純米", "VA": "5.25#5.75"}]}
+{"ID": "R1646:S025", "Triplet": [{"Aspect": "漢堡", "Opinion": "超美味", "VA": "7.25#7.12"}]}
+{"ID": "R0587:S022", "Triplet": [{"Aspect": "羊肉片", "Opinion": "無羊羶", "VA": "5.88#5.38"}, {"Aspect": "羊肉片", "Opinion": "軟", "VA": "5.75#5.25"}, {"Aspect": "羊肉片", "Opinion": "微帶咬感", "VA": "5.75#5.25"}]}
+{"ID": "R2888:S009", "Triplet": [{"Aspect": "豬血湯", "Opinion": "很小碗", "VA": "4.17#5.00"}, {"Aspect": "豬血湯", "Opinion": "還不錯喝", "VA": "5.50#5.17"}]}
+{"ID": "R0001:S032", "Triplet": [{"Aspect": "脆皮雞燒味拼盤", "Opinion": "必點", "VA": "6.40#6.30"}]}
+{"ID": "R1887:S033", "Triplet": [{"Aspect": "泡菜", "Opinion": "很不錯", "VA": "6.25#6.25"}]}
+{"ID": "R2069:S008", "Triplet": [{"Aspect": "香滑流沙包", "Opinion": "蠻好吃的", "VA": "6.33#5.83"}]}
+{"ID": "R2211:S000", "Triplet": [{"Aspect": "鴨肉湯麵", "Opinion": "必吃", "VA": "6.50#6.88"}]}
+{"ID": "R0104:S013", "Triplet": [{"Aspect": "老闆", "Opinion": "貼心", "VA": "6.33#6.17"}]}
+{"ID": "R2833:S014", "Triplet": [{"Aspect": "美式餐點", "Opinion": "推薦", "VA": "6.25#5.75"}]}
+{"ID": "R3211:S030", "Triplet": [{"Aspect": "炒飯", "Opinion": "不合格", "VA": "3.25#4.25"}]}
+{"ID": "R3065:S006", "Triplet": [{"Aspect": "小卷", "Opinion": "大推", "VA": "6.62#6.50"}]}
+{"ID": "R3219:S021", "Triplet": [{"Aspect": "NULL", "Opinion": "很飽", "VA": "6.12#5.50"}, {"Aspect": "NULL", "Opinion": "很滿意", "VA": "6.50#5.75"}]}
+{"ID": "R1408:S012", "Triplet": [{"Aspect": "煙燻培根義大利麵", "Opinion": "天衣無縫", "VA": "6.88#6.38"}]}
+{"ID": "R1223:S013", "Triplet": [{"Aspect": "炸物", "Opinion": "沒有油耗味", "VA": "6.17#5.00"}]}
+{"ID": "R0780:S033", "Triplet": [{"Aspect": "唐揚雞", "Opinion": "相當有誠意", "VA": "6.50#6.00"}]}
+{"ID": "R2750:S013", "Triplet": [{"Aspect": "玉米雞肉質", "Opinion": "好", "VA": "6.25#5.75"}, {"Aspect": "玉米雞肉質", "Opinion": "香甜帶肥", "VA": "6.25#5.75"}, {"Aspect": "玉米雞肉質", "Opinion": "很好吃", "VA": "6.75#6.25"}]}
+{"ID": "R0327:S092", "Triplet": [{"Aspect": "湯", "Opinion": "算喜歡", "VA": "5.83#5.50"}]}
+{"ID": "R0200:S078", "Triplet": [{"Aspect": "布丁", "Opinion": "太優秀", "VA": "7.25#7.25"}]}
+{"ID": "R0130:S010", "Triplet": [{"Aspect": "停車場", "Opinion": "非常多", "VA": "6.62#6.25"}]}
+{"ID": "R0301:S014", "Triplet": [{"Aspect": "NULL", "Opinion": "很彈潤", "VA": "6.25#5.50"}, {"Aspect": "NULL", "Opinion": "很甜美", "VA": "6.25#5.50"}]}
+{"ID": "R0202:S038", "Triplet": [{"Aspect": "雞腿", "Opinion": "軟嫩", "VA": "6.25#5.50"}]}
+{"ID": "R0044:S039", "Triplet": [{"Aspect": "NULL", "Opinion": "沒有油耗味", "VA": "5.75#5.25"}, {"Aspect": "風格", "Opinion": "清爽", "VA": "5.75#5.25"}]}
+{"ID": "R1454:S005", "Triplet": [{"Aspect": "焦糖烤布丁", "Opinion": "好吃", "VA": "6.17#5.83"}]}
+{"ID": "R2987:S003", "Triplet": [{"Aspect": "炒麵", "Opinion": "太鹹", "VA": "3.67#6.00"}]}
+{"ID": "R1549:S004", "Triplet": [{"Aspect": "用料", "Opinion": "大方", "VA": "6.25#5.88"}]}
+{"ID": "R0602:S027", "Triplet": [{"Aspect": "主廚濃湯", "Opinion": "好喝", "VA": "6.17#5.83"}]}
+{"ID": "R3315:S011", "Triplet": [{"Aspect": "環境", "Opinion": "比較舒適", "VA": "6.12#5.50"}]}
+{"ID": "R3196:S010", "Triplet": [{"Aspect": "雞塊", "Opinion": "美味", "VA": "6.83#6.17"}, {"Aspect": "雞塊", "Opinion": "好吃", "VA": "6.83#6.50"}]}
+{"ID": "R0200:S032", "Triplet": [{"Aspect": "布丁", "Opinion": "超愛", "VA": "7.25#7.25"}, {"Aspect": "布丁", "Opinion": "濃郁", "VA": "6.50#5.75"}]}
+{"ID": "R1765:S006", "Triplet": [{"Aspect": "紅棗飯", "Opinion": "很好吃", "VA": "6.62#6.38"}]}
+{"ID": "R0389:S029", "Triplet": [{"Aspect": "胡椒味", "Opinion": "稍微偏重", "VA": "4.50#4.83"}]}
+{"ID": "R0937:S062", "Triplet": [{"Aspect": "地瓜餅乾", "Opinion": "酥脆", "VA": "6.17#5.83"}, {"Aspect": "牛番茄", "Opinion": "新鮮", "VA": "6.00#5.50"}]}
+{"ID": "R0130:S090", "Triplet": [{"Aspect": "份量", "Opinion": "適中", "VA": "5.62#5.25"}]}
+{"ID": "R2888:S001", "Triplet": [{"Aspect": "餐廳", "Opinion": "不會再去", "VA": "3.25#6.25"}]}
+{"ID": "R1161:S050", "Triplet": [{"Aspect": "酒水味道", "Opinion": "淡", "VA": "4.67#4.50"}]}
+{"ID": "R1475:S003", "Triplet": [{"Aspect": "花生醬的漢堡", "Opinion": "非常好吃", "VA": "6.75#6.38"}]}
+{"ID": "R0028:S024", "Triplet": [{"Aspect": "大蒜麵包", "Opinion": "太好吃", "VA": "6.75#6.50"}]}
+{"ID": "R2964:S007", "Triplet": [{"Aspect": "牛肉", "Opinion": "像皮筋咬不斷", "VA": "3.50#4.83"}]}
+{"ID": "R2198:S012", "Triplet": [{"Aspect": "青綠咖喱雞", "Opinion": "中規中矩", "VA": "5.00#5.00"}]}
+{"ID": "R3190:S007", "Triplet": [{"Aspect": "調味", "Opinion": "很剛好", "VA": "6.25#5.75"}, {"Aspect": "調味", "Opinion": "不會死鹹", "VA": "6.00#5.50"}]}
+{"ID": "R0167:S024", "Triplet": [{"Aspect": "肉", "Opinion": "不會柴", "VA": "5.83#5.50"}, {"Aspect": "肉", "Opinion": "蠻不錯", "VA": "6.17#5.50"}]}
+{"ID": "R2967:S010", "Triplet": [{"Aspect": "餐點", "Opinion": "好吃", "VA": "6.50#6.25"}, {"Aspect": "份量", "Opinion": "大", "VA": "6.25#6.25"}, {"Aspect": "餐廳", "Opinion": "很推薦", "VA": "6.50#6.75"}]}
+{"ID": "R2882:S021", "Triplet": [{"Aspect": "服務態度", "Opinion": "太驕傲", "VA": "3.80#5.70"}]}
+{"ID": "R0419:S002", "Triplet": [{"Aspect": "日式料理", "Opinion": "非常多樣性", "VA": "6.67#6.33"}]}
+{"ID": "R0660:S062", "Triplet": [{"Aspect": "鰤魚", "Opinion": "油紋肥厚", "VA": "6.17#5.83"}]}
+{"ID": "R2906:S000", "Triplet": [{"Aspect": "米腸", "Opinion": "沒啥味道", "VA": "4.50#4.75"}, {"Aspect": "米腸", "Opinion": "相當普通", "VA": "5.00#5.00"}]}
+{"ID": "R0828:S014", "Triplet": [{"Aspect": "環境", "Opinion": "相當舒適", "VA": "6.25#5.50"}, {"Aspect": "環境", "Opinion": "乾淨", "VA": "6.00#5.25"}]}
+{"ID": "R2905:S014", "Triplet": [{"Aspect": "NULL", "Opinion": "有點過於貴", "VA": "4.17#4.50"}]}
+{"ID": "R2958:S008", "Triplet": [{"Aspect": "麻油雞麵線", "Opinion": "沒很入味", "VA": "4.25#4.88"}]}
+{"ID": "R1708:S012", "Triplet": [{"Aspect": "羊肉品質", "Opinion": "不夠好", "VA": "4.17#4.83"}]}
+{"ID": "R1483:S019", "Triplet": [{"Aspect": "布朗尼", "Opinion": "甜而不膩", "VA": "6.17#5.83"}]}
+{"ID": "R0467:S014", "Triplet": [{"Aspect": "鴨肉", "Opinion": "軟嫩", "VA": "6.25#5.50"}, {"Aspect": "湯頭", "Opinion": "溫潤", "VA": "6.25#5.50"}]}
+{"ID": "R1528:S004", "Triplet": [{"Aspect": "龍蝦", "Opinion": "可以", "VA": "5.50#5.25"}]}
+{"ID": "R2971:S014", "Triplet": [{"Aspect": "酸辣湯", "Opinion": "有點過鹹", "VA": "4.17#4.83"}]}
+{"ID": "R0296:S023", "Triplet": [{"Aspect": "白飯", "Opinion": "偏乾", "VA": "4.25#5.25"}]}
+{"ID": "R0134:S007", "Triplet": [{"Aspect": "咖哩", "Opinion": "有點普通", "VA": "4.67#4.83"}]}
+{"ID": "R0152:S029", "Triplet": [{"Aspect": "牛奶口味乳香味", "Opinion": "非常濃郁", "VA": "6.67#6.33"}]}
+{"ID": "R0584:S045", "Triplet": [{"Aspect": "魚肉", "Opinion": "有點土味", "VA": "4.25#4.75"}, {"Aspect": "魚肉", "Opinion": "比較吃不慣", "VA": "4.00#4.75"}]}
+{"ID": "R0438:S026", "Triplet": [{"Aspect": "肉片", "Opinion": "很有存在感", "VA": "6.25#6.12"}]}
+{"ID": "R0463:S027", "Triplet": [{"Aspect": "牛尾湯", "Opinion": "很清淡爽口", "VA": "6.38#5.88"}]}
+{"ID": "R1004:S088", "Triplet": [{"Aspect": "湯", "Opinion": "不夠熱", "VA": "4.25#5.25"}, {"Aspect": "湯頭的鹹度", "Opinion": "不夠", "VA": "4.00#5.00"}]}
+{"ID": "R1705:S005", "Triplet": [{"Aspect": "上餐速度", "Opinion": "慢", "VA": "3.67#4.50"}]}
+{"ID": "R0039:S047", "Triplet": [{"Aspect": "炒飯", "Opinion": "喜歡", "VA": "6.33#5.50"}]}
+{"ID": "R1493:S025", "Triplet": [{"Aspect": "海鮮", "Opinion": "夠新鮮", "VA": "6.25#5.50"}]}
+{"ID": "R1659:S001", "Triplet": [{"Aspect": "餐點品質", "Opinion": "不錯", "VA": "6.25#5.50"}]}
+{"ID": "R2631:S005", "Triplet": [{"Aspect": "碗粿", "Opinion": "有點可惜", "VA": "4.25#5.25"}, {"Aspect": "碗粿", "Opinion": "冷", "VA": "4.00#4.75"}]}
+{"ID": "R1482:S014", "Triplet": [{"Aspect": "焦糖葡萄柚", "Opinion": "還不賴", "VA": "6.00#5.38"}]}
+{"ID": "R0958:S035", "Triplet": [{"Aspect": "榨菜肉絲乾麵", "Opinion": "超大一碗", "VA": "6.25#6.00"}, {"Aspect": "榨菜", "Opinion": "很多", "VA": "6.25#6.00"}, {"Aspect": "肉絲", "Opinion": "不少", "VA": "6.25#6.00"}]}
+{"ID": "R1173:S043", "Triplet": [{"Aspect": "冰淇淋", "Opinion": "紮實", "VA": "6.25#5.75"}]}
+{"ID": "R0681:S021", "Triplet": [{"Aspect": "雞肝", "Opinion": "最喜歡", "VA": "6.67#6.50"}]}
+{"ID": "R2555:S001", "Triplet": [{"Aspect": "味道", "Opinion": "略微不同", "VA": "5.00#5.00"}, {"Aspect": "湯頭", "Opinion": "鮮甜濃郁", "VA": "6.50#6.00"}, {"Aspect": "湯頭", "Opinion": "越喝越順口", "VA": "6.50#6.00"}]}
+{"ID": "R1507:S007", "Triplet": [{"Aspect": "燉飯口味", "Opinion": "真的非常棒", "VA": "6.75#6.88"}]}
+{"ID": "R1505:S001", "Triplet": [{"Aspect": "熱炒", "Opinion": "美味可口", "VA": "6.75#6.38"}]}
+{"ID": "R2082:S000", "Triplet": [{"Aspect": "店", "Opinion": "很寬敝舒適", "VA": "6.50#6.17"}, {"Aspect": "位子", "Opinion": "很多", "VA": "6.17#5.83"}]}
+{"ID": "R2470:S000", "Triplet": [{"Aspect": "餐點", "Opinion": "一點都不熱", "VA": "3.83#4.33"}, {"Aspect": "滷肉飯", "Opinion": "很難吃", "VA": "3.50#4.67"}, {"Aspect": "滷肉飯", "Opinion": "完全沒有入味", "VA": "3.67#4.50"}]}
+{"ID": "R1544:S002", "Triplet": [{"Aspect": "牛肉", "Opinion": "有點老", "VA": "4.12#4.50"}]}
+{"ID": "R0078:S025", "Triplet": [{"Aspect": "雞翅", "Opinion": "微酥", "VA": "6.25#5.50"}, {"Aspect": "肉質", "Opinion": "軟嫩", "VA": "6.25#5.50"}]}
+{"ID": "R1222:S012", "Triplet": [{"Aspect": "臭豆腐炒飯", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R1183:S011", "Triplet": [{"Aspect": "香煎小卷海鮮沙拉", "Opinion": "超讚", "VA": "7.25#7.25"}]}
+{"ID": "R1482:S002", "Triplet": [{"Aspect": "湯", "Opinion": "沒有味道", "VA": "4.00#4.50"}, {"Aspect": "湯", "Opinion": "十分油膩", "VA": "3.75#5.25"}]}
+{"ID": "R0263:S031", "Triplet": [{"Aspect": "湯頭", "Opinion": "很鮮甜", "VA": "6.75#6.25"}, {"Aspect": "油蔥酥香味", "Opinion": "滿滿", "VA": "6.50#6.00"}]}
+{"ID": "R2750:S016", "Triplet": [{"Aspect": "蟹肉羹", "Opinion": "有點太甜", "VA": "4.17#5.00"}, {"Aspect": "蟹肉羹", "Opinion": "還行", "VA": "5.00#5.00"}]}
+{"ID": "R1786:S004", "Triplet": [{"Aspect": "海鮮類", "Opinion": "很新鮮", "VA": "6.25#5.75"}]}
+{"ID": "R1241:S143", "Triplet": [{"Aspect": "牛肉", "Opinion": "非常好", "VA": "6.62#6.38"}]}
+{"ID": "R0477:S004", "Triplet": [{"Aspect": "排骨", "Opinion": "很有古早味", "VA": "6.17#5.83"}, {"Aspect": "味道", "Opinion": "很好", "VA": "6.17#5.50"}, {"Aspect": "口感", "Opinion": "很好", "VA": "6.17#5.50"}]}
+{"ID": "R0290:S065", "Triplet": [{"Aspect": "蝦仁", "Opinion": "爽脆", "VA": "6.25#5.88"}]}
+{"ID": "R2075:S002", "Triplet": [{"Aspect": "NULL", "Opinion": "很可以", "VA": "6.33#6.50"}]}
+{"ID": "R0978:S053", "Triplet": [{"Aspect": "蘿蔔糕口感", "Opinion": "超嫩", "VA": "6.50#6.83"}]}
+{"ID": "R1028:S083", "Triplet": [{"Aspect": "蜂蜜檸檬汁", "Opinion": "不會太甜", "VA": "5.67#5.00"}, {"Aspect": "蜂蜜檸檬汁", "Opinion": "很清爽", "VA": "6.17#6.00"}]}
+{"ID": "R1639:S031", "Triplet": [{"Aspect": "空間", "Opinion": "真的很大", "VA": "6.12#6.25"}]}
+{"ID": "R2221:S011", "Triplet": [{"Aspect": "燙青菜", "Opinion": "量也不少", "VA": "6.00#5.50"}, {"Aspect": "燙青菜", "Opinion": "很不錯", "VA": "6.50#6.00"}]}
+{"ID": "R1175:S052", "Triplet": [{"Aspect": "溏心蛋", "Opinion": "很棒", "VA": "6.67#6.17"}]}
+{"ID": "R0024:S005", "Triplet": [{"Aspect": "室內用餐空間", "Opinion": "很大", "VA": "6.25#5.75"}]}
+{"ID": "R0207:S065", "Triplet": [{"Aspect": "茉莉綠茶的香味", "Opinion": "很濃郁", "VA": "6.25#5.75"}, {"Aspect": "整體", "Opinion": "不會過甜", "VA": "5.75#5.00"}]}
+{"ID": "R3073:S023", "Triplet": [{"Aspect": "龍蝦拼盤", "Opinion": "中規中矩", "VA": "5.00#4.88"}]}
+{"ID": "R0060:S056", "Triplet": [{"Aspect": "唐揚雞", "Opinion": "很好吃", "VA": "6.75#6.38"}]}
+{"ID": "R0119:S022", "Triplet": [{"Aspect": "鮑魚", "Opinion": "新鮮", "VA": "6.12#5.50"}, {"Aspect": "鮭魚卵", "Opinion": "新鮮", "VA": "6.12#5.50"}]}
+{"ID": "R1159:S065", "Triplet": [{"Aspect": "和牛油花", "Opinion": "漂亮", "VA": "6.25#5.75"}]}
+{"ID": "R3105:S004", "Triplet": [{"Aspect": "水蓮", "Opinion": "美中不足", "VA": "4.75#4.75"}, {"Aspect": "水蓮", "Opinion": "有一些苦味", "VA": "4.25#4.50"}]}
+{"ID": "R1176:S038", "Triplet": [{"Aspect": "滷豬肝", "Opinion": "必點", "VA": "7.25#7.12"}]}
+{"ID": "R0593:S059", "Triplet": [{"Aspect": "餐飲選擇", "Opinion": "較受限", "VA": "4.50#4.83"}, {"Aspect": "餐飲選擇", "Opinion": "比較可惜", "VA": "4.50#5.17"}]}
+{"ID": "R2557:S008", "Triplet": [{"Aspect": "炒飯白飯", "Opinion": "黏在一起", "VA": "4.17#4.83"}, {"Aspect": "蒸餃內餡", "Opinion": "粉粉的", "VA": "4.17#4.83"}, {"Aspect": "菜色口味", "Opinion": "不出色", "VA": "4.00#5.00"}]}
+{"ID": "R1599:S010", "Triplet": [{"Aspect": "豬排飯", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R1177:S046", "Triplet": [{"Aspect": "食物質地", "Opinion": "相當好", "VA": "6.25#5.75"}]}
+{"ID": "R0303:S049", "Triplet": [{"Aspect": "蛋花口感", "Opinion": "滑嫩", "VA": "6.25#5.75"}]}
+{"ID": "R0309:S004", "Triplet": [{"Aspect": "唐揚雞", "Opinion": "不錯吃", "VA": "6.25#5.75"}]}
+{"ID": "R1987:S003", "Triplet": [{"Aspect": "脆皮雞", "Opinion": "一定要點", "VA": "6.75#6.75"}, {"Aspect": "皮", "Opinion": "很脆", "VA": "6.25#5.75"}, {"Aspect": "皮", "Opinion": "很好吃", "VA": "6.50#5.75"}]}
+{"ID": "R0574:S029", "Triplet": [{"Aspect": "出餐速度", "Opinion": "飛快", "VA": "6.75#6.38"}]}
+{"ID": "R0731:S013", "Triplet": [{"Aspect": "份量", "Opinion": "十足", "VA": "6.12#5.50"}]}
+{"ID": "R0378:S039", "Triplet": [{"Aspect": "餅身", "Opinion": "軟中帶Ｑ", "VA": "6.12#5.88"}]}
+{"ID": "R2929:S004", "Triplet": [{"Aspect": "鍋巴", "Opinion": "蠻好吃的", "VA": "6.25#5.75"}]}
+{"ID": "R1372:S026", "Triplet": [{"Aspect": "飛驒牛肉包", "Opinion": "不大", "VA": "4.83#4.50"}, {"Aspect": "價格", "Opinion": "略高", "VA": "4.67#5.00"}]}
+{"ID": "R0813:S039", "Triplet": [{"Aspect": "口感", "Opinion": "酥酥的", "VA": "6.25#5.25"}]}
+{"ID": "R1512:S024", "Triplet": [{"Aspect": "雞湯", "Opinion": "好喝", "VA": "6.25#5.50"}]}
+{"ID": "R1166:S073", "Triplet": [{"Aspect": "泰式奶茶", "Opinion": "很好喝", "VA": "6.50#6.00"}]}
+{"ID": "R0685:S017", "Triplet": [{"Aspect": "麻辣鴨血", "Opinion": "很普", "VA": "5.00#5.00"}, {"Aspect": "神級奶茶", "Opinion": "真的是神級難喝", "VA": "2.00#8.00"}, {"Aspect": "神級奶茶", "Opinion": "又甜又都奶精味噁到爆", "VA": "2.00#9.00"}]}
+{"ID": "R1969:S006", "Triplet": [{"Aspect": "京醬肉絲", "Opinion": "超級鹹", "VA": "3.50#6.00"}]}
+{"ID": "R1622:S015", "Triplet": [{"Aspect": "口感", "Opinion": "很不錯", "VA": "6.33#6.50"}]}
+{"ID": "R2055:S008", "Triplet": [{"Aspect": "咖哩", "Opinion": "有一點苦味", "VA": "4.17#4.83"}, {"Aspect": "肉片", "Opinion": "炒得過硬", "VA": "4.50#5.00"}]}
+{"ID": "R2936:S004", "Triplet": [{"Aspect": "NULL", "Opinion": "超值", "VA": "6.83#6.50"}]}
+{"ID": "R0898:S002", "Triplet": [{"Aspect": "牛肉湯", "Opinion": "最愛", "VA": "7.25#7.25"}, {"Aspect": "魚片湯", "Opinion": "最愛", "VA": "7.25#7.25"}]}
+{"ID": "R0192:S023", "Triplet": [{"Aspect": "奶酥麵包搭配咖啡拿鐵", "Opinion": "真的很棒", "VA": "6.83#6.50"}]}
+{"ID": "R2844:S000", "Triplet": [{"Aspect": "布朗尼", "Opinion": "很綿", "VA": "6.25#5.75"}]}
+{"ID": "R2152:S000", "Triplet": [{"Aspect": "菜品品質", "Opinion": "不太穩定", "VA": "4.25#4.75"}, {"Aspect": "菜品品質", "Opinion": "真的是好吃", "VA": "6.75#6.25"}]}
+{"ID": "R0017:S030", "Triplet": [{"Aspect": "NULL", "Opinion": "甜中帶鹹香", "VA": "6.50#5.83"}, {"Aspect": "NULL", "Opinion": "相當的好吃", "VA": "7.00#6.50"}]}
+{"ID": "R1550:S011", "Triplet": [{"Aspect": "烤田螺水準", "Opinion": "很高", "VA": "6.50#6.00"}]}
+{"ID": "R1961:S005", "Triplet": [{"Aspect": "炸雞", "Opinion": "超級好吃", "VA": "7.25#7.25"}, {"Aspect": "炸雞", "Opinion": "必吃", "VA": "7.25#7.25"}]}
+{"ID": "R0180:S004", "Triplet": [{"Aspect": "口味選擇", "Opinion": "很多", "VA": "6.12#5.50"}]}
+{"ID": "R1166:S070", "Triplet": [{"Aspect": "冰淇淋口味", "Opinion": "超多", "VA": "6.50#6.83"}]}
+{"ID": "R0053:S013", "Triplet": [{"Aspect": "酸辣粉", "Opinion": "很Q", "VA": "6.25#5.75"}, {"Aspect": "味道", "Opinion": "不錯", "VA": "6.00#5.25"}]}
+{"ID": "R1708:S013", "Triplet": [{"Aspect": "湯頭味道", "Opinion": "很淡", "VA": "4.25#4.75"}]}
+{"ID": "R0057:S034", "Triplet": [{"Aspect": "龍鬚菜", "Opinion": "非常開胃", "VA": "6.50#6.38"}]}
+{"ID": "R0806:S065", "Triplet": [{"Aspect": "烤麻糬", "Opinion": "非常好吃", "VA": "7.00#6.50"}]}
+{"ID": "R2941:S012", "Triplet": [{"Aspect": "料", "Opinion": "少得可憐", "VA": "3.67#4.33"}]}
+{"ID": "R3287:S013", "Triplet": [{"Aspect": "涼拌石蚵", "Opinion": "最喜歡", "VA": "7.17#7.00"}, {"Aspect": "絲瓜", "Opinion": "最喜歡", "VA": "7.17#7.00"}]}
+{"ID": "R0099:S046", "Triplet": [{"Aspect": "泰式檸檬醬", "Opinion": "很對味", "VA": "6.38#6.12"}]}
+{"ID": "R2334:S011", "Triplet": [{"Aspect": "駝鳥肉", "Opinion": "很下飯", "VA": "6.50#6.00"}, {"Aspect": "帶皮羊肉", "Opinion": "很下飯", "VA": "6.50#6.00"}]}
+{"ID": "R1653:S002", "Triplet": [{"Aspect": "鮪魚抹醬", "Opinion": "超好吃", "VA": "7.17#6.83"}]}
+{"ID": "R1800:S010", "Triplet": [{"Aspect": "流沙內餡", "Opinion": "最愛", "VA": "7.17#7.00"}]}
+{"ID": "R1012:S023", "Triplet": [{"Aspect": "太妃糖的口感", "Opinion": "硬到無法咀嚼", "VA": "3.25#5.50"}]}
+{"ID": "R3323:S005", "Triplet": [{"Aspect": "價格", "Opinion": "偏高", "VA": "4.50#5.50"}, {"Aspect": "鵝肉先生", "Opinion": "好吃", "VA": "6.50#5.50"}, {"Aspect": "沾醬", "Opinion": "很夠味", "VA": "6.50#6.00"}]}
+{"ID": "R2690:S006", "Triplet": [{"Aspect": "濃湯", "Opinion": "比較普通", "VA": "5.00#5.00"}, {"Aspect": "薯條", "Opinion": "比較普通", "VA": "5.00#5.00"}]}
+{"ID": "R0041:S021", "Triplet": [{"Aspect": "波士頓派", "Opinion": "不會覺得太甜膩", "VA": "5.88#5.38"}]}
+{"ID": "R0305:S009", "Triplet": [{"Aspect": "份量", "Opinion": "蠻剛好", "VA": "5.75#5.38"}]}
+{"ID": "R0141:S005", "Triplet": [{"Aspect": "價格", "Opinion": "很高貴", "VA": "3.83#6.17"}]}
+{"ID": "R2061:S003", "Triplet": [{"Aspect": "香氣", "Opinion": "十分古早味", "VA": "6.17#5.83"}, {"Aspect": "味道", "Opinion": "很迷人", "VA": "6.50#6.17"}]}
+{"ID": "R1384:S117", "Triplet": [{"Aspect": "飯", "Opinion": "很好吃", "VA": "6.83#6.50"}]}
+{"ID": "R0173:S013", "Triplet": [{"Aspect": "湯頭", "Opinion": "不會太油膩", "VA": "6.17#5.00"}]}
+{"ID": "R0805:S030", "Triplet": [{"Aspect": "麵包體外層", "Opinion": "酥脆", "VA": "6.17#5.33"}, {"Aspect": "麵包體內層", "Opinion": "柔軟", "VA": "6.17#5.33"}]}
+{"ID": "R1434:S001", "Triplet": [{"Aspect": "餐點口味", "Opinion": "一定水準", "VA": "6.17#5.83"}]}
+{"ID": "R1896:S009", "Triplet": [{"Aspect": "南瓜濃湯", "Opinion": "真材實料", "VA": "6.38#5.88"}]}
+{"ID": "R1589:S007", "Triplet": [{"Aspect": "海鮮丼飯價格", "Opinion": "平價", "VA": "5.75#5.00"}]}
+{"ID": "R0809:S030", "Triplet": [{"Aspect": "湯品", "Opinion": "好喝", "VA": "6.25#5.50"}]}
+{"ID": "R1835:S008", "Triplet": [{"Aspect": "腰果湯", "Opinion": "很香", "VA": "6.25#5.75"}]}
+{"ID": "R1950:S013", "Triplet": [{"Aspect": "炸雞", "Opinion": "有點讓人失望", "VA": "3.80#4.70"}]}
+{"ID": "R1784:S000", "Triplet": [{"Aspect": "生魚片", "Opinion": "蠻新鮮的", "VA": "6.17#5.83"}]}
+{"ID": "R2268:S014", "Triplet": [{"Aspect": "香蔥油雞", "Opinion": "十分驚艷", "VA": "6.75#6.25"}, {"Aspect": "口感", "Opinion": "非常軟嫩", "VA": "6.50#6.00"}]}
+{"ID": "R1467:S023", "Triplet": [{"Aspect": "麵包", "Opinion": "不錯", "VA": "5.88#5.50"}]}
+{"ID": "R0044:S052", "Triplet": [{"Aspect": "食材", "Opinion": "新鮮", "VA": "5.88#5.38"}]}
+{"ID": "R1621:S008", "Triplet": [{"Aspect": "海鮮米糕", "Opinion": "很新鮮", "VA": "6.12#5.88"}]}
+{"ID": "R1610:S010", "Triplet": [{"Aspect": "佛跳牆", "Opinion": "用料豐富", "VA": "6.12#5.50"}]}
+{"ID": "R0797:S076", "Triplet": [{"Aspect": "雞湯", "Opinion": "清爽", "VA": "6.25#5.50"}, {"Aspect": "雞湯", "Opinion": "不鹹", "VA": "6.25#5.25"}]}
+{"ID": "R1428:S037", "Triplet": [{"Aspect": "餐廳環境", "Opinion": "乾淨", "VA": "6.25#5.25"}]}
+{"ID": "R2557:S003", "Triplet": [{"Aspect": "炒飯", "Opinion": "並非熱騰騰", "VA": "4.17#5.00"}, {"Aspect": "菜品", "Opinion": "並非熱騰騰", "VA": "4.17#5.00"}]}
+{"ID": "R1993:S011", "Triplet": [{"Aspect": "主餐部分肉", "Opinion": "普普", "VA": "5.00#4.83"}, {"Aspect": "主餐部分肉", "Opinion": "沒有特別好吃", "VA": "4.67#5.00"}]}
+{"ID": "R2553:S010", "Triplet": [{"Aspect": "豆酥", "Opinion": "太多", "VA": "4.33#5.50"}, {"Aspect": "豆酥", "Opinion": "很硬", "VA": "4.00#5.67"}, {"Aspect": "豆酥", "Opinion": "很難入口", "VA": "3.67#5.83"}, {"Aspect": "白飯", "Opinion": "這麼難吃", "VA": "3.00#6.00"}]}
+{"ID": "R1912:S010", "Triplet": [{"Aspect": "港式點心", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R0153:S022", "Triplet": [{"Aspect": "滷豆腐", "Opinion": "很夠味", "VA": "6.25#5.75"}]}
+{"ID": "R3267:S006", "Triplet": [{"Aspect": "肉", "Opinion": "蠻多", "VA": "6.00#5.50"}, {"Aspect": "肉", "Opinion": "有嚼勁", "VA": "6.00#5.50"}]}
+{"ID": "R3015:S019", "Triplet": [{"Aspect": "肉的腥味", "Opinion": "不會到很重", "VA": "5.88#5.12"}, {"Aspect": "肉", "Opinion": "表現得不錯", "VA": "5.75#5.25"}]}
+{"ID": "R3073:S015", "Triplet": [{"Aspect": "魷魚", "Opinion": "太少", "VA": "3.67#5.50"}]}
+{"ID": "R1394:S031", "Triplet": [{"Aspect": "純茶", "Opinion": "不苦澀", "VA": "6.25#5.38"}]}
+{"ID": "R1667:S004", "Triplet": [{"Aspect": "焗烤海鮮飯白醬", "Opinion": "水水的", "VA": "4.25#4.88"}]}
+{"ID": "R1208:S104", "Triplet": [{"Aspect": "咖啡的香氣", "Opinion": "很香", "VA": "6.17#5.83"}]}
+{"ID": "R0818:S001", "Triplet": [{"Aspect": "大骨味", "Opinion": "濃郁", "VA": "6.25#5.75"}]}
+{"ID": "R0736:S025", "Triplet": [{"Aspect": "鴨", "Opinion": "腥味", "VA": "3.83#4.50"}, {"Aspect": "NULL", "Opinion": "有點油膩", "VA": "4.17#4.67"}]}
+{"ID": "R2027:S007", "Triplet": [{"Aspect": "停車位", "Opinion": "沒有", "VA": "3.83#4.50"}, {"Aspect": "開車", "Opinion": "不太方便", "VA": "4.00#4.67"}]}
+{"ID": "R1214:S047", "Triplet": [{"Aspect": "雞油", "Opinion": "很出色", "VA": "6.62#6.25"}]}
+{"ID": "R2136:S012", "Triplet": [{"Aspect": "鳳梨梅", "Opinion": "很好喝", "VA": "6.75#6.50"}]}
+{"ID": "R0386:S008", "Triplet": [{"Aspect": "叉燒", "Opinion": "不錯", "VA": "5.83#5.50"}]}
+{"ID": "R0920:S022", "Triplet": [{"Aspect": "辣炒魷魚", "Opinion": "非常夠味", "VA": "6.67#6.33"}, {"Aspect": "魷魚", "Opinion": "新鮮", "VA": "6.00#5.50"}, {"Aspect": "魷魚", "Opinion": "多", "VA": "5.67#5.33"}, {"Aspect": "辣炒魷魚", "Opinion": "超級下飯", "VA": "6.67#6.67"}]}
+{"ID": "R1667:S003", "Triplet": [{"Aspect": "青醬", "Opinion": "有點太油", "VA": "4.12#4.75"}]}
+{"ID": "R0136:S026", "Triplet": [{"Aspect": "茶凍", "Opinion": "最棒", "VA": "6.67#6.50"}, {"Aspect": "茶凍", "Opinion": "軟嫩", "VA": "6.17#5.83"}, {"Aspect": "茶凍", "Opinion": "清涼", "VA": "6.17#5.83"}]}
+{"ID": "R0660:S044", "Triplet": [{"Aspect": "喜知次的脂肪", "Opinion": "特別肥美", "VA": "6.67#6.33"}]}
+{"ID": "R2921:S004", "Triplet": [{"Aspect": "小卷", "Opinion": "很新鮮", "VA": "6.25#6.25"}]}
+{"ID": "R1550:S018", "Triplet": [{"Aspect": "茉香綠茶", "Opinion": "不推薦", "VA": "3.50#4.83"}]}
+{"ID": "R2928:S011", "Triplet": [{"Aspect": "韓式泡菜泡麵鍋", "Opinion": "中規中矩", "VA": "5.00#5.00"}]}
+{"ID": "R1971:S006", "Triplet": [{"Aspect": "擺盤", "Opinion": "有一定水平", "VA": "6.25#5.75"}, {"Aspect": "口味", "Opinion": "有一定水平", "VA": "6.25#5.75"}, {"Aspect": "服務人員的應對", "Opinion": "略顯生硬", "VA": "4.25#5.25"}]}
+{"ID": "R0687:S010", "Triplet": [{"Aspect": "餐點價格", "Opinion": "蠻便宜的", "VA": "6.12#5.50"}]}
+{"ID": "R2239:S002", "Triplet": [{"Aspect": "豬肋排", "Opinion": "好吃", "VA": "6.25#5.50"}, {"Aspect": "豬肋排", "Opinion": "必點", "VA": "6.50#6.00"}, {"Aspect": "肋排的肉", "Opinion": "稍微柴", "VA": "4.75#5.25"}]}
+{"ID": "R0551:S040", "Triplet": [{"Aspect": "鹿肉", "Opinion": "好吃", "VA": "6.33#5.50"}]}
+{"ID": "R0934:S005", "Triplet": [{"Aspect": "大泡芙", "Opinion": "非常飽滿", "VA": "6.50#6.00"}]}
+{"ID": "R2837:S004", "Triplet": [{"Aspect": "餐點", "Opinion": "貴很多", "VA": "3.67#6.00"}]}
+{"ID": "R0467:S012", "Triplet": [{"Aspect": "滷汁的量", "Opinion": "有點太多", "VA": "4.17#4.83"}]}
+{"ID": "R2086:S048", "Triplet": [{"Aspect": "燒賣", "Opinion": "非常紮實", "VA": "6.75#6.50"}]}
+{"ID": "R0467:S032", "Triplet": [{"Aspect": "口味", "Opinion": "一般", "VA": "5.00#5.00"}, {"Aspect": "座位", "Opinion": "偏小", "VA": "4.50#5.00"}]}
+{"ID": "R2193:S007", "Triplet": [{"Aspect": "豬肉", "Opinion": "有點偏乾", "VA": "4.25#4.75"}, {"Aspect": "醬料的調味", "Opinion": "很好", "VA": "6.00#5.50"}, {"Aspect": "泰式醬", "Opinion": "酸酸甜甜", "VA": "5.75#5.25"}]}
+{"ID": "R2078:S002", "Triplet": [{"Aspect": "蟹黃燒賣", "Opinion": "驚為天人", "VA": "7.38#7.12"}]}
+{"ID": "R1468:S012", "Triplet": [{"Aspect": "餐廳服務的親切度", "Opinion": "略顯不足", "VA": "4.25#4.88"}]}
+{"ID": "R1360:S022", "Triplet": [{"Aspect": "排骨", "Opinion": "非常下飯", "VA": "6.75#6.50"}]}
+{"ID": "R0111:S006", "Triplet": [{"Aspect": "豚骨湯", "Opinion": "很舒服", "VA": "6.25#6.12"}]}
+{"ID": "R1459:S003", "Triplet": [{"Aspect": "墨西哥辣椒漢堡", "Opinion": "沒很好吃", "VA": "4.00#5.00"}]}
+{"ID": "R0806:S095", "Triplet": [{"Aspect": "份量", "Opinion": "巨驚人", "VA": "6.25#6.12"}]}
+{"ID": "R0303:S038", "Triplet": [{"Aspect": "小黃瓜", "Opinion": "清脆爽口", "VA": "6.17#5.33"}]}
+{"ID": "R2068:S012", "Triplet": [{"Aspect": "蘿蔔糕", "Opinion": "中規中矩", "VA": "5.00#5.00"}, {"Aspect": "蘿蔔糕", "Opinion": "偏好吃", "VA": "5.75#5.50"}]}
+{"ID": "R3069:S002", "Triplet": [{"Aspect": "菜", "Opinion": "不錯", "VA": "5.67#5.33"}, {"Aspect": "份量", "Opinion": "很少", "VA": "3.67#5.00"}]}
+{"ID": "R2068:S021", "Triplet": [{"Aspect": "食物", "Opinion": "很鹹", "VA": "3.83#5.50"}]}
+{"ID": "R0686:S055", "Triplet": [{"Aspect": "蘋果派", "Opinion": "溫暖", "VA": "6.25#5.50"}, {"Aspect": "蘋果塊", "Opinion": "香甜", "VA": "6.50#5.75"}]}
+{"ID": "R0602:S031", "Triplet": [{"Aspect": "排盤", "Opinion": "非常厲害", "VA": "6.75#6.50"}]}
+{"ID": "R0278:S035", "Triplet": [{"Aspect": "裝潢", "Opinion": "頗有質感", "VA": "6.25#5.75"}]}
+{"ID": "R0141:S015", "Triplet": [{"Aspect": "白魚身海老", "Opinion": "沒味道", "VA": "4.17#4.33"}]}
+{"ID": "R1192:S005", "Triplet": [{"Aspect": "綜合海鮮丼飯", "Opinion": "大推", "VA": "7.17#7.00"}]}
+{"ID": "R2922:S006", "Triplet": [{"Aspect": "空心菜", "Opinion": "很柴", "VA": "3.80#4.70"}]}
+{"ID": "R1222:S021", "Triplet": [{"Aspect": "臭豆腐味道", "Opinion": "不錯", "VA": "6.25#5.88"}]}
+{"ID": "R2277:S000", "Triplet": [{"Aspect": "鮮蝦蒸餃", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R1994:S014", "Triplet": [{"Aspect": "上菜速度", "Opinion": "很好", "VA": "6.25#6.00"}]}
+{"ID": "R1173:S033", "Triplet": [{"Aspect": "桌子", "Opinion": "不大", "VA": "4.33#4.50"}]}
+{"ID": "R1598:S003", "Triplet": [{"Aspect": "配菜口味", "Opinion": "詭異", "VA": "3.80#4.70"}]}
+{"ID": "R1690:S012", "Triplet": [{"Aspect": "盤菜調味", "Opinion": "稍油", "VA": "4.17#4.83"}]}
+{"ID": "R1551:S000", "Triplet": [{"Aspect": "酥皮濃湯", "Opinion": "好喝", "VA": "6.17#5.83"}]}
+{"ID": "R0030:S026", "Triplet": [{"Aspect": "湯頭", "Opinion": "偏淡", "VA": "4.25#5.25"}, {"Aspect": "湯頭", "Opinion": "不是很喜歡", "VA": "4.25#5.75"}]}
+{"ID": "R0787:S049", "Triplet": [{"Aspect": "馬鈴薯泥口感", "Opinion": "十分綿密", "VA": "6.62#6.38"}, {"Aspect": "馬鈴薯泥", "Opinion": "不會膩", "VA": "5.75#5.12"}]}
+{"ID": "R1933:S008", "Triplet": [{"Aspect": "百香茶鵝", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R1557:S002", "Triplet": [{"Aspect": "披薩", "Opinion": "稍微有點乾", "VA": "4.25#4.75"}]}
+{"ID": "R0364:S100", "Triplet": [{"Aspect": "肉質", "Opinion": "格外勁彈", "VA": "6.75#6.50"}]}
+{"ID": "R0722:S017", "Triplet": [{"Aspect": "花生醬", "Opinion": "濃郁鹹甜", "VA": "6.50#5.83"}, {"Aspect": "花生醬", "Opinion": "挺喜歡", "VA": "6.50#6.00"}]}
+{"ID": "R0469:S021", "Triplet": [{"Aspect": "肉餅", "Opinion": "較油", "VA": "4.25#5.25"}, {"Aspect": "肉餅", "Opinion": "較甜", "VA": "4.25#5.25"}]}
+{"ID": "R0106:S030", "Triplet": [{"Aspect": "麵", "Opinion": "軟爛無比", "VA": "3.88#5.38"}, {"Aspect": "醬料", "Opinion": "不合胃口", "VA": "3.88#4.50"}]}
+{"ID": "R0832:S008", "Triplet": [{"Aspect": "牛肉", "Opinion": "帶嚼感", "VA": "6.25#5.88"}, {"Aspect": "牛肉", "Opinion": "非軟嫩", "VA": "4.12#5.12"}]}
+{"ID": "R2888:S012", "Triplet": [{"Aspect": "糯米腸", "Opinion": "很少", "VA": "3.67#5.17"}, {"Aspect": "糯米腸", "Opinion": "有油耗味", "VA": "3.50#5.33"}]}
+{"ID": "R1000:S009", "Triplet": [{"Aspect": "麵線調味", "Opinion": "還算可以", "VA": "5.50#5.25"}]}
+{"ID": "R2749:S040", "Triplet": [{"Aspect": "干貝豬肚湯", "Opinion": "最驚豔", "VA": "7.12#7.12"}]}
+{"ID": "R2065:S039", "Triplet": [{"Aspect": "肉絲腥味", "Opinion": "明顯", "VA": "3.88#5.12"}]}
+{"ID": "R0120:S031", "Triplet": [{"Aspect": "雞湯", "Opinion": "比較出色", "VA": "6.25#6.00"}, {"Aspect": "糖醋肉", "Opinion": "比較出色", "VA": "6.25#6.00"}, {"Aspect": "其他", "Opinion": "蠻普", "VA": "5.25#5.00"}]}
+{"ID": "R1898:S009", "Triplet": [{"Aspect": "餐點的份量", "Opinion": "很足夠", "VA": "6.38#5.88"}]}
+{"ID": "R1035:S053", "Triplet": [{"Aspect": "雞肉", "Opinion": "不愛", "VA": "3.67#4.50"}, {"Aspect": "雞肉", "Opinion": "偏柴", "VA": "3.50#4.17"}]}
+{"ID": "R1433:S010", "Triplet": [{"Aspect": "氛圍", "Opinion": "輕鬆舒適", "VA": "6.25#5.50"}]}
+{"ID": "R2345:S001", "Triplet": [{"Aspect": "菜", "Opinion": "難吃", "VA": "3.83#5.50"}, {"Aspect": "菜", "Opinion": "冷", "VA": "4.17#5.00"}]}
+{"ID": "R0108:S013", "Triplet": [{"Aspect": "翻桌率", "Opinion": "算是快的", "VA": "5.75#5.38"}]}
+{"ID": "R2036:S017", "Triplet": [{"Aspect": "野人火鍋", "Opinion": "極力推薦", "VA": "7.00#7.00"}]}
+{"ID": "R2176:S018", "Triplet": [{"Aspect": "鱸魚", "Opinion": "很好吃", "VA": "6.67#6.33"}, {"Aspect": "配菜", "Opinion": "很用心", "VA": "6.50#6.17"}]}
+{"ID": "R2065:S024", "Triplet": [{"Aspect": "什錦咖哩炒麵", "Opinion": "算便宜", "VA": "5.75#5.38"}]}
+{"ID": "R2200:S023", "Triplet": [{"Aspect": "打拋豬", "Opinion": "非常的辣", "VA": "6.25#6.75"}, {"Aspect": "打拋豬", "Opinion": "鹹十足", "VA": "6.25#6.25"}, {"Aspect": "打拋豬", "Opinion": "好美味", "VA": "6.75#6.50"}]}
+{"ID": "R0854:S017", "Triplet": [{"Aspect": "湯頭", "Opinion": "濃郁", "VA": "6.25#5.88"}]}
+{"ID": "R2128:S008", "Triplet": [{"Aspect": "泡菜牛肉豆腐煲味道", "Opinion": "比較重", "VA": "5.38#5.50"}]}
+{"ID": "R0023:S010", "Triplet": [{"Aspect": "薯條", "Opinion": "好吃", "VA": "6.33#5.50"}]}
+{"ID": "R2858:S003", "Triplet": [{"Aspect": "鹹度", "Opinion": "不會太重", "VA": "6.25#5.75"}, {"Aspect": "鹹度", "Opinion": "剛剛好", "VA": "6.50#6.00"}]}
+{"ID": "R0842:S019", "Triplet": [{"Aspect": "魚", "Opinion": "蠻新鮮", "VA": "6.25#6.00"}, {"Aspect": "章魚", "Opinion": "有點乾硬", "VA": "4.25#5.25"}, {"Aspect": "干貝唇", "Opinion": "有點乾硬", "VA": "4.25#5.25"}]}
+{"ID": "R2756:S012", "Triplet": [{"Aspect": "紅燒魚翅", "Opinion": "很酸", "VA": "4.17#5.00"}, {"Aspect": "炒鱔魚", "Opinion": "很酸", "VA": "4.17#5.00"}]}
+{"ID": "R1535:S003", "Triplet": [{"Aspect": "餐廳環境", "Opinion": "非常舒服", "VA": "6.67#6.50"}]}
+{"ID": "R0959:S049", "Triplet": [{"Aspect": "酸度", "Opinion": "不太夠", "VA": "4.67#5.00"}, {"Aspect": "醇厚度", "Opinion": "不太夠", "VA": "4.67#5.00"}]}
+{"ID": "R2600:S002", "Triplet": [{"Aspect": "蝦仁口感", "Opinion": "Q彈", "VA": "6.25#5.75"}, {"Aspect": "蝦仁", "Opinion": "真的不錯吃", "VA": "6.50#6.00"}]}
+{"ID": "R2164:S005", "Triplet": [{"Aspect": "糖醋魚", "Opinion": "很大隻", "VA": "6.25#5.75"}, {"Aspect": "外皮", "Opinion": "酥脆", "VA": "6.50#6.00"}, {"Aspect": "肉質", "Opinion": "厚實軟嫩", "VA": "6.75#6.25"}]}
+{"ID": "R2155:S012", "Triplet": [{"Aspect": "甜品山粉圓", "Opinion": "不錯", "VA": "6.17#5.83"}]}
+{"ID": "R1718:S003", "Triplet": [{"Aspect": "鹽烤蝦", "Opinion": "大推", "VA": "7.25#7.12"}]}
+{"ID": "R1169:S032", "Triplet": [{"Aspect": "蕃薯椪外皮", "Opinion": "酥軟", "VA": "6.17#5.33"}]}
+{"ID": "R0797:S049", "Triplet": [{"Aspect": "雞肉", "Opinion": "相當多汁", "VA": "6.67#6.17"}]}
+{"ID": "R0197:S013", "Triplet": [{"Aspect": "叉燒麵條", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R1215:S062", "Triplet": [{"Aspect": "小菜", "Opinion": "超好吃", "VA": "6.67#6.50"}]}
+{"ID": "R0393:S064", "Triplet": [{"Aspect": "湯", "Opinion": "非常夠味", "VA": "6.67#6.50"}]}
+{"ID": "R0305:S001", "Triplet": [{"Aspect": "NULL", "Opinion": "非常美味", "VA": "7.12#6.50"}]}
+{"ID": "R1610:S015", "Triplet": [{"Aspect": "乾燒明蝦風味", "Opinion": "鮮甜", "VA": "6.17#5.33"}]}
+{"ID": "R0056:S050", "Triplet": [{"Aspect": "CP值", "Opinion": "頗高", "VA": "6.25#6.00"}, {"Aspect": "拿鐵", "Opinion": "滿順口", "VA": "6.50#6.00"}]}
+{"ID": "R3103:S006", "Triplet": [{"Aspect": "服務人員的態度", "Opinion": "不是很到位", "VA": "4.17#4.83"}]}
+{"ID": "R0849:S113", "Triplet": [{"Aspect": "肉", "Opinion": "很厚", "VA": "6.12#5.50"}, {"Aspect": "肉", "Opinion": "很嫩", "VA": "6.25#5.50"}]}
+{"ID": "R1730:S013", "Triplet": [{"Aspect": "辣椒", "Opinion": "不錯", "VA": "5.88#5.38"}]}
+{"ID": "R0823:S055", "Triplet": [{"Aspect": "紅燒肉", "Opinion": "真的優秀", "VA": "6.75#6.75"}]}
+{"ID": "R3232:S007", "Triplet": [{"Aspect": "醬爆雞丁", "Opinion": "很鹹", "VA": "4.17#5.00"}, {"Aspect": "醬爆雞丁", "Opinion": "沒什麼其他味道", "VA": "4.17#5.00"}, {"Aspect": "醬爆雞丁", "Opinion": "超不推薦", "VA": "3.50#6.33"}]}
+{"ID": "R1759:S016", "Triplet": [{"Aspect": "紅棗飯", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R1443:S007", "Triplet": [{"Aspect": "點心", "Opinion": "好吃", "VA": "6.12#5.50"}]}
+{"ID": "R3243:S010", "Triplet": [{"Aspect": "小菜豆干", "Opinion": "入味", "VA": "6.00#5.50"}, {"Aspect": "小菜豆干", "Opinion": "太乾", "VA": "4.50#5.50"}]}
+{"ID": "R3264:S001", "Triplet": [{"Aspect": "牛肉份量", "Opinion": "多", "VA": "6.25#5.50"}]}
+{"ID": "R1921:S012", "Triplet": [{"Aspect": "牛肉炒河粉", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R3268:S013", "Triplet": [{"Aspect": "份量", "Opinion": "有些小氣", "VA": "4.25#4.75"}]}
+{"ID": "R0189:S032", "Triplet": [{"Aspect": "越南點滴咖啡", "Opinion": "超值", "VA": "6.50#6.00"}]}
+{"ID": "R3077:S022", "Triplet": [{"Aspect": "豆花", "Opinion": "美味極了", "VA": "7.25#7.12"}]}
+{"ID": "R3093:S006", "Triplet": [{"Aspect": "片鴨肉的調味", "Opinion": "有點膩", "VA": "4.33#4.50"}, {"Aspect": "水蓮", "Opinion": "意外的好吃", "VA": "6.33#5.50"}]}
+{"ID": "R0078:S027", "Triplet": [{"Aspect": "雞翅", "Opinion": "真的好吃", "VA": "6.67#6.50"}]}
+{"ID": "R0104:S019", "Triplet": [{"Aspect": "涼筍", "Opinion": "真的一絕", "VA": "6.88#6.75"}]}
+{"ID": "R0842:S032", "Triplet": [{"Aspect": "玉子燒口味", "Opinion": "偏甜", "VA": "5.50#5.00"}, {"Aspect": "玉子燒口味", "Opinion": "蠻喜歡", "VA": "6.50#6.00"}, {"Aspect": "玉子燒口味", "Opinion": "膩口一點", "VA": "4.50#5.00"}]}
+{"ID": "R0602:S019", "Triplet": [{"Aspect": "裝潢", "Opinion": "漂亮", "VA": "6.33#6.17"}]}
+{"ID": "R0169:S010", "Triplet": [{"Aspect": "吧台", "Opinion": "有質感", "VA": "6.25#5.50"}]}
+{"ID": "R1437:S002", "Triplet": [{"Aspect": "餐廳食材", "Opinion": "新鮮", "VA": "6.12#5.50"}]}
+{"ID": "R1951:S006", "Triplet": [{"Aspect": "食材", "Opinion": "非常新鮮", "VA": "7.00#6.50"}]}
+{"ID": "R1493:S007", "Triplet": [{"Aspect": "餐點", "Opinion": "相當的多樣化", "VA": "6.17#5.83"}]}
+{"ID": "R0797:S075", "Triplet": [{"Aspect": "松露醬的份量", "Opinion": "真的不是開玩笑的多", "VA": "6.50#6.38"}]}
+{"ID": "R0369:S056", "Triplet": [{"Aspect": "腹肉", "Opinion": "香甜", "VA": "6.25#5.25"}]}
+{"ID": "R1385:S015", "Triplet": [{"Aspect": "雞排", "Opinion": "非常酥脆", "VA": "6.67#6.33"}]}
+{"ID": "R1179:S004", "Triplet": [{"Aspect": "小黃瓜片", "Opinion": "清爽", "VA": "6.17#5.83"}]}
+{"ID": "R3218:S006", "Triplet": [{"Aspect": "食物", "Opinion": "一般般", "VA": "5.00#4.88"}]}
+{"ID": "R3169:S013", "Triplet": [{"Aspect": "食物的份量", "Opinion": "偏少", "VA": "4.17#4.83"}]}
+{"ID": "R0077:S043", "Triplet": [{"Aspect": "紫米燕麥烤奶", "Opinion": "飽足感十足", "VA": "6.25#5.75"}, {"Aspect": "紫米燕麥烤奶", "Opinion": "絕對能夠滿足口慾", "VA": "6.75#6.50"}]}
+{"ID": "R0348:S024", "Triplet": [{"Aspect": "瘦肉", "Opinion": "稍乾硬", "VA": "4.25#4.75"}]}
+{"ID": "R3223:S017", "Triplet": [{"Aspect": "茶碗蒸", "Opinion": "蠻好吃", "VA": "6.25#5.75"}, {"Aspect": "價格", "Opinion": "偏高", "VA": "4.25#5.25"}]}
+{"ID": "R1649:S005", "Triplet": [{"Aspect": "主餐義大利麵", "Opinion": "太驚艷", "VA": "7.38#7.12"}]}
+{"ID": "R0652:S027", "Triplet": [{"Aspect": "台式泡菜", "Opinion": "酸甜爽口", "VA": "6.33#5.83"}, {"Aspect": "脆皮臭豆腐", "Opinion": "好吃", "VA": "6.67#6.00"}, {"Aspect": "份量", "Opinion": "大份", "VA": "6.33#5.83"}, {"Aspect": "CP值", "Opinion": "超高", "VA": "7.00#7.17"}]}
+{"ID": "R0469:S016", "Triplet": [{"Aspect": "餅皮", "Opinion": "不油", "VA": "6.25#5.25"}]}
+{"ID": "R0646:S002", "Triplet": [{"Aspect": "火鍋種類", "Opinion": "相當豐富", "VA": "6.50#6.00"}]}
+{"ID": "R1651:S008", "Triplet": [{"Aspect": "酥皮濃湯", "Opinion": "滿分", "VA": "7.00#6.88"}]}
+{"ID": "R2432:S007", "Triplet": [{"Aspect": "豆腐", "Opinion": "紮實", "VA": "6.12#5.50"}]}
+{"ID": "R1676:S011", "Triplet": [{"Aspect": "豬排餐", "Opinion": "推薦", "VA": "6.25#5.50"}]}
+{"ID": "R1684:S007", "Triplet": [{"Aspect": "蒸蛋腥味", "Opinion": "很重", "VA": "3.50#5.83"}]}
+{"ID": "R0717:S007", "Triplet": [{"Aspect": "香腸", "Opinion": "肥瘦適中", "VA": "6.00#5.00"}, {"Aspect": "香腸", "Opinion": "超多汁", "VA": "6.50#6.50"}]}
+{"ID": "R1976:S010", "Triplet": [{"Aspect": "體驗", "Opinion": "不太滿意", "VA": "3.67#4.50"}]}
+{"ID": "R0378:S018", "Triplet": [{"Aspect": "香料烤雞", "Opinion": "夠味", "VA": "6.17#5.83"}]}
+{"ID": "R3017:S009", "Triplet": [{"Aspect": "套餐價位", "Opinion": "非常划算", "VA": "6.50#6.00"}]}
+{"ID": "R1669:S006", "Triplet": [{"Aspect": "大阪燒豬排", "Opinion": "滿好吃的", "VA": "6.17#5.83"}]}
+{"ID": "R2984:S024", "Triplet": [{"Aspect": "店家服務", "Opinion": "比較隨性", "VA": "4.67#4.83"}]}
+{"ID": "R0266:S022", "Triplet": [{"Aspect": "空間", "Opinion": "狹小", "VA": "4.12#4.50"}]}
+{"ID": "R1726:S002", "Triplet": [{"Aspect": "蝦子的味道", "Opinion": "美味好吃", "VA": "6.75#6.38"}]}
+{"ID": "R0482:S035", "Triplet": [{"Aspect": "Choice翼板牛的表現", "Opinion": "不差", "VA": "5.62#5.12"}]}
+{"ID": "R0193:S044", "Triplet": [{"Aspect": "鮭魚片", "Opinion": "很小塊", "VA": "4.17#4.83"}]}
+{"ID": "R2326:S005", "Triplet": [{"Aspect": "櫻桃鴨", "Opinion": "偏貴", "VA": "4.50#5.00"}, {"Aspect": "擺盤", "Opinion": "尚可", "VA": "5.00#5.00"}, {"Aspect": "櫻桃鴨", "Opinion": "一般般", "VA": "5.00#5.00"}]}
+{"ID": "R2680:S012", "Triplet": [{"Aspect": "碳烤麵包", "Opinion": "新鮮出爐", "VA": "6.17#5.83"}]}
+{"ID": "R1629:S008", "Triplet": [{"Aspect": "餐點價錢", "Opinion": "不平價", "VA": "4.17#5.00"}]}
+{"ID": "R0076:S038", "Triplet": [{"Aspect": "清燉湯頭", "Opinion": "順口", "VA": "6.17#5.50"}, {"Aspect": "清燉湯頭", "Opinion": "舒服", "VA": "6.00#5.50"}]}
+{"ID": "R1243:S032", "Triplet": [{"Aspect": "凱吉思", "Opinion": "好吃", "VA": "6.25#5.50"}, {"Aspect": "價格", "Opinion": "便宜", "VA": "6.25#5.50"}]}
+{"ID": "R1641:S003", "Triplet": [{"Aspect": "餐廳氣氛", "Opinion": "很棒", "VA": "6.25#5.75"}]}
+{"ID": "R1576:S008", "Triplet": [{"Aspect": "馬鈴薯沙拉", "Opinion": "很棒", "VA": "6.67#6.33"}]}
+{"ID": "R0760:S068", "Triplet": [{"Aspect": "酒餚", "Opinion": "水準高超", "VA": "6.50#5.88"}]}
+{"ID": "R0966:S057", "Triplet": [{"Aspect": "手工烏梅汁", "Opinion": "好喝", "VA": "6.50#5.88"}, {"Aspect": "烏梅汁水準", "Opinion": "很高", "VA": "6.50#6.00"}]}
+{"ID": "R0844:S003", "Triplet": [{"Aspect": "味道", "Opinion": "很讚", "VA": "6.83#6.50"}, {"Aspect": "口感", "Opinion": "很讚", "VA": "6.83#6.50"}]}
+{"ID": "R3058:S005", "Triplet": [{"Aspect": "海鮮", "Opinion": "只有兩塊", "VA": "4.00#4.50"}, {"Aspect": "海鮮", "Opinion": "鹹到不行", "VA": "3.50#5.00"}]}
+{"ID": "R1617:S066", "Triplet": [{"Aspect": "鳳梨的味道", "Opinion": "不太突出", "VA": "4.25#4.75"}]}
+{"ID": "R1987:S016", "Triplet": [{"Aspect": "獅子頭湯頭", "Opinion": "很鮮甜", "VA": "6.50#6.38"}, {"Aspect": "牛肉", "Opinion": "好好吃", "VA": "6.50#6.38"}]}
+{"ID": "R0162:S070", "Triplet": [{"Aspect": "NULL", "Opinion": "超解膩", "VA": "6.67#6.50"}]}
+{"ID": "R2429:S025", "Triplet": [{"Aspect": "水蓮", "Opinion": "很喜歡", "VA": "6.67#6.50"}, {"Aspect": "水蓮", "Opinion": "不是很完美", "VA": "4.50#5.17"}]}
+{"ID": "R2066:S008", "Triplet": [{"Aspect": "醬汁", "Opinion": "足", "VA": "5.83#5.17"}, {"Aspect": "味道", "Opinion": "夠重", "VA": "6.17#5.50"}]}
+{"ID": "R1174:S010", "Triplet": [{"Aspect": "牛奶巧克力", "Opinion": "超有層次感", "VA": "6.67#6.33"}]}
+{"ID": "R3220:S002", "Triplet": [{"Aspect": "醋飯", "Opinion": "很多", "VA": "6.00#6.50"}, {"Aspect": "醋飯", "Opinion": "太鹹", "VA": "4.00#5.50"}, {"Aspect": "醋飯", "Opinion": "太黏", "VA": "4.00#5.50"}]}
+{"ID": "R0041:S039", "Triplet": [{"Aspect": "芋頭", "Opinion": "越嚼越香甜", "VA": "6.67#6.33"}]}
+{"ID": "R2146:S002", "Triplet": [{"Aspect": "湯頭", "Opinion": "完全沒味道", "VA": "3.83#4.50"}]}
+{"ID": "R2744:S000", "Triplet": [{"Aspect": "外皮", "Opinion": "Q彈厚實", "VA": "6.50#5.83"}, {"Aspect": "內餡調味", "Opinion": "剛好", "VA": "6.50#5.50"}, {"Aspect": "份量", "Opinion": "稍嫌不足", "VA": "4.50#5.17"}]}
+{"ID": "R1431:S004", "Triplet": [{"Aspect": "牛排", "Opinion": "超讚", "VA": "6.67#6.50"}]}
+{"ID": "R3256:S022", "Triplet": [{"Aspect": "牛肉", "Opinion": "乾柴", "VA": "4.12#4.50"}]}
+{"ID": "R1941:S003", "Triplet": [{"Aspect": "味增湯", "Opinion": "很有味道", "VA": "6.25#5.75"}]}
+{"ID": "R1543:S009", "Triplet": [{"Aspect": "起司松露燉飯", "Opinion": "很美味", "VA": "6.62#6.38"}]}
+{"ID": "R0923:S095", "Triplet": [{"Aspect": "絲瓜", "Opinion": "軟", "VA": "5.83#5.17"}, {"Aspect": "蝦仁", "Opinion": "脆", "VA": "5.83#5.17"}, {"Aspect": "絲瓜", "Opinion": "非常完美", "VA": "6.50#6.33"}, {"Aspect": "蝦仁", "Opinion": "非常完美", "VA": "6.50#6.33"}]}
+{"ID": "R2883:S001", "Triplet": [{"Aspect": "味道", "Opinion": "偏淡", "VA": "4.83#5.17"}]}
+{"ID": "R0615:S019", "Triplet": [{"Aspect": "蛋餅", "Opinion": "比較一般般", "VA": "4.88#4.75"}]}
+{"ID": "R0026:S001", "Triplet": [{"Aspect": "肉桂吉拿棒", "Opinion": "必買", "VA": "7.00#7.00"}]}
+{"ID": "R0864:S037", "Triplet": [{"Aspect": "麵條", "Opinion": "無感", "VA": "4.67#4.50"}, {"Aspect": "拉麵配料", "Opinion": "無感", "VA": "4.67#4.50"}, {"Aspect": "叉燒丼", "Opinion": "無感", "VA": "4.67#4.50"}]}
+{"ID": "R1428:S014", "Triplet": [{"Aspect": "松露洋芋泥", "Opinion": "推薦", "VA": "6.17#5.83"}]}
+{"ID": "R3262:S003", "Triplet": [{"Aspect": "龍鳳雙拼", "Opinion": "很夠味", "VA": "6.17#5.83"}, {"Aspect": "龍鳳雙拼", "Opinion": "好吃", "VA": "6.50#5.67"}]}
+{"ID": "R0843:S034", "Triplet": [{"Aspect": "驢打滾", "Opinion": "軟帶黏", "VA": "6.17#5.83"}, {"Aspect": "Ｑ彈感", "Opinion": "沒想像明顯", "VA": "4.50#5.67"}]}
+{"ID": "R0806:S151", "Triplet": [{"Aspect": "肉", "Opinion": "蠻鮮的", "VA": "6.25#5.50"}]}
+{"ID": "R0293:S012", "Triplet": [{"Aspect": "魚湯", "Opinion": "有點過於清淡", "VA": "4.17#4.33"}]}
+{"ID": "R1790:S005", "Triplet": [{"Aspect": "臘味炒飯米飯", "Opinion": "粒粒分明", "VA": "6.25#5.50"}]}
+{"ID": "R1845:S002", "Triplet": [{"Aspect": "炒飯", "Opinion": "乾爽", "VA": "6.25#5.88"}]}
+{"ID": "R3309:S013", "Triplet": [{"Aspect": "魚卵沙拉", "Opinion": "最香", "VA": "7.17#7.00"}]}
+{"ID": "R1983:S007", "Triplet": [{"Aspect": "京都焗排骨", "Opinion": "不錯吃", "VA": "6.17#5.83"}]}
+{"ID": "R1227:S051", "Triplet": [{"Aspect": "牛肉串", "Opinion": "不錯吃", "VA": "6.25#5.88"}, {"Aspect": "羊肉串", "Opinion": "不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R1710:S012", "Triplet": [{"Aspect": "高麗菜", "Opinion": "不香", "VA": "4.25#4.75"}]}
+{"ID": "R2245:S003", "Triplet": [{"Aspect": "餐點", "Opinion": "稍微普通", "VA": "4.75#5.00"}, {"Aspect": "口味", "Opinion": "偏鹹", "VA": "4.50#5.25"}]}
+{"ID": "R0109:S053", "Triplet": [{"Aspect": "香蕉清冰", "Opinion": "非常綿密", "VA": "6.67#6.33"}]}
+{"ID": "R0615:S021", "Triplet": [{"Aspect": "蘿蔔糕口感", "Opinion": "軟嫩", "VA": "6.12#5.50"}]}
+{"ID": "R3039:S000", "Triplet": [{"Aspect": "手工蛋餅", "Opinion": "好吃", "VA": "6.25#5.50"}, {"Aspect": "餅皮", "Opinion": "非常酥脆", "VA": "6.50#6.00"}]}
+{"ID": "R1501:S007", "Triplet": [{"Aspect": "海鮮粥", "Opinion": "鮮味濃厚", "VA": "6.50#6.00"}]}
+{"ID": "R0393:S014", "Triplet": [{"Aspect": "悶肉調味", "Opinion": "偏淡", "VA": "4.50#4.83"}]}
+{"ID": "R1548:S001", "Triplet": [{"Aspect": "肋排", "Opinion": "有一點腥味", "VA": "4.17#4.83"}]}
+{"ID": "R3031:S009", "Triplet": [{"Aspect": "蛋餅", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "蛋餅", "Opinion": "酥酥香香", "VA": "6.33#5.50"}, {"Aspect": "蛋餅", "Opinion": "很美味", "VA": "6.67#6.00"}]}
+{"ID": "R1991:S000", "Triplet": [{"Aspect": "雞尾酒", "Opinion": "蠻滿意的", "VA": "6.17#5.83"}]}
+{"ID": "R0030:S022", "Triplet": [{"Aspect": "油蔥酥", "Opinion": "有些妨礙口感", "VA": "4.17#5.00"}]}
+{"ID": "R0036:S005", "Triplet": [{"Aspect": "日本和牛", "Opinion": "不錯吃", "VA": "6.25#5.75"}]}
+{"ID": "R0475:S025", "Triplet": [{"Aspect": "小米甜甜圈", "Opinion": "軟Ｑ", "VA": "6.17#5.00"}, {"Aspect": "小米甜甜圈", "Opinion": "有彈性", "VA": "6.17#5.00"}]}
+{"ID": "R1179:S013", "Triplet": [{"Aspect": "湯頭", "Opinion": "很清爽", "VA": "6.25#5.75"}]}
+{"ID": "R2597:S027", "Triplet": [{"Aspect": "高湯", "Opinion": "爽口", "VA": "6.25#5.50"}, {"Aspect": "高湯", "Opinion": "濃厚", "VA": "6.25#5.75"}]}
+{"ID": "R0057:S107", "Triplet": [{"Aspect": "麵食", "Opinion": "蠻推薦", "VA": "6.25#6.00"}]}
+{"ID": "R0381:S089", "Triplet": [{"Aspect": "明太子鮮魚米餅口感", "Opinion": "特別", "VA": "5.88#5.50"}]}
+{"ID": "R0624:S015", "Triplet": [{"Aspect": "叉燒", "Opinion": "很嫩", "VA": "6.25#6.00"}]}
+{"ID": "R3191:S010", "Triplet": [{"Aspect": "炸物", "Opinion": "不油", "VA": "6.25#5.88"}]}
+{"ID": "R3097:S006", "Triplet": [{"Aspect": "裝潢服務", "Opinion": "相當水準", "VA": "6.17#5.83"}]}
+{"ID": "R3268:S041", "Triplet": [{"Aspect": "海鮮", "Opinion": "好吃", "VA": "6.50#6.25"}, {"Aspect": "份量", "Opinion": "偏少", "VA": "4.50#4.75"}, {"Aspect": "價格", "Opinion": "偏高", "VA": "4.50#4.75"}]}
+{"ID": "R2546:S002", "Triplet": [{"Aspect": "肉燥", "Opinion": "不死鹹", "VA": "6.25#5.50"}, {"Aspect": "肉燥", "Opinion": "帶膠質", "VA": "6.50#6.00"}, {"Aspect": "飯", "Opinion": "偏硬", "VA": "4.25#5.00"}]}
+{"ID": "R3021:S008", "Triplet": [{"Aspect": "咖哩", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "肉", "Opinion": "不錯", "VA": "6.00#5.50"}, {"Aspect": "肉", "Opinion": "有點太油", "VA": "4.00#5.00"}]}
+{"ID": "R1030:S029", "Triplet": [{"Aspect": "咖哩", "Opinion": "非常的香濃", "VA": "7.00#6.50"}, {"Aspect": "雞肉", "Opinion": "軟嫩入口即化", "VA": "6.50#6.00"}, {"Aspect": "咖哩", "Opinion": "美味", "VA": "6.50#5.50"}]}
+{"ID": "R1480:S005", "Triplet": [{"Aspect": "雙蛋潑辣嫩雞飯", "Opinion": "很好吃", "VA": "6.50#6.00"}]}
+{"ID": "R2132:S000", "Triplet": [{"Aspect": "菜盤的份量", "Opinion": "很大", "VA": "6.17#5.83"}, {"Aspect": "蛤蜊", "Opinion": "滿多的", "VA": "6.00#5.50"}]}
+{"ID": "R1967:S007", "Triplet": [{"Aspect": "餡料", "Opinion": "很有層次", "VA": "6.25#5.75"}]}
+{"ID": "R2133:S012", "Triplet": [{"Aspect": "餐廳", "Opinion": "滿不錯的", "VA": "6.25#6.00"}]}
+{"ID": "R0369:S064", "Triplet": [{"Aspect": "和牛牛肋丼飯", "Opinion": "更是吸引人", "VA": "6.50#6.33"}]}
+{"ID": "R1953:S020", "Triplet": [{"Aspect": "用餐環境", "Opinion": "擁擠", "VA": "4.25#4.88"}]}
+{"ID": "R3240:S022", "Triplet": [{"Aspect": "排骨", "Opinion": "蠻入味", "VA": "6.25#5.75"}]}
+{"ID": "R0488:S056", "Triplet": [{"Aspect": "豬腳", "Opinion": "透爛", "VA": "6.25#6.25"}, {"Aspect": "豬腳", "Opinion": "很夠味", "VA": "6.50#6.50"}]}
+{"ID": "R1818:S003", "Triplet": [{"Aspect": "點餐人員態度", "Opinion": "很差", "VA": "3.17#5.83"}]}
+{"ID": "R0369:S065", "Triplet": [{"Aspect": "牛肋", "Opinion": "焦脆", "VA": "6.25#5.88"}]}
+{"ID": "R1428:S018", "Triplet": [{"Aspect": "起司", "Opinion": "濃郁", "VA": "6.25#5.50"}, {"Aspect": "玉米", "Opinion": "鮮甜", "VA": "6.25#5.50"}]}
+{"ID": "R0435:S139", "Triplet": [{"Aspect": "魚板", "Opinion": "剛剛好", "VA": "6.25#5.88"}]}
+{"ID": "R2079:S005", "Triplet": [{"Aspect": "蘿蔔糕", "Opinion": "超普", "VA": "4.83#4.67"}, {"Aspect": "甜點類", "Opinion": "比較出色", "VA": "5.83#5.33"}]}
+{"ID": "R2196:S017", "Triplet": [{"Aspect": "冬瓜檸檬", "Opinion": "綽綽有餘", "VA": "5.88#5.38"}]}
+{"ID": "R1679:S004", "Triplet": [{"Aspect": "高麗菜絲", "Opinion": "爽脆", "VA": "6.12#5.50"}]}
+{"ID": "R0293:S015", "Triplet": [{"Aspect": "魚肉", "Opinion": "軟嫩", "VA": "6.25#5.25"}, {"Aspect": "魚肉", "Opinion": "鮮甜", "VA": "6.25#5.25"}]}
+{"ID": "R2833:S005", "Triplet": [{"Aspect": "口味", "Opinion": "不是我喜歡", "VA": "3.67#5.50"}]}
+{"ID": "R0364:S105", "Triplet": [{"Aspect": "米粒", "Opinion": "飽滿", "VA": "6.25#5.50"}]}
+{"ID": "R0214:S044", "Triplet": [{"Aspect": "豆芽菜", "Opinion": "清脆爽口", "VA": "6.17#5.33"}]}
+{"ID": "R1674:S003", "Triplet": [{"Aspect": "蕎麥麵口感", "Opinion": "有嚼勁", "VA": "6.17#5.33"}]}
+{"ID": "R0364:S067", "Triplet": [{"Aspect": "肉料", "Opinion": "豐盛", "VA": "6.25#5.50"}]}
+{"ID": "R1855:S013", "Triplet": [{"Aspect": "玉米筍", "Opinion": "最推薦", "VA": "6.62#6.50"}]}
+{"ID": "R0470:S016", "Triplet": [{"Aspect": "鴨皮", "Opinion": "微脆", "VA": "6.25#5.50"}, {"Aspect": "鴨皮", "Opinion": "香", "VA": "6.25#5.25"}]}
+{"ID": "R0117:S028", "Triplet": [{"Aspect": "切塊", "Opinion": "刮嘴感", "VA": "4.25#4.75"}]}
+{"ID": "R0698:S023", "Triplet": [{"Aspect": "巧克力海綿蛋糕", "Opinion": "有點過乾", "VA": "4.17#5.00"}]}
+{"ID": "R2702:S008", "Triplet": [{"Aspect": "雞肉", "Opinion": "沒味道", "VA": "4.25#4.50"}, {"Aspect": "雞肉", "Opinion": "很柴", "VA": "4.25#5.25"}]}
+{"ID": "R0823:S030", "Triplet": [{"Aspect": "排骨口味", "Opinion": "很讚", "VA": "6.67#6.17"}]}
+{"ID": "R1878:S005", "Triplet": [{"Aspect": "松阪豬", "Opinion": "推薦", "VA": "6.25#5.50"}]}
+{"ID": "R2168:S022", "Triplet": [{"Aspect": "白飯", "Opinion": "很香", "VA": "6.25#6.25"}, {"Aspect": "溫度", "Opinion": "偏涼冷", "VA": "4.25#5.25"}]}
+{"ID": "R1154:S024", "Triplet": [{"Aspect": "底皮", "Opinion": "焦脆", "VA": "6.25#5.50"}]}
+{"ID": "R0991:S031", "Triplet": [{"Aspect": "太刀魚", "Opinion": "不錯", "VA": "6.25#5.88"}]}
+{"ID": "R1215:S005", "Triplet": [{"Aspect": "炸牛蒡", "Opinion": "最愛", "VA": "7.25#7.12"}]}
+{"ID": "R0613:S056", "Triplet": [{"Aspect": "熱飲", "Opinion": "很不錯", "VA": "6.25#6.25"}]}
+{"ID": "R0057:S126", "Triplet": [{"Aspect": "沙嗲士多", "Opinion": "非常推薦", "VA": "7.17#7.00"}]}
+{"ID": "R0440:S012", "Triplet": [{"Aspect": "餐廳", "Opinion": "很美", "VA": "6.33#6.50"}]}
+{"ID": "R1719:S011", "Triplet": [{"Aspect": "羊肉爐份量", "Opinion": "十足", "VA": "6.12#5.50"}]}
+{"ID": "R0015:S037", "Triplet": [{"Aspect": "草莓三明治", "Opinion": "美味", "VA": "6.25#5.75"}]}
+{"ID": "R1672:S007", "Triplet": [{"Aspect": "豬排", "Opinion": "有些偏老", "VA": "4.25#4.75"}]}
+{"ID": "R3093:S015", "Triplet": [{"Aspect": "白菜鴨湯", "Opinion": "偏油", "VA": "4.17#4.83"}]}
+{"ID": "R0917:S022", "Triplet": [{"Aspect": "雞腿排", "Opinion": "好大塊", "VA": "6.17#5.83"}, {"Aspect": "麵的份量", "Opinion": "蠻多", "VA": "6.00#5.67"}]}
+{"ID": "R0923:S180", "Triplet": [{"Aspect": "湯的濃稠度", "Opinion": "夠", "VA": "6.00#5.50"}, {"Aspect": "酸味", "Opinion": "不是很明顯", "VA": "5.00#5.00"}, {"Aspect": "辣味", "Opinion": "不是很明顯", "VA": "5.00#5.00"}]}
+{"ID": "R2970:S005", "Triplet": [{"Aspect": "酸辣湯", "Opinion": "太酸", "VA": "3.83#5.17"}]}
+{"ID": "R3258:S012", "Triplet": [{"Aspect": "椒麻雞", "Opinion": "很喜歡", "VA": "6.75#6.50"}, {"Aspect": "炸花枝", "Opinion": "很喜歡", "VA": "6.75#6.50"}]}
+{"ID": "R0165:S005", "Triplet": [{"Aspect": "豚骨湯底", "Opinion": "真的非常好喝", "VA": "7.00#6.88"}]}
+{"ID": "R0707:S094", "Triplet": [{"Aspect": "車蝦溫度", "Opinion": "沒有很高", "VA": "4.50#4.75"}, {"Aspect": "車蝦", "Opinion": "蠻好吃", "VA": "6.25#5.75"}]}
+{"ID": "R0888:S009", "Triplet": [{"Aspect": "蚵嗲", "Opinion": "不錯", "VA": "6.00#5.50"}, {"Aspect": "麵衣", "Opinion": "薄脆", "VA": "6.00#5.25"}, {"Aspect": "蚵仔", "Opinion": "蠻涮嘴", "VA": "6.25#5.75"}]}
+{"ID": "R2553:S009", "Triplet": [{"Aspect": "酥炸肥腸份量", "Opinion": "少", "VA": "4.00#4.38"}]}
+{"ID": "R2839:S008", "Triplet": [{"Aspect": "薯餅", "Opinion": "美味", "VA": "6.83#6.17"}, {"Aspect": "薯餅", "Opinion": "必點", "VA": "7.17#7.00"}]}
+{"ID": "R1594:S007", "Triplet": [{"Aspect": "醋飯", "Opinion": "有點乾", "VA": "4.25#4.88"}]}
+{"ID": "R1473:S004", "Triplet": [{"Aspect": "法國麵包", "Opinion": "好乾", "VA": "4.25#4.75"}]}
+{"ID": "R0669:S023", "Triplet": [{"Aspect": "價格", "Opinion": "不算貴", "VA": "5.50#5.25"}, {"Aspect": "味道", "Opinion": "不錯", "VA": "5.75#5.50"}]}
+{"ID": "R2169:S010", "Triplet": [{"Aspect": "飲料", "Opinion": "超級無敵普通", "VA": "4.83#4.67"}]}
+{"ID": "R0061:S040", "Triplet": [{"Aspect": "唐揚炸雞", "Opinion": "有點偏乾", "VA": "4.17#5.00"}]}
+{"ID": "R2188:S006", "Triplet": [{"Aspect": "炸蝦餅", "Opinion": "很油", "VA": "3.88#4.75"}, {"Aspect": "椒麻雞", "Opinion": "很油", "VA": "3.88#4.75"}]}
+{"ID": "R1527:S020", "Triplet": [{"Aspect": "魚肉口感", "Opinion": "很好", "VA": "6.25#5.88"}]}
+{"ID": "R2203:S002", "Triplet": [{"Aspect": "檸檬鱸魚肉質", "Opinion": "鮮美", "VA": "6.38#5.88"}, {"Aspect": "味道", "Opinion": "獨特", "VA": "6.00#5.75"}]}
+{"ID": "R2757:S014", "Triplet": [{"Aspect": "甜點流沙包", "Opinion": "可愛", "VA": "6.17#5.83"}, {"Aspect": "味道", "Opinion": "十分用心", "VA": "6.50#6.33"}]}
+{"ID": "R1539:S026", "Triplet": [{"Aspect": "前菜", "Opinion": "很好吃", "VA": "6.25#6.00"}]}
+{"ID": "R1962:S005", "Triplet": [{"Aspect": "肉", "Opinion": "鮮嫩多汁", "VA": "6.50#6.00"}, {"Aspect": "肉", "Opinion": "非常好吃", "VA": "7.00#7.00"}, {"Aspect": "調味", "Opinion": "很恰到好處", "VA": "6.50#6.00"}]}
+{"ID": "R2756:S010", "Triplet": [{"Aspect": "食物", "Opinion": "很難下嚥", "VA": "3.25#5.75"}]}
+{"ID": "R2749:S059", "Triplet": [{"Aspect": "布丁體", "Opinion": "特殊的奶油味道", "VA": "5.50#5.83"}]}
+{"ID": "R0108:S033", "Triplet": [{"Aspect": "小卷", "Opinion": "相當Q彈", "VA": "6.25#5.75"}, {"Aspect": "鮮度", "Opinion": "夠", "VA": "5.75#5.25"}]}
+{"ID": "R0783:S007", "Triplet": [{"Aspect": "湯頭麻度", "Opinion": "很夠", "VA": "6.17#5.83"}]}
+{"ID": "R0618:S020", "Triplet": [{"Aspect": "椪糖拿鐵", "Opinion": "推薦", "VA": "6.25#5.75"}, {"Aspect": "椪糖拿鐵", "Opinion": "必點", "VA": "6.50#6.00"}, {"Aspect": "拿鐵", "Opinion": "好喝", "VA": "6.25#5.75"}, {"Aspect": "椪糖", "Opinion": "酥脆", "VA": "6.00#5.50"}]}
+{"ID": "R0130:S132", "Triplet": [{"Aspect": "用餐經驗", "Opinion": "非常美好", "VA": "6.67#6.50"}]}
+{"ID": "R3210:S009", "Triplet": [{"Aspect": "南瓜泥", "Opinion": "很好吃", "VA": "6.25#5.75"}]}
+{"ID": "R0466:S028", "Triplet": [{"Aspect": "芝麻球", "Opinion": "中規中矩", "VA": "5.00#5.00"}]}
+{"ID": "R0736:S034", "Triplet": [{"Aspect": "三杯鴨骨煲", "Opinion": "蠻香", "VA": "6.17#5.33"}]}
+{"ID": "R2149:S005", "Triplet": [{"Aspect": "糖醋魚", "Opinion": "好吃", "VA": "6.25#5.50"}, {"Aspect": "炒米粉", "Opinion": "略油", "VA": "4.50#4.75"}, {"Aspect": "炒米粉", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R3176:S010", "Triplet": [{"Aspect": "鮖鮔滷肉", "Opinion": "最回味", "VA": "6.75#6.38"}]}
+{"ID": "R2553:S008", "Triplet": [{"Aspect": "櫻花蝦炒高麗菜", "Opinion": "令人失望", "VA": "3.40#5.80"}]}
+{"ID": "R2919:S002", "Triplet": [{"Aspect": "蚵仔", "Opinion": "很大顆", "VA": "6.25#6.00"}]}
+{"ID": "R1846:S011", "Triplet": [{"Aspect": "豆腐", "Opinion": "很入味", "VA": "6.25#6.25"}]}
+{"ID": "R2851:S005", "Triplet": [{"Aspect": "麵線", "Opinion": "還好", "VA": "5.25#5.00"}, {"Aspect": "拉麵", "Opinion": "還好", "VA": "5.25#5.00"}]}
+{"ID": "R1191:S026", "Triplet": [{"Aspect": "餐廳座位數", "Opinion": "不多", "VA": "4.67#5.00"}]}
+{"ID": "R0088:S004", "Triplet": [{"Aspect": "酸菜", "Opinion": "帶香味的", "VA": "6.25#5.75"}, {"Aspect": "酸菜", "Opinion": "滿新奇的", "VA": "6.50#6.00"}]}
+{"ID": "R0901:S030", "Triplet": [{"Aspect": "透抽", "Opinion": "很好吃", "VA": "6.67#6.33"}, {"Aspect": "透抽", "Opinion": "Q彈", "VA": "6.17#5.83"}, {"Aspect": "透抽", "Opinion": "新鮮", "VA": "6.17#5.83"}, {"Aspect": "透抽", "Opinion": "有咬勁", "VA": "6.17#5.83"}]}
+{"ID": "R3192:S008", "Triplet": [{"Aspect": "雞翅", "Opinion": "最好", "VA": "7.00#6.50"}, {"Aspect": "調味", "Opinion": "有點鹹", "VA": "4.50#4.50"}, {"Aspect": "薯條", "Opinion": "普通", "VA": "5.00#5.00"}]}
+{"ID": "R3163:S004", "Triplet": [{"Aspect": "烤煎鯖魚", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R3153:S009", "Triplet": [{"Aspect": "店員", "Opinion": "非常溫柔", "VA": "6.75#6.25"}, {"Aspect": "店員", "Opinion": "很專業", "VA": "6.50#6.00"}]}
+{"ID": "R3273:S013", "Triplet": [{"Aspect": "烤蝦", "Opinion": "最喜歡", "VA": "6.67#6.50"}, {"Aspect": "絲瓜蚵仔", "Opinion": "最喜歡", "VA": "6.67#6.50"}]}
+{"ID": "R1188:S014", "Triplet": [{"Aspect": "麵條", "Opinion": "很好吃", "VA": "6.25#6.00"}]}
+{"ID": "R0948:S007", "Triplet": [{"Aspect": "麵條", "Opinion": "有咬感", "VA": "5.75#5.25"}, {"Aspect": "麵條", "Opinion": "不軟爛", "VA": "5.75#5.25"}]}
+{"ID": "R1570:S017", "Triplet": [{"Aspect": "服務人員的服務", "Opinion": "親切周到", "VA": "6.38#5.88"}]}
+{"ID": "R2623:S007", "Triplet": [{"Aspect": "口味", "Opinion": "不錯", "VA": "5.88#5.38"}]}
+{"ID": "R2043:S006", "Triplet": [{"Aspect": "份量", "Opinion": "飽足", "VA": "6.25#5.50"}, {"Aspect": "店員的服務", "Opinion": "很到位", "VA": "6.50#6.00"}]}
+{"ID": "R2045:S033", "Triplet": [{"Aspect": "服務", "Opinion": "再加強", "VA": "4.67#5.50"}]}
+{"ID": "R0586:S032", "Triplet": [{"Aspect": "金錢蝦餅", "Opinion": "不錯吃", "VA": "6.17#5.83"}]}
+{"ID": "R1993:S016", "Triplet": [{"Aspect": "主餐", "Opinion": "沒那麼驚艷", "VA": "4.50#4.83"}]}
+{"ID": "R3101:S001", "Triplet": [{"Aspect": "鴨皮壽司", "Opinion": "蠻好吃", "VA": "6.17#5.83"}, {"Aspect": "三星蔥鴨捲", "Opinion": "蠻好吃", "VA": "6.17#5.83"}, {"Aspect": "附餐料理", "Opinion": "比較普通", "VA": "5.00#5.17"}]}
+{"ID": "R0421:S013", "Triplet": [{"Aspect": "餅乾口味", "Opinion": "超級多", "VA": "6.75#6.75"}]}
+{"ID": "R1953:S008", "Triplet": [{"Aspect": "炸雞", "Opinion": "鮮嫩多汁", "VA": "6.50#5.83"}]}
+{"ID": "R0242:S021", "Triplet": [{"Aspect": "燒仙草", "Opinion": "一絕", "VA": "6.88#6.38"}]}
+{"ID": "R1689:S009", "Triplet": [{"Aspect": "咕咾肉", "Opinion": "皮酥內香", "VA": "6.17#5.83"}]}
+{"ID": "R1675:S011", "Triplet": [{"Aspect": "拉麵湯頭", "Opinion": "讚", "VA": "6.75#6.25"}, {"Aspect": "麵條", "Opinion": "Q", "VA": "6.25#5.75"}]}
+{"ID": "R1191:S003", "Triplet": [{"Aspect": "豆花", "Opinion": "好吃", "VA": "6.83#6.50"}]}
+{"ID": "R0553:S066", "Triplet": [{"Aspect": "配料", "Opinion": "多層", "VA": "6.25#5.50"}, {"Aspect": "配料", "Opinion": "多量", "VA": "6.25#5.50"}]}
+{"ID": "R0668:S069", "Triplet": [{"Aspect": "綠咖哩雞", "Opinion": "必點", "VA": "6.50#6.00"}]}
+{"ID": "R0114:S012", "Triplet": [{"Aspect": "餐點", "Opinion": "很多選擇", "VA": "6.25#5.50"}, {"Aspect": "餐點", "Opinion": "應有盡有", "VA": "6.50#6.00"}]}
+{"ID": "R1177:S023", "Triplet": [{"Aspect": "魚肉", "Opinion": "細緻", "VA": "6.25#5.50"}]}
+{"ID": "R0843:S010", "Triplet": [{"Aspect": "賽螃蟹", "Opinion": "稍油", "VA": "4.25#4.75"}]}
+{"ID": "R0561:S036", "Triplet": [{"Aspect": "燉豬肉配玉米糊", "Opinion": "很特別", "VA": "6.38#5.88"}]}
+{"ID": "R0584:S064", "Triplet": [{"Aspect": "脆皮雞腿", "Opinion": "口感極好", "VA": "7.00#6.50"}]}
+{"ID": "R0466:S033", "Triplet": [{"Aspect": "停車場", "Opinion": "停車方便", "VA": "6.25#5.88"}]}
+{"ID": "R0560:S020", "Triplet": [{"Aspect": "肉", "Opinion": "不會膩口", "VA": "6.25#5.50"}]}
+{"ID": "R2652:S007", "Triplet": [{"Aspect": "水果茶", "Opinion": "算不錯", "VA": "6.00#5.50"}, {"Aspect": "水果", "Opinion": "偏少一些", "VA": "4.50#5.00"}]}
+{"ID": "R2889:S016", "Triplet": [{"Aspect": "調味", "Opinion": "蠻喜歡", "VA": "6.25#6.00"}]}
+{"ID": "R0816:S006", "Triplet": [{"Aspect": "白醬海鮮義大利麵", "Opinion": "好吃", "VA": "6.38#5.88"}]}
+{"ID": "R0551:S048", "Triplet": [{"Aspect": "轎篙筍", "Opinion": "最愛", "VA": "7.25#7.12"}]}
+{"ID": "R2749:S064", "Triplet": [{"Aspect": "湯圓", "Opinion": "Q彈", "VA": "6.25#5.50"}, {"Aspect": "湯圓", "Opinion": "不黏牙", "VA": "6.00#5.25"}, {"Aspect": "湯圓", "Opinion": "沒有變硬", "VA": "5.75#5.00"}]}
+{"ID": "R2234:S007", "Triplet": [{"Aspect": "凱薩沙拉", "Opinion": "清爽解膩", "VA": "6.38#5.88"}]}
+{"ID": "R1456:S013", "Triplet": [{"Aspect": "餐廳價格", "Opinion": "略高", "VA": "4.67#5.00"}]}
+{"ID": "R0044:S025", "Triplet": [{"Aspect": "魷魚", "Opinion": "蠻新鮮可口", "VA": "6.50#6.00"}, {"Aspect": "魷魚", "Opinion": "鮮味", "VA": "6.50#5.50"}]}
+{"ID": "R0215:S035", "Triplet": [{"Aspect": "麵", "Opinion": "不會讓你失望", "VA": "6.25#5.25"}]}
+{"ID": "R1161:S024", "Triplet": [{"Aspect": "肝臟", "Opinion": "還算新鮮", "VA": "5.75#5.38"}]}
+{"ID": "R0183:S013", "Triplet": [{"Aspect": "花枝丸", "Opinion": "外酥裡彈", "VA": "6.17#5.83"}, {"Aspect": "花枝丸", "Opinion": "無可挑剃", "VA": "7.00#6.17"}]}
+{"ID": "R1852:S007", "Triplet": [{"Aspect": "堅果塔", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R1174:S033", "Triplet": [{"Aspect": "冰摩卡", "Opinion": "好有層次", "VA": "6.17#5.83"}]}
+{"ID": "R1933:S005", "Triplet": [{"Aspect": "壽司種類", "Opinion": "很多", "VA": "6.25#5.88"}]}
+{"ID": "R1994:S008", "Triplet": [{"Aspect": "牛排館", "Opinion": "經濟實惠", "VA": "6.12#5.50"}]}
+{"ID": "R1208:S081", "Triplet": [{"Aspect": "內餡", "Opinion": "不會太甜", "VA": "5.75#5.12"}]}
+{"ID": "R0076:S021", "Triplet": [{"Aspect": "牛筋", "Opinion": "Ｑ", "VA": "6.12#5.25"}, {"Aspect": "牛筋", "Opinion": "有咬勁", "VA": "6.25#5.50"}, {"Aspect": "牛肚", "Opinion": "無臊", "VA": "5.75#5.00"}, {"Aspect": "牛肚", "Opinion": "軟彈", "VA": "6.00#5.25"}]}
+{"ID": "R1246:S004", "Triplet": [{"Aspect": "停車位", "Opinion": "難找", "VA": "3.67#4.50"}]}
+{"ID": "R2855:S003", "Triplet": [{"Aspect": "肉", "Opinion": "入口即化", "VA": "6.67#6.33"}, {"Aspect": "羊騷味", "Opinion": "剛剛好", "VA": "5.50#5.33"}]}
+{"ID": "R1225:S008", "Triplet": [{"Aspect": "食材", "Opinion": "新鮮", "VA": "5.88#5.38"}]}
+{"ID": "R0664:S047", "Triplet": [{"Aspect": "原味甜甜圈", "Opinion": "外脆內鬆綿帶Ｑ", "VA": "6.00#5.62"}]}
+{"ID": "R0944:S007", "Triplet": [{"Aspect": "芥末脆薯", "Opinion": "特別推薦", "VA": "6.50#6.00"}, {"Aspect": "芥末脆薯", "Opinion": "必點", "VA": "6.50#6.00"}]}
+{"ID": "R1689:S021", "Triplet": [{"Aspect": "松阪豬口感", "Opinion": "脆香", "VA": "6.12#5.50"}]}
+{"ID": "R0467:S017", "Triplet": [{"Aspect": "蔥油餅表皮", "Opinion": "酥脆", "VA": "6.00#5.50"}, {"Aspect": "麵體", "Opinion": "炸過頭", "VA": "4.00#5.50"}]}
+{"ID": "R0703:S011", "Triplet": [{"Aspect": "意麵", "Opinion": "有點妙", "VA": "5.25#5.25"}]}
+{"ID": "R1175:S013", "Triplet": [{"Aspect": "環境", "Opinion": "整潔", "VA": "6.12#5.25"}]}
+{"ID": "R2677:S007", "Triplet": [{"Aspect": "麻香猴頭菇菇鍋", "Opinion": "必點", "VA": "6.50#6.00"}, {"Aspect": "窯烤麵包乳酪雞", "Opinion": "必吃", "VA": "6.50#6.00"}, {"Aspect": "窯烤麵包乳酪雞", "Opinion": "會牽絲", "VA": "6.25#5.50"}]}
+{"ID": "R2665:S004", "Triplet": [{"Aspect": "牛肉石鍋", "Opinion": "不錯", "VA": "6.25#5.50"}, {"Aspect": "牛肉石鍋", "Opinion": "很大碗", "VA": "6.50#6.00"}, {"Aspect": "料", "Opinion": "多", "VA": "6.50#6.00"}]}
+{"ID": "R2840:S002", "Triplet": [{"Aspect": "停車", "Opinion": "方便", "VA": "5.67#5.33"}]}
+{"ID": "R0128:S010", "Triplet": [{"Aspect": "雞肉", "Opinion": "很是下飯", "VA": "6.25#6.12"}]}
+{"ID": "R3120:S000", "Triplet": [{"Aspect": "老爹牛肉麵", "Opinion": "超推薦", "VA": "7.17#7.00"}]}
+{"ID": "R1409:S027", "Triplet": [{"Aspect": "品項選擇", "Opinion": "豐富", "VA": "6.25#5.50"}]}
+{"ID": "R0832:S019", "Triplet": [{"Aspect": "調味", "Opinion": "過淡", "VA": "3.67#5.17"}, {"Aspect": "雨來菇", "Opinion": "軟溼糊", "VA": "3.50#5.00"}]}
+{"ID": "R3098:S007", "Triplet": [{"Aspect": "海鮮豆腐煲", "Opinion": "最推薦", "VA": "6.75#6.88"}]}
+{"ID": "R1433:S001", "Triplet": [{"Aspect": "餐廳環境", "Opinion": "非常舒服", "VA": "6.62#6.50"}]}
+{"ID": "R1777:S009", "Triplet": [{"Aspect": "炒烏龍麵", "Opinion": "很不錯", "VA": "6.17#5.83"}]}
+{"ID": "R0060:S025", "Triplet": [{"Aspect": "味噌湯", "Opinion": "蠻好喝", "VA": "6.25#5.75"}, {"Aspect": "味噌湯", "Opinion": "不死鹹", "VA": "5.75#5.25"}]}
+{"ID": "R1018:S069", "Triplet": [{"Aspect": "和牛清湯香氣", "Opinion": "撲鼻", "VA": "6.38#6.12"}, {"Aspect": "和牛清湯", "Opinion": "清甜", "VA": "5.88#5.50"}, {"Aspect": "牛肉味", "Opinion": "鮮明", "VA": "5.88#5.50"}]}
+{"ID": "R0879:S047", "Triplet": [{"Aspect": "料理", "Opinion": "中規中矩", "VA": "5.00#4.75"}]}
+{"ID": "R0456:S036", "Triplet": [{"Aspect": "親子蓋飯", "Opinion": "不錯吃", "VA": "6.25#5.75"}]}
+{"ID": "R1458:S002", "Triplet": [{"Aspect": "漢堡排", "Opinion": "多汁", "VA": "6.25#5.75"}]}
+{"ID": "R3088:S012", "Triplet": [{"Aspect": "三杯鴨", "Opinion": "美中不足", "VA": "4.50#4.83"}]}
+{"ID": "R1759:S009", "Triplet": [{"Aspect": "薑絲大腸", "Opinion": "偏酸", "VA": "4.50#4.83"}]}
+{"ID": "R1610:S009", "Triplet": [{"Aspect": "鮑魚佛跳牆湯頭", "Opinion": "很鮮甜", "VA": "6.50#6.50"}]}
+{"ID": "R1395:S029", "Triplet": [{"Aspect": "上菜速度", "Opinion": "蠻快的", "VA": "6.25#5.75"}]}
+{"ID": "R1726:S003", "Triplet": [{"Aspect": "蒜頭蝦味道", "Opinion": "很足夠", "VA": "6.17#5.83"}]}
+{"ID": "R1761:S011", "Triplet": [{"Aspect": "餐點", "Opinion": "很養生", "VA": "6.25#5.75"}]}
+{"ID": "R1555:S010", "Triplet": [{"Aspect": "奇異果汁", "Opinion": "滿稀的", "VA": "4.17#5.00"}]}
+{"ID": "R1545:S029", "Triplet": [{"Aspect": "牛肝菌菇", "Opinion": "非常喜歡", "VA": "6.75#6.88"}]}
+{"ID": "R1691:S014", "Triplet": [{"Aspect": "松阪豬", "Opinion": "富有彈度", "VA": "6.12#5.50"}]}
+{"ID": "R1846:S008", "Triplet": [{"Aspect": "海鮮", "Opinion": "很豐富", "VA": "6.67#6.50"}]}
+{"ID": "R3009:S005", "Triplet": [{"Aspect": "麵份量", "Opinion": "很多", "VA": "6.25#6.00"}, {"Aspect": "廁所", "Opinion": "很乾淨", "VA": "6.50#6.25"}]}
+{"ID": "R2033:S002", "Triplet": [{"Aspect": "肉品質感", "Opinion": "普通", "VA": "5.00#5.00"}, {"Aspect": "服務態度", "Opinion": "0分", "VA": "2.50#5.25"}]}
+{"ID": "R0084:S075", "Triplet": [{"Aspect": "直火金目鯛熟度", "Opinion": "洽恰好", "VA": "6.25#5.50"}]}
+{"ID": "R0813:S030", "Triplet": [{"Aspect": "餛飩", "Opinion": "好吃", "VA": "6.33#5.50"}]}
+{"ID": "R0306:S033", "Triplet": [{"Aspect": "蛋黃", "Opinion": "有點腥味", "VA": "3.80#4.70"}]}
+{"ID": "R0809:S027", "Triplet": [{"Aspect": "土樓炒飯", "Opinion": "大推", "VA": "6.75#6.88"}]}
+{"ID": "R1638:S007", "Triplet": [{"Aspect": "燉飯口味", "Opinion": "剛剛好", "VA": "5.50#4.88"}]}
+{"ID": "R0306:S043", "Triplet": [{"Aspect": "紅豆", "Opinion": "不過甜", "VA": "4.67#5.50"}]}
+{"ID": "R0012:S024", "Triplet": [{"Aspect": "小菜", "Opinion": "很開胃", "VA": "6.25#6.12"}]}
+{"ID": "R2623:S005", "Triplet": [{"Aspect": "薑絲鴨湯的肉量", "Opinion": "多的超過想像", "VA": "6.50#6.50"}, {"Aspect": "湯頭", "Opinion": "清甜", "VA": "6.25#5.75"}]}
+{"ID": "R1471:S013", "Triplet": [{"Aspect": "餐點", "Opinion": "沒有特別突出", "VA": "4.75#4.75"}]}
+{"ID": "R3053:S018", "Triplet": [{"Aspect": "炒絲瓜", "Opinion": "令人搖頭", "VA": "3.50#5.83"}]}
+{"ID": "R2305:S004", "Triplet": [{"Aspect": "蒸餃", "Opinion": "渾圓飽滿", "VA": "6.17#5.83"}, {"Aspect": "蒸餃", "Opinion": "晶瑩油亮", "VA": "6.50#6.17"}]}
+{"ID": "R0567:S003", "Triplet": [{"Aspect": "水餃", "Opinion": "很大顆", "VA": "6.25#5.88"}, {"Aspect": "水餃", "Opinion": "扎實", "VA": "6.25#5.62"}]}
+{"ID": "R3020:S011", "Triplet": [{"Aspect": "咖哩飯份量", "Opinion": "不手軟", "VA": "6.38#6.12"}]}
+{"ID": "R0188:S114", "Triplet": [{"Aspect": "鮑魚", "Opinion": "很好吃", "VA": "6.25#5.50"}, {"Aspect": "鮑魚", "Opinion": "非常新鮮", "VA": "6.50#5.75"}]}
+{"ID": "R1883:S004", "Triplet": [{"Aspect": "白飯", "Opinion": "超級好吃", "VA": "7.25#7.12"}]}
+{"ID": "R1767:S016", "Triplet": [{"Aspect": "米飯口感", "Opinion": "不佳", "VA": "3.80#4.70"}]}
+{"ID": "R0690:S004", "Triplet": [{"Aspect": "餐點價格", "Opinion": "相當實惠平價", "VA": "6.38#5.88"}]}
+{"ID": "R0351:S140", "Triplet": [{"Aspect": "味道", "Opinion": "濃郁", "VA": "6.12#5.50"}]}
+{"ID": "R1166:S086", "Triplet": [{"Aspect": "昆布湯", "Opinion": "清爽", "VA": "6.25#5.75"}]}
+{"ID": "R0578:S018", "Triplet": [{"Aspect": "和菓子口味", "Opinion": "非常多", "VA": "6.25#5.75"}]}
+{"ID": "R0287:S008", "Triplet": [{"Aspect": "蘿蔔糕", "Opinion": "蠻大塊的", "VA": "6.17#5.83"}, {"Aspect": "蘿蔔糕", "Opinion": "厚實", "VA": "6.00#5.50"}]}
+{"ID": "R1549:S002", "Triplet": [{"Aspect": "餅皮口感", "Opinion": "香脆", "VA": "6.25#5.75"}]}
+{"ID": "R0456:S002", "Triplet": [{"Aspect": "綜合握壽司", "Opinion": "大推", "VA": "7.17#7.00"}]}
+{"ID": "R0813:S031", "Triplet": [{"Aspect": "肉片", "Opinion": "偏乾柴", "VA": "4.25#4.75"}, {"Aspect": "肉片", "Opinion": "可惜", "VA": "4.25#5.25"}]}
+{"ID": "R1565:S001", "Triplet": [{"Aspect": "義大利麵口味", "Opinion": "很有層次", "VA": "6.17#6.00"}]}
+{"ID": "R1015:S004", "Triplet": [{"Aspect": "串燒碳烤種類", "Opinion": "相當多", "VA": "6.17#5.83"}]}
+{"ID": "R0305:S037", "Triplet": [{"Aspect": "肋眼油脂", "Opinion": "頗豐", "VA": "5.83#5.33"}]}
+{"ID": "R0758:S022", "Triplet": [{"Aspect": "吐司口感", "Opinion": "很鬆軟", "VA": "6.17#5.83"}]}
+{"ID": "R3264:S005", "Triplet": [{"Aspect": "馬鈴薯", "Opinion": "不錯", "VA": "6.25#5.50"}, {"Aspect": "牛肉", "Opinion": "中規中矩", "VA": "5.00#4.75"}, {"Aspect": "牛肉", "Opinion": "不算嫩", "VA": "4.25#5.00"}]}
+{"ID": "R2894:S010", "Triplet": [{"Aspect": "料", "Opinion": "特別多", "VA": "6.50#6.25"}, {"Aspect": "店家態度", "Opinion": "沒到很好", "VA": "4.25#5.25"}]}
+{"ID": "R2986:S015", "Triplet": [{"Aspect": "豬腳", "Opinion": "太小塊", "VA": "4.25#4.75"}]}
+{"ID": "R0679:S031", "Triplet": [{"Aspect": "冰釀咖啡", "Opinion": "相當不錯", "VA": "6.25#5.75"}]}
+{"ID": "R2431:S016", "Triplet": [{"Aspect": "玉米黍", "Opinion": "很鮮甜", "VA": "6.50#6.38"}, {"Aspect": "玉米黍", "Opinion": "有碳香味", "VA": "6.50#6.25"}]}
+{"ID": "R1242:S015", "Triplet": [{"Aspect": "價格", "Opinion": "非常平價實惠", "VA": "6.50#6.00"}]}
+{"ID": "R2033:S012", "Triplet": [{"Aspect": "態度", "Opinion": "很好", "VA": "6.33#5.83"}]}
+{"ID": "R1769:S008", "Triplet": [{"Aspect": "砂鍋魚頭米粉湯", "Opinion": "很不錯", "VA": "6.25#5.88"}]}
+{"ID": "R1522:S002", "Triplet": [{"Aspect": "澎湖斑節蝦", "Opinion": "非常好吃", "VA": "7.00#6.50"}]}
+{"ID": "R0145:S022", "Triplet": [{"Aspect": "雞肉片的份量", "Opinion": "適中", "VA": "5.50#5.00"}]}
+{"ID": "R0692:S031", "Triplet": [{"Aspect": "口感", "Opinion": "中庸", "VA": "5.00#4.62"}]}
+{"ID": "R1019:S028", "Triplet": [{"Aspect": "甜蝦", "Opinion": "非常好吃", "VA": "7.25#7.25"}]}
+{"ID": "R1233:S023", "Triplet": [{"Aspect": "肉量", "Opinion": "真的是肉多多", "VA": "6.75#6.50"}]}
+{"ID": "R0806:S170", "Triplet": [{"Aspect": "口感", "Opinion": "蠻好的", "VA": "6.12#5.50"}]}
+{"ID": "R2046:S009", "Triplet": [{"Aspect": "湯頭", "Opinion": "普普", "VA": "5.00#5.00"}, {"Aspect": "湯頭", "Opinion": "蠻甘甜", "VA": "6.25#6.00"}]}
+{"ID": "R1809:S036", "Triplet": [{"Aspect": "椒鹽軟殼蟹", "Opinion": "好吃", "VA": "6.17#5.83"}]}
+{"ID": "R1562:S010", "Triplet": [{"Aspect": "飲料", "Opinion": "大杯", "VA": "5.83#5.17"}]}
+{"ID": "R2751:S002", "Triplet": [{"Aspect": "菜", "Opinion": "精緻", "VA": "6.12#5.25"}, {"Aspect": "菜", "Opinion": "好吃", "VA": "6.12#5.25"}, {"Aspect": "菜", "Opinion": "缺乏驚艷感", "VA": "4.75#5.50"}]}
+{"ID": "R0349:S052", "Triplet": [{"Aspect": "香氣", "Opinion": "足夠", "VA": "6.25#5.25"}]}
+{"ID": "R1231:S102", "Triplet": [{"Aspect": "蘿蔔泥", "Opinion": "超級好吃", "VA": "7.25#7.12"}]}
+{"ID": "R0017:S013", "Triplet": [{"Aspect": "座位數", "Opinion": "相當多", "VA": "6.25#6.25"}]}
+{"ID": "R1159:S089", "Triplet": [{"Aspect": "蛤蜊", "Opinion": "真的新鮮", "VA": "6.25#6.25"}]}
+{"ID": "R1360:S033", "Triplet": [{"Aspect": "炒米粉", "Opinion": "有點普", "VA": "4.83#4.67"}, {"Aspect": "炒米粉", "Opinion": "太乾", "VA": "4.00#5.00"}, {"Aspect": "口味", "Opinion": "太淡", "VA": "4.00#5.00"}]}
+{"ID": "R2128:S012", "Triplet": [{"Aspect": "司康", "Opinion": "好吃", "VA": "6.33#5.50"}]}
+{"ID": "R1754:S002", "Triplet": [{"Aspect": "梅干菜", "Opinion": "好好吃", "VA": "6.25#5.75"}]}
+{"ID": "R2038:S003", "Triplet": [{"Aspect": "交通", "Opinion": "非常方便", "VA": "6.50#6.50"}, {"Aspect": "環境氣氛", "Opinion": "佳", "VA": "6.00#5.50"}, {"Aspect": "火鍋料", "Opinion": "美味", "VA": "6.50#6.00"}]}
+{"ID": "R1583:S010", "Triplet": [{"Aspect": "菜色", "Opinion": "最糟糕", "VA": "3.25#6.25"}]}
+{"ID": "R1765:S007", "Triplet": [{"Aspect": "佶醬排骨", "Opinion": "很嫩", "VA": "6.17#5.83"}]}
+{"ID": "R2017:S013", "Triplet": [{"Aspect": "桌面", "Opinion": "油膩不堪", "VA": "3.25#5.50"}]}
+{"ID": "R1491:S008", "Triplet": [{"Aspect": "土雞粥", "Opinion": "推薦", "VA": "6.25#5.88"}]}
+{"ID": "R1734:S005", "Triplet": [{"Aspect": "石鍋拌飯", "Opinion": "好好吃", "VA": "6.50#5.88"}]}
+{"ID": "R0142:S087", "Triplet": [{"Aspect": "湯", "Opinion": "真的太順口好喝", "VA": "7.00#7.00"}]}
+{"ID": "R2014:S009", "Triplet": [{"Aspect": "豬頭肉湯", "Opinion": "一般", "VA": "5.00#4.88"}, {"Aspect": "豬頭肉湯", "Opinion": "較沒特色", "VA": "4.75#5.00"}]}
+{"ID": "R0044:S007", "Triplet": [{"Aspect": "菜單品項", "Opinion": "沒有想像多", "VA": "4.67#5.00"}]}
+{"ID": "R0469:S035", "Triplet": [{"Aspect": "蒜頭酥", "Opinion": "蠻特別", "VA": "6.25#5.75"}]}
+{"ID": "R0351:S021", "Triplet": [{"Aspect": "菜色", "Opinion": "精緻", "VA": "6.25#5.25"}]}
+{"ID": "R0800:S001", "Triplet": [{"Aspect": "雙乳酪蛋糕", "Opinion": "入口即化", "VA": "6.67#5.83"}]}
+{"ID": "R0175:S006", "Triplet": [{"Aspect": "中式點心", "Opinion": "很強", "VA": "6.50#6.00"}]}
+{"ID": "R0824:S006", "Triplet": [{"Aspect": "食物品質", "Opinion": "有水準", "VA": "6.25#5.75"}]}
+{"ID": "R2760:S008", "Triplet": [{"Aspect": "鴨肉", "Opinion": "軟嫩", "VA": "6.25#5.50"}, {"Aspect": "湯頭", "Opinion": "清爽", "VA": "6.25#5.50"}, {"Aspect": "湯頭", "Opinion": "超好喝", "VA": "7.00#6.50"}]}
+{"ID": "R2036:S015", "Triplet": [{"Aspect": "野人火鍋", "Opinion": "素食者的一大驕傲", "VA": "6.75#6.62"}]}
+{"ID": "R1483:S003", "Triplet": [{"Aspect": "NULL", "Opinion": "還不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R1617:S102", "Triplet": [{"Aspect": "配料", "Opinion": "多", "VA": "5.88#5.50"}]}
+{"ID": "R2580:S035", "Triplet": [{"Aspect": "蝦仁", "Opinion": "很大", "VA": "6.12#5.50"}, {"Aspect": "廣式炒飯", "Opinion": "很優秀", "VA": "6.50#6.00"}]}
+{"ID": "R1763:S009", "Triplet": [{"Aspect": "炒水蓮油量", "Opinion": "偏多", "VA": "4.67#5.00"}]}
+{"ID": "R2385:S004", "Triplet": [{"Aspect": "飯", "Opinion": "真的是敗筆", "VA": "3.67#6.17"}, {"Aspect": "飯", "Opinion": "軟不Q", "VA": "4.17#5.17"}, {"Aspect": "飯", "Opinion": "不及格", "VA": "4.00#5.00"}]}
+{"ID": "R2074:S001", "Triplet": [{"Aspect": "月亮炸蝦餅", "Opinion": "最驚豔", "VA": "7.38#7.50"}]}
+{"ID": "R0832:S033", "Triplet": [{"Aspect": "牛肚", "Opinion": "略韌難嚼", "VA": "4.17#4.83"}, {"Aspect": "牛肚", "Opinion": "沒有特別驚豔", "VA": "4.50#4.67"}]}
+{"ID": "R0842:S023", "Triplet": [{"Aspect": "生魚片", "Opinion": "只喜歡鮭魚", "VA": "5.50#5.38"}]}
+{"ID": "R1776:S005", "Triplet": [{"Aspect": "甜點銀耳蓮子", "Opinion": "非常普通", "VA": "5.00#4.88"}]}
+{"ID": "R3021:S007", "Triplet": [{"Aspect": "服務態度", "Opinion": "很散漫", "VA": "3.80#4.80"}]}
+{"ID": "R0878:S018", "Triplet": [{"Aspect": "生巧克力", "Opinion": "微苦", "VA": "4.67#5.00"}, {"Aspect": "生巧克力", "Opinion": "濃郁", "VA": "5.67#5.00"}]}
+{"ID": "R1738:S008", "Triplet": [{"Aspect": "嗶嗶飯", "Opinion": "最失望", "VA": "3.25#6.12"}]}
+{"ID": "R0202:S062", "Triplet": [{"Aspect": "乳酪", "Opinion": "濃郁好吃", "VA": "6.75#6.38"}]}
+{"ID": "R0584:S041", "Triplet": [{"Aspect": "雞肉", "Opinion": "嫩", "VA": "6.12#5.50"}, {"Aspect": "雞肉", "Opinion": "非常夠味", "VA": "6.75#6.25"}]}
+{"ID": "R0465:S001", "Triplet": [{"Aspect": "NULL", "Opinion": "有一點擠", "VA": "4.25#4.25"}]}
+{"ID": "R0114:S023", "Triplet": [{"Aspect": "雞肉", "Opinion": "不會太柴", "VA": "6.25#5.75"}]}
+{"ID": "R2885:S001", "Triplet": [{"Aspect": "麵", "Opinion": "很少", "VA": "4.33#5.33"}, {"Aspect": "湯", "Opinion": "很水", "VA": "4.33#5.33"}, {"Aspect": "價格", "Opinion": "很高", "VA": "4.33#5.33"}]}
+{"ID": "R0342:S046", "Triplet": [{"Aspect": "口感", "Opinion": "不乾柴", "VA": "6.25#5.25"}]}
+{"ID": "R1831:S002", "Triplet": [{"Aspect": "蔥花口感", "Opinion": "非常好", "VA": "6.67#6.50"}]}
+{"ID": "R1174:S015", "Triplet": [{"Aspect": "咖啡", "Opinion": "用心", "VA": "6.38#5.88"}]}
+{"ID": "R0435:S100", "Triplet": [{"Aspect": "口感", "Opinion": "非常好", "VA": "6.67#6.33"}]}
+{"ID": "R1485:S005", "Triplet": [{"Aspect": "無花果", "Opinion": "非常開胃", "VA": "6.50#6.83"}]}
+{"ID": "R2987:S008", "Triplet": [{"Aspect": "內餡", "Opinion": "沒有特別好吃", "VA": "4.25#4.75"}]}
+{"ID": "R2013:S008", "Triplet": [{"Aspect": "肉片", "Opinion": "略柴", "VA": "4.25#4.50"}, {"Aspect": "餛飩乾板條", "Opinion": "不錯", "VA": "5.50#5.00"}, {"Aspect": "餛飩乾板條", "Opinion": "沒什麼記憶點", "VA": "4.50#4.75"}]}
+{"ID": "R1718:S001", "Triplet": [{"Aspect": "蝦頭", "Opinion": "濃郁多汁", "VA": "6.17#5.83"}]}
+{"ID": "R0438:S005", "Triplet": [{"Aspect": "牛肉燥飯", "Opinion": "很好吃", "VA": "6.75#6.38"}]}
+{"ID": "R2986:S006", "Triplet": [{"Aspect": "內餡", "Opinion": "很有味道", "VA": "6.25#6.00"}]}
+{"ID": "R0032:S034", "Triplet": [{"Aspect": "蜂蜜紅茶", "Opinion": "非常難喝", "VA": "2.83#6.17"}, {"Aspect": "蜂蜜紅茶", "Opinion": "臭味", "VA": "3.00#5.33"}, {"Aspect": "蜂蜜紅茶", "Opinion": "超貴", "VA": "3.00#5.50"}]}
+{"ID": "R0766:S028", "Triplet": [{"Aspect": "凍豆腐", "Opinion": "沒吸到湯汁", "VA": "4.00#5.00"}, {"Aspect": "凍豆腐", "Opinion": "沒味道", "VA": "4.00#5.00"}]}
+{"ID": "R2865:S014", "Triplet": [{"Aspect": "NULL", "Opinion": "普普", "VA": "5.00#4.88"}]}
+{"ID": "R1723:S009", "Triplet": [{"Aspect": "清炒高麗菜", "Opinion": "不錯", "VA": "6.17#5.83"}]}
+{"ID": "R1476:S000", "Triplet": [{"Aspect": "法西塔", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R0057:S010", "Triplet": [{"Aspect": "價格", "Opinion": "實在", "VA": "5.88#5.38"}, {"Aspect": "份量", "Opinion": "大", "VA": "5.75#5.25"}]}
+{"ID": "R1993:S014", "Triplet": [{"Aspect": "咖啡", "Opinion": "還不錯", "VA": "5.75#5.50"}, {"Aspect": "甜點", "Opinion": "中規中矩", "VA": "5.00#4.75"}]}
+{"ID": "R0272:S067", "Triplet": [{"Aspect": "豆腐", "Opinion": "滿滿水份", "VA": "6.67#6.17"}, {"Aspect": "豆腐", "Opinion": "超入味", "VA": "7.00#7.00"}]}
+{"ID": "R2556:S006", "Triplet": [{"Aspect": "烤鴨", "Opinion": "要加強", "VA": "4.25#4.75"}]}
+{"ID": "R0349:S081", "Triplet": [{"Aspect": "滋味", "Opinion": "意猶未盡", "VA": "6.50#6.00"}]}
+{"ID": "R1477:S002", "Triplet": [{"Aspect": "冰咖啡", "Opinion": "很難喝", "VA": "3.25#5.75"}]}
+{"ID": "R2687:S008", "Triplet": [{"Aspect": "黑蒜雞火鍋風味", "Opinion": "濃郁", "VA": "6.38#5.88"}, {"Aspect": "蒜味", "Opinion": "十足", "VA": "6.38#6.00"}]}
+{"ID": "R3299:S003", "Triplet": [{"Aspect": "食材", "Opinion": "不多", "VA": "4.33#5.33"}, {"Aspect": "消費", "Opinion": "不超值", "VA": "4.33#5.50"}]}
+{"ID": "R0263:S011", "Triplet": [{"Aspect": "空間", "Opinion": "不算大", "VA": "4.50#4.50"}, {"Aspect": "空間", "Opinion": "蠻乾淨", "VA": "5.75#5.25"}]}
+{"ID": "R3061:S010", "Triplet": [{"Aspect": "生魚片", "Opinion": "沒什麼味道", "VA": "4.17#4.83"}]}
+{"ID": "R1553:S015", "Triplet": [{"Aspect": "義大利麵", "Opinion": "不錯吃", "VA": "6.25#5.75"}, {"Aspect": "窯烤披薩", "Opinion": "不錯吃", "VA": "6.25#5.75"}]}
+{"ID": "R2270:S025", "Triplet": [{"Aspect": "肉絲蛋炒飯味道", "Opinion": "還好", "VA": "5.00#4.88"}]}
+{"ID": "R0467:S005", "Triplet": [{"Aspect": "菜單品項", "Opinion": "不多", "VA": "4.75#4.75"}]}
+{"ID": "R0584:S031", "Triplet": [{"Aspect": "小卷", "Opinion": "非常新鮮", "VA": "6.67#6.50"}]}
+{"ID": "R1594:S000", "Triplet": [{"Aspect": "招牌丼飯", "Opinion": "比較小碗", "VA": "4.17#4.33"}]}
+{"ID": "R0659:S013", "Triplet": [{"Aspect": "排骨湯", "Opinion": "不錯", "VA": "6.25#5.50"}, {"Aspect": "排骨湯", "Opinion": "鮮甜", "VA": "6.50#5.75"}, {"Aspect": "排骨湯", "Opinion": "好喝", "VA": "6.75#6.00"}]}
+{"ID": "R0685:S015", "Triplet": [{"Aspect": "炸雞", "Opinion": "出乎意料的好吃", "VA": "6.75#6.50"}, {"Aspect": "炸雞外皮", "Opinion": "香酥脆", "VA": "6.50#6.00"}]}
+{"ID": "R1667:S002", "Triplet": [{"Aspect": "青醬義大利麵麵條", "Opinion": "很難咬", "VA": "3.83#5.50"}]}
+{"ID": "R1747:S001", "Triplet": [{"Aspect": "泡菜炒牛肉味道", "Opinion": "還不錯", "VA": "5.75#5.25"}]}
+{"ID": "R0069:S007", "Triplet": [{"Aspect": "店內沒有廁所", "Opinion": "小小缺點", "VA": "4.38#4.88"}]}
+{"ID": "R1177:S041", "Triplet": [{"Aspect": "調味", "Opinion": "太淡", "VA": "3.67#5.50"}]}
+{"ID": "R2152:S007", "Triplet": [{"Aspect": "薑絲炒大腸", "Opinion": "必點", "VA": "7.00#7.00"}, {"Aspect": "酸", "Opinion": "很到位", "VA": "6.50#6.50"}, {"Aspect": "薑絲炒大腸", "Opinion": "非常下飯", "VA": "6.50#6.50"}]}
+{"ID": "R1359:S041", "Triplet": [{"Aspect": "泰式奶茶冰淇淋", "Opinion": "比較喜歡", "VA": "6.25#5.88"}]}
+{"ID": "R0026:S010", "Triplet": [{"Aspect": "肉桂吉拿棒", "Opinion": "必吃", "VA": "6.75#6.38"}]}
+{"ID": "R1159:S047", "Triplet": [{"Aspect": "炙燒紋甲烏賊左", "Opinion": "超愛", "VA": "7.25#7.00"}]}
+{"ID": "R2321:S006", "Triplet": [{"Aspect": "薑黃起司牛奶鍋", "Opinion": "最愛", "VA": "7.38#7.12"}, {"Aspect": "薑黃起司牛奶鍋", "Opinion": "真材實料", "VA": "6.62#6.00"}, {"Aspect": "薑黃起司牛奶鍋", "Opinion": "很養生", "VA": "6.38#6.00"}]}
+{"ID": "R0850:S015", "Triplet": [{"Aspect": "環境", "Opinion": "非常的隱密舒適", "VA": "6.75#6.75"}]}
+{"ID": "R1698:S012", "Triplet": [{"Aspect": "蔥爆牛肉", "Opinion": "味道清爽", "VA": "6.17#5.83"}]}
+{"ID": "R1439:S023", "Triplet": [{"Aspect": "涼拌牛肉", "Opinion": "不錯", "VA": "6.25#5.50"}]}
+{"ID": "R0332:S013", "Triplet": [{"Aspect": "萊姆酒", "Opinion": "蠻好喝", "VA": "6.17#5.83"}]}
+{"ID": "R0823:S011", "Triplet": [{"Aspect": "荔枝紅茶", "Opinion": "推薦", "VA": "6.25#5.25"}]}
+{"ID": "R2536:S007", "Triplet": [{"Aspect": "鹹粥魚皮湯", "Opinion": "很鮮美", "VA": "6.33#6.00"}, {"Aspect": "乾煎虱目魚肚", "Opinion": "很鮮美", "VA": "6.33#6.00"}, {"Aspect": "魚皮湯", "Opinion": "完全沒有腥味", "VA": "6.33#6.00"}]}
+{"ID": "R0148:S022", "Triplet": [{"Aspect": "雞腿", "Opinion": "不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R2164:S009", "Triplet": [{"Aspect": "梅干扣肉", "Opinion": "軟嫩", "VA": "6.17#5.83"}, {"Aspect": "梅干菜", "Opinion": "不會過於死鹹", "VA": "5.83#5.50"}]}
+{"ID": "R0935:S014", "Triplet": [{"Aspect": "冰檸檬法式伯爵紅茶", "Opinion": "一般般", "VA": "5.00#5.00"}, {"Aspect": "冰檸檬法式伯爵紅茶", "Opinion": "沒什麼記憶點", "VA": "4.75#5.25"}]}
+{"ID": "R2185:S005", "Triplet": [{"Aspect": "餐點口味", "Opinion": "還算不錯", "VA": "6.00#5.50"}]}
+{"ID": "R3279:S013", "Triplet": [{"Aspect": "鮑魚", "Opinion": "挺驚艷", "VA": "6.50#6.17"}, {"Aspect": "調味", "Opinion": "非常佳", "VA": "6.50#6.33"}]}
+{"ID": "R0031:S016", "Triplet": [{"Aspect": "松阪豬", "Opinion": "很爽", "VA": "6.67#6.17"}]}
+{"ID": "R0142:S081", "Triplet": [{"Aspect": "料", "Opinion": "超多", "VA": "6.83#6.50"}]}
+{"ID": "R1975:S000", "Triplet": [{"Aspect": "價格", "Opinion": "略高", "VA": "4.50#4.50"}]}
+{"ID": "R1189:S062", "Triplet": [{"Aspect": "干貝", "Opinion": "好喜歡", "VA": "6.67#6.50"}]}
+{"ID": "R2202:S003", "Triplet": [{"Aspect": "大骨湯海鮮麵", "Opinion": "料多味美", "VA": "6.50#6.25"}]}
+{"ID": "R0303:S016", "Triplet": [{"Aspect": "空間", "Opinion": "通風良好", "VA": "6.25#5.88"}]}
+{"ID": "R2885:S004", "Triplet": [{"Aspect": "服務人員態度", "Opinion": "超差", "VA": "3.25#5.75"}]}
+{"ID": "R1802:S028", "Triplet": [{"Aspect": "醬汁", "Opinion": "有點鹹", "VA": "4.25#4.88"}]}
+{"ID": "R1610:S012", "Triplet": [{"Aspect": "雞胸肉", "Opinion": "有點柴", "VA": "4.25#4.75"}]}
+{"ID": "R0475:S004", "Triplet": [{"Aspect": "店面", "Opinion": "很乾淨", "VA": "6.25#5.75"}]}
+{"ID": "R1444:S019", "Triplet": [{"Aspect": "九孔鮑", "Opinion": "很好吃", "VA": "6.75#6.38"}]}
+{"ID": "R1774:S062", "Triplet": [{"Aspect": "綜合壽司", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R1359:S027", "Triplet": [{"Aspect": "高麗菜", "Opinion": "很新鮮脆嫩", "VA": "6.67#6.33"}]}
+{"ID": "R3270:S017", "Triplet": [{"Aspect": "蝦肉", "Opinion": "水份流失", "VA": "4.17#4.83"}]}
+{"ID": "R0934:S024", "Triplet": [{"Aspect": "芋泥", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "芋泥", "Opinion": "很滑順", "VA": "6.50#5.67"}, {"Aspect": "芋泥", "Opinion": "容易吃膩", "VA": "4.33#5.50"}]}
+{"ID": "R0361:S028", "Triplet": [{"Aspect": "熱炒類", "Opinion": "沒有太出色", "VA": "4.17#4.83"}]}
+{"ID": "R1643:S011", "Triplet": [{"Aspect": "義大利麵味道", "Opinion": "蠻不錯", "VA": "6.17#5.83"}]}
+{"ID": "R0236:S016", "Triplet": [{"Aspect": "NULL", "Opinion": "無限驚喜", "VA": "7.25#7.25"}]}
+{"ID": "R0403:S021", "Triplet": [{"Aspect": "麵疙瘩味道", "Opinion": "真是不錯", "VA": "6.50#6.38"}]}
+{"ID": "R1998:S004", "Triplet": [{"Aspect": "奶茶", "Opinion": "很小杯", "VA": "3.83#4.67"}, {"Aspect": "奶精味", "Opinion": "很重", "VA": "3.83#4.67"}]}
+{"ID": "R1509:S016", "Triplet": [{"Aspect": "食材", "Opinion": "多樣化", "VA": "6.25#5.25"}]}
+{"ID": "R1486:S002", "Triplet": [{"Aspect": "松露雞腿飯", "Opinion": "還不錯", "VA": "5.75#5.25"}]}
+{"ID": "R0127:S012", "Triplet": [{"Aspect": "CP值", "Opinion": "真的是超高", "VA": "7.25#7.12"}]}
+{"ID": "R3311:S004", "Triplet": [{"Aspect": "醃漬小黃瓜", "Opinion": "不錯", "VA": "6.17#5.83"}, {"Aspect": "過貓", "Opinion": "不錯", "VA": "6.17#5.83"}, {"Aspect": "米血糕口感", "Opinion": "偏乾硬", "VA": "4.00#5.00"}]}
+{"ID": "R2938:S007", "Triplet": [{"Aspect": "煎餅", "Opinion": "脆香", "VA": "6.25#5.25"}, {"Aspect": "煎餅", "Opinion": "大片", "VA": "6.25#5.25"}]}
+{"ID": "R0038:S014", "Triplet": [{"Aspect": "金錢蝦餅", "Opinion": "非常喜歡", "VA": "7.17#6.83"}]}
+{"ID": "R1480:S008", "Triplet": [{"Aspect": "墨西哥餅皮", "Opinion": "非常讚", "VA": "6.75#6.75"}]}
+{"ID": "R0290:S096", "Triplet": [{"Aspect": "豆芽蔥段", "Opinion": "滿滿的", "VA": "6.17#5.83"}, {"Aspect": "芹菜", "Opinion": "滿滿的", "VA": "6.17#5.83"}]}
+{"ID": "R1201:S014", "Triplet": [{"Aspect": "湯", "Opinion": "很鮮甜", "VA": "6.67#6.50"}]}
+{"ID": "R1771:S000", "Triplet": [{"Aspect": "上菜速度", "Opinion": "非常慢", "VA": "3.25#5.75"}]}
+{"ID": "R2968:S006", "Triplet": [{"Aspect": "金門海石蚵", "Opinion": "嬌小", "VA": "5.00#5.00"}, {"Aspect": "金門海石蚵", "Opinion": "非常鮮甜", "VA": "6.67#6.67"}]}
+{"ID": "R0351:S044", "Triplet": [{"Aspect": "味道", "Opinion": "溫潤飽滿", "VA": "6.25#5.75"}]}
+{"ID": "R0842:S027", "Triplet": [{"Aspect": "烏龍麵", "Opinion": "Q彈美味", "VA": "6.50#5.83"}, {"Aspect": "料", "Opinion": "很多", "VA": "6.17#5.50"}]}
+{"ID": "R0772:S028", "Triplet": [{"Aspect": "田螺", "Opinion": "頗Q", "VA": "6.25#6.00"}]}
+{"ID": "R0807:S064", "Triplet": [{"Aspect": "長棍", "Opinion": "極度美味", "VA": "7.25#7.12"}]}
+{"ID": "R0261:S065", "Triplet": [{"Aspect": "巴布卡", "Opinion": "太甜膩", "VA": "4.17#5.83"}]}
+{"ID": "R0011:S018", "Triplet": [{"Aspect": "價格", "Opinion": "超便宜", "VA": "7.12#6.88"}]}
+{"ID": "R1487:S007", "Triplet": [{"Aspect": "牛排香氣", "Opinion": "撲鼻", "VA": "6.12#5.88"}]}
+{"ID": "R0622:S036", "Triplet": [{"Aspect": "餅皮", "Opinion": "相當香", "VA": "6.25#6.25"}]}
+{"ID": "R0602:S042", "Triplet": [{"Aspect": "炒飯", "Opinion": "挺好吃", "VA": "6.25#5.50"}, {"Aspect": "炒飯", "Opinion": "粒粒分明", "VA": "6.50#5.75"}]}
+{"ID": "R0174:S055", "Triplet": [{"Aspect": "醬骨頭", "Opinion": "便宜", "VA": "6.25#5.25"}, {"Aspect": "醬骨頭", "Opinion": "好吃", "VA": "6.25#5.25"}]}
+{"ID": "R1862:S024", "Triplet": [{"Aspect": "牛肉肉質", "Opinion": "不錯", "VA": "6.25#5.50"}]}
+{"ID": "R1982:S013", "Triplet": [{"Aspect": "雞肉的肉質", "Opinion": "很不錯", "VA": "6.25#5.75"}]}
+{"ID": "R0378:S016", "Triplet": [{"Aspect": "肉質", "Opinion": "稍乾", "VA": "4.25#4.25"}]}
+{"ID": "R1028:S049", "Triplet": [{"Aspect": "義大利麵", "Opinion": "很出色", "VA": "6.50#6.00"}]}
+{"ID": "R3068:S009", "Triplet": [{"Aspect": "八寶芋餅海菜吻仔魚湯", "Opinion": "非常值得一試", "VA": "7.00#7.00"}, {"Aspect": "櫻花蝦炒飯", "Opinion": "偏油", "VA": "4.00#5.00"}]}
+{"ID": "R0381:S040", "Triplet": [{"Aspect": "雞骨高湯", "Opinion": "很有味道", "VA": "6.12#5.88"}]}
+{"ID": "R3216:S004", "Triplet": [{"Aspect": "招牌生魚片", "Opinion": "超大份量", "VA": "6.50#6.00"}]}
+{"ID": "R1441:S043", "Triplet": [{"Aspect": "燉羊肉", "Opinion": "不錯", "VA": "6.25#5.88"}]}
+{"ID": "R0093:S027", "Triplet": [{"Aspect": "茼蒿", "Opinion": "極好吃", "VA": "6.67#6.50"}]}
+{"ID": "R0012:S022", "Triplet": [{"Aspect": "番茄乾", "Opinion": "酸香濃郁", "VA": "6.17#5.83"}]}
+{"ID": "R1612:S018", "Triplet": [{"Aspect": "鹹蛋四寶湯用料", "Opinion": "實在", "VA": "5.88#5.38"}]}
+{"ID": "R3259:S013", "Triplet": [{"Aspect": "蘿蔔", "Opinion": "很入味", "VA": "6.25#5.75"}, {"Aspect": "牛腩", "Opinion": "很入味", "VA": "6.25#5.75"}]}
+{"ID": "R0013:S013", "Triplet": [{"Aspect": "雞腿肉", "Opinion": "不錯", "VA": "6.25#5.50"}, {"Aspect": "雞腿肉", "Opinion": "入味", "VA": "6.50#5.75"}]}
+{"ID": "R1489:S015", "Triplet": [{"Aspect": "沙蝦", "Opinion": "很新鮮", "VA": "6.25#6.25"}]}
+{"ID": "R1477:S007", "Triplet": [{"Aspect": "奶油", "Opinion": "很不新鮮", "VA": "3.33#6.50"}]}
+{"ID": "R1402:S026", "Triplet": [{"Aspect": "飲料", "Opinion": "不夠有特點", "VA": "4.17#4.83"}, {"Aspect": "甜點", "Opinion": "不夠有特點", "VA": "4.17#4.83"}]}
+{"ID": "R1760:S029", "Triplet": [{"Aspect": "紅棗雞湯", "Opinion": "必點", "VA": "6.50#6.88"}]}
+{"ID": "R0026:S002", "Triplet": [{"Aspect": "肉桂吉拿棒的口味", "Opinion": "多種", "VA": "5.50#5.00"}]}
+{"ID": "R1470:S005", "Triplet": [{"Aspect": "法西塔", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R3173:S003", "Triplet": [{"Aspect": "石鮔干滷肉", "Opinion": "超級推薦", "VA": "7.25#7.38"}]}
+{"ID": "R3211:S009", "Triplet": [{"Aspect": "份量", "Opinion": "無人可敵", "VA": "6.50#6.83"}]}
+{"ID": "R0057:S114", "Triplet": [{"Aspect": "蘿蔔糕外皮", "Opinion": "脆脆的", "VA": "6.38#5.88"}, {"Aspect": "口感", "Opinion": "很好", "VA": "6.50#6.00"}]}
+{"ID": "R1252:S024", "Triplet": [{"Aspect": "配料", "Opinion": "相當多", "VA": "6.25#6.00"}]}
+{"ID": "R2002:S001", "Triplet": [{"Aspect": "服務態度", "Opinion": "一般般", "VA": "5.00#5.00"}, {"Aspect": "上菜速度", "Opinion": "蠻快", "VA": "6.00#5.67"}]}
+{"ID": "R0200:S082", "Triplet": [{"Aspect": "布丁", "Opinion": "一定要點", "VA": "6.67#6.50"}]}
+{"ID": "R1201:S016", "Triplet": [{"Aspect": "麵", "Opinion": "相當不錯", "VA": "6.25#6.25"}]}
+{"ID": "R0146:S026", "Triplet": [{"Aspect": "萊特冰茶", "Opinion": "非常解渴", "VA": "6.75#6.25"}, {"Aspect": "萊特冰茶", "Opinion": "爽口", "VA": "6.25#5.75"}]}
+{"ID": "R2041:S026", "Triplet": [{"Aspect": "用餐", "Opinion": "一點也不愉快", "VA": "3.25#5.50"}, {"Aspect": "用餐", "Opinion": "被受騙", "VA": "3.25#5.75"}]}
+{"ID": "R1157:S003", "Triplet": [{"Aspect": "沙瓦", "Opinion": "好喝", "VA": "6.25#5.50"}]}
+{"ID": "R1766:S019", "Triplet": [{"Aspect": "腐乳的味道", "Opinion": "不足", "VA": "3.67#3.83"}]}
+{"ID": "R0783:S011", "Triplet": [{"Aspect": "鴨血", "Opinion": "軟嫩好吃", "VA": "6.75#6.25"}, {"Aspect": "肉片", "Opinion": "還行", "VA": "5.50#5.00"}]}
+{"ID": "R2019:S009", "Triplet": [{"Aspect": "服務", "Opinion": "很好", "VA": "6.38#5.88"}]}
+{"ID": "R0057:S120", "Triplet": [{"Aspect": "價格", "Opinion": "非常合宜", "VA": "6.62#6.25"}]}
+{"ID": "R1453:S011", "Triplet": [{"Aspect": "配料口感", "Opinion": "豐富", "VA": "6.25#5.50"}]}
+{"ID": "R1506:S011", "Triplet": [{"Aspect": "紅蟳粥", "Opinion": "真的非常推薦", "VA": "7.17#7.00"}, {"Aspect": "蟹腿粥", "Opinion": "真的非常推薦", "VA": "7.17#7.00"}]}
+{"ID": "R0670:S016", "Triplet": [{"Aspect": "外皮", "Opinion": "酥脆", "VA": "6.25#5.50"}]}
+{"ID": "R0353:S027", "Triplet": [{"Aspect": "口感", "Opinion": "外酥內軟", "VA": "6.25#5.75"}]}
+{"ID": "R3190:S005", "Triplet": [{"Aspect": "薯條", "Opinion": "酥脆好吃", "VA": "6.25#5.75"}]}
+{"ID": "R1576:S003", "Triplet": [{"Aspect": "佛跳牆", "Opinion": "不太喜歡", "VA": "4.25#4.75"}]}
+{"ID": "R0435:S119", "Triplet": [{"Aspect": "配料", "Opinion": "不多", "VA": "4.33#4.50"}]}
+{"ID": "R1204:S013", "Triplet": [{"Aspect": "炒飯鑊氣", "Opinion": "很足", "VA": "6.17#5.83"}]}
+{"ID": "R0698:S020", "Triplet": [{"Aspect": "芋泥", "Opinion": "表現亮眼", "VA": "6.75#6.50"}, {"Aspect": "芋泥", "Opinion": "香甜綿密可口", "VA": "7.00#6.50"}]}
+{"ID": "R2037:S003", "Triplet": [{"Aspect": "用餐體驗", "Opinion": "還不錯", "VA": "6.00#5.50"}, {"Aspect": "肉", "Opinion": "真的很好吃", "VA": "6.50#6.25"}]}
+{"ID": "R0620:S007", "Triplet": [{"Aspect": "香腸切片", "Opinion": "微帶酸", "VA": "5.17#5.00"}, {"Aspect": "油豆腐", "Opinion": "入味", "VA": "5.83#5.50"}, {"Aspect": "高麗菜", "Opinion": "爽脆", "VA": "6.00#5.67"}]}
+{"ID": "R2881:S010", "Triplet": [{"Aspect": "湯", "Opinion": "一直想喝", "VA": "6.62#6.25"}]}
+{"ID": "R1552:S010", "Triplet": [{"Aspect": "披薩起司", "Opinion": "多", "VA": "6.25#5.75"}, {"Aspect": "海鮮料", "Opinion": "多", "VA": "6.25#5.75"}]}
+{"ID": "R0408:S009", "Triplet": [{"Aspect": "餐點種類", "Opinion": "滿多樣化", "VA": "6.17#5.33"}]}
+{"ID": "R2758:S013", "Triplet": [{"Aspect": "虱目魚脆餅", "Opinion": "非常好吃", "VA": "7.00#6.50"}]}
+{"ID": "R3190:S002", "Triplet": [{"Aspect": "餐點的選擇性", "Opinion": "眾多", "VA": "6.00#5.25"}, {"Aspect": "價格", "Opinion": "不貴", "VA": "6.00#5.25"}]}
+{"ID": "R1562:S008", "Triplet": [{"Aspect": "牛排口感", "Opinion": "超乎想像的好吃", "VA": "7.38#7.12"}]}
+{"ID": "R0965:S003", "Triplet": [{"Aspect": "粥", "Opinion": "米香", "VA": "6.12#5.50"}, {"Aspect": "粥", "Opinion": "剛剛好", "VA": "6.00#5.50"}, {"Aspect": "口感", "Opinion": "具佳", "VA": "6.50#5.75"}, {"Aspect": "味道", "Opinion": "具佳", "VA": "6.50#5.75"}]}
+{"ID": "R0099:S063", "Triplet": [{"Aspect": "椰奶雞", "Opinion": "香味十足", "VA": "6.25#5.75"}]}
+{"ID": "R1220:S023", "Triplet": [{"Aspect": "米粒的口感", "Opinion": "很好", "VA": "6.25#5.75"}]}
+{"ID": "R0210:S024", "Triplet": [{"Aspect": "皮蛋", "Opinion": "頗好吃", "VA": "6.25#6.25"}]}
+{"ID": "R1718:S005", "Triplet": [{"Aspect": "肉", "Opinion": "嫩", "VA": "5.88#5.38"}, {"Aspect": "外皮", "Opinion": "脆", "VA": "5.88#5.38"}]}
+{"ID": "R3028:S016", "Triplet": [{"Aspect": "價格", "Opinion": "很實在", "VA": "6.50#6.25"}, {"Aspect": "餐廳", "Opinion": "必訪", "VA": "6.75#6.50"}]}
+{"ID": "R1765:S011", "Triplet": [{"Aspect": "杏鮑菇", "Opinion": "超級香", "VA": "6.83#6.50"}]}
+{"ID": "R1932:S010", "Triplet": [{"Aspect": "蒸蛋", "Opinion": "滑嫩", "VA": "6.25#5.50"}]}
+{"ID": "R0361:S030", "Triplet": [{"Aspect": "鹹酥杏鮑菇", "Opinion": "非常夠味", "VA": "6.62#6.50"}]}
+{"ID": "R3168:S003", "Triplet": [{"Aspect": "酸菜海鱺魚湯", "Opinion": "非常新鮮", "VA": "6.50#6.50"}]}
+{"ID": "R0034:S009", "Triplet": [{"Aspect": "滷蛋", "Opinion": "不錯", "VA": "6.00#5.50"}, {"Aspect": "油豆腐", "Opinion": "不錯", "VA": "6.00#5.50"}, {"Aspect": "豬頭皮", "Opinion": "有點噁心", "VA": "3.50#5.00"}]}
+{"ID": "R1379:S022", "Triplet": [{"Aspect": "炒高麗菜菜梗", "Opinion": "帶脆", "VA": "5.88#5.38"}, {"Aspect": "炒高麗菜葉", "Opinion": "軟嫩", "VA": "6.00#5.50"}]}
+{"ID": "R2833:S001", "Triplet": [{"Aspect": "炸生蠔", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R1368:S002", "Triplet": [{"Aspect": "裝潢", "Opinion": "蠻適合聚餐", "VA": "6.17#5.83"}, {"Aspect": "座位", "Opinion": "寬敞", "VA": "6.00#5.33"}]}
+{"ID": "R1796:S015", "Triplet": [{"Aspect": "胡椒肚片湯湯頭", "Opinion": "濃郁", "VA": "6.40#5.80"}]}
+{"ID": "R1196:S008", "Triplet": [{"Aspect": "上餐速度", "Opinion": "很快", "VA": "6.25#5.88"}]}
+{"ID": "R3103:S013", "Triplet": [{"Aspect": "用餐感受", "Opinion": "不是太好", "VA": "4.25#4.75"}]}
+{"ID": "R0332:S001", "Triplet": [{"Aspect": "店內", "Opinion": "乾乾淨淨", "VA": "6.12#5.38"}]}
+{"ID": "R0285:S016", "Triplet": [{"Aspect": "口味", "Opinion": "偏甜", "VA": "5.33#5.17"}]}
+{"ID": "R0477:S010", "Triplet": [{"Aspect": "炸雞腿", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R0211:S028", "Triplet": [{"Aspect": "比目魚的外皮", "Opinion": "超級酥脆", "VA": "6.88#6.50"}]}
+{"ID": "R1649:S008", "Triplet": [{"Aspect": "蝦子", "Opinion": "新鮮", "VA": "6.12#5.50"}]}
+{"ID": "R0150:S003", "Triplet": [{"Aspect": "份量", "Opinion": "不多", "VA": "4.33#4.50"}]}
+{"ID": "R0766:S012", "Triplet": [{"Aspect": "鴨皮", "Opinion": "不會過度油膩", "VA": "5.75#5.25"}, {"Aspect": "口感", "Opinion": "入口即化", "VA": "6.50#6.25"}, {"Aspect": "口感", "Opinion": "讓人很想念", "VA": "7.00#6.75"}]}
+{"ID": "R1181:S014", "Triplet": [{"Aspect": "環境", "Opinion": "蠻舒服", "VA": "6.12#5.50"}]}
+{"ID": "R2045:S005", "Triplet": [{"Aspect": "湯頭牛奶鍋", "Opinion": "一般般", "VA": "5.00#4.83"}, {"Aspect": "湯頭牛奶鍋", "Opinion": "沒有特別濃郁", "VA": "4.17#5.17"}]}
+{"ID": "R2916:S010", "Triplet": [{"Aspect": "用餐經驗", "Opinion": "很不好", "VA": "3.25#5.50"}]}
+{"ID": "R1408:S025", "Triplet": [{"Aspect": "青醬", "Opinion": "色澤飽滿", "VA": "6.50#5.83"}, {"Aspect": "味道", "Opinion": "鮮美", "VA": "6.50#5.83"}, {"Aspect": "青醬", "Opinion": "回味無窮", "VA": "7.00#6.50"}]}
+{"ID": "R2204:S007", "Triplet": [{"Aspect": "青木瓜", "Opinion": "很脆", "VA": "6.25#5.75"}, {"Aspect": "味道", "Opinion": "很夠", "VA": "6.25#5.75"}]}
+{"ID": "R0084:S026", "Triplet": [{"Aspect": "魚的油脂感", "Opinion": "滑順", "VA": "6.17#5.83"}, {"Aspect": "肉質", "Opinion": "鮮而不膩", "VA": "6.50#6.17"}]}
+{"ID": "R1496:S010", "Triplet": [{"Aspect": "粥", "Opinion": "鮮香濃郁", "VA": "6.75#6.12"}]}
+{"ID": "R2579:S007", "Triplet": [{"Aspect": "佛跳牆的料", "Opinion": "很豐滿", "VA": "6.38#6.12"}]}
+{"ID": "R0417:S008", "Triplet": [{"Aspect": "茄子", "Opinion": "滿特別", "VA": "6.25#6.00"}]}
+{"ID": "R1849:S015", "Triplet": [{"Aspect": "雪Q餅", "Opinion": "很好吃", "VA": "6.75#6.38"}]}
+{"ID": "R1816:S000", "Triplet": [{"Aspect": "螃蟹", "Opinion": "新鮮", "VA": "6.12#5.50"}]}
+{"ID": "R0466:S007", "Triplet": [{"Aspect": "捲餅餅皮", "Opinion": "相當Q彈", "VA": "6.17#5.83"}]}
+{"ID": "R2749:S035", "Triplet": [{"Aspect": "羹湯", "Opinion": "濃而不膩", "VA": "6.25#5.75"}, {"Aspect": "羹湯", "Opinion": "滑口", "VA": "6.00#5.50"}]}
+{"ID": "R0807:S011", "Triplet": [{"Aspect": "麵包", "Opinion": "真的超美", "VA": "7.25#7.38"}]}
+{"ID": "R0617:S044", "Triplet": [{"Aspect": "餐廳", "Opinion": "比較擠了一點", "VA": "4.25#4.75"}, {"Aspect": "服務", "Opinion": "很不錯", "VA": "6.25#5.75"}, {"Aspect": "餐點", "Opinion": "很不錯", "VA": "6.25#5.75"}]}
+{"ID": "R1553:S017", "Triplet": [{"Aspect": "酥皮濃湯的酥皮", "Opinion": "很酥", "VA": "6.50#6.00"}]}
+{"ID": "R1184:S010", "Triplet": [{"Aspect": "高麗菜", "Opinion": "脆爽", "VA": "6.25#5.75"}]}
+{"ID": "R3199:S011", "Triplet": [{"Aspect": "NULL", "Opinion": "蠻好吃", "VA": "6.33#6.00"}, {"Aspect": "NULL", "Opinion": "會推薦", "VA": "6.50#6.50"}, {"Aspect": "NULL", "Opinion": "會再訪", "VA": "6.50#6.50"}]}
+{"ID": "R0074:S024", "Triplet": [{"Aspect": "火腿", "Opinion": "有點鹹", "VA": "4.25#4.25"}]}
+{"ID": "R3233:S007", "Triplet": [{"Aspect": "水餃", "Opinion": "不錯", "VA": "6.00#5.50"}, {"Aspect": "份量", "Opinion": "蠻足的", "VA": "6.00#5.50"}]}
+{"ID": "R1691:S010", "Triplet": [{"Aspect": "手工香酥花枝蝦餅外皮", "Opinion": "酥脆", "VA": "6.12#5.38"}, {"Aspect": "內餡口感", "Opinion": "厚實帶勁", "VA": "6.25#5.62"}]}
+{"ID": "R3202:S000", "Triplet": [{"Aspect": "停車", "Opinion": "不是很方便", "VA": "4.12#5.25"}]}
+{"ID": "R3093:S011", "Triplet": [{"Aspect": "鴨壽司", "Opinion": "真的很不喜歡", "VA": "3.17#5.83"}]}
+{"ID": "R2987:S009", "Triplet": [{"Aspect": "店員態度", "Opinion": "真的很差", "VA": "3.25#5.75"}]}
+{"ID": "R1743:S018", "Triplet": [{"Aspect": "小菜", "Opinion": "愛", "VA": "6.83#6.50"}]}
+{"ID": "R1700:S025", "Triplet": [{"Aspect": "白飯", "Opinion": "粒粒分明", "VA": "6.12#5.50"}]}
+{"ID": "R0364:S041", "Triplet": [{"Aspect": "口感", "Opinion": "香軟綿彈", "VA": "6.75#6.12"}]}
+{"ID": "R0807:S044", "Triplet": [{"Aspect": "奶油捲", "Opinion": "不錯", "VA": "5.75#5.25"}]}
+{"ID": "R0810:S050", "Triplet": [{"Aspect": "價位", "Opinion": "可接受", "VA": "5.62#5.25"}]}
+{"ID": "R3315:S014", "Triplet": [{"Aspect": "用餐體驗", "Opinion": "非常不錯", "VA": "6.67#6.50"}]}
+{"ID": "R2924:S005", "Triplet": [{"Aspect": "小管", "Opinion": "出彈牙", "VA": "6.25#5.75"}, {"Aspect": "小管", "Opinion": "脆口", "VA": "6.25#5.75"}, {"Aspect": "滷肉飯", "Opinion": "較普通", "VA": "5.00#4.50"}]}
+{"ID": "R0137:S001", "Triplet": [{"Aspect": "環境", "Opinion": "不好", "VA": "4.00#5.38"}]}
+{"ID": "R3149:S007", "Triplet": [{"Aspect": "炸豬排", "Opinion": "有點乾", "VA": "4.25#4.75"}, {"Aspect": "白飯", "Opinion": "有點太溼", "VA": "4.25#4.75"}, {"Aspect": "CP值", "Opinion": "不算高", "VA": "4.50#4.50"}]}
+{"ID": "R1557:S007", "Triplet": [{"Aspect": "餐點價格", "Opinion": "稍微偏高", "VA": "4.50#4.83"}]}
+{"ID": "R1590:S009", "Triplet": [{"Aspect": "羊肉", "Opinion": "好厲害", "VA": "6.67#6.33"}]}
+{"ID": "R2042:S016", "Triplet": [{"Aspect": "店員的態度", "Opinion": "不能接受", "VA": "3.50#5.83"}]}
+{"ID": "R1201:S013", "Triplet": [{"Aspect": "配料", "Opinion": "清脆軟嫩", "VA": "6.17#5.83"}]}
+{"ID": "R0295:S033", "Triplet": [{"Aspect": "口味", "Opinion": "還不錯", "VA": "5.75#5.25"}]}
+{"ID": "R0290:S111", "Triplet": [{"Aspect": "店員的服務", "Opinion": "熱忱", "VA": "6.12#5.50"}]}
+{"ID": "R1554:S007", "Triplet": [{"Aspect": "烤雞", "Opinion": "非常好吃", "VA": "6.67#6.50"}]}
+{"ID": "R3207:S001", "Triplet": [{"Aspect": "台式炸雞", "Opinion": "普通", "VA": "5.00#4.75"}, {"Aspect": "台式炸雞", "Opinion": "便宜", "VA": "5.50#5.00"}]}
+{"ID": "R2019:S004", "Triplet": [{"Aspect": "板條", "Opinion": "很好吃", "VA": "6.67#6.50"}, {"Aspect": "板條", "Opinion": "有點鹹", "VA": "4.50#5.17"}]}
+{"ID": "R0614:S019", "Triplet": [{"Aspect": "蝦子", "Opinion": "好新鮮", "VA": "6.25#5.50"}, {"Aspect": "蝦味", "Opinion": "很濃厚", "VA": "6.25#5.75"}]}
+{"ID": "R2052:S008", "Triplet": [{"Aspect": "服務人員態度", "Opinion": "不錯", "VA": "6.25#5.88"}]}
+{"ID": "R2551:S016", "Triplet": [{"Aspect": "寬粉", "Opinion": "非常順口好吃", "VA": "6.75#6.50"}]}
+{"ID": "R1675:S008", "Triplet": [{"Aspect": "豬排", "Opinion": "酥脆", "VA": "6.25#5.25"}, {"Aspect": "豬排", "Opinion": "軟嫩", "VA": "6.25#5.25"}]}
+{"ID": "R2966:S011", "Triplet": [{"Aspect": "停車場車位", "Opinion": "有限", "VA": "4.25#4.75"}]}
+{"ID": "R2612:S003", "Triplet": [{"Aspect": "燉鴨湯的味道", "Opinion": "濃郁", "VA": "6.17#5.83"}]}
+{"ID": "R1218:S030", "Triplet": [{"Aspect": "火鍋肉片", "Opinion": "軟嫩", "VA": "6.12#5.50"}]}
+{"ID": "R0093:S008", "Triplet": [{"Aspect": "脆片", "Opinion": "眼睛一亮", "VA": "6.75#6.75"}]}
+{"ID": "R0468:S012", "Triplet": [{"Aspect": "剝皮辣椒", "Opinion": "不會很辣", "VA": "6.17#5.00"}, {"Aspect": "雪花牛", "Opinion": "算厚", "VA": "5.83#5.00"}, {"Aspect": "雪花牛", "Opinion": "不會碎掉", "VA": "5.83#5.00"}]}
+{"ID": "R1542:S008", "Triplet": [{"Aspect": "金箔燉飯香氣", "Opinion": "濃郁", "VA": "6.38#5.88"}]}
+{"ID": "R0284:S021", "Triplet": [{"Aspect": "沙拉", "Opinion": "愛", "VA": "7.12#6.50"}]}
+{"ID": "R1494:S000", "Triplet": [{"Aspect": "餐廳員工的服務", "Opinion": "友善", "VA": "6.17#5.50"}]}
+{"ID": "R0586:S031", "Triplet": [{"Aspect": "醬汁", "Opinion": "蠻好吃", "VA": "6.25#6.00"}]}
+{"ID": "R2886:S000", "Triplet": [{"Aspect": "湯頭", "Opinion": "死鹹", "VA": "3.67#6.17"}, {"Aspect": "肉羹", "Opinion": "死鹹", "VA": "3.67#6.17"}]}
+{"ID": "R2058:S016", "Triplet": [{"Aspect": "味道", "Opinion": "真濃郁", "VA": "6.25#6.00"}, {"Aspect": "咖喱麵", "Opinion": "好好吃", "VA": "6.50#6.25"}]}
+{"ID": "R1618:S012", "Triplet": [{"Aspect": "烏魚子炒飯水份", "Opinion": "過多", "VA": "4.25#5.00"}]}
+{"ID": "R1651:S001", "Triplet": [{"Aspect": "桂圓紅棗茶", "Opinion": "真的有夠甜", "VA": "6.25#6.00"}]}
+{"ID": "R0349:S061", "Triplet": [{"Aspect": "香氣", "Opinion": "十足", "VA": "6.33#6.50"}]}
+{"ID": "R0901:S019", "Triplet": [{"Aspect": "海鮮湯", "Opinion": "新鮮", "VA": "6.25#5.50"}, {"Aspect": "海鮮湯", "Opinion": "趁熱更好喝", "VA": "6.00#5.75"}]}
+{"ID": "R0670:S018", "Triplet": [{"Aspect": "蔥餡的鹹味", "Opinion": "很夠", "VA": "6.17#6.00"}]}
+{"ID": "R0586:S034", "Triplet": [{"Aspect": "娃娃菜", "Opinion": "很好吃", "VA": "6.67#6.33"}, {"Aspect": "娃娃菜", "Opinion": "軟爛", "VA": "6.17#5.83"}, {"Aspect": "湯汁", "Opinion": "很棒", "VA": "6.67#6.33"}]}
+{"ID": "R0100:S031", "Triplet": [{"Aspect": "雞肉類", "Opinion": "算有合喜好", "VA": "5.50#5.00"}, {"Aspect": "份量", "Opinion": "少的可憐", "VA": "3.00#6.00"}, {"Aspect": "服務", "Opinion": "很差", "VA": "2.50#6.00"}]}
+{"ID": "R1028:S064", "Triplet": [{"Aspect": "鮭魚", "Opinion": "非常厚實", "VA": "6.75#6.50"}, {"Aspect": "鮭魚", "Opinion": "酥酥的", "VA": "6.50#6.00"}, {"Aspect": "鮭魚", "Opinion": "很不錯", "VA": "6.75#6.25"}]}
+{"ID": "R1617:S095", "Triplet": [{"Aspect": "魚肉", "Opinion": "不算很滑嫩", "VA": "4.50#5.00"}]}
+{"ID": "R3077:S003", "Triplet": [{"Aspect": "停車位", "Opinion": "方便", "VA": "6.12#5.50"}]}
+{"ID": "R0833:S037", "Triplet": [{"Aspect": "海鮮品質", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R2070:S012", "Triplet": [{"Aspect": "口味", "Opinion": "達到水準", "VA": "6.25#6.00"}]}
+{"ID": "R0668:S072", "Triplet": [{"Aspect": "醬汁鹹辣程度", "Opinion": "剛好", "VA": "5.75#5.25"}]}
+{"ID": "R1671:S004", "Triplet": [{"Aspect": "茶碗蒸", "Opinion": "有夠水", "VA": "4.17#5.00"}]}
+{"ID": "R0188:S045", "Triplet": [{"Aspect": "主餐選擇", "Opinion": "非常多", "VA": "6.25#5.75"}]}
+{"ID": "R0590:S016", "Triplet": [{"Aspect": "份量", "Opinion": "還OK", "VA": "5.25#5.00"}]}
+{"ID": "R0454:S067", "Triplet": [{"Aspect": "油煙味", "Opinion": "有些重", "VA": "4.25#4.75"}]}
+{"ID": "R0690:S019", "Triplet": [{"Aspect": "雞腿", "Opinion": "滿好吃", "VA": "6.25#5.50"}, {"Aspect": "雞皮", "Opinion": "酥香", "VA": "6.50#5.75"}]}
+{"ID": "R1375:S015", "Triplet": [{"Aspect": "牛肉包", "Opinion": "溫溫的", "VA": "4.67#4.33"}, {"Aspect": "牛肉包", "Opinion": "不夠燙", "VA": "4.67#4.67"}, {"Aspect": "味道", "Opinion": "不壞", "VA": "5.67#5.33"}]}
+{"ID": "R2828:S006", "Triplet": [{"Aspect": "麵包", "Opinion": "很厲害", "VA": "6.50#6.00"}, {"Aspect": "麵包", "Opinion": "非常的鬆軟", "VA": "6.75#6.50"}]}
+{"ID": "R0766:S019", "Triplet": [{"Aspect": "蘿蔔糕", "Opinion": "蠻好吃的", "VA": "6.17#5.83"}]}
+{"ID": "R3226:S012", "Triplet": [{"Aspect": "餐點", "Opinion": "很一般", "VA": "5.00#5.00"}, {"Aspect": "份量", "Opinion": "足吃得很飽", "VA": "6.00#6.00"}]}
+{"ID": "R1639:S028", "Triplet": [{"Aspect": "生菜", "Opinion": "清脆甘甜", "VA": "6.17#5.83"}]}
+{"ID": "R1456:S005", "Triplet": [{"Aspect": "炙烤牛排佐波特酒醬", "Opinion": "超好吃", "VA": "7.12#6.75"}]}
+{"ID": "R0797:S097", "Triplet": [{"Aspect": "炸雞", "Opinion": "必點", "VA": "6.62#6.25"}]}
+{"ID": "R1188:S021", "Triplet": [{"Aspect": "叉燒", "Opinion": "水準之上", "VA": "6.25#5.75"}]}
+{"ID": "R1509:S029", "Triplet": [{"Aspect": "醬汁調味", "Opinion": "沒有特色", "VA": "4.17#4.83"}]}
+{"ID": "R0038:S042", "Triplet": [{"Aspect": "椰漿雞湯", "Opinion": "很對味", "VA": "6.17#5.83"}]}
+{"ID": "R3285:S008", "Triplet": [{"Aspect": "魚肉", "Opinion": "太厚", "VA": "4.25#5.25"}, {"Aspect": "魚肉", "Opinion": "一點都不Q", "VA": "3.50#5.75"}, {"Aspect": "魚肉", "Opinion": "乾澀", "VA": "3.75#5.25"}]}
+{"ID": "R1817:S008", "Triplet": [{"Aspect": "炒松阪肉味道", "Opinion": "很好", "VA": "6.17#5.83"}]}
+{"ID": "R0795:S007", "Triplet": [{"Aspect": "紅茶", "Opinion": "偏甜", "VA": "5.33#5.17"}]}
+{"ID": "R0613:S037", "Triplet": [{"Aspect": "螺旋蛋", "Opinion": "真的很滑嫩", "VA": "6.67#6.33"}, {"Aspect": "螺旋蛋", "Opinion": "很好吃", "VA": "6.67#6.33"}]}
+{"ID": "R0468:S011", "Triplet": [{"Aspect": "口味", "Opinion": "中規中矩", "VA": "5.00#4.75"}]}
+{"ID": "R0183:S052", "Triplet": [{"Aspect": "肥腸", "Opinion": "超酥", "VA": "6.67#6.50"}]}
+{"ID": "R0099:S061", "Triplet": [{"Aspect": "湯頭", "Opinion": "超開胃", "VA": "6.75#6.75"}]}
+{"ID": "R0488:S059", "Triplet": [{"Aspect": "筍子", "Opinion": "帶苦", "VA": "4.25#5.25"}, {"Aspect": "筍子", "Opinion": "帶辣", "VA": "4.25#5.25"}]}
+{"ID": "R1159:S084", "Triplet": [{"Aspect": "湯", "Opinion": "超鮮", "VA": "6.83#6.50"}]}
+{"ID": "R2531:S003", "Triplet": [{"Aspect": "煎魚腸味道", "Opinion": "有點重", "VA": "4.17#4.83"}, {"Aspect": "煎魚腸", "Opinion": "比較不反胃", "VA": "4.67#5.00"}]}
+{"ID": "R1524:S041", "Triplet": [{"Aspect": "餐廳服務人員態度", "Opinion": "差", "VA": "3.75#4.75"}]}
+{"ID": "R2305:S034", "Triplet": [{"Aspect": "小魚乾", "Opinion": "非常入味", "VA": "6.50#6.00"}]}
+{"ID": "R0389:S019", "Triplet": [{"Aspect": "湯品味道", "Opinion": "挺淡", "VA": "4.67#4.33"}]}
+{"ID": "R0758:S018", "Triplet": [{"Aspect": "雞皮", "Opinion": "微焦", "VA": "5.67#5.17"}, {"Aspect": "雞皮", "Opinion": "焦香味", "VA": "6.17#5.67"}]}
+{"ID": "R0911:S007", "Triplet": [{"Aspect": "梅花肉片", "Opinion": "超大", "VA": "6.17#5.83"}, {"Aspect": "梅花肉片", "Opinion": "超厚", "VA": "6.17#5.83"}]}
+{"ID": "R0143:S048", "Triplet": [{"Aspect": "NULL", "Opinion": "吃不飽", "VA": "4.25#5.25"}]}
+{"ID": "R1174:S037", "Triplet": [{"Aspect": "冰摩卡", "Opinion": "最好喝", "VA": "7.25#6.75"}]}
+{"ID": "R2876:S014", "Triplet": [{"Aspect": "油豆腐", "Opinion": "可以先跳過", "VA": "3.50#4.83"}]}
+{"ID": "R2037:S007", "Triplet": [{"Aspect": "鮮蚵", "Opinion": "非常美味", "VA": "6.67#6.50"}]}
+{"ID": "R1195:S031", "Triplet": [{"Aspect": "冰火菠蘿油", "Opinion": "好吃", "VA": "6.12#5.50"}]}
+{"ID": "R0269:S001", "Triplet": [{"Aspect": "價格", "Opinion": "超級划算", "VA": "6.67#6.50"}, {"Aspect": "便宜火鍋吃到飽", "Opinion": "很推薦", "VA": "6.50#6.50"}]}
+{"ID": "R0464:S068", "Triplet": [{"Aspect": "蛤蜊", "Opinion": "肥美鮮嫩", "VA": "6.50#5.83"}]}
+{"ID": "R0437:S014", "Triplet": [{"Aspect": "麻糬種類", "Opinion": "很多", "VA": "6.25#6.00"}]}
+{"ID": "R0928:S007", "Triplet": [{"Aspect": "滷肉", "Opinion": "軟透", "VA": "6.25#5.50"}, {"Aspect": "口感", "Opinion": "蠻好", "VA": "6.25#5.75"}, {"Aspect": "醬味", "Opinion": "頗淡", "VA": "4.50#5.25"}]}
+{"ID": "R2560:S004", "Triplet": [{"Aspect": "全鴨", "Opinion": "冷的", "VA": "3.83#4.67"}, {"Aspect": "全鴨", "Opinion": "乾的", "VA": "3.83#4.67"}, {"Aspect": "北平烤鴨", "Opinion": "難吃", "VA": "3.00#5.50"}]}
+{"ID": "R3230:S013", "Triplet": [{"Aspect": "鼎泰豐售價", "Opinion": "較親民", "VA": "5.88#5.38"}]}
+{"ID": "R1530:S009", "Triplet": [{"Aspect": "餐廳服務品質", "Opinion": "很差", "VA": "3.25#5.75"}]}
+{"ID": "R0690:S015", "Triplet": [{"Aspect": "湯頭", "Opinion": "最讚", "VA": "7.25#7.25"}, {"Aspect": "味道", "Opinion": "真是好好喝", "VA": "7.25#7.25"}]}
+{"ID": "R0038:S030", "Triplet": [{"Aspect": "河粉", "Opinion": "濕黏", "VA": "4.25#5.25"}, {"Aspect": "河粉", "Opinion": "甜", "VA": "4.25#5.25"}, {"Aspect": "河粉", "Opinion": "不合我胃口", "VA": "3.75#5.75"}]}
+{"ID": "R3224:S024", "Triplet": [{"Aspect": "鐵火卷", "Opinion": "最雷", "VA": "3.25#6.75"}, {"Aspect": "鐵火卷", "Opinion": "沒什麼料", "VA": "3.50#4.50"}, {"Aspect": "鐵火卷", "Opinion": "沒啥鮮味", "VA": "3.50#4.50"}]}
+{"ID": "R0390:S019", "Triplet": [{"Aspect": "羊肉的口感", "Opinion": "非常軟嫩", "VA": "6.67#6.33"}]}
+{"ID": "R1618:S020", "Triplet": [{"Aspect": "炒水蓮", "Opinion": "非常平淡", "VA": "4.17#4.83"}]}
+{"ID": "R0453:S025", "Triplet": [{"Aspect": "上餐速度", "Opinion": "快速", "VA": "6.25#5.50"}]}
+{"ID": "R0142:S012", "Triplet": [{"Aspect": "火焰烤鴨", "Opinion": "很厲害", "VA": "6.50#6.00"}]}
+{"ID": "R1202:S009", "Triplet": [{"Aspect": "快炒類的料理", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R0107:S012", "Triplet": [{"Aspect": "泡腳區", "Opinion": "最特別", "VA": "6.25#6.12"}]}
+{"ID": "R2908:S002", "Triplet": [{"Aspect": "湯頭", "Opinion": "很鮮甜", "VA": "6.50#6.00"}, {"Aspect": "小管", "Opinion": "不錯", "VA": "6.25#5.75"}]}
+{"ID": "R2079:S002", "Triplet": [{"Aspect": "燒賣", "Opinion": "很好吃", "VA": "6.67#6.50"}, {"Aspect": "炒牛河", "Opinion": "很好吃", "VA": "6.67#6.50"}]}
+{"ID": "R1509:S022", "Triplet": [{"Aspect": "飯", "Opinion": "粒粒分明", "VA": "6.25#5.75"}]}
+{"ID": "R3056:S004", "Triplet": [{"Aspect": "海鮮", "Opinion": "極鮮", "VA": "6.75#6.50"}]}
+{"ID": "R0296:S026", "Triplet": [{"Aspect": "配菜", "Opinion": "冷冷的", "VA": "3.67#3.83"}]}
+{"ID": "R3052:S006", "Triplet": [{"Aspect": "海鮮粥的湯", "Opinion": "很鮮甜", "VA": "6.62#6.38"}, {"Aspect": "料", "Opinion": "很鮮甜", "VA": "6.62#6.38"}]}
+{"ID": "R2128:S004", "Triplet": [{"Aspect": "豆腐", "Opinion": "不錯", "VA": "5.67#5.33"}, {"Aspect": "青菜", "Opinion": "不錯", "VA": "5.67#5.33"}, {"Aspect": "雞蛋", "Opinion": "不錯", "VA": "5.67#5.33"}]}
+{"ID": "R3067:S000", "Triplet": [{"Aspect": "食物", "Opinion": "還可以", "VA": "5.33#5.00"}, {"Aspect": "服務態度", "Opinion": "超差", "VA": "2.67#6.50"}]}
+{"ID": "R0278:S086", "Triplet": [{"Aspect": "騷味", "Opinion": "稍重", "VA": "4.25#5.25"}]}
+{"ID": "R1970:S016", "Triplet": [{"Aspect": "炒牛肉", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "金針菇", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "炒牛肉", "Opinion": "不會過鹹", "VA": "5.83#5.17"}, {"Aspect": "金針菇", "Opinion": "不會過鹹", "VA": "5.83#5.17"}]}
+{"ID": "R0386:S001", "Triplet": [{"Aspect": "豚骨魚介湯頭", "Opinion": "非常道地", "VA": "6.50#6.83"}]}
+{"ID": "R2200:S012", "Triplet": [{"Aspect": "雞肉", "Opinion": "濃郁辣味", "VA": "6.17#5.83"}]}
+{"ID": "R0814:S007", "Triplet": [{"Aspect": "梅干扣肉", "Opinion": "很喜歡", "VA": "6.50#6.00"}]}
+{"ID": "R0809:S022", "Triplet": [{"Aspect": "香酥荔茸鴨", "Opinion": "好吃", "VA": "6.17#5.83"}]}
+{"ID": "R1858:S011", "Triplet": [{"Aspect": "熱食", "Opinion": "很多樣", "VA": "6.25#6.25"}]}
+{"ID": "R0806:S129", "Triplet": [{"Aspect": "竹筍", "Opinion": "不錯吃", "VA": "6.25#5.88"}]}
+{"ID": "R0050:S014", "Triplet": [{"Aspect": "老闆", "Opinion": "很貼心", "VA": "6.25#6.25"}]}
+{"ID": "R1189:S039", "Triplet": [{"Aspect": "鮭魚", "Opinion": "超好吃", "VA": "6.75#6.50"}]}
+{"ID": "R0290:S072", "Triplet": [{"Aspect": "椒麻", "Opinion": "非常香", "VA": "6.67#6.50"}]}
+{"ID": "R1911:S011", "Triplet": [{"Aspect": "叉燒酥", "Opinion": "外酥內軟", "VA": "6.17#5.33"}]}
+{"ID": "R0774:S056", "Triplet": [{"Aspect": "熱炒的品質", "Opinion": "不穩定", "VA": "4.17#5.00"}, {"Aspect": "價格", "Opinion": "不平價", "VA": "4.00#4.83"}]}
+{"ID": "R2340:S007", "Triplet": [{"Aspect": "烤魚", "Opinion": "土味超重", "VA": "3.50#5.50"}, {"Aspect": "魚肉", "Opinion": "軟爛", "VA": "3.50#4.50"}, {"Aspect": "烤魚", "Opinion": "超級不推薦", "VA": "2.50#6.50"}]}
+{"ID": "R1191:S022", "Triplet": [{"Aspect": "芝麻糊", "Opinion": "頗受好評", "VA": "6.17#5.83"}]}
+{"ID": "R0032:S033", "Triplet": [{"Aspect": "薯條", "Opinion": "意外地覺得還算蠻好吃的", "VA": "6.25#6.00"}]}
+{"ID": "R3231:S005", "Triplet": [{"Aspect": "口味", "Opinion": "挺好的", "VA": "6.12#5.50"}]}
+{"ID": "R1463:S004", "Triplet": [{"Aspect": "餐點口味", "Opinion": "清淡", "VA": "5.25#4.75"}]}
+{"ID": "R1482:S013", "Triplet": [{"Aspect": "西南漢堡", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R2532:S003", "Triplet": [{"Aspect": "魚皮湯", "Opinion": "絕對是必點", "VA": "7.00#7.00"}, {"Aspect": "魚皮湯", "Opinion": "豐富膠質", "VA": "6.50#6.00"}, {"Aspect": "口感", "Opinion": "順口", "VA": "6.50#6.00"}]}
+{"ID": "R0202:S059", "Triplet": [{"Aspect": "紅茶", "Opinion": "不苦澀", "VA": "6.25#5.25"}, {"Aspect": "紅茶", "Opinion": "很順口", "VA": "6.50#5.75"}]}
+{"ID": "R2958:S009", "Triplet": [{"Aspect": "油蔥酥炒地瓜葉", "Opinion": "表現傑出", "VA": "6.50#6.50"}, {"Aspect": "雞湯", "Opinion": "表現傑出", "VA": "6.50#6.50"}]}
+{"ID": "R2234:S011", "Triplet": [{"Aspect": "餅皮", "Opinion": "薄皮", "VA": "6.25#5.50"}, {"Aspect": "配料", "Opinion": "很豐富", "VA": "6.50#5.75"}]}
+{"ID": "R2257:S001", "Triplet": [{"Aspect": "蒸餃", "Opinion": "極為普通", "VA": "4.83#4.83"}, {"Aspect": "品質", "Opinion": "讓人失望", "VA": "3.17#5.17"}]}
+{"ID": "R0349:S017", "Triplet": [{"Aspect": "店", "Opinion": "頗有質感", "VA": "6.25#6.25"}]}
+{"ID": "R1510:S013", "Triplet": [{"Aspect": "甜點", "Opinion": "不錯", "VA": "5.88#5.50"}]}
+{"ID": "R0781:S053", "Triplet": [{"Aspect": "骨煲湯", "Opinion": "愛", "VA": "6.62#6.25"}]}
+{"ID": "R2755:S009", "Triplet": [{"Aspect": "主菜", "Opinion": "驚豔", "VA": "6.75#6.50"}, {"Aspect": "甜品", "Opinion": "好吃", "VA": "6.25#5.75"}]}
+{"ID": "R3052:S004", "Triplet": [{"Aspect": "日式魷魚生魚片", "Opinion": "十分特別", "VA": "6.50#6.00"}, {"Aspect": "日式魷魚生魚片", "Opinion": "非常好吃", "VA": "7.00#6.50"}]}
+{"ID": "R0315:S025", "Triplet": [{"Aspect": "口感", "Opinion": "軟嫩", "VA": "6.12#5.50"}, {"Aspect": "口感", "Opinion": "入味", "VA": "6.12#5.50"}]}
+{"ID": "R0466:S020", "Triplet": [{"Aspect": "整體", "Opinion": "不會太過油膩", "VA": "6.17#5.83"}]}
+{"ID": "R1435:S005", "Triplet": [{"Aspect": "鮭魚份量", "Opinion": "不多", "VA": "4.50#4.75"}]}
+{"ID": "R0562:S017", "Triplet": [{"Aspect": "裝潢", "Opinion": "看似簡單", "VA": "5.25#5.00"}, {"Aspect": "裝潢", "Opinion": "相當舒適", "VA": "6.25#5.75"}]}
+{"ID": "R1176:S039", "Triplet": [{"Aspect": "滷豬肝", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R0057:S090", "Triplet": [{"Aspect": "醬油", "Opinion": "鹹甜", "VA": "6.25#5.25"}, {"Aspect": "醬油", "Opinion": "香味十足", "VA": "6.75#5.75"}]}
+{"ID": "R1465:S000", "Triplet": [{"Aspect": "炸物拼盤", "Opinion": "非常失望", "VA": "2.50#6.88"}]}
+{"ID": "R1665:S007", "Triplet": [{"Aspect": "麵包", "Opinion": "酥脆", "VA": "6.25#5.88"}]}
+{"ID": "R1018:S093", "Triplet": [{"Aspect": "青梅醋飲", "Opinion": "很好喝", "VA": "6.50#6.00"}, {"Aspect": "青梅醋飲", "Opinion": "清爽", "VA": "6.25#5.50"}, {"Aspect": "青梅醋飲", "Opinion": "很解膩", "VA": "6.25#6.00"}]}
+{"ID": "R0589:S030", "Triplet": [{"Aspect": "肉燥飯", "Opinion": "不太愛", "VA": "4.25#4.75"}, {"Aspect": "白飯口感", "Opinion": "佷可惜", "VA": "4.25#5.50"}, {"Aspect": "肉燥味道", "Opinion": "還不錯", "VA": "5.75#5.25"}]}
+{"ID": "R0142:S007", "Triplet": [{"Aspect": "環境", "Opinion": "乾淨明亮", "VA": "6.25#5.75"}]}
+{"ID": "R1415:S004", "Triplet": [{"Aspect": "餐點", "Opinion": "特別", "VA": "6.12#5.50"}, {"Aspect": "價格", "Opinion": "非常合理", "VA": "6.50#6.50"}]}
+{"ID": "R0457:S010", "Triplet": [{"Aspect": "餐點種類", "Opinion": "很多", "VA": "6.25#5.88"}]}
+{"ID": "R0158:S016", "Triplet": [{"Aspect": "餅皮", "Opinion": "真的很酥", "VA": "6.25#6.25"}, {"Aspect": "內餡", "Opinion": "綿密", "VA": "6.25#5.25"}, {"Aspect": "內餡", "Opinion": "不會太甜", "VA": "6.25#5.25"}]}
+{"ID": "R1548:S000", "Triplet": [{"Aspect": "白酒海鮮燉飯", "Opinion": "算好吃", "VA": "5.88#5.38"}]}
+{"ID": "R2182:S003", "Triplet": [{"Aspect": "中卷", "Opinion": "沒有鮮甜味", "VA": "4.17#4.83"}, {"Aspect": "中卷", "Opinion": "油膩", "VA": "4.00#4.50"}, {"Aspect": "中卷", "Opinion": "死鹹", "VA": "4.00#4.83"}]}
+{"ID": "R0202:S050", "Triplet": [{"Aspect": "椒麻雞", "Opinion": "最愛", "VA": "7.25#7.12"}]}
+{"ID": "R1801:S046", "Triplet": [{"Aspect": "味道", "Opinion": "不錯", "VA": "5.88#5.38"}]}
+{"ID": "R1441:S019", "Triplet": [{"Aspect": "自助餐菜色", "Opinion": "蠻多", "VA": "6.17#5.83"}]}
+{"ID": "R2189:S018", "Triplet": [{"Aspect": "沾醬", "Opinion": "酸甜可口", "VA": "6.17#5.83"}, {"Aspect": "沾醬", "Opinion": "欲罷不能", "VA": "6.50#6.33"}]}
+{"ID": "R1441:S051", "Triplet": [{"Aspect": "甜點", "Opinion": "不推", "VA": "3.67#5.00"}]}
+{"ID": "R0290:S035", "Triplet": [{"Aspect": "送菜速度", "Opinion": "快", "VA": "6.12#5.50"}]}
+{"ID": "R0358:S001", "Triplet": [{"Aspect": "咖哩醬汁", "Opinion": "濃郁", "VA": "6.12#5.50"}]}
+{"ID": "R1542:S005", "Triplet": [{"Aspect": "土雞肉", "Opinion": "不易咬爛", "VA": "5.17#4.83"}]}
+{"ID": "R0290:S047", "Triplet": [{"Aspect": "高麗菜", "Opinion": "好吃", "VA": "6.25#5.88"}]}
+{"ID": "R2943:S003", "Triplet": [{"Aspect": "餐點", "Opinion": "出餐不快", "VA": "4.00#4.50"}, {"Aspect": "菜", "Opinion": "香味四溢", "VA": "6.50#6.00"}]}
+{"ID": "R0362:S019", "Triplet": [{"Aspect": "肉羹", "Opinion": "很紮實", "VA": "6.25#5.75"}]}
+{"ID": "R2871:S006", "Triplet": [{"Aspect": "油豆腐", "Opinion": "很讚", "VA": "6.67#6.33"}, {"Aspect": "油豆腐", "Opinion": "很入味", "VA": "6.50#6.33"}]}
+{"ID": "R0026:S009", "Triplet": [{"Aspect": "口味", "Opinion": "多種", "VA": "5.83#5.17"}]}
+{"ID": "R0000:S026", "Triplet": [{"Aspect": "價格", "Opinion": "較貴一些", "VA": "4.25#4.50"}]}
+{"ID": "R0729:S025", "Triplet": [{"Aspect": "下午茶", "Opinion": "中規中矩", "VA": "5.00#4.83"}]}
+{"ID": "R0832:S023", "Triplet": [{"Aspect": "米飯", "Opinion": "保留點水分", "VA": "5.00#4.75"}, {"Aspect": "醬色", "Opinion": "不均", "VA": "4.50#4.75"}, {"Aspect": "米飯", "Opinion": "結塊", "VA": "4.25#5.00"}]}
+{"ID": "R1813:S011", "Triplet": [{"Aspect": "小卷", "Opinion": "沒有那麼好吃", "VA": "4.00#4.50"}]}
+{"ID": "R0127:S011", "Triplet": [{"Aspect": "飲料甜度", "Opinion": "適中", "VA": "5.25#4.75"}]}
+{"ID": "R0467:S015", "Triplet": [{"Aspect": "鴨肉的量", "Opinion": "蠻多", "VA": "6.17#5.83"}, {"Aspect": "鴨肉", "Opinion": "最喜歡", "VA": "7.00#7.00"}, {"Aspect": "鴨血", "Opinion": "入味", "VA": "6.17#5.83"}, {"Aspect": "豆腐", "Opinion": "入味", "VA": "6.17#5.83"}, {"Aspect": "鹹食", "Opinion": "還算不錯", "VA": "6.00#5.50"}]}
+{"ID": "R0130:S080", "Triplet": [{"Aspect": "肉質", "Opinion": "很不錯", "VA": "6.25#6.25"}]}
+{"ID": "R1624:S008", "Triplet": [{"Aspect": "菜色", "Opinion": "不錯", "VA": "5.75#5.25"}]}
+{"ID": "R1562:S004", "Triplet": [{"Aspect": "餐廳裝潢", "Opinion": "還不錯", "VA": "5.75#5.38"}]}
+{"ID": "R0068:S030", "Triplet": [{"Aspect": "年糕", "Opinion": "蠻軟Q", "VA": "6.25#5.75"}, {"Aspect": "魚板", "Opinion": "蠻軟Q", "VA": "6.25#5.75"}]}
+{"ID": "R0157:S024", "Triplet": [{"Aspect": "湯", "Opinion": "很好喝", "VA": "6.83#6.50"}, {"Aspect": "肥肉", "Opinion": "蠻好吃", "VA": "6.33#5.83"}]}
+{"ID": "R3163:S014", "Triplet": [{"Aspect": "白飯份量", "Opinion": "蠻大碗", "VA": "6.00#5.50"}, {"Aspect": "白飯", "Opinion": "好吃", "VA": "6.50#5.50"}]}
+{"ID": "R0107:S049", "Triplet": [{"Aspect": "蛤蠣義大利麵", "Opinion": "超大盤", "VA": "6.38#5.88"}, {"Aspect": "蛤蠣義大利麵", "Opinion": "爆量", "VA": "6.38#6.00"}]}
+{"ID": "R2852:S002", "Triplet": [{"Aspect": "麵的種類", "Opinion": "多", "VA": "6.25#5.25"}]}
+{"ID": "R1491:S003", "Triplet": [{"Aspect": "土雞粥", "Opinion": "厲害", "VA": "6.25#5.75"}]}
+{"ID": "R0671:S019", "Triplet": [{"Aspect": "法式魚排厚蛋堡", "Opinion": "真的超厚", "VA": "6.25#6.50"}]}
+{"ID": "R1607:S000", "Triplet": [{"Aspect": "鍋燒烏龍麵麵條", "Opinion": "爛了", "VA": "4.25#5.00"}, {"Aspect": "鍋燒烏龍麵", "Opinion": "不好吃", "VA": "4.00#5.00"}]}
+{"ID": "R0296:S005", "Triplet": [{"Aspect": "火雞肉的量", "Opinion": "很多", "VA": "6.17#5.83"}]}
+{"ID": "R1439:S010", "Triplet": [{"Aspect": "平衡感", "Opinion": "很糟", "VA": "3.67#6.17"}]}
+{"ID": "R1624:S009", "Triplet": [{"Aspect": "蓬萊閣蔥㸆豬肋排", "Opinion": "印象深刻", "VA": "6.00#5.75"}]}
+{"ID": "R1495:S003", "Triplet": [{"Aspect": "土雞粥", "Opinion": "比較喜歡", "VA": "6.25#5.75"}]}
+{"ID": "R3198:S000", "Triplet": [{"Aspect": "雞腿雞翅", "Opinion": "算好吃", "VA": "6.17#5.83"}, {"Aspect": "雞腿雞翅", "Opinion": "很多汁", "VA": "6.50#6.17"}]}
+{"ID": "R1500:S027", "Triplet": [{"Aspect": "鹹蛋黃", "Opinion": "不夠突出", "VA": "4.50#4.83"}]}
+{"ID": "R0389:S038", "Triplet": [{"Aspect": "調味", "Opinion": "很剛好", "VA": "6.25#5.75"}]}
+{"ID": "R1477:S006", "Triplet": [{"Aspect": "提拉米蘇", "Opinion": "真的很難吃", "VA": "2.83#6.33"}]}
+{"ID": "R1769:S012", "Triplet": [{"Aspect": "蔬果沙拉", "Opinion": "真的很真材實料", "VA": "6.50#6.00"}]}
+{"ID": "R3049:S001", "Triplet": [{"Aspect": "明蝦", "Opinion": "很大隻", "VA": "6.25#5.88"}, {"Aspect": "明蝦", "Opinion": "新鮮", "VA": "6.25#5.62"}]}
+{"ID": "R3038:S006", "Triplet": [{"Aspect": "肉羹麵的湯", "Opinion": "很順口", "VA": "6.38#6.12"}]}
+{"ID": "R1731:S008", "Triplet": [{"Aspect": "泡菜", "Opinion": "推薦", "VA": "6.33#5.50"}, {"Aspect": "龍鬚菜", "Opinion": "推薦", "VA": "6.33#5.50"}]}
+{"ID": "R0876:S003", "Triplet": [{"Aspect": "法式松露菌菇濃湯", "Opinion": "濃郁", "VA": "6.25#5.50"}, {"Aspect": "法式松露菌菇濃湯", "Opinion": "超補", "VA": "6.75#7.00"}]}
+{"ID": "R1175:S061", "Triplet": [{"Aspect": "肥瘦比例", "Opinion": "恰到好處", "VA": "6.17#5.33"}]}
+{"ID": "R2833:S009", "Triplet": [{"Aspect": "馬鈴薯選項", "Opinion": "很多", "VA": "6.25#5.75"}]}
+{"ID": "R2928:S001", "Triplet": [{"Aspect": "上餐速度", "Opinion": "比較慢", "VA": "4.25#4.75"}]}
+{"ID": "R1898:S011", "Triplet": [{"Aspect": "大蒜麵包", "Opinion": "非常好吃", "VA": "6.75#6.88"}]}
+{"ID": "R1458:S000", "Triplet": [{"Aspect": "藍紋起司的漢堡", "Opinion": "很香", "VA": "6.50#6.00"}]}
+{"ID": "R0566:S012", "Triplet": [{"Aspect": "肉", "Opinion": "好吃紮實", "VA": "6.25#5.88"}]}
+{"ID": "R1674:S010", "Triplet": [{"Aspect": "草莓寒天凍", "Opinion": "很好吃", "VA": "6.67#6.33"}]}
+{"ID": "R0937:S017", "Triplet": [{"Aspect": "口感", "Opinion": "軟嫩多汁", "VA": "6.25#5.75"}]}
+{"ID": "R3075:S011", "Triplet": [{"Aspect": "魚頭", "Opinion": "很讓人驚豔", "VA": "6.50#6.50"}, {"Aspect": "雞湯", "Opinion": "很美味", "VA": "6.50#6.50"}]}
+{"ID": "R1631:S007", "Triplet": [{"Aspect": "熱壓吐司", "Opinion": "不錯吃", "VA": "6.17#5.83"}]}
+{"ID": "R1535:S004", "Triplet": [{"Aspect": "餐廳服務人員服務", "Opinion": "很好", "VA": "6.25#5.75"}]}
+{"ID": "R2893:S024", "Triplet": [{"Aspect": "米腸", "Opinion": "一般般", "VA": "5.00#5.00"}, {"Aspect": "米腸", "Opinion": "有點無味", "VA": "4.50#4.75"}]}
+{"ID": "R0487:S022", "Triplet": [{"Aspect": "大腸", "Opinion": "很夠味", "VA": "6.50#6.38"}]}
+{"ID": "R1617:S057", "Triplet": [{"Aspect": "主廚精選拼盤味道", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R1667:S001", "Triplet": [{"Aspect": "手工麵包", "Opinion": "好吃", "VA": "6.25#5.50"}]}
+{"ID": "R0850:S132", "Triplet": [{"Aspect": "餐點", "Opinion": "吸睛", "VA": "6.62#6.25"}]}
+{"ID": "R1700:S001", "Triplet": [{"Aspect": "扣肉", "Opinion": "相當的透", "VA": "6.25#6.12"}]}
+{"ID": "R2758:S009", "Triplet": [{"Aspect": "炒鱔魚", "Opinion": "非常優秀", "VA": "6.75#6.75"}, {"Aspect": "調味", "Opinion": "略偏甜", "VA": "5.25#5.25"}]}
+{"ID": "R0097:S010", "Triplet": [{"Aspect": "蔬菜料", "Opinion": "滿滿", "VA": "6.25#5.50"}]}
+{"ID": "R0044:S049", "Triplet": [{"Aspect": "份量", "Opinion": "算是不多", "VA": "5.00#4.75"}, {"Aspect": "價格", "Opinion": "不算很便宜", "VA": "4.75#4.75"}, {"Aspect": "用料", "Opinion": "實在", "VA": "6.25#5.50"}]}
+{"ID": "R3137:S009", "Triplet": [{"Aspect": "豬肝", "Opinion": "偏硬", "VA": "4.25#5.25"}, {"Aspect": "口感", "Opinion": "不是很習慣", "VA": "4.25#5.25"}]}
+{"ID": "R0390:S017", "Triplet": [{"Aspect": "味道", "Opinion": "鹹香", "VA": "6.12#5.50"}]}
+{"ID": "R1500:S029", "Triplet": [{"Aspect": "野菇牛", "Opinion": "蠻喜歡", "VA": "6.25#5.75"}]}
+{"ID": "R0470:S038", "Triplet": [{"Aspect": "炸水餃", "Opinion": "意外好吃", "VA": "6.75#6.38"}]}
+{"ID": "R0056:S022", "Triplet": [{"Aspect": "NULL", "Opinion": "滿方便", "VA": "6.12#5.50"}]}
+{"ID": "R0578:S003", "Triplet": [{"Aspect": "草莓", "Opinion": "驚艷", "VA": "6.62#6.25"}]}
+{"ID": "R0108:S038", "Triplet": [{"Aspect": "米粉", "Opinion": "好吃", "VA": "6.33#5.50"}, {"Aspect": "小卷", "Opinion": "好吃", "VA": "6.33#5.50"}]}
+{"ID": "R0809:S018", "Triplet": [{"Aspect": "蒜香味", "Opinion": "很夠", "VA": "6.25#6.25"}]}
+{"ID": "R0828:S022", "Triplet": [{"Aspect": "豬血湯", "Opinion": "真的是好吃", "VA": "6.75#6.50"}, {"Aspect": "價格", "Opinion": "便宜", "VA": "6.00#5.25"}, {"Aspect": "味道", "Opinion": "相當實在", "VA": "6.25#5.75"}]}
+{"ID": "R2869:S008", "Triplet": [{"Aspect": "湯", "Opinion": "有點膩", "VA": "4.33#4.50"}, {"Aspect": "湯勾芡", "Opinion": "有點太稠", "VA": "4.33#4.50"}]}
+{"ID": "R1611:S009", "Triplet": [{"Aspect": "鳳梨芋泥", "Opinion": "十分好吃", "VA": "6.50#6.00"}]}
+{"ID": "R0063:S014", "Triplet": [{"Aspect": "空間", "Opinion": "算寬敞", "VA": "6.25#5.50"}, {"Aspect": "桌子", "Opinion": "夠大夠擺", "VA": "6.25#5.50"}]}
+{"ID": "R0339:S027", "Triplet": [{"Aspect": "肉質", "Opinion": "帶點酸味", "VA": "4.17#4.83"}]}
+{"ID": "R0917:S037", "Triplet": [{"Aspect": "燉飯的青醬", "Opinion": "小膩一點", "VA": "4.62#4.88"}]}
+{"ID": "R0686:S032", "Triplet": [{"Aspect": "美式培根", "Opinion": "香", "VA": "5.88#5.38"}, {"Aspect": "美式培根", "Opinion": "脆", "VA": "5.88#5.38"}]}
+{"ID": "R3243:S012", "Triplet": [{"Aspect": "筍絲", "Opinion": "還不錯吃", "VA": "6.00#5.50"}]}
+{"ID": "R0146:S020", "Triplet": [{"Aspect": "口感", "Opinion": "比較不愛", "VA": "3.67#4.50"}]}
+{"ID": "R1576:S010", "Triplet": [{"Aspect": "奶酪口感", "Opinion": "滑順", "VA": "6.25#5.38"}]}
+{"ID": "R1647:S009", "Triplet": [{"Aspect": "調味", "Opinion": "不合口味", "VA": "4.25#4.75"}]}
+{"ID": "R0753:S015", "Triplet": [{"Aspect": "芋頭", "Opinion": "不會太甜", "VA": "5.75#5.25"}]}
+{"ID": "R1717:S004", "Triplet": [{"Aspect": "餐點價格", "Opinion": "蠻高的", "VA": "4.25#4.75"}]}
+{"ID": "R3057:S004", "Triplet": [{"Aspect": "空間", "Opinion": "不是很大", "VA": "4.33#4.50"}]}
+{"ID": "R2254:S012", "Triplet": [{"Aspect": "甜烙餅", "Opinion": "好吃", "VA": "6.25#5.25"}, {"Aspect": "甜烙餅", "Opinion": "夠甜", "VA": "6.00#5.00"}, {"Aspect": "甜烙餅", "Opinion": "夠味", "VA": "6.00#5.00"}, {"Aspect": "甜烙餅", "Opinion": "很香", "VA": "6.25#5.25"}, {"Aspect": "感受", "Opinion": "很棒", "VA": "6.75#6.00"}]}
+{"ID": "R0159:S021", "Triplet": [{"Aspect": "飯糰韭菜盒", "Opinion": "很一般", "VA": "5.00#5.00"}, {"Aspect": "飯糰韭菜盒", "Opinion": "不太推薦", "VA": "4.25#5.25"}]}
+{"ID": "R0832:S003", "Triplet": [{"Aspect": "牛肉爐", "Opinion": "推薦", "VA": "6.33#5.50"}, {"Aspect": "炒飯", "Opinion": "推薦", "VA": "6.33#5.50"}]}
+{"ID": "R0810:S042", "Triplet": [{"Aspect": "湯頭", "Opinion": "有鮮", "VA": "6.12#5.50"}]}
+{"ID": "R1452:S011", "Triplet": [{"Aspect": "百香果荔枝氣泡飲香氣層次", "Opinion": "豐富", "VA": "6.00#5.38"}]}
+{"ID": "R3242:S007", "Triplet": [{"Aspect": "炒青菜", "Opinion": "很好吃", "VA": "6.75#6.25"}, {"Aspect": "份量", "Opinion": "偏少", "VA": "4.50#4.75"}]}
+{"ID": "R1792:S009", "Triplet": [{"Aspect": "檸檬味", "Opinion": "十足", "VA": "6.25#6.00"}]}
+{"ID": "R2555:S003", "Triplet": [{"Aspect": "炒飯", "Opinion": "粒粒分明", "VA": "6.17#5.83"}, {"Aspect": "炒飯", "Opinion": "保有濕潤口感", "VA": "6.17#5.83"}, {"Aspect": "米粒", "Opinion": "不會太爛", "VA": "5.83#5.17"}]}
+{"ID": "R0090:S002", "Triplet": [{"Aspect": "交通", "Opinion": "很方便", "VA": "6.33#6.17"}]}
+{"ID": "R3037:S002", "Triplet": [{"Aspect": "蛋餅", "Opinion": "必點", "VA": "6.62#6.50"}, {"Aspect": "廣東粥配油條", "Opinion": "必點", "VA": "6.62#6.50"}]}
+{"ID": "R0371:S034", "Triplet": [{"Aspect": "豌豆", "Opinion": "爽脆", "VA": "6.25#5.88"}]}
+{"ID": "R0394:S061", "Triplet": [{"Aspect": "環境", "Opinion": "很一般", "VA": "5.00#5.00"}]}
+{"ID": "R3278:S009", "Triplet": [{"Aspect": "海膽炒飯", "Opinion": "過濕", "VA": "4.17#4.83"}, {"Aspect": "海膽炒飯", "Opinion": "沒有海膽味", "VA": "4.17#5.17"}]}
+{"ID": "R0553:S071", "Triplet": [{"Aspect": "麵包體", "Opinion": "鬆軟", "VA": "6.25#5.75"}, {"Aspect": "麵包體", "Opinion": "紮實", "VA": "6.00#5.75"}, {"Aspect": "牛肉漢堡排", "Opinion": "肉香濃郁", "VA": "6.50#6.25"}]}
+{"ID": "R1786:S002", "Triplet": [{"Aspect": "料理", "Opinion": "美味", "VA": "6.38#5.75"}]}
+{"ID": "R0123:S011", "Triplet": [{"Aspect": "口感", "Opinion": "很開胃", "VA": "6.25#6.25"}]}
+{"ID": "R1576:S012", "Triplet": [{"Aspect": "奶酪", "Opinion": "真的很好吃", "VA": "6.75#6.50"}]}
+{"ID": "R1510:S000", "Triplet": [{"Aspect": "餐廳環境", "Opinion": "優美", "VA": "6.25#5.50"}]}
+{"ID": "R1855:S010", "Triplet": [{"Aspect": "蔬果", "Opinion": "新鮮", "VA": "6.12#5.50"}]}
+{"ID": "R0482:S034", "Triplet": [{"Aspect": "蔬菜盤的種類", "Opinion": "不少", "VA": "5.75#5.38"}]}
+{"ID": "R0327:S075", "Triplet": [{"Aspect": "肉丁", "Opinion": "很香", "VA": "6.25#6.25"}]}
+{"ID": "R3023:S003", "Triplet": [{"Aspect": "口感", "Opinion": "很差", "VA": "3.33#6.50"}]}
+{"ID": "R0070:S005", "Triplet": [{"Aspect": "紅茶味道", "Opinion": "回甘", "VA": "6.25#5.50"}]}
+{"ID": "R0117:S018", "Triplet": [{"Aspect": "小腸", "Opinion": "嫩", "VA": "6.12#5.50"}, {"Aspect": "小腸", "Opinion": "沒有苦臊味", "VA": "6.12#5.38"}]}
+{"ID": "R0173:S009", "Triplet": [{"Aspect": "豬血", "Opinion": "非常之嫩", "VA": "6.75#6.50"}]}
+{"ID": "R0024:S025", "Triplet": [{"Aspect": "豬肉", "Opinion": "軟嫩", "VA": "6.25#5.25"}, {"Aspect": "豬肉", "Opinion": "不乾硬", "VA": "5.75#5.00"}]}
+{"ID": "R1751:S013", "Triplet": [{"Aspect": "梅干扣肉", "Opinion": "有點薄", "VA": "4.50#4.83"}]}
+{"ID": "R0201:S038", "Triplet": [{"Aspect": "韭菜", "Opinion": "軟而不老", "VA": "6.25#5.75"}]}
+{"ID": "R0714:S060", "Triplet": [{"Aspect": "黃油麵口感", "Opinion": "不錯", "VA": "5.75#5.38"}]}
+{"ID": "R0840:S093", "Triplet": [{"Aspect": "甜不辣", "Opinion": "軟Q帶勁", "VA": "6.17#5.83"}]}
+{"ID": "R2133:S003", "Triplet": [{"Aspect": "上餐速度", "Opinion": "真的超快", "VA": "6.50#6.75"}, {"Aspect": "食物的品質", "Opinion": "沒有因為速度而影響", "VA": "5.75#5.50"}]}
+{"ID": "R1700:S013", "Triplet": [{"Aspect": "調味", "Opinion": "相當的好", "VA": "6.25#6.25"}]}
+{"ID": "R1611:S008", "Triplet": [{"Aspect": "肉質", "Opinion": "甜美豐盈", "VA": "6.50#5.83"}, {"Aspect": "肉質", "Opinion": "滿足", "VA": "6.33#5.50"}]}
+{"ID": "R0475:S005", "Triplet": [{"Aspect": "菜單", "Opinion": "簡單清楚", "VA": "6.25#5.25"}]}
+{"ID": "R1649:S012", "Triplet": [{"Aspect": "義式冰奶茶", "Opinion": "非常順口好喝", "VA": "6.83#6.50"}]}
+{"ID": "R3199:S008", "Triplet": [{"Aspect": "雞肉", "Opinion": "多汁鮮嫩", "VA": "6.50#5.83"}, {"Aspect": "薯條", "Opinion": "酥脆好吃", "VA": "6.50#5.83"}, {"Aspect": "可樂", "Opinion": "不會太稀", "VA": "5.67#5.00"}]}
+{"ID": "R0162:S088", "Triplet": [{"Aspect": "奶油", "Opinion": "真的很香", "VA": "6.50#6.50"}, {"Aspect": "松露", "Opinion": "真的很香", "VA": "6.50#6.50"}]}

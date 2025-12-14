@@ -1,12 +1,12 @@
 \midrule
-eng & Restaurant & 54.09 & 53.54 & 54.53 & 56.66 & 57.17 & \textbf{57.84} \\
-eng & Laptop & 37.18 & 36.64 & 37.79 & 38.16 & 37.85 & \textbf{39.51} \\
-jap & Hotel & 39.99 & 40.40 & \textbf{41.35} & 38.40 & 40.92 & 40.35 \\
-rus & Restaurant & 52.55 & 55.18 & \textbf{56.56} & 55.90 & 54.99 & 55.90 \\
-tat & Restaurant & 44.45 & 44.74 & \textbf{46.05} & 43.00 & 44.57 & 44.44 \\
-ukr & Restaurant & 49.91 & 50.61 & 51.26 & 53.53 & 54.83 & \textbf{56.32} \\
-zho & Restaurant & 65.92 & \textbf{66.81} & 66.81 & N/A & N/A & N/A \\
-zho & Laptop & N/A & N/A & N/A & N/A & N/A & N/A \\
+English & Restaurant & 58.66 & 59.53 &  \textbf{59.89} & 59.81 \\
+English & Laptop & 38.39 & 38.63 &  39.29 & \textbf{39.31} \\
+Japanese & Hotel & 38.02 & 39.90 &  \textbf{40.05} & 39.86 \\
+Russian & Restaurant & 55.68 & 56.32 &  \textbf{56.88} & 56.68 \\
+Tatar & Restaurant & 44.22 & 45.62 &  46.22 & \textbf{46.24} \\
+Ukrainian & Restaurant & 52.50 & 53.76 &  54.00 & \textbf{54.51} \\
+Chinese & Restaurant & 70.23 & 70.65 &  \textbf{70.74} & 70.68 \\
+Chinese & Laptop & 37.54 & 38.65 &  39.56 & \textbf{39.61} \\
 \midrule
-\multicolumn{2}{l}{\textbf{Average}} & 49.15 & 49.70 & \textbf{50.62} & 47.61 & 48.39 & 49.06 \\
+\multicolumn{2}{l}{\textbf{Average}} & 49.41 & 50.38 &  50.83 & \textbf{50.84} \\
 \bottomrule
