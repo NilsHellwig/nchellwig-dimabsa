@@ -44,6 +44,9 @@ def train_and_evaluate(
 ):
     # Set random seed for reproducibility
     set_seed(seed_run)
+    
+    # define model_name
+    model_save_path = "model_path" if strategy == "train_split" else f"model_{subtask}_{language}_{domain}_full_data"
 
     logger.info(
         f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed_run}")
@@ -165,10 +168,10 @@ def train_and_evaluate(
         }
         f.write(json.dumps(log_entry) + "\n")
 
-    # Save model and tokenizer to model_temp
-    logger.info("Saving model and tokenizer to model_temp...")
-    model.save_pretrained("model_temp")
-    tokenizer.save_pretrained("model_temp")
+    # Save model and tokenizer to model_save_path
+    logger.info(f"Saving model and tokenizer to {model_save_path}...")
+    model.save_pretrained(model_save_path)
+    tokenizer.save_pretrained(model_save_path)
 
     # perform evaluation here using vLLM
     
@@ -222,7 +225,7 @@ def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=10
         outputs = llm.generate(
             prompts=chunk_prompts,
             sampling_params=chunk_sampling_params,
-            lora_request=LoRARequest("adapter", 1, "model_temp")
+            lora_request=LoRARequest("adapter", 1, model_save_path)
         )
         all_outputs.extend(outputs)
     return all_outputs
@@ -306,7 +309,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             max_tokens=512,
             seed=seed_run
         ),
-        lora_request=LoRARequest("adapter", 1, "model_temp")
+        lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_1a = datetime.now() - start_time_1a
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1a, self_consistency=False, guided=False)
@@ -317,7 +320,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     outputs_1b = llm.generate(
         prompts=prompts,
         sampling_params=sampling_params_list,
-        lora_request=LoRARequest("adapter", 1, "model_temp"),
+        lora_request=LoRARequest("adapter", 1, model_save_path),
     )
     total_time_1b = datetime.now() - start_time_1b
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1b, self_consistency=False, guided=True)
@@ -342,7 +345,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     outputs_2a = llm.generate(
         prompts=prompts_2a,
         sampling_params=sampling_params_2a,
-        lora_request=LoRARequest("adapter", 1, "model_temp")
+        lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_2a = datetime.now() - start_time_2a
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2a, self_consistency=True, guided=False)
@@ -369,7 +372,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             ))
     
     start_time_2b = datetime.now()
-    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, "model_temp"), chunks=500 if language == "zho" else 2000)
+    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
     total_time_2b = datetime.now() - start_time_2b
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
