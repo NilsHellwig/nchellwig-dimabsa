@@ -46,7 +46,12 @@ def train_and_evaluate(
     set_seed(seed_run)
     
     # define model_name
-    model_save_path = "model_path" if strategy == "train_split" else f"model_{subtask}_{language}_{domain}_full_data"
+    model_save_path = "model_path" if strategy == "train_split" else f"final_models/model_{subtask}_{language}_{domain}_full_data"
+    # create directory final_models if not exists
+    if not os.path.exists("final_models"):
+        os.makedirs("final_models")
+    if not os.path.exists(model_save_path):
+        os.makedirs(model_save_path)
 
     logger.info(
         f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed_run}")
@@ -199,19 +204,19 @@ def train_and_evaluate(
     # If strategy is "pred_dev" or "evaluation", evaluate on dev set
     if strategy == "train_split":
         evaluate_model(test_data_raw, subtask, language,
-                   domain, llm, seed_run, strategy, model_name_or_path, split_idx=split_idx)
+                   domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
     
     if strategy == "evaluation":
         evaluate_model(dev_data_raw, subtask, language,
-                       domain, llm, seed_run, "pred_dev", model_name_or_path, split_idx=split_idx)
+                       domain, llm, seed_run, "pred_dev", model_name_or_path, model_save_path, split_idx=split_idx)
     
     if test_data_raw is not None and strategy == "evaluation":
         evaluate_model(test_data_raw, subtask, language,
-                       domain, llm, seed_run, "pred_test", model_name_or_path, split_idx=split_idx)
+                       domain, llm, seed_run, "pred_test", model_name_or_path, model_save_path, split_idx=split_idx)
     
     
 
-def evaluate_chunked(prompts, sampling_params, llm, lora_request=None, chunks=1000):
+def evaluate_chunked(prompts, sampling_params, llm, model_save_path, lora_request=None, chunks=1000):
     if len(prompts) <= chunks:
         return llm.generate(
             prompts=prompts,
@@ -248,7 +253,7 @@ def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_n
         }
         f.write(json.dumps(log_entry) + "\n")
 
-def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, split_idx=0):
+def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=0):
     logger.info(f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
     logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
 
@@ -372,7 +377,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             ))
     
     start_time_2b = datetime.now()
-    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, lora_request=LoRARequest("adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
+    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, model_save_path=model_save_path, lora_request=LoRARequest("adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
     total_time_2b = datetime.now() - start_time_2b
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
