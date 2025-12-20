@@ -7,3 +7,4 @@ __pycache__/evaluate.cpython-313.pyc
 time_logs.jsonl
 old/
 unsloth_compiled_cache/
+final_models/

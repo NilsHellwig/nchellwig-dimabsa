@@ -46,10 +46,12 @@ def train_and_evaluate(
     set_seed(seed_run)
     
     # define model_name
-    model_save_path = "model_path" if strategy == "train_split" else f"final_models/model_{subtask}_{language}_{domain}_full_data"
+    model_save_path = "model_path" if strategy == "train_split" else f"final_models/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
     # create directory final_models if not exists
     if not os.path.exists("final_models"):
         os.makedirs("final_models")
+    if not os.path.exists(f"final_models/{model_name_or_path.replace('/', '_')}"):
+        os.makedirs(f"final_models/{model_name_or_path.replace('/', '_')}")
     if not os.path.exists(model_save_path):
         os.makedirs(model_save_path)
 
@@ -109,9 +111,10 @@ def train_and_evaluate(
             user_end + model_start + \
             str(example["label"]) + model_end
 
-    # Log first example prompt for debugging
-    logger.info("Example prompt (first training example):")
-    logger.info(f"{example['text']}...")
+    # Log first five example prompt for debugging
+    for i in range(min(5, len(train_data_raw))):
+        logger.info(f"Training example {i+1} prompt:")
+        logger.info(f"{train_data_raw[i]['text']}")
 
     train_data = Dataset.from_list(train_data_raw)
 

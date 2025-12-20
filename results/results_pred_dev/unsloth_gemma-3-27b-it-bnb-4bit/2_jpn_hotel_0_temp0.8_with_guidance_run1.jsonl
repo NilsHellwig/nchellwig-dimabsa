@@ -1,7 +1,7 @@
 {"ID": "hotel26_aste_dev_1", "Triplet": [{"Aspect": "室温", "Opinion": "ちょうど良く", "VA": "6.50#6.00"}, {"Aspect": "部屋", "Opinion": "広々と", "VA": "6.50#6.25"}, {"Aspect": "部屋", "Opinion": "あずましく", "VA": "6.67#6.33"}, {"Aspect": "NULL", "Opinion": "満足", "VA": "7.00#6.67"}]}
 {"ID": "hotel26_aste_dev_2", "Triplet": [{"Aspect": "駅", "Opinion": "アクセス出来て良かった", "VA": "6.50#6.33"}, {"Aspect": "出入り口", "Opinion": "近く", "VA": "6.25#6.00"}]}
 {"ID": "hotel26_aste_dev_3", "Triplet": [{"Aspect": "部屋", "Opinion": "リラックス", "VA": "6.50#6.00"}, {"Aspect": "清掃", "Opinion": "行き届いていて", "VA": "6.67#6.17"}]}
-{"ID": "hotel26_aste_dev_4", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "美味しく", "VA": "6.50#6.00"}, {"Aspect": "量", "Opinion": "多くて", "VA": "6.50#6.00"}]}
+{"ID": "hotel26_aste_dev_4", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "量", "Opinion": "多くて", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "美味しく", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_5", "Triplet": [{"Aspect": "喫煙ルーム", "Opinion": "良かった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_6", "Triplet": [{"Aspect": "NULL", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "助かります", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_7", "Triplet": [{"Aspect": "NULL", "Opinion": "とてもお得", "VA": "7.00#6.50"}, {"Aspect": "NULL", "Opinion": "大満足", "VA": "7.38#7.50"}]}
@@ -25,10 +25,10 @@
 {"ID": "hotel26_aste_dev_25", "Triplet": [{"Aspect": "NULL", "Opinion": "良かった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_26", "Triplet": [{"Aspect": "朝食", "Opinion": "好印象", "VA": "6.50#6.17"}]}
 {"ID": "hotel26_aste_dev_27", "Triplet": [{"Aspect": "設備", "Opinion": "新しくはない", "VA": "4.00#4.50"}]}
-{"ID": "hotel26_aste_dev_28", "Triplet": [{"Aspect": "夜鳴き蕎麦", "Opinion": "良かった", "VA": "6.25#5.75"}, {"Aspect": "プリン", "Opinion": "良かった", "VA": "6.25#5.75"}, {"Aspect": "名水のサービス", "Opinion": "良かった", "VA": "6.25#5.75"}, {"Aspect": "チェックアウト時間", "Opinion": "ゆっくりできた", "VA": "6.25#5.75"}]}
+{"ID": "hotel26_aste_dev_28", "Triplet": [{"Aspect": "夜鳴き蕎麦", "Opinion": "良かった", "VA": "6.50#6.00"}, {"Aspect": "プリン", "Opinion": "良かった", "VA": "6.50#6.00"}, {"Aspect": "名水のサービス", "Opinion": "良かった", "VA": "6.50#6.00"}, {"Aspect": "チェックアウト時間", "Opinion": "ゆっくりできた", "VA": "6.83#6.50"}]}
 {"ID": "hotel26_aste_dev_29", "Triplet": [{"Aspect": "清掃", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "広さ", "Opinion": "十分", "VA": "6.38#6.00"}]}
 {"ID": "hotel26_aste_dev_30", "Triplet": [{"Aspect": "宿泊割引", "Opinion": "残念", "VA": "3.00#6.00"}]}
-{"ID": "hotel26_aste_dev_31", "Triplet": [{"Aspect": "お部屋", "Opinion": "綺麗", "VA": "6.83#6.17"}, {"Aspect": "NULL", "Opinion": "清潔感", "VA": "6.33#6.00"}]}
+{"ID": "hotel26_aste_dev_31", "Triplet": [{"Aspect": "お部屋", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "清潔感", "VA": "6.38#6.00"}]}
 {"ID": "hotel26_aste_dev_32", "Triplet": [{"Aspect": "NULL", "Opinion": "最高", "VA": "7.50#7.33"}]}
 {"ID": "hotel26_aste_dev_33", "Triplet": [{"Aspect": "ホテル", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "7.00#6.50"}]}
 {"ID": "hotel26_aste_dev_34", "Triplet": [{"Aspect": "部屋", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "お風呂", "Opinion": "ひろく", "VA": "6.50#6.00"}, {"Aspect": "駅", "Opinion": "近く", "VA": "6.50#6.00"}, {"Aspect": "コンビニ", "Opinion": "近く", "VA": "6.50#6.00"}]}
@@ -37,7 +37,7 @@
 {"ID": "hotel26_aste_dev_37", "Triplet": [{"Aspect": "ジム", "Opinion": "良かった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_38", "Triplet": [{"Aspect": "大浴場", "Opinion": "満足", "VA": "7.00#6.50"}]}
 {"ID": "hotel26_aste_dev_39", "Triplet": [{"Aspect": "値段", "Opinion": "満足", "VA": "6.50#6.00"}]}
-{"ID": "hotel26_aste_dev_40", "Triplet": [{"Aspect": "朝食のお弁当", "Opinion": "ちょっと残念", "VA": "3.25#5.75"}, {"Aspect": "漬物箇所", "Opinion": "スカスカ感", "VA": "2.50#6.33"}]}
+{"ID": "hotel26_aste_dev_40", "Triplet": [{"Aspect": "朝食のお弁当", "Opinion": "ちょっと残念", "VA": "3.25#6.25"}, {"Aspect": "漬物箇所", "Opinion": "スカスカ感", "VA": "2.50#7.00"}]}
 {"ID": "hotel26_aste_dev_41", "Triplet": [{"Aspect": "お風呂", "Opinion": "満足", "VA": "7.00#6.50"}, {"Aspect": "とろとろ", "Opinion": "満足", "VA": "7.12#6.00"}]}
 {"ID": "hotel26_aste_dev_42", "Triplet": [{"Aspect": "ロビー", "Opinion": "癒される", "VA": "6.50#6.17"}]}
 {"ID": "hotel26_aste_dev_43", "Triplet": [{"Aspect": "朝食バイキング", "Opinion": "美味しく", "VA": "6.88#6.75"}, {"Aspect": "コスパ", "Opinion": "良い", "VA": "6.67#6.33"}]}
@@ -53,12 +53,12 @@
 {"ID": "hotel26_aste_dev_53", "Triplet": [{"Aspect": "温泉", "Opinion": "最高", "VA": "7.50#7.33"}, {"Aspect": "部屋", "Opinion": "狭い", "VA": "3.00#5.00"}]}
 {"ID": "hotel26_aste_dev_54", "Triplet": [{"Aspect": "コンビニ", "Opinion": "便利", "VA": "6.50#6.33"}]}
 {"ID": "hotel26_aste_dev_55", "Triplet": [{"Aspect": "ホテル", "Opinion": "助かりました", "VA": "6.50#6.00"}]}
-{"ID": "hotel26_aste_dev_56", "Triplet": [{"Aspect": "食事", "Opinion": "美味しく", "VA": "6.83#6.17"}, {"Aspect": "ウェルカムパフェ", "Opinion": "大満足", "VA": "8.00#7.00"}]}
-{"ID": "hotel26_aste_dev_57", "Triplet": [{"Aspect": "おかず", "Opinion": "素晴らしい", "VA": "7.00#6.50"}, {"Aspect": "白飯", "Opinion": "もったいない", "VA": "3.83#5.00"}]}
+{"ID": "hotel26_aste_dev_56", "Triplet": [{"Aspect": "食事", "Opinion": "美味しく", "VA": "6.83#6.50"}, {"Aspect": "ウェルカムパフェ", "Opinion": "大満足", "VA": "8.00#7.50"}]}
+{"ID": "hotel26_aste_dev_57", "Triplet": [{"Aspect": "白飯", "Opinion": "もったいない", "VA": "3.83#5.83"}]}
 {"ID": "hotel26_aste_dev_58", "Triplet": [{"Aspect": "コンビニ", "Opinion": "近い", "VA": "6.50#6.00"}, {"Aspect": "不便さ", "Opinion": "ない", "VA": "6.38#5.50"}]}
 {"ID": "hotel26_aste_dev_59", "Triplet": [{"Aspect": "アクセス", "Opinion": "便利", "VA": "6.50#6.00"}, {"Aspect": "駐車場", "Opinion": "あります", "VA": "6.00#5.50"}]}
 {"ID": "hotel26_aste_dev_60", "Triplet": [{"Aspect": "スタッフ", "Opinion": "とても親切", "VA": "7.50#7.00"}]}
-{"ID": "hotel26_aste_dev_61", "Triplet": [{"Aspect": "部屋", "Opinion": "それほど広くありません", "VA": "3.83#4.33"}, {"Aspect": "机の広さ", "Opinion": "十分", "VA": "6.50#6.00"}]}
+{"ID": "hotel26_aste_dev_61", "Triplet": [{"Aspect": "机の広さ", "Opinion": "十分", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_62", "Triplet": [{"Aspect": "おもてなし", "Opinion": "最高", "VA": "8.25#7.50"}, {"Aspect": "設備", "Opinion": "最高", "VA": "8.25#7.50"}]}
 {"ID": "hotel26_aste_dev_63", "Triplet": [{"Aspect": "立地", "Opinion": "便利", "VA": "6.50#6.00"}, {"Aspect": "立地", "Opinion": "よく", "VA": "6.38#6.00"}]}
 {"ID": "hotel26_aste_dev_64", "Triplet": [{"Aspect": "お風呂", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "お風呂", "Opinion": "広く", "VA": "6.38#6.00"}, {"Aspect": "お風呂", "Opinion": "使いやすい", "VA": "6.75#6.00"}]}
@@ -73,7 +73,7 @@
 {"ID": "hotel26_aste_dev_73", "Triplet": [{"Aspect": "設備", "Opinion": "満足", "VA": "6.83#6.33"}, {"Aspect": "お部屋", "Opinion": "満足", "VA": "6.83#6.33"}, {"Aspect": "食事処", "Opinion": "満足", "VA": "6.83#6.33"}, {"Aspect": "おもてなし", "Opinion": "温かい", "VA": "7.17#6.33"}, {"Aspect": "対応", "Opinion": "満足", "VA": "6.83#6.33"}, {"Aspect": "お宿", "Opinion": "満足度が高い", "VA": "7.50#7.00"}]}
 {"ID": "hotel26_aste_dev_74", "Triplet": [{"Aspect": "料理", "Opinion": "最高", "VA": "9.00#9.00"}]}
 {"ID": "hotel26_aste_dev_75", "Triplet": [{"Aspect": "全体的に", "Opinion": "とてもキレイ", "VA": "7.50#7.50"}]}
-{"ID": "hotel26_aste_dev_76", "Triplet": [{"Aspect": "接客", "Opinion": "丁寧", "VA": "6.88#6.50"}, {"Aspect": "接客", "Opinion": "親切", "VA": "6.88#6.50"}]}
+{"ID": "hotel26_aste_dev_76", "Triplet": [{"Aspect": "接客", "Opinion": "丁寧", "VA": "6.50#6.00"}, {"Aspect": "接客", "Opinion": "親切", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_77", "Triplet": [{"Aspect": "部屋", "Opinion": "きれい", "VA": "6.50#6.00"}, {"Aspect": "ホテル", "Opinion": "良かった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_78", "Triplet": [{"Aspect": "温泉", "Opinion": "癒されました", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_79", "Triplet": [{"Aspect": "料理", "Opinion": "最高", "VA": "7.50#7.33"}]}
@@ -85,7 +85,7 @@
 {"ID": "hotel26_aste_dev_85", "Triplet": [{"Aspect": "部屋", "Opinion": "寒さ", "VA": "2.50#6.50"}]}
 {"ID": "hotel26_aste_dev_86", "Triplet": [{"Aspect": "朝食場所", "Opinion": "便利", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_87", "Triplet": [{"Aspect": "海の景色", "Opinion": "良く", "VA": "6.50#6.00"}, {"Aspect": "お部屋", "Opinion": "素敵", "VA": "7.00#6.50"}]}
-{"ID": "hotel26_aste_dev_88", "Triplet": [{"Aspect": "パック", "Opinion": "嬉しかった", "VA": "6.83#6.50"}, {"Aspect": "入浴剤", "Opinion": "嬉しかった", "VA": "6.83#6.50"}]}
+{"ID": "hotel26_aste_dev_88", "Triplet": [{"Aspect": "パック", "Opinion": "嬉しかった", "VA": "6.88#6.50"}, {"Aspect": "入浴剤", "Opinion": "嬉しかった", "VA": "6.88#6.50"}]}
 {"ID": "hotel26_aste_dev_89", "Triplet": [{"Aspect": "朝食", "Opinion": "とてもよかった", "VA": "7.50#7.00"}]}
 {"ID": "hotel26_aste_dev_90", "Triplet": [{"Aspect": "お部屋", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "快適", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_91", "Triplet": [{"Aspect": "立地", "Opinion": "駅近", "VA": "6.50#6.17"}, {"Aspect": "コンビニ", "Opinion": "良かった", "VA": "6.38#6.12"}]}
@@ -109,8 +109,8 @@
 {"ID": "hotel26_aste_dev_109", "Triplet": [{"Aspect": "立地場所", "Opinion": "いい", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_110", "Triplet": [{"Aspect": "NULL", "Opinion": "ゆっくり休めました", "VA": "6.50#6.33"}]}
 {"ID": "hotel26_aste_dev_111", "Triplet": [{"Aspect": "ホテル", "Opinion": "とても清潔感のある", "VA": "7.25#6.62"}]}
-{"ID": "hotel26_aste_dev_112", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しく", "VA": "7.00#6.50"}, {"Aspect": "朝食", "Opinion": "満足", "VA": "7.50#7.00"}]}
-{"ID": "hotel26_aste_dev_113", "Triplet": [{"Aspect": "スタッフ", "Opinion": "丁寧に", "VA": "6.50#6.33"}, {"Aspect": "旅行", "Opinion": "とてもいい", "VA": "7.00#6.83"}]}
+{"ID": "hotel26_aste_dev_112", "Triplet": [{"Aspect": "朝食", "Opinion": "美味しく", "VA": "7.00#6.75"}, {"Aspect": "朝食", "Opinion": "満足", "VA": "7.50#7.25"}]}
+{"ID": "hotel26_aste_dev_113", "Triplet": [{"Aspect": "スタッフ", "Opinion": "丁寧に", "VA": "6.50#6.00"}, {"Aspect": "旅行", "Opinion": "とてもいい", "VA": "7.00#6.75"}, {"Aspect": "フロントスタッフ", "Opinion": "丁寧に", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_114", "Triplet": [{"Aspect": "温泉の泉質", "Opinion": "最高", "VA": "8.25#7.50"}, {"Aspect": "雰囲気", "Opinion": "暗め", "VA": "4.88#5.00"}]}
 {"ID": "hotel26_aste_dev_115", "Triplet": [{"Aspect": "おもてなし", "Opinion": "心地よく", "VA": "6.25#6.25"}, {"Aspect": "おもてなし", "Opinion": "すばらしかった", "VA": "6.75#6.50"}]}
 {"ID": "hotel26_aste_dev_116", "Triplet": [{"Aspect": "ドリン", "Opinion": "豊富", "VA": "6.50#6.00"}, {"Aspect": "ピザ", "Opinion": "とても美味しい", "VA": "7.50#7.20"}]}
@@ -119,7 +119,7 @@
 {"ID": "hotel26_aste_dev_119", "Triplet": [{"Aspect": "部屋", "Opinion": "ちょっと狭め", "VA": "4.00#5.50"}]}
 {"ID": "hotel26_aste_dev_120", "Triplet": [{"Aspect": "大浴場", "Opinion": "とてもよかった", "VA": "7.25#6.75"}]}
 {"ID": "hotel26_aste_dev_121", "Triplet": [{"Aspect": "部屋", "Opinion": "落ち着かない", "VA": "3.50#5.50"}]}
-{"ID": "hotel26_aste_dev_122", "Triplet": [{"Aspect": "朝食", "Opinion": "まずまず", "VA": "5.50#5.00"}]}
+{"ID": "hotel26_aste_dev_122", "Triplet": [{"Aspect": "朝食", "Opinion": "まずまず", "VA": "5.00#5.00"}]}
 {"ID": "hotel26_aste_dev_123", "Triplet": [{"Aspect": "露天風呂", "Opinion": "とても綺麗", "VA": "7.25#6.62"}, {"Aspect": "空間", "Opinion": "気持ちのいい", "VA": "7.00#6.50"}]}
 {"ID": "hotel26_aste_dev_124", "Triplet": [{"Aspect": "渡り廊下", "Opinion": "寒すぎる", "VA": "2.50#7.25"}]}
 {"ID": "hotel26_aste_dev_125", "Triplet": [{"Aspect": "テレビ", "Opinion": "疲れる", "VA": "3.00#6.00"}]}
@@ -156,7 +156,7 @@
 {"ID": "hotel26_aste_dev_156", "Triplet": [{"Aspect": "外観", "Opinion": "少し古め", "VA": "3.83#5.50"}, {"Aspect": "中", "Opinion": "しっかりと整備", "VA": "6.83#6.00"}, {"Aspect": "NULL", "Opinion": "清潔感", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_157", "Triplet": [{"Aspect": "全て", "Opinion": "綺麗", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_158", "Triplet": [{"Aspect": "うなぎ", "Opinion": "とても美味しかった", "VA": "7.25#7.25"}]}
-{"ID": "hotel26_aste_dev_159", "Triplet": [{"Aspect": "部屋", "Opinion": "かわいい", "VA": "6.50#6.00"}, {"Aspect": "洗面", "Opinion": "狭すぎ", "VA": "3.33#6.50"}]}
+{"ID": "hotel26_aste_dev_159", "Triplet": [{"Aspect": "洗面", "Opinion": "狭すぎ", "VA": "3.33#6.50"}]}
 {"ID": "hotel26_aste_dev_160", "Triplet": [{"Aspect": "ホテル", "Opinion": "利用したい", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_161", "Triplet": [{"Aspect": "駐車場", "Opinion": "安心", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_162", "Triplet": [{"Aspect": "内容", "Opinion": "少し寂しい", "VA": "3.50#4.50"}]}
@@ -178,23 +178,23 @@
 {"ID": "hotel26_aste_dev_178", "Triplet": [{"Aspect": "風呂", "Opinion": "よかった", "VA": "6.50#6.00"}, {"Aspect": "サウナ", "Opinion": "よかった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_179", "Triplet": [{"Aspect": "朝食", "Opinion": "問題なし", "VA": "6.00#5.50"}]}
 {"ID": "hotel26_aste_dev_180", "Triplet": [{"Aspect": "ステーキ", "Opinion": "感動", "VA": "7.00#6.50"}, {"Aspect": "柔らかさ", "Opinion": "感動", "VA": "7.00#6.50"}]}
-{"ID": "hotel26_aste_dev_181", "Triplet": [{"Aspect": "お部屋", "Opinion": "くつろげる", "VA": "6.25#5.75"}, {"Aspect": "オーシャンビューバス", "Opinion": "ゆったりとした時間が過ごせました", "VA": "6.75#6.25"}]}
+{"ID": "hotel26_aste_dev_181", "Triplet": [{"Aspect": "お部屋", "Opinion": "くつろげる", "VA": "6.25#5.75"}, {"Aspect": "オーシャンビューバス", "Opinion": "あり", "VA": "6.00#5.00"}, {"Aspect": "時間", "Opinion": "ゆったりとした", "VA": "6.67#6.00"}]}
 {"ID": "hotel26_aste_dev_182", "Triplet": [{"Aspect": "料金", "Opinion": "お値打ち", "VA": "6.50#6.17"}]}
 {"ID": "hotel26_aste_dev_183", "Triplet": [{"Aspect": "尾花", "Opinion": "素晴らしい", "VA": "7.00#6.67"}]}
 {"ID": "hotel26_aste_dev_184", "Triplet": [{"Aspect": "テーブルの位置", "Opinion": "面倒", "VA": "3.50#5.50"}]}
 {"ID": "hotel26_aste_dev_185", "Triplet": [{"Aspect": "立地", "Opinion": "良く", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_186", "Triplet": [{"Aspect": "ドームコテージ", "Opinion": "とても使いやすくなりました", "VA": "7.17#6.83"}]}
-{"ID": "hotel26_aste_dev_187", "Triplet": [{"Aspect": "雰囲気", "Opinion": "静か", "VA": "6.50#5.75"}, {"Aspect": "雰囲気", "Opinion": "とても好き", "VA": "7.38#7.50"}]}
+{"ID": "hotel26_aste_dev_187", "Triplet": [{"Aspect": "雰囲気", "Opinion": "静か", "VA": "6.50#5.75"}, {"Aspect": "雰囲気", "Opinion": "とても好き", "VA": "7.38#7.12"}]}
 {"ID": "hotel26_aste_dev_188", "Triplet": [{"Aspect": "食事", "Opinion": "満足", "VA": "6.83#6.83"}, {"Aspect": "スカイスパ", "Opinion": "満足", "VA": "6.83#6.83"}, {"Aspect": "部屋", "Opinion": "満足", "VA": "6.83#6.83"}, {"Aspect": "フロント対応", "Opinion": "満足", "VA": "6.83#6.83"}]}
-{"ID": "hotel26_aste_dev_189", "Triplet": [{"Aspect": "部屋", "Opinion": "狭い", "VA": "3.50#5.50"}, {"Aspect": "エアコン", "Opinion": "臭くて", "VA": "3.00#6.50"}, {"Aspect": "駐車場", "Opinion": "あった", "VA": "6.50#6.00"}, {"Aspect": "部屋", "Opinion": "不快", "VA": "2.50#7.00"}, {"Aspect": "臭い", "Opinion": "広がり", "VA": "3.00#6.00"}]}
+{"ID": "hotel26_aste_dev_189", "Triplet": [{"Aspect": "部屋", "Opinion": "狭い", "VA": "3.50#5.50"}, {"Aspect": "エアコン", "Opinion": "臭くて", "VA": "3.00#6.50"}, {"Aspect": "部屋", "Opinion": "不快", "VA": "2.50#7.00"}, {"Aspect": "臭い", "Opinion": "広がり", "VA": "3.00#6.00"}]}
 {"ID": "hotel26_aste_dev_190", "Triplet": [{"Aspect": "スタッフ", "Opinion": "ありがたかった", "VA": "7.00#6.75"}]}
-{"ID": "hotel26_aste_dev_191", "Triplet": [{"Aspect": "立地", "Opinion": "丁度良い", "VA": "6.25#5.50"}, {"Aspect": "立地", "Opinion": "近く", "VA": "6.12#5.00"}]}
-{"ID": "hotel26_aste_dev_192", "Triplet": [{"Aspect": "岡山駅から徒歩9分", "Opinion": "好立地", "VA": "6.67#6.00"}, {"Aspect": "NULL", "Opinion": "非常に安かった", "VA": "7.50#7.00"}]}
+{"ID": "hotel26_aste_dev_191", "Triplet": [{"Aspect": "立地", "Opinion": "丁度良い", "VA": "6.25#5.50"}]}
+{"ID": "hotel26_aste_dev_192", "Triplet": [{"Aspect": "岡山駅から徒歩9分", "Opinion": "好立地", "VA": "6.67#6.00"}]}
 {"ID": "hotel26_aste_dev_193", "Triplet": [{"Aspect": "NULL", "Opinion": "ちょっと狭かった", "VA": "3.50#5.50"}]}
 {"ID": "hotel26_aste_dev_194", "Triplet": [{"Aspect": "NULL", "Opinion": "よかった", "VA": "6.50#6.00"}]}
-{"ID": "hotel26_aste_dev_195", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "美味しく", "VA": "6.50#6.00"}, {"Aspect": "量", "Opinion": "多くて", "VA": "6.50#6.00"}]}
+{"ID": "hotel26_aste_dev_195", "Triplet": [{"Aspect": "NULL", "Opinion": "綺麗", "VA": "6.50#6.00"}, {"Aspect": "量", "Opinion": "多くて", "VA": "6.50#6.00"}, {"Aspect": "NULL", "Opinion": "美味しく", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_196", "Triplet": [{"Aspect": "NULL", "Opinion": "よかった", "VA": "6.50#6.00"}]}
 {"ID": "hotel26_aste_dev_197", "Triplet": [{"Aspect": "ホテル", "Opinion": "高評価", "VA": "7.00#6.50"}]}
 {"ID": "hotel26_aste_dev_198", "Triplet": [{"Aspect": "お部屋", "Opinion": "格別", "VA": "7.50#7.00"}]}
-{"ID": "hotel26_aste_dev_199", "Triplet": [{"Aspect": "スタッフ", "Opinion": "親切", "VA": "6.83#6.50"}]}
+{"ID": "hotel26_aste_dev_199", "Triplet": [{"Aspect": "スタッフ", "Opinion": "親切", "VA": "6.83#6.17"}]}
 {"ID": "hotel26_aste_dev_200", "Triplet": [{"Aspect": "話し声", "Opinion": "うるさい", "VA": "3.00#6.17"}]}
