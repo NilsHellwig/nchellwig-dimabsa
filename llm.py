@@ -201,7 +201,6 @@ def train_and_evaluate(
             seed=seed_run,
             max_num_seqs=512,
             max_model_len=max_seq_length,
-            guided_decoding_backend="xgrammar",
         )
 
         # Create sampling parameters

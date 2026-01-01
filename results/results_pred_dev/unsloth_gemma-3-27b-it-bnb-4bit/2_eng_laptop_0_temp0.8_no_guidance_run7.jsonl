@@ -22,7 +22,7 @@
 {"ID": "lap26_aste_dev_22", "Triplet": [{"Aspect": "HD display", "Opinion": "good", "VA": "6.67#6.50"}]}
 {"ID": "lap26_aste_dev_23", "Triplet": [{"Aspect": "battery life", "Opinion": "Poor/fair", "VA": "4.12#5.88"}]}
 {"ID": "lap26_aste_dev_24", "Triplet": []}
-{"ID": "lap26_aste_dev_25", "Triplet": [{"Aspect": "laptop", "Opinion": "extremely nice", "VA": "8.00#8.17"}]}
+{"ID": "lap26_aste_dev_25", "Triplet": [{"Aspect": "laptop", "Opinion": "extremely nice", "VA": "8.17#8.17"}]}
 {"ID": "lap26_aste_dev_26", "Triplet": [{"Aspect": "keyboard", "Opinion": "non functioning", "VA": "3.17#6.17"}, {"Aspect": "computer", "Opinion": "dirty", "VA": "3.00#6.33"}]}
 {"ID": "lap26_aste_dev_27", "Triplet": [{"Aspect": "laptop", "Opinion": "great", "VA": "7.50#7.33"}, {"Aspect": "fans", "Opinion": "super huge", "VA": "3.50#6.33"}, {"Aspect": "body", "Opinion": "very thick", "VA": "3.50#6.00"}, {"Aspect": "body", "Opinion": "bulky", "VA": "3.33#6.17"}]}
 {"ID": "lap26_aste_dev_28", "Triplet": [{"Aspect": "laptop", "Opinion": "nice", "VA": "7.00#7.17"}]}
@@ -37,14 +37,14 @@
 {"ID": "lap26_aste_dev_37", "Triplet": [{"Aspect": "keyboard", "Opinion": "very well sized", "VA": "7.75#7.75"}, {"Aspect": "keyboard", "Opinion": "comfortable", "VA": "8.00#8.25"}]}
 {"ID": "lap26_aste_dev_38", "Triplet": [{"Aspect": "Trackpad", "Opinion": "horribly", "VA": "2.75#6.75"}, {"Aspect": "Trackpad", "Opinion": "draggy", "VA": "3.00#6.50"}]}
 {"ID": "lap26_aste_dev_39", "Triplet": [{"Aspect": "Screen", "Opinion": "bright", "VA": "7.00#7.17"}, {"Aspect": "display", "Opinion": "rich", "VA": "7.00#7.17"}]}
-{"ID": "lap26_aste_dev_40", "Triplet": [{"Aspect": "Camera quality", "Opinion": "not great", "VA": "3.75#6.38"}]}
+{"ID": "lap26_aste_dev_40", "Triplet": [{"Aspect": "Camera quality", "Opinion": "not great", "VA": "3.75#4.75"}]}
 {"ID": "lap26_aste_dev_41", "Triplet": []}
 {"ID": "lap26_aste_dev_42", "Triplet": [{"Aspect": "computer", "Opinion": "lightweight", "VA": "7.17#7.17"}, {"Aspect": "computer", "Opinion": "awesome", "VA": "8.00#8.00"}, {"Aspect": "touchscreen", "Opinion": "great", "VA": "7.50#7.50"}]}
-{"ID": "lap26_aste_dev_43", "Triplet": [{"Aspect": "RAM", "Opinion": "much nicer", "VA": "7.17#7.17"}, {"Aspect": "Core i5 processor", "Opinion": "much nicer", "VA": "7.33#7.33"}, {"Aspect": "Dragonfly Blue color", "Opinion": "absolutely stunning", "VA": "8.17#8.33"}]}
-{"ID": "lap26_aste_dev_44", "Triplet": [{"Aspect": "device", "Opinion": "Great", "VA": "7.75#7.62"}, {"Aspect": "device", "Opinion": "best", "VA": "7.88#7.75"}, {"Aspect": "product", "Opinion": "best", "VA": "7.88#7.75"}]}
+{"ID": "lap26_aste_dev_43", "Triplet": [{"Aspect": "RAM", "Opinion": "much nicer", "VA": "7.17#7.17"}, {"Aspect": "Core i5 processor", "Opinion": "much nicer", "VA": "7.33#7.33"}, {"Aspect": "Dragonfly Blue color", "Opinion": "absolutely stunning", "VA": "8.17#8.17"}]}
+{"ID": "lap26_aste_dev_44", "Triplet": [{"Aspect": "device", "Opinion": "Great", "VA": "7.75#7.62"}, {"Aspect": "device", "Opinion": "best", "VA": "7.88#7.88"}, {"Aspect": "product", "Opinion": "best", "VA": "7.88#7.88"}]}
 {"ID": "lap26_aste_dev_45", "Triplet": [{"Aspect": "screen", "Opinion": "nice", "VA": "7.00#7.17"}, {"Aspect": "key pad", "Opinion": "nice", "VA": "7.17#7.33"}]}
-{"ID": "lap26_aste_dev_46", "Triplet": [{"Aspect": "laptop", "Opinion": "lightweight", "VA": "7.17#7.17"}, {"Aspect": "USB outlets", "Opinion": "necessary", "VA": "7.00#7.00"}]}
-{"ID": "lap26_aste_dev_47", "Triplet": [{"Aspect": "keys", "Opinion": "responsive", "VA": "7.00#7.33"}, {"Aspect": "chiclet style", "Opinion": "mushier", "VA": "4.00#6.67"}]}
+{"ID": "lap26_aste_dev_46", "Triplet": [{"Aspect": "laptop", "Opinion": "lightweight", "VA": "7.17#7.17"}]}
+{"ID": "lap26_aste_dev_47", "Triplet": [{"Aspect": "keys", "Opinion": "responsive", "VA": "7.00#7.33"}, {"Aspect": "chiclet style", "Opinion": "mushier", "VA": "4.00#6.33"}]}
 {"ID": "lap26_aste_dev_48", "Triplet": [{"Aspect": "graphics", "Opinion": "clear", "VA": "7.00#7.17"}]}
 {"ID": "lap26_aste_dev_49", "Triplet": [{"Aspect": "gaming laptop", "Opinion": "most excellent", "VA": "8.17#8.33"}]}
 {"ID": "lap26_aste_dev_50", "Triplet": [{"Aspect": "warranty", "Opinion": "no good", "VA": "3.67#6.17"}]}
@@ -74,7 +74,7 @@
 {"ID": "lap26_aste_dev_74", "Triplet": [{"Aspect": "Sound", "Opinion": "awesome", "VA": "7.88#7.75"}]}
 {"ID": "lap26_aste_dev_75", "Triplet": []}
 {"ID": "lap26_aste_dev_76", "Triplet": [{"Aspect": "laptop", "Opinion": "very powerful", "VA": "7.67#7.83"}, {"Aspect": "laptop", "Opinion": "fast", "VA": "7.83#8.00"}]}
-{"ID": "lap26_aste_dev_77", "Triplet": [{"Aspect": "netbook", "Opinion": "pitiful", "VA": "2.75#4.75"}, {"Aspect": "RAM", "Opinion": "pitiful", "VA": "2.75#4.75"}]}
+{"ID": "lap26_aste_dev_77", "Triplet": [{"Aspect": "RAM", "Opinion": "pitiful", "VA": "2.67#7.17"}]}
 {"ID": "lap26_aste_dev_78", "Triplet": [{"Aspect": "touch screen", "Opinion": "very large", "VA": "7.75#7.75"}]}
 {"ID": "lap26_aste_dev_79", "Triplet": [{"Aspect": "laptop", "Opinion": "pleasantly surprised", "VA": "7.12#7.00"}]}
 {"ID": "lap26_aste_dev_80", "Triplet": [{"Aspect": "computer", "Opinion": "Nice", "VA": "7.00#6.88"}]}
@@ -82,7 +82,7 @@
 {"ID": "lap26_aste_dev_82", "Triplet": [{"Aspect": "keyboard", "Opinion": "wide", "VA": "7.00#7.17"}, {"Aspect": "keyboard", "Opinion": "comfortable", "VA": "7.33#7.50"}]}
 {"ID": "lap26_aste_dev_83", "Triplet": [{"Aspect": "screen", "Opinion": "beautiful", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_84", "Triplet": [{"Aspect": "HP Chromebook", "Opinion": "great", "VA": "7.67#7.83"}]}
-{"ID": "lap26_aste_dev_85", "Triplet": [{"Aspect": "backpack", "Opinion": "easily", "VA": "7.00#7.00"}]}
+{"ID": "lap26_aste_dev_85", "Triplet": [{"Aspect": "backpack", "Opinion": "easily", "VA": "7.00#6.67"}]}
 {"ID": "lap26_aste_dev_86", "Triplet": [{"Aspect": "picture", "Opinion": "Great", "VA": "7.50#7.67"}, {"Aspect": "picture", "Opinion": "clear", "VA": "7.33#7.50"}, {"Aspect": "sound", "Opinion": "nice", "VA": "7.17#7.33"}]}
 {"ID": "lap26_aste_dev_87", "Triplet": [{"Aspect": "concept", "Opinion": "Great", "VA": "7.50#7.67"}, {"Aspect": "touch screen functionality", "Opinion": "love", "VA": "8.00#8.00"}]}
 {"ID": "lap26_aste_dev_88", "Triplet": [{"Aspect": "laptop", "Opinion": "good", "VA": "7.00#7.00"}]}
@@ -97,10 +97,10 @@
 {"ID": "lap26_aste_dev_97", "Triplet": []}
 {"ID": "lap26_aste_dev_98", "Triplet": [{"Aspect": "laptop", "Opinion": "super light", "VA": "7.17#7.17"}]}
 {"ID": "lap26_aste_dev_99", "Triplet": [{"Aspect": "computer", "Opinion": "love", "VA": "7.75#7.62"}]}
-{"ID": "lap26_aste_dev_100", "Triplet": [{"Aspect": "screen", "Opinion": "Large", "VA": "7.00#7.17"}]}
+{"ID": "lap26_aste_dev_100", "Triplet": [{"Aspect": "screen", "Opinion": "Large", "VA": "7.50#7.67"}]}
 {"ID": "lap26_aste_dev_101", "Triplet": [{"Aspect": "laptop", "Opinion": "WORST", "VA": "1.83#8.17"}]}
 {"ID": "lap26_aste_dev_102", "Triplet": [{"Aspect": "laptop", "Opinion": "FAST", "VA": "7.75#7.62"}, {"Aspect": "keyboard", "Opinion": "love", "VA": "7.62#7.62"}]}
-{"ID": "lap26_aste_dev_103", "Triplet": [{"Aspect": "laptop", "Opinion": "inexpensive", "VA": "7.00#6.75"}, {"Aspect": "laptop", "Opinion": "great", "VA": "7.50#7.25"}]}
+{"ID": "lap26_aste_dev_103", "Triplet": [{"Aspect": "laptop", "Opinion": "inexpensive", "VA": "7.00#6.75"}, {"Aspect": "laptop", "Opinion": "great", "VA": "7.75#7.50"}]}
 {"ID": "lap26_aste_dev_104", "Triplet": [{"Aspect": "computer", "Opinion": "amazing", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_105", "Triplet": [{"Aspect": "track pad", "Opinion": "beautiful", "VA": "7.67#7.83"}, {"Aspect": "track pad", "Opinion": "super large", "VA": "7.50#7.67"}, {"Aspect": "laptop", "Opinion": "beautiful", "VA": "7.67#7.83"}]}
 {"ID": "lap26_aste_dev_106", "Triplet": [{"Aspect": "pc", "Opinion": "slowest", "VA": "2.67#7.17"}]}
@@ -109,7 +109,7 @@
 {"ID": "lap26_aste_dev_109", "Triplet": [{"Aspect": "web cam", "Opinion": "hard", "VA": "3.67#6.17"}]}
 {"ID": "lap26_aste_dev_110", "Triplet": [{"Aspect": "laptop", "Opinion": "better", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_111", "Triplet": [{"Aspect": "touch screen", "Opinion": "very responsive", "VA": "7.75#8.00"}, {"Aspect": "touch screen", "Opinion": "accurate", "VA": "7.50#7.75"}]}
-{"ID": "lap26_aste_dev_112", "Triplet": [{"Aspect": "laptop", "Opinion": "spectacular", "VA": "8.17#8.17"}]}
+{"ID": "lap26_aste_dev_112", "Triplet": [{"Aspect": "laptop", "Opinion": "spectacular", "VA": "8.50#8.75"}]}
 {"ID": "lap26_aste_dev_113", "Triplet": [{"Aspect": "Alienware", "Opinion": "best", "VA": "8.17#8.17"}]}
 {"ID": "lap26_aste_dev_114", "Triplet": [{"Aspect": "display", "Opinion": "clear", "VA": "7.00#7.17"}, {"Aspect": "display", "Opinion": "bright", "VA": "7.00#7.17"}]}
 {"ID": "lap26_aste_dev_115", "Triplet": [{"Aspect": "charging cord", "Opinion": "decent", "VA": "6.75#6.75"}]}
@@ -125,7 +125,7 @@
 {"ID": "lap26_aste_dev_125", "Triplet": [{"Aspect": "Laptop speakers", "Opinion": "aren't great", "VA": "3.62#5.12"}]}
 {"ID": "lap26_aste_dev_126", "Triplet": [{"Aspect": "processor speed", "Opinion": "impressive", "VA": "7.75#8.00"}, {"Aspect": "graphics quality", "Opinion": "great", "VA": "7.50#7.75"}]}
 {"ID": "lap26_aste_dev_127", "Triplet": [{"Aspect": "Chromebook", "Opinion": "great", "VA": "7.67#7.83"}]}
-{"ID": "lap26_aste_dev_128", "Triplet": [{"Aspect": "processor", "Opinion": "Good", "VA": "7.00#7.00"}, {"Aspect": "RAM", "Opinion": "Good", "VA": "7.00#7.00"}, {"Aspect": "hard drives", "Opinion": "defiantly holds this laptop back", "VA": "3.00#6.00"}]}
+{"ID": "lap26_aste_dev_128", "Triplet": [{"Aspect": "processor", "Opinion": "Good", "VA": "7.00#7.00"}, {"Aspect": "RAM", "Opinion": "Good", "VA": "7.00#7.00"}, {"Aspect": "hard drives", "Opinion": "defiantly holds this laptop back", "VA": "3.50#6.50"}]}
 {"ID": "lap26_aste_dev_129", "Triplet": [{"Aspect": "Construction", "Opinion": "good", "VA": "7.00#7.00"}, {"Aspect": "display", "Opinion": "good", "VA": "7.00#7.00"}, {"Aspect": "spec parts", "Opinion": "well", "VA": "7.00#7.00"}]}
 {"ID": "lap26_aste_dev_130", "Triplet": [{"Aspect": "keyboard", "Opinion": "comfortable", "VA": "7.00#7.17"}]}
 {"ID": "lap26_aste_dev_131", "Triplet": [{"Aspect": "laptop", "Opinion": "very impressed", "VA": "8.17#8.17"}, {"Aspect": "performance", "Opinion": "very impressed", "VA": "8.17#8.17"}]}
@@ -163,7 +163,7 @@
 {"ID": "lap26_aste_dev_163", "Triplet": [{"Aspect": "laptop", "Opinion": "faster", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_164", "Triplet": [{"Aspect": "battery", "Opinion": "good", "VA": "7.00#7.17"}, {"Aspect": "battery", "Opinion": "really fast", "VA": "7.50#7.67"}]}
 {"ID": "lap26_aste_dev_165", "Triplet": [{"Aspect": "Keyboard", "Opinion": "Nice", "VA": "7.00#7.17"}, {"Aspect": "Track Pad", "Opinion": "Nice", "VA": "7.17#7.33"}]}
-{"ID": "lap26_aste_dev_166", "Triplet": [{"Aspect": "touchscreen", "Opinion": "amazingly responsive", "VA": "8.12#8.00"}]}
+{"ID": "lap26_aste_dev_166", "Triplet": [{"Aspect": "touchscreen", "Opinion": "amazingly", "VA": "7.75#8.00"}, {"Aspect": "touchscreen", "Opinion": "responsive", "VA": "7.50#7.75"}]}
 {"ID": "lap26_aste_dev_167", "Triplet": [{"Aspect": "laptop", "Opinion": "Awesome", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_168", "Triplet": [{"Aspect": "laptop", "Opinion": "recommend", "VA": "7.75#7.62"}]}
 {"ID": "lap26_aste_dev_169", "Triplet": [{"Aspect": "laptop", "Opinion": "Excellent", "VA": "7.75#7.62"}, {"Aspect": "touchscreen", "Opinion": "well", "VA": "6.88#7.00"}]}
@@ -179,7 +179,7 @@
 {"ID": "lap26_aste_dev_179", "Triplet": [{"Aspect": "display", "Opinion": "just okay", "VA": "5.50#5.75"}, {"Aspect": "display", "Opinion": "not very bright", "VA": "4.50#6.00"}]}
 {"ID": "lap26_aste_dev_180", "Triplet": [{"Aspect": "Battery", "Opinion": "trash", "VA": "2.00#7.67"}]}
 {"ID": "lap26_aste_dev_181", "Triplet": [{"Aspect": "Screen resolution", "Opinion": "outstandingly", "VA": "8.17#8.33"}, {"Aspect": "viewing angles", "Opinion": "outstandingly", "VA": "8.17#8.33"}]}
-{"ID": "lap26_aste_dev_182", "Triplet": [{"Aspect": "RAM", "Opinion": "limited", "VA": "3.50#5.50"}, {"Aspect": "battery", "Opinion": "not user-replaceable", "VA": "3.50#5.50"}]}
+{"ID": "lap26_aste_dev_182", "Triplet": [{"Aspect": "RAM", "Opinion": "limited", "VA": "3.75#5.25"}, {"Aspect": "battery", "Opinion": "not user-replaceable", "VA": "3.50#5.50"}]}
 {"ID": "lap26_aste_dev_183", "Triplet": [{"Aspect": "laptop", "Opinion": "very pleased", "VA": "7.67#7.83"}, {"Aspect": "laptop", "Opinion": "impressed", "VA": "8.00#8.17"}]}
 {"ID": "lap26_aste_dev_184", "Triplet": [{"Aspect": "battery", "Opinion": "smaller", "VA": "6.00#6.33"}, {"Aspect": "battery", "Opinion": "lighter", "VA": "6.33#6.67"}]}
 {"ID": "lap26_aste_dev_185", "Triplet": [{"Aspect": "computer", "Opinion": "loves", "VA": "7.67#7.83"}]}
@@ -195,6 +195,6 @@
 {"ID": "lap26_aste_dev_195", "Triplet": [{"Aspect": "mouse button", "Opinion": "isn't great", "VA": "3.62#5.12"}]}
 {"ID": "lap26_aste_dev_196", "Triplet": [{"Aspect": "battery life", "Opinion": "Nice", "VA": "7.17#7.17"}, {"Aspect": "processor", "Opinion": "powerful", "VA": "7.50#7.50"}]}
 {"ID": "lap26_aste_dev_197", "Triplet": [{"Aspect": "computer", "Opinion": "Great", "VA": "7.50#7.67"}]}
-{"ID": "lap26_aste_dev_198", "Triplet": []}
+{"ID": "lap26_aste_dev_198", "Triplet": [{"Aspect": "quality", "Opinion": "Great", "VA": "7.50#7.67"}]}
 {"ID": "lap26_aste_dev_199", "Triplet": []}
 {"ID": "lap26_aste_dev_200", "Triplet": [{"Aspect": "laptop", "Opinion": "Great", "VA": "7.00#7.17"}]}
