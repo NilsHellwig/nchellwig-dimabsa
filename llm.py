@@ -41,183 +41,187 @@ def train_and_evaluate(
     lora_alpha=16,
     strategy="evaluation",
     split_idx=0,
+    do_train=True,
+    do_test=True,
 ):
     # Set random seed for reproducibility
     set_seed(seed_run)
-    
+
     # define model_name
     model_save_path = "model_path" if strategy == "train_split" else f"final_models/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
-    # create directory final_models if not exists
-    if not os.path.exists("final_models"):
-        os.makedirs("final_models")
-    if not os.path.exists(f"final_models/{model_name_or_path.replace('/', '_')}"):
-        os.makedirs(f"final_models/{model_name_or_path.replace('/', '_')}")
-    if not os.path.exists(model_save_path):
-        os.makedirs(model_save_path)
+    if do_train:
+        # create directory final_models if not exists
+        if not os.path.exists("final_models"):
+            os.makedirs("final_models")
+        if not os.path.exists(f"final_models/{model_name_or_path.replace('/', '_')}"):
+            os.makedirs(f"final_models/{model_name_or_path.replace('/', '_')}")
+        if not os.path.exists(model_save_path):
+            os.makedirs(model_save_path)
 
-    logger.info(
-        f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed_run}")
-    logger.info(
-        f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
-    logger.info(
-        f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw ) if dev_data_raw is not None else 'N/A'}")
+        logger.info(
+            f"Starting training - Subtask: {subtask}, Language: {language}, Domain: {domain}, Seed: {seed_run}")
+        logger.info(
+            f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
+        logger.info(
+            f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw) if dev_data_raw is not None else 'N/A'}")
 
-    model, tokenizer = FastModel.from_pretrained(
-        model_name=model_name_or_path,
-        max_seq_length=max_seq_length,
-        # load_in_4bit=True,
-        # load_in_8bit=False,
-        full_finetuning=False,
-    )
-
-    model = FastModel.get_peft_model(
-        model,
-        finetune_vision_layers=False,
-        finetune_language_layers=True,
-        finetune_attention_modules=True,
-        finetune_mlp_modules=True,
-        r=lora_rank,
-        lora_alpha=lora_alpha,
-        lora_dropout=0,
-        bias="none",
-        random_state=seed_run,
-    )
-
-    # Determine chat template tags based on model
-    if "gemma" in model_name_or_path.lower():
-        user_start = "<start_of_turn>user\n"
-        user_end = "<end_of_turn>\n"
-        model_start = "<start_of_turn>model\n"
-        model_end = "<end_of_turn>"
-    else:  # Qwen and others
-        user_start = "<|im_start|>user\n"
-        user_end = "<|im_end|>\n"
-        model_start = "<|im_start|>assistant\n"
-        model_end = "<|im_end|>"
-
-    for example in train_data_raw:
-        if "label" in example:
-            # Convert label objects to tuples
-            example["label"] = convert_label_objects_to_tuples(
-                example["label"], subtask=subtask)
-
-        prompt = get_prompt(
-            text=example["text"],
-            subtask=subtask,
-            language=language,
-            domain=domain
+        model, tokenizer = FastModel.from_pretrained(
+            model_name=model_name_or_path,
+            max_seq_length=max_seq_length,
+            # load_in_4bit=True,
+            # load_in_8bit=False,
+            full_finetuning=False,
         )
-        example["text"] = user_start + prompt + \
-            user_end + model_start + \
-            str(example["label"]) + model_end
 
-    # Log first five example prompt for debugging
-    for i in range(min(5, len(train_data_raw))):
-        logger.info(f"Training example {i+1} prompt:")
-        logger.info(f"{train_data_raw[i]['text']}")
+        model = FastModel.get_peft_model(
+            model,
+            finetune_vision_layers=False,
+            finetune_language_layers=True,
+            finetune_attention_modules=True,
+            finetune_mlp_modules=True,
+            r=lora_rank,
+            lora_alpha=lora_alpha,
+            lora_dropout=0,
+            bias="none",
+            random_state=seed_run,
+        )
 
-    train_data = Dataset.from_list(train_data_raw)
+        # Determine chat template tags based on model
+        if "gemma" in model_name_or_path.lower():
+            user_start = "<start_of_turn>user\n"
+            user_end = "<end_of_turn>\n"
+            model_start = "<start_of_turn>model\n"
+            model_end = "<end_of_turn>"
+        else:  # Qwen and others
+            user_start = "<|im_start|>user\n"
+            user_end = "<|im_end|>\n"
+            model_start = "<|im_start|>assistant\n"
+            model_end = "<|im_end|>"
 
-    tokenizer = get_chat_template(
-        tokenizer,
-        chat_template="gemma-3" if "gemma" in model_name_or_path else "qwen-3",
-    )
+        for example in train_data_raw:
+            if "label" in example:
+                # Convert label objects to tuples
+                example["label"] = convert_label_objects_to_tuples(
+                    example["label"], subtask=subtask)
 
-    trainer = SFTTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        train_dataset=train_data,
-        eval_dataset=None,
-        args=SFTConfig(
-            dataset_text_field="text",
-            per_device_train_batch_size=train_batch_size,
-            gradient_accumulation_steps=4,
-            warmup_steps=5,
-            num_train_epochs=num_train_epochs,
-            learning_rate=learning_rate,
-            logging_steps=10,
-            optim="adamw_8bit",
-            weight_decay=0.001,
-            lr_scheduler_type="linear",
+            prompt = get_prompt(
+                text=example["text"],
+                subtask=subtask,
+                language=language,
+                domain=domain
+            )
+            example["text"] = user_start + prompt + \
+                user_end + model_start + \
+                str(example["label"]) + model_end
+
+        # Log first five example prompt for debugging
+        for i in range(min(5, len(train_data_raw))):
+            logger.info(f"Training example {i+1} prompt:")
+            logger.info(f"{train_data_raw[i]['text']}")
+
+        train_data = Dataset.from_list(train_data_raw)
+
+        tokenizer = get_chat_template(
+            tokenizer,
+            chat_template="gemma-3" if "gemma" in model_name_or_path else "qwen-3",
+        )
+
+        trainer = SFTTrainer(
+            model=model,
+            tokenizer=tokenizer,
+            train_dataset=train_data,
+            eval_dataset=None,
+            args=SFTConfig(
+                dataset_text_field="text",
+                per_device_train_batch_size=train_batch_size,
+                gradient_accumulation_steps=4,
+                warmup_steps=5,
+                num_train_epochs=num_train_epochs,
+                learning_rate=learning_rate,
+                logging_steps=10,
+                optim="adamw_8bit",
+                weight_decay=0.001,
+                lr_scheduler_type="linear",
+                seed=seed_run,
+                report_to="none",
+            ),
+        )
+
+        trainer = train_on_responses_only(
+            trainer,
+            instruction_part=user_start,
+            response_part=model_start,
+        )
+
+        logger.info("Starting model training...")
+        start_time_training = datetime.now()
+        trainer.train()
+        total_time_training = datetime.now() - start_time_training
+        logger.info(f"Total training time: {total_time_training}")
+        logger.info("Training completed")
+
+        # store time of training in time_logs.jsonl
+        with open("time_logs.jsonl", "a") as f:
+            log_entry = {
+                "subtask": subtask,
+                "language": language,
+                "domain": domain,
+                "seed_run": seed_run,
+                "strategy": strategy,
+                "split_idx": split_idx,
+                "model_name_or_path": model_name_or_path,
+                "num_train_epochs": num_train_epochs,
+                "train_batch_size": train_batch_size,
+                "learning_rate": learning_rate,
+                "lora_rank": lora_rank,
+                "training_time": total_time_training.total_seconds(),
+                "timestamp": datetime.now().isoformat()
+            }
+            f.write(json.dumps(log_entry) + "\n")
+
+        # Save model and tokenizer to model_save_path
+        logger.info(f"Saving model and tokenizer to {model_save_path}...")
+        model.save_pretrained(model_save_path)
+        tokenizer.save_pretrained(model_save_path)
+
+        # perform evaluation here using vLLM
+    if do_test:
+
+        setup_gpu_environment()
+        clear_memory()
+
+        logger.info("Initializing vLLM for evaluation...")
+        # Initialize vLLM with the base model
+        llm = LLM(
+            model=model_name_or_path,
+            tokenizer=model_name_or_path,
+            enable_lora=True,
+            max_lora_rank=lora_rank,
+            gpu_memory_utilization=0.8,
             seed=seed_run,
-            report_to="none",
-        ),
-    )
+            max_num_seqs=512,
+            max_model_len=max_seq_length,
+            guided_decoding_backend="xgrammar",
+        )
 
-    trainer = train_on_responses_only(
-        trainer,
-        instruction_part=user_start,
-        response_part=model_start,
-    )
+        # Create sampling parameters
 
-    logger.info("Starting model training...")
-    start_time_training = datetime.now()
-    trainer.train()
-    total_time_training = datetime.now() - start_time_training
-    logger.info(f"Total training time: {total_time_training}")
-    logger.info("Training completed")
-    
-    # store time of training in time_logs.jsonl
-    with open("time_logs.jsonl", "a") as f:
-        log_entry = {
-            "subtask": subtask,
-            "language": language,
-            "domain": domain,
-            "seed_run": seed_run,
-            "strategy": strategy,
-            "split_idx": split_idx,
-            "model_name_or_path": model_name_or_path,
-            "num_train_epochs": num_train_epochs,
-            "train_batch_size": train_batch_size,
-            "learning_rate": learning_rate,
-            "lora_rank": lora_rank,
-            "training_time": total_time_training.total_seconds(),
-            "timestamp": datetime.now().isoformat()
-        }
-        f.write(json.dumps(log_entry) + "\n")
+        logger.info(
+            f"Evaluating {len(test_data_raw) if test_data_raw is not None else 'N/A'} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
 
-    # Save model and tokenizer to model_save_path
-    logger.info(f"Saving model and tokenizer to {model_save_path}...")
-    model.save_pretrained(model_save_path)
-    tokenizer.save_pretrained(model_save_path)
+        # If strategy is "pred_dev" or "evaluation", evaluate on dev set
+        if strategy == "train_split":
+            evaluate_model(test_data_raw, subtask, language,
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
 
-    # perform evaluation here using vLLM
-    
-    setup_gpu_environment()
-    clear_memory()
+        if strategy == "evaluation":
+            evaluate_model(dev_data_raw, subtask, language,
+                           domain, llm, seed_run, "pred_dev", model_name_or_path, model_save_path, split_idx=split_idx)
 
-    logger.info("Initializing vLLM for evaluation...")
-    # Initialize vLLM with the base model
-    llm = LLM(
-        model=model_name_or_path,
-        tokenizer=model_name_or_path,
-        enable_lora=True,
-        max_lora_rank=lora_rank,
-        gpu_memory_utilization=0.7,
-        seed=seed_run,
-        max_num_seqs=512,
-        max_model_len=max_seq_length,
-        guided_decoding_backend="xgrammar",
-    )
+        if test_data_raw is not None and strategy == "evaluation":
+            evaluate_model(test_data_raw, subtask, language,
+                           domain, llm, seed_run, "pred_test", model_name_or_path, model_save_path, split_idx=split_idx)
 
-    # Create sampling parameters
-
-    logger.info(f"Evaluating {len(test_data_raw) if test_data_raw is not None else 'N/A'} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
-
-    # If strategy is "pred_dev" or "evaluation", evaluate on dev set
-    if strategy == "train_split":
-        evaluate_model(test_data_raw, subtask, language,
-                   domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
-    
-    if strategy == "evaluation":
-        evaluate_model(dev_data_raw, subtask, language,
-                       domain, llm, seed_run, "pred_dev", model_name_or_path, model_save_path, split_idx=split_idx)
-    
-    if test_data_raw is not None and strategy == "evaluation":
-        evaluate_model(test_data_raw, subtask, language,
-                       domain, llm, seed_run, "pred_test", model_name_or_path, model_save_path, split_idx=split_idx)
-    
-    
 
 def evaluate_chunked(prompts, sampling_params, llm, model_save_path, lora_request=None, chunks=1000):
     if len(prompts) <= chunks:
@@ -256,8 +260,10 @@ def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_n
         }
         f.write(json.dumps(log_entry) + "\n")
 
+
 def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=0):
-    logger.info(f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
+    logger.info(
+        f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
     logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
 
     # Determine chat template tags based on model
@@ -320,7 +326,8 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_1a = datetime.now() - start_time_1a
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1a, self_consistency=False, guided=False)
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+                          split_idx, total_time_1a, self_consistency=False, guided=False)
     logger.info(f"Inference 1a completed in {total_time_1a}")
 
     logger.info("Running inference 1b: temp=0, with guidance...")
@@ -331,14 +338,18 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path),
     )
     total_time_1b = datetime.now() - start_time_1b
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_1b, self_consistency=False, guided=True)
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+                          split_idx, total_time_1b, self_consistency=False, guided=True)
     logger.info(f"Inference 1b completed in {total_time_1b}")
 
-    outputs_1a = format_predictions(outputs_1a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
-    outputs_1b = format_predictions(outputs_1b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
+    outputs_1a = format_predictions(
+        outputs_1a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
+    outputs_1b = format_predictions(
+        outputs_1b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
     # 2a. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen ohne guided decoding
-    logger.info("Running inference 2a: temp=0.8, NUM_PRED_SC runs, no guidance...")
+    logger.info(
+        "Running inference 2a: temp=0.8, NUM_PRED_SC runs, no guidance...")
     prompts_2a = prompts * NUM_PRED_SC
     sampling_params_2a = []
     for k in range(NUM_PRED_SC):
@@ -348,7 +359,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
                 max_tokens=512,
                 seed=k
             ))
-    
+
     start_time_2a = datetime.now()
     outputs_2a = llm.generate(
         prompts=prompts_2a,
@@ -356,18 +367,20 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_2a = datetime.now() - start_time_2a
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2a, self_consistency=True, guided=False)
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+                          split_idx, total_time_2a, self_consistency=True, guided=False)
     logger.info(f"Inference 2a completed in {total_time_2a}")
-        
+
     # 2b. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen mit guided decoding
     # Pattern einmal pro Prompt berechnen und für alle NUM_PRED_SC Runs wiederverwenden
-    logger.info("Running inference 2b: temp=0.8, NUM_PRED_SC runs, with guidance (chunked)...")
+    logger.info(
+        "Running inference 2b: temp=0.8, NUM_PRED_SC runs, with guidance (chunked)...")
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
             unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         patterns.append(pattern)
-    
+
     prompts_2b = prompts * NUM_PRED_SC
     sampling_params_2b = []
     for k in range(NUM_PRED_SC):
@@ -378,15 +391,19 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
                 structured_outputs=StructuredOutputsParams(regex=patterns[i]),
                 seed=k
             ))
-    
+
     start_time_2b = datetime.now()
-    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, model_save_path=model_save_path, lora_request=LoRARequest("adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
+    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, model_save_path=model_save_path, lora_request=LoRARequest(
+        "adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
     total_time_2b = datetime.now() - start_time_2b
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, total_time_2b, self_consistency=True, guided=True)
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+                          split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
-    outputs_2a = format_predictions(outputs_2a, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
-    outputs_2b = format_predictions(outputs_2b, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
+    outputs_2a = format_predictions(
+        outputs_2a, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
+    outputs_2b = format_predictions(
+        outputs_2b, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
