@@ -1,74 +1,170 @@
-# nchellwig at SemEval-2026 Task 3: Self-Consistent Structured Generation (SCSG) for Dimensional Aspect-Based Sentiment Analysis using Large Language Models (Code)
+# Self-Consistent Structured Generation for Dimensional Aspect-Based Sentiment Analysis
 
-**Author:** Nils Hellwig ([@NilsHellwig](https://github.com/NilsHellwig)), University of Regensburg  
-**Task:** Track A - Dimensional Aspect-Based Sentiment Analysis (DimABSA)  
-**Subtasks:** 2 (DimASTE) & 3 (DimASQP)  
+<div align="center">
 
-## 📋 Overview
+**SemEval-2026 Task 3 - Track A Submission**
 
-This repository contains our submission for the SemEval 2026 DimABSA shared task. We tackle Subtasks 2 and 3 of Track A, focusing on extracting dimensional sentiment triplets and quadruplets from text using fine-tuned Large Language Models (LLMs).
+[![Paper](https://img.shields.io/badge/Paper-SemEval%202026-blue)](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
+[![Base Model](https://img.shields.io/badge/Model-Gemma--3-orange.svg)](https://huggingface.co/google/gemma-3-27b-it)
 
-Our approach leverages the Gemma-3 model family with LoRA fine-tuning, incorporating guided decoding for structured output generation and temperature-based sampling for robustness evaluation.
+*Fine-tuned LLMs with guided decoding for structured sentiment extraction*
 
-## 🛠️ Setup
+**Nils Constantin Hellwig¹ · Jakob Fehle¹ · Udo Kruschwitz² · Christian Wolff¹**
+
+¹Media Informatics Group · ²Information Science Group  
+University of Regensburg, Germany
+
+</div>
+
+---
+
+## 🎯 Overview
+
+This repository contains our submission for the **SemEval 2026 DimABSA** (Dimensional Aspect-Based Sentiment Analysis) shared task. We tackle **Subtasks 2 and 3** of Track A, focusing on extracting dimensional sentiment triplets (DimASTE) and quadruplets (DimASQP) from customer reviews using fine-tuned Large Language Models.
+
+Our approach leverages the **Gemma-3 model family** with LoRA fine-tuning, incorporating:
+
+- 🌡️ **Temperature-based Sampling** for robustness evaluation
+- 🔄 **Self-Consistency** mechanisms for improved predictions
+- 🌍 **Multi-lingual Support** across 8 languages and 3 domains
+
+## 🛠️ Installation
 
 ### Prerequisites
-- Python 3.8+
-- CUDA-compatible GPU
+- Python 3.12+
+- CUDA-compatible GPU (for training)
+- 16GB+ RAM recommended
 
-### Installation
+### Setup
 ```bash
-pip install -r evaluation_script/requirements.txt
+# Clone the repository
+git clone https://github.com/NilsHellwig/ur-mi-nch.git
+cd ur-mi-nch
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-## 🎯 Usage
-
-### Running Experiments
-- **Parameter Sweeps:** `python run_experiments_parameters.py`
-- **Final Evaluation:** `python run_final.py`
+## 🚀 Usage
 
 ### Training a Model
+
 ```bash
-python train_llm.py --subtask 3 --language eng --domain restaurant --llm_name unsloth/gemma-3-27b-it-bnb-4bit --num_epochs 5
+# Train a model for Subtask 3 (DimASQP) on English restaurant reviews
+python train_llm.py \
+  --subtask 3 \
+  --language eng \
+  --domain restaurant \
+  --llm_name unsloth/gemma-3-27b-it-bnb-4bit \
+  --num_epochs 5
 ```
 
-### Key Parameters
-- `--subtask`: 2 or 3
-- `--language`: eng, zho, etc.
-- `--domain`: restaurant, laptop, etc.
-- `--strategy`: pred_dev or train_split
-- `--llm_name`: Model identifier
+#### Key Parameters
+| Parameter | Description | Options |
+|-----------|-------------|---------|
+| `--subtask` | Task variant | `2` (DimASTE), `3` (DimASQP) |
+| `--language` | Target language | `eng`, `zho`, `jpn`, `rus`, `tat`, `ukr` |
+| `--domain` | Review domain | `restaurant`, `laptop`, `hotel` |
+| `--llm_name` | Base model | `unsloth/gemma-3-27b-it-bnb-4bit`, etc. |
+| `--strategy` | Evaluation strategy | `pred_dev`, `train_split` |
+| `--num_epochs` | Training epochs | Integer (default: 5) |
+
+### Running Experiments
+
+```bash
+# Parameter sweep across configurations
+python run_experiments_parameters.py
+
+# Final evaluation with optimal parameters
+python run_final.py
+```
+
+### Analysis & Visualization
+
+```bash
+# Open analysis notebook
+jupyter notebook results_analysis.ipynb
+
+# View dataset statistics
+jupyter notebook results_dataset_stats.ipynb
+```
 
 ## 📊 Results
 
-Results are stored in `results/` directory with different configurations:
-- Temperature 0.0 (deterministic)
-- Temperature 0.8 (stochastic, multiple runs)
-- With/without guided decoding
+Our experiments evaluate performance across multiple configurations:
 
-Evaluation metrics include continuous F1 for Subtasks 2&3.
+- ✅ **Temperature 0.0** - Deterministic generation
+- 🎲 **Temperature 0.8** - Stochastic generation with multiple runs
+- 🔧 **Guided Decoding** - Schema-constrained output
+- 📈 **Self-Consistency** - Aggregated predictions
 
-## 📁 Structure
+### Evaluation Metrics
+- **Continuous F1 Score** for Subtasks 2 & 3
+- **Precision & Recall** metrics
+- **Cross-lingual performance** analysis
 
-- `llm.py`: Core training and evaluation logic
-- `train_llm.py`: Main training script
-- `run_*.py`: Experiment runners
-- `helper.py`: Utility functions
-- `evaluation_script/`: Official evaluation tools
-- `task-dataset/`: Training data
-- `results/`: Output predictions
+Results are organized in the `results/` directory with detailed breakdowns by:
+- Language (English, Chinese, Japanese, Russian, Tatar, Ukrainian)
+- Domain (Restaurant, Laptop, Hotel)
+- Configuration (temperature, guidance, sampling strategy)
 
-## 🔗 Links
+## 🌍 Supported Languages & Domains
 
-- [SemEval 2026 DimABSA](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
-- [Task Description](https://github.com/DimABSA/DimABSA2026)
-- [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
-- [Contact: Nils-Constantin.Hellwig@ur.de](mailto:Nils-Constantin.Hellwig@ur.de)
+| Language | Code | Domains |
+|----------|------|---------|
+| English | `eng` | Restaurant, Laptop |
+| Chinese | `zho` | Restaurant, Laptop |
+| Japanese | `jpn` | Hotel |
+| Russian | `rus` | Restaurant |
+| Tatar | `tat` | Restaurant |
+| Ukrainian | `ukr` | Restaurant |
 
-## Citation
-If you use this code for your research, please cite our work as follows:
+## 🔗 Resources
+
+- 📄 [SemEval-2026 Task 3 Overview](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
+- 📘 [Task Repository](https://github.com/DimABSA/DimABSA2026)
+- 💾 [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
+- 🤖 [Gemma-3 Model](https://huggingface.co/google/gemma-3-27b-it)
+
+## 📬 Contact
+
+<div align="center">
+
+| Author | Affiliation | Email |
+|--------|-------------|-------|
+| **Nils Constantin Hellwig** | Media Informatics Group | [nils-constantin.hellwig@ur.de](mailto:nils-constantin.hellwig@ur.de) |
+| **Jakob Fehle** | Media Informatics Group | [jakob.fehle@ur.de](mailto:jakob.fehle@ur.de) |
+| **Udo Kruschwitz** | Information Science Group | [udo.kruschwitz@ur.de](mailto:udo.kruschwitz@ur.de) |
+| **Christian Wolff** | Media Informatics Group | [christian.wolff@ur.de](mailto:christian.wolff@ur.de) |
+
+**University of Regensburg, Germany**
+
+🐙 GitHub: [@NilsHellwig](https://github.com/NilsHellwig)
+
+</div>
+
+## 📖 Citation
+
+If you use this code for your research, please cite:
+
 ```bibtex
-...to be added...
+@inproceedings{hellwig2026scsg,
+  title={Self-Consistent Structured Generation for Dimensional Aspect-Based Sentiment Analysis},
+  author={Hellwig, Nils Constantin and Fehle, Jakob and Kruschwitz, Udo and Wolff, Christian},
+  booktitle={Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)},
+  year={2026},
+  publisher={Association for Computational Linguistics}
+}
 ```
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
+
+<div align="center">
+Made with ❤️ at the University of Regensburg
+</div>
