@@ -162,8 +162,8 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
             "valence": "The 'valence score' measures the degree of positivity or negativity.",
             "arousal": "The 'arousal score' measures the intensity of emotion.",
             "scale": "A score of 1.00 indicates extremely negative valence or very low arousal, 9.00 indicates extremely positive valence or very high arousal, and 5.00 represents a neutral valence or medium arousal. Both valence score and arousal score must be rounded to exactly two decimal places.",
-            "task_subtask3": "For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categorys, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
-            "task_subtask2": "For the following text, recognize all sentiment elements with their corresponding aspect terms, valence score, arousal score, opinion terms in the following text in the form of a list of tuples [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask3": "For the following text, recognize all sentiment elements with their corresponding aspect terms, aspect categories, valence score, arousal score, opinion terms in the form of a list of tuples [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask2": "For the following text, recognize all sentiment elements with their corresponding aspect terms, valence score, arousal score, opinion terms in the form of a list of tuples [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
             "text_label": "Text:",
             "elements_label": "Sentiment Elements:"
         },
@@ -188,8 +188,8 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
             "valence": "«'valence score'» измеряет степень позитивности или негативности.",
             "arousal": "«'arousal score'» измеряет интенсивность эмоции.",
             "scale": "Оценка 1.00 указывает на крайне негативный 'valence score' или очень низкий 'arousal score', 9.00 указывает на крайне позитивный 'valence score' или очень высокий 'arousal score', а 5.00 представляет собой нейтральный 'valence score' или средний 'arousal score'. И 'valence score', и 'arousal score' должны быть округлены до ровно двух десятичных знаков.",
-            "task_subtask3": "Для следующего текста распознайте все элементы настроения с соответствующими 'aspect term', 'aspect category', 'opinion term', 'valence score', 'arousal score' в следующем тексте в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
-            "task_subtask2": "Для следующего текста распознайте все элементы настроения с соответствующими 'aspect term', 'opinion term', 'valence score', 'arousal score' в следующем тексте в виде списка кортежей [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask3": "Для следующего текста распознайте все элементы настроения с соответствующими 'aspect term', 'aspect category', 'opinion term', 'valence score', 'arousal score' в виде списка кортежей [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask2": "Для следующего текста распознайте все элементы настроения с соответствующими 'aspect term', 'opinion term', 'valence score', 'arousal score' в виде списка кортежей [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
             "text_label": "Текст:",
             "elements_label": "Элементы настроения:"
         },
@@ -214,8 +214,8 @@ def get_prompt(text, subtask=3, language="eng", domain="restaurant"):
             "valence": "«'valence score'» вимірює ступінь позитивності або негативності.",
             "arousal": "«'arousal score'» вимірює інтенсивність емоції.",
             "scale": "Оцінка 1.00 вказує на надзвичайно негативний 'valence score' або дуже низький 'arousal score', 9.00 вказує на надзвичайно позитивний 'valence score' або дуже високий 'arousal score', а 5.00 представляє нейтральний 'valence score' або середній 'arousal score'. І 'valence score', і 'arousal score' повинні бути округлені до рівно двох десяткових знаків.",
-            "task_subtask3": "Для наступного тексту розпізнайте всі елементи настрою з відповідними 'aspect term', 'aspect category', 'opinion term', 'valence score', 'arousal score' у наступному тексті у вигляді списку кортежів [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
-            "task_subtask2": "Для наступного тексту розпізнайте всі елементи настрою з відповідними 'aspect term', 'opinion term', 'valence score', 'arousal score' у наступному тексті у вигляді списку кортежів [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask3": "Для наступного тексту розпізнайте всі елементи настрою з відповідними 'aspect term', 'aspect category', 'opinion term', 'valence score', 'arousal score' у вигляді списку кортежів [('aspect term', 'ENTITY#ATTRIBUTE', 'opinion term', 'valence score', 'arousal score'), ...].",
+            "task_subtask2": "Для наступного тексту розпізнайте всі елементи настрою з відповідними 'aspect term', 'opinion term', 'valence score', 'arousal score' у вигляді списку кортежів [('aspect term', 'opinion term', 'valence score', 'arousal score'), ...].",
             "text_label": "Текст:",
             "elements_label": "Елементи настрою:"
         },
@@ -311,6 +311,13 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
         for t in tuples_list:
             if len(t) == 4:
                 aspect, opinion, valence, arousal = t
+                # Clamp valence and arousal to [1.00, 9.00] range
+                valence = max(1.00, min(9.00, float(valence)))
+                arousal = max(1.00, min(9.00, float(arousal)))
+                # valence and arousal must have two decimal places
+                valence = f"{valence:.2f}"
+                arousal = f"{arousal:.2f}"
+
                 aspect = aspect.replace("\\'", "'")
                 opinion = opinion.replace("\\'", "'")
 
@@ -323,13 +330,6 @@ def convert_tuples_to_output_format(tuples_list, example_id, subtask=3, disable_
                     continue
                 if opinion != "NULL" and opinion.lower() not in text.lower():
                     continue
-
-                # Clamp valence and arousal to [1.00, 9.00] range
-                valence = max(1.00, min(9.00, float(valence)))
-                arousal = max(1.00, min(9.00, float(arousal)))
-                # valence and arousal must have two decimal places
-                valence = f"{valence:.2f}"
-                arousal = f"{arousal:.2f}"
                 # Create deduplication key
                 key = (aspect, opinion)
                 if key not in seen_keys:
