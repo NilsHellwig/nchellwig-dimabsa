@@ -7,7 +7,7 @@
 [![Paper](https://img.shields.io/badge/Paper-SemEval%202026-blue)](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
-[![Base Model](https://img.shields.io/badge/Model-Gemma--3-orange.svg)](https://huggingface.co/google/gemma-3-27b-it)
+[![Model](https://img.shields.io/badge/Model-Gemma--3-orange.svg)](https://huggingface.co/google/gemma-3-27b-it)
 
 *Fine-tuned LLMs with guided decoding for structured sentiment extraction*
 
@@ -22,11 +22,10 @@ University of Regensburg, Germany
 
 ## 🎯 Overview
 
-This repository contains our submission for the **SemEval 2026 DimABSA** (Dimensional Aspect-Based Sentiment Analysis) shared task. We tackle **Subtasks 2 and 3** of Track A, focusing on extracting dimensional sentiment triplets (DimASTE) and quadruplets (DimASQP) from customer reviews using fine-tuned Large Language Models.
+This repository contains our submission for the **SemEval 2026 DimABSA** (Dimensional Aspect-Based Sentiment Analysis) shared task. We tackle **Subtasks 2 and 3** of Track A, focusing on extracting dimensional sentiment triplets (DimASTE) and quadruplets (DimASQP) from customer reviews using fine-tuned Large Language Models with a self-consistent structured generation approach.
 
 Our approach leverages the **Gemma-3 model family** with LoRA fine-tuning, incorporating:
 
-- 🌡️ **Temperature-based Sampling** for robustness evaluation
 - 🔄 **Self-Consistency** mechanisms for improved predictions
 - 🌍 **Multi-lingual Support** across 8 languages and 3 domains
 
@@ -35,7 +34,7 @@ Our approach leverages the **Gemma-3 model family** with LoRA fine-tuning, incor
 ### Prerequisites
 - Python 3.12+
 - CUDA-compatible GPU (for training)
-- 16GB+ RAM recommended
+- 20GB+ RAM recommended
 
 ### Setup
 ```bash
@@ -81,24 +80,7 @@ python run_experiments_parameters.py
 python run_final.py
 ```
 
-### Analysis & Visualization
-
-```bash
-# Open analysis notebook
-jupyter notebook results_analysis.ipynb
-
-# View dataset statistics
-jupyter notebook results_dataset_stats.ipynb
-```
-
 ## 📊 Results
-
-Our experiments evaluate performance across multiple configurations:
-
-- ✅ **Temperature 0.0** - Deterministic generation
-- 🎲 **Temperature 0.8** - Stochastic generation with multiple runs
-- 🔧 **Guided Decoding** - Schema-constrained output
-- 📈 **Self-Consistency** - Aggregated predictions
 
 ### Evaluation Metrics
 - **Continuous F1 Score** for Subtasks 2 & 3
@@ -123,7 +105,7 @@ Results are organized in the `results/` directory with detailed breakdowns by:
 
 ## 🔗 Resources
 
-- 📄 [SemEval-2026 Task 3 Overview](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
+- 📄 [SemEval-2026 Task 3 Overview](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer
 - 📘 [Task Repository](https://github.com/DimABSA/DimABSA2026)
 - 💾 [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
 - 🤖 [Gemma-3 Model](https://huggingface.co/google/gemma-3-27b-it)
@@ -147,16 +129,9 @@ Results are organized in the `results/` directory with detailed breakdowns by:
 
 ## 📖 Citation
 
-If you use this code for your research, please cite:
 
 ```bibtex
-@inproceedings{hellwig2026scsg,
-  title={Self-Consistent Structured Generation for Dimensional Aspect-Based Sentiment Analysis},
-  author={Hellwig, Nils Constantin and Fehle, Jakob and Kruschwitz, Udo and Wolff, Christian},
-  booktitle={Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)},
-  year={2026},
-  publisher={Association for Computational Linguistics}
-}
+tba
 ```
 
 ## 📄 License

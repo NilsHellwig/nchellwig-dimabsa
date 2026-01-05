@@ -8,3 +8,4 @@ time_logs.jsonl
 old/
 unsloth_compiled_cache/
 final_models/
+__pycache__
