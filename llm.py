@@ -41,13 +41,13 @@ def train_and_evaluate(
     strategy="evaluation",
     split_idx=0,
     do_train=True,
-    do_test=True,
+    do_test=False,
 ):
     # Set random seed for reproducibility
     set_seed(seed_run)
 
     # define model_name
-    model_save_path = "model_path" if strategy == "train_split" else f"final_models/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
+    model_save_path = "model_path" if strategy == "train_split" else f"final_models/{strategy}/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
     if do_train:
         # create directory final_models if not exists
         if not os.path.exists("final_models"):
