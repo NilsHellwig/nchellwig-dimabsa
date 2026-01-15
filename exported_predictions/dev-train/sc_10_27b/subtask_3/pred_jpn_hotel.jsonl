@@ -1,0 +1,200 @@
+{"ID": "hotel26_asqp_dev_1", "Quadruplet": [{"Aspect": "室温", "Category": "ROOMS#COMFORT", "Opinion": "ちょうど良く", "VA": "6.49#6.06"}]}
+{"ID": "hotel26_asqp_dev_2", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_3", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "行き届いていて", "VA": "6.89#6.19"}]}
+{"ID": "hotel26_asqp_dev_4", "Quadruplet": [{"Aspect": "量", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "多くて", "VA": "6.48#6.12"}, {"Aspect": "NULL", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.65#6.28"}]}
+{"ID": "hotel26_asqp_dev_5", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_6", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#CLEANLINESS", "Opinion": "きれい", "VA": "6.63#6.03"}, {"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "助かります", "VA": "6.45#6.04"}]}
+{"ID": "hotel26_asqp_dev_7", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "大満足", "VA": "7.66#7.32"}, {"Aspect": "NULL", "Category": "HOTEL#PRICE", "Opinion": "とてもお得", "VA": "7.18#6.75"}]}
+{"ID": "hotel26_asqp_dev_8", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#COMFORT", "Opinion": "過ごしやすかった", "VA": "6.72#6.35"}]}
+{"ID": "hotel26_asqp_dev_9", "Quadruplet": [{"Aspect": "飲食店", "Category": "LOCATION#GENERAL", "Opinion": "十分", "VA": "6.38#6.01"}, {"Aspect": "コンビニ", "Category": "LOCATION#GENERAL", "Opinion": "十分", "VA": "6.38#6.01"}]}
+{"ID": "hotel26_asqp_dev_10", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.76#6.10"}, {"Aspect": "レディースルーム", "Category": "ROOMS#STYLE_OPTIONS", "Opinion": "充実", "VA": "6.97#6.31"}]}
+{"ID": "hotel26_asqp_dev_11", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#PRICE", "Opinion": "安く", "VA": "6.53#6.08"}]}
+{"ID": "hotel26_asqp_dev_12", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_13", "Quadruplet": [{"Aspect": "お風呂", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "大きくて", "VA": "6.53#6.17"}, {"Aspect": "お風呂", "Category": "FACILITIES#GENERAL", "Opinion": "びっくりしました", "VA": "6.47#6.58"}]}
+{"ID": "hotel26_asqp_dev_14", "Quadruplet": [{"Aspect": "ソファ", "Category": "ROOMS#COMFORT", "Opinion": "快適", "VA": "6.61#6.16"}, {"Aspect": "テーブル", "Category": "ROOMS#COMFORT", "Opinion": "快適", "VA": "6.61#6.16"}]}
+{"ID": "hotel26_asqp_dev_15", "Quadruplet": [{"Aspect": "ドリンクバー", "Category": "FACILITIES#GENERAL", "Opinion": "楽しめました", "VA": "6.65#6.35"}, {"Aspect": "漫画", "Category": "FACILITIES#GENERAL", "Opinion": "楽しめました", "VA": "6.65#6.35"}, {"Aspect": "マッサージチェア", "Category": "FACILITIES#GENERAL", "Opinion": "楽しめました", "VA": "6.65#6.35"}]}
+{"ID": "hotel26_asqp_dev_16", "Quadruplet": [{"Aspect": "温泉", "Category": "FACILITIES#COMFORT", "Opinion": "ゆっくり", "VA": "6.49#6.04"}, {"Aspect": "ご飯", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しくて", "VA": "6.84#6.47"}, {"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "満足", "VA": "7.01#6.68"}]}
+{"ID": "hotel26_asqp_dev_17", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "きれい", "VA": "6.78#6.08"}, {"Aspect": "NULL", "Category": "HOTEL#COMFORT", "Opinion": "気持ちよく", "VA": "6.96#6.46"}, {"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近い", "VA": "6.42#5.87"}, {"Aspect": "NULL", "Category": "HOTEL#COMFORT", "Opinion": "静か", "VA": "6.63#5.99"}]}
+{"ID": "hotel26_asqp_dev_18", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.70#6.03"}, {"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "大満足", "VA": "7.74#7.45"}]}
+{"ID": "hotel26_asqp_dev_19", "Quadruplet": [{"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.39#5.87"}, {"Aspect": "NULL", "Category": "HOTEL#DESIGN_FEATURES", "Opinion": "少し古い", "VA": "3.84#5.04"}, {"Aspect": "NULL", "Category": "LOCATION#GENERAL", "Opinion": "便利", "VA": "6.57#6.06"}]}
+{"ID": "hotel26_asqp_dev_20", "Quadruplet": [{"Aspect": "赤坂駅", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.41#5.82"}, {"Aspect": "長浜の市場", "Category": "LOCATION#GENERAL", "Opinion": "徒歩圏内", "VA": "6.46#5.90"}]}
+{"ID": "hotel26_asqp_dev_21", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "迅速な対応", "VA": "7.07#6.80"}, {"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "大変助かりました", "VA": "7.56#7.35"}]}
+{"ID": "hotel26_asqp_dev_22", "Quadruplet": [{"Aspect": "男の方", "Category": "SERVICE#QUALITY", "Opinion": "ありがたかった", "VA": "6.81#6.56"}]}
+{"ID": "hotel26_asqp_dev_23", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_24", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "大変満足", "VA": "7.60#7.29"}]}
+{"ID": "hotel26_asqp_dev_25", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "普通に良かった", "VA": "6.07#5.45"}]}
+{"ID": "hotel26_asqp_dev_26", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "好印象", "VA": "6.76#6.37"}]}
+{"ID": "hotel26_asqp_dev_27", "Quadruplet": [{"Aspect": "設備", "Category": "FACILITIES#QUALITY", "Opinion": "新しくはない", "VA": "3.98#4.92"}]}
+{"ID": "hotel26_asqp_dev_28", "Quadruplet": [{"Aspect": "夜鳴き蕎麦", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "良かった", "VA": "6.56#6.22"}, {"Aspect": "プリン", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "良かった", "VA": "6.61#6.28"}, {"Aspect": "名水のサービス", "Category": "SERVICE#QUALITY", "Opinion": "良かった", "VA": "6.61#6.28"}, {"Aspect": "チェックアウト時間", "Category": "SERVICE#GENERAL", "Opinion": "ゆっくりできた", "VA": "6.67#6.34"}]}
+{"ID": "hotel26_asqp_dev_29", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_30", "Quadruplet": [{"Aspect": "宿泊割引", "Category": "SERVICE#GENERAL", "Opinion": "残念", "VA": "3.54#5.79"}]}
+{"ID": "hotel26_asqp_dev_31", "Quadruplet": [{"Aspect": "お部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.93#6.30"}, {"Aspect": "NULL", "Category": "HOTEL#CLEANLINESS", "Opinion": "清潔感", "VA": "6.81#6.17"}]}
+{"ID": "hotel26_asqp_dev_32", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#COMFORT", "Opinion": "のんびり", "VA": "6.44#6.07"}, {"Aspect": "NULL", "Category": "HOTEL#COMFORT", "Opinion": "最高", "VA": "7.58#7.32"}]}
+{"ID": "hotel26_asqp_dev_33", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#CLEANLINESS", "Opinion": "きれいな", "VA": "6.82#6.19"}]}
+{"ID": "hotel26_asqp_dev_34", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "きれい", "VA": "6.62#5.98"}, {"Aspect": "お風呂", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "ひろく", "VA": "6.65#6.08"}, {"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.60#6.07"}, {"Aspect": "コンビニ", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.60#6.07"}]}
+{"ID": "hotel26_asqp_dev_35", "Quadruplet": [{"Aspect": "利便性", "Category": "LOCATION#GENERAL", "Opinion": "良く", "VA": "6.56#6.09"}, {"Aspect": "スムーズ", "Category": "LOCATION#GENERAL", "Opinion": "良かった", "VA": "6.74#6.22"}]}
+{"ID": "hotel26_asqp_dev_36", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_37", "Quadruplet": [{"Aspect": "ジム", "Category": "FACILITIES#QUALITY", "Opinion": "良かった", "VA": "6.53#6.12"}]}
+{"ID": "hotel26_asqp_dev_38", "Quadruplet": [{"Aspect": "大浴場", "Category": "FACILITIES#COMFORT", "Opinion": "満足", "VA": "6.98#6.79"}]}
+{"ID": "hotel26_asqp_dev_39", "Quadruplet": [{"Aspect": "値段", "Category": "HOTEL#QUALITY", "Opinion": "満足", "VA": "6.75#6.42"}]}
+{"ID": "hotel26_asqp_dev_40", "Quadruplet": [{"Aspect": "朝食のお弁当", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "ちょっと残念", "VA": "3.60#5.90"}]}
+{"ID": "hotel26_asqp_dev_41", "Quadruplet": [{"Aspect": "お風呂", "Category": "FACILITIES#QUALITY", "Opinion": "満足", "VA": "7.15#6.68"}, {"Aspect": "大浴場", "Category": "FACILITIES#QUALITY", "Opinion": "とろとろ", "VA": "6.65#6.08"}]}
+{"ID": "hotel26_asqp_dev_42", "Quadruplet": [{"Aspect": "ロビー", "Category": "HOTEL#COMFORT", "Opinion": "癒される", "VA": "6.81#6.54"}]}
+{"ID": "hotel26_asqp_dev_43", "Quadruplet": [{"Aspect": "朝食バイキング", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.83#6.40"}, {"Aspect": "コスパ", "Category": "HOTEL#PRICE", "Opinion": "良い", "VA": "6.63#6.23"}, {"Aspect": "朝食バイキング", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "手作り", "VA": "6.46#5.96"}]}
+{"ID": "hotel26_asqp_dev_44", "Quadruplet": [{"Aspect": "おかずの種類", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "多く", "VA": "6.57#6.11"}]}
+{"ID": "hotel26_asqp_dev_45", "Quadruplet": [{"Aspect": "大浴場", "Category": "FACILITIES#COMFORT", "Opinion": "熱くて", "VA": "3.45#5.99"}]}
+{"ID": "hotel26_asqp_dev_46", "Quadruplet": [{"Aspect": "バイキング", "Category": "FOOD_DRINKS#COMFORT", "Opinion": "とても忙しく", "VA": "3.48#6.25"}, {"Aspect": "バイキング", "Category": "FOOD_DRINKS#COMFORT", "Opinion": "喧騒", "VA": "3.14#6.36"}]}
+{"ID": "hotel26_asqp_dev_47", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_48", "Quadruplet": [{"Aspect": "貸切風呂", "Category": "FACILITIES#COMFORT", "Opinion": "安心", "VA": "6.64#6.18"}]}
+{"ID": "hotel26_asqp_dev_49", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.83#6.10"}, {"Aspect": "サービス", "Category": "SERVICE#QUALITY", "Opinion": "充実", "VA": "7.08#6.76"}]}
+{"ID": "hotel26_asqp_dev_50", "Quadruplet": [{"Aspect": "洗い場", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "広く", "VA": "6.54#6.07"}, {"Aspect": "洗い場", "Category": "FACILITIES#COMFORT", "Opinion": "ゆったり", "VA": "6.72#6.16"}]}
+{"ID": "hotel26_asqp_dev_51", "Quadruplet": [{"Aspect": "朝食バイキング", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "大変満足", "VA": "7.48#7.35"}]}
+{"ID": "hotel26_asqp_dev_52", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "満喫", "VA": "6.65#6.22"}]}
+{"ID": "hotel26_asqp_dev_53", "Quadruplet": [{"Aspect": "温泉", "Category": "FACILITIES#QUALITY", "Opinion": "最高", "VA": "7.65#7.49"}, {"Aspect": "部屋", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "狭い", "VA": "3.41#5.41"}]}
+{"ID": "hotel26_asqp_dev_54", "Quadruplet": [{"Aspect": "コンビニ", "Category": "LOCATION#GENERAL", "Opinion": "便利", "VA": "6.37#5.90"}]}
+{"ID": "hotel26_asqp_dev_55", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_56", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.89#6.42"}, {"Aspect": "ウェルカムパフェ", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "大満足", "VA": "7.77#7.37"}]}
+{"ID": "hotel26_asqp_dev_57", "Quadruplet": [{"Aspect": "白飯", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "もったいない", "VA": "3.68#5.39"}, {"Aspect": "おかず", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "素晴らしかった", "VA": "7.03#6.75"}]}
+{"ID": "hotel26_asqp_dev_58", "Quadruplet": [{"Aspect": "コンビニ", "Category": "LOCATION#GENERAL", "Opinion": "近い", "VA": "6.31#5.76"}]}
+{"ID": "hotel26_asqp_dev_59", "Quadruplet": [{"Aspect": "アクセス", "Category": "LOCATION#GENERAL", "Opinion": "便利", "VA": "6.41#5.99"}, {"Aspect": "駐車場", "Category": "FACILITIES#GENERAL", "Opinion": "あります", "VA": "5.94#5.28"}]}
+{"ID": "hotel26_asqp_dev_60", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "とても親切", "VA": "7.45#6.96"}]}
+{"ID": "hotel26_asqp_dev_61", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "それほど広くはありません", "VA": "3.98#4.87"}]}
+{"ID": "hotel26_asqp_dev_62", "Quadruplet": [{"Aspect": "おもてなし", "Category": "SERVICE#QUALITY", "Opinion": "最高", "VA": "8.39#8.18"}, {"Aspect": "設備", "Category": "FACILITIES#QUALITY", "Opinion": "最高", "VA": "8.39#8.18"}]}
+{"ID": "hotel26_asqp_dev_63", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_64", "Quadruplet": [{"Aspect": "お風呂", "Category": "FACILITIES#CLEANLINESS", "Opinion": "きれい", "VA": "6.88#6.26"}]}
+{"ID": "hotel26_asqp_dev_65", "Quadruplet": [{"Aspect": "スタッフの対応", "Category": "SERVICE#QUALITY", "Opinion": "相応", "VA": "5.98#5.38"}, {"Aspect": "スタッフの対応", "Category": "SERVICE#QUALITY", "Opinion": "不満はなかった", "VA": "6.29#5.52"}]}
+{"ID": "hotel26_asqp_dev_66", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#GENERAL", "Opinion": "食べれない", "VA": "3.35#5.86"}, {"Aspect": "ルール", "Category": "HOTEL#GENERAL", "Opinion": "昭和の時代で止まってる", "VA": "3.16#5.92"}]}
+{"ID": "hotel26_asqp_dev_67", "Quadruplet": [{"Aspect": "交通の便", "Category": "LOCATION#GENERAL", "Opinion": "良く", "VA": "6.66#6.29"}, {"Aspect": "眺望", "Category": "LOCATION#GENERAL", "Opinion": "大変よかった", "VA": "7.58#7.26"}, {"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "至近", "VA": "6.79#6.41"}]}
+{"ID": "hotel26_asqp_dev_68", "Quadruplet": [{"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "とても便利", "VA": "7.10#6.64"}]}
+{"ID": "hotel26_asqp_dev_69", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "良い", "VA": "6.45#6.03"}]}
+{"ID": "hotel26_asqp_dev_70", "Quadruplet": [{"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.37#5.89"}, {"Aspect": "NULL", "Category": "LOCATION#GENERAL", "Opinion": "利用しやすかった", "VA": "6.63#6.04"}]}
+{"ID": "hotel26_asqp_dev_71", "Quadruplet": [{"Aspect": "サービス", "Category": "SERVICE#QUALITY", "Opinion": "きめ細やか", "VA": "6.84#6.45"}, {"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "大変満足", "VA": "7.82#7.36"}]}
+{"ID": "hotel26_asqp_dev_72", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_73", "Quadruplet": [{"Aspect": "おもてなし", "Category": "SERVICE#QUALITY", "Opinion": "温かい", "VA": "6.99#6.61"}, {"Aspect": "設備", "Category": "FACILITIES#QUALITY", "Opinion": "満足", "VA": "6.98#6.64"}, {"Aspect": "お部屋", "Category": "ROOMS#QUALITY", "Opinion": "満足", "VA": "6.98#6.64"}, {"Aspect": "食事処", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "満足", "VA": "6.98#6.64"}, {"Aspect": "対応", "Category": "SERVICE#QUALITY", "Opinion": "満足", "VA": "7.00#6.66"}]}
+{"ID": "hotel26_asqp_dev_74", "Quadruplet": [{"Aspect": "料理", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "最高", "VA": "8.48#8.45"}]}
+{"ID": "hotel26_asqp_dev_75", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_76", "Quadruplet": [{"Aspect": "接客", "Category": "SERVICE#QUALITY", "Opinion": "親切", "VA": "6.81#6.44"}, {"Aspect": "接客", "Category": "SERVICE#QUALITY", "Opinion": "丁寧", "VA": "6.70#6.40"}]}
+{"ID": "hotel26_asqp_dev_77", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "きれい", "VA": "6.73#6.01"}]}
+{"ID": "hotel26_asqp_dev_78", "Quadruplet": [{"Aspect": "温泉", "Category": "FACILITIES#COMFORT", "Opinion": "癒されました", "VA": "6.82#6.38"}]}
+{"ID": "hotel26_asqp_dev_79", "Quadruplet": [{"Aspect": "料理", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "最高", "VA": "7.88#7.73"}]}
+{"ID": "hotel26_asqp_dev_80", "Quadruplet": [{"Aspect": "岡山駅", "Category": "LOCATION#GENERAL", "Opinion": "とても便利", "VA": "7.17#6.78"}]}
+{"ID": "hotel26_asqp_dev_81", "Quadruplet": [{"Aspect": "WiFi", "Category": "FACILITIES#QUALITY", "Opinion": "重たい", "VA": "3.58#5.38"}]}
+{"ID": "hotel26_asqp_dev_82", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "親切", "VA": "6.72#6.28"}]}
+{"ID": "hotel26_asqp_dev_83", "Quadruplet": [{"Aspect": "内風呂", "Category": "FACILITIES#COMFORT", "Opinion": "落ち着いて", "VA": "6.73#6.06"}, {"Aspect": "露天", "Category": "FACILITIES#QUALITY", "Opinion": "良く", "VA": "6.59#6.09"}]}
+{"ID": "hotel26_asqp_dev_84", "Quadruplet": [{"Aspect": "味噌汁", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "いまいち", "VA": "3.55#5.59"}, {"Aspect": "宿泊", "Category": "HOTEL#GENERAL", "Opinion": "気持ち良い", "VA": "6.84#6.53"}]}
+{"ID": "hotel26_asqp_dev_85", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "寒さ", "VA": "2.98#6.58"}]}
+{"ID": "hotel26_asqp_dev_86", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_87", "Quadruplet": [{"Aspect": "お部屋", "Category": "ROOMS#QUALITY", "Opinion": "素敵", "VA": "6.70#6.30"}]}
+{"ID": "hotel26_asqp_dev_88", "Quadruplet": [{"Aspect": "パック", "Category": "ROOM_AMENITIES#STYLE_OPTIONS", "Opinion": "嬉しかった", "VA": "6.58#6.28"}, {"Aspect": "入浴剤", "Category": "ROOM_AMENITIES#STYLE_OPTIONS", "Opinion": "嬉しかった", "VA": "6.58#6.28"}]}
+{"ID": "hotel26_asqp_dev_89", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "とてもよかった", "VA": "7.40#7.12"}]}
+{"ID": "hotel26_asqp_dev_90", "Quadruplet": [{"Aspect": "お部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.86#6.07"}, {"Aspect": "NULL", "Category": "ROOMS#COMFORT", "Opinion": "快適", "VA": "6.86#6.22"}]}
+{"ID": "hotel26_asqp_dev_91", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "良かった", "VA": "6.48#6.05"}, {"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近", "VA": "6.33#5.82"}]}
+{"ID": "hotel26_asqp_dev_92", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#GENERAL", "Opinion": "良い", "VA": "6.72#6.26"}]}
+{"ID": "hotel26_asqp_dev_93", "Quadruplet": [{"Aspect": "風呂の設備", "Category": "FACILITIES#QUALITY", "Opinion": "満足", "VA": "6.96#6.74"}]}
+{"ID": "hotel26_asqp_dev_94", "Quadruplet": [{"Aspect": "デザイン", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "とても気に入りました", "VA": "7.44#7.40"}, {"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "ゆったり", "VA": "6.67#6.22"}, {"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "落ち着く", "VA": "6.75#6.43"}]}
+{"ID": "hotel26_asqp_dev_95", "Quadruplet": [{"Aspect": "ホテル", "Category": "LOCATION#GENERAL", "Opinion": "非常に便利", "VA": "7.14#6.67"}]}
+{"ID": "hotel26_asqp_dev_96", "Quadruplet": [{"Aspect": "買い出し", "Category": "LOCATION#GENERAL", "Opinion": "楽", "VA": "6.46#6.03"}]}
+{"ID": "hotel26_asqp_dev_97", "Quadruplet": [{"Aspect": "細かい事", "Category": "SERVICE#QUALITY", "Opinion": "嬉しい", "VA": "6.64#6.14"}]}
+{"ID": "hotel26_asqp_dev_98", "Quadruplet": [{"Aspect": "温野菜", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "嬉しかった", "VA": "6.81#6.46"}]}
+{"ID": "hotel26_asqp_dev_99", "Quadruplet": [{"Aspect": "露天風呂", "Category": "FACILITIES#COMFORT", "Opinion": "良かった", "VA": "6.75#6.44"}]}
+{"ID": "hotel26_asqp_dev_100", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "広く", "VA": "6.53#5.96"}, {"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.67#6.11"}, {"Aspect": "お風呂", "Category": "FACILITIES#QUALITY", "Opinion": "最高", "VA": "7.97#7.47"}]}
+{"ID": "hotel26_asqp_dev_101", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#QUALITY", "Opinion": "とてもよい", "VA": "7.42#6.90"}]}
+{"ID": "hotel26_asqp_dev_102", "Quadruplet": [{"Aspect": "ウォーターサーバー", "Category": "ROOM_AMENITIES#MISCELLANEOUS", "Opinion": "驚きました", "VA": "6.05#6.19"}]}
+{"ID": "hotel26_asqp_dev_103", "Quadruplet": [{"Aspect": "眺め", "Category": "LOCATION#GENERAL", "Opinion": "いい", "VA": "6.44#6.02"}]}
+{"ID": "hotel26_asqp_dev_104", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#QUALITY", "Opinion": "新しい", "VA": "6.43#5.98"}, {"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.82#6.25"}, {"Aspect": "ホテル", "Category": "HOTEL#QUALITY", "Opinion": "良かった", "VA": "6.58#6.12"}]}
+{"ID": "hotel26_asqp_dev_105", "Quadruplet": [{"Aspect": "料金", "Category": "SERVICE#PRICE", "Opinion": "間違っていました", "VA": "3.11#6.29"}, {"Aspect": "駐車券発券", "Category": "FACILITIES#GENERAL", "Opinion": "分かりにくい", "VA": "3.36#5.91"}]}
+{"ID": "hotel26_asqp_dev_106", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "内容がいい", "VA": "6.91#6.59"}, {"Aspect": "アメニティ", "Category": "ROOM_AMENITIES#STYLE_OPTIONS", "Opinion": "充実している", "VA": "6.85#6.43"}]}
+{"ID": "hotel26_asqp_dev_107", "Quadruplet": [{"Aspect": "対応", "Category": "SERVICE#QUALITY", "Opinion": "感動", "VA": "7.35#7.28"}, {"Aspect": "対応", "Category": "SERVICE#QUALITY", "Opinion": "驚き", "VA": "6.56#6.48"}]}
+{"ID": "hotel26_asqp_dev_108", "Quadruplet": [{"Aspect": "挨拶", "Category": "SERVICE#QUALITY", "Opinion": "気持ちの良い", "VA": "6.94#6.55"}]}
+{"ID": "hotel26_asqp_dev_109", "Quadruplet": [{"Aspect": "立地場所", "Category": "LOCATION#GENERAL", "Opinion": "いい", "VA": "6.53#6.10"}]}
+{"ID": "hotel26_asqp_dev_110", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_111", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#CLEANLINESS", "Opinion": "とても清潔感", "VA": "7.42#6.69"}]}
+{"ID": "hotel26_asqp_dev_112", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.90#6.58"}, {"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "満足", "VA": "7.02#6.69"}]}
+{"ID": "hotel26_asqp_dev_113", "Quadruplet": [{"Aspect": "旅行", "Category": "HOTEL#GENERAL", "Opinion": "とてもいい", "VA": "7.36#7.08"}, {"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "丁寧に", "VA": "6.90#6.37"}]}
+{"ID": "hotel26_asqp_dev_114", "Quadruplet": [{"Aspect": "雰囲気", "Category": "HOTEL#DESIGN_FEATURES", "Opinion": "暗め", "VA": "4.61#4.63"}, {"Aspect": "温泉の泉質", "Category": "FACILITIES#QUALITY", "Opinion": "最高", "VA": "7.53#7.32"}, {"Aspect": "入浴", "Category": "FACILITIES#COMFORT", "Opinion": "落ち着いて", "VA": "6.55#5.97"}]}
+{"ID": "hotel26_asqp_dev_115", "Quadruplet": [{"Aspect": "おもてなし", "Category": "SERVICE#QUALITY", "Opinion": "心地よく", "VA": "6.80#6.50"}, {"Aspect": "おもてなし", "Category": "SERVICE#QUALITY", "Opinion": "すばらしかった", "VA": "7.53#7.18"}]}
+{"ID": "hotel26_asqp_dev_116", "Quadruplet": [{"Aspect": "ピザ", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "とても美味しい", "VA": "7.50#7.31"}, {"Aspect": "ドリンクの種類", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "豊富", "VA": "6.63#6.32"}]}
+{"ID": "hotel26_asqp_dev_117", "Quadruplet": [{"Aspect": "チェックイン", "Category": "SERVICE#GENERAL", "Opinion": "楽しめました", "VA": "6.62#6.22"}]}
+{"ID": "hotel26_asqp_dev_118", "Quadruplet": [{"Aspect": "段差", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "けっこうな", "VA": "3.79#5.98"}, {"Aspect": "段差", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "少し不便", "VA": "3.56#5.74"}]}
+{"ID": "hotel26_asqp_dev_119", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_120", "Quadruplet": [{"Aspect": "大浴場", "Category": "FACILITIES#QUALITY", "Opinion": "とてもよかった", "VA": "7.29#6.99"}]}
+{"ID": "hotel26_asqp_dev_121", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "落ち着かない", "VA": "3.33#5.92"}]}
+{"ID": "hotel26_asqp_dev_122", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "まずまず", "VA": "5.45#5.04"}]}
+{"ID": "hotel26_asqp_dev_123", "Quadruplet": [{"Aspect": "露天風呂", "Category": "FACILITIES#CLEANLINESS", "Opinion": "とても綺麗", "VA": "7.34#6.89"}]}
+{"ID": "hotel26_asqp_dev_124", "Quadruplet": [{"Aspect": "渡り廊下", "Category": "FACILITIES#COMFORT", "Opinion": "残念", "VA": "3.42#5.81"}, {"Aspect": "渡り廊下", "Category": "FACILITIES#COMFORT", "Opinion": "寒すぎる", "VA": "2.64#6.74"}]}
+{"ID": "hotel26_asqp_dev_125", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_126", "Quadruplet": [{"Aspect": "フロント", "Category": "SERVICE#QUALITY", "Opinion": "恐縮", "VA": "3.78#5.67"}]}
+{"ID": "hotel26_asqp_dev_127", "Quadruplet": [{"Aspect": "大浴場", "Category": "FACILITIES#QUALITY", "Opinion": "満足", "VA": "6.97#6.56"}, {"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "満足", "VA": "6.97#6.56"}, {"Aspect": "室内", "Category": "ROOMS#QUALITY", "Opinion": "満足", "VA": "6.97#6.56"}]}
+{"ID": "hotel26_asqp_dev_128", "Quadruplet": [{"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "少し距離があった", "VA": "4.05#4.81"}, {"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "キレイ", "VA": "6.96#6.06"}, {"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "おいしかった", "VA": "6.96#6.28"}]}
+{"ID": "hotel26_asqp_dev_129", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "とても広い", "VA": "7.36#6.90"}, {"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.98#6.58"}, {"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "大満足", "VA": "7.58#7.37"}]}
+{"ID": "hotel26_asqp_dev_130", "Quadruplet": [{"Aspect": "客室", "Category": "ROOMS#COMFORT", "Opinion": "良かった", "VA": "6.49#6.09"}, {"Aspect": "暖房", "Category": "ROOM_AMENITIES#COMFORT", "Opinion": "寒い", "VA": "3.48#5.76"}]}
+{"ID": "hotel26_asqp_dev_131", "Quadruplet": [{"Aspect": "対応", "Category": "SERVICE#QUALITY", "Opinion": "実にしっかりしており", "VA": "7.54#7.05"}]}
+{"ID": "hotel26_asqp_dev_132", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#GENERAL", "Opinion": "困りませんでした", "VA": "6.43#5.92"}]}
+{"ID": "hotel26_asqp_dev_133", "Quadruplet": [{"Aspect": "朝の食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "すばらしく", "VA": "7.45#7.20"}, {"Aspect": "朝の食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "おいしかった", "VA": "7.13#6.79"}]}
+{"ID": "hotel26_asqp_dev_134", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_135", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_136", "Quadruplet": [{"Aspect": "アメニティ", "Category": "ROOM_AMENITIES#STYLE_OPTIONS", "Opinion": "多く", "VA": "6.61#6.16"}, {"Aspect": "アメニティ", "Category": "ROOM_AMENITIES#QUALITY", "Opinion": "便利", "VA": "6.61#6.21"}]}
+{"ID": "hotel26_asqp_dev_137", "Quadruplet": [{"Aspect": "館内", "Category": "HOTEL#CLEANLINESS", "Opinion": "綺麗", "VA": "6.71#6.01"}]}
+{"ID": "hotel26_asqp_dev_138", "Quadruplet": [{"Aspect": "露天風呂", "Category": "FACILITIES#QUALITY", "Opinion": "最高", "VA": "8.19#7.87"}]}
+{"ID": "hotel26_asqp_dev_139", "Quadruplet": [{"Aspect": "温泉", "Category": "FACILITIES#COMFORT", "Opinion": "のんびり", "VA": "6.69#6.31"}, {"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しい", "VA": "6.79#6.47"}]}
+{"ID": "hotel26_asqp_dev_140", "Quadruplet": [{"Aspect": "大浴場", "Category": "FACILITIES#QUALITY", "Opinion": "良かった", "VA": "6.53#6.02"}]}
+{"ID": "hotel26_asqp_dev_141", "Quadruplet": [{"Aspect": "風呂", "Category": "FACILITIES#CLEANLINESS", "Opinion": "満足", "VA": "6.97#6.71"}, {"Aspect": "シャワー", "Category": "FACILITIES#CLEANLINESS", "Opinion": "満足", "VA": "6.97#6.71"}, {"Aspect": "トイレ", "Category": "FACILITIES#CLEANLINESS", "Opinion": "満足", "VA": "6.97#6.71"}]}
+{"ID": "hotel26_asqp_dev_142", "Quadruplet": [{"Aspect": "値段", "Category": "HOTEL#PRICE", "Opinion": "文句なし", "VA": "6.80#6.27"}]}
+{"ID": "hotel26_asqp_dev_143", "Quadruplet": [{"Aspect": "皆さま", "Category": "SERVICE#QUALITY", "Opinion": "親切", "VA": "6.70#6.28"}, {"Aspect": "接客", "Category": "SERVICE#QUALITY", "Opinion": "温かい気持ち", "VA": "7.02#6.41"}]}
+{"ID": "hotel26_asqp_dev_144", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "良い", "VA": "6.48#6.04"}]}
+{"ID": "hotel26_asqp_dev_145", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "大満足", "VA": "7.71#7.52"}, {"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "7.06#6.68"}, {"Aspect": "量", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "大満足", "VA": "7.66#7.45"}]}
+{"ID": "hotel26_asqp_dev_146", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "良く", "VA": "6.45#6.06"}, {"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "清潔", "VA": "6.73#6.13"}]}
+{"ID": "hotel26_asqp_dev_147", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "最低", "VA": "1.86#7.33"}]}
+{"ID": "hotel26_asqp_dev_148", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "明るく", "VA": "6.78#6.38"}, {"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "親切で", "VA": "6.87#6.45"}]}
+{"ID": "hotel26_asqp_dev_149", "Quadruplet": [{"Aspect": "朝ごはん", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "残念", "VA": "3.61#5.72"}]}
+{"ID": "hotel26_asqp_dev_150", "Quadruplet": [{"Aspect": "ホテル", "Category": "SERVICE#QUALITY", "Opinion": "丁寧", "VA": "7.08#6.54"}]}
+{"ID": "hotel26_asqp_dev_151", "Quadruplet": [{"Aspect": "コスパ", "Category": "HOTEL#PRICE", "Opinion": "最高", "VA": "7.64#7.34"}]}
+{"ID": "hotel26_asqp_dev_152", "Quadruplet": [{"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.32#5.74"}, {"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "快適", "VA": "6.80#6.27"}]}
+{"ID": "hotel26_asqp_dev_153", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "広々としていて", "VA": "6.83#6.28"}]}
+{"ID": "hotel26_asqp_dev_154", "Quadruplet": [{"Aspect": "洗い場", "Category": "FACILITIES#STYLE_OPTIONS", "Opinion": "大変不便", "VA": "2.60#6.62"}]}
+{"ID": "hotel26_asqp_dev_155", "Quadruplet": [{"Aspect": "エレベーター", "Category": "FACILITIES#QUALITY", "Opinion": "なかなか来ない", "VA": "3.57#5.43"}]}
+{"ID": "hotel26_asqp_dev_156", "Quadruplet": [{"Aspect": "外観", "Category": "HOTEL#DESIGN_FEATURES", "Opinion": "少し古め", "VA": "3.99#5.33"}, {"Aspect": "NULL", "Category": "HOTEL#CLEANLINESS", "Opinion": "清潔感", "VA": "6.52#5.88"}]}
+{"ID": "hotel26_asqp_dev_157", "Quadruplet": [{"Aspect": "全て", "Category": "HOTEL#CLEANLINESS", "Opinion": "綺麗", "VA": "6.95#6.19"}]}
+{"ID": "hotel26_asqp_dev_158", "Quadruplet": [{"Aspect": "朝ご飯", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "とても美味しかった", "VA": "7.56#7.34"}, {"Aspect": "うなぎ", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "とても美味しかった", "VA": "7.46#7.31"}]}
+{"ID": "hotel26_asqp_dev_159", "Quadruplet": [{"Aspect": "スペース", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "狭すぎ", "VA": "3.08#6.22"}]}
+{"ID": "hotel26_asqp_dev_160", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#GENERAL", "Opinion": "利用したい", "VA": "6.55#6.07"}]}
+{"ID": "hotel26_asqp_dev_161", "Quadruplet": [{"Aspect": "駐車場", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "立体", "VA": "5.04#4.96"}, {"Aspect": "誘導", "Category": "SERVICE#QUALITY", "Opinion": "うまく", "VA": "6.47#5.89"}]}
+{"ID": "hotel26_asqp_dev_162", "Quadruplet": [{"Aspect": "夕食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "寂しい", "VA": "3.68#5.37"}]}
+{"ID": "hotel26_asqp_dev_163", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "とても美味しかった", "VA": "7.58#7.41"}]}
+{"ID": "hotel26_asqp_dev_164", "Quadruplet": [{"Aspect": "従業員", "Category": "SERVICE#QUALITY", "Opinion": "親切", "VA": "6.57#6.11"}, {"Aspect": "従業員", "Category": "SERVICE#QUALITY", "Opinion": "丁寧", "VA": "6.63#6.11"}]}
+{"ID": "hotel26_asqp_dev_165", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "温かい", "VA": "5.84#5.50"}]}
+{"ID": "hotel26_asqp_dev_166", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "とてもおいしく", "VA": "7.39#7.20"}]}
+{"ID": "hotel26_asqp_dev_167", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#CLEANLINESS", "Opinion": "綺麗", "VA": "6.93#6.18"}, {"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "広い", "VA": "6.67#6.07"}]}
+{"ID": "hotel26_asqp_dev_168", "Quadruplet": [{"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しくて", "VA": "6.93#6.38"}]}
+{"ID": "hotel26_asqp_dev_169", "Quadruplet": [{"Aspect": "無料朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しくて", "VA": "7.04#6.78"}, {"Aspect": "無料朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "満足", "VA": "6.88#6.63"}]}
+{"ID": "hotel26_asqp_dev_170", "Quadruplet": [{"Aspect": "作り", "Category": "HOTEL#DESIGN_FEATURES", "Opinion": "古く", "VA": "3.61#5.37"}]}
+{"ID": "hotel26_asqp_dev_171", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "期待以上", "VA": "7.18#6.63"}]}
+{"ID": "hotel26_asqp_dev_172", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "良く", "VA": "6.47#6.02"}, {"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.76#6.43"}, {"Aspect": "館内の雰囲気", "Category": "HOTEL#COMFORT", "Opinion": "良く", "VA": "6.52#6.10"}]}
+{"ID": "hotel26_asqp_dev_173", "Quadruplet": [{"Aspect": "サウナ", "Category": "FACILITIES#QUALITY", "Opinion": "大満足", "VA": "7.68#7.37"}, {"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "また泊まりたい", "VA": "6.87#6.59"}, {"Aspect": "駅", "Category": "LOCATION#GENERAL", "Opinion": "少し歩きます", "VA": "4.01#4.35"}, {"Aspect": "コンビニ", "Category": "LOCATION#GENERAL", "Opinion": "近く", "VA": "6.29#5.86"}]}
+{"ID": "hotel26_asqp_dev_174", "Quadruplet": [{"Aspect": "皆さん", "Category": "SERVICE#QUALITY", "Opinion": "感動", "VA": "7.33#7.34"}]}
+{"ID": "hotel26_asqp_dev_175", "Quadruplet": [{"Aspect": "お風呂", "Category": "ROOMS#COMFORT", "Opinion": "良かった", "VA": "6.53#6.08"}]}
+{"ID": "hotel26_asqp_dev_176", "Quadruplet": [{"Aspect": "対応", "Category": "SERVICE#QUALITY", "Opinion": "良く", "VA": "6.73#6.27"}]}
+{"ID": "hotel26_asqp_dev_177", "Quadruplet": [{"Aspect": "ホテル", "Category": "HOTEL#GENERAL", "Opinion": "満足", "VA": "6.64#6.12"}]}
+{"ID": "hotel26_asqp_dev_178", "Quadruplet": [{"Aspect": "風呂", "Category": "FACILITIES#QUALITY", "Opinion": "よかった", "VA": "6.45#6.07"}, {"Aspect": "サウナ", "Category": "FACILITIES#QUALITY", "Opinion": "よかった", "VA": "6.45#6.07"}]}
+{"ID": "hotel26_asqp_dev_179", "Quadruplet": [{"Aspect": "朝食", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "問題なし", "VA": "6.26#5.43"}]}
+{"ID": "hotel26_asqp_dev_180", "Quadruplet": [{"Aspect": "ステーキ", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "感動", "VA": "7.11#6.81"}, {"Aspect": "柔らかさ", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "感動", "VA": "7.12#6.77"}]}
+{"ID": "hotel26_asqp_dev_181", "Quadruplet": [{"Aspect": "お部屋", "Category": "ROOMS#COMFORT", "Opinion": "くつろげる", "VA": "6.92#6.35"}, {"Aspect": "オーシャンビューバス", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "あり", "VA": "6.44#5.76"}, {"Aspect": "時間", "Category": "HOTEL#GENERAL", "Opinion": "ゆったりとした", "VA": "6.73#6.17"}]}
+{"ID": "hotel26_asqp_dev_182", "Quadruplet": [{"Aspect": "料金", "Category": "HOTEL#PRICE", "Opinion": "お値打ち", "VA": "6.64#6.17"}]}
+{"ID": "hotel26_asqp_dev_183", "Quadruplet": [{"Aspect": "尾花", "Category": "HOTEL#GENERAL", "Opinion": "素晴らしい", "VA": "7.40#6.88"}]}
+{"ID": "hotel26_asqp_dev_184", "Quadruplet": [{"Aspect": "テーブルの位置", "Category": "FACILITIES#DESIGN_FEATURES", "Opinion": "面倒", "VA": "3.48#5.70"}]}
+{"ID": "hotel26_asqp_dev_185", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "良く", "VA": "6.45#6.04"}]}
+{"ID": "hotel26_asqp_dev_186", "Quadruplet": [{"Aspect": "ドームコテージ", "Category": "ROOMS#DESIGN_FEATURES", "Opinion": "とても使いやすくなりました", "VA": "7.15#6.77"}]}
+{"ID": "hotel26_asqp_dev_187", "Quadruplet": [{"Aspect": "雰囲気", "Category": "HOTEL#COMFORT", "Opinion": "静かな", "VA": "6.43#5.84"}, {"Aspect": "雰囲気", "Category": "HOTEL#COMFORT", "Opinion": "とても好き", "VA": "7.15#7.12"}]}
+{"ID": "hotel26_asqp_dev_188", "Quadruplet": [{"Aspect": "スカイスパ", "Category": "FACILITIES#QUALITY", "Opinion": "満足", "VA": "6.91#6.52"}, {"Aspect": "食事", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "満足", "VA": "6.91#6.52"}, {"Aspect": "部屋", "Category": "ROOMS#QUALITY", "Opinion": "満足", "VA": "6.91#6.52"}, {"Aspect": "フロント対応", "Category": "SERVICE#QUALITY", "Opinion": "満足", "VA": "6.91#6.52"}]}
+{"ID": "hotel26_asqp_dev_189", "Quadruplet": [{"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "狭い", "VA": "3.42#5.56"}, {"Aspect": "駐車場", "Category": "FACILITIES#GENERAL", "Opinion": "良かった", "VA": "6.46#5.99"}, {"Aspect": "部屋", "Category": "ROOMS#COMFORT", "Opinion": "不快", "VA": "2.67#6.98"}, {"Aspect": "エアコン", "Category": "FACILITIES#QUALITY", "Opinion": "臭くて", "VA": "2.76#6.46"}]}
+{"ID": "hotel26_asqp_dev_190", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "とてもありがたかった", "VA": "7.41#7.04"}]}
+{"ID": "hotel26_asqp_dev_191", "Quadruplet": [{"Aspect": "立地", "Category": "LOCATION#GENERAL", "Opinion": "丁度良い", "VA": "6.42#5.96"}]}
+{"ID": "hotel26_asqp_dev_192", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#PRICE", "Opinion": "非常に安かった", "VA": "7.38#6.82"}]}
+{"ID": "hotel26_asqp_dev_193", "Quadruplet": []}
+{"ID": "hotel26_asqp_dev_194", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#PRICE", "Opinion": "安く", "VA": "6.43#5.86"}]}
+{"ID": "hotel26_asqp_dev_195", "Quadruplet": [{"Aspect": "量", "Category": "FOOD_DRINKS#STYLE_OPTIONS", "Opinion": "多くて", "VA": "6.48#6.18"}, {"Aspect": "NULL", "Category": "FOOD_DRINKS#QUALITY", "Opinion": "美味しく", "VA": "6.65#6.29"}]}
+{"ID": "hotel26_asqp_dev_196", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "よかった", "VA": "6.43#5.93"}]}
+{"ID": "hotel26_asqp_dev_197", "Quadruplet": [{"Aspect": "NULL", "Category": "HOTEL#GENERAL", "Opinion": "高評価", "VA": "7.29#6.69"}]}
+{"ID": "hotel26_asqp_dev_198", "Quadruplet": [{"Aspect": "お部屋", "Category": "ROOMS#QUALITY", "Opinion": "格別", "VA": "7.74#7.38"}]}
+{"ID": "hotel26_asqp_dev_199", "Quadruplet": [{"Aspect": "スタッフ", "Category": "SERVICE#QUALITY", "Opinion": "親切", "VA": "6.72#6.35"}]}
+{"ID": "hotel26_asqp_dev_200", "Quadruplet": [{"Aspect": "話し声", "Category": "HOTEL#COMFORT", "Opinion": "うるさい", "VA": "3.05#6.08"}]}

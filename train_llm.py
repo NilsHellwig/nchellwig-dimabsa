@@ -13,21 +13,22 @@ from datetime import datetime
 logger = logging.getLogger('training')
 
 
-def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", seed_run=0, strategy="evaluation", split_idx=0, llm_name="unsloth/gemma-3-27b-it-bnb-4bit", num_epochs=5):
+def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", seed_run=0, strategy="test-train_dev", split_idx=0, llm_name="unsloth/gemma-3-27b-it-bnb-4bit", num_epochs=5):
 
-    if strategy == "evaluation":
+    if strategy == "test-train_dev":
+        train_dataset = get_dataset(
+            subtask=subtask, language=language, domain=domain, split="train") + get_dataset(
+            subtask=subtask, language=language, domain=domain, split="dev")
+
+        eval_dataset = get_dataset(
+                subtask=subtask, language=language, domain=domain, split="test")
+    
+    elif strategy == "dev-train":
         train_dataset = get_dataset(
             subtask=subtask, language=language, domain=domain, split="train")
 
-        try:
-            test_dataset = get_dataset(
-                subtask=subtask, language=language, domain=domain, split="test")
-        except Exception as e:
-            logger.warning(f"Failed to load test dataset: {e}")
-            test_dataset = None
-        
-        dev_dataset = get_dataset(
-            subtask=subtask, language=language, domain=domain, split="dev")
+        eval_dataset = get_dataset(
+                subtask=subtask, language=language, domain=domain, split="dev")
 
     elif strategy == "train_split":
         dataset = get_dataset(
@@ -49,14 +50,12 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
         val_data = splits[split_idx]
         train_dataset = [item for i, split in enumerate(
             splits) if i != split_idx for item in split]
-        
-        dev_dataset = None
-        test_dataset = val_data
+
+        eval_dataset = val_data
 
     results = train_and_evaluate(
         train_dataset,
-        test_dataset,
-        dev_dataset,
+        eval_dataset,
         subtask=subtask,
         language=language,
         domain=domain,
@@ -107,23 +106,23 @@ def main():
     split_idx = args.split_idx
     llm_name = args.llm_name
     num_epochs = args.num_epochs
-    
-    results_path_start = f"results/results_{strategy if strategy != "evaluation" else "pred_dev"}/{llm_name.replace('/', '_')}/"
-    
+
+    results_path_start = f"results/results_{strategy}/{llm_name.replace('/', '_')}/"
+
     # create results directory if it doesn't exist
     os.makedirs(results_path_start, exist_ok=True)
-    
+
     if strategy == "train_split":
         existing_files = [f for f in os.listdir(results_path_start)
-                      if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]
+                          if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]
     else:
         existing_files = [f for f in os.listdir(results_path_start)
-                      if f.startswith(f"{subtask}_{language}_{domain}_0")]
-    
+                          if f.startswith(f"{subtask}_{language}_{domain}_0")]
+
     if existing_files:
-        logger.info(f"Results already exist for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, split_idx={split_idx}. Skipping.")
+        logger.info(
+            f"Results already exist for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, split_idx={split_idx}, strategy={strategy}. Skipping.")
         return
-    
 
     run_training_pipeline_real(
         subtask, language, domain, seed_run, strategy, split_idx=split_idx, llm_name=llm_name, num_epochs=num_epochs)

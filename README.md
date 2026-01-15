@@ -67,7 +67,7 @@ python train_llm.py \
 | `--language` | Target language | `eng`, `zho`, `jpn`, `rus`, `tat`, `ukr` |
 | `--domain` | Review domain | `restaurant`, `laptop`, `hotel` |
 | `--llm_name` | Base model | `unsloth/gemma-3-27b-it-bnb-4bit`, etc. |
-| `--strategy` | Evaluation strategy | `pred_dev`, `train_split` |
+| `--strategy` | Evaluation strategy | `test-train_dev`, `train_split` |
 | `--num_epochs` | Training epochs | Integer (default: 5) |
 
 ### Running Experiments

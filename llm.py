@@ -26,8 +26,7 @@ NUM_PRED_SC = 15
 
 def train_and_evaluate(
     train_data_raw,
-    test_data_raw,
-    dev_data_raw=None,
+    eval_data_raw,
     subtask=3,
     language="eng",
     domain="restaurant",
@@ -53,8 +52,8 @@ def train_and_evaluate(
         # create directory final_models if not exists
         if not os.path.exists("final_models"):
             os.makedirs("final_models")
-        if not os.path.exists(f"final_models/{model_name_or_path.replace('/', '_')}"):
-            os.makedirs(f"final_models/{model_name_or_path.replace('/', '_')}")
+        if not os.path.exists(f"final_models/{strategy}/{model_name_or_path.replace('/', '_')}"):
+            os.makedirs(f"final_models/{strategy}/{model_name_or_path.replace('/', '_')}")
         if not os.path.exists(model_save_path):
             os.makedirs(model_save_path)
 
@@ -63,7 +62,7 @@ def train_and_evaluate(
         logger.info(
             f"Training parameters - Epochs: {num_train_epochs}, Batch size: {train_batch_size}, LR: {learning_rate}, LoRA rank: {lora_rank}")
         logger.info(
-            f"Training examples: {len(train_data_raw)}, Test examples: {len(test_data_raw) if test_data_raw is not None else 'N/A'}, Dev examples: {len(dev_data_raw) if dev_data_raw is not None else 'N/A'}")
+            f"Training examples: {len(train_data_raw)}, Test examples: {len(eval_data_raw) if eval_data_raw is not None else 'N/A'}")
 
         model, tokenizer = FastModel.from_pretrained(
             model_name=model_name_or_path,
@@ -206,21 +205,19 @@ def train_and_evaluate(
         # Create sampling parameters
 
         logger.info(
-            f"Evaluating {len(test_data_raw) if test_data_raw is not None else 'N/A'} examples and evaluating {len(dev_data_raw) if dev_data_raw is not None else 'N/A'} dev examples...")
+            f"Evaluating {len(eval_data_raw) if eval_data_raw is not None else 'N/A'} examples...")
 
-        # If strategy is "pred_dev" or "evaluation", evaluate on dev set
         if strategy == "train_split":
-            evaluate_model(test_data_raw, subtask, language,
+            evaluate_model(eval_data_raw, subtask, language,
                            domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
 
-        if strategy == "evaluation":
-            evaluate_model(dev_data_raw, subtask, language,
-                           domain, llm, seed_run, "pred_dev", model_name_or_path, model_save_path, split_idx=split_idx)
+        if strategy == "dev-train":
+            evaluate_model(eval_data_raw, subtask, language,
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
 
-        if test_data_raw is not None and strategy == "evaluation":
-            evaluate_model(test_data_raw, subtask, language,
-                           domain, llm, seed_run, "pred_test", model_name_or_path, model_save_path, split_idx=split_idx)
-
+        if strategy == "test-train_dev":
+            evaluate_model(eval_data_raw, subtask, language,
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
 
 def evaluate_chunked(prompts, sampling_params, llm, model_save_path, lora_request=None, chunks=1000):
     if len(prompts) <= chunks:
@@ -428,7 +425,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
             with open(path_2b, "w") as f:
                 for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    elif strategy == "pred_dev" or strategy == "pred_test":
+    elif strategy == "dev-train" or strategy == "test-train_dev":
         path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
             for item in outputs_1a:
