@@ -1,20 +1,22 @@
-# Self-Consistent Structured Generation for Dimensional Aspect-Based Sentiment Analysis
+# Self-Consistent Structured Generation (SCSG) for Dimensional Aspect-Based Sentiment Analysis
 
 <div align="center">
 
-**SemEval-2026 Task 3 - Track A Submission**
+**SemEval-2026 Task 3 · Track A Submission · Subtask 2 & 3**
 
-[![Paper](https://img.shields.io/badge/Paper-SemEval%202026-blue)](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
-[![Model](https://img.shields.io/badge/Model-Gemma--3-orange.svg)](https://huggingface.co/google/gemma-3-27b-it)
+[![Paper](https://img.shields.io/badge/Paper-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)](tba)
+[![Model](https://img.shields.io/badge/Gemma--3--27B-FFAB00?style=for-the-badge&logo=googlegemini)](https://huggingface.co/google/gemma-3-27b-it)
 
-*Fine-tuned LLMs with guided decoding for structured sentiment extraction*
+---
 
 **Nils Constantin Hellwig¹ · Jakob Fehle¹ · Udo Kruschwitz² · Christian Wolff¹**
 
 ¹Media Informatics Group · ²Information Science Group  
 University of Regensburg, Germany
+
+---
+
+*Instruction-tuned LLMs with self-consistency for consistent Dimensional Aspect-Based Sentiment Analysis*
 
 </div>
 
@@ -32,15 +34,17 @@ Our approach leverages the **Gemma-3 model family** with LoRA fine-tuning, incor
 ## 🛠️ Installation
 
 ### Prerequisites
+
 - Python 3.12+
 - CUDA-compatible GPU (for training)
-- 20GB+ RAM recommended
+- 20GB+ VRAM recommended
 
 ### Setup
+
 ```bash
 # Clone the repository
-git clone https://github.com/NilsHellwig/ur-mi-nch.git
-cd ur-mi-nch
+git clone https://github.com/NilsHellwig/nchellwig-dimabsa
+cd nchellwig-dimabsa
 
 # Install dependencies
 pip install -r requirements.txt
@@ -61,65 +65,57 @@ python train_llm.py \
 ```
 
 #### Key Parameters
-| Parameter | Description | Options |
-|-----------|-------------|---------|
-| `--subtask` | Task variant | `2` (DimASTE), `3` (DimASQP) |
-| `--language` | Target language | `eng`, `zho`, `jpn`, `rus`, `tat`, `ukr` |
-| `--domain` | Review domain | `restaurant`, `laptop`, `hotel` |
-| `--llm_name` | Base model | `unsloth/gemma-3-27b-it-bnb-4bit`, etc. |
-| `--strategy` | Evaluation strategy | `test-train_dev`, `train_split` |
-| `--num_epochs` | Training epochs | Integer (default: 5) |
 
-### Running Experiments
-
-```bash
-# Parameter sweep across configurations
-python run_experiments_parameters.py
-
-# Final evaluation with optimal parameters
-python run_final.py
-```
+| Parameter      | Description         | Options                                  |
+| -------------- | ------------------- | ---------------------------------------- |
+| `--subtask`    | Task variant        | `2` (DimASTE), `3` (DimASQP)             |
+| `--language`   | Target language     | `eng`, `zho`, `jpn`, `rus`, `tat`, `ukr` |
+| `--domain`     | Review domain       | `restaurant`, `laptop`, `hotel`          |
+| `--llm_name`   | Base model          | `unsloth/gemma-3-27b-it-bnb-4bit`, etc.  |
+| `--strategy`   | Evaluation strategy | `test-train_dev`, `dev-train`            |
+| `--num_epochs` | Training epochs     | Integer (default: 5)                     |
 
 ## 📊 Results
 
 ### Evaluation Metrics
-- **Continuous F1 Score** for Subtasks 2 & 3
+
+- **Continuous Precision, Recall and F1 Score** for Subtasks 2 & 3
 - **Precision & Recall** metrics
 - **Cross-lingual performance** analysis
 
-Results are organized in the `results/` directory with detailed breakdowns by:
+Results are organized in the `exported_predictions/` directory with detailed breakdowns by:
+
 - Language (English, Chinese, Japanese, Russian, Tatar, Ukrainian)
 - Domain (Restaurant, Laptop, Hotel)
-- Configuration (temperature, guidance, sampling strategy)
 
 ## 🌍 Supported Languages & Domains
 
-| Language | Code | Domains |
-|----------|------|---------|
-| English | `eng` | Restaurant, Laptop |
-| Chinese | `zho` | Restaurant, Laptop |
-| Japanese | `jpn` | Hotel |
-| Russian | `rus` | Restaurant |
-| Tatar | `tat` | Restaurant |
-| Ukrainian | `ukr` | Restaurant |
+| Language  | Code  | Domains            |
+| --------- | ----- | ------------------ |
+| English   | `eng` | Restaurant, Laptop |
+| Chinese   | `zho` | Restaurant, Laptop |
+| Japanese  | `jpn` | Hotel              |
+| Russian   | `rus` | Restaurant         |
+| Tatar     | `tat` | Restaurant         |
+| Ukrainian | `ukr` | Restaurant         |
 
 ## 🔗 Resources
 
-- 📄 [SemEval-2026 Task 3 Overview](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer
+- 📄 [SemEval-2026 Task 3 Overview](tba)
 - 📘 [Task Repository](https://github.com/DimABSA/DimABSA2026)
 - 💾 [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
-- 🤖 [Gemma-3 Model](https://huggingface.co/google/gemma-3-27b-it)
+- 🤖 [Gemma-3 Model (Unsloth)](https://huggingface.co/unsloth/gemma-3-27b-it-bnb-4bit)
 
 ## 📬 Contact
 
 <div align="center">
 
-| Author | Affiliation | Email |
-|--------|-------------|-------|
-| **Nils Constantin Hellwig** | Media Informatics Group | [nils-constantin.hellwig@ur.de](mailto:nils-constantin.hellwig@ur.de) |
-| **Jakob Fehle** | Media Informatics Group | [jakob.fehle@ur.de](mailto:jakob.fehle@ur.de) |
-| **Udo Kruschwitz** | Information Science Group | [udo.kruschwitz@ur.de](mailto:udo.kruschwitz@ur.de) |
-| **Christian Wolff** | Media Informatics Group | [christian.wolff@ur.de](mailto:christian.wolff@ur.de) |
+| Author                      | Affiliation               | Email                                                                 |
+| --------------------------- | ------------------------- | --------------------------------------------------------------------- |
+| **Nils Constantin Hellwig** | Media Informatics Group   | [nils-constantin.hellwig@ur.de](mailto:nils-constantin.hellwig@ur.de) |
+| **Jakob Fehle**             | Media Informatics Group   | [jakob.fehle@ur.de](mailto:jakob.fehle@ur.de)                         |
+| **Udo Kruschwitz**          | Information Science Group | [udo.kruschwitz@ur.de](mailto:udo.kruschwitz@ur.de)                   |
+| **Christian Wolff**         | Media Informatics Group   | [christian.wolff@ur.de](mailto:christian.wolff@ur.de)                 |
 
 **University of Regensburg, Germany**
 
@@ -129,17 +125,10 @@ Results are organized in the `results/` directory with detailed breakdowns by:
 
 ## 📖 Citation
 
-
 ```bibtex
 tba
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 <div align="center">
-Made with ❤️ at the University of Regensburg
+Made with ❤️ at the Faculty of Informatics and Data Science, University of Regensburg
 </div>
