@@ -26,7 +26,7 @@ N_SEEDS_RUNS = 1
 N_EPOCHS = 5
 
 for seed_run in range(N_SEEDS_RUNS):
-    for strategy in ["dev-train", "test-train_dev"]:
+    for strategy in ["test-train_dev"]:
         for subtask, language, domain in VALID_COMBINATIONS:
             llm_name = "unsloth/gemma-3-27b-it-bnb-4bit"
             print(

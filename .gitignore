@@ -4,8 +4,8 @@ __pycache__/llm.cpython-313.pyc
 model_temp/
 logs.txt
 __pycache__/evaluate.cpython-313.pyc
-time_logs.jsonl
 old/
 unsloth_compiled_cache/
 final_models/
 __pycache__
+prompts_log/

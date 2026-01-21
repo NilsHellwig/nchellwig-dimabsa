@@ -97,7 +97,7 @@ def train_and_evaluate(
             model_start = "<|im_start|>assistant\n"
             model_end = "<|im_end|>"
 
-        for example in train_data_raw:
+        for ex_idx, example in enumerate(train_data_raw):
             if "label" in example:
                 # Convert label objects to tuples
                 example["label"] = convert_label_objects_to_tuples(
@@ -109,9 +109,14 @@ def train_and_evaluate(
                 language=language,
                 domain=domain
             )
+
             example["text"] = user_start + prompt + \
                 user_end + model_start + \
                 str(example["label"]) + model_end
+            
+            # save prompt 
+            with open(f"prompts_log/train_prompt_{ex_idx}.txt", "w") as f:
+                f.write(example["text"])
 
         # Log first five example prompt for debugging
         for i in range(min(5, len(train_data_raw))):

@@ -90,12 +90,14 @@ def get_dataset(subtask=3, language="eng", domain="restaurant", split="train"):
             }
 
             # Wenn Quadruplet existiert, füge Label hinzu
-            if "Quadruplet" in json_obj:
+            key_json = "Quadruplet" if "Quadruplet" in json_obj else "Triplet" 
+            if key_json in json_obj:
                 labels = []
-                for quad in json_obj["Quadruplet"]:
+                for quad in json_obj[key_json]:
                     aspect = quad["Aspect"]
                     opinion = quad["Opinion"]
-                    category = quad["Category"]
+                    if subtask == 3:
+                      category = quad["Category"]
                     va_values = quad["VA"].split("#")
                     valence = va_values[0]
                     arousal = va_values[1]
@@ -110,8 +112,7 @@ def get_dataset(subtask=3, language="eng", domain="restaurant", split="train"):
                             {"aspect_term": aspect, "opinion_term": opinion, "valence": valence, "arousal": arousal})
                     # Subtask 1: aspect, category, opinion, valence, arousal (gleich wie 3)
                     else:
-                        labels.append({"aspect_term": aspect, "category": category,
-                                      "opinion_term": opinion, "valence": valence, "arousal": arousal})
+                        raise NotImplementedError("Subtask 1 is not implemented in this function.")
 
                 data_entry["label"] = labels
 
