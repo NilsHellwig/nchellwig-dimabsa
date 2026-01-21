@@ -1,12 +1,12 @@
 \midrule
-English & Restaurant & 2,284 & 4,497 & 1,969 & 200 & 88 & 44 & 24 & 12  \\
-English & Laptop & 4,076 & 9,141 & 2,242 & 200 & 69 & 34 & 14 & 7  \\
-Japanese & Hotel & 1,600 & 3,948 & 2,468 & 200 & 81 & 40 & 15 & 7  \\
-Russian & Restaurant & 1,240 & 3,114 & 2,511 & 48 & 39 & 82 & 18 & 39  \\
-Tatar & Restaurant & 1,240 & 4,284 & 3,454 & 48 & 44 & 91 & 22 & 46  \\
-Ukrainian & Restaurant & 1,240 & 3,467 & 2,796 & 48 & 39 & 81 & 19 & 41  \\
-Chinese & Restaurant & 6,050 & 11,925 & 1,971 & 300 & 167 & 55 & 29 & 9  \\
-Chinese & Laptop & 3,490 & 9,172 & 2,628 & 300 & 154 & 51 & 29 & 9  \\
+English & Restaurant & 2,284 & 0 & 0 & 1,000 & 0 & 0 & 0 & 0  \\
+English & Laptop & 4,076 & 0 & 0 & 1,000 & 0 & 0 & 0 & 0  \\
+Japanese & Hotel & 1,600 & 0 & 0 & 800 & 0 & 0 & 0 & 0  \\
+Russian & Restaurant & 1,240 & 0 & 0 & 630 & 0 & 0 & 0 & 0  \\
+Tatar & Restaurant & 1,240 & 0 & 0 & 630 & 0 & 0 & 0 & 0  \\
+Ukrainian & Restaurant & 1,240 & 0 & 0 & 630 & 0 & 0 & 0 & 0  \\
+Chinese & Restaurant & 6,050 & 0 & 0 & 1,000 & 0 & 0 & 0 & 0  \\
+Chinese & Laptop & 3,490 & 0 & 0 & 1,000 & 0 & 0 & 0 & 0  \\
 \midrule
-\textbf{Average} &   & 2,652 & 6,194 & 2,505 & 168 & 85 & 60 & 21 & 21 \\
+\textbf{Average} &   & 2,652 & 0 & 0 & 836 & 0 & 0 & 0 & 0 \\
 \bottomrule

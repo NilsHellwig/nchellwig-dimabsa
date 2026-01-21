@@ -7,7 +7,7 @@
 & Laptop & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 & Hotel & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 \midrule
-\multirow{2}{*}{\textbf{Test (CV)}} & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
+\multirow{2}{*}{\textbf{Test}} & Restaurant & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 & Laptop & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 & Hotel & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 \bottomrule
