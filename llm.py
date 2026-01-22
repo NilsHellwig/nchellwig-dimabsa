@@ -40,8 +40,8 @@ def train_and_evaluate(
     lora_alpha=16,
     strategy="evaluation",
     split_idx=0,
-    do_train=True,
-    do_test=False,
+    do_train=False,
+    do_test=True,
 ):
     # Set random seed for reproducibility
     set_seed(seed_run)
