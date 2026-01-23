@@ -201,7 +201,7 @@ def train_and_evaluate(
             tokenizer=model_name_or_path,
             enable_lora=True,
             max_lora_rank=lora_rank,
-            gpu_memory_utilization=0.8,
+            gpu_memory_utilization=0.95,
             seed=seed_run,
             max_num_seqs=512,
             max_model_len=max_seq_length,
