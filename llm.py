@@ -91,6 +91,11 @@ def train_and_evaluate(
             user_end = "<end_of_turn>\n"
             model_start = "<start_of_turn>model\n"
             model_end = "<end_of_turn>"
+        elif "mistral" in model_name_or_path.lower():
+            user_start = "[INST] "
+            user_end = ""
+            model_start = " [/INST]"
+            model_end = "</s>"
         else:  # Qwen and others
             user_start = "<|im_start|>user\n"
             user_end = "<|im_end|>\n"
@@ -127,7 +132,8 @@ def train_and_evaluate(
 
         tokenizer = get_chat_template(
             tokenizer,
-            chat_template="gemma-3" if "gemma" in model_name_or_path else "qwen-3",
+            chat_template="gemma-3" if "gemma" in model_name_or_path.lower() else (
+                "mistral" if "mistral" in model_name_or_path.lower() else "qwen-3"),
         )
 
         trainer = SFTTrainer(
@@ -272,6 +278,10 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         user_start = "<start_of_turn>user\n"
         user_end = "<end_of_turn>\n"
         model_start = "<start_of_turn>model\n"
+    elif "mistral" in model_name_or_path.lower():
+        user_start = "[INST] "
+        user_end = ""
+        model_start = " [/INST]"
     else:  # Qwen and others
         user_start = "<|im_start|>user\n"
         user_end = "<|im_end|>\n"
