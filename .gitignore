@@ -9,3 +9,5 @@ unsloth_compiled_cache/
 final_models/
 __pycache__
 prompts_log/
+results/results_test-train_dev/unsloth_Mistral-Small-3.2-24B-Instruct-2506-bnb-4bit
+results/results_test-train_dev/unsloth_Qwen3-32B-unsloth-bnb-4bit
