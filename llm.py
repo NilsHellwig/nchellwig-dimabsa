@@ -230,26 +230,6 @@ def train_and_evaluate(
             evaluate_model(eval_data_raw, subtask, language,
                            domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
 
-def evaluate_chunked(prompts, sampling_params, llm, model_save_path, lora_request=None, chunks=1000):
-    if len(prompts) <= chunks:
-        return llm.generate(
-            prompts=prompts,
-            sampling_params=sampling_params,
-            lora_request=lora_request
-        )
-    all_outputs = []
-    for i in range(0, len(prompts), chunks):
-        chunk_prompts = prompts[i:i+chunks]
-        chunk_sampling_params = sampling_params[i:i+chunks]
-        outputs = llm.generate(
-            prompts=chunk_prompts,
-            sampling_params=chunk_sampling_params,
-            lora_request=LoRARequest("adapter", 1, model_save_path)
-        )
-        all_outputs.extend(outputs)
-    return all_outputs
-
-
 def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, evaluation_time, self_consistency=False, guided=False):
     with open("time_logs.jsonl", "a") as f:
         log_entry = {
@@ -361,20 +341,16 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     # 2a. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen ohne guided decoding
     logger.info(
         "Running inference 2a: temp=0.8, NUM_PRED_SC runs, no guidance...")
-    prompts_2a = prompts * NUM_PRED_SC
-    sampling_params_2a = []
-    for k in range(NUM_PRED_SC):
-        for _ in prompts:
-            sampling_params_2a.append(SamplingParams(
-                temperature=0.8,
-                max_tokens=512,
-                seed=k
-            ))
 
     start_time_2a = datetime.now()
     outputs_2a = llm.generate(
-        prompts=prompts_2a,
-        sampling_params=sampling_params_2a,
+        prompts=prompts,
+        sampling_params=SamplingParams(
+            temperature=0.8,
+            max_tokens=512,
+            n=NUM_PRED_SC,
+            seed=seed_run
+        ),
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_2a = datetime.now() - start_time_2a
@@ -385,36 +361,38 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     # 2b. Prediction mit temp=0.8 -> NUM_PRED_SC mal gleiche prompt ausführen mit guided decoding
     # Pattern einmal pro Prompt berechnen und für alle NUM_PRED_SC Runs wiederverwenden
     logger.info(
-        "Running inference 2b: temp=0.8, NUM_PRED_SC runs, with guidance (chunked)...")
+        "Running inference 2b: temp=0.8, NUM_PRED_SC runs, with guidance...")
     patterns = []
     for i, _ in enumerate(prompts):
         pattern = get_regex_pattern_tuple(
             unique_aspect_categories, polarities, evaluation_set_raw[i]["text"], subtask=subtask, disable_null_aspect=disable_null_aspect)
         patterns.append(pattern)
 
-    prompts_2b = prompts * NUM_PRED_SC
     sampling_params_2b = []
-    for k in range(NUM_PRED_SC):
-        for i, _ in enumerate(prompts):
-            sampling_params_2b.append(SamplingParams(
-                temperature=0.8,
-                max_tokens=512,
-                structured_outputs=StructuredOutputsParams(regex=patterns[i]),
-                seed=k
-            ))
+    for i, _ in enumerate(prompts):
+        sampling_params_2b.append(SamplingParams(
+            temperature=0.8,
+            max_tokens=512,
+            n=NUM_PRED_SC,
+            structured_outputs=StructuredOutputsParams(regex=patterns[i]),
+            seed=seed_run
+        ))
 
     start_time_2b = datetime.now()
-    outputs_2b = evaluate_chunked(prompts_2b, sampling_params_2b, llm, model_save_path=model_save_path, lora_request=LoRARequest(
-        "adapter", 1, model_save_path), chunks=500 if language == "zho" else 2000)
+    outputs_2b = llm.generate(
+        prompts=prompts,
+        sampling_params=sampling_params_2b,
+        lora_request=LoRARequest("adapter", 1, model_save_path)
+    )
     total_time_2b = datetime.now() - start_time_2b
     store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
                           split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
     outputs_2a = format_predictions(
-        outputs_2a, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
+        outputs_2a, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
     outputs_2b = format_predictions(
-        outputs_2b, subtask, evaluation_set_raw * NUM_PRED_SC, disable_null_aspect=disable_null_aspect)
+        outputs_2b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
     if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
@@ -434,11 +412,13 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         for i in range(NUM_PRED_SC):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
-                for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
+                for p_idx in range(len(prompts)):
+                    item = outputs_2a[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
             path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
-                for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
+                for p_idx in range(len(prompts)):
+                    item = outputs_2b[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
     elif strategy == "dev-train" or strategy == "test-train_dev":
         path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
@@ -453,11 +433,13 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         for i in range(NUM_PRED_SC):
             path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
-                for item in outputs_2a[i*len(prompts):(i+1)*len(prompts)]:
+                for p_idx in range(len(prompts)):
+                    item = outputs_2a[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
             path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
-                for item in outputs_2b[i*len(prompts):(i+1)*len(prompts)]:
+                for p_idx in range(len(prompts)):
+                    item = outputs_2b[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
 
@@ -465,30 +447,31 @@ def format_predictions(outputs, subtask, test_data_raw, disable_null_aspect=True
     all_preds_formatted = []
 
     for idx, output in enumerate(outputs):
-        try:
-            raw_output = output.outputs[0].text
-            parsed_tuples = parse_label_string(raw_output, subtask=subtask)
-            if len(parsed_tuples) == 0:
-                logger.warning(
-                    f"No tuples parsed from output {idx}: {raw_output}")
+        for completion in output.outputs:
+            try:
+                raw_output = completion.text
+                parsed_tuples = parse_label_string(raw_output, subtask=subtask)
+                if len(parsed_tuples) == 0:
+                    logger.warning(
+                        f"No tuples parsed from output {idx}: {raw_output}")
 
-            # Convert to output format for JSONL submission
-            formatted_output = convert_tuples_to_output_format(
-                parsed_tuples,
-                test_data_raw[idx]["id"],
-                subtask=subtask,
-                disable_null_aspect=disable_null_aspect,
-                text=test_data_raw[idx]["text"]
-            )
-            all_preds_formatted.append(formatted_output)
-        except Exception as e:
-            logger.warning(f"Error parsing output {idx}: {e}")
-            # Empty prediction in output format
-            if subtask == 3:
-                all_preds_formatted.append(
-                    {"ID": test_data_raw[idx]["id"], "Quadruplet": []})
-            else:
-                all_preds_formatted.append(
-                    {"ID": test_data_raw[idx]["id"], "Triplet": []})
+                # Convert to output format for JSONL submission
+                formatted_output = convert_tuples_to_output_format(
+                    parsed_tuples,
+                    test_data_raw[idx]["id"],
+                    subtask=subtask,
+                    disable_null_aspect=disable_null_aspect,
+                    text=test_data_raw[idx]["text"]
+                )
+                all_preds_formatted.append(formatted_output)
+            except Exception as e:
+                logger.warning(f"Error parsing output {idx}: {e}")
+                # Empty prediction in output format
+                if subtask == 3:
+                    all_preds_formatted.append(
+                        {"ID": test_data_raw[idx]["id"], "Quadruplet": []})
+                else:
+                    all_preds_formatted.append(
+                        {"ID": test_data_raw[idx]["id"], "Triplet": []})
 
     return all_preds_formatted
