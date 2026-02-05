@@ -42,6 +42,7 @@ def train_and_evaluate(
     split_idx=0,
     do_train=False,
     do_test=True,
+    eval_seed=0,
 ):
     # Set random seed for reproducibility
     set_seed(seed_run)
@@ -208,7 +209,7 @@ def train_and_evaluate(
             enable_lora=True,
             max_lora_rank=lora_rank,
             gpu_memory_utilization=0.95,
-            seed=seed_run,
+            seed=eval_seed,
             max_num_seqs=512,
             max_model_len=max_seq_length,
         )
@@ -220,17 +221,17 @@ def train_and_evaluate(
 
         if strategy == "train_split":
             evaluate_model(eval_data_raw, subtask, language,
-                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=split_idx)
 
         if strategy == "dev-train":
             evaluate_model(eval_data_raw, subtask, language,
-                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=split_idx)
 
         if strategy == "test-train_dev":
             evaluate_model(eval_data_raw, subtask, language,
-                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=split_idx)
+                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=split_idx)
 
-def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, split_idx, evaluation_time, self_consistency=False, guided=False):
+def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, eval_seed, split_idx, evaluation_time, self_consistency=False, guided=False):
     with open("time_logs.jsonl", "a") as f:
         log_entry = {
             "subtask": subtask,
@@ -240,6 +241,7 @@ def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_n
             "strategy": strategy,
             "split_idx": split_idx,
             "model_name_or_path": model_name_or_path,
+            "eval_seed": eval_seed,
             "evaluation_time": evaluation_time.total_seconds(),
             "timestamp": datetime.now().isoformat(),
             "self_consistency": self_consistency,
@@ -248,7 +250,7 @@ def store_evaluation_time(subtask, language, domain, seed_run, strategy, model_n
         f.write(json.dumps(log_entry) + "\n")
 
 
-def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, model_save_path, split_idx=0):
+def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=0):
     logger.info(
         f"Starting evaluation - Strategy: {strategy}, Subtask: {subtask}, Language: {language}, Domain: {domain}")
     logger.info(f"Evaluation set size: {len(evaluation_set_raw)} examples")
@@ -317,7 +319,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_1a = datetime.now() - start_time_1a
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, eval_seed,
                           split_idx, total_time_1a, self_consistency=False, guided=False)
     logger.info(f"Inference 1a completed in {total_time_1a}")
 
@@ -329,7 +331,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path),
     )
     total_time_1b = datetime.now() - start_time_1b
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, eval_seed,
                           split_idx, total_time_1b, self_consistency=False, guided=True)
     logger.info(f"Inference 1b completed in {total_time_1b}")
 
@@ -354,7 +356,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_2a = datetime.now() - start_time_2a
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, eval_seed,
                           split_idx, total_time_2a, self_consistency=True, guided=False)
     logger.info(f"Inference 2a completed in {total_time_2a}")
 
@@ -385,7 +387,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         lora_request=LoRARequest("adapter", 1, model_save_path)
     )
     total_time_2b = datetime.now() - start_time_2b
-    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path,
+    store_evaluation_time(subtask, language, domain, seed_run, strategy, model_name_or_path, eval_seed,
                           split_idx, total_time_2b, self_consistency=True, guided=True)
     logger.info(f"Inference 2b completed in {total_time_2b}")
 
@@ -395,48 +397,48 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
         outputs_2b, subtask, evaluation_set_raw, disable_null_aspect=disable_null_aspect)
 
     # create results directory if not exists
-    if not os.path.exists(f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}"):
-        os.makedirs(
-            f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}")
+    results_dir = f"results/results_{strategy}/{eval_seed}/{model_name_or_path.replace('/', '_')}"
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir, exist_ok=True)
 
     if strategy == "train_split":
-        path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_no_guidance.jsonl"
+        path_1a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
             for item in outputs_1a:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
-        path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_with_guidance.jsonl"
+        path_1b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_with_guidance.jsonl"
         with open(path_1b, "w") as f:
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
         for i in range(NUM_PRED_SC):
-            path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
+            path_2a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for p_idx in range(len(prompts)):
                     item = outputs_2a[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
-            path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
+            path_2b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
                 for p_idx in range(len(prompts)):
                     item = outputs_2b[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
     elif strategy == "dev-train" or strategy == "test-train_dev":
-        path_1a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
+        path_1a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
             for item in outputs_1a:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
-        path_1b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0_with_guidance.jsonl"
+        path_1b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_temp0_with_guidance.jsonl"
         with open(path_1b, "w") as f:
             for item in outputs_1b:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
         for i in range(NUM_PRED_SC):
-            path_2a = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
+            path_2a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_no_guidance_run{i}.jsonl"
             with open(path_2a, "w") as f:
                 for p_idx in range(len(prompts)):
                     item = outputs_2a[p_idx * NUM_PRED_SC + i]
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
-            path_2b = f"results/results_{strategy}/{model_name_or_path.replace('/', '_')}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_with_guidance_run{i}.jsonl"
+            path_2b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_temp0.8_with_guidance_run{i}.jsonl"
             with open(path_2b, "w") as f:
                 for p_idx in range(len(prompts)):
                     item = outputs_2b[p_idx * NUM_PRED_SC + i]

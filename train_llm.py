@@ -13,7 +13,7 @@ from datetime import datetime
 logger = logging.getLogger('training')
 
 
-def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", seed_run=0, strategy="test-train_dev", split_idx=0, llm_name="unsloth/gemma-3-27b-it-bnb-4bit", num_epochs=5):
+def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", seed_run=0, strategy="test-train_dev", split_idx=0, llm_name="unsloth/gemma-3-27b-it-bnb-4bit", num_epochs=5, eval_seed=1):
 
     if strategy == "test-train_dev":
         train_dataset = get_dataset(
@@ -63,7 +63,8 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
         seed_run=seed_run,
         num_train_epochs=num_epochs,
         strategy=strategy,
-        split_idx=split_idx
+        split_idx=split_idx,
+        eval_seed=eval_seed
     )
 
     # delete model_temp and free trash
@@ -93,6 +94,8 @@ def main():
                         default="unsloth/gemma-3-27b-it-bnb-4bit", help='LLM model name')
     parser.add_argument('--num_epochs', type=int, default=5,
                         help='Number of training epochs')
+    parser.add_argument('--eval_seed', type=int, default=1,
+                        help='Evaluation seed (not used in this script)')
     args = parser.parse_args()
 
     setup_gpu_environment()
@@ -106,8 +109,8 @@ def main():
     split_idx = args.split_idx
     llm_name = args.llm_name
     num_epochs = args.num_epochs
-
-    results_path_start = f"results/results_{strategy}/{llm_name.replace('/', '_')}/"
+    eval_seed = args.eval_seed
+    results_path_start = f"results/results_{strategy}/{eval_seed}/{llm_name.replace('/', '_')}/"
 
     # create results directory if it doesn't exist
     os.makedirs(results_path_start, exist_ok=True)
@@ -121,11 +124,11 @@ def main():
 
     if existing_files:
         logger.info(
-            f"Results already exist for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, split_idx={split_idx}, strategy={strategy}. Skipping.")
+            f"Results already exist for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, split_idx={split_idx}, strategy={strategy}, eval_seed={eval_seed}. Skipping.")
         return
 
     run_training_pipeline_real(
-        subtask, language, domain, seed_run, strategy, split_idx=split_idx, llm_name=llm_name, num_epochs=num_epochs)
+        subtask, language, domain, seed_run, strategy, split_idx=split_idx, llm_name=llm_name, num_epochs=num_epochs, eval_seed=eval_seed)
 
     logger.info(f"Experiment completed successfully")
     logger.info(f"="*80)

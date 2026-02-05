@@ -28,18 +28,33 @@ N_EPOCHS = 5
 for seed_run in range(N_SEEDS_RUNS):
     for strategy in ["test-train_dev"]:
         for subtask, language, domain in VALID_COMBINATIONS:
-            llm_name = "unsloth/gemma-3-27b-it-bnb-4bit"
-            print(
-                f"Running evaluation for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, llm_name={llm_name}, strategy={strategy}")
-            cmd = [
-                sys.executable,
-                "train_llm.py",
-                "--subtask", str(subtask),
-                "--language", language,
-                "--domain", domain,
-                "--seed_run", str(seed_run),
-                "--strategy", strategy,
-                "--llm_name", llm_name,
-                "--num_epochs", str(N_EPOCHS)
-            ]
-            subprocess.run(cmd)
+            for llm_name in ["unsloth/gemma-3-27b-it-bnb-4bit", "unsloth/Mistral-Small-3.2-24B-Instruct-2506-bnb-4bit", "unsloth/Qwen3-32B-unsloth-bnb-4bit"]:
+              for eval_seed in range(0, 5):
+                  
+                # check if comb exists
+                file_path_check = f"results/results_{strategy}/{eval_seed}/{llm_name.replace('/', '_')}/{subtask}_{language}_{domain}_0_temp0_no_guidance.jsonl"
+                print(file_path_check)
+                try:
+                    print(f"Checking for file: {file_path_check}")
+                    with open(file_path_check, 'r') as f:
+                        pass
+                    continue
+                except FileNotFoundError:
+                    print(f"File not found: {file_path_check}, proceeding with evaluation.")
+                    pass
+
+                print(
+                    f"Running evaluation for subtask={subtask}, language={language}, domain={domain}, seed_run={seed_run}, llm_name={llm_name}, strategy={strategy}")
+                cmd = [
+                    sys.executable,
+                    "train_llm.py",
+                    "--subtask", str(subtask),
+                    "--language", language,
+                    "--domain", domain,
+                    "--seed_run", str(seed_run),
+                    "--strategy", strategy,
+                    "--llm_name", llm_name,
+                    "--num_epochs", str(N_EPOCHS),
+                    "--eval_seed", str(eval_seed),
+                ]
+                subprocess.run(cmd)

@@ -313,15 +313,16 @@ VALID_LANGUAGES_DOMAINS = [
 ]
 
 
-def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_split", guidance=True, self_consistency=True, run_idx=0):
+def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_split", guidance=True, self_consistency=True, run_idx=0, eval_seed=0):
     llm_name_formatted = llm.replace("/", "_")
 
     guidance_str = "with_guidance" if guidance else "no_guidance"
     temp_str = "_temp0.8" if self_consistency else "_temp0"
     run_str = f"_run{run_idx}" if self_consistency else ""
     split_idx_str = f"_{split_idx}" if strategy == "train_split" else ""
+    eval_seed_str = f"/{eval_seed}" if strategy == "test-train_dev" else ""
 
-    path = f"results/results_{strategy}/{llm_name_formatted}/{subtask}_{language}_{domain}_{RUN_SEED}{split_idx_str}{temp_str}_{guidance_str}{run_str}.jsonl"
+    path = f"results/results_{strategy}{eval_seed_str}/{llm_name_formatted}/{subtask}_{language}_{domain}_{RUN_SEED}{split_idx_str}{temp_str}_{guidance_str}{run_str}.jsonl"
 
     predictions = []
     with open(path, "r", encoding="utf-8") as f:
@@ -411,7 +412,7 @@ def merge_predictions(predictions, subtask, min_votes=3):
         }
 
 
-def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27b-it-bnb-4bit", num_preds_sc=NUM_PRED_SC):
+def get_performance(language, domain, subtask, strategy, eval_seed=0, llm="unsloth/gemma-3-27b-it-bnb-4bit", num_preds_sc=NUM_PRED_SC):
     labels = load_ground_truth(subtask, language, domain)
 
     results = []
@@ -419,14 +420,14 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
 
     for split_idx in range(n_splits):
         preds_no_sc_guided = load_predictions(
-            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=True, self_consistency=False)
+            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=True, self_consistency=False, eval_seed=eval_seed)
         preds_no_sc_no_guided = load_predictions(
-            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=False, self_consistency=False)
+            subtask, language, domain, split_idx=split_idx, llm=llm, strategy=strategy, guidance=False, self_consistency=False, eval_seed=eval_seed)
 
         preds_sc_guided = []
         all_preds_guided = [
             load_predictions(subtask, language, domain, split_idx=split_idx,
-                             llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=i)
+                             llm=llm, strategy=strategy, guidance=True, self_consistency=True, run_idx=i, eval_seed=eval_seed)
             for i in range(num_preds_sc)
         ]
         for k in range(len(all_preds_guided[0])):
@@ -437,7 +438,7 @@ def get_performance(language, domain, subtask, strategy, llm="unsloth/gemma-3-27
         preds_sc_no_guided = []
         all_preds_no_guided = [
             load_predictions(subtask, language, domain, split_idx=split_idx,
-                             llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=i)
+                             llm=llm, strategy=strategy, guidance=False, self_consistency=True, run_idx=i, eval_seed=eval_seed)
             for i in range(num_preds_sc)
         ]
         for k in range(len(all_preds_no_guided[0])):
