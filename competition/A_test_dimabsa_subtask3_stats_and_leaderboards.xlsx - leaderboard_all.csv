@@ -12,8 +12,9 @@ gstavros,eng,lap,"0,2694",AILS-NTUA,10
 hiimhoanglam,eng,lap,"0,2587",HUS@NLP-VNU,11
 espernauto,eng,lap,"0,2578",Bert Kittens,12
 dlaschenko,eng,lap,"0,2512",SokraTUM,13
-Baseline,eng,lap,"0,1668",Baseline,14
-affan,eng,lap,0,Habib university,15
+michalr,eng,lap,"0,2317",TeamA,14
+Baseline,eng,lap,"0,1668",Baseline,15
+affan,eng,lap,0,Habib university,16
 kosyamada,eng,res,"0,6514",Takoyaki,1
 nchellwig,eng,res,"0,6403",nchellwig,2
 oscarhscc,eng,res,"0,6395",PALI,3
@@ -23,10 +24,11 @@ hiimhoanglam,eng,res,"0,5871",HUS@NLP-VNU,6
 nlangproc,eng,res,"0,5816",NLANGPROC,7
 dlaschenko,eng,res,"0,5612",SokraTUM,8
 triston,eng,res,"0,5487",TeleAI,9
-espernauto,eng,res,"0,5162",Bert Kittens,10
-haohuanchen,eng,res,"0,5119",Scmhl5,11
-Baseline,eng,res,"0,3036",Baseline,12
-affan,eng,res,0,Habib university,13
+michalr,eng,res,"0,5317",TeamA,10
+espernauto,eng,res,"0,5162",Bert Kittens,11
+haohuanchen,eng,res,"0,5119",Scmhl5,12
+Baseline,eng,res,"0,3036",Baseline,13
+affan,eng,res,0,Habib university,14
 oscarhscc,jpn,hot,"0,4252",PALI,1
 kosyamada,jpn,hot,"0,4086",Takoyaki,2
 nlangproc,jpn,hot,"0,4028",NLANGPROC,3
