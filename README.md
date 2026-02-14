@@ -2,23 +2,28 @@
 
 <div align="center">
 
-**SemEval-2026 Task 3 · Track A Submission · Subtask 2 & 3**
+**nchellwig at SemEval-2026 Task 3: Self-Consistent Structured Generation (SCSG) for Dimensional Aspect-Based Sentiment Analysis using Large Language Models**
 
-[![Paper](https://img.shields.io/badge/Paper-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)](tba)
-[![Model](https://img.shields.io/badge/Gemma--3--27B-FFAB00?style=for-the-badge&logo=googlegemini)](https://huggingface.co/google/gemma-3-27b-it)
+Entry at **SemEval-2026** (Task 2 + 3 · Track A)
 
----
-
-**Nils Constantin Hellwig¹ · Jakob Fehle¹ · Udo Kruschwitz² · Christian Wolff¹**
-
-¹Media Informatics Group · ²Information Science Group  
-University of Regensburg, Germany
+[![Paper](https://img.shields.io/badge/Paper_Download-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)](tba)
+[![Correspondence](https://img.shields.io/badge/Contact-Nils%20Hellwig-darkred?style=for-the-badge&logo=minutemailer)](mailto:nils-constantin.hellwig@ur.de)
 
 ---
 
-*Instruction-tuned LLMs with self-consistency for consistent Dimensional Aspect-Based Sentiment Analysis*
+**Nils Constantin Hellwig¹✉ · Jakob Fehle¹ · Udo Kruschwitz² · Christian Wolff¹**
+
+¹Media Informatics Group, University of Regensburg, Germany  
+²Information Science Group, University of Regensburg, Germany
+
+_✉ Correspondence to: [nils-constantin.hellwig@ur.de](mailto:nils-constantin.hellwig@ur.de)_  
+`{nils-constantin.hellwig, jakob.fehle, udo.kruschwitz, christian.wolff}@ur.de`
+
+---
 
 </div>
+
+> **Abstract:** We present Self-Consistent Structured Generation (SCSG) for Dimensional Aspect-Based Sentiment Analysis in SemEval-2026 Task 3 (Track A). SCSG enhances prediction reliability by executing a LoRA-adapted large language model multiple times per instance, retaining only tuples that achieve majority consensus across runs. To mitigate the computational overhead of multiple forward passes, we leverage vLLM’s PagedAttention for efficient key-value cache reuse. Empirical evaluation across 6 languages and 8 language-domain combinations demonstrates that self-consistency with 15 executions yields statistically significant improvements over single-inference prompting, with our system (leveraging Gemma 3) ranking in the top six across all settings, achieving second place on three English subsets and first place on Tatar-Restaurant for DimASTE.
 
 ---
 
@@ -106,24 +111,7 @@ Results are organized in the `exported_predictions/` directory with detailed bre
 - 💾 [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
 - 🤖 [Gemma-3 Model (Unsloth)](https://huggingface.co/unsloth/gemma-3-27b-it-bnb-4bit)
 
-## 📬 Contact
-
-<div align="center">
-
-| Author                      | Affiliation               | Email                                                                 |
-| --------------------------- | ------------------------- | --------------------------------------------------------------------- |
-| **Nils Constantin Hellwig** | Media Informatics Group   | [nils-constantin.hellwig@ur.de](mailto:nils-constantin.hellwig@ur.de) |
-| **Jakob Fehle**             | Media Informatics Group   | [jakob.fehle@ur.de](mailto:jakob.fehle@ur.de)                         |
-| **Udo Kruschwitz**          | Information Science Group | [udo.kruschwitz@ur.de](mailto:udo.kruschwitz@ur.de)                   |
-| **Christian Wolff**         | Media Informatics Group   | [christian.wolff@ur.de](mailto:christian.wolff@ur.de)                 |
-
-**University of Regensburg, Germany**
-
-🐙 GitHub: [@NilsHellwig](https://github.com/NilsHellwig)
-
-</div>
-
-## 📖 Citation
+## Citation (TBA)
 
 ```bibtex
 tba

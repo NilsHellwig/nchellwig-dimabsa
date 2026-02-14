@@ -30,29 +30,6 @@ def run_training_pipeline_real(subtask=3, language="eng", domain="restaurant", s
         eval_dataset = get_dataset(
                 subtask=subtask, language=language, domain=domain, split="dev")
 
-    elif strategy == "train_split":
-        dataset = get_dataset(
-            subtask=subtask, language=language, domain=domain, split="train")
-
-        # do a train/validation split (80/20)
-        random.seed(seed_run)
-        random.shuffle(dataset)
-        # split in five different 80/20 splits
-        splits = []
-        split_size = len(dataset) // 5
-        for i in range(5):
-            start_idx = i * split_size
-            if i == 4:  # last split takes the remainder
-                end_idx = len(dataset)
-            else:
-                end_idx = (i + 1) * split_size
-            splits.append(dataset[start_idx:end_idx])
-        val_data = splits[split_idx]
-        train_dataset = [item for i, split in enumerate(
-            splits) if i != split_idx for item in split]
-
-        eval_dataset = val_data
-
     results = train_and_evaluate(
         train_dataset,
         eval_dataset,
@@ -115,11 +92,7 @@ def main():
     # create results directory if it doesn't exist
     os.makedirs(results_path_start, exist_ok=True)
 
-    if strategy == "train_split":
-        existing_files = [f for f in os.listdir(results_path_start)
-                          if f.startswith(f"{subtask}_{language}_{domain}_0_{split_idx}")]
-    else:
-        existing_files = [f for f in os.listdir(results_path_start)
+    existing_files = [f for f in os.listdir(results_path_start)
                           if f.startswith(f"{subtask}_{language}_{domain}_0")]
 
     if existing_files:

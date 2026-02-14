@@ -48,7 +48,7 @@ def train_and_evaluate(
     set_seed(seed_run)
 
     # define model_name
-    model_save_path = "model_path" if strategy == "train_split" else f"final_models/{strategy}/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
+    model_save_path = f"final_models/{strategy}/{model_name_or_path.replace('/', '_')}/model_{subtask}_{language}_{domain}_full_data"
     if do_train:
         # create directory final_models if not exists
         if not os.path.exists("final_models"):
@@ -219,10 +219,6 @@ def train_and_evaluate(
         logger.info(
             f"Evaluating {len(eval_data_raw) if eval_data_raw is not None else 'N/A'} examples...")
 
-        if strategy == "train_split":
-            evaluate_model(eval_data_raw, subtask, language,
-                           domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=split_idx)
-
         if strategy == "dev-train":
             evaluate_model(eval_data_raw, subtask, language,
                            domain, llm, seed_run, strategy, model_name_or_path, model_save_path, eval_seed, split_idx=split_idx)
@@ -284,9 +280,9 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     unique_aspect_categories = get_unique_aspect_categories(domain)
     polarities = ["positive", "negative", "neutral"]
 
-    # Determine disable_null_aspect: False for jpn+hotel, or if strategy is train_split
+    # Determine disable_null_aspect: False for jpn+hotel
     disable_null_aspect = True
-    if (language == "jpn" and domain == "hotel") or strategy == "train_split":
+    if (language == "jpn" and domain == "hotel"):
         disable_null_aspect = False
 
     # 1a. Prediction mit temp=0 ohne guided decoding
@@ -401,28 +397,7 @@ def evaluate_model(evaluation_set_raw, subtask, language, domain, llm, seed_run,
     if not os.path.exists(results_dir):
         os.makedirs(results_dir, exist_ok=True)
 
-    if strategy == "train_split":
-        path_1a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_no_guidance.jsonl"
-        with open(path_1a, "w") as f:
-            for item in outputs_1a:
-                f.write(json.dumps(item, ensure_ascii=False) + "\n")
-        path_1b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0_with_guidance.jsonl"
-        with open(path_1b, "w") as f:
-            for item in outputs_1b:
-                f.write(json.dumps(item, ensure_ascii=False) + "\n")
-
-        for i in range(NUM_PRED_SC):
-            path_2a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_no_guidance_run{i}.jsonl"
-            with open(path_2a, "w") as f:
-                for p_idx in range(len(prompts)):
-                    item = outputs_2a[p_idx * NUM_PRED_SC + i]
-                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
-            path_2b = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_{split_idx}_temp0.8_with_guidance_run{i}.jsonl"
-            with open(path_2b, "w") as f:
-                for p_idx in range(len(prompts)):
-                    item = outputs_2b[p_idx * NUM_PRED_SC + i]
-                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    elif strategy == "dev-train" or strategy == "test-train_dev":
+    if strategy == "dev-train" or strategy == "test-train_dev":
         path_1a = f"{results_dir}/{subtask}_{language}_{domain}_{seed_run}_temp0_no_guidance.jsonl"
         with open(path_1a, "w") as f:
             for item in outputs_1a:

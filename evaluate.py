@@ -288,7 +288,6 @@ from helper import *
 import numpy as np
 import pandas as pd
 
-N_SPLITS = 5  # Anzahl der 80/20 Splits für train_split
 NUM_PRED_SC = 5 # Anzahl der Vorhersagen für Self-Consistency
 RUN_SEED = 0  # allgemeine Seed für Reproduzierbarkeit
 COLUMNS = ["no_sc_no_guided_27b", "sc_5_27b", "sc_10_27b", "sc_15_27b"]
@@ -313,13 +312,13 @@ VALID_LANGUAGES_DOMAINS = [
 ]
 
 
-def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_split", guidance=True, self_consistency=True, run_idx=0, eval_seed=0):
+def load_predictions(subtask, language, domain, split_idx, llm, strategy="train_dev", guidance=True, self_consistency=True, run_idx=0, eval_seed=0):
     llm_name_formatted = llm.replace("/", "_")
 
     guidance_str = "with_guidance" if guidance else "no_guidance"
     temp_str = "_temp0.8" if self_consistency else "_temp0"
     run_str = f"_run{run_idx}" if self_consistency else ""
-    split_idx_str = f"_{split_idx}" if strategy == "train_split" else ""
+    split_idx_str = ""
     eval_seed_str = f"/{eval_seed}" if strategy == "test-train_dev" else ""
 
     path = f"results/results_{strategy}{eval_seed_str}/{llm_name_formatted}/{subtask}_{language}_{domain}_{RUN_SEED}{split_idx_str}{temp_str}_{guidance_str}{run_str}.jsonl"
@@ -416,7 +415,7 @@ def get_performance(language, domain, subtask, strategy, eval_seed=0, llm="unslo
     labels = load_ground_truth(subtask, language, domain)
 
     results = []
-    n_splits = N_SPLITS if strategy == "train_split" else 1
+    n_splits = 1
 
     for split_idx in range(n_splits):
         preds_no_sc_guided = load_predictions(
@@ -469,16 +468,7 @@ def get_performance(language, domain, subtask, strategy, eval_seed=0, llm="unslo
         })
 
     # calculate average over splits
-    if strategy == "train_split":
-        avg_results = {}
-        for key in results[0].keys():
-            avg_results[key] = {}
-            for metric in results[0][key].keys():
-                avg_results[key][metric] = statistics.mean(
-                    result[key][metric] for result in results)
-        return avg_results
-    else:
-        return results[0], {
+    return results[0], {
             "no_sc_guided": preds_no_sc_guided,
             "no_sc_no_guided": preds_no_sc_no_guided,
             "sc_guided": preds_sc_guided,
@@ -504,7 +494,7 @@ def get_key_of_best_strategy(lang, domain, df):
 
     return best_strategy
 
-def get_performance_tabular(table_metric, table_subtask, strategy="train_split"):
+def get_performance_tabular(table_metric, table_subtask, strategy="train_dev"):
     table = defaultdict(lambda: defaultdict(dict))
 
     for language, domain in VALID_LANGUAGES_DOMAINS:
