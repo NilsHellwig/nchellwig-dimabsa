@@ -9,14 +9,16 @@ amitraj,eng,lap,"0,3072",The Classics,7
 nlangproc,eng,lap,"0,3055",NLANGPROC,8
 lasse123,eng,lap,"0,3049",TeamLasse,9
 Baseline (Kimi-K2 Thinking),eng,lap,"0,2795",Baseline (Kimi-K2 Thinking),10
-haohuanchen,eng,lap,"0,2752",Scmhl5,11
-gstavros,eng,lap,"0,2694",AILS-NTUA,12
-hiimhoanglam,eng,lap,"0,2587",HUS@NLP-VNU,13
-espernauto,eng,lap,"0,2578",Bert Kittens,14
-dlaschenko,eng,lap,"0,2512",SokraTUM,15
-michalr,eng,lap,"0,2317",TeamA,16
-Baseline (Qwen-3 14B),eng,lap,"0,1529",Baseline (Qwen-3 14B),17
-affan,eng,lap,0,Habib university,18
+looploop,eng,lap,"0,2781",looploop,11
+haohuanchen,eng,lap,"0,2752",Scmhl5,12
+gstavros,eng,lap,"0,2694",AILS-NTUA,13
+hiimhoanglam,eng,lap,"0,2587",HUS@NLP-VNU,14
+espernauto,eng,lap,"0,2578",Bert Kittens,15
+dlaschenko,eng,lap,"0,2512",SokraTUM,16
+kirito351,eng,lap,"0,248",kirito,17
+michalr,eng,lap,"0,2317",TeamA,18
+Baseline (Qwen-3 14B),eng,lap,"0,1529",Baseline (Qwen-3 14B),19
+affan,eng,lap,0,Habib university,20
 kosyamada,eng,res,"0,6514",Takoyaki,1
 nchellwig,eng,res,"0,6403",nchellwig,2
 oscarhscc,eng,res,"0,6395",PALI,3
@@ -26,13 +28,16 @@ lasse123,eng,res,"0,5937",TeamLasse,6
 hiimhoanglam,eng,res,"0,5871",HUS@NLP-VNU,7
 nlangproc,eng,res,"0,5816",NLANGPROC,8
 dlaschenko,eng,res,"0,5612",SokraTUM,9
-triston,eng,res,"0,5487",TeleAI,10
-michalr,eng,res,"0,5317",TeamA,11
-espernauto,eng,res,"0,5162",Bert Kittens,12
-haohuanchen,eng,res,"0,5119",Scmhl5,13
-Baseline (Kimi-K2 Thinking),eng,res,"0,3746",Baseline (Kimi-K2 Thinking),14
-Baseline (Qwen-3 14B),eng,res,"0,2673",Baseline (Qwen-3 14B),15
-affan,eng,res,0,Habib university,16
+looploop,eng,res,"0,5562",looploop,10
+triston,eng,res,"0,5487",TeleAI,11
+michalr,eng,res,"0,5317",TeamA,12
+kirito351,eng,res,"0,5201",kirito,13
+mgdgd,eng,res,"0,5183",YNU-ABSA,14
+espernauto,eng,res,"0,5162",Bert Kittens,15
+haohuanchen,eng,res,"0,5119",Scmhl5,16
+Baseline (Kimi-K2 Thinking),eng,res,"0,3746",Baseline (Kimi-K2 Thinking),17
+Baseline (Qwen-3 14B),eng,res,"0,2673",Baseline (Qwen-3 14B),18
+affan,eng,res,0,Habib university,19
 oscarhscc,jpn,hot,"0,4252",PALI,1
 kosyamada,jpn,hot,"0,4086",Takoyaki,2
 nlangproc,jpn,hot,"0,4028",NLANGPROC,3

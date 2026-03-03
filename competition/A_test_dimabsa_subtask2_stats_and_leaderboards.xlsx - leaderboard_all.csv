@@ -13,13 +13,16 @@ nlangproc,eng,lap,"0,5321",NLANGPROC,11
 gstavros,eng,lap,"0,5311",AILS-NTUA,12
 hiimhoanglam,eng,lap,"0,5304",HUS@NLP-VNU,13
 haohuanchen,eng,lap,"0,5136",Scmhl5,14
-affan,eng,lap,"0,477",Habib university,15
-amitraj,eng,lap,"0,4763",The Classics,16
-espernauto,eng,lap,"0,4469",Bert Kittens,17
-Baseline (Kimi-K2 Thinking),eng,lap,"0,4424",Baseline (Kimi-K2 Thinking),18
-Baseline (Qwen-3 14B),eng,lap,"0,3827",Baseline (Qwen-3 14B),19
-sunilj,eng,lap,"0,214",LexiCore,20
-diving,eng,lap,0,ALPS-Lab,21
+mgdgd,eng,lap,"0,4952",YNU-ABSA,15
+looploop,eng,lap,"0,4799",looploop,16
+affan,eng,lap,"0,477",Habib university,17
+amitraj,eng,lap,"0,4763",The Classics,18
+kirito351,eng,lap,"0,4733",kirito,19
+espernauto,eng,lap,"0,4469",Bert Kittens,20
+Baseline (Kimi-K2 Thinking),eng,lap,"0,4424",Baseline (Kimi-K2 Thinking),21
+Baseline (Qwen-3 14B),eng,lap,"0,3827",Baseline (Qwen-3 14B),22
+sunilj,eng,lap,"0,214",LexiCore,23
+diving,eng,lap,0,ALPS-Lab,24
 kosyamada,eng,res,"0,7021",Takoyaki,1
 nchellwig,eng,res,"0,6985",nchellwig,2
 oscarhscc,eng,res,"0,6928",PALI,3
@@ -34,14 +37,17 @@ triston,eng,res,"0,6294",TeleAI,10
 nlangproc,eng,res,"0,6235",NLANGPROC,11
 huangly,eng,res,"0,6174",ICT-NLP,12
 haohuanchen,eng,res,"0,6127",Scmhl5,13
-amitraj,eng,res,"0,565",The Classics,14
-espernauto,eng,res,"0,5628",Bert Kittens,15
-affan,eng,res,"0,5202",Habib university,16
-Baseline (Kimi-K2 Thinking),eng,res,"0,492",Baseline (Kimi-K2 Thinking),17
-Baseline (Qwen-3 14B),eng,res,"0,4483",Baseline (Qwen-3 14B),18
-sunilj,eng,res,"0,2691",LexiCore,19
-jithumorrison,eng,res,"0,0265",Pixel Phantoms,20
-diving,eng,res,0,ALPS-Lab,21
+looploop,eng,res,"0,5799",looploop,14
+kirito351,eng,res,"0,5676",kirito,15
+amitraj,eng,res,"0,565",The Classics,16
+espernauto,eng,res,"0,5628",Bert Kittens,17
+mgdgd,eng,res,"0,524",YNU-ABSA,18
+affan,eng,res,"0,5202",Habib university,19
+Baseline (Kimi-K2 Thinking),eng,res,"0,492",Baseline (Kimi-K2 Thinking),20
+Baseline (Qwen-3 14B),eng,res,"0,4483",Baseline (Qwen-3 14B),21
+sunilj,eng,res,"0,2691",LexiCore,22
+jithumorrison,eng,res,"0,0265",Pixel Phantoms,23
+diving,eng,res,0,ALPS-Lab,24
 triston,jpn,hot,"0,5837",TeleAI,1
 lasse123,jpn,hot,"0,5694",TeamLasse,2
 archfool,jpn,hot,"0,5682",PAI,3
