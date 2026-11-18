@@ -6,7 +6,7 @@
 
 Entry at **SemEval-2026** (Task 2 + 3 · Track A)
 
-[![Paper](https://img.shields.io/badge/Paper_Download-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)]([tba](https://aclanthology.org/2026.semeval-1.6/))
+[![Paper](https://img.shields.io/badge/Paper_Download-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)](https://aclanthology.org/2026.semeval-1.6/)
 [![Correspondence](https://img.shields.io/badge/Contact-Nils%20Hellwig-darkred?style=for-the-badge&logo=minutemailer)](mailto:nils-constantin.hellwig@ur.de)
 
 ---
