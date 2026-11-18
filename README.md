@@ -6,7 +6,7 @@
 
 Entry at **SemEval-2026** (Task 2 + 3 · Track A)
 
-[![Paper](https://img.shields.io/badge/Paper_Download-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)](tba)
+[![Paper](https://img.shields.io/badge/Paper_Download-SemEval%202026-blue?style=for-the-badge&logo=googlescholar)]([tba](https://aclanthology.org/2026.semeval-1.6/))
 [![Correspondence](https://img.shields.io/badge/Contact-Nils%20Hellwig-darkred?style=for-the-badge&logo=minutemailer)](mailto:nils-constantin.hellwig@ur.de)
 
 ---
@@ -111,12 +111,29 @@ Results are organized in the `exported_predictions/` directory with detailed bre
 - 💾 [Dataset](https://github.com/DimABSA/DimABSA2026/tree/main/task-dataset)
 - 🤖 [Gemma-3 Model (Unsloth)](https://huggingface.co/unsloth/gemma-3-27b-it-bnb-4bit)
 
-## Citation (TBA)
+## Citation
 
 ```bibtex
-tba
+@inproceedings{hellwig-etal-2026-nchellwig,
+    title = "nchellwig at {S}em{E}val-2026 Task 3: Self-Consistent Structured Generation ({SCSG}) for Dimensional Aspect-Based Sentiment Analysis using Large Language Models",
+    author = "Hellwig, Nils Constantin  and
+      Fehle, Jakob  and
+      Kruschwitz, Udo  and
+      Wolff, Christian",
+    editor = "Kochmar, Ekaterina  and
+      Ghosh, Debanjan  and
+      North, Kai  and
+      Komachi, Mamoru  and
+      Zampieri, Marcos",
+    booktitle = "Proceedings of the 20th {I}nternational {W}orkshop on {S}emantic {E}valuation (2026)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.semeval-1.6/",
+    doi = "10.18653/v1/2026.semeval-1.6",
+    pages = "37--47",
+    ISBN = "979-8-89176-414-9",
+    abstract = "We present Self-Consistent Structured Generation (SCSG) for Dimensional Aspect-Based Sentiment Analysis in SemEval-2026 Task 3 (Track A). SCSG enhances prediction reliability by executing a LoRA-adapted large language model multiple times per instance, retaining only tuples that achieve a majority consensus across runs. To mitigate the computational overhead of multiple forward passes, we leverage vLLM{'}s PagedAttention mechanism for efficient key{--}value cache reuse. Evaluation across 6 languages and 8 language{--}domain combinations demonstrates that self-consistency with 15 executions yields statistically significant improvements over single-inference prompting, with our system (leveraging Gemma 3) ranking in the top seven across all settings, achieving second place on three out of four English subsets and first place on Tatar-Restaurant for DimASTE."
+}
 ```
-
-<div align="center">
-Made with ❤️ at the Faculty of Informatics and Data Science, University of Regensburg
-</div>
